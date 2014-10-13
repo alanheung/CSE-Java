@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class ForExercises {
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
+		forHeaderTesting();
+	}
+	public static void forHeaderTesting(){
+		int count=1, total=0, NUM_INPUTS=3;
+		for(; ;){
+			System.out.print("Please enter a number(-1 to exit): ");
+			int n = sc.nextInt();
+			if(n == -1){
+				break;
+			}else{	
+				total +=n;
+			}
+		}
+		System.out.println("The total is "+total);
+	}
+}

@@ -1,0 +1,231 @@
+import java.util.Scanner;
+
+public class ForExercises {
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
+		//forHeaderTesting();
+		//forSmallestLargest();
+		//forHistogram();
+		//forAverage();
+		//forSequence();
+		//forSumEvenNumbers();
+		//twelveDaysOfChristmas();
+		//breakB();
+		breakA();
+
+		
+	}
+
+	public static void breakA(){
+			for(int i=1; i<4; i++){
+				System.out.println("Outer:"+i);
+				while(true){
+					int n = (int)(Math.random()*10);
+					if(n>7){
+						System.out.println("break: "+n);
+						break;
+					}
+				}
+				System.out.println("After while loop");
+			}
+	}
+	public static void breakB(){
+		outerLoop:
+			for(int i=1; i<4; i++){
+				System.out.println("Outer:"+i);
+				while(true){
+					int n = (int)(Math.random()*10);
+					if(n>7){
+						System.out.println("break: "+n);
+						break outerLoop;
+					}
+				}
+				//System.out.println("After while loop");
+			}
+			System.out.println("After for loop");
+	}
+	
+	public static void twelveDaysOfChristmas(){
+		for (int i = 1; i<=12; i++){
+			System.out.print("On the ");
+
+			switch(i){
+			case 1:  System.out.print("first");
+			break;
+			case 2: System.out.print("Second");
+			break;
+			case 3: System.out.print("Third");
+			break;
+			case 4: System.out.print("Fourth");
+			break;
+			case 5: System.out.print("Fifth");
+			break;
+			case 6: System.out.print("Sixith");
+			break;
+			case 7: System.out.print("Seventh");
+			break;
+			case 8: System.out.print("Eigth");
+			break;
+			case 9: System.out.print("Ninth");
+			break;
+			case 10: System.out.print("Tenth");
+			break;
+			case 11: System.out.print("Eleventh");
+			break;
+			case 12: System.out.print("Tweleth");
+			break;
+			}
+			System.out.print(" day of Christmas, my true love gave to me! \n");
+
+			switch(i){
+			case 12: System.out.println("\nTwelve Drummers drumming,");
+			case 11: System.out.println("\nEleven pipers pipping,");
+			case 10: System.out.println("\nTen Lords a-leaping,");
+			case 9: System.out.println("\nNine ladies dancing,");
+			case 8: System.out.println("\nEight maids a-milking,");
+			case 7: System.out.println("\nSeven swans a-swimming,");
+			case 6: System.out.println("\nSix geese a-laying,");
+			case 5: System.out.println("\nFive gold rings,");
+			case 4: System.out.println("\nFour calling birds,");
+			case 3: System.out.println("\nThree french hens,");
+			case 2: System.out.println("\nTwo turtle doves,");
+			case 1: System.out.println("\nA partridge in a pair tree,");
+
+			}		
+		}
+	}
+
+	public static void forSumEvenNumbers(){
+		System.out.print("Please enter the even number you wish to start at : ");
+		int from = sc.nextInt();
+		System.out.print("Please enter the even number you wish to end at : ");
+		int end = sc.nextInt();
+		int total =0;
+		if(from %2 != 0 || end %2 != 0){//check to see if the start and end values are even or odd.
+			System.out.println("Error! You did not enter in an even number!");
+		}else{
+			for(int i = from + 2; i < end; i += 2){//this for loop will end before i get to end so we wont add the ending value, also we will jump in 2's
+				total += i;
+			}
+		}
+		System.out.println(total);
+	}
+
+	public static void forSequence(){
+		for(int i=1; i<=10; i++){
+			if(i==10){
+				System.out.print(i*i);
+			}else	
+				System.out.print(i*i+", ");
+		}
+	}
+	public static void forAverage(){
+		int total=0, n=0, number=0;
+		System.out.print("Please enter a number for n: ");
+		n = sc.nextInt();
+		for(int i=0; i<n; i++){
+			System.out.print("Please enter a number: ");
+			number = sc.nextInt();
+			total+=number;
+		}
+		double avg = 0.0;
+		avg = total/(double)n;
+		System.out.println("The average is "+avg);
+	}
+
+	public static void forHistogram(){
+		System.out.print("Please enter a number for rows: ");
+		int row = sc.nextInt();
+		System.out.print("Please enter a number for columns: ");
+		int col = sc.nextInt();
+		System.out.print("Please enter a symbol: ");
+		char c = sc.next().charAt(0);
+		for ( int i = 0 ; i < row ; i++ ){
+			for ( int j = 0 ; j < col ; j++ ){
+				System.out.print( c ) ;
+			}
+			System.out.println( " " ) ;
+		}
+	}
+	public static void forSmallestLargest(){
+		int lNum = 0, sNum = 0, n=0, number=0;
+		boolean someNumberEntered = false;
+		System.out.print("Please enter n: ");
+		n = sc.nextInt();
+		for(int i =1;i<=n; i++){
+			someNumberEntered = true;
+			System.out.print("Please enter a number: ");
+			number = sc.nextInt();
+			if(i==1){
+				sNum = number;
+				lNum = number;
+			}else if(number > lNum){
+				lNum = number;
+			}else if(number < sNum){
+				sNum = number;
+			}
+		}
+		if(someNumberEntered){
+			System.out.println("The largest number you entered was: "+lNum);
+			System.out.println("The smallest number you entered was: "+sNum);
+		}else{
+			System.out.println("n is invalid: "+n);
+		}
+	}
+
+	public static void forHeaderTesting(){
+		final int NUM_INPUTS=3;
+		int sum=0, input=0;
+
+		// Leave out expression 2 in "for" header
+		// => an infinite loop, as there is no checking for when to end
+		//    we must break the loop ourselves
+		for(int i=0;;i++){
+			System.out.print("Enter a number (-1 to end) --> ");
+			input = sc.nextInt();
+			if(input == -1)
+				break;//exit the loop
+			else
+				sum += input;
+		}
+		System.out.println("Sum is " + sum);
+
+		// Leave out expression 1 in "for" header
+		// => we must initialise the loop control variable j
+		//    ourselves before the loop header
+		sum=0;	// reset sum back to 0
+		int j=1;
+		for(;j<=NUM_INPUTS;j++){
+			System.out.print("Enter a number --> ");
+			input = sc.nextInt();
+			sum += input;
+		}
+		System.out.println("Sum is " + sum);
+
+		// Leave out expression 3 in "for" header
+		// => we must increment/decrement the loop control 
+		//    variable k inside the loop 
+		sum=0;	// reset sum back to 0
+		for(int k=1;k<=NUM_INPUTS;){
+			System.out.print("Enter a number --> ");
+			input = sc.nextInt();
+			sum += input;
+			k++;
+		}
+		System.out.println("Sum is " + sum);
+
+		// Leave out all 3 expressions in "for" header
+		// => an infinite loop, as there is no checking when to end
+		//    the loop, we must break out of the loop ourselves
+		sum=0;	// reset sum back to 0
+		for(;;){	// () and 2 semi-colons required
+			System.out.print("Enter a number (-1 to end) --> ");
+			input = sc.nextInt();
+			if(input == -1)
+				break;	// exit the loop
+			else
+				sum += input;
+		}
+		System.out.println("Sum is " + sum);	
+	}
+}

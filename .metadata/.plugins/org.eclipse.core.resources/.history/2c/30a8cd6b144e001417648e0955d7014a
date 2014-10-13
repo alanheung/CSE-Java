@@ -1,0 +1,103 @@
+import java.util.Scanner;
+
+public class ForExercises {
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
+		//forHeaderTesting();
+		//forSmallestLargest();
+		forHistogram();
+	}
+	
+	public static void forHistogram(){
+		System.out.print("Please enter a number for rows: ");
+		int row = sc.nextInt();
+		System.out.print("Please enter a number for columns: ");
+		int col = sc.nextInt();
+		System.out.print("Please enter a symbol: ");
+		char c = sc.next().charAt(0);
+		for ( int i = 0 ; i < row ; i++ ){
+			for ( int j = 0 ; j < col ; j++ ){
+				System.out.print( c ) ;
+			}
+			System.out.println( " " ) ;
+		}
+	}
+	public static void forSmallestLargest(){
+		int lNum = 0, sNum = 0, n=0, number=0;
+		boolean someNumberEntered = false;
+		System.out.print("Please enter n: ");
+		n = sc.nextInt();
+		for(int i =1;i<=n; i++){
+			someNumberEntered = true;
+			System.out.print("Please enter a number: ");
+			number = sc.nextInt();
+			if(i==1){
+				sNum = number;
+				lNum = number;
+			}else if(number > lNum){
+				lNum = number;
+			}else if(number < sNum){
+				sNum = number;
+			}
+		}
+		if(someNumberEntered){
+			System.out.println("The largest number you entered was: "+lNum);
+			System.out.println("The smallest number you entered was: "+sNum);
+		}else{
+			System.out.println("n is invalid: "+n);
+		}
+	}
+	
+	public static void forHeaderTesting(){
+		int count=1, total=0;
+		for(int i =0; ;i++){
+			System.out.print("Please enter a number(-1 to exit): ");
+			int n = sc.nextInt();
+			if(n == -1){
+				break;
+			}else{	
+				total +=n;
+			}
+		}
+		System.out.println("The total is "+total);
+		int NUM_INPUTS;
+		//b
+		for(NUM_INPUTS =0; ;NUM_INPUTS++){
+			System.out.print("Please enter a number(-1 to exit): ");
+			int n = sc.nextInt();
+			if(n == -1){
+				break;
+			}else{	
+				total +=n;
+			}
+		}
+		System.out.println("The total is "+total);
+		
+		//1c
+		total=0;
+		int j=1;
+		for(;j<=NUM_INPUTS ;j++){
+			System.out.print("Please enter a number(-1 to exit): ");
+			int n = sc.nextInt();
+			if(n == -1){
+				break;
+			}else{	
+				total += n;
+			}
+		}
+		System.out.println("The total is "+total);
+		
+		//1d
+		total=0;
+		for(; ;){
+			System.out.print("Please enter a number(-1 to exit): ");
+			int n = sc.nextInt();
+			if(n == -1){
+				break;
+			}else{	
+				total += n;
+			}
+		}
+		System.out.println("The total is "+total);
+	}
+}

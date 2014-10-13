@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class ForExercises {
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
+		forHeaderTesting();
+	}
+	public static void forHeaderTesting(){
+		int count=1, total=0;
+		for(int i =0; ;i++){
+			System.out.print("Please enter a number(-1 to exit): ");
+			int n = sc.nextInt();
+			if(n == -1){
+				break;
+			}else{	
+				total +=n;
+			}
+		}
+		System.out.println("The total is "+total);
+		int NUM_INPUTS=0;
+
+		total=0;
+		int j=1;
+		for(;j<=NUM_INPUTS ;j++){
+			System.out.print("Please enter a number(-1 to exit): ");
+			int n = sc.nextInt();
+			if(n == -1){
+				break;
+			}else{	
+				total += n;
+			}
+		}
+		System.out.println("The total is "+total);
+		
+		//1d
+		total=0;
+		for(; ;){
+			System.out.print("Please enter a number(-1 to exit): ");
+			int n = sc.nextInt();
+			if(n == -1){
+				break;
+			}else{	
+				total += n;
+			}
+		}
+		System.out.println("The total is "+total);
+	}
+}

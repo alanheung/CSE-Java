@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Ex04{
+	static Scanner sc = new Scanner(System.in);
+
+    public static void main(String[] args) {
+    	ifGrade();
+    }
+	public static void ifGrade(){//other way is to check for if 0-100 else then check for grade nested if, else if
+	     System.out.print("Please enter your quiz score: ");
+		 int quizScore = sc.nextInt();	
+		 System.out.print("Please enter your midterm score: ");
+		 int midtermScore = sc.nextInt();
+		 System.out.print("Please enter your final score: ");
+		 int finalScore = sc.nextInt();
+		 int totalScore= (3/(quizScore+midtermScore+finalScore));
+	
+		if(totalScore >= 70 && totalScore <=100 ){
+			System.out.print( totalScore + " is an A grade. ");
+		}else if(totalScore >= 60 && totalScore <=69){
+			System.out.print( totalScore + " is a B grade. ");
+		}else if(totalScore >= 50 && totalScore <=59){
+			System.out.print( totalScore + " is a C grade. ");
+		}else if(totalScore >= 40 && totalScore <=49){
+			System.out.print( totalScore + " is a D grade. ");
+		}else if(totalScore >= 0 && totalScore <=39){
+			System.out.print( totalScore + " is a fail grade. ");
+		}else{
+			System.out.print( totalScore + " is not gradable. ");
+		}
+	}
+}

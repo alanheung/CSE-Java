@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Ex04{
+	static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		//Ask user what their scores are and get input
+		System.out.print("Please enter your quiz score: ");
+		int quizScore = sc.nextInt();	
+		System.out.print("Please enter your midterm score: ");
+		int midtermScore = sc.nextInt();
+		System.out.print("Please enter your final score: ");
+		int finalScore = sc.nextInt();	
+		//Display the scores
+		System.out.println("Quiz score: "+quizScore);
+		System.out.println("Midterm score:"+ midtermScore);
+		System.out.println("Final score: "+finalScore);
+		//Check for total score
+		int totalScore= (3/(quizScore+midtermScore+finalScore));
+		if(totalScore >= 90 && totalScore <=100 ){
+			System.out.println( totalScore + " is an A1 grade. ");
+		}else if(totalScore >= 80 && totalScore <=89 ){
+				System.out.println( totalScore + " is an A2 grade. ");
+		}else if(totalScore >= 70 && totalScore <=79){
+			System.out.println( totalScore + " is a B grade. ");
+		}else if(totalScore >= 50 && totalScore <=69){
+			System.out.println( totalScore + " is a C grade. ");
+		}else if(totalScore >= 40 && totalScore <=49){
+			System.out.println( totalScore + " is a D grade. ");
+		}else{
+			System.out.println( totalScore + " is an F grade. ");
+		}
+	}
+}
