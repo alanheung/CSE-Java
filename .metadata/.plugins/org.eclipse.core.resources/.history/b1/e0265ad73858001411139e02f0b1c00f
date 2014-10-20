@@ -1,0 +1,66 @@
+public class Family {
+	public static void main(String[] args) {
+		Person p1 = new Person(25, "Kevin", "Pinewoods" );
+		
+		System.out.println("The name is "+ p1.getName() + ", the age is "+ p1.getAge()
+				+", the address is "+p1.getAddress()+"." );
+		System.out.println("The count is "+p1.getCount());
+
+		Person p2 = new Person(35, "Paul", "Acorn Drive");
+		System.out.println("The name is "+ p2.getName() + ", the age is "+ p2.getAge()
+				+", the address is "+p2.getAddress()+"." );
+		System.out.println("The count is "+p2.getCount());
+		
+		Person Jack = new Person(20, "Jack", "Tree Park");
+		System.out.println("The name is "+ Jack.getName() + ", the age is "+ Jack.getAge()
+				+", the address is "+Jack.getAddress()+"." );
+		System.out.println("Jack.getCount() == "+ Jack.getCount());
+	}
+}
+//2nd class called Person
+class Person{
+	//instance variables
+	private int theAge;
+	private String theName, theAddress;
+	private static int theCount;
+//default ctor not required with assignment
+//	public Person(){//default ctor
+//		theAge = 0;
+//		theName = "";
+//		theAddress = "";
+//		theCount=0;
+//	}
+	public Person(int aAge, String aName, String aAddress){//ctor declares instance variables
+		theAge = aAge;
+		theName = aName;
+		theAddress = aAddress;
+		theCount ++;
+	}
+	public String getName() {//accessor method
+		return theName;
+	}
+	public void setName(String aName) {//mutator method
+		theName = aName;
+	}
+	public int getAge() {
+		return theAge;
+	}
+	public void setAge(int aAge) {
+		theAge = aAge;
+	}
+	public String getAddress() {
+		return theAddress;
+	}
+	public void setAddress(String aAddress) {
+		theAddress = aAddress;
+	}
+	public int getCount() {
+		return theCount;
+	}
+	@Override
+	public String toString(){
+		return 	theAge+theName +theAddress +theCount;
+	}
+}
+
+

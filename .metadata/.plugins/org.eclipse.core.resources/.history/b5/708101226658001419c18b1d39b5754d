@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class TaxCalc {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Are you married or single?(m/s): ");
+		String status = sc.toString();
+
+		System.out.print("Please enter a subtotal: ");
+		double income = sc.nextDouble();
+	}
+	
+	public static double getTax(char status, double income){
+		double tax;
+		if(status.equalsIgnoreCase('M')){
+			if(income <= 21450)
+				tax = .15;
+		}
+		else if(status.equalsIgnoreCase('S')){
+
+		}
+
+	}
+}

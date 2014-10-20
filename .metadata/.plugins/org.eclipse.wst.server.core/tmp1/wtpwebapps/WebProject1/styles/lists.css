@@ -1,0 +1,152 @@
+/* the styles for the body element and page division */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 87.5%;
+    margin: 0;
+    background-color: gray;
+}
+#page {
+    width: 640px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 15px;
+}
+
+/* the styles for the elements */
+h1, h2 {
+    color: blue;
+}
+h1 { 
+    font-size: 250%;
+    margin: 0;
+}
+h2 { 
+    font-size: 150%;
+    margin-bottom: 0;
+    padding-bottom: .25em;
+}
+p {
+    margin: .75em 0;
+}
+/* the styles for the lists */
+ul {
+    margin:0;
+    padding-:1em;
+}
+.circle{
+    list-style-type: circle;
+}
+.fish_list{
+    list-style-image: url('../images/favicon.ico');
+/*list-style-image:url('http://1.bp.blogspot.com/-mt6bmmlDxjc/TgX2jyw6nbI/AAAAAAAAEjA/YmNKlJmx2T8/s1600/bullet-point-image-9.gif');  
+*/    padding-left:0.5em;
+    margin: 0 auto;
+}
+/*#fish_list li{
+    margin: 0;
+    list-style-image: url(images/favicon.ico);
+}*/
+li{
+    margin:0 auto;
+    padding-bottom:0.25;
+}
+ol{
+    margin:0 auto;
+    padding:2;
+}
+/* the styles for the header division */
+#header {
+    height: 90px;
+    margin-bottom: 1.5em;
+}
+#header img {
+    float: left;
+}
+#header h1 {
+    margin-left: 3em;
+}
+#header h2 {
+    margin: 0;
+    margin-left: 6em;
+    color: #00ced1;
+}
+
+/* the styles for the navigation bar */
+
+
+/* the styles for the categories division */
+#categories {
+    width: 180px;
+    float: left;
+}
+#categories p {
+    line-height: 1.4;
+    margin: 0 .5em 1em;
+}
+
+/* the styles for the main division */
+#main {
+    margin-left: 200px;
+}
+
+/* the styles for the footer division */
+#footer {
+    margin-top: .5em;
+    border-top: 2px solid gray;
+    padding-top: .7em;
+    clear: left;
+}
+
+/* the styles for classes */
+.copyright {
+    color: gray;
+    font-size: 90%;
+    text-align: right;
+    margin: 0;
+}
+/*navigation menu*/
+/*.navigation_bar{
+    padding-left: 0.5em;
+    display: inline-block; 
+}
+
+.navigation_bar ul{
+    margin:0
+    padding;0
+}
+.navigation_bar li{
+}
+
+#navigation_bar a {
+    border-right: ;
+    text-decoration:none; 
+}*/
+#navigation_bar {
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-color: blue;
+    border-radius: 2px;
+    border: 2px solid blue; 
+    font-size: 20px; 
+}
+#navigation_bar li {
+    float: left; 
+    list-style: none;
+}
+#navigation_bar li a {
+    display: inline-block;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: blue;
+    border-right: 2px solid blue; 
+    height:25px;
+}
+#navigation_bar a.current{
+        color: blue;
+}
+  
+   

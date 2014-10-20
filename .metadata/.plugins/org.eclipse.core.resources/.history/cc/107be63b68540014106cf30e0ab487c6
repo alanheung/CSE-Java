@@ -1,0 +1,45 @@
+class Volume{
+	private int theLength;
+	private int theWidth;
+	private int theHeight;
+	
+	public Volume(){
+		theLength=0;
+		theWidth=0;
+		theHeight=0;
+	}
+	public Volume(int aLength, int aWidth, int aHeight){
+		theLength = aLength;
+		theWidth = aWidth;
+		theHeight = aHeight;
+	}
+	public int getLength() {
+		return theLength;
+	}
+	public int getWidth() {
+		return theWidth;
+	}
+	public int getHeight() {
+		return theHeight;
+	}
+	public void setLength(int aLength) {
+		theLength = aLength;
+	}
+	public void setWidth(int aWidth) {
+		theWidth = aWidth;
+	}
+	public void setHeight(int aHeight) {
+		theHeight = aHeight;
+	}
+	@Override
+	public String toString(){
+		return "The volume is "+ (theLength*theWidth*theHeight);
+	}
+}
+public class VolumeTest {
+
+	public static void main(String[] args) {
+		Volume v1 = new Volume();
+		System.out.println(v1.getHeight());	}
+
+}

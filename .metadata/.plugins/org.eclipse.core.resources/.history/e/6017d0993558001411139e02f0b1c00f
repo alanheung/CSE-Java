@@ -1,0 +1,66 @@
+public class Family {
+	public static void main(String[] args) {
+		Person p1 = new Person();
+		p1.setAddress("Pinewoods");
+		p1.setAge(25);
+		p1.setName("Kevin");
+		System.out.println("The name is "+ p1.getName() + ", the age is "+ p1.getAge()
+				+", the address is "+p1.getAddress()+"." );
+		System.out.println("The count is "+p1.getCount());
+		
+		Person p2 = new Person();
+		p1.setAddress("Acornwoods");
+		p1.setAge(35);
+		p1.setName("Paul");
+		System.out.println("The name is "+ p2.getName() + ", the age is "+ p2.getAge()
+				+", the address is "+p2.getAddress()+"." );
+		System.out.println("The count is "+p2.getCount());
+	}
+}
+class Person{
+	//instance variables
+	private int theAge;
+	private String theName;
+	private String theAddress;
+	private int theCount;
+
+	public Person(){//default ctor
+		theAge = 0;
+		theName = "";
+		theAddress = "";
+		theCount++;
+	}
+	public Person(int aAge, String aName, String aAddress){
+		theAge = aAge;
+		theName = aName;
+		theAddress = aAddress;
+		theCount ++;
+	}
+	public String getName() {
+		return theName;
+	}
+	public void setName(String aName) {
+		theName = aName;
+	}
+	public int getAge() {
+		return theAge;
+	}
+	public void setAge(int aAge) {
+		theAge = aAge;
+	}
+	public String getAddress() {
+		return theAddress;
+	}
+	public void setAddress(String aAddress) {
+		theAddress = aAddress;
+	}
+	public int getCount() {
+		return theCount;
+	}
+	@Override
+	public String toString(){
+		return 	theAge+theName +theAddress +theCount;
+	}
+}
+
+

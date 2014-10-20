@@ -1,0 +1,29 @@
+class Phone{
+	private String theNumber;
+	private String theOwnersName;
+	private double thePrice;
+	
+	public String getTheNumber() {
+		return theNumber;
+	}
+	public String getTheOwnersName() {
+		return theOwnersName;
+	}
+	public double getThePrice() {
+		return thePrice;
+	}
+	public void setTheNumber(String theNumber) {
+		this.theNumber = theNumber;
+	}
+	public void setTheOwnersName(String theOwnersName) {
+		this.theOwnersName = theOwnersName;
+	}
+	public void setThePrice(double thePrice) {
+		this.thePrice = thePrice;
+	}
+}
+public class PhoneTest {
+	public static void main(String[] args) {
+		Phone p = new Phone();
+	}
+}

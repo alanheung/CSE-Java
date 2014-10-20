@@ -1,0 +1,7 @@
+BranchProjectTracker__C\:\\Users\\A00226316\\git\\mylab\\.git_story1=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects branch\="story1">\r\n<project>\\FirstGit</project>\r\n</projects>
+BranchProjectTracker__C\:\\Users\\A00226316\\git\\mylab\\.git_story1delete=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects branch\="story1delete">\r\n<project>\\FirstGit</project>\r\n</projects>
+BranchProjectTracker__C\:\\Users\\A00226316\\git\\mylab\\.git_story2=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects branch\="story2">\r\n<project>\\FirstGit</project>\r\n</projects>
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>Merge branch &apos;story2&apos; into story1&\#x0A;&\#x0A;Conflicts\:&\#x0A;&\#x09;FirstGit/src/com/ait/git/GitTest.java&\#x0A;</message>\r\n<message>Removed errors</message>\r\n<message>Merge branch &apos;story2&apos; into story1 </message>\r\n<message>Git Test update for story 2</message>\r\n<message>Code for Story 2 added</message>\r\n<message>Small change to GitTest</message>\r\n<message>Code for User Story 1 added</message>\r\n<message>Commit and push changes</message>\r\n<message>First Commit</message>\r\n</messages>
+eclipse.preferences.version=1
+show_home_drive_warning=false
+show_initial_config_dialog=false

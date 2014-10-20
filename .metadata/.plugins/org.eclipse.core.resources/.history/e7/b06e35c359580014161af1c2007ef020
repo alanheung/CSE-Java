@@ -1,0 +1,16 @@
+
+public class Ex01Test {
+	public static void main(String[] args) {
+		@before
+		public void setup(){
+			studentGrade = new StudentGrade();
+			//System.out.println("In Setup");
+		}
+		public void testGradeAGreaterThan85(){
+			asserEquals('A', studentGrade.getGrade(90));
+		}
+		public void testGradeAGreaterThan70(){
+			asserEquals('B', studentGrade.getGrade(75));
+		}
+	}
+}

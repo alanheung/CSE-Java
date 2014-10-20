@@ -1,0 +1,37 @@
+import static org.junit.Assert.*;
+import  org.junit.Before;
+import  org.junit.Test;
+
+public class StudentGradeTest {
+	
+		private StudentGrade studentGrade;
+		@Before
+		public void setup(){
+			studentGrade = new StudentGrade();
+		}
+		@Test
+		public void testGradeAGreaterThan85(){
+			studentGrade = new StudentGrade();
+			assertEquals('A', studentGrade.getGrade(90));
+		}
+		@Test
+		public void testGradeBGreaterThan70(){
+			assertEquals('B', studentGrade.getGrade(75));
+		}
+		@Test
+		public void testGradeCGreaterThan55(){
+			assertEquals('C', studentGrade.getGrade(65));
+		}
+		@Test
+		public void testGradeDGreaterThan40(){
+			assertEquals('D', studentGrade.getGrade(45));
+		}
+		@Test
+		public void testGradeEGreaterThan25(){
+			assertEquals('E', studentGrade.getGrade(35));
+		}
+		@Test
+		public void testGradeFGreaterThan0(){
+			assertEquals('F', studentGrade.getGrade(15));
+		}
+	}

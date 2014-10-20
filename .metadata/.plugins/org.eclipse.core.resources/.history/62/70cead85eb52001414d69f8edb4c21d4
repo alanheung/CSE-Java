@@ -1,0 +1,29 @@
+
+public class ForLoops {
+	public static void main(String[] args) {
+		loopTest2();
+	}
+	public static void loopTest2(){
+		int counter = 0;
+		
+		outer:
+		for(int i = 0; i <3; i++){
+			System.out.print("i == "+i);	
+			middle:
+			for(int j = 0; j < 3; j++){
+				System.out.print("j == "+j);
+				inner:
+				for(int k = 0; k < 3; k++){
+					System.out.print("k == "+k);
+						if(k-j > 0){
+							continue middle;
+						}
+						counter++;
+				}
+				System.out.print("After inner ");	
+			}
+			System.out.print("After middle ");	
+		}
+		System.out.print("After outer, counter == "+counter);	
+	}
+}

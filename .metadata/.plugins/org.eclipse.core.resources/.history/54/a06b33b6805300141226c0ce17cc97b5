@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class SampleQuestion {
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
+		calculateTotal();
+	}
+	
+	public static void calculateTotal(){
+		System.out.print("Please enter a subtotal: ");
+		int subTotal = sc.nextInt();
+		System.out.print("Please enter customer type(r/c/t): ");
+        String customerType = sc.next();
+		double discount = getDiscountPercent(customerType, subTotal);
+		
+		double discountAmount = (subTotal * discount);
+		double total = (subTotal - discount);
+		System.out.print("The total: "+total);
+
+	}
+	
+	private static double getDiscountPercent(String customerType, int subTotal){
+	}
+}

@@ -1,0 +1,16 @@
+package com.ait.git;
+
+public class GitTest {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Git test one");
+		System.out.println("Edited on bitbucket");
+		System.out.println("Small change on master branch");
+
+	}
+
+}

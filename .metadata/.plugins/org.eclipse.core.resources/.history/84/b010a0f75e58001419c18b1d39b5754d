@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class DiscountCalculator {
+	public static void main(String[] args) {
+		String type;
+		int subTotal;
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Please enter customer type (g/s/b): ");
+		type = sc.toString();
+		
+		System.out.print("Please enter a subtotal: ");
+		subTotal = sc.nextInt();
+		
+	}
+	
+}

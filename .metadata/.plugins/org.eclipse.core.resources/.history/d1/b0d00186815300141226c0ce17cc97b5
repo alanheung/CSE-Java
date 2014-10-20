@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class SampleQuestion {
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
+		calculateTotal();
+	}
+	
+	public static void calculateTotal(){
+		System.out.print("Please enter a subtotal: ");
+		double subTotal = sc.nextInt();
+		System.out.print("Please enter customer type(r/c/t): ");
+        String customerType = sc.next();
+		double discount = getDiscountPercent(customerType, subTotal);
+		
+		double discountAmount = (subTotal * discount);
+		double total = (subTotal - discount);
+		System.out.println("The discount amount: "+ discountAmount);
+		System.out.print("The total: "+total);
+
+	}
+	
+	public static double getDiscountPercent(String customerType, double subTotal){
+		double discount = 0.0;
+		if(customerType.equalsIgnoreCase("R")){
+			if(subTotal < 100){
+				discount = 0;
+			}else if(subTotal >=100 && subTotal <= 249){
+				discount = 10;
+			}else if(subTotal >=250 && subTotal <= 499){
+				discount = 25;
+			}else if(subTotal >=500){
+				discount = 30;
+			}	
+		}
+		
+		if(customerType.equalsIgnoreCase("C")){
+			discount = 20;
+		}
+		
+		if(customerType.equalsIgnoreCase("T")){
+			if(subTotal < 500){
+				discount = 40;
+			}else{
+				discount = 50;
+			}
+		}
+		return discount;
+	
+	}
+}

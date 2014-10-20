@@ -1,0 +1,18 @@
+import static org.junit.Assert.*;
+import  org.junit.Before;
+import  org.junit.After;
+import  org.junit.Test;
+
+public class DiscountCalculatorTest {
+	@Test
+	public void ifSubtotalEquals() {
+
+		// MyClass is tested
+		DiscountCalculator tester = new DiscountCalculator();
+
+		// Tests
+		assertEquals("10 x 0 must be 0", 0, tester.multiply(10, 0));
+
+	}
+}
+

@@ -1,0 +1,11 @@
+class Rock{
+	
+}
+
+public class SimpleConstructor2014 {
+//if you provide no constructor (ctor) then java provides a default one with no arguments
+	public static void main(String[] args) {
+		System.out.println("Before for loop");
+		
+	}//
+}//

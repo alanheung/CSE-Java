@@ -1,0 +1,13 @@
+package com.ait.story1;
+
+public class StoryOne {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

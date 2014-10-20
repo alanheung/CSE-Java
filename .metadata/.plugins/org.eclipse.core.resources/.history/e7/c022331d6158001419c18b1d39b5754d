@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class DiscountCalculator {
+	public static void main(String[] args) {
+		String customerType;
+		double subTotal;
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Please enter customer type (g/s/b): ");
+		customerType = sc.toString();
+		
+		System.out.print("Please enter a subtotal: ");
+		subTotal = sc.nextInt();
+		
+	}
+	public static double getDiscountPercent(String customerType, double subTotal){
+		double discount = 0.0;
+		if(customerType.equalsIgnoreCase("R")){
+			if(subTotal < 100){
+				discount = 0.0;
+			}else if(subTotal >=100 && subTotal <= 249){
+				discount = 0.1;
+			}else if(subTotal >=250 && subTotal <= 499){
+				discount = 0.25;
+			}else if(subTotal >=500){
+				discount = 0.30;
+			}else if(customerType.equalsIgnoreCase("C")){
+				discount = 0.20;
+			}else if(customerType.equalsIgnoreCase("T")){
+				if(subTotal < 500){
+					discount = 0.40;
+				}else if(subTotal >=500){
+					discount = 0.50;
+				}
+			}
+		}
+		return discount;
+	}
+}

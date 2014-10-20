@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class StudentGrade {
+	public static void main(String[] args) {
+
+	}
+
+	public char getGrade(char x){
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Please enter grade: ");
+		x = sc.next().charAt(0);
+
+		if(x >= 85 && x <=100 ){
+			System.out.print( x + " is an A grade. ");
+		}else if(x >= 70 && x <85){
+			return 'A';		
+		}else if(x >= 55 && x <70){
+			return 'B';		
+		}else if(x >= 40 && x <55){
+			return 'C';		
+		}else if(x >= 25 && x <40){
+			return 'D';		
+		}else if(x < 25){
+			return 'E';		
+		}else{
+			return 'F';		
+		}
+		return x;
+	}
+}

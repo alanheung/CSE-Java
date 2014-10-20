@@ -1,0 +1,19 @@
+class Tree{
+	int height;
+	
+	public Tree(){
+		height = 0;
+		System.out.println("You are planting a seedling");
+	}
+	
+	public Tree(int height){
+		this.height = height;
+	}
+
+}
+
+public class Overloading {
+	public static void main(String[] args) {
+
+	}
+}

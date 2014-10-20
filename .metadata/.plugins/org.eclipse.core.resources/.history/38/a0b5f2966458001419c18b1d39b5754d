@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class TaxCalc {
+	public static void main(String[] args) {
+		String customerType;
+		double subTotal;
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Please enter customer type (g/s/b): ");
+		customerType = sc.toString();
+		
+		System.out.print("Please enter a subtotal: ");
+		subTotal = sc.nextInt();
+	}
+	public static double getDiscountPercent(String customerType, double subTotal){
+	
+	}
+}

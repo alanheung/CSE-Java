@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Ex02 {
+	public static void main(String[] args) {
+		String type;
+		int subTotal;
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Please enter customer type (g/s/b): ");
+		type = sc.toString();
+		
+		System.out.print("Please enter customer type (g/s/b): ");
+		subTotal = sc.nextInt();
+		
+	}
+}

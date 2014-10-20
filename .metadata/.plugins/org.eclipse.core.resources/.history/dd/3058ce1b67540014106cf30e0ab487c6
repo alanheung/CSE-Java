@@ -1,0 +1,18 @@
+class Volume{
+	private int theLength;
+	private int theWidth;
+	private int theHeight;
+	
+	public Volume(){
+		theLength=0;
+		theWidth=0;
+		theHeight=0;
+	}
+}
+public class VolumeTest {
+
+	public static void main(String[] args) {
+
+	}
+
+}
