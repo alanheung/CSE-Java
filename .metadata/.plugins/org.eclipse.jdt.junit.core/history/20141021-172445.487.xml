@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="StudentGradeTest (1)" project="JUnit" tests="6" started="6" failures="0" errors="0" ignored="0">
+  <testsuite name="StudentGradeTest" time="0.003">
+    <testcase name="testGradeCGreaterThan55" classname="StudentGradeTest" time="0.001"/>
+    <testcase name="testGradeDGreaterThan40" classname="StudentGradeTest" time="0.001"/>
+    <testcase name="testGradeEGreaterThan25" classname="StudentGradeTest" time="0.0"/>
+    <testcase name="testGradeBGreaterThan70" classname="StudentGradeTest" time="0.0"/>
+    <testcase name="testGradeAGreaterThan85" classname="StudentGradeTest" time="0.0"/>
+    <testcase name="testGradeFGreaterThan0" classname="StudentGradeTest" time="0.001"/>
+  </testsuite>
+</testrun>

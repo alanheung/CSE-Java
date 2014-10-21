@@ -1,0 +1,16 @@
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+
+public class TaxCalcTest {
+	@Test
+	public void testIncomeIsGreaterThan100000() {
+		// MyClass is tested
+		TaxCalc tester = new TaxCalc();
+
+		// Tests
+		assertEquals("total", 100000, tester.getTax("M",100000),0.001);
+
+		assertEquals("total", 150000, tester.getTax("S",150000),0.001);
+	}
+
+}

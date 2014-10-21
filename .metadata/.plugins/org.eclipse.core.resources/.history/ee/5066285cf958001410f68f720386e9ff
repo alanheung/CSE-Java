@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class Assessment1 {
+	static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		number1();
+	}
+	public static void number1(){
+		
+	}
+}

@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Assessment1 {
+	static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		number1();
+		//number2();
+		//number3();
+		//number4();
+	}
+	public static void number1(){
+		System.out.print("Please enter a shipping method (UPS/FEDEX)");
+		String shippingMethod = sc.next();
+		if(shippingMethod = "UPS"||)
+	}
+//	public static void number4(){
+//		int total = 0;
+//		for(int i=50;i<5;i++){
+//			System.out.print(i);
+////			if(i)
+//		}
+//	}
+}

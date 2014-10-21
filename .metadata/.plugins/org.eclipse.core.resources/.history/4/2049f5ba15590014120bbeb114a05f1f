@@ -1,0 +1,13 @@
+
+public class Bank {
+	public static void main(String[] args) {
+		Customer joe = new Customer();
+		joe.setName("Joe");
+		joe.setAccountNo(555789);
+		joe.setBalance(5000.00);
+		System.out.println(joe.getName() +"'s account is "+ joe.getAccountNo());
+		Customer alan = new Customer("alan", 54591,2000.00);
+		System.out.println(alan);
+
+	}
+}

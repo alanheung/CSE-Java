@@ -1,0 +1,8 @@
+
+public class Bank {
+	public static void main(String[] args) {
+		Customer alan = new Customer("alan", 54591,2000.00);
+		System.out.println(alan);
+
+	}
+}
