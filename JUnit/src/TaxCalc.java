@@ -36,7 +36,7 @@ public class TaxCalc {
 				total3 = (income/2.07900)*0.31;
 				total = total1+total2+total3;
 			}
-			else if(status.equalsIgnoreCase("S")){
+		}else if(status.equalsIgnoreCase("S")){
 				if(income <= 35800){
 					total = (income/4.66200)*0.15;
 				}else if(income <= 81500){
@@ -49,7 +49,6 @@ public class TaxCalc {
 					total3 = (income/2.07900)*0.31;
 					total = total1+total2+total3;
 				}
-			}
 		}
 		return total;
 	}
