@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="41" version="2.0">
+<workbench progressCount="86" version="2.0">
 <workbenchAdvisor/>
-<window height="860" width="800" x="800" y="0">
+<window height="860" width="800" x="0" y="0">
 <fastViewData fastViewLocation="1024">
 <orientation position="512" view="org.eclipse.jdt.junit.ResultView"/>
 <orientation position="512" view="org.springframework.ide.eclipse.aop.ui.navigator.aopReferenceModelNavigator"/>
@@ -51,35 +51,25 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
-<part id="4"/>
-<part id="5"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DiscountCalculator.java" partName="DiscountCalculator.java" path="C:/Users/A00226316/Java/JUnit/src/DiscountCalculator.java" title="DiscountCalculator.java" tooltip="JUnit/src/DiscountCalculator.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JUnit/src/DiscountCalculator.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="764" selectionTopPixel="8"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Bank.java" partName="Bank.java" path="C:/Users/A00226316/Java/Week06/src/Bank.java" title="Bank.java" tooltip="Week06/src/Bank.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Week06/src/Bank.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="59" selectionOffset="349" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DiscountCalculatorTest.java" partName="DiscountCalculatorTest.java" path="C:/Users/A00226316/Java/JUnit/src/DiscountCalculatorTest.java" title="DiscountCalculatorTest.java" tooltip="JUnit/src/DiscountCalculatorTest.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JUnit/src/DiscountCalculatorTest.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Customer.java" partName="Customer.java" path="C:/Users/A00226316/Java/Week06/src/Customer.java" title="Customer.java" tooltip="Week06/src/Customer.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Week06/src/Customer.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="647" selectionTopPixel="135"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StudentGrade.java" partName="StudentGrade.java" path="C:/Users/A00226316/Java/JUnit/src/StudentGrade.java" title="StudentGrade.java" tooltip="JUnit/src/StudentGrade.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JUnit/src/StudentGrade.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="295" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BiscuitFactory.java" partName="BiscuitFactory.java" path="C:/Users/A00226316/Java/Week06/src/BiscuitFactory.java" title="BiscuitFactory.java" tooltip="Week06/src/BiscuitFactory.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Week06/src/BiscuitFactory.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="653" selectionTopPixel="428"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StudentGradeTest.java" partName="StudentGradeTest.java" path="C:/Users/A00226316/Java/JUnit/src/StudentGradeTest.java" title="StudentGradeTest.java" tooltip="JUnit/src/StudentGradeTest.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JUnit/src/StudentGradeTest.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="291" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TaxCalc.java" partName="TaxCalc.java" path="C:/Users/A00226316/Java/JUnit/src/TaxCalc.java" title="TaxCalc.java" tooltip="JUnit/src/TaxCalc.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JUnit/src/TaxCalc.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="568" selectionTopPixel="24"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TaxCalcTest.java" partName="TaxCalcTest.java" path="C:/Users/A00226316/Java/JUnit/src/TaxCalcTest.java" title="TaxCalcTest.java" tooltip="JUnit/src/TaxCalcTest.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JUnit/src/TaxCalcTest.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="370" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Biscuit.java" partName="Biscuit.java" path="C:/Users/A00226316/Java/Week06/src/Biscuit.java" title="Biscuit.java" tooltip="Week06/src/Biscuit.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Week06/src/Biscuit.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="17" selectionOffset="386" selectionTopPixel="38"/>
 </editor>
 </editors>
 <views>
@@ -97,11 +87,11 @@
 <viewState/>
 </view>
 <view id="diagramTable" partName="Diagrams"/>
-<view id="org.springframework.ide.eclipse.ui.navigator.springExplorer" partName="Spring Explorer">
-<viewState CommonNavigator.LINKING_ENABLED="0" org.springframework.ide.eclipse.ui.navigator.workingsets.showTopLevelWorkingSets="0"/>
-</view>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="org.springframework.ide.eclipse.ui.navigator.springExplorer" partName="Spring Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" org.springframework.ide.eclipse.ui.navigator.workingsets.showTopLevelWorkingSets="0"/>
 </view>
 <view id="org.eclipse.ui.views.AllMarkersView" partName="Markers">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.allSeverityField" categoryGroup="org.eclipse.ui.ide.type" markerContentGenerator="org.eclipse.ui.ide.allMarkersGenerator" partName="Markers">
@@ -114,14 +104,15 @@
 </viewState>
 </view>
 <view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" partName="Snippets"/>
-<view id="org.springframework.ide.eclipse.aop.ui.navigator.aopReferenceModelNavigator" partName="Beans Cross References"/>
 <view id="org.eclipse.ui.views.PropertySheet" partName="Properties"/>
+<view id="org.springframework.ide.eclipse.aop.ui.navigator.aopReferenceModelNavigator" partName="Beans Cross References"/>
 <view id="org.eclipse.contribution.xref.ui.views.XReferenceView" partName="Cross References"/>
+<view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" partName="Data Source Explorer"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Warnings"/>
-<category IMemento.internal.id="Warnings (58 items)"/>
+<category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -131,7 +122,6 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
 </view>
-<view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" partName="Data Source Explorer"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
 <customFilters userDefinedPatternsEnabled="false">
@@ -200,11 +190,11 @@
 <view id="com.mountainminds.eclemma.ui.CoverageView" partName="Coverage">
 <viewState column0="300" column1="80" column2="120" column3="120" column4="120" counters="INSTRUCTION" hideunusedelements="false" linked="false" reversesort="true" roottype="GROUP" sortcolumn="3"/>
 </view>
-<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc">
-<viewState/>
-</view>
 <view id="org.eclipse.wst.server.ui.ServersView" partName="Servers">
 <viewState CommonNavigator.LINKING_ENABLED="0"/>
+</view>
+<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc">
+<viewState/>
 </view>
 </views>
 <perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
@@ -366,7 +356,7 @@
 </mainWindow>
 </layout>
 </perspective>
-<perspective editorAreaTrimState="1" editorAreaVisible="1" fixed="0" version="0.016">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="com.springsource.sts.ide.help.actionSet"/>
 <alwaysOnActionSet id="com.springsource.sts.ide.ui.actionSet.workbench"/>
@@ -477,61 +467,33 @@
 <perspective_action id="org.jboss.tools.jst.web.ui.WebDevelopmentPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<fastViewBars>
-<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@1583983" orientation="256" selectedTabId="com.mountainminds.eclemma.ui.CoverageView" style="1">
-<fastViews>
-<view id="com.zink.fly.buzz.views.FlyBuzzView" ratio="0.3"/>
-<view id="com.mountainminds.eclemma.ui.CoverageView" ratio="0.29985008"/>
-</fastViews>
-</fastViewBar>
-<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@204316" orientation="512" selectedTabId="org.eclipse.mylyn.tasks.ui.views.tasks" style="1">
-<fastViews>
-<view id="org.eclipse.mylyn.tasks.ui.views.tasks" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@1468cd" orientation="256" selectedTabId="org.springframework.ide.eclipse.ui.navigator.springExplorer" style="1">
-<fastViews>
-<view id="org.springframework.ide.eclipse.ui.navigator.springExplorer" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-<fastViewBar fastViewLocation="16384" id="org.eclipse.ui.internal.ViewStack@a2c462" orientation="512" selectedTabId="org.eclipse.egit.ui.RepositoriesView" style="1">
-<fastViews>
-<view id="org.eclipse.egit.ui.RepositoriesView" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="1">
-<fastViews>
-<view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
-<view id="org.eclipse.jdt.ui.JavadocView" ratio="0.3"/>
-<view id="org.eclipse.jdt.ui.SourceView" ratio="0.3"/>
-<view id="diagramTable" ratio="0.3"/>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.29985008"/>
-</fastViews>
-</fastViewBar>
-<fastViewBar fastViewLocation="16384" id="left" orientation="512" selectedTabId="org.eclipse.jdt.junit.ResultView" style="1">
-<fastViews>
-<view id="org.eclipse.jdt.ui.PackageExplorer" ratio="0.3"/>
-<view id="org.eclipse.jdt.junit.ResultView" ratio="0.39889196"/>
-</fastViews>
-</fastViewBar>
-<fastViewBar fastViewLocation="131072" id="right" orientation="256" selectedTabId="org.eclipse.ui.views.ContentOutline" style="1">
-<fastViews>
-<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-</fastViewBars>
+<view id="org.eclipse.jdt.ui.PackageExplorer"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.jdt.ui.JavadocView"/>
+<view id="org.eclipse.jdt.ui.SourceView"/>
+<view id="diagramTable"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="com.zink.fly.buzz.views.FlyBuzzView"/>
+<view id="com.mountainminds.eclemma.ui.CoverageView"/>
+<view id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.springframework.ide.eclipse.ui.navigator.springExplorer"/>
+<view id="org.eclipse.egit.ui.RepositoriesView"/>
+<fastViewBars/>
 <layout>
 <mainWindow>
 <info folder="true" part="left">
-<folder appearance="2" expanded="0">
-<page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
+<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
 <page content="org.eclipse.jdt.junit.ResultView" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.wb.core.StructureView" label="LabelNotFound"/>
 <page content="org.eclipse.wb.core.PaletteView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 <info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1194" ratioRight="398" relationship="2" relative="left">
@@ -543,53 +505,70 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.2626132" ratioLeft="203" ratioRight="570" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.7496689" ratioLeft="566" ratioRight="189" relationship="4" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="0">
-<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
-<page content="org.eclipse.jdt.ui.JavadocView" label="LabelNotFound"/>
-<page content="org.eclipse.jdt.ui.SourceView" label="LabelNotFound"/>
-<page content="diagramTable" label="LabelNotFound"/>
-<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
+<page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
+<page content="diagramTable" label="Diagrams"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
 <page content="com.google.gwt.eclipse.DevModeView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+</presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1583983" ratio="0.5" ratioLeft="597" ratioRight="597" relationship="2" relative="bottom">
-<folder appearance="2" expanded="0">
-<page content="com.zink.fly.buzz.views.FlyBuzzView" label="LabelNotFound"/>
-<page content="com.mountainminds.eclemma.ui.CoverageView" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1583983" ratio="0.5314534" ratioLeft="735" ratioRight="648" relationship="2" relative="bottom">
+<folder activePageID="com.mountainminds.eclemma.ui.CoverageView" appearance="2" expanded="2">
+<page content="com.zink.fly.buzz.views.FlyBuzzView" label="Fly Buzz Statistics"/>
+<page content="com.mountainminds.eclemma.ui.CoverageView" label="Coverage"/>
 <page content="org.eclipse.pde.runtime.LogView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@204316" ratio="0.5767196" ratioLeft="327" ratioRight="240" relationship="2" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="0">
-<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<folder activePageID="org.eclipse.mylyn.tasks.ui.views.tasks" appearance="2" expanded="2">
+<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="Task List"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 <info part="org.eclipse.contribution.xref.ui.views.XReferenceView" ratio="0.59893996" ratioLeft="339" ratioRight="227" relationship="4" relative="org.eclipse.ui.internal.ViewStack@204316"/>
 <info folder="true" part="right" ratio="0.5" ratioLeft="283" ratioRight="283" relationship="4" relative="org.eclipse.ui.internal.ViewStack@204316">
-<folder appearance="2" expanded="0">
-<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 <info part="org.springframework.ide.eclipse.aop.ui.navigator.aopReferenceModelNavigator" ratio="0.49823323" ratioLeft="141" ratioRight="142" relationship="4" relative="right"/>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@1468cd" ratio="0.49823323" ratioLeft="141" ratioRight="142" relationship="4" relative="right">
-<folder appearance="2" expanded="0">
-<page content="org.springframework.ide.eclipse.ui.navigator.springExplorer" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<folder activePageID="org.springframework.ide.eclipse.ui.navigator.springExplorer" appearance="2" expanded="2">
+<page content="org.springframework.ide.eclipse.ui.navigator.springExplorer" label="Spring Explorer"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@a2c462" ratio="0.6" ratioLeft="453" ratioRight="302" relationship="4" relative="left">
-<folder appearance="2" expanded="0">
-<page content="org.eclipse.egit.ui.RepositoriesView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<folder activePageID="org.eclipse.egit.ui.RepositoriesView" appearance="2" expanded="2">
+<page content="org.eclipse.egit.ui.RepositoriesView" label="Git Repositories"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 </mainWindow>
@@ -758,163 +737,159 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JUnit/src/DiscountCalculator.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JUnit/src/DiscountCalculatorTest.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JUnit/src/TaxCalcTest.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JUnit/src/TaxCalc.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JUnit/src/StudentGradeTest.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JUnit/src/StudentGrade.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/IfExercises/src/IfExercises.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Week06/src/BiscuitFactory.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Week06/src/Biscuit.java"/>
+<editor factoryID="com.springsource.sts.ide.ui.dashboard.elementFactory" id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" openDashboard="true"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Week06/src/BiscuitFactory.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Week06/src/DateFormatExample.java"/>
 </editors>
-<item historyLabel="StudentGradeTest.java" index="4">
-<position info="not_deleted" x="291" y="0"/>
+<item historyLabel="Biscuit.java" index="1">
+<position info="not_deleted" x="380" y="0"/>
 </item>
-<item historyLabel="TaxCalcTest.java" index="2">
-<position info="not_deleted" x="358" y="0"/>
-</item>
-<item historyLabel="TaxCalc.java" index="3">
-<position info="not_deleted" x="906" y="0"/>
-</item>
-<item historyLabel="TaxCalcTest.java" index="2">
-<position info="not_deleted" x="351" y="0"/>
-</item>
-<item historyLabel="DiscountCalculatorTest.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="StudentGrade.java" index="5">
-<position info="not_deleted" x="295" y="0"/>
-</item>
-<item historyLabel="StudentGradeTest.java" index="4">
-<position info="not_deleted" x="291" y="0"/>
-</item>
-<item historyLabel="TaxCalcTest.java" index="2">
-<position info="not_deleted" x="311" y="0"/>
-</item>
-<item historyLabel="DiscountCalculatorTest.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="TaxCalcTest.java" index="2">
-<position info="not_deleted" x="250" y="0"/>
-</item>
-<item historyLabel="TaxCalc.java" index="3">
-<position info="not_deleted" x="545" y="0"/>
-</item>
-<item historyLabel="TaxCalcTest.java" index="2">
-<position info="not_deleted" x="311" y="0"/>
-</item>
-<item historyLabel="TaxCalc.java" index="3">
-<position info="not_deleted" x="1234" y="0"/>
-</item>
-<item historyLabel="DiscountCalculatorTest.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="DiscountCalculator.java" index="0">
-<position info="not_deleted" x="764" y="0"/>
-</item>
-<item historyLabel="DiscountCalculatorTest.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="TaxCalcTest.java" index="2">
-<position info="not_deleted" x="251" y="0"/>
-</item>
-<item historyLabel="TaxCalc.java" index="3">
-<position info="not_deleted" x="1372" y="0"/>
-</item>
-<item historyLabel="TaxCalcTest.java" index="2">
-<position info="not_deleted" x="150" y="0"/>
-</item>
-<item historyLabel="TaxCalc.java" index="3">
-<position info="not_deleted" x="568" y="0"/>
-</item>
-<item historyLabel="TaxCalcTest.java" index="2">
-<position info="not_deleted" x="150" y="0"/>
-</item>
-<item historyLabel="TaxCalc.java" index="3">
-<position info="not_deleted" x="0" y="1577"/>
-</item>
-<item historyLabel="IfExercises.java" index="6">
-<position info="not_deleted" x="10911" y="0"/>
-</item>
-<item historyLabel="IfExercises.java" index="6">
-<position info="not_deleted" x="409" y="0"/>
-</item>
-<item historyLabel="IfExercises.java" index="6">
-<position info="not_deleted" x="1001" y="0"/>
-</item>
-<item historyLabel="TaxCalc.java" index="3">
-<position info="not_deleted" x="876" y="0"/>
-</item>
-<item historyLabel="TaxCalcTest.java" index="2">
-<position info="not_deleted" x="150" y="0"/>
-</item>
-<item historyLabel="TaxCalc.java" index="3">
-<position info="not_deleted" x="1303" y="0"/>
-</item>
-<item historyLabel="TaxCalcTest.java" index="2">
-<position info="not_deleted" x="150" y="0"/>
-</item>
-<item historyLabel="TaxCalc.java" index="3">
-<position info="not_deleted" x="1303" y="0"/>
-</item>
-<item historyLabel="TaxCalcTest.java" index="2">
-<position info="not_deleted" x="454" y="0"/>
-</item>
-<item historyLabel="TaxCalc.java" index="3">
-<position info="not_deleted" x="876" y="0"/>
-</item>
-<item historyLabel="TaxCalcTest.java" index="2">
-<position info="not_deleted" x="120" y="0"/>
-</item>
-<item historyLabel="DiscountCalculatorTest.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="TaxCalcTest.java" index="2">
-<position info="not_deleted" x="120" y="0"/>
-</item>
-<item historyLabel="TaxCalcTest.java" index="2">
+<item historyLabel="BiscuitFactory.java" index="0">
 <position/>
 </item>
-<item historyLabel="TaxCalcTest.java" index="2">
+<item historyLabel="Biscuit.java" index="1">
+<position info="not_deleted" x="450" y="0"/>
+</item>
+<item historyLabel="BiscuitFactory.java" index="0">
+<position info="not_deleted" x="1145" y="0"/>
+</item>
+<item historyLabel="Biscuit.java" index="1">
+<position info="not_deleted" x="450" y="0"/>
+</item>
+<item historyLabel="BiscuitFactory.java" index="0">
 <position/>
 </item>
-<item historyLabel="TaxCalcTest.java" index="2">
-<position info="not_deleted" x="419" y="0"/>
+<item historyLabel="Biscuit.java" index="1">
+<position info="not_deleted" x="508" y="0"/>
 </item>
-<item historyLabel="TaxCalc.java" index="3">
-<position info="not_deleted" x="705" y="0"/>
+<item historyLabel="BiscuitFactory.java" index="0">
+<position/>
 </item>
-<item historyLabel="TaxCalcTest.java" index="2">
-<position info="not_deleted" x="320" y="0"/>
+<item historyLabel="BiscuitFactory.java" index="0">
+<position info="not_deleted" x="1324" y="0"/>
 </item>
-<item historyLabel="TaxCalc.java" index="3">
-<position info="not_deleted" x="568" y="0"/>
+<item historyLabel="BiscuitFactory.java" index="0">
+<position/>
 </item>
-<item historyLabel="TaxCalcTest.java" index="2">
-<position info="not_deleted" x="320" y="0"/>
+<item historyLabel="Biscuit.java" index="1">
+<position info="not_deleted" x="508" y="0"/>
 </item>
-<item historyLabel="TaxCalc.java" index="3">
-<position info="not_deleted" x="568" y="0"/>
+<item historyLabel="BiscuitFactory.java" index="0">
+<position/>
 </item>
-<item historyLabel="TaxCalcTest.java" index="2">
-<position info="not_deleted" x="262" y="0"/>
+<item historyLabel="Biscuit.java" index="1">
+<position info="not_deleted" x="508" y="0"/>
 </item>
-<item historyLabel="TaxCalc.java" index="3">
-<position info="not_deleted" x="568" y="0"/>
+<item historyLabel="BiscuitFactory.java" index="0">
+<position info="not_deleted" x="1152" y="0"/>
 </item>
-<item historyLabel="TaxCalcTest.java" index="2">
-<position info="not_deleted" x="262" y="0"/>
+<item historyLabel="Biscuit.java" index="1">
+<position info="not_deleted" x="508" y="0"/>
 </item>
-<item historyLabel="TaxCalcTest.java" index="2">
-<position info="not_deleted" x="319" y="0"/>
+<item historyLabel="BiscuitFactory.java" index="0">
+<position info="not_deleted" x="1062" y="0"/>
 </item>
-<item historyLabel="TaxCalc.java" index="3">
-<position info="not_deleted" x="568" y="0"/>
+<item historyLabel="Biscuit.java" index="1">
+<position info="not_deleted" x="508" y="0"/>
 </item>
-<item historyLabel="TaxCalcTest.java" index="2">
-<position info="not_deleted" x="319" y="0"/>
+<item historyLabel="Biscuit.java" index="1">
+<position info="not_deleted" x="1680" y="0"/>
 </item>
-<item active="true" historyLabel="TaxCalcTest.java" index="2">
-<position info="not_deleted" x="317" y="0"/>
+<item historyLabel="Biscuit.java" index="1">
+<position info="not_deleted" x="1680" y="0"/>
+</item>
+<item historyLabel="Dashboard" index="2"/>
+<item historyLabel="Biscuit.java" index="1">
+<position info="not_deleted" x="1687" y="0"/>
+</item>
+<item historyLabel="BiscuitFactory.java" index="3">
+<position info="not_deleted" x="1089" y="0"/>
+</item>
+<item historyLabel="Biscuit.java" index="1">
+<position info="not_deleted" x="1348" y="0"/>
+</item>
+<item historyLabel="BiscuitFactory.java" index="3">
+<position info="not_deleted" x="1089" y="0"/>
+</item>
+<item historyLabel="BiscuitFactory.java" index="3">
+<position info="not_deleted" x="1017" y="0"/>
+</item>
+<item historyLabel="BiscuitFactory.java" index="3">
+<position/>
+</item>
+<item historyLabel="Biscuit.java" index="1">
+<position info="not_deleted" x="498" y="0"/>
+</item>
+<item historyLabel="BiscuitFactory.java" index="3">
+<position/>
+</item>
+<item historyLabel="Biscuit.java" index="1">
+<position info="not_deleted" x="498" y="0"/>
+</item>
+<item historyLabel="BiscuitFactory.java" index="3">
+<position info="not_deleted" x="1056" y="0"/>
+</item>
+<item historyLabel="Biscuit.java" index="1">
+<position info="not_deleted" x="482" y="0"/>
+</item>
+<item historyLabel="DateFormatExample.java" index="4">
+<position info="not_deleted" x="564" y="0"/>
+</item>
+<item historyLabel="Biscuit.java" index="1">
+<position info="not_deleted" x="301" y="6"/>
+</item>
+<item historyLabel="BiscuitFactory.java" index="3">
+<position info="not_deleted" x="1056" y="0"/>
+</item>
+<item historyLabel="DateFormatExample.java" index="4">
+<position info="not_deleted" x="564" y="0"/>
+</item>
+<item historyLabel="BiscuitFactory.java" index="3">
+<position info="not_deleted" x="1548" y="0"/>
+</item>
+<item historyLabel="Biscuit.java" index="1">
+<position info="not_deleted" x="301" y="6"/>
+</item>
+<item historyLabel="DateFormatExample.java" index="4">
+<position info="not_deleted" x="564" y="0"/>
+</item>
+<item historyLabel="Biscuit.java" index="1">
+<position info="not_deleted" x="301" y="6"/>
+</item>
+<item historyLabel="BiscuitFactory.java" index="3">
+<position info="not_deleted" x="1148" y="4"/>
+</item>
+<item historyLabel="DateFormatExample.java" index="4">
+<position info="not_deleted" x="564" y="0"/>
+</item>
+<item historyLabel="Biscuit.java" index="1">
+<position info="not_deleted" x="633" y="14"/>
+</item>
+<item historyLabel="DateFormatExample.java" index="4">
+<position info="not_deleted" x="564" y="0"/>
+</item>
+<item historyLabel="BiscuitFactory.java" index="3">
+<position info="not_deleted" x="1148" y="4"/>
+</item>
+<item historyLabel="DateFormatExample.java" index="4">
+<position info="not_deleted" x="564" y="0"/>
+</item>
+<item historyLabel="Biscuit.java" index="1">
+<position info="not_deleted" x="386" y="17"/>
+</item>
+<item historyLabel="BiscuitFactory.java" index="3">
+<position info="not_deleted" x="1148" y="4"/>
+</item>
+<item historyLabel="BiscuitFactory.java" index="3">
+<position info="not_deleted" x="1589" y="0"/>
+</item>
+<item historyLabel="DateFormatExample.java" index="4">
+<position info="not_deleted" x="564" y="0"/>
+</item>
+<item active="true" historyLabel="BiscuitFactory.java" index="3">
+<position info="not_deleted" x="1589" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -946,6 +921,30 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DateFormatExample.java" tooltip="Week06/src/DateFormatExample.java">
+<persistable path="/Week06/src/DateFormatExample.java"/>
+</file>
+<file factoryID="com.springsource.sts.ide.ui.dashboard.elementFactory" id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" name="Dashboard" tooltip="Dashboard">
+<persistable openDashboard="true"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GradeConverter.java" tooltip="ProjectTwo/src/GradeConverter.java">
+<persistable path="/ProjectTwo/src/GradeConverter.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Biscuit.java" tooltip="Week06/src/Biscuit.java">
+<persistable path="/Week06/src/Biscuit.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BiscuitFactory.java" tooltip="Week06/src/BiscuitFactory.java">
+<persistable path="/Week06/src/BiscuitFactory.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Family.java" tooltip="Week06/src/Family.java">
+<persistable path="/Week06/src/Family.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Customer.java" tooltip="Week06/src/Customer.java">
+<persistable path="/Week06/src/Customer.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Bank.java" tooltip="Week06/src/Bank.java">
+<persistable path="/Week06/src/Bank.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TaxCalcTest.java" tooltip="JUnit/src/TaxCalcTest.java">
 <persistable path="/JUnit/src/TaxCalcTest.java"/>
 </file>
@@ -963,30 +962,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DiscountCalculatorTest.java" tooltip="JUnit/src/DiscountCalculatorTest.java">
 <persistable path="/JUnit/src/DiscountCalculatorTest.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DiscountCalculator.java" tooltip="JUnit/src/DiscountCalculator.java">
-<persistable path="/JUnit/src/DiscountCalculator.java"/>
-</file>
-<file factoryID="com.springsource.sts.ide.ui.dashboard.elementFactory" id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" name="Dashboard" tooltip="Dashboard">
-<persistable openDashboard="true"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Customer.java" tooltip="Week06/src/Customer.java">
-<persistable path="/Week06/src/Customer.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Bank.java" tooltip="Week06/src/Bank.java">
-<persistable path="/Week06/src/Bank.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Assessment1Solution.java" tooltip="Assessment1/src/Assessment1Solution.java">
-<persistable path="/Assessment1/src/Assessment1Solution.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Family.java" tooltip="Week06/src/Family.java">
-<persistable path="/Week06/src/Family.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AssignmentTests.java" tooltip="Week02/src/AssignmentTests.java">
-<persistable path="/Week02/src/AssignmentTests.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AlgebraicExpression.java" tooltip="Week02/src/AlgebraicExpression.java">
-<persistable path="/Week02/src/AlgebraicExpression.java"/>
 </file>
 </mruList>
 </workbench>

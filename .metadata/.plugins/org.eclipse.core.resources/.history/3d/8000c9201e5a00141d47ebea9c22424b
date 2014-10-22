@@ -7,12 +7,12 @@ public class Biscuit {
 	private int theWeight;
 	private String theBrand;
 	private String theMaker;
-	private String bestBeforeDate;
+	private Date bestBeforeDate;
 	
-	public void bestBeforeDate(String bestBeforeDate){
+	public void bestBeforeDate(Date bestBeforeDate){
 		this.bestBeforeDate = bestBeforeDate;
 	}
-	public String getBestBeforeDate(){
+	public Date getBestBeforeDate(){
 		return bestBeforeDate;
 	}
 	public Biscuit(){
@@ -21,7 +21,7 @@ public class Biscuit {
 		theBrand="";
 		theMaker="";
 	}
-	public Biscuit(String theBrand, String theMaker, int theNumberOfBiscuits, int theWeight, String bestBeforeDate){
+	public Biscuit(String theBrand, String theMaker, int theNumberOfBiscuits, int theWeight, Date bestBeforeDate){
 		this.theNumberOfBiscuits = theNumberOfBiscuits;
 		this.theWeight = theWeight;
 		this.theBrand = theBrand;

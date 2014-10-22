@@ -39,7 +39,7 @@ public class BiscuitFactory {
 
 	public static String getBestBeforeDateAsString(){
 		System.out.print("Please enter the date (yyyy-MM-dd): ");
-		return sc.next();
+		return sc.nextLine();
 	}
 	public static String getBrand(){
 		System.out.print("Please enter the brand: ");
