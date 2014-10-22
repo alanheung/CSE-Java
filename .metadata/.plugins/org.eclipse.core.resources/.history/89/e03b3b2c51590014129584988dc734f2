@@ -1,0 +1,23 @@
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+
+public class TaxCalcTest {
+	@Test
+	public void testGetTax0() {
+		// MyClass is tested
+		TaxCalc tester = new TaxCalc();
+
+//		String expectedOutput ="RTAA";
+//		String actualOutput =
+//		tester.getTax();
+//		assertEquals(expectedOutput,actualOutput);
+		
+		// Tests
+		assertEquals("total", tester.getTax("M",100000),0.001);
+
+		assertEquals("total", tester.getTax("S",150000),0.001);
+		
+
+	}
+
+}

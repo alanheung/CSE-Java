@@ -15,7 +15,5 @@ public class Bank {
 		Customer david = new Customer("David", 555378, 90000.00);
 		System.out.println(david);
 		System.out.println("The count is "+Customer.getCount());
-
-
 	}
 }

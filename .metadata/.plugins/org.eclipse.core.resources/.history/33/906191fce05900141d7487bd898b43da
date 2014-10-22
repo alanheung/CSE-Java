@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class BiscuitFactory {
+	static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		Biscuit b1 = new Biscuit("Cream Crackers","Jacobs",20, 500);
+		System.out.println(b1);
+		
+		Biscuit b2 = new Biscuit();
+		b2.setTheBrand("Kylemore");
+		System.out.println(b2.getTheBrand());
+		
+		Biscuit b3 = new Biscuit("Jam","McVities",50, 750);
+		System.out.println(b3);
+		
+		System.out.print("Please enter number of biscuits: ");
+		int a = sc.nextInt();
+		b3.setTheNumberOfBiscuits(a);
+		System.out.println(b3);
+
+		
+	}
+}

@@ -1,0 +1,9 @@
+
+public class BiscuitFactory {
+	public static void main(String[] args) {
+
+		Biscuit b1 = new Biscuit("Cream Crackers","Jacobs",20, 500);
+		System.out.println(b1);
+
+	}
+}
