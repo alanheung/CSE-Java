@@ -1,0 +1,34 @@
+package com.ait.cat;
+import java.util.ArrayList;
+
+public class CatPound {
+		
+	private ArrayList<Cat> cat;
+		
+		public CatPound(){
+			cat = new ArrayList<Cat>();
+		}
+		public void addCat(Cat aCat){
+			cat.add(aCat);
+		}
+		public int getNumberOfCats(){
+			return cat.size();
+		}		
+//		public String removeCat()
+		public void removeCat(Cat aCat){
+			cat.remove(aCat);
+		}
+//		public boolean searchCatName()
+		public boolean searchCatName(String name){
+			boolean catFound=false;
+			for(Cat cat: cats){
+				if(cat.getName().equals(name)){
+					catFound=true;
+				}
+			}
+			return catFound;
+		}
+//		public String findCat()
+//		public int getNumberOlderThan()
+
+}

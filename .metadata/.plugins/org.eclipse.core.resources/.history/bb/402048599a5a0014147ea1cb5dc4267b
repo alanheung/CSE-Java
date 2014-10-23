@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+
+public class CatPound {
+	public static void main(String[] args) {
+		
+		private ArrayList<Cat> cat;
+		
+		public CatPound(){
+			cat = new ArrayList<cat>();
+		}
+		public void addCat{
+			
+		}
+//		public int getNumberOfCats
+//		public String removeCat
+//		public boolean searchCatName
+//		public String findCat
+//		public int getNumberOlderThan
+	}
+
+}

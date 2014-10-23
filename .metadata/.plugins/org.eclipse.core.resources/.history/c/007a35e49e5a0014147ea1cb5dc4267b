@@ -1,0 +1,25 @@
+package com.ait.cat;
+import static org.junit.Assert.*;
+import org.junit.Before;
+import org.junit.Test;
+
+public class CatPoundTest {
+
+	private CatPound myCat;
+
+	@Before
+	public void setUp(){
+		myCat = new CatPound();
+	}
+	@Test
+	public void testNoCatsInPound() {
+		assertEquals(0,myCat.getNumberOfCats());
+	}
+	@Test
+	public void testOneCatInPound() {
+		Cat missy = new Cat ("missy",4,"brown");
+		myCat.addCat(missy);
+		assertEquals(1,myCat.getNumberOfCats());
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.ait.cat;
+import static org.junit.Assert.*;
+import org.junit.Before;
+import org.junit.Test;
+
+public class CatPoundTest {
+
+	private CatPound myCatPound;
+
+	@Before
+	public void setUp(){
+		myCatPound = new CatPound();
+	}
+	@Test
+	public void testNoCatsInPound() {
+		assertEquals(0,myCatPound.getNumberOfCats());
+	}
+
+}

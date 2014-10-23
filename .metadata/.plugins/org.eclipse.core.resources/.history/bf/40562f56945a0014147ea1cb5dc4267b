@@ -1,0 +1,26 @@
+package com.ait.employees;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class EmployeeAppTest {
+
+	private EmployeeApp myEmployeeApp;
+	@Before
+	public void setUp(){
+		myEmployeeApp = new EmployeeApp();
+	}
+	@Test
+	public void testNoEmployeeInApp() {
+		assertEquals(0,myEmployeeApp.getNumberOfEmployees());
+	}
+	@Test
+	public void testOneEmployeeInApp() {
+		Employee john = new Employee ("John");
+		myEmployeeApp.addEmployee(john);
+		assertEquals(1,myEmployeeApp.getNumberOfEmployees());
+	}
+
+}

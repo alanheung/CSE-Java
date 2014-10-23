@@ -1,0 +1,22 @@
+package com.ait.cat;
+import java.util.ArrayList;
+
+public class CatPound {
+		
+	private ArrayList<Cat> cat;
+		
+		public CatPound(){
+			cat = new ArrayList<Cat>();
+		}
+		public void addCat(Cat aCat){
+			cat.add(aCat);
+		}
+		public int getNumberOfCats(){
+			return cat.size();
+		}		
+//		public String removeCat()
+//		public boolean searchCatName()
+//		public String findCat()
+//		public int getNumberOlderThan()
+
+}

@@ -1,0 +1,15 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import com.ait.cat.Cat;
+import com.ait.employees.Employee;
+
+public class CatTest {
+
+	@Test
+	public void testCatName() {
+		Cat kitty = new Cat("Kitty");
+		assertEquals("kitty", kitty.getName());
+	}
+}

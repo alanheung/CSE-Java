@@ -1,0 +1,16 @@
+package com.ait.employees;
+import java.util.ArrayList;
+
+public class EmployeeApp {
+	
+private ArrayList<Employee> employees;
+	
+	public EmployeeApp(){
+		employees = new ArrayList<Employee>();
+	}
+	
+	public int getNumberOfEmployees(){
+		return employees.size();
+	}
+
+}

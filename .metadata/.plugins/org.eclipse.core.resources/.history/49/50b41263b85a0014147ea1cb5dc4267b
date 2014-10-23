@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"> 
+
+<h:head>
+<title>First JSF Application</title>
+</h:head> 
+<body> 
+<h1>First JSF Example</h1>
+<h:form>Verify that you see a textfield and button below.<br/>
+Textfield: <h:inputText/><br/>
+Button<h:commandButton value="Click Me Nothing Will Happen"/>
+</h:form>
+</body> 
+</html>
