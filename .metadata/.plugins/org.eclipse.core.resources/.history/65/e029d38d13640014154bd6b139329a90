@@ -1,0 +1,28 @@
+
+public class CarExample {
+
+	public static void main(String[] args) {
+		//String name, String address, boolean drinkDrivingOffense, boolean caughtWithoutASeatbelt, boolean dangerousOvertaking,
+		//boolean usingMobileWhileDriving, boolean drivingDefectiveVehicle, boolean crossingContinuosWhiteLine, Car car)
+		Car bmw = new Car("BMW","325",1);
+		Person nidge = new Person("Nidge","Dublin",true, true, false, true, true, true, bmw);
+		
+		nidge.calculatePenaltyPoints();
+//		System.out.println(nidge);
+//		
+//		if(nidge.isDisqualified() == true){
+//			System.out.println("Nidge: disqualification status = "+nidge.isDisqualified());
+//		}
+		Car volvo = new Car("Volvo","S40",4);
+		Person george = new Person("George","Waterford", volvo);
+		
+		george.calculatePenaltyPoints();
+		System.out.println(george);
+
+		if(george.isDisqualified() == true){
+			System.out.println("George: disqualification status = "+george.isDisqualified());
+		}
+
+	}//
+
+}//

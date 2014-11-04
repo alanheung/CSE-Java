@@ -1,0 +1,12 @@
+
+public class CarExample {
+
+	public static void main(String[] args) {
+		//String name, String address, boolean drinkDrivingOffense, boolean caughtWithoutASeatbelt, boolean dangerousOvertaking,
+		//boolean usingMobileWhileDriving, boolean drivingDefectiveVehicle, boolean crossingContinuosWhiteLine, Car car)
+		Car BMW = new Car("BMW","325",1);
+		Person nidge = new Person("Nidge","Dublin",true, true, false, true, false, true, BMW);
+		System.out.println(nidge);
+	}//
+
+}//

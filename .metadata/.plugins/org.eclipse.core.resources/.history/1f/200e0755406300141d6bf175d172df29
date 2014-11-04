@@ -1,0 +1,18 @@
+
+public class BusDepot {
+	public static void main(String[] args) {
+		Bus b1 = new Bus();
+		b1.setTheDriversName("Bill");
+		b1.setTheNumberOfSeats(55);
+		b1.setTheMake("Toyota");
+		System.out.println("The driver's name is " +b1.getTheDriversName()+", the no. of seats are "+b1.getTheNumberOfSeats()+", the make is "+b1.getTheMake());
+		
+		Bus b2 = new Bus("John", 50, "Ford");
+		System.out.println(b2);
+		
+		Bus b3 = new Bus("Jim", 60, "Nissan");
+		System.out.println(b3);
+		
+		System.out.println("The number of buses " + b3.getCount());
+	}
+}

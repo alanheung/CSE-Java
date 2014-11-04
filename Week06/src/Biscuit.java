@@ -2,17 +2,19 @@ import java.util.Scanner;
 import java.util.Date;
 
 public class Biscuit {
-	static Scanner sc = new Scanner(System.in);
 	private int theNumberOfBiscuits;
 	private int theWeight;
 	private String theBrand;
 	private String theMaker;
-	private String bestBeforeDate;
+	private Date bestBeforeDate;
 	
-	public void bestBeforeDate(String bestBeforeDate){
+	public boolean isOutOFDate(Date today){
+		return today.after(bestBeforeDate);
+	}
+	public void bestBeforeDate(Date bestBeforeDate){
 		this.bestBeforeDate = bestBeforeDate;
 	}
-	public String getBestBeforeDate(){
+	public Date getBestBeforeDate(){
 		return bestBeforeDate;
 	}
 	public Biscuit(){
@@ -21,13 +23,14 @@ public class Biscuit {
 		theBrand="";
 		theMaker="";
 	}
-	public Biscuit(String theBrand, String theMaker, int theNumberOfBiscuits, int theWeight, String bestBeforeDate){
+	public Biscuit(String theBrand, String theMaker, int theNumberOfBiscuits, int theWeight, Date bestBeforeDate){
 		this.theNumberOfBiscuits = theNumberOfBiscuits;
 		this.theWeight = theWeight;
 		this.theBrand = theBrand;
 		this.theMaker = theMaker;
 		this.bestBeforeDate = bestBeforeDate;
 	}
+	
 	public int getTheNumberOfBiscuits() {
 		return theNumberOfBiscuits;
 	}
@@ -55,6 +58,6 @@ public class Biscuit {
 	@Override
 	public String toString(){
 		return 	"The brand is "+ getTheBrand() + ", the maker is "+ getTheMaker()
-				+", the number of biscuits is "+getTheNumberOfBiscuits()+", the weight is "+getTheWeight()+"g, the best date is "+ getBestBeforeDate( );
+				+", the number of biscuits is "+getTheNumberOfBiscuits()+", the weight is "+getTheWeight()+"g, the best date is "+ bestBeforeDate;
 	}
 }

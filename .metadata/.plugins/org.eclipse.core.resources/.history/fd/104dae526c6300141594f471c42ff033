@@ -1,0 +1,74 @@
+package com.ait.cat;
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class CatPoundTest {
+
+	private CatPound myCatPound;
+
+	@Before
+	public void setUp(){
+		myCatPound = new CatPound();
+	}
+	@Test
+	public void testNoCatsInPound() {
+		assertEquals(0,myCatPound.getNumberOfCats());
+	}
+	@Test
+	public void testOneCatInPound() {
+		Cat missy = new Cat ("Missy",4,"Brown");
+		myCatPound.addCat(missy);
+		assertEquals(1,myCatPound.getNumberOfCats());
+	}
+	@Test
+	public void testTwoCatInPound() {
+		Cat firstCat = new Cat ("Missy",4,"Brown");
+		Cat secondCat = new Cat ("Jo",4,"Black");
+		myCatPound.addCat(firstCat);
+		myCatPound.addCat(secondCat);
+		assertEquals(2,myCatPound.getNumberOfCats());
+	}
+	@Test
+	public void removeOneCatInPound() {
+		Cat missy = new Cat ("Missy",4,"Brown");
+		myCatPound.removeCat(missy);
+		assertEquals(0,myCatPound.getNumberOfCats());
+	}
+	@Test
+	public void testSearchCatName() {
+		Cat firstCat = new Cat ("Jesse",4,"Brown");
+		Cat secondCat = new Cat ("Jo",4,"Black");
+		myCatPound.addCat(firstCat);
+		assertTrue(myCatPound.searchCatName("Jesse"));
+		assertFalse(myCatPound.searchCatName("Jo"));
+	}
+	@Test
+	public void testIfPoundContainsCat() {
+		Cat firstCat = new Cat ("Jesse",4,"Brown");
+		Cat secondCat = new Cat ("Jo",4,"Black");
+		myCatPound.addCat(firstCat);
+		assertTrue(myCatPound.findCat(firstCat));
+		assertFalse(myCatPound.findCat(secondCat));
+	}
+	@Test
+	public void testCatRemovedFromPound() {
+		Cat firstCat = new Cat ("Missy",4,"Brown");
+		Cat secondCat = new Cat ("Jo",4,"Black");	
+		myCatPound.addCat(firstCat);
+		myCatPound.addCat(secondCat);
+		myCatPound.removeCat(firstCat);
+		assertFalse(myCatPound.findCat(firstCat));
+		assertTrue(myCatPound.findCat(secondCat));
+	}
+	@Test
+	public void testForNumCatsByOlderThan() {
+		Cat firstCat = new Cat ("Missy",4,"Brown");
+		Cat secondCat = new Cat ("Jo",4,"Black");	
+		myCatPound.addCat(firstCat);
+		myCatPound.addCat(secondCat);
+		assertEquals(1,myCatPound.getNumberOlderThan(4));
+	}
+	
+}

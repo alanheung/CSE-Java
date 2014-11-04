@@ -3,8 +3,57 @@
  <depends-on-projects/>
  <used-by-projects/>
  <paths>
+  <path value="C:/Users/A00226316/Java/libraries/JSF 2.0 (Mojarra 2.0.3-FCS)/mojarra-2.0.3-FCS/lib/jsf-impl.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/html_basic.tld" project="jsfFirst"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/jsf_core.tld" project="jsfFirst"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/mojarra_ext.taglib.xml" project="jsfFirst"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/mojarra_ext.tld" project="jsfFirst"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/composite.taglib.xml" project="jsfFirst"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/facelets_jsf_core.taglib.xml" project="jsfFirst"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/html_basic.taglib.xml" project="jsfFirst"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/jstl-core.taglib.xml" project="jsfFirst"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/jstl-fn.taglib.xml" project="jsfFirst"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/mojarra_ext.taglib.xml" project="jsfFirst"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/ui.taglib.xml" project="jsfFirst"/>
+    </library>
+   </libraries>
+  </path>
   <path value="C:/xampp/tomcat/lib/tomcat-i18n-fr.jar"/>
   <path value="C:/xampp/tomcat/lib/catalina.jar"/>
+  <path value="C:/Users/A00226316/Java/libraries/JSF 2.0 (Mojarra 2.0.3-FCS)/mojarra-2.0.3-FCS/lib/jsf-api.jar"/>
   <path value="C:/xampp/tomcat/lib/ecj-3.7.jar"/>
   <path value="C:/xampp/tomcat/lib/tomcat-i18n-ja.jar"/>
   <path value="C:/xampp/tomcat/lib/tomcat-api.jar"/>
@@ -17,8 +66,10 @@
   <path value="C:/xampp/tomcat/lib/catalina-tribes.jar"/>
   <path value="C:/xampp/tomcat/lib/catalina-ant.jar"/>
   <path value="C:/xampp/tomcat/lib/annotations-api.jar"/>
-  <path value="C:/xampp/tomcat/lib/tomcat-dbcp.jar"/>
   <path value="C:/xampp/tomcat/lib/jsp-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-dbcp.jar"/>
+  <path value="C:/xampp/tomcat/lib/servlet-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/ecj-3.6.jar"/>
   <path value="/jsfFirst/WebContent/WEB-INF/faces-config.xml">
    <libraries>
     <library class="faces-config">
@@ -27,8 +78,6 @@
     </library>
    </libraries>
   </path>
-  <path value="C:/xampp/tomcat/lib/ecj-3.6.jar"/>
-  <path value="C:/xampp/tomcat/lib/servlet-api.jar"/>
   <path value="C:/xampp/tomcat/lib/el-api.jar"/>
   <path value="C:/xampp/tomcat/lib/ecj-3.6.2.jar"/>
   <path value="C:/xampp/tomcat/lib/jasper-el.jar"/>
@@ -42,9 +91,9 @@
    <linked-el length="19" name="%0" offset="463" path="%3"/>
    <linked-el length="25" name="%4" offset="425" path="%5"/>
    <linked-el length="19" name="%6" offset="463" path="%3"/>
-   <linked-el length="19" name="%7" offset="463" path="%1"/>
-   <linked-el length="25" name="%7" offset="404" path="%2"/>
-   <linked-el length="25" name="%8" offset="425" path="%5"/>
+   <linked-el length="25" name="%7" offset="425" path="%5"/>
+   <linked-el length="19" name="%8" offset="463" path="%1"/>
+   <linked-el length="25" name="%8" offset="404" path="%2"/>
   </el>
  </validation>
  <aliases>
@@ -53,8 +102,8 @@
   <alias path="hellobean" value="%4"/>
   <alias path="/jsfFirst/WebContent/welcome.xhtml" value="%2"/>
   <alias path="helloBean.name" value="%6"/>
-  <alias path="hellobean.name" value="%8"/>
-  <alias path="/jsfFirst/src/com/ait/jsf/HelloBean.java" value="%7"/>
+  <alias path="/jsfFirst/src/com/ait/jsf/HelloBean.java" value="%8"/>
+  <alias path="hellobean.name" value="%7"/>
   <alias path="/jsfFirst/WebContent/WEB-INF/welcome.xhtml" value="%5"/>
   <alias path="/jsfFirst/WebContent/WEB-INF/hello.xhtml" value="%3"/>
  </aliases>

@@ -1,0 +1,58 @@
+package com.ait.cat;
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class CatPoundTest {
+
+	private CatPound myCat;
+
+	@Before
+	public void setUp(){
+		myCat = new CatPound();
+	}
+	@Test
+	public void testNoCatsInPound() {
+		assertEquals(0,myCat.getNumberOfCats());
+	}
+	@Test
+	public void testOneCatInPound() {
+		Cat missy = new Cat ("Missy",4,"brown");
+		myCat.addCat(missy);
+		assertEquals(1,myCat.getNumberOfCats());
+	}
+	@Test
+	public void testTwoCatInPound() {
+		Cat firstCat = new Cat ("Missy",4,"brown");
+		Cat secondCat = new Cat ("Jo",4,"brown");
+		myCat.addCat(firstCat);
+		myCat.addCat(secondCat);
+		assertEquals(2,myCat.getNumberOfCats());
+	}
+	@Test
+	public void removeOneCatInPound() {
+		Cat missy = new Cat ("Missy",4,"brown");
+		myCat.removeCat(missy);
+		assertEquals(0,myCat.getNumberOfCats());
+	}
+	@Test
+	public void testSearchCatName() {
+		Cat firstCat = new Cat ("Jesse",4,"brown");
+		Cat secondCat = new Cat ("Jo",4,"brown");
+		myCat.addCat(firstCat);
+		assertTrue(myCat.searchCatName("Jesse"));
+		assertFalse(myCat.searchCatName("Jo"));
+	}
+	public void testCatRemovedFromPound() {
+		Cat firstCat = new Cat ("Missy",4,"brown");
+		Cat secondCat = new Cat ("Jo",4,"brown");	
+		myCat.addCat(firstCat);
+		myCat.addCat(secondCat);
+		myCat.removeCat(firstCat);
+		assertFalse(myCat.findCat(firstCat));
+		assertTrue(myCat.findCat(secondCat));
+
+	}
+	
+}

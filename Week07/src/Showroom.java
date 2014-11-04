@@ -1,0 +1,23 @@
+
+public class Showroom {
+	public static void main(String[] args) {
+		Car c1 = new Car();
+		c1.setMake("Ford");
+		c1.setModel("Focus");
+		c1.setEngineSize(2.0);
+		c1.setAutomatic(false);
+		c1.setColour("Red");
+		System.out.println(c1);
+		
+		Car c2 = new Car("Toyota","Corolla",1.6, true, "Blue");
+		System.out.println(c2);
+		
+		Car c3 = new Car("Audi", "A4", 2.0, false, "Silver");
+		System.out.println(c3);
+		
+		Car c4 = new Car("Subaru", "Impreza", 2.4, false, "Black");
+		System.out.println(c4);
+
+		System.out.println("The number of cars = " + c4.getCount());
+	}//
+}//

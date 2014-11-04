@@ -1,0 +1,10 @@
+
+public class Person {
+	private String name;
+	private String address;
+	private boolean drinkDrivingOffense;
+	private boolean caughtWithoutASeatbelt;
+	private boolean dangerousOvertaking;
+	private boolean usingMobileWhileDriving;
+	private boolean drivingDefectiveVehicle;
+}

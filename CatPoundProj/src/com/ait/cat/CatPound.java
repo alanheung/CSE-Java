@@ -3,42 +3,39 @@ import java.util.ArrayList;
 
 public class CatPound {
 		
-	private ArrayList<Cat> cat;
+	private ArrayList<Cat> catCollection;
 		
 		public CatPound(){
-			cat = new ArrayList<Cat>();
+			catCollection = new ArrayList<Cat>();
 		}
 		public void addCat(Cat aCat){
-			cat.add(aCat);
+			catCollection.add(aCat);
 		}
 		public int getNumberOfCats(){
-			return cat.size();
-		}		
+			return catCollection.size();
+		}
+		public boolean findCat(Cat name){
+			return catCollection.contains(name);
+		}
 		public void removeCat(Cat aCat){
-			cat.remove(aCat);
+			catCollection.remove(aCat);
 		}
 		public boolean searchCatName(String name){
 			boolean catFound=false;
-			for(Cat theCat: cat){//		for(Employee employee :employees)
+			for(Cat theCat: catCollection){//		for(Employee employee :employees)
 				if(theCat.getName().equals(name)){
 					catFound=true;
 				}
 			}
 			return catFound;
 		}
-		
-		public boolean findCat(Cat name){
-			return cat.contains(name);
-		}
-		
-		public int getNumberOlderThan15(int a){
-			boolean oldCat=false;
-			int age =15;
-			for(Cat theCat: cat){
-				if(theCat.getAge()>=a){
-					oldCat=true;
+		public int getNumberOlderThan(int age){
+			int numberOlder=0;
+			for(Cat cat :catCollection){
+				if(cat.getAge()>age){
+					numberOlder++;
 				}
 			}
-			return a;
+			return numberOlder;
 		}
 }

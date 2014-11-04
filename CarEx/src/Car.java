@@ -1,0 +1,37 @@
+
+public class Car {
+	private String carModel;
+	private String carType;
+	private int ageOfCar;
+	
+	public Car(String carModel,String carType,int ageOfCar){
+		this.carModel = carModel;
+		this.carType = carType;
+		this.ageOfCar = ageOfCar;
+	}
+	public String getCarModel() {
+		return carModel;
+	}
+	public void setCarModel(String carModel) {
+		this.carModel = carModel;
+	}
+	public String getCarType() {
+		return carType;
+	}
+	public void setCarType(String carType) {
+		this.carType = carType;
+	}
+	public int getAgeOfCar() {
+		return ageOfCar;
+	}
+	public void setAgeOfCar(int ageOfCar) {
+		this.ageOfCar = ageOfCar;
+	}
+	@Override
+	public String toString(){
+		return "Model = " + carModel +
+				", Type = " + carType +
+				", Age = "+ ageOfCar;
+	}
+	
+}//

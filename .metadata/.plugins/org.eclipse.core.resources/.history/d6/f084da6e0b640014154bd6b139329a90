@@ -1,0 +1,9 @@
+
+public class CarExample {
+
+	public static void main(String[] args) {
+		Car BMW = new Car("BMW","325",1);
+		System.out.println(BMW);
+	}//
+
+}//

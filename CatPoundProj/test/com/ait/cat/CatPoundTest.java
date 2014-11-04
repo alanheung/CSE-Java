@@ -6,43 +6,69 @@ import org.junit.Test;
 
 public class CatPoundTest {
 
-	private CatPound myCat;
+	private CatPound myCatPound;
 
 	@Before
 	public void setUp(){
-		myCat = new CatPound();
+		myCatPound = new CatPound();
 	}
 	@Test
 	public void testNoCatsInPound() {
-		assertEquals(0,myCat.getNumberOfCats());
+		assertEquals(0,myCatPound.getNumberOfCats());
 	}
 	@Test
 	public void testOneCatInPound() {
-		Cat missy = new Cat ("missy",4,"brown");
-		myCat.addCat(missy);
-		assertEquals(1,myCat.getNumberOfCats());
+		Cat missy = new Cat ("Missy",4,"Brown");
+		myCatPound.addCat(missy);
+		assertEquals(1,myCatPound.getNumberOfCats());
+	}
+	@Test
+	public void testTwoCatInPound() {
+		Cat firstCat = new Cat ("Missy",4,"Brown");
+		Cat secondCat = new Cat ("Jo",5,"Black");
+		myCatPound.addCat(firstCat);
+		myCatPound.addCat(secondCat);
+		assertEquals(2,myCatPound.getNumberOfCats());
 	}
 	@Test
 	public void removeOneCatInPound() {
-		Cat missy = new Cat ("missy",4,"brown");
-		myCat.removeCat(missy);
-		assertEquals(0,myCat.getNumberOfCats());
+		Cat missy = new Cat ("Missy",5,"Brown");
+		myCatPound.removeCat(missy);
+		assertEquals(0,myCatPound.getNumberOfCats());
 	}
 	@Test
 	public void testSearchCatName() {
-		Cat firstCat = new Cat ("Jesse",4,"brown");
-		Cat secondCat = new Cat ("Jo",4,"brown");
-		myCat.addCat(firstCat);
-		assertTrue(myCat.searchCatName("Jesse"));
-		assertFalse(myCat.searchCatName("Jo"));
+		Cat firstCat = new Cat ("Jesse",4,"Brown");
+		Cat secondCat = new Cat ("Jo",5,"Black");
+		myCatPound.addCat(firstCat);
+		assertTrue(myCatPound.searchCatName("Jesse"));
+		assertFalse(myCatPound.searchCatName("Jo"));
 	}
-	public void testFindCat() {
-		Cat Cat1 = new Cat ("Jesse",4,"brown");
-		Cat Cat2 = new Cat ("Jo",4,"brown");
-		myCat.addCat(Cat1);
-		myCat.addCat(Cat2);
-		assertTrue(Cat1.findCat("Jesse"));
-		assertFalse(Cat2.findCat("Jo"));
+	@Test
+	public void testIfPoundContainsCat() {
+		Cat firstCat = new Cat ("Jesse",4,"Brown");
+		Cat secondCat = new Cat ("Jo",5,"Black");
+		myCatPound.addCat(firstCat);
+		assertTrue(myCatPound.findCat(firstCat));
+		assertFalse(myCatPound.findCat(secondCat));
 	}
-
+	@Test
+	public void testCatRemovedFromPound() {
+		Cat firstCat = new Cat ("Missy",4,"Brown");
+		Cat secondCat = new Cat ("Jo",5,"Black");	
+		myCatPound.addCat(firstCat);
+		myCatPound.addCat(secondCat);
+		myCatPound.removeCat(firstCat);
+		assertFalse(myCatPound.findCat(firstCat));
+		assertTrue(myCatPound.findCat(secondCat));
+	}
+	@Test
+	public void testForNumCatsByOlderThan() {
+		Cat firstCat = new Cat ("Missy",4,"Brown");
+		Cat secondCat = new Cat ("Jo",5,"Black");	
+		myCatPound.addCat(firstCat);
+		myCatPound.addCat(secondCat);
+		assertEquals(1,myCatPound.getNumberOlderThan(4));
+	}
+	
 }

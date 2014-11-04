@@ -1,0 +1,25 @@
+
+public class Person {
+	private String name;
+	private String address;
+	private boolean drinkDrivingOffense;
+	private boolean caughtWithoutASeatbelt;
+	private boolean dangerousOvertaking;
+	private boolean usingMobileWhileDriving;
+	private boolean drivingDefectiveVehicle;
+	private boolean crossingContinuosWhiteLine;
+	private Car car;
+	private int totalPenaltyPoints;
+	
+	public Person(String name, String address, Car car){
+		
+	}
+	public Person(String name, String address, boolean drinkDrivingOffense, boolean caughtWithoutASeatbelt, boolean dangerousOvertaking,
+			boolean usingMobileWhileDriving, boolean drivingDefectiveVehicle, boolean crossingContinuosWhiteLine, Car car){
+		
+	}
+	public void calculatePenaltyPoints(){
+		
+	}
+	
+}

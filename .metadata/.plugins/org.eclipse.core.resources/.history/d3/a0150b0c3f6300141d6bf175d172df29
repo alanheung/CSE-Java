@@ -1,0 +1,6 @@
+
+public class BusDepot {
+	public static void main(String[] args) {
+		Bus b1 = new Bus("John", 50, "Ford");
+	}
+}
