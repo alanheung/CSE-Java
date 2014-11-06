@@ -1,0 +1,32 @@
+package com.ait.movies;
+
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+
+public class MovieTest {
+//	private String name;
+//	private String title;
+//	private String genre;
+//	private String rating;
+//	private boolean onLoan;
+	@Test
+	public void testGetName() {
+		Movie mov1 = new Movie();
+		assertEquals("Psycho", mov1.getName());
+	}
+	@Test
+	public void testGetTitle() {
+		Movie mov1 = new Movie();
+		assertEquals("Psycho", mov1.getName());
+	}
+	@Test
+	public void testGetGenre() {
+		Movie mov1 = new Movie();
+		assertEquals("Horror", mov1.getName());
+	}
+	@Test
+	public void testGetRating() {
+		Movie mov1 = new Movie();
+		assertEquals("4*", mov1.getName());
+	}
+}

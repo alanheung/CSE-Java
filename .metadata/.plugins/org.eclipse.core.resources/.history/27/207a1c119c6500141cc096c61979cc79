@@ -1,0 +1,9 @@
+package com.ait.movies;
+
+public class MovieCatalogTest {
+	
+	public static void main(String[] args) {
+
+	}
+
+}

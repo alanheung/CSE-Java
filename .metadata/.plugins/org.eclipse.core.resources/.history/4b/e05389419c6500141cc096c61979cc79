@@ -1,0 +1,14 @@
+package com.ait.movies;
+
+import org.junit.Before;
+
+public class MovieCatalogTest {
+	
+	private MovieCatalog myMovieCatalog;
+
+	@Before
+	public void setUp(){
+		myMovieCatalog = new MovieCatalog();
+	}
+
+}

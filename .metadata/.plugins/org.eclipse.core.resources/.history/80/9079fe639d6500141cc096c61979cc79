@@ -1,0 +1,19 @@
+package com.ait.movies;
+
+import java.util.ArrayList;
+
+import com.ait.cat.Cat;
+
+public class MovieCatalog {
+	private ArrayList<Movie> movieCtlg;
+	
+	public MovieCatalog(){
+		movieCtlg = new ArrayList<Movie>();
+	}
+	public void addMovie(Movie aMovie){
+		movieCtlg.add(aMovie);
+	}
+	public int getNumberOfMovies(){
+		return movieCtlg.size();
+	}
+}

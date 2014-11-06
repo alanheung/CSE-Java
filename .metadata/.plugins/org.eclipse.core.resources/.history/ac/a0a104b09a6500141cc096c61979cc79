@@ -1,0 +1,13 @@
+package com.ait.movies;
+
+public class Movie {
+
+	private String name;
+	private String title;
+	private String genre;
+	private String rating;
+	private boolean onLoan;
+	
+
+	
+}

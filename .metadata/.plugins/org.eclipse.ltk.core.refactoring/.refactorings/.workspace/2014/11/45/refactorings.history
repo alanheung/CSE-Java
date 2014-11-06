@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;JsfExercises&apos; to &apos;JsfExercisesasdf&apos;" description="Rename resource &apos;JsfExercises&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/JsfExercises" name="JsfExercisesasdf" stamp="1415283339693" updateReferences="true"/>
+</session>

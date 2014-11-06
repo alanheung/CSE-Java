@@ -1,0 +1,13 @@
+package com.ait.movies;
+
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+
+public class MovieTest {
+
+	@Test
+	public void testGetName() {
+		Movie mov1 = new Movie();
+		assertEquals("Psycho", mov1.getName());
+	}
+}

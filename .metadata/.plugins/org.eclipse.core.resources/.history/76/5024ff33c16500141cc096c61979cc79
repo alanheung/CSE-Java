@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head></h:head>
+<body>
+	<h:form>
+	<h1>Survey</h1>
+		If you have a moment, we would appreciate it if you would fill out this survey. 
+		<h3>Your Information</h3>
+		
+		<label>First Name</label>
+		<h:inputText value="#{customerBean.firstName}"></h:inputText>
+		<br></br>
+		
+		<label>Last Name</label>
+		<h:inputText value="#{customerBean.lastName}"></h:inputText>
+		<br></br>
+		
+		<label>Email</label>
+		<h:inputText value="#{customerBean.email}"></h:inputText>
+		<br></br>
+
+		<h3>How did you hear about us?</h3>
+		<h:selectOneRadio value="#{user.hearAbout}">
+			<f:selectItem itemValue="Search Engine" itemLabel="Search Engine" />
+			<f:selectItem itemValue="Friend" itemLabel="Friend" />
+			<f:selectItem itemValue="Other" itemLabel="Other" />
+		</h:selectOneRadio>
+
+		<h3>Would you like to receive announcements about new products and special offers?</h3>
+		<h:selectBooleanCheckBox value="#{user.rememberMe}"/> Yes I would like to receive information about new products and special offers.
+		<br></br>
+		<label>Please contact me by </label>
+		<h:selectOneMenu value="#{customerBean.contactBy}">
+			<f:selectItem itemValue="email" itemLabel="email" />
+			<f:selectItem itemValue="post" itemLabel="post" />
+			<f:selectItem itemValue="both" itemLabel="both" />
+		</h:selectOneMenu>
+		<br></br>
+		<h:commandButton value="Submit Survey" action="survey"></h:commandButton>
+	</h:form>
+</body>
+</html>

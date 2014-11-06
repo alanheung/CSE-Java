@@ -1,0 +1,42 @@
+package com.ait.movies;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import com.ait.cat.Cat;
+
+public class MovieCatalogTest {
+	
+	private MovieCatalog myMovieCatalog;
+
+	@Before
+	public void setUp(){
+		myMovieCatalog = new MovieCatalog();
+	}
+	@Test
+	public void testNoMoviesInCatalog() {
+		assertEquals(0,myMovieCatalog.getNumberOfMovies());
+	}
+	@Test
+	public void testOneMovies() {
+		Movie mov1 = new Movie();
+		myMovieCatalog.addMovie(mov1);
+		assertEquals(1,myMovieCatalog.getNumberOfMovies());
+	}
+	@Test
+	public void testTwoMovies() {
+		Movie mov1 = new Movie();
+		Movie mov2 = new Movie();
+		myMovieCatalog.addMovie(mov1);
+		myMovieCatalog.addMovie(mov2);
+		assertEquals(2,myMovieCatalog.getNumberOfMovies());
+	}
+	@Test
+	public void removeOneMovieFromCatalog() {
+		Movie mov1 = new Movie();
+		myMovieCatalog.removeMovie(mov1);
+		assertEquals(0,myMovieCatalog.getNumberOfMovies());
+	}
+}//

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="C:/xampp/tomcat/lib/tomcat-i18n-fr.jar"/>
+  <path value="C:/xampp/tomcat/lib/catalina.jar"/>
+  <path value="C:/xampp/tomcat/lib/ecj-3.7.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-i18n-ja.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/catalina-ha.jar"/>
+  <path value="/JsfExercises/WebContent/WEB-INF/faces-config.xml">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/faces-config.xml" project="JsfExercises"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/xampp/tomcat/lib/tomcat-coyote.jar"/>
+  <path value="C:/xampp/tomcat/lib/jasper.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-i18n-es.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-jdbc.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-util.jar"/>
+  <path value="C:/xampp/tomcat/lib/catalina-tribes.jar"/>
+  <path value="C:/xampp/tomcat/lib/catalina-ant.jar"/>
+  <path value="C:/xampp/tomcat/lib/annotations-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-dbcp.jar"/>
+  <path value="C:/xampp/tomcat/lib/jsp-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/ecj-3.6.jar"/>
+  <path value="C:/xampp/tomcat/lib/servlet-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/el-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/ecj-3.6.2.jar"/>
+  <path value="C:/xampp/tomcat/lib/jasper-el.jar"/>
+ </paths>
+ <validation>
+  <core validator-id="jsf-verification"/>
+  <core validator-id="jboss.jsf.core"/>
+  <el>
+   <linked-el length="19" name="%0" offset="856" path="%1"/>
+   <linked-el length="52" name="%2" offset="520" path="%3"/>
+   <linked-el length="66" name="%4" offset="581" path="%3"/>
+   <linked-el length="35" name="%4" offset="476" path="%3"/>
+   <linked-el length="27" name="%4" offset="521" path="%1"/>
+   <linked-el length="42" name="%4" offset="425" path="%3"/>
+   <linked-el length="52" name="%4" offset="520" path="%3"/>
+   <linked-el length="23" name="%4" offset="736" path="%1"/>
+   <linked-el length="26" name="%4" offset="631" path="%1"/>
+   <linked-el length="58" name="%4" offset="656" path="%3"/>
+   <linked-el length="44" name="%4" offset="372" path="%3"/>
+   <linked-el length="20" name="%5" offset="746" path="%6"/>
+   <linked-el length="20" name="%5" offset="1231" path="%1"/>
+   <linked-el length="20" name="%7" offset="868" path="%6"/>
+   <linked-el length="58" name="%8" offset="656" path="%3"/>
+   <linked-el length="66" name="%9" offset="581" path="%3"/>
+   <linked-el length="35" name="%9" offset="476" path="%3"/>
+   <linked-el length="27" name="%9" offset="521" path="%1"/>
+   <linked-el length="42" name="%9" offset="425" path="%3"/>
+   <linked-el length="52" name="%9" offset="520" path="%3"/>
+   <linked-el length="23" name="%9" offset="736" path="%1"/>
+   <linked-el length="26" name="%9" offset="631" path="%1"/>
+   <linked-el length="58" name="%9" offset="656" path="%3"/>
+   <linked-el length="44" name="%9" offset="372" path="%3"/>
+   <linked-el length="22" name="%10" offset="374" path="%6"/>
+   <linked-el length="19" name="%11" offset="487" path="%6"/>
+   <linked-el length="22" name="%12" offset="374" path="%6"/>
+   <linked-el length="20" name="%13" offset="746" path="%6"/>
+   <linked-el length="19" name="%13" offset="487" path="%6"/>
+   <linked-el length="20" name="%13" offset="868" path="%6"/>
+   <linked-el length="19" name="%13" offset="856" path="%1"/>
+   <linked-el length="20" name="%13" offset="1231" path="%1"/>
+   <linked-el length="19" name="%13" offset="1416" path="%1"/>
+   <linked-el length="19" name="%14" offset="1416" path="%1"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="user.hearAbout" value="%0"/>
+  <alias path="/JsfExercises/WebContent/index.xhtml" value="%6"/>
+  <alias path="customerBean.hearAbout" value="%2"/>
+  <alias path="/JsfExercises/src/ait/com/jsf/CustomerBean.java" value="%4"/>
+  <alias path="user.rememberMe" value="%5"/>
+  <alias path="user.favCoffee1" value="%7"/>
+  <alias path="customerBean.contactBy" value="%8"/>
+  <alias path="/JsfExercises/WebContent/survey.xhtml" value="%3"/>
+  <alias path="customerBean" value="%9"/>
+  <alias path="userBean" value="%10"/>
+  <alias path="user.favColor1" value="%11"/>
+  <alias path="userBean.userName" value="%12"/>
+  <alias path="/JsfExercises/WebContent/inputSurvey.xhtml" value="%1"/>
+  <alias path="user" value="%13"/>
+  <alias path="user.contactBy" value="%14"/>
+ </aliases>
+</kb-project>

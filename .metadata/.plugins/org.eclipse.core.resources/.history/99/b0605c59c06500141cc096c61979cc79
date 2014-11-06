@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head></h:head>
+<body>
+	<h:form>
+		<h3>Your Information</h3>
+		<label>First Name</label>
+		<h:inputText value="#{cutomerBean.firstName}"></h:inputText>
+		<br></br>
+		<label>Last Name</label>
+		<h:inputText value="#{cutomerBean.lastName}"></h:inputText>
+		<br></br>
+		<label>Email</label>
+		<h:inputText value="#{cutomerBean.email}"></h:inputText>
+		<br></br>
+		<label>Please contact me by </label>
+		<h:selectOneMenu value="#{cusomterBean.contactBy}">
+			<f:selectItem itemValue="email" itemLabel="email" />
+			<f:selectItem itemValue="post" itemLabel="post" />
+			<f:selectItem itemValue="both" itemLabel="both" />
+		</h:selectOneMenu>
+		<br></br>
+		<h:commandButton value="Submit Survey" action="survey"></h:commandButton>
+	</h:form>
+</body>
+</html>

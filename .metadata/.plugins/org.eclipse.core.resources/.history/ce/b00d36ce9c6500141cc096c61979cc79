@@ -1,0 +1,20 @@
+package com.ait.movies;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class MovieCatalogTest {
+	
+	private MovieCatalog myMovieCatalog;
+
+	@Before
+	public void setUp(){
+		myMovieCatalog = new MovieCatalog();
+	}
+	@Test
+	public void testNoMoviesInCatalog() {
+		assertEquals(0,myMovieCatalog.addMovie());
+	}
+}

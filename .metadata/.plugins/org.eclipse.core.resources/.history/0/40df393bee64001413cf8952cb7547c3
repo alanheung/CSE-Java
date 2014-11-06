@@ -1,0 +1,77 @@
+import java.util.Scanner;
+
+public class ArrayProcessing {
+	private static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		//exerciseA();
+		//exerciseB();
+		//histogram();
+		//dynamicHistogram();
+		frequency();
+	}//
+
+	public static void exerciseA(){
+		int []a = {10,20,30,40,50};
+		for(int i=0; i<a.length; i++){//normal for loop
+			int element = a[i];//represents each element in the array
+			//System.out.print(a[i]+" ");
+			System.out.print(element+" ");
+		}
+		for(int element:a){// enhanced for loop
+			System.out.print(element+" ");
+		}
+	}
+	public static void exerciseB(){
+		int []b = new int[5];
+		for(int i=0; i<b.length; i++){
+			System.out.print("Please enter in a number: ");
+			b[i] = sc.nextInt();
+		}
+		for(int i=0; i<b.length; i++){
+			int element = b[i];
+			System.out.print(element+" ");
+		}
+		for(int element:b){
+			System.out.print(element+" ");
+		}
+	}
+	public static void histogram(){
+		int []n = {19, 3, 15, 7, 11, 9, 13, 5, 17, 1};
+		for(int j=0;j<n.length; j++){// length of array
+			for(int i=0; i<n[j]; i++){// the actual value in each index
+				System.out.print("* ");
+				System.out.print(n[j]);				
+			}
+			System.out.println(" ");
+		}
+	}
+	public static void dynamicHistogram(){
+		System.out.print("Please enter size of array: ");//ask user for size of array
+		int a =sc.nextInt();
+		int []n = new int[a];//create array size based on user input
+		
+		for(int i=0; i<n.length; i++){
+			System.out.print("Please enter in a number: ");//ask user to enter in a number value for each index
+			n[i] = sc.nextInt();
+		}
+		
+		for(int j=0;j<n.length; j++){//this is based on the size that the user inputted
+			for(int i=0; i<n[j]; i++){//this is the actual value entered, and loops the print of stars until it reaches the inital value
+				System.out.print("* ");
+			}
+			System.out.println(" ");
+		}
+	}
+	public static void frequency(){
+		int []response = {1, 2, 6, 4, 8, 5, 9, 7, 8, 10, 1, 6, 3, 8, 6, 10, 3, 8, 2, 7};
+		int []frequency = {0,0,0,0,0,0,0,0,0,0,0};
+		
+		for(int element:response){
+			frequency[element-1]++;
+		}
+	}
+
+	
+
+}//

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="/Tables/WebContent/WEB-INF/faces-config.xml">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/faces-config.xml" project="Tables"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/xampp/tomcat/lib/tomcat-i18n-fr.jar"/>
+  <path value="C:/xampp/tomcat/lib/catalina.jar"/>
+  <path value="C:/xampp/tomcat/lib/ecj-3.7.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-i18n-ja.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/catalina-ha.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-coyote.jar"/>
+  <path value="C:/xampp/tomcat/lib/jasper.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-i18n-es.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-jdbc.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-util.jar"/>
+  <path value="C:/xampp/tomcat/lib/catalina-tribes.jar"/>
+  <path value="C:/xampp/tomcat/lib/catalina-ant.jar"/>
+  <path value="C:/xampp/tomcat/lib/annotations-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-dbcp.jar"/>
+  <path value="C:/xampp/tomcat/lib/jsp-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/ecj-3.6.jar"/>
+  <path value="C:/xampp/tomcat/lib/servlet-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/el-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/ecj-3.6.2.jar"/>
+  <path value="C:/xampp/tomcat/lib/jasper-el.jar"/>
+ </paths>
+ <validation>
+  <core validator-id="jsf-verification"/>
+  <core validator-id="jboss.jsf.core"/>
+  <el>
+   <linked-el length="24" name="%0" offset="719" path="%1"/>
+   <linked-el length="23" name="%2" offset="621" path="%1"/>
+   <linked-el length="23" name="%3" offset="621" path="%1"/>
+   <linked-el length="24" name="%3" offset="719" path="%1"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="/Tables/WebContent/index.xhtml" value="%1"/>
+  <alias path="name.first" value="%0"/>
+  <alias path="name" value="%3"/>
+  <alias path="name.last" value="%2"/>
+ </aliases>
+</kb-project>

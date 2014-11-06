@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="C:/xampp/tomcat/lib/tomcat-i18n-fr.jar"/>
+  <path value="C:/xampp/tomcat/lib/catalina.jar"/>
+  <path value="C:/xampp/tomcat/lib/ecj-3.7.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-i18n-ja.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/catalina-ha.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-coyote.jar"/>
+  <path value="C:/xampp/tomcat/lib/jasper.jar"/>
+  <path value="/DataTableExample/WebContent/WEB-INF/faces-config.xml">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/faces-config.xml" project="DataTableExample"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/xampp/tomcat/lib/tomcat-i18n-es.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-jdbc.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-util.jar"/>
+  <path value="C:/xampp/tomcat/lib/catalina-tribes.jar"/>
+  <path value="C:/xampp/tomcat/lib/catalina-ant.jar"/>
+  <path value="C:/xampp/tomcat/lib/annotations-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-dbcp.jar"/>
+  <path value="C:/xampp/tomcat/lib/jsp-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/ecj-3.6.jar"/>
+  <path value="C:/xampp/tomcat/lib/servlet-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/el-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/ecj-3.6.2.jar"/>
+  <path value="C:/xampp/tomcat/lib/jasper-el.jar"/>
+ </paths>
+ <validation>
+  <core validator-id="jsf-verification"/>
+  <core validator-id="jboss.jsf.core"/>
+  <el>
+   <linked-el length="27" name="%0" offset="1065" path="%1"/>
+   <linked-el length="29" name="%2" offset="963" path="%1"/>
+   <linked-el length="31" name="%3" offset="750" path="%1"/>
+   <linked-el length="21" name="%3" offset="490" path="%1"/>
+   <linked-el length="27" name="%3" offset="1065" path="%1"/>
+   <linked-el length="29" name="%3" offset="963" path="%1"/>
+   <linked-el length="35" name="%3" offset="858" path="%1"/>
+   <linked-el length="35" name="%4" offset="858" path="%1"/>
+   <linked-el length="31" name="%5" offset="750" path="%1"/>
+   <linked-el length="27" name="%5" offset="1065" path="%1"/>
+   <linked-el length="29" name="%5" offset="963" path="%1"/>
+   <linked-el length="35" name="%5" offset="858" path="%1"/>
+   <linked-el length="31" name="%6" offset="750" path="%1"/>
+   <linked-el length="21" name="%6" offset="490" path="%1"/>
+   <linked-el length="27" name="%6" offset="1065" path="%1"/>
+   <linked-el length="29" name="%6" offset="963" path="%1"/>
+   <linked-el length="35" name="%6" offset="858" path="%1"/>
+   <linked-el length="31" name="%7" offset="750" path="%1"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="o.qty" value="%0"/>
+  <alias path="o.price" value="%2"/>
+  <alias path="order" value="%3"/>
+  <alias path="/DataTableExample/WebContent/default.xhtml" value="%1"/>
+  <alias path="o" value="%5"/>
+  <alias path="o.productName" value="%4"/>
+  <alias path="/DataTableExample/src/tutorial/OrderBean.java" value="%6"/>
+  <alias path="o.orderNo" value="%7"/>
+ </aliases>
+</kb-project>

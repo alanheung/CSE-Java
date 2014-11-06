@@ -1,0 +1,5 @@
+package ait.com.jsf;
+
+public class CustomerBean {
+
+}
