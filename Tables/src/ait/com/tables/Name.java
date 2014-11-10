@@ -7,6 +7,7 @@ public class Name implements Serializable{
 	private static final long serialVersinoUID = 1L;
 	private String first;
 	private String last;
+	
 	public Name(String first, String last){
 		this.first=first;
 		this.last=last;

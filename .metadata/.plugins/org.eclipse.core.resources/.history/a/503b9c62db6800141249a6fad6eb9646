@@ -1,0 +1,20 @@
+package ait.com.test;
+
+public class Employee {
+
+	private String ppsNumber;
+	private String name;
+	private int age;
+	
+	public Employee(){
+		ppsNumber="";
+		name="";
+		age=0;
+	}
+	public Employee(String ppsNumber,String name, int age){
+		this.ppsNumber=ppsNumber;
+		this.name=name;
+		this.age=age;
+	}
+
+}

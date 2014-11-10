@@ -15,6 +15,17 @@ public class MovieCatalogTest {
 		myMovieCatalog = new MovieCatalog();
 	}
 	@Test
+	public void testGetName() {
+		MovieCatalog nameRef = new MovieCatalog("abc123");
+		assertEquals("abc123", nameRef.getName());
+	}
+	@Test
+	public void testSetName() {
+		MovieCatalog nameRef = new MovieCatalog("abc123");
+		nameRef.setName("abc123");
+		assertEquals("abc123", nameRef.getName());
+	}
+	@Test
 	public void testNoMoviesInCatalog() {
 		assertEquals(0,myMovieCatalog.getNumberOfMovies());
 	}
@@ -50,11 +61,10 @@ public class MovieCatalogTest {
 	@Test
 	public void testFindMovie() {
 		Movie mov1 = new Movie("Psycho", "Horror","****", false);
-		Movie mov2 = new Movie("Batman", "Thriller","****",false);
 		myMovieCatalog.addMovie(mov1);
-		myMovieCatalog.addMovie(mov2);
-		assertTrue(myMovieCatalog.findMovie(mov1));
-		assertFalse(myMovieCatalog.findMovie(mov2));
+		assertEquals(true,myMovieCatalog.findMovie(mov1));
+		mov1 = new Movie("Batman", "Thriller","****",false);
+		assertEquals(false,myMovieCatalog.findMovie(mov1));
 	}
 	@Test
 	public void testFindGenre() {

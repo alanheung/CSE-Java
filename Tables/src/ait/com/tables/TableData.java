@@ -11,7 +11,7 @@ import javax.faces.bean.SessionScoped;
 @SessionScoped
 
 public class TableData implements Serializable{
-	 private static long serialVersionUID = 1L;
+	 private static final long serialVersionUID = 1L;
 	 private static List<Name> names= new ArrayList<Name>(Arrays.asList
 			 (new Name ("Willian","Dupont"),
 					 new Name ("Harry","Stiles"),

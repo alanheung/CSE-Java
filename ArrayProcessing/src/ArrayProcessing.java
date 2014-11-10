@@ -9,9 +9,9 @@ public class ArrayProcessing {
 		//histogram();
 		//dynamicHistogram();
 		//frequency();
-		multiDimArray();
+		//multiDimArray();
+		studentGrades();
 	}//
-
 	public static void exerciseA(){
 		int []a = {10,20,30,40,50};
 		for(int i=0; i<a.length; i++){//normal for loop
@@ -92,6 +92,34 @@ public class ArrayProcessing {
 			}System.out.println();
 		}
 	}
+	public static void studentGrades(){
+		int [][]studentGrades ={{77,68,86,73},
+								{96,87,89,78},
+								{73,90,86,81}};
+		System.out.print("The array is ");
+		printArray(studentGrades);
+	}
+//	public static void printArray(int[][]a){//for loop
+//		System.out.println("\t[0]\t[1]\t[2]\t[3]\t\n");
+//		for(int row=0; row<a.length; row++){
+//			System.out.print("Student Grade["+row+"] ");
+//			for(int col=0; col<a[row].length; col++){
+//				System.out.print(a[row][col]+"\t ");
+//			}System.out.println("\n");
+//		}
+//	}
+	public static void printArray(int[][]a){//enhanced for loop
+	System.out.println("\t[0]\t[1]\t[2]\t[3]\t\n");
+	int count=0;
+	for(int []student:a){
+		System.out.print("Student Grade["+count+"] ");
+		count++;
+		for(int grade:student){
+			System.out.print(grade+"\t ");
+		}					
+		System.out.println("\n");
+	}
+}
 		
 
 }//

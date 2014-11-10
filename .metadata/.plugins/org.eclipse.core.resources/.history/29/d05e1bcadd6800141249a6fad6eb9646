@@ -1,0 +1,19 @@
+package ait.com.test;
+
+import static org.junit.Assert.assertEquals;
+import java.util.ArrayList;
+import org.junit.Test;
+
+public class EmployeeSysTest {
+	private ArrayList<EmployeeSys> empSys;
+	
+	public int findMovieWithGenre(String genre){
+		int total =0;
+		for(Movie theMovie: movieCtlg){
+			if(theMovie.getGenre().equals(genre)){
+				total++;
+			}
+		}
+		return total;
+
+}

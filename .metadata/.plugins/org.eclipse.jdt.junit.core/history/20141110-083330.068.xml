@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MovieCatalogTest (1)" project="MovieCatalog" tests="7" started="7" failures="0" errors="0" ignored="0">
+  <testsuite name="com.ait.test.MovieCatalogTest" time="0.02">
+    <testcase name="testAddMovie" classname="com.ait.test.MovieCatalogTest" time="0.02"/>
+    <testcase name="testConstructor" classname="com.ait.test.MovieCatalogTest" time="0.0"/>
+    <testcase name="testRemoveMovie" classname="com.ait.test.MovieCatalogTest" time="0.0"/>
+    <testcase name="testFindMovie" classname="com.ait.test.MovieCatalogTest" time="0.0"/>
+    <testcase name="testSearchByGenre" classname="com.ait.test.MovieCatalogTest" time="0.0"/>
+    <testcase name="testRentReturnMovie" classname="com.ait.test.MovieCatalogTest" time="0.0"/>
+    <testcase name="testSearchMovieByName" classname="com.ait.test.MovieCatalogTest" time="0.0"/>
+  </testsuite>
+</testrun>

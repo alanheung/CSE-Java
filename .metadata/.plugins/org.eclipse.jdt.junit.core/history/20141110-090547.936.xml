@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="AllTests (2)" project="MovieCatalogProj" tests="18" started="18" failures="0" errors="0" ignored="0">
+  <testsuite name="com.ait.movies.AllTests" time="0.0">
+    <testsuite name="com.ait.movies.MovieCatalogTest" time="0.0">
+      <testcase name="testReturnMovie" classname="com.ait.movies.MovieCatalogTest" time="0.0"/>
+      <testcase name="testIsMovieRented" classname="com.ait.movies.MovieCatalogTest" time="0.0"/>
+      <testcase name="testTwoMovies" classname="com.ait.movies.MovieCatalogTest" time="0.0"/>
+      <testcase name="testOneMovies" classname="com.ait.movies.MovieCatalogTest" time="0.0"/>
+      <testcase name="testFindMovie" classname="com.ait.movies.MovieCatalogTest" time="0.0"/>
+      <testcase name="testFindGenre" classname="com.ait.movies.MovieCatalogTest" time="0.0"/>
+      <testcase name="testRentMovie" classname="com.ait.movies.MovieCatalogTest" time="0.0"/>
+      <testcase name="testNoMoviesInCatalog" classname="com.ait.movies.MovieCatalogTest" time="0.0"/>
+      <testcase name="removeOneMovieFromCatalog" classname="com.ait.movies.MovieCatalogTest" time="0.0"/>
+      <testcase name="testSearchMovieByName" classname="com.ait.movies.MovieCatalogTest" time="0.0"/>
+    </testsuite>
+    <testsuite name="com.ait.movies.MovieTest" time="0.0">
+      <testcase name="testGetRating" classname="com.ait.movies.MovieTest" time="0.0"/>
+      <testcase name="testGetOnLoan" classname="com.ait.movies.MovieTest" time="0.0"/>
+      <testcase name="testSetRating" classname="com.ait.movies.MovieTest" time="0.0"/>
+      <testcase name="testSetOnLoan" classname="com.ait.movies.MovieTest" time="0.0"/>
+      <testcase name="testGetTitle" classname="com.ait.movies.MovieTest" time="0.0"/>
+      <testcase name="testGetGenre" classname="com.ait.movies.MovieTest" time="0.0"/>
+      <testcase name="testSetTitle" classname="com.ait.movies.MovieTest" time="0.0"/>
+      <testcase name="testSetGenre" classname="com.ait.movies.MovieTest" time="0.0"/>
+    </testsuite>
+  </testsuite>
+</testrun>

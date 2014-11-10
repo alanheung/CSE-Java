@@ -7,15 +7,21 @@ public class MovieCatalog {
 
 	private String name;
 	
+	public MovieCatalog(){
+		movieCtlg = new ArrayList<Movie>();
+		name="";
+	}
+	public MovieCatalog(String name){
+		this.name=name;
+	}
+	
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
-	public MovieCatalog(){
-		movieCtlg = new ArrayList<Movie>();
-	}
+
 	public void addMovie(Movie aMovie){
 		movieCtlg.add(aMovie);
 	}

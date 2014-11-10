@@ -1,0 +1,19 @@
+package ait.com.test;
+
+import static org.junit.Assert.assertEquals;
+
+import java.util.ArrayList;
+
+import org.junit.Test;
+
+public class EmployeeSysTest {
+	private ArrayList<EmployeeSys> empSys;
+	
+	@Test
+	public void addEmployee() {
+		Employee mov1 = new Movie("Psycho", "Horror","****", false);
+		myMovieCatalog.addMovie(mov1);
+		assertEquals(1,myMovieCatalog.getNumberOfMovies());
+	}
+
+}

@@ -3,8 +3,57 @@
  <depends-on-projects/>
  <used-by-projects/>
  <paths>
+  <path value="C:/Users/A00226316/Java/libraries/JSF 2.0 (Mojarra 2.0.3-FCS)/mojarra-2.0.3-FCS/lib/jsf-impl.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/html_basic.tld" project="Tables"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/jsf_core.tld" project="Tables"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/mojarra_ext.taglib.xml" project="Tables"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/mojarra_ext.tld" project="Tables"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/composite.taglib.xml" project="Tables"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/facelets_jsf_core.taglib.xml" project="Tables"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/html_basic.taglib.xml" project="Tables"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/jstl-core.taglib.xml" project="Tables"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/jstl-fn.taglib.xml" project="Tables"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/mojarra_ext.taglib.xml" project="Tables"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/ui.taglib.xml" project="Tables"/>
+    </library>
+   </libraries>
+  </path>
   <path value="C:/xampp/tomcat/lib/tomcat-i18n-fr.jar"/>
   <path value="C:/xampp/tomcat/lib/catalina.jar"/>
+  <path value="C:/Users/A00226316/Java/libraries/JSF 2.0 (Mojarra 2.0.3-FCS)/mojarra-2.0.3-FCS/lib/jsf-api.jar"/>
   <path value="C:/xampp/tomcat/lib/ecj-3.7.jar"/>
   <path value="C:/xampp/tomcat/lib/tomcat-i18n-ja.jar"/>
   <path value="C:/xampp/tomcat/lib/tomcat-api.jar"/>
@@ -34,37 +83,22 @@
   <path value="C:/xampp/tomcat/lib/jasper-el.jar"/>
  </paths>
  <validation>
-  <core validator-id="jsf-verification"/>
-  <core validator-id="jboss.jsf.core"/>
   <el>
-   <linked-el length="27" name="%0" offset="1065" path="%1"/>
-   <linked-el length="29" name="%2" offset="963" path="%1"/>
-   <linked-el length="31" name="%3" offset="750" path="%1"/>
-   <linked-el length="21" name="%3" offset="490" path="%1"/>
-   <linked-el length="27" name="%3" offset="1065" path="%1"/>
-   <linked-el length="29" name="%3" offset="963" path="%1"/>
-   <linked-el length="35" name="%3" offset="858" path="%1"/>
-   <linked-el length="35" name="%4" offset="858" path="%1"/>
-   <linked-el length="31" name="%5" offset="750" path="%1"/>
-   <linked-el length="27" name="%5" offset="1065" path="%1"/>
-   <linked-el length="29" name="%5" offset="963" path="%1"/>
-   <linked-el length="35" name="%5" offset="858" path="%1"/>
-   <linked-el length="31" name="%6" offset="750" path="%1"/>
-   <linked-el length="21" name="%6" offset="490" path="%1"/>
-   <linked-el length="27" name="%6" offset="1065" path="%1"/>
-   <linked-el length="29" name="%6" offset="963" path="%1"/>
-   <linked-el length="35" name="%6" offset="858" path="%1"/>
-   <linked-el length="31" name="%7" offset="750" path="%1"/>
+   <linked-el length="21" name="%0" offset="488" path="%1"/>
+   <linked-el length="23" name="%0" offset="1056" path="%1"/>
+   <linked-el length="25" name="%0" offset="958" path="%1"/>
+   <linked-el length="27" name="%0" offset="753" path="%1"/>
+   <linked-el length="31" name="%0" offset="857" path="%1"/>
+   <linked-el length="21" name="%2" offset="488" path="%1"/>
+   <linked-el length="23" name="%2" offset="1056" path="%1"/>
+   <linked-el length="25" name="%2" offset="958" path="%1"/>
+   <linked-el length="27" name="%2" offset="753" path="%1"/>
+   <linked-el length="31" name="%2" offset="857" path="%1"/>
   </el>
  </validation>
  <aliases>
-  <alias path="o.qty" value="%0"/>
-  <alias path="o.price" value="%2"/>
-  <alias path="order" value="%3"/>
+  <alias path="order" value="%0"/>
   <alias path="/DataTableExample/WebContent/default.xhtml" value="%1"/>
-  <alias path="o" value="%5"/>
-  <alias path="o.productName" value="%4"/>
-  <alias path="/DataTableExample/src/tutorial/OrderBean.java" value="%6"/>
-  <alias path="o.orderNo" value="%7"/>
+  <alias path="/DataTableExample/src/tutorial/OrderBean.java" value="%2"/>
  </aliases>
 </kb-project>

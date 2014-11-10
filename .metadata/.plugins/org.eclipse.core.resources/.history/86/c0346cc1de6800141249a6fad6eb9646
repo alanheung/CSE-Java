@@ -1,0 +1,25 @@
+package ait.com.test;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+import java.util.ArrayList;
+import org.junit.Before;
+import org.junit.Test;
+
+public class EmployeeSysTest {
+	private ArrayList<EmployeeSys> empSys;
+
+	@Before
+	public void setUp(){
+		empSys = new empSys();
+	}
+	@Test	
+public void testUsernameAndPassword(){	
+	EmployeeSys e1 = new EmployeeSys(true, root, admin);
+	empSys.addEmployee(e1);
+	assertTrue(empSys.getUsername("root"));
+	assertTrue(empSys.getPassword("admin"));
+}
+
+}
