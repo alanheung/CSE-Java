@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class MobilePhones {
+	static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		
+	}
+	public static String getPhoneChoice(){
+		System.out.print("Please enter phone choice(Samsung/IPhone): ");
+		return sc.nextLine();
+	}
+}

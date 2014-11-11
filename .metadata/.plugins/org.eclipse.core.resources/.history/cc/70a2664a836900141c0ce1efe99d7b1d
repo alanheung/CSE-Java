@@ -1,0 +1,24 @@
+
+public class IPhone {
+	private String model;
+	private String network;
+	private String plan;
+	private double purchasePrice;
+	private boolean billPay;
+	private int gigabytes;
+	private int rentalPerMonth;
+	private static int count;
+
+	public IPhone(){
+		model="";
+		network="";
+		plan="";
+		count++;
+	}
+	public IPhone(String model, String network, String plan){
+		this.model=model;
+		this.network=network;
+		this.plan=plan;
+		count++;
+	}
+}

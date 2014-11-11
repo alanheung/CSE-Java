@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class MobilePhones {
+	static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		
+	}
+	public static String getPhoneChoice(){
+		System.out.print("Please enter phone choice(Samsung/IPhone): ");
+		return sc.nextLine();
+	}
+	public static void getModel(String phoneChoice){
+		String choice=""; 
+		if(phoneChoice == "IPhone"){
+			System.out.print("Please enter phone choice(4/5/5s): ");
+			choice = sc.nextLine();
+		}else if(phoneChoice == "Samsung"){
+			System.out.print("Please enter phone choice(One/Desire/Wildfire): ");
+			choice = sc.nextLine();
+		}
+		System.out.print("You have chosen: "+choice);
+	}
+	public static String getNetwork(){
+		System.out.print("Please enter network(Vodafone/O2): ");
+		return sc.nextLine();
+	}
+	public static void getPlan(String network){
+		System.out.print("Please enter plan(plus/complete/completeplus): ");
+		network = sc.nextLine();
+		if(network == "plus"){
+		}else if(network == "complete"){
+		}else if(network == "completeplus"){
+		}else{
+			System.out.print("Please enter plan(plus/complete/completeplus): ");
+		}
+	}
+	
+	public static String getGigabytes(){
+		System.out.print("Please enter gigabytes (16/32/64): ");
+		return sc.nextLine();
+	}
+	public static String getBillPay(){
+		System.out.print("Are you a billpay customer?(treu/false)): ");
+		return sc.nextLine();
+	}
+	
+}//

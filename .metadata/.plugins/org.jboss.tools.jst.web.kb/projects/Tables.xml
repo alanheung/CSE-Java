@@ -70,14 +70,14 @@
   <path value="C:/xampp/tomcat/lib/jasper.jar"/>
   <path value="C:/xampp/tomcat/lib/tomcat-i18n-es.jar"/>
   <path value="C:/xampp/tomcat/lib/tomcat-jdbc.jar"/>
-  <path value="C:/xampp/tomcat/lib/tomcat-util.jar"/>
   <path value="C:/xampp/tomcat/lib/catalina-tribes.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-util.jar"/>
   <path value="C:/xampp/tomcat/lib/catalina-ant.jar"/>
   <path value="C:/xampp/tomcat/lib/annotations-api.jar"/>
-  <path value="C:/xampp/tomcat/lib/tomcat-dbcp.jar"/>
   <path value="C:/xampp/tomcat/lib/jsp-api.jar"/>
-  <path value="C:/xampp/tomcat/lib/ecj-3.6.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-dbcp.jar"/>
   <path value="C:/xampp/tomcat/lib/servlet-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/ecj-3.6.jar"/>
   <path value="C:/xampp/tomcat/lib/el-api.jar"/>
   <path value="C:/xampp/tomcat/lib/ecj-3.6.2.jar"/>
   <path value="C:/xampp/tomcat/lib/jasper-el.jar"/>
@@ -86,14 +86,14 @@
   <el>
    <linked-el length="23" name="%0" offset="850" path="%1"/>
    <linked-el length="25" name="%2" offset="750" path="%1"/>
+   <linked-el length="23" name="%2" offset="850" path="%1"/>
    <linked-el length="25" name="%3" offset="750" path="%1"/>
-   <linked-el length="23" name="%3" offset="850" path="%1"/>
   </el>
  </validation>
  <aliases>
   <alias path="/Tables/WebContent/index.xhtml" value="%1"/>
   <alias path="name.first" value="%0"/>
-  <alias path="name" value="%3"/>
-  <alias path="name.last" value="%2"/>
+  <alias path="name.last" value="%3"/>
+  <alias path="name" value="%2"/>
  </aliases>
 </kb-project>

@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class MobilePhones {
+	static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		
+	}
+	public static String getPhoneChoice(){
+		System.out.print("Please enter phone choice(Samsung/IPhone): ");
+		return sc.nextLine();
+	}
+	public static void getModel(String input){
+		String choice=""; 
+		if(input == "IPhone"){
+			System.out.print("Please enter phone choice(4/5/5s): ");
+			choice = sc.nextLine();
+		}else if(input == "Samsung"){
+			System.out.print("Please enter phone choice(One/Desire/Wildfire): ");
+			choice = sc.nextLine();
+		}
+		System.out.print("You have chosen: "+choice);
+
+	}
+	public static String getNetwork(){
+		System.out.print("Please enter phone choice(Vodafone/O2): ");
+		return sc.nextLine();
+	}
+	
+}//
