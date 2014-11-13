@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="C:/xampp/tomcat/lib/tomcat-i18n-fr.jar"/>
+  <path value="C:/xampp/tomcat/lib/catalina.jar"/>
+  <path value="C:/xampp/tomcat/lib/ecj-3.7.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-i18n-ja.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/catalina-ha.jar"/>
+  <path value="/TablePractice/WebContent/WEB-INF/faces-config.xml">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/faces-config.xml" project="TablePractice"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/xampp/tomcat/lib/tomcat-coyote.jar"/>
+  <path value="C:/xampp/tomcat/lib/jasper.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-i18n-es.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-jdbc.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-util.jar"/>
+  <path value="C:/xampp/tomcat/lib/catalina-tribes.jar"/>
+  <path value="C:/xampp/tomcat/lib/catalina-ant.jar"/>
+  <path value="C:/xampp/tomcat/lib/annotations-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-dbcp.jar"/>
+  <path value="C:/xampp/tomcat/lib/jsp-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/ecj-3.6.jar"/>
+  <path value="C:/xampp/tomcat/lib/servlet-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/el-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/ecj-3.6.2.jar"/>
+  <path value="C:/xampp/tomcat/lib/jasper-el.jar"/>
+ </paths>
+ <validation>
+  <core validator-id="jsf-verification"/>
+  <core validator-id="jboss.jsf.core"/>
+  <el>
+   <linked-el length="17" name="%0" offset="1026" path="%1"/>
+   <linked-el length="36" name="%0" offset="1844" path="%1"/>
+   <linked-el length="17" name="%0" offset="1238" path="%1"/>
+   <linked-el length="21" name="%0" offset="1305" path="%1"/>
+   <linked-el length="18" name="%0" offset="2319" path="%1"/>
+   <linked-el length="25" name="%0" offset="1995" path="%1"/>
+   <linked-el length="25" name="%0" offset="688" path="%1"/>
+   <linked-el length="21" name="%0" offset="1094" path="%1"/>
+   <linked-el length="21" name="%0" offset="882" path="%1"/>
+   <linked-el length="17" name="%0" offset="1452" path="%1"/>
+   <linked-el length="19" name="%0" offset="2119" path="%1"/>
+   <linked-el length="15" name="%0" offset="768" path="%1"/>
+   <linked-el length="22" name="%0" offset="2519" path="%1"/>
+   <linked-el length="19" name="%0" offset="2222" path="%1"/>
+   <linked-el length="14" name="%0" offset="1429" path="%1"/>
+   <linked-el length="21" name="%0" offset="485" path="%1"/>
+   <linked-el length="14" name="%0" offset="1496" path="%1"/>
+   <linked-el length="15" name="%0" offset="1070" path="%1"/>
+   <linked-el length="18" name="%0" offset="2418" path="%1"/>
+   <linked-el length="15" name="%0" offset="1002" path="%1"/>
+   <linked-el length="15" name="%0" offset="847" path="%1"/>
+   <linked-el length="21" name="%0" offset="1889" path="%1"/>
+   <linked-el length="14" name="%0" offset="1215" path="%1"/>
+   <linked-el length="34" name="%0" offset="1657" path="%1"/>
+   <linked-el length="14" name="%0" offset="1282" path="%1"/>
+   <linked-el length="21" name="%0" offset="1519" path="%1"/>
+   <linked-el length="17" name="%0" offset="803" path="%1"/>
+   <linked-el length="21" name="%0" offset="1700" path="%1"/>
+   <linked-el length="17" name="%2" offset="1026" path="%1"/>
+   <linked-el length="17" name="%2" offset="1238" path="%1"/>
+   <linked-el length="21" name="%2" offset="1305" path="%1"/>
+   <linked-el length="15" name="%2" offset="1070" path="%1"/>
+   <linked-el length="21" name="%2" offset="1094" path="%1"/>
+   <linked-el length="21" name="%2" offset="882" path="%1"/>
+   <linked-el length="15" name="%2" offset="1002" path="%1"/>
+   <linked-el length="15" name="%2" offset="847" path="%1"/>
+   <linked-el length="17" name="%2" offset="1452" path="%1"/>
+   <linked-el length="21" name="%2" offset="1889" path="%1"/>
+   <linked-el length="15" name="%2" offset="768" path="%1"/>
+   <linked-el length="14" name="%2" offset="1215" path="%1"/>
+   <linked-el length="21" name="%2" offset="1519" path="%1"/>
+   <linked-el length="14" name="%2" offset="1282" path="%1"/>
+   <linked-el length="14" name="%2" offset="1429" path="%1"/>
+   <linked-el length="21" name="%2" offset="1700" path="%1"/>
+   <linked-el length="17" name="%2" offset="803" path="%1"/>
+   <linked-el length="14" name="%2" offset="1496" path="%1"/>
+   <linked-el length="25" name="%3" offset="1778" path="%4"/>
+   <linked-el length="20" name="%3" offset="1656" path="%4"/>
+   <linked-el length="28" name="%3" offset="706" path="%4"/>
+   <linked-el length="20" name="%3" offset="1509" path="%4"/>
+   <linked-el length="84" name="%3" offset="409" path="%4"/>
+   <linked-el length="28" name="%3" offset="564" path="%4"/>
+   <linked-el length="118" name="%3" offset="817" path="%4"/>
+   <linked-el length="119" name="%3" offset="1151" path="%4"/>
+   <linked-el length="25" name="%5" offset="1778" path="%4"/>
+   <linked-el length="20" name="%5" offset="1656" path="%4"/>
+   <linked-el length="28" name="%5" offset="706" path="%4"/>
+   <linked-el length="20" name="%5" offset="1509" path="%4"/>
+   <linked-el length="84" name="%5" offset="409" path="%4"/>
+   <linked-el length="28" name="%5" offset="564" path="%4"/>
+   <linked-el length="118" name="%5" offset="817" path="%4"/>
+   <linked-el length="119" name="%5" offset="1151" path="%4"/>
+   <linked-el length="36" name="%6" offset="1844" path="%1"/>
+   <linked-el length="18" name="%6" offset="2319" path="%1"/>
+   <linked-el length="25" name="%6" offset="1995" path="%1"/>
+   <linked-el length="22" name="%6" offset="2519" path="%1"/>
+   <linked-el length="19" name="%6" offset="2222" path="%1"/>
+   <linked-el length="34" name="%6" offset="1657" path="%1"/>
+   <linked-el length="25" name="%6" offset="688" path="%1"/>
+   <linked-el length="18" name="%6" offset="2418" path="%1"/>
+   <linked-el length="21" name="%6" offset="485" path="%1"/>
+   <linked-el length="19" name="%6" offset="2119" path="%1"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="tableData" value="%0"/>
+  <alias path="/TablePractice/src/alan/com/Name.java" value="%2"/>
+  <alias path="/TablePractice/WebContent/login.xhtml" value="%4"/>
+  <alias path="login" value="%3"/>
+  <alias path="/TablePractice/WebContent/index.xhtml" value="%1"/>
+  <alias path="/TablePractice/src/alan/com/TableData.java" value="%6"/>
+  <alias path="/TablePractice/src/alan/com/LoginBean.java" value="%5"/>
+ </aliases>
+</kb-project>

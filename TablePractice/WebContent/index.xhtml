@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+	<h:outputStylesheet library="css" name="styles.css" /> </h:head>
+<h:body>
+	<h1>Tables example 1</h1>
+	<h:form>
+		<h:dataTable value="#{tableData.names}" var="name"
+		styleClass="nameTable"
+		headerClass="nameTableHeader"
+		rowClasses="nameTableOddRow,nameTableEvenRow">
+		<h:column>
+		<f:facet name="header"><h:commandLink action="#{tableData.sortByName}">Name</h:commandLink></f:facet>
+			<h:inputText value="#{name.name}" size ="10" rendered="#{name.canEdit}"/>
+			<h:outputText value="#{name.name}" size ="10" rendered="#{not name.canEdit}"/>
+		</h:column>
+
+		<h:column>
+			<f:facet name="header">Dept</f:facet>
+			<h:inputText value="#{name.dept}" rendered="#{name.canEdit}"/>
+			<h:outputText value="#{name.dept}" rendered="#{not name.canEdit}"/>
+		</h:column>
+		
+		<h:column>
+			<f:facet name="header">Age</f:facet>
+			<h:inputText value="#{name.age}" rendered="#{name.canEdit}"/>
+			<h:outputText value="#{name.age}" rendered="#{not name.canEdit}"/>
+		</h:column>
+		
+		<h:column>
+			<f:facet name="header">Salary</f:facet>
+			<h:inputText value="#{name.sal}" rendered="#{name.canEdit}"/>
+			<h:outputText value="#{name.sal}" rendered="#{not name.canEdit}"/>
+		</h:column>
+
+		<h:column>
+			<f:facet name="header">Edit</f:facet>
+			<h:commandButton value="Edit" action="#{tableData.editName(name)}"
+			rendered="#{not name.canEdit}"/>
+		</h:column>
+		
+		<h:column>
+			<f:facet name="header">Delete</f:facet>
+			<h:commandButton value="Delete" action="#{tableData.deleteName(name)}"
+			rendered="#{not name.canEdit}"/>
+		</h:column>
+
+		</h:dataTable>
+	<h:commandButton value="Save Changes" action="#{tableData.saveAction}"/>
+	<h3>Add Employee</h3>
+	<table>
+	<tr>
+		<td>Name: </td>
+		<td><h:inputText size="10" value="#{tableData.name}"/></td>
+	</tr>
+	<tr>
+		<td>Department: </td>
+		<td><h:inputText size="10" value="#{tableData.dept}"/></td>
+	</tr>
+		<tr>
+		<td>Age: </td>
+		<td><h:inputText size="10" value="#{tableData.age}"/></td>
+	</tr>
+		<tr>
+		<td>Salary: </td>
+		<td><h:inputText size="10" value="#{tableData.sal}"/></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><h:commandButton value="Add Now" action="#{tableData.addName}"/></td>
+	</tr>
+	
+	</table>
+	</h:form>
+</h:body>
+</html>
+

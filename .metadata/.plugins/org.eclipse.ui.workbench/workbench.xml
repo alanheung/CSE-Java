@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="43" version="2.0">
+<workbench progressCount="86" version="2.0">
 <workbenchAdvisor/>
-<window height="860" width="800" x="0" y="0">
+<window height="860" width="800" x="800" y="0">
 <fastViewData fastViewLocation="1024">
 <orientation position="512" view="org.eclipse.jdt.junit.ResultView"/>
 <orientation position="512" view="org.springframework.ide.eclipse.aop.ui.navigator.aopReferenceModelNavigator"/>
@@ -57,21 +57,31 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Samsung.java" partName="Samsung.java" path="C:/Users/A00226316/Java/Assignment2/src/Samsung.java" title="Samsung.java" tooltip="Assignment2/src/Samsung.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment2/src/Samsung.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="593" selectionTopPixel="174"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EmployeeSys.java" partName="EmployeeSys.java" path="C:/Users/A00226316/Java/TestCopy/src/ait/com/test/EmployeeSys.java" title="EmployeeSys.java" tooltip="TestCopy/src/ait/com/test/EmployeeSys.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TestCopy/src/ait/com/test/EmployeeSys.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1193" selectionTopPixel="563"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IPhone.java" partName="IPhone.java" path="C:/Users/A00226316/Java/Assignment2/src/IPhone.java" title="IPhone.java" tooltip="Assignment2/src/IPhone.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment2/src/IPhone.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="666" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EmployeeSysTest.java" partName="EmployeeSysTest.java" path="C:/Users/A00226316/Java/TestCopy/test/ait/com/test/EmployeeSysTest.java" title="EmployeeSysTest.java" tooltip="TestCopy/test/ait/com/test/EmployeeSysTest.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TestCopy/test/ait/com/test/EmployeeSysTest.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="39" selectionOffset="275" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MobilePhones.java" partName="MobilePhones.java" path="C:/Users/A00226316/Java/Assignment2/src/MobilePhones.java" title="MobilePhones.java" tooltip="Assignment2/src/MobilePhones.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment2/src/MobilePhones.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2384" selectionTopPixel="204"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AllTests.java" partName="AllTests.java" path="C:/Users/A00226316/Java/TestCopy/test/ait/com/test/AllTests.java" title="AllTests.java" tooltip="TestCopy/test/ait/com/test/AllTests.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TestCopy/test/ait/com/test/AllTests.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Employee.java" partName="Employee.java" path="C:/Users/A00226316/Java/TestCopy/src/ait/com/test/Employee.java" title="Employee.java" tooltip="TestCopy/src/ait/com/test/Employee.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TestCopy/src/ait/com/test/Employee.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="161" selectionTopPixel="83"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EmployeeTest.java" partName="EmployeeTest.java" path="C:/Users/A00226316/Java/TestCopy/test/ait/com/test/EmployeeTest.java" title="EmployeeTest.java" tooltip="TestCopy/test/ait/com/test/EmployeeTest.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TestCopy/test/ait/com/test/EmployeeTest.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -91,18 +101,17 @@
 <viewState CommonNavigator.LINKING_ENABLED="0" org.springframework.ide.eclipse.ui.navigator.workingsets.showTopLevelWorkingSets="0"/>
 </view>
 <view id="org.jboss.tools.jst.web.ui.navigator.WebProjectsView" partName="Web Projects"/>
-<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
-<viewState/>
-</view>
 <view id="org.springframework.ide.eclipse.aop.ui.navigator.aopReferenceModelNavigator" partName="Beans Cross References">
 <viewState CommonNavigator.LINKING_ENABLED="0"/>
 </view>
-<view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" partName="Data Source Explorer"/>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors"/>
 <category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -112,6 +121,7 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
 </view>
+<view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" partName="Data Source Explorer"/>
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
 </view>
@@ -177,11 +187,11 @@
 <filteredTreeFindHistory/>
 </viewState>
 </view>
-<view id="com.mountainminds.eclemma.ui.CoverageView" partName="Coverage">
-<viewState column0="300" column1="80" column2="120" column3="120" column4="120" counters="INSTRUCTION" hideunusedelements="false" linked="false" reversesort="true" roottype="GROUP" sortcolumn="3"/>
-</view>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc">
 <viewState/>
+</view>
+<view id="com.mountainminds.eclemma.ui.CoverageView" partName="Coverage">
+<viewState column0="300" column1="80" column2="120" column3="120" column4="120" counters="INSTRUCTION" hideunusedelements="false" linked="false" reversesort="true" roottype="GROUP" sortcolumn="3"/>
 </view>
 <view id="org.eclipse.jdt.junit.ResultView" partName="JUnit">
 <viewState failuresOnly="false" layout="1" orientation="2" ratio="500" scroll="false" time="true"/>
@@ -501,7 +511,7 @@
 <layout>
 <mainWindow>
 <info folder="true" part="left">
-<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.jdt.junit.ResultView" appearance="2" expanded="2">
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
 <page content="org.eclipse.jdt.junit.ResultView" label="JUnit"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
@@ -999,160 +1009,164 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment2/src/Samsung.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment2/src/IPhone.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment2/src/MobilePhones.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Week07/src/Showroom.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ArrayProcessing/src/ArrayProcessing.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ArrayProcessing/src/Arrays2.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ArrayProcessing/src/ArraysExercise.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestCopy/src/ait/com/test/EmployeeSys.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestCopy/src/ait/com/test/Employee.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestCopy/test/ait/com/test/EmployeeSysTest.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestCopy/test/ait/com/test/AllTests.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestCopy/test/ait/com/test/EmployeeTest.java"/>
 </editors>
-<item historyLabel="Samsung.java" index="0">
-<position info="not_deleted" x="751" y="3"/>
+<item historyLabel="Arrays2.java" index="1">
+<position info="not_deleted" x="365" y="0"/>
 </item>
-<item historyLabel="MobilePhones.java" index="2">
-<position info="not_deleted" x="1593" y="0"/>
+<item historyLabel="ArraysExercise.java" index="2">
+<position info="not_deleted" x="1377" y="0"/>
 </item>
-<item historyLabel="Samsung.java" index="0">
-<position info="not_deleted" x="744" y="6"/>
+<item historyLabel="ArrayProcessing.java" index="0">
+<position info="not_deleted" x="5132" y="0"/>
 </item>
-<item historyLabel="MobilePhones.java" index="2">
-<position info="not_deleted" x="1172" y="0"/>
-</item>
-<item historyLabel="IPhone.java" index="1">
+<item historyLabel="EmployeeSys.java" index="3">
 <position/>
 </item>
-<item historyLabel="Samsung.java" index="0">
-<position info="not_deleted" x="926" y="0"/>
-</item>
-<item historyLabel="MobilePhones.java" index="2">
-<position info="not_deleted" x="1495" y="0"/>
-</item>
-<item historyLabel="Samsung.java" index="0">
-<position info="not_deleted" x="926" y="0"/>
-</item>
-<item historyLabel="IPhone.java" index="1">
-<position/>
-</item>
-<item historyLabel="MobilePhones.java" index="2">
-<position info="not_deleted" x="1597" y="0"/>
-</item>
-<item historyLabel="IPhone.java" index="1">
-<position info="not_deleted" x="3193" y="0"/>
-</item>
-<item historyLabel="MobilePhones.java" index="2">
-<position info="not_deleted" x="584" y="0"/>
-</item>
-<item historyLabel="Samsung.java" index="0">
-<position info="not_deleted" x="926" y="0"/>
-</item>
-<item historyLabel="IPhone.java" index="1">
-<position/>
-</item>
-<item historyLabel="MobilePhones.java" index="2">
-<position/>
-</item>
-<item historyLabel="IPhone.java" index="1">
-<position/>
-</item>
-<item historyLabel="MobilePhones.java" index="2">
-<position info="not_deleted" x="1840" y="0"/>
-</item>
-<item historyLabel="IPhone.java" index="1">
-<position info="not_deleted" x="788" y="0"/>
-</item>
-<item historyLabel="MobilePhones.java" index="2">
-<position info="not_deleted" x="1840" y="0"/>
-</item>
-<item historyLabel="Samsung.java" index="0">
-<position info="not_deleted" x="430" y="0"/>
-</item>
-<item historyLabel="MobilePhones.java" index="2">
-<position info="not_deleted" x="2180" y="0"/>
-</item>
-<item historyLabel="IPhone.java" index="1">
-<position info="not_deleted" x="788" y="0"/>
-</item>
-<item historyLabel="MobilePhones.java" index="2">
-<position info="not_deleted" x="2078" y="0"/>
-</item>
-<item historyLabel="IPhone.java" index="1">
-<position info="not_deleted" x="788" y="0"/>
-</item>
-<item historyLabel="MobilePhones.java" index="2">
-<position info="not_deleted" x="608" y="0"/>
-</item>
-<item historyLabel="IPhone.java" index="1">
-<position info="not_deleted" x="1514" y="0"/>
-</item>
-<item historyLabel="MobilePhones.java" index="2">
-<position info="not_deleted" x="2739" y="0"/>
-</item>
-<item historyLabel="IPhone.java" index="1">
-<position info="not_deleted" x="1514" y="0"/>
-</item>
-<item historyLabel="MobilePhones.java" index="2">
-<position info="not_deleted" x="1314" y="0"/>
-</item>
-<item historyLabel="IPhone.java" index="1">
-<position info="not_deleted" x="1514" y="0"/>
-</item>
-<item historyLabel="MobilePhones.java" index="2">
-<position info="not_deleted" x="1314" y="0"/>
-</item>
-<item historyLabel="IPhone.java" index="1">
-<position info="not_deleted" x="1514" y="0"/>
-</item>
-<item historyLabel="MobilePhones.java" index="2">
-<position info="not_deleted" x="783" y="16"/>
-</item>
-<item historyLabel="IPhone.java" index="1">
-<position info="not_deleted" x="1514" y="0"/>
-</item>
-<item historyLabel="Showroom.java" index="3">
+<item historyLabel="Employee.java" index="4">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="MobilePhones.java" index="2">
-<position info="not_deleted" x="1218" y="0"/>
+<item historyLabel="EmployeeSys.java" index="3">
+<position info="not_deleted" x="1432" y="0"/>
 </item>
-<item historyLabel="IPhone.java" index="1">
-<position info="not_deleted" x="3193" y="0"/>
+<item historyLabel="EmployeeSysTest.java" index="5">
+<position/>
 </item>
-<item historyLabel="MobilePhones.java" index="2">
-<position info="not_deleted" x="1218" y="0"/>
+<item historyLabel="EmployeeSys.java" index="3">
+<position info="not_deleted" x="1307" y="0"/>
 </item>
-<item historyLabel="IPhone.java" index="1">
-<position info="not_deleted" x="666" y="0"/>
+<item historyLabel="EmployeeSysTest.java" index="5">
+<position/>
 </item>
-<item historyLabel="MobilePhones.java" index="2">
-<position info="not_deleted" x="641" y="0"/>
+<item historyLabel="AllTests.java" index="6">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="IPhone.java" index="1">
-<position info="not_deleted" x="666" y="0"/>
+<item historyLabel="EmployeeSys.java" index="3">
+<position info="not_deleted" x="1307" y="0"/>
 </item>
-<item historyLabel="Samsung.java" index="0">
-<position info="not_deleted" x="430" y="0"/>
+<item historyLabel="EmployeeSysTest.java" index="5">
+<position/>
 </item>
-<item historyLabel="IPhone.java" index="1">
-<position info="not_deleted" x="666" y="0"/>
+<item historyLabel="AllTests.java" index="6">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="MobilePhones.java" index="2">
-<position info="not_deleted" x="669" y="0"/>
+<item historyLabel="EmployeeSys.java" index="3">
+<position info="not_deleted" x="428" y="0"/>
 </item>
-<item historyLabel="IPhone.java" index="1">
-<position info="not_deleted" x="666" y="0"/>
+<item historyLabel="EmployeeSysTest.java" index="5">
+<position/>
 </item>
-<item historyLabel="MobilePhones.java" index="2">
-<position info="not_deleted" x="586" y="0"/>
+<item historyLabel="EmployeeSys.java" index="3">
+<position info="not_deleted" x="428" y="0"/>
 </item>
-<item historyLabel="IPhone.java" index="1">
-<position info="not_deleted" x="666" y="0"/>
+<item historyLabel="EmployeeSysTest.java" index="5">
+<position/>
 </item>
-<item historyLabel="Samsung.java" index="0">
-<position info="not_deleted" x="593" y="0"/>
+<item historyLabel="EmployeeSys.java" index="3">
+<position info="not_deleted" x="428" y="0"/>
 </item>
-<item historyLabel="IPhone.java" index="1">
-<position info="not_deleted" x="666" y="0"/>
+<item historyLabel="Employee.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item active="true" historyLabel="MobilePhones.java" index="2">
-<position info="not_deleted" x="586" y="0"/>
+<item historyLabel="EmployeeSys.java" index="3">
+<position info="not_deleted" x="165" y="0"/>
+</item>
+<item historyLabel="Employee.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="EmployeeSysTest.java" index="5">
+<position/>
+</item>
+<item historyLabel="EmployeeSys.java" index="3">
+<position info="not_deleted" x="465" y="180"/>
+</item>
+<item historyLabel="AllTests.java" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="EmployeeSys.java" index="3">
+<position info="not_deleted" x="878" y="0"/>
+</item>
+<item historyLabel="EmployeeSysTest.java" index="5">
+<position/>
+</item>
+<item historyLabel="EmployeeSys.java" index="3">
+<position info="not_deleted" x="1334" y="0"/>
+</item>
+<item historyLabel="Employee.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="AllTests.java" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="EmployeeSysTest.java" index="5">
+<position/>
+</item>
+<item historyLabel="EmployeeSys.java" index="3">
+<position info="not_deleted" x="1334" y="0"/>
+</item>
+<item historyLabel="EmployeeSysTest.java" index="5">
+<position/>
+</item>
+<item historyLabel="EmployeeSys.java" index="3">
+<position info="not_deleted" x="1526" y="0"/>
+</item>
+<item historyLabel="EmployeeSysTest.java" index="5">
+<position info="not_deleted" x="275" y="39"/>
+</item>
+<item historyLabel="AllTests.java" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="EmployeeSysTest.java" index="5">
+<position info="not_deleted" x="275" y="39"/>
+</item>
+<item historyLabel="AllTests.java" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Employee.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="EmployeeSysTest.java" index="5">
+<position info="not_deleted" x="275" y="39"/>
+</item>
+<item historyLabel="EmployeeSys.java" index="3">
+<position info="not_deleted" x="1193" y="0"/>
+</item>
+<item historyLabel="Employee.java" index="4">
+<position info="not_deleted" x="161" y="0"/>
+</item>
+<item historyLabel="AllTests.java" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="EmployeeTest.java" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Employee.java" index="4">
+<position info="not_deleted" x="161" y="0"/>
+</item>
+<item historyLabel="AllTests.java" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="EmployeeTest.java" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Employee.java" index="4">
+<position info="not_deleted" x="161" y="0"/>
+</item>
+<item historyLabel="AllTests.java" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="EmployeeSysTest.java" index="5">
+<position info="not_deleted" x="275" y="39"/>
+</item>
+<item active="true" historyLabel="EmployeeSys.java" index="3">
+<position info="not_deleted" x="1193" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -1169,7 +1183,6 @@
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@204316"/>
 <trimItem IMemento.internal.id="right"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1468cd"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@a6b1eb"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
@@ -1185,47 +1198,47 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EmployeeTest.java" tooltip="TestCopy/test/ait/com/test/EmployeeTest.java">
+<persistable path="/TestCopy/test/ait/com/test/EmployeeTest.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Employee.java" tooltip="TestCopy/src/ait/com/test/Employee.java">
+<persistable path="/TestCopy/src/ait/com/test/Employee.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AllTests.java" tooltip="TestCopy/test/ait/com/test/AllTests.java">
+<persistable path="/TestCopy/test/ait/com/test/AllTests.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EmployeeSysTest.java" tooltip="TestCopy/test/ait/com/test/EmployeeSysTest.java">
+<persistable path="/TestCopy/test/ait/com/test/EmployeeSysTest.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EmployeeSys.java" tooltip="TestCopy/src/ait/com/test/EmployeeSys.java">
+<persistable path="/TestCopy/src/ait/com/test/EmployeeSys.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EmployeeSys.java" tooltip="Test/src/ait/com/test/EmployeeSys.java">
+<persistable path="/Test/src/ait/com/test/EmployeeSys.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Calculation.java" tooltip="JUnitPractice/src/alan/com/junit/Calculation.java">
+<persistable path="/JUnitPractice/src/alan/com/junit/Calculation.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MathTest.java" tooltip="JUnitPractice/src/alan/com/junit/MathTest.java">
+<persistable path="/JUnitPractice/src/alan/com/junit/MathTest.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Arrays2.java" tooltip="ArrayProcessing/src/Arrays2.java">
+<persistable path="/ArrayProcessing/src/Arrays2.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Arrays.java" tooltip="ArrayProcessing/src/Arrays.java">
+<persistable path="/ArrayProcessing/src/Arrays.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ArrayProcessing.java" tooltip="ArrayProcessing/src/ArrayProcessing.java">
+<persistable path="/ArrayProcessing/src/ArrayProcessing.java"/>
+</file>
+<file factoryID="com.springsource.sts.ide.ui.dashboard.elementFactory" id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" name="Dashboard" tooltip="Dashboard">
+<persistable openDashboard="true"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Car.java" tooltip="Week07/src/Car.java">
 <persistable path="/Week07/src/Car.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Showroom.java" tooltip="Week07/src/Showroom.java">
 <persistable path="/Week07/src/Showroom.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MobilePhones.java" tooltip="Assignment2/src/MobilePhones.java">
-<persistable path="/Assignment2/src/MobilePhones.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IPhone.java" tooltip="Assignment2/src/IPhone.java">
-<persistable path="/Assignment2/src/IPhone.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Samsung.java" tooltip="Assignment2/src/Samsung.java">
-<persistable path="/Assignment2/src/Samsung.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BiscuitFactory.java" tooltip="Week06/src/BiscuitFactory.java">
-<persistable path="/Week06/src/BiscuitFactory.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Biscuit.java" tooltip="Week06/src/Biscuit.java">
-<persistable path="/Week06/src/Biscuit.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DateFormatExample.java" tooltip="Week06/src/DateFormatExample.java">
-<persistable path="/Week06/src/DateFormatExample.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Family.java" tooltip="Week06/src/Family.java">
-<persistable path="/Week06/src/Family.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Customer.java" tooltip="Week06/src/Customer.java">
-<persistable path="/Week06/src/Customer.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Bank.java" tooltip="Week06/src/Bank.java">
-<persistable path="/Week06/src/Bank.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SampleQuestion.java" tooltip="Week05/src/SampleQuestion.java">
-<persistable path="/Week05/src/SampleQuestion.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SimpleConstructor2014.java" tooltip="Week05/src/SimpleConstructor2014.java">
-<persistable path="/Week05/src/SimpleConstructor2014.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="VolumeTest.java" tooltip="Week05/src/VolumeTest.java">
-<persistable path="/Week05/src/VolumeTest.java"/>
 </file>
 </mruList>
 </workbench>

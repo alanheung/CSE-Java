@@ -1,0 +1,55 @@
+import java.util.Arrays;
+
+public class Arrays2 {
+
+	public static void main(String[] args) {
+		statistics();
+	}
+	public static void statistics(){
+		int []arr1 ={93, 44, 17, 50, 9, 17, 50};
+		
+		int total=0;
+		for(int a:arr1){
+			total+=a;
+		}
+		System.out.println("Total= "+total);
+
+		int average=0;
+		for(int a:arr1){
+			average+=a;
+		}
+		average = average/arr1.length;
+		System.out.println("Average= "+average);
+		
+		double median = calcMedian(arr1);
+		System.out.println("Median= "+median);
+		
+		double range = calcRange(arr1);
+		System.out.println("Range= "+range);
+	}
+	public static double calcMedian(int []arr){//middle value
+		int middle= arr.length/2;
+		int median = arr[middle];
+
+		Arrays.sort(arr);
+		//		for(int i=0; i < arr.length; i++){
+		//		System.out.println(array[i]);
+		//		}
+		return median;
+	}
+	public static int calcRange(int []arr){
+		int min = 0;
+		int max = 0;
+		int range = 0;
+		for (int i: arr){
+			if (arr.length > 0){
+				range = max - min + 1;
+			}
+		}
+		return range;
+//		for (int i: arr){	
+//		}return max - min + 1;
+	}
+
+
+}//

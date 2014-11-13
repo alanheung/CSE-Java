@@ -1,0 +1,19 @@
+.details-table {
+    border-collapse: collapse; /* so we can control cellspacing in a practical way */
+    border-bottom: 1px solid #000000;
+}
+
+.details-table-header {
+    text-align: left;
+    font-family: Arial, Verdana, sans-serif;
+    border: 4px solid #000000; /* this can be seen as cellspacing... */
+    border-bottom: 1px solid #000000;
+}
+
+.details-table-odd-row {
+    background-color: #FFFFFF;
+}
+
+.details-table-even-row {
+    background-color: #FBFBFB;
+}

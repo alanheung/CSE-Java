@@ -1,0 +1,81 @@
+package ait.com.test;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+import java.util.ArrayList;
+import org.junit.Before;
+import org.junit.Test;
+
+public class EmployeeSysTest {
+
+	private EmployeeSys myEmployeeSys;
+
+	@Before
+	public void setUp(){
+		myEmployeeSys = new EmployeeSys();
+	}
+	@Test
+	public void testLogin(){
+		//correct username and password
+		assertTrue(myEmployeeSys.login("root","admin"));
+		//incorrect username and password
+		assertFalse(myEmployeeSys.login("notRoot", "notAdmin"));
+		//incorrect password
+		assertFalse(myEmployeeSys.login("root","notAdmin"));
+	}
+	
+	@Test
+	public void testCheckNumberOfEmployees(){
+		//should be no employees in system.
+		assertEquals(0,myEmployeeSys.getNumberOfEmployees());
+		 
+	}
+	
+	@Test
+	public void testLoginAndAddingEmployeesToSys(){
+		Employee aEmployee = new Employee();
+		//user must be logged in
+		myEmployeeSys.login("root", "admin");
+		//add employee to system
+		myEmployeeSys.addEmployee(aEmployee);
+		assertEquals(1,myEmployeeSys.getNumberOfEmployees());
+	}
+	
+	@Test
+	public void testLoginFailureAndAddingEmployeesToSys(){
+//		EmployeeSys aEmployeeSys = new EmployeeSys();
+		Employee aEmployee = new Employee();
+		//add employee to system without login
+		myEmployeeSys.addEmployee(aEmployee);
+		assertEquals(0,myEmployeeSys.getNumberOfEmployees());
+	}
+	
+	@Test
+	public void testLoginSuccessAndAddingTwoEmployeesToSys(){
+		Employee aEmployee = new Employee();
+		//user must be logged in
+		myEmployeeSys.login("root", "admin");
+		//add 2 employee to system
+		myEmployeeSys.addEmployee(aEmployee);
+		myEmployeeSys.addEmployee(aEmployee);
+		assertEquals(2,myEmployeeSys.getNumberOfEmployees());
+	}
+	
+	@Test
+	public void testLogOutTest(){
+		Employee aEmployee = new Employee();
+		//user must be logged in
+		myEmployeeSys.login("root", "admin");
+		//adds employee to system
+		myEmployeeSys.addEmployee(aEmployee);
+		//user logs out
+		myEmployeeSys.logOut();
+		myEmployeeSys.addEmployee(aEmployee);
+		assertEquals(1,myEmployeeSys.getNumberOfEmployees());
+	}
+
+
+
+
+}

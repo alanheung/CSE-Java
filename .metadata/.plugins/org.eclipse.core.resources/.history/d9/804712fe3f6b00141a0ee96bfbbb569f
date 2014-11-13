@@ -1,0 +1,102 @@
+package alan.com;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+
+@ManagedBean
+@SessionScoped
+
+public class TableData implements Serializable{
+	private static final long serialVersionUID = 1L;
+	private String name;
+	private String dept;
+	private int age;
+	BigDecimal sal;
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getDept() {
+		return dept;
+	}
+	public void setDept(String dept) {
+		this.dept = dept;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public BigDecimal getSal() {
+		return sal;
+	}
+	public void setSal(BigDecimal sal) {
+		this.sal = sal;
+	}
+	private static List<Name> names= new ArrayList<Name>(Arrays.asList(
+			new Name ("John", "Marketing", 30, new BigDecimal("2000.00")),
+			new Name ("Robert", "Marketing", 35, new BigDecimal("3000.00")),
+			new Name ("Mark", "Sales", 25, new BigDecimal("2500.00"))
+			));
+	
+	public List<Name> getNames(){
+		return names;
+	}
+	public String editName(Name name){
+		name.setCanEdit(true);
+		return null;
+	}
+	public String deleteName(Name name){
+		names.remove(name);
+		return null;
+	}
+	public void saveAction(){
+		//set canEdit of all employees to false
+		for(Name name: names){
+			name.setCanEdit(false);
+		}
+	}
+	public String addName(){
+		final Name name = new Name(this.name, this.dept, this.age, this.sal);
+		names.add(name);
+		//name=null;
+		dept=null;
+		age=0;
+		sal=null;
+		return null;
+	}
+	
+	public String sortByName(){
+		if(sortAscending){
+			//ascending order
+			Collections.sort(names, new Comparator<Name>(){
+				@Override
+				public int compare(Name name1, Name name2){
+					return name1.getFirst().compareTo(name2.getFirst());
+				}
+			});
+			sortAscending=false;
+		}else{
+			//ascending order
+			Collections.sort(names, new Comparator<Name>(){
+				@Override
+				public int compare(Name name1, Name name2){
+					return name2.getFirst().compareTo(name1.getFirst());
+				}
+			});
+			sortAscending=true;
+		}return null;
+	}
+}

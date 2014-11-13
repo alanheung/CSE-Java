@@ -51,12 +51,12 @@ public class ArrayProcessing {
 		System.out.print("Please enter size of array: ");//ask user for size of array
 		int a =sc.nextInt();
 		int []n = new int[a];//create array size based on user input
-		
+
 		for(int i=0; i<n.length; i++){
 			System.out.print("Please enter in a number: ");//ask user to enter in a number value for each index
 			n[i] = sc.nextInt();
 		}
-		
+
 		for(int j=0;j<n.length; j++){//this is based on the size that the user inputted
 			for(int i=0; i<n[j]; i++){//this is the actual value entered, and loops the print of stars until it reaches the inital value
 				System.out.print("* ");
@@ -67,7 +67,7 @@ public class ArrayProcessing {
 	public static void frequency(){
 		int []response = {1, 2, 6, 4, 8, 5, 9, 7, 8, 10, 1, 6, 3, 8, 6, 10, 3, 8, 2, 7};
 		int []frequency = {0,0,0,0,0,0,0,0,0,0,0};
-		
+
 		for(int element:response){
 			frequency[element]++;
 			System.out.print(frequency[element]+" ");
@@ -79,10 +79,10 @@ public class ArrayProcessing {
 			System.out.print(response[rating]+" ");
 		}
 	}
-	
+
 	public static void multiDimArray(){
 		int [][]arr ={{1,2,3},
-					{4,5,6}};
+				{4,5,6}};
 		printTheArray(arr);
 	}
 	public static void printTheArray(int[][]a){
@@ -94,32 +94,97 @@ public class ArrayProcessing {
 	}
 	public static void studentGrades(){
 		int [][]studentGrades ={{77,68,86,73},
-								{96,87,89,78},
-								{73,90,86,81}};
+				{96,87,89,78},
+				{73,90,86,81}};
 		System.out.print("The array is ");
 		printArray(studentGrades);
-	}
-//	public static void printArray(int[][]a){//for loop
-//		System.out.println("\t[0]\t[1]\t[2]\t[3]\t\n");
-//		for(int row=0; row<a.length; row++){
-//			System.out.print("Student Grade["+row+"] ");
-//			for(int col=0; col<a[row].length; col++){
-//				System.out.print(a[row][col]+"\t ");
-//			}System.out.println("\n");
-//		}
-//	}
-	public static void printArray(int[][]a){//enhanced for loop
-	System.out.println("\t[0]\t[1]\t[2]\t[3]\t\n");
-	int count=0;
-	for(int []student:a){
-		System.out.print("Student Grade["+count+"] ");
-		count++;
-		for(int grade:student){
-			System.out.print(grade+"\t ");
-		}					
-		System.out.println("\n");
-	}
-}
-		
+		System.out.println("The lowest grade is "+ minimum(studentGrades));
+		System.out.println("The highest grade is "+ maximum(studentGrades));
+		// calculate the average for each student
+		int row=1;
+		for(int []student:studentGrades){
+			switch(row){
+			case 1: System.out.print("The average for the first student is ");
+			break;
+			case 2: System.out.print("The average for the second student is ");
+			break;
+			case 3: System.out.print("The average for the third student is ");
+			break;
+			}
+			System.out.println(average(student));
+			row++;
+		}
 
+	}
+	//	public static void printArray(int[][]a){//for loop
+	//		System.out.println("\t[0]\t[1]\t[2]\t[3]\t\n");
+	//		for(int row=0; row<a.length; row++){
+	//			System.out.print("Student Grade["+row+"] ");
+	//			for(int col=0; col<a[row].length; col++){
+	//				System.out.print(a[row][col]+"\t ");
+	//			}System.out.println("\n");
+	//		}
+	//	}
+	public static void printArray(int[][]a){//enhanced for loop
+		System.out.println("\t[0]\t[1]\t[2]\t[3]\t\n");
+		int count=0;
+		for(int []student:a){
+			System.out.print("Student Grade["+count+"] ");
+			count++;
+			for(int grade:student){
+				System.out.print(grade+"\t ");
+			}					
+			System.out.println("\n");
+		}
+	}
+//	public static int minimum(int [][]grade){
+//		int minGrade=grade[0][0];//100;
+//		for(int row=0; row>grade.length; row++){
+//			for(int col=0; col<grade[row].length; col++){
+//				if(grade[row][col] < minGrade){
+//					minGrade = grade[row][col];
+//				}
+//			}
+//		}
+//		return minGrade;
+//	}
+	public static int minimum(int [][]a){
+		int minGrade=100;
+		for(int []student:a){
+			for(int grades:student){
+				if(grades < minGrade){
+					minGrade = grades;
+				}
+			}
+		}
+		return minGrade;
+	}
+	public static int maximum(int [][]a){
+		int maxGrade=0;
+		for(int []student:a){
+			for(int grades:student){
+				if(grades > maxGrade){
+					maxGrade = grades;
+				}
+			}
+		}
+		return maxGrade;
+	}
+	public static double average(int []studentGrades){
+		double total = 0;
+		//for(int grade:studentGrades){
+		for(int grade=0; grade < studentGrades.length; grade++){
+			total+=studentGrades[grade];
+		}
+		return total/studentGrades.length;
+	}
+//	public static double average(int []studentGrades){
+//		double total=0;
+//
+//		for(int grade:studentGrades)
+//			total+=grade;
+//
+//		return total/studentGrades.length;		
+//	}
+	
 }//

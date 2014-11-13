@@ -1,0 +1,7 @@
+package alan.com.junit;
+import junit.framework.TestCase;
+public class MathTest extends TestCase{
+	private int value1;
+	private int value2;
+
+}

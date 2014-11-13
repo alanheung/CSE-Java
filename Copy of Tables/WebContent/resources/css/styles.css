@@ -1,0 +1,18 @@
+.nameTable{
+	border-collapse:collapse;
+	border:1px solid #000000;
+}
+.nameTableHeader{
+	text_align:center;
+	background:#B5B5B5;
+	border-bottom:1px solid #000000;
+	padding:2px;
+}
+.nameTableOddRow{
+	text-align:center;
+	background: #FFFFFF;
+}
+.nameTableEvenRow{
+	text-align:center;
+	background:#D3D3D3;
+}

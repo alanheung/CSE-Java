@@ -1,0 +1,11 @@
+package alan.com.junit;
+import org.j2eedev.calc.Calculation;
+import junit.framework.TestCase;
+public class MathTest extends TestCase{
+
+	public static void main(String[] args) {
+		private int value1;
+		private int value2;
+	}
+
+}

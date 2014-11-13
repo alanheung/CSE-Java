@@ -1,0 +1,25 @@
+.details-table {
+	width:100%;
+	border-collapse: collapse;
+	border: 1px solid green;
+}
+
+.details-table-header {
+	text-align: center;
+    background-color: #ddd;
+    color: #BB0000;
+    border-bottom: 2px solid #000;
+	padding: 16px;
+}
+
+.details-table-odd-row {
+	text-align: center;
+    border-top: 1px solid #ccc;
+    border-top: 1px solid green;
+}
+
+.details-table-even-row {
+	text-align: center;
+	background: none repeat scroll 0 0 #F9F9F9;
+	border-top: 1px solid green;
+}
