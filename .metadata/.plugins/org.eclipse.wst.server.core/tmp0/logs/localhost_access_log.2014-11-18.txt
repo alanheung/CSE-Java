@@ -1,0 +1,7 @@
+127.0.0.1 - - [18/Nov/2014:14:22:58 +0000] "GET / HTTP/1.1" 404 955
+0:0:0:0:0:0:0:1 - - [18/Nov/2014:14:23:00 +0000] "GET /Tables/faces/index.xhtml HTTP/1.1" 200 3986
+0:0:0:0:0:0:0:1 - - [18/Nov/2014:14:23:04 +0000] "POST /Tables/faces/index.xhtml;jsessionid=27A9299665DAB616D2B980CF2710B383 HTTP/1.1" 200 4114
+0:0:0:0:0:0:0:1 - - [18/Nov/2014:14:23:07 +0000] "POST /Tables/faces/index.xhtml HTTP/1.1" 200 4126
+0:0:0:0:0:0:0:1 - - [18/Nov/2014:14:23:08 +0000] "POST /Tables/faces/index.xhtml HTTP/1.1" 200 4122
+0:0:0:0:0:0:0:1 - - [18/Nov/2014:14:23:09 +0000] "POST /Tables/faces/index.xhtml HTTP/1.1" 200 4126
+0:0:0:0:0:0:0:1 - - [18/Nov/2014:14:23:10 +0000] "POST /Tables/faces/index.xhtml HTTP/1.1" 200 4134
