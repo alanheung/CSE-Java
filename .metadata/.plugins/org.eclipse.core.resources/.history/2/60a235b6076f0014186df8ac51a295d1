@@ -1,0 +1,26 @@
+package ait.com.alan;
+
+import java.util.ArrayList;
+
+public class ArrayListSample {
+
+	public static void main(String[] args) {
+		String name = arrayListStringLiterals(4);
+		System.out.println("name(4) is "+name);
+	}
+	public static String arrayListStringLiterals(int index){
+		ArrayList<String> names = new ArrayList<String>();
+		names.add("Zoe");
+		names.add("Paul");
+		names.add("Peter");
+		names.add("Alan");
+		names.add("Thomas");
+		System.out.println(names);
+		
+		return names.get(index);
+	}
+	public static void arrayListStringsNoLoops(){
+		ArrayList<String> names = new ArrayList<>();
+
+	}
+}//end

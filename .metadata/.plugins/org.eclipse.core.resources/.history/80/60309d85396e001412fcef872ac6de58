@@ -1,0 +1,141 @@
+import java.util.Arrays;
+
+public class Arrays2 {
+
+	public static void main(String[] args) {
+		statistics();
+	}
+	public static void statistics(){
+		int []arr1 ={93, 44, 17, 50, 9, 17, 50};//array 1
+
+		int total=0;
+		for(int a:arr1){
+			total+=a;
+		}
+		System.out.println("Total= "+total);
+
+		double average=0;
+		for(int a:arr1){
+			average+=a;
+		}
+		average = average/arr1.length;
+		System.out.println("Average= "+average);
+		
+		double median = calcMedian(arr1);
+		System.out.println("Median= "+median);
+		
+		double range = calcRange(arr1);
+		System.out.println("Range= "+range);
+		
+		int []arr2 ={8, -6, 89, 17, 12, 6};//array 2
+		int average2=0;
+		for(int a:arr2){
+			average2+=a;
+		}
+		average2 = average2/arr2.length;
+		System.out.println("\nAverage= "+average2);
+		
+		double median2 = calcMedian(arr2);
+		System.out.println("Median= "+median2);
+		
+	}
+	public static double calcMedian(int []arr){//middle value
+		int middle= arr.length/2;
+		int median = arr[middle];
+		Arrays.sort(arr);
+		
+		if(arr.length%2==0){
+			return (arr[middle] + (arr[middle-1])) /2;
+		}else{
+			return median;
+		}
+	}
+	public static double calcRange(int[] arr) {
+		Arrays.sort(arr);
+		int range = (arr[arr.length-1] - arr[0]);
+		System.out.println(range);
+		return range;
+	}
+	public static void usingArraysClass(){
+		double []grades ={92.3, 44.9, 76.9, 73.2};
+		Arrays.sort(grades);
+		for(double g:grades){
+			System.out.println("Grade is "+g);
+
+		}
+	}
+//	public static int calcRange(int []array){
+//		int min = array[0];  
+//		for(int i=1;i < array.length;i++){  
+//			if(array[i] < min){  
+//				min = array[i];  
+//			}  
+//		}
+//		
+//		int max = array[0];  
+//		for(int i=1;i < array.length;i++){  
+//			if(array[i] > max){  
+//				max = array[i];  
+//
+//			}  
+//		}
+//		
+//		int range = 0;
+//		for (int i: array){
+//			if (array.length > 0){
+//				range = max - min + 1;
+//			}
+//		}
+//		return range;
+////		for (int i: arr){	
+////		}
+////		return max - min + 1;
+//	}
+
+
+}//
+
+//import java.util.Arrays;
+//public class ArrayExercises2 {
+//	public static void main(String[] args) {
+//		statistics();
+//	}
+//	public static void statistics() {
+//		int arr[] = {9,3,44,17,50,5,77};
+//		int arr2[] = {8,-6,89,17,12,6};
+//		int sum = 0;
+//		double avg = 0;
+//		for (int i : arr) {
+//			sum += i;
+//			avg = sum / arr.length;
+//		}
+//		System.out.println(sum);
+//		System.out.println(avg);
+//		System.out.println(calculateMedian(arr2));
+//		calculateRange(arr2);
+//	}
+//	public static double calculateMedian(int[] arr) {
+//		Arrays.sort(arr);
+//		double median = 0;
+//		int count = 0;
+//		if (arr.length % 2 == 0) {
+//			count = (arr.length / 2);
+//			int lower = arr[count - 1];
+//			median = ((lower + arr[count]) / 2);
+//		}
+//		else {
+//			for (int i : arr) {
+//				count++;
+//			}
+//			count = (count / 2);
+//			median = arr[count];
+//		}
+//		return median;
+//	}
+//	public static double calculateRange(int[] arr) {
+//		Arrays.sort(arr);
+//		int range = (arr[arr.length-1] - arr[0]);
+//		System.out.println(range);
+//		return range;
+//	}
+//}

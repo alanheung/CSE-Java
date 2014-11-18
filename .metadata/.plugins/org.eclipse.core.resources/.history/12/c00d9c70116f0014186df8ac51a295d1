@@ -1,0 +1,16 @@
+package ait.com.alan;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ArrayListExample {
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
+		ArrayList<String> destination = new ArrayList<>();
+		System.out.println("Holiday desintation program");
+		
+		String input = sc.next();
+
+		while(!input.equalsIgnoreCase("y")){
+	}
+
+}//end

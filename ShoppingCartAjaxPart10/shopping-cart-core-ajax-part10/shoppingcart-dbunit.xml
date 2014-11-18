@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+  <basket ID="100001" USERID="shaggy"/>
+  <item ID="100001" DESCRIPTION="Candy coated milky tarts" NAME="Candy Cotton" PRICE="8.5"/>
+  <item ID="100002" DESCRIPTION="Jelly icecream waffle cream" NAME="Jelly Beans" PRICE="18.99"/>
+  <basket_item ID="100001" BASKET_ID="100001" ITEMS_ID="100001" QUANTITY="2" PRICE="17"/>
+  <basket_item ID="100002" BASKET_ID="100001" ITEMS_ID="100002" QUANTITY="1" PRICE="18.99"/>
+</dataset>

@@ -1,0 +1,54 @@
+package ait.com.alan;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ArrayListSample {
+	static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[] args) {
+//		String name = arrayListStringLiterals(4);
+//		System.out.println("name(4) is "+name);
+		arrayListStringsWithLoops();
+	}
+	public static String arrayListStringLiterals(int index){
+		ArrayList<String> names = new ArrayList<String>();
+		names.add("Zoe");
+		names.add("Paul");
+		names.add("Peter");
+		names.add("Alan");
+		names.add("Thomas");
+		System.out.println(names);
+		
+		return names.get(index);
+	}
+	public static void arrayListStringsNoLoops(){
+		ArrayList<String> names = new ArrayList<>();
+		System.out.print("Please enter name: ");
+		names.add(sc.next());
+		System.out.print("Please enter name: ");
+		names.add(sc.next());
+		System.out.print("Please enter name: ");
+		names.add(sc.next());
+		System.out.print("Please enter name: ");
+		names.add(sc.next());
+		System.out.println(names);
+}
+	public static void arrayListStringsWithLoops(){
+		ArrayList<String> names = new ArrayList<>();
+
+		System.out.print("Please enter name: (x to exit): ");
+		String input = sc.next();
+		
+		while(!input.equalsIgnoreCase("x")){
+			names.add(input);
+			
+			System.out.print("Please enter name: (x to exit): ");
+			input = sc.next();
+		}				
+		System.out.println(names);
+		for(String a: names){
+			System.out.println(names);
+		}
+	}
+}//end

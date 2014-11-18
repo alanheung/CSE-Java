@@ -27,8 +27,9 @@ public class IPhone {
 		this.billPay=billPay;
 		this.gigabytes=gigabytes;
 		count++;
-		if(this.billPay)
+		if(this.billPay){
 			billpayPriceAndRental();
+		}
 	}
 
 	public String getModel() {
@@ -141,7 +142,7 @@ public class IPhone {
 	}
 	@Override
 	public String toString(){
-		return 	"The model is "+ getModel() + ", \nthe network is "+ getNetwork()
-				+",\nthe plan is "+getPlan()+", \nbillpay: "+isBillPay()+", \ngigabytes: "+getGigabytes();
+		return 	"The model is "+ getModel() + " \nthe network is "+ getNetwork()
+				+"\nthe plan is "+getPlan()+" \nbillpay: "+isBillPay()+" \ngigabytes: "+getGigabytes();
 	}
 }//

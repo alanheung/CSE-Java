@@ -1,0 +1,137 @@
+package ait.com.alan;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+class Person{
+	private int age;
+	private String name, address;
+
+	public Person(int age, String name, String address) {
+		super();
+		this.age = age;
+		this.name = name;
+		this.address = address;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	@Override
+	public String toString() {
+		return "Person [age=" + age + ", name=" + name + ", address=" + address
+				+ "]";
+	}
+	
+}
+public class ArrayListSample {
+	static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		//		String name = arrayListStringLiterals(4);
+		//		System.out.println("name(4) is "+name);
+		//		arrayListStringsWithLoops();
+		//		arrayListInteger();
+		arrayListPerson();
+	}
+	public static void arrayListPerson(){
+		ArrayList<Person> people = new ArrayList<>();
+		int inputAge = sc.nextInt();
+		String inputName = sc.next();
+		String inputAddress = sc.next();
+
+		while(true){
+			System.out.println("Please enter age: ");
+			inputAge = sc.nextInt();
+			System.out.println("Please enter name: ");
+			inputName = sc.next();
+			System.out.println("Please enter address: ");
+			inputAddress = sc.next();
+			
+			Person me = new Person(inputAge, inputName, inputAddress);
+			people.add(me);
+			
+			System.out.println("Continue Y/N?");
+			if(sc.next().equalsIgnoreCase("n")){
+				break;
+			}
+		}
+		System.out.println(me);
+
+	}
+	public static String arrayListStringLiterals(int index){
+		ArrayList<String> names = new ArrayList<String>();
+		names.add("Zoe");
+		names.add("Paul");
+		names.add("Peter");
+		names.add("Alan");
+		names.add("Thomas");
+		System.out.println(names);
+
+		return names.get(index);
+	}
+	public static void arrayListStringsNoLoops(){
+		ArrayList<String> names = new ArrayList<>();
+		System.out.print("Please enter name: ");
+		names.add(sc.next());
+		System.out.print("Please enter name: ");
+		names.add(sc.next());
+		System.out.print("Please enter name: ");
+		names.add(sc.next());
+		System.out.print("Please enter name: ");
+		names.add(sc.next());
+		System.out.println(names);
+	}
+	public static void arrayListStringsWithLoops(){
+		ArrayList<String> names = new ArrayList<>();
+
+		System.out.print("Please enter name: (x to exit): ");
+		String input = sc.next();
+
+		while(!input.equalsIgnoreCase("x")){
+			names.add(input);
+
+			System.out.print("Please enter name: (x to exit): ");
+			input = sc.next();
+		}				
+		//System.out.println(names);//output
+		for(String element: names){
+			System.out.println(element);
+		}
+	}
+	public static void arrayListInteger(){
+		ArrayList<Integer> numbers = new ArrayList<>(3);//<type> (size).<Integer> are wrapper classes
+		System.out.print("Please enter integer: (-1 to exit): ");
+		int input = sc.nextInt();
+
+		while(input != -1){
+			numbers.add(input);//autoboxing
+
+			System.out.print("Please enter name: (-1 to exit): ");
+			input = sc.nextInt();
+		}				
+		//output
+		//System.out.println(numbers);
+		for(Integer element: numbers){
+			System.out.println("The number(Integer) is "+element);
+		}
+		for(int element: numbers){//unboxing with int
+			System.out.println("The number(int) is "+element);
+		}
+	}
+
+}//end

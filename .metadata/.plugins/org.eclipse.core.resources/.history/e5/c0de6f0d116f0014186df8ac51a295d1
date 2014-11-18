@@ -1,0 +1,10 @@
+package ait.com.alan;
+import java.util.Scanner;
+
+public class ArrayListExample {
+
+	public static void main(String[] args) {
+
+	}
+
+}//end

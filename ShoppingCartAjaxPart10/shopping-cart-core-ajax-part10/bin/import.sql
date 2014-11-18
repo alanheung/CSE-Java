@@ -1,0 +1,6 @@
+insert into item (id,description,name,price) values (1,'Candy coated milky tarts','Candy Cotton',8.5)
+insert into item (id,description,name,price) values (2,'Jelly icecream waffle cream','Jelly Beans',18.99)
+insert into item (id,description,name,price) values (3,'Jam Doughnut','Strawberry jam and Christmas pudding',23.00)
+insert into item (id,description,name,price) values (4,'Mallow Madness','Marshmellow wrap',8.50)
+insert into item (id,description,name,price) values (5,'Chocolate Cheese','Crunchy chocolate creamy cheese',17.50)
+insert into item (id,description,name,price) values (6,'Custard Crazy','Custard sauce with jelly and cream',13.55)

@@ -1,0 +1,74 @@
+package ait.com.test;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+import java.util.ArrayList;
+import org.junit.Before;
+import org.junit.Test;
+
+public class EmployeeSysTest {
+
+	private EmployeeSys myEmployeeSys;
+
+	@Before
+	public void setUp(){
+		myEmployeeSys = new EmployeeSys();
+	}
+	@Test
+	public void testLogin(){
+		EmployeeSys aEmployeeSys = new EmployeeSys();
+
+		assertTrue(aEmployeeSys.login("root","admin"));
+		assertFalse(aEmployeeSys.login("notRoot", "notAdmin"));
+		assertFalse(aEmployeeSys.login("root","notAdmin"));
+	}
+	
+	@Test
+	public void testCheckNumberOfEmployees(){
+		assertEquals(0,myEmployeeSys.getNumberOfEmployees());	 
+	}
+	
+	@Test
+	public void testLoginAndAddingEmployeesToSys(){
+		Employee employee1 = new Employee();
+		//user must be logged in
+		myEmployeeSys.login("root", "admin");
+		//add employee to system
+		myEmployeeSys.addEmployee(employee1);
+		assertEquals(1,myEmployeeSys.getNumberOfEmployees());
+	}
+	
+	@Test
+	public void testLoginFailureAndAddingEmployeesToSys(){
+		Employee employee1 = new Employee();
+		//add employee to system without login
+		myEmployeeSys.addEmployee(employee1);
+		assertEquals(0,myEmployeeSys.getNumberOfEmployees());
+	}
+	
+	@Test
+	public void testLoginSuccessAndAddingTwoEmployeesToSys(){
+		Employee employee1 = new Employee();
+		//user must be logged in
+		myEmployeeSys.login("root", "admin");
+		//add 2 employee to system
+		myEmployeeSys.addEmployee(employee1);
+		myEmployeeSys.addEmployee(employee1);
+		assertEquals(2,myEmployeeSys.getNumberOfEmployees());
+	}
+	
+	@Test
+	public void testLogOutTest(){
+		Employee employee1 = new Employee();
+		//user must be logged in
+		myEmployeeSys.login("root", "admin");
+		//adds employee to system
+		myEmployeeSys.addEmployee(employee1);
+		//user logs out
+		myEmployeeSys.logOut();
+		myEmployeeSys.addEmployee(employee1);
+		assertEquals(1,myEmployeeSys.getNumberOfEmployees());
+	}
+
+}

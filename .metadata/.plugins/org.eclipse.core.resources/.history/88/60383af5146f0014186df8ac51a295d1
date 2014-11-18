@@ -1,0 +1,50 @@
+package ait.com.alan;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ArrayListExample {
+	static Scanner sc = new Scanner(System.in);
+	static ArrayList<String> destinations = new ArrayList<>();
+
+	public static void main(String[] args) {
+		System.out.println("Holiday desintation program");
+		
+		String userContinue ="y";
+		final int ADD=1, UPDATE= 2, DELETE=3, DISPLAY=4, EXIT=5;
+		while(userContinue.equalsIgnoreCase("y")){
+			switch(userChoice()){
+				case ADD:
+					destinations.add(add());
+					break;
+				case UPDATE:
+					break;
+				case DELETE:
+					break;
+				case DISPLAY:
+					break;
+				case EXIT: 
+					userContinue="n";
+					break;
+				default:
+					System.out.println("unknown entry");
+			}
+		}
+	}
+	public static int userChoice(){
+		System.out.print("What do you want to do?");
+		System.out.print("1.add 2.update 3.delete 4.display 5.Exit");
+		int input = sc.nextInt();
+		return input;
+	}
+	public static String add(){
+		System.out.print("Enter destination");
+		String input = sc.next();
+		return input;
+	}
+	public static void display(){
+		for(String element: destinations){
+			System.out.println("The"+element);
+		}
+	}
+
+}//end

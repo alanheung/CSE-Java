@@ -1,0 +1,3 @@
+INDEX VERSION 1.126
+C:\Users\A00226316\Java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\186856293.index
+\shopping-cart-web-ajax-part10\src

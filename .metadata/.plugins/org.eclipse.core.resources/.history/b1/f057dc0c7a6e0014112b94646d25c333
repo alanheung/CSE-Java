@@ -1,0 +1,27 @@
+
+public class GenerateInvoice {
+
+	//Function To Generate AlphaNumeric Random Strings that will be used as unique Invoice ID.
+	public String invoiceIDGenerator(){
+		long decimalNumber=System.nanoTime();
+		String strBaseDigits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		String invoiceID = "";
+		int mod = 0;
+		while(decimalNumber!= 0){
+            mod=(int) (decimalNumber % 36);
+            invoiceID=strBaseDigits.substring(mod,mod+1)+invoiceID;
+            decimalNumber=decimalNumber/36;
+        }
+		return invoiceID;
+	}
+//	public GenerateInvoice(double basket, double delivery, Customer customer){
+//		
+//	}
+//	
+//	Customer customer(){
+//		String name="";
+//		String address="";
+//		int cardNumber=0;
+//	}
+
+}//

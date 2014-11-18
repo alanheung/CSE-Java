@@ -1,0 +1,50 @@
+package ait.com.test;
+
+import java.util.ArrayList;
+
+public class EmployeeSys {
+	private ArrayList<Employee> employees;
+
+	private boolean userLoggedIn;
+	private String password;
+	private String username;
+	private static int numberOfEmployees;
+
+	public EmployeeSys(){
+		employees = new ArrayList<Employee>();
+		userLoggedIn =false;
+		password ="root";
+		username ="admin";
+	}
+//	public EmployeeSys(boolean userLoggedIn,String password,String username){
+//		this.userLoggedIn =userLoggedIn;
+//		this.password =password;
+//		this.username =username;
+//	}
+	public boolean login(String aUsername, String aPassword){
+		boolean valid = false;
+		if(aUsername.equals(username) && aPassword.equals(password)){
+			userLoggedIn = true;
+			valid = true;
+		}	
+		return valid;
+	}
+	
+	public int getNumberOfEmployees(){
+		return numberOfEmployees;
+	}
+	
+	public boolean addEmployee(Employee employee){
+		if(userLoggedIn==true){
+			numberOfEmployees+=1;
+			employees.add(employee);
+		}
+		
+		return userLoggedIn;
+	}
+	
+	public void logOut(){
+		userLoggedIn= false;
+	}
+
+}

@@ -1,0 +1,9 @@
+
+public class GenerateInvoice {
+
+	public GenerateInvoice(double basketdouble delivery, Customer customer){
+		
+	}
+
+
+}//

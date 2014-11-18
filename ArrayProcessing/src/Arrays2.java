@@ -3,7 +3,8 @@ import java.util.Arrays;
 public class Arrays2 {
 
 	public static void main(String[] args) {
-		statistics();
+		//statistics();
+		usingArraysClass();
 	}
 	public static void statistics(){
 		int []arr1 ={93, 44, 17, 50, 9, 17, 50};//array 1
@@ -55,7 +56,25 @@ public class Arrays2 {
 		int range = (arr[arr.length-1] - arr[0]);
 		System.out.println(range);
 		return range;
+	}
+	public static void usingArraysClass(){
+		double []grades ={92.3, 44.9, 76.9, 73.2};
+		Arrays.sort(grades);
+		for(double g:grades){
+			System.out.println("Grade is "+g);
 		}
+		
+//		copyOfRange(original, from, to)
+		double []low = Arrays.copyOfRange(grades, 0, 2);//2-0=2
+		for(double g:low){
+			System.out.println("Low ranges = "+g);//[0] =44.9 [1] =73.2
+		}
+		double []high = Arrays.copyOfRange(grades, 2, 5);//5-2=3 output 
+		for(double g:high){
+			System.out.println("High ranges = "+g);//[0]=76.9 [1]=92.3 [2]=0.0
+		}
+	}
+	
 //	public static int calcRange(int []array){
 //		int min = array[0];  
 //		for(int i=1;i < array.length;i++){  

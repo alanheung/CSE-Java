@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+class Invoice{
+	String basket;
+	String delivery;
+	int itemPurchased;
+	double pricePerItem;
+
+	Invoice(){
+		basket = "";
+		delivery = "";
+		itemPurchased = 0;
+		pricePerItem = 0.0;
+	}
+
+	String getbasket(){
+		return basket;
+	}
+	String getdelivery(){
+		return delivery;
+	}
+	int getItemPurchased(){
+		return itemPurchased;
+	}
+	double getPricePerItem(){
+		return pricePerItem;
+	}
+	double getInvoiceAmount(){
+		return (itemPurchased * pricePerItem);
+	}
+	void setbasket(String bsk){
+		basket = bsk;
+	}
+	void setdelivery(String del){
+		delivery = del;
+	}
+	void setItemPurchased(int ip){
+		itemPurchased = ip;
+	}
+	void setPricePerItem(double ppi){
+		pricePerItem = ppi;
+	}
+
+}
+class InvoiceDemo {
+	
+	public static void main(String args[]) {
+		Invoice invoice = new Invoice();
+		Scanner sc = new Scanner(System.in);
+		System.out.print("\nEnter part number :");
+		invoice.setbasket(sc.nextLine());
+		System.out.print("Enter part description :");
+		invoice.setdelivery(sc.nextLine());
+		System.out.print("Enter item purchased :");
+		invoice.setItemPurchased(sc.nextInt());
+		System.out.print("Enter price per item :");
+		invoice.setPricePerItem(sc.nextDouble());
+
+		System.out.print("\n\nInvoice:");
+		System.out.print("\nBasket total :" + invoice.getbasket());
+		System.out.print("\nPart description :" + invoice.getdelivery());
+		System.out.print("\nTotal Billing Amount :" + invoice.getInvoiceAmount());
+	}
+}
