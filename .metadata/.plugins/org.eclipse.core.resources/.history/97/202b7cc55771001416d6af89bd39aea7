@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+   	<h:head>
+        <title>Corrigans</title>
+        <link rel="shortcut icon" href="images/shop.ico" />
+		<h:outputStylesheet library="css" name="styles.css" />
+    </h:head>
+
+    <body>
+    <h:form>
+		<div id="page">
+			<div id="loginbar">
+				<ul>
+					<li><h:link value="Login" outcome="login" /></li>
+					<li><h:link value="Register" outcome="register" /></li>
+				</ul>
+			</div>
+			<div id="header">
+				<h1><h:graphicImage name="images/HelmLeft.png" />Corrigans Supermarket<h:graphicImage name="images/HelmRight.png" /></h1>
+			</div>
+			<div id="navbar">
+                <ul>
+	                <li><h:link value="Home" outcome="index" /></li>
+	                <li><h:link value="Special Offers" outcome="specialoffers" /></li>
+	                <li><h:link value="Products" outcome="products" /></li>
+                </ul>
+            </div>
+            <div id="sidebar">
+            	<ul>
+	            	<li><h:link value="My Basket" outcome="basket" ><h:graphicImage name="images/Cart.png"/></h:link></li>
+	                <li><h:link value="Settings" outcome="settings" ><h:graphicImage name="images/Settings.png" outcome="basket"/></h:link></li>
+	                <li><h:link value="About Us" outcome="aboutUs" ><h:graphicImage name="images/aboutUs.png" outcome="aboutUs"/></h:link></li>
+            	</ul>
+            </div>
+			<div id="main">
+                <h2>LOGIN</h2>
+                	<h:panelGroup rendered="#{login.validationComplete and (!login.isUsernameValid or !login.isPasswordValid)}">
+                 	<h:outputText value="Username is a Required Field" rendered="#{!login.isUsernameValid}" style="color:red">
+                 	</h:outputText><br />
+                 	<h:outputText value="Password is a Required Field" rendered="#{!login.isPasswordValid}" style="color:red"></h:outputText>
+                 	</h:panelGroup>
+                 		<h:panelGroup rendered="#{login.validationComplete and (login.isUsernameValid and login.isPasswordValid and login.isNameAndPasswordCorrect)}">
+                 		<h:outputText value="Username and Password are valid" style="color:green"></h:outputText>
+                 	<h:commandButton value="Show Employee Data" action="datatable1" />
+                 	</h:panelGroup>
+                 	<h:panelGroup rendered="#{login.validationComplete and (login.isUsernameValid and login.isPasswordValid and !login.isNameAndPasswordCorrect)}">
+                 		<h:outputText value="Username and Password do not match" style="color:red"></h:outputText>
+                 	</h:panelGroup>
+                 	<table>
+                 		<tr>
+                 		<td><h:outputText value="Enter Username: " /></td>
+                 		<td><h:inputText id="username" value="#{login.username}" /></td>
+                 		</tr>
+                 		<tr>
+                 		<td><h:outputText value="Enter Password: " /></td>
+                 		<td><h:inputSecret id="password" value="#{login.password}" /></td>
+                 		</tr><tr>
+                 		<td></td><td><h:commandButton value="Login" action="#{login.checkValidity}"/></td>
+                 		</tr>
+                 	</table>
+			</div>
+
+			<div id="footer">
+                <p>&copy;<b>CSE 2014</b></p>
+			</div>
+
+		</div>
+		</h:form>
+    </body>
+    
+    </html>

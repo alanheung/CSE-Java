@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project basedir="." default="rebuild" name="JSF in Action Hello World">
+  <property name="jdk.home" value="C:/Programs/JBuilderX/jdk1.4"/>
+  <property name="dest" value="classes.ant"/>
+  <property name="Generated.Source" value="${dest}/Temporary_Files"/>
+  <property name="JSF.(JIA).home" value="lib/jsf-1.101"/>
+  <property name="JSTL.(JIA).home" value="lib/jstl"/>
+  <property name="src" value="src"/>
+  <property name="src2" value="test"/>
+  <property name="compiled.jsp" value="${Generated.Source}/.jsp"/>
+  <property name="jsp.cache" value="${Generated.Source}/jsp cache"/>
+  <path id="project.class.path">
+    <pathelement location="${dest}"/>
+    <pathelement location="${JSF.(JIA).home}/commons-beanutils.jar"/>
+    <pathelement location="${JSF.(JIA).home}/commons-collections.jar"/>
+    <pathelement location="${JSF.(JIA).home}/commons-digester.jar"/>
+    <pathelement location="${JSF.(JIA).home}/commons-logging.jar"/>
+    <pathelement location="${JSF.(JIA).home}/jsf-api.jar"/>
+    <pathelement location="${JSF.(JIA).home}/jsf-impl.jar"/>
+    <pathelement location="${JSTL.(JIA).home}/jstl.jar"/>
+    <pathelement location="${JSTL.(JIA).home}/standard.jar"/>
+    <pathelement location="${jdk.home}/demo/jfc/Java2D/Java2Demo.jar"/>
+    <pathelement location="${jdk.home}/demo/plugin/jfc/Java2D/Java2Demo.jar"/>
+    <pathelement location="${jdk.home}/jre/javaws/javaws.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/charsets.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/ext/dnsns.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/ext/ldapsec.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/ext/localedata.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/ext/sunjce_provider.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/im/indicim.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/im/thaiim.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/jce.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/jsse.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/plugin.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/rt.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/sunrsasign.jar"/>
+    <pathelement location="${jdk.home}/lib/dt.jar"/>
+    <pathelement location="${jdk.home}/lib/htmlconverter.jar"/>
+    <pathelement location="${jdk.home}/lib/tools.jar"/>
+  </path>
+  <!--Patternset to exclude files from the output directory:-->
+  <patternset id="dest.exclude">
+    <exclude name="Temporary_Files/"/>
+    <exclude name="Generated Source/"/>
+    <exclude name="package cache/"/>
+    <exclude name="dependency cache/"/>
+    <exclude name="jsp cache/"/>
+  </patternset>
+  <patternset id="dest.excluded.classes">
+    <exclude name="org\jia\validators\**"/>
+    <exclude name="org\jia\converters\**"/>
+    <exclude name="org\jia\components\**"/>
+    <exclude name="org\jia\internal\**"/>
+    <exclude name="org\jia\examples\**"/>
+    <exclude name="org\jia\ptrack\**"/>
+    <exclude name="org\jia\smile\**"/>
+    <exclude name="org\jia\util\**"/>
+    <exclude name="org\jia\test\**"/>
+    <exclude name="old\**"/>
+    <exclude name="**/*.properties"/>
+    <exclude name="META-INF\**"/>
+  </patternset>
+  <target depends="init" name="javacompile">
+    <javac bootclasspathref="project.class.path" debug="true" deprecation="true" destdir="${dest}" nowarn="false">
+      <patternset refid="dest.excluded.classes"/>
+      <src path="${src}"/>
+      <src path="${src2}"/>
+      <src path="${Generated.Source}"/>
+    </javac>
+  </target>
+  <target depends="resource" name="WebModuleNode">
+    <war compress="false" destfile="webapps/jia-hello-world.war"  webxml="webapps/hello-world/WEB-INF/web.xml">
+      <webinf dir="webapps/hello-world/WEB-INF">
+        <include name="faces-config.xml"/>
+      </webinf>
+      <fileset dir="webapps/hello-world">
+        <include name="goodbye.jsp"/>
+        <include name="hello.jsp"/>
+        <include name="WEB-INF/faces-config.xml"/>
+      </fileset>
+      <classes dir="${dest}">
+        <patternset refid="dest.exclude"/>
+        <patternset refid="dest.excluded.classes"/>
+        <include name="**/*.*"/>
+      </classes>
+      <lib dir="${JSF.(JIA).home}">
+        <include name="commons-beanutils.jar"/>
+        <include name="commons-collections.jar"/>
+        <include name="commons-digester.jar"/>
+        <include name="commons-logging.jar"/>
+        <include name="jsf-api.jar"/>
+        <include name="jsf-impl.jar"/>
+      </lib>
+      <lib dir="${JSTL.(JIA).home}">
+        <include name="jstl.jar"/>
+        <include name="standard.jar"/>
+      </lib>
+    </war>
+  </target>
+  <target name="cleanup">
+    <delete file="webapps/jia-hello-world.war"/>
+    <delete failonerror="false" includeemptydirs="true">
+      <fileset dir="${dest}">
+        <patternset refid="dest.excluded.classes"/>
+      </fileset>
+    </delete>
+  </target>
+  <target name="resource">
+    <copy todir="${dest}">
+      <fileset dir="${src}">
+        <include name="**/*.jpe"/>
+        <include name="**/*.jpeg"/>
+        <include name="**/*.rmf"/>
+        <include name="**/*.wav"/>
+        <include name="**/*.mid"/>
+        <include name="**/*.midi"/>
+        <include name="**/*.au"/>
+        <include name="**/*.gif"/>
+        <include name="**/*.png"/>
+        <include name="**/*.jpg"/>
+        <include name="**/*.aiff"/>
+        <include name="**/*.properties"/>
+      </fileset>
+      <fileset dir="${src2}">
+        <include name="**/*.jpe"/>
+        <include name="**/*.jpeg"/>
+        <include name="**/*.rmf"/>
+        <include name="**/*.wav"/>
+        <include name="**/*.mid"/>
+        <include name="**/*.midi"/>
+        <include name="**/*.au"/>
+        <include name="**/*.gif"/>
+        <include name="**/*.png"/>
+        <include name="**/*.jpg"/>
+        <include name="**/*.aiff"/>
+        <include name="**/*.properties"/>
+      </fileset>
+    </copy>
+  </target>
+  <target name="javadoc"/>
+  <target depends="cleanup" name="clean"/>
+  <target name="precompile"/>
+  <target depends="javacompile" name="compile"/>
+  <target name="postcompile"/>
+  <target depends="WebModuleNode,javadoc,resource" name="package"/>
+  <target name="deploy"/>
+  <target depends="precompile,compile,postcompile,package,deploy" name="make"/>
+  <target depends="clean,make" name="rebuild"/>
+  <target name="init">
+    <mkdir dir="${dest}"/>
+    <mkdir dir="${Generated.Source}"/>
+  </target>
+</project>

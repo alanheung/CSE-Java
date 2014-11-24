@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"> 
+
+<h:head></h:head> 
+<body> 
+<h:form>
+	<h:inputText value="#{userBean.userName}"/>
+	<h:commandButton value="Submit" action="user"/>
+</h:form>
+
+<h:selectOneRadio value="#{user.favColor1}">
+	<f:selectItem itemValue="Red" itemLabel="Color1 - Red"/>
+	<f:selectItem itemValue="Green" itemLabel="Color1 - Green"/>
+	<f:selectItem itemValue="Blue" itemLabel="Color1 - Blue"/>
+</h:selectOneRadio>
+
+<h:selectBooleanCheckBox value="#{CustomerBean.rememberMe}"/> Remember Me
+
+<input type="checkbox" name="j_idt6:j_idt8"/> Remember Me
+
+<h:selectOneMenu value="#{user.favCoffee1}">
+	<f:selectItem itemValue="Cream Latte" itemLabel="Coffee3 - Cream Latte"/>
+	<f:selectItem itemValue="Extreme Mocha" itemLabel="Coffee3 - Extreme Mocha"/>
+	<f:selectItem itemValue="Buena Vista" itemLabel="Coffee3 - Buena Vista"/>
+</h:selectOneMenu>
+
+
+</body> 
+</html>

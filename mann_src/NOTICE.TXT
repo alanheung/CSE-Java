@@ -1,0 +1,4 @@
+This distribution contains source code from examples developed for the book JavaServer Faces in Action
+by Kito D. Mann (published by Manning Publications). The original source can be retrieved from the book's
+web site (http://www.manning.com/mann). It is distributed under the Apache License v2.0; that license 
+should be included with this distribution.

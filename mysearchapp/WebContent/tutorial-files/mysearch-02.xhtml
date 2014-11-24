@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<h:html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:pz2utils="http://java.sun.com/jsf/composite/pz2utils"
+      xmlns:pz2widgets="http://java.sun.com/jsf/composite/pz2widgets">
+<h:head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>MySearch, adding pazpar2 polling</title>
+  <!-- Adds hard-coded authentication -->  
+  <h:outputText value="${pzreq.sp.auth.runWith2('action=login;username=guest;password=guest',';')}" 
+                rendered="${pz2.authenticationRequired and not pzresp.sp.auth.isAuthenticationOk()}" 
+                style="display:none;"/>      
+</h:head>
+<h:body>  
+  <!-- This adds a convenience component that will poll pazpar2 until our searches complete: 
+       Debug is set to true for now, so we can follow the polling.                                  -->
+  <pz2utils:pz2watch id="pz2watch" renderWhileActiveclients="" debug="true" />
+  
+  <h:form id="pz2form" prependId="false">              
+    <!-- Search and display logic will go here                              -->
+    <!-- In five steps we will add a search box, a results list, a pager 
+         for browsing through the pages and a field to customize the page 
+         length, 18 lines or so of XHTML code.                              -->
+         
+  </h:form>
+</h:body>
+</h:html>

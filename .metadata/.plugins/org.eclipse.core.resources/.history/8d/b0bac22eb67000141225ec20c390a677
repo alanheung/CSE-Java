@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+
+
+public class Order {
+
+	private static final ArrayList<Order> orderList = 
+			new ArrayList<Order>(Arrays.asList(
+					new Order("First", "Table", "description here"),
+					new Order("Second", "Chair", "2nd description here"),
+					new Order("Third", "Fridge", "3rd description here"),
+					new Order("Fourth", "Carpet", "4th description here"),
+					new Order("Fifth", "Stuff", "5th description here")
+					));
+	public String getFirstValue() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+}

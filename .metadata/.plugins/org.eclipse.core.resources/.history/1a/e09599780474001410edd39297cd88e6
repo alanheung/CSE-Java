@@ -1,0 +1,11 @@
+class preOwnedCar{
+	private String make, model, regNo;
+
+}
+public class CarApplication2 {
+	
+	public static void main(String[] args) {
+
+	}
+
+}

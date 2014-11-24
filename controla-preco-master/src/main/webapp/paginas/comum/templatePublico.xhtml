@@ -1,0 +1,39 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+<c:set var="ctx"
+	value="#{facesContext.externalContext.request.contextPath}" />
+
+<h:head>
+	<link href="${ctx}/paginas/comum/estilo/geral.css" type="text/css"
+		rel="stylesheet" />
+	<title>Controla Preço</title>
+
+</h:head>
+
+<h:body style="margin:0px;">
+	<f:view>
+
+		<div id="header"></div>
+
+		<div id="content" class="content">
+			<ui:insert name="body">Body</ui:insert>
+		</div>
+
+		<div id="footer">
+			<ui:insert name="rodape">
+				<p:panel>
+					<p:outputLabel value="Informe os dados para acessar o sistema" />
+				</p:panel>
+			</ui:insert>
+		</div>
+
+	</f:view>
+
+</h:body>
+
+</html>

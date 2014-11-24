@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="C:/Users/A00226316/Java/libraries/JSF 2.0 (Mojarra 2.0.3-FCS)/mojarra-2.0.3-FCS/lib/jsf-impl.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/html_basic.tld" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/jsf_core.tld" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/mojarra_ext.taglib.xml" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/mojarra_ext.tld" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/composite.taglib.xml" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/facelets_jsf_core.taglib.xml" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/html_basic.taglib.xml" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/jstl-core.taglib.xml" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/jstl-fn.taglib.xml" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/mojarra_ext.taglib.xml" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/ui.taglib.xml" project="CorrigansSupermarket02"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/xampp/tomcat/lib/tomcat-i18n-fr.jar"/>
+  <path value="C:/xampp/tomcat/lib/catalina.jar"/>
+  <path value="C:/Users/A00226316/Java/libraries/JSF 2.0 (Mojarra 2.0.3-FCS)/mojarra-2.0.3-FCS/lib/jsf-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/ecj-3.7.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-i18n-ja.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/catalina-ha.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-coyote.jar"/>
+  <path value="C:/xampp/tomcat/lib/jasper.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-i18n-es.jar"/>
+  <path value="/JSFCheckboxes/WebContent/WEB-INF/faces-config.xml">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/faces-config.xml" project="JSFCheckboxes"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/xampp/tomcat/lib/tomcat-jdbc.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-util.jar"/>
+  <path value="C:/xampp/tomcat/lib/catalina-tribes.jar"/>
+  <path value="C:/xampp/tomcat/lib/catalina-ant.jar"/>
+  <path value="C:/xampp/tomcat/lib/annotations-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-dbcp.jar"/>
+  <path value="C:/xampp/tomcat/lib/jsp-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/servlet-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/ecj-3.6.jar"/>
+  <path value="C:/xampp/tomcat/lib/el-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/ecj-3.6.2.jar"/>
+  <path value="C:/xampp/tomcat/lib/jasper-el.jar"/>
+ </paths>
+ <validation>
+  <el>
+   <linked-el length="26" name="%0" offset="1346" path="%1"/>
+   <linked-el length="26" name="%0" offset="1589" path="%1"/>
+   <linked-el length="32" name="%0" offset="1642" path="%1"/>
+   <linked-el length="19" name="%0" offset="1729" path="%1"/>
+   <linked-el length="32" name="%0" offset="1399" path="%1"/>
+   <linked-el length="26" name="%0" offset="1125" path="%1"/>
+   <linked-el length="19" name="%0" offset="1700" path="%1"/>
+   <linked-el length="40" name="%0" offset="375" path="%2"/>
+   <linked-el length="52" name="%0" offset="558" path="%2"/>
+   <linked-el length="52" name="%0" offset="493" path="%2"/>
+   <linked-el length="26" name="%0" offset="642" path="%1"/>
+   <linked-el length="52" name="%0" offset="428" path="%2"/>
+   <linked-el length="52" name="%0" offset="623" path="%2"/>
+   <linked-el length="32" name="%0" offset="1178" path="%1"/>
+   <linked-el length="25" name="%0" offset="441" path="%1"/>
+   <linked-el length="26" name="%3" offset="1346" path="%1"/>
+   <linked-el length="26" name="%3" offset="1589" path="%1"/>
+   <linked-el length="32" name="%3" offset="1642" path="%1"/>
+   <linked-el length="19" name="%3" offset="1729" path="%1"/>
+   <linked-el length="32" name="%3" offset="1399" path="%1"/>
+   <linked-el length="26" name="%3" offset="1125" path="%1"/>
+   <linked-el length="19" name="%3" offset="1700" path="%1"/>
+   <linked-el length="40" name="%3" offset="375" path="%2"/>
+   <linked-el length="52" name="%3" offset="558" path="%2"/>
+   <linked-el length="52" name="%3" offset="493" path="%2"/>
+   <linked-el length="26" name="%3" offset="642" path="%1"/>
+   <linked-el length="52" name="%3" offset="428" path="%2"/>
+   <linked-el length="52" name="%3" offset="623" path="%2"/>
+   <linked-el length="32" name="%3" offset="1178" path="%1"/>
+   <linked-el length="25" name="%3" offset="441" path="%1"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="/JSFCheckboxes/WebContent/results.xhtml" value="%2"/>
+  <alias path="/JSFCheckboxes/WebContent/index.xhtml" value="%1"/>
+  <alias path="userBean" value="%0"/>
+  <alias path="/JSFCheckboxes/src/UserBean.java" value="%3"/>
+ </aliases>
+</kb-project>

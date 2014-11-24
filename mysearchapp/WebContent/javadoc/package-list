@@ -1,0 +1,10 @@
+com.indexdata.mkjsf.config
+com.indexdata.mkjsf.controls
+com.indexdata.mkjsf.errors
+com.indexdata.mkjsf.pazpar2
+com.indexdata.mkjsf.pazpar2.commands
+com.indexdata.mkjsf.pazpar2.commands.sp
+com.indexdata.mkjsf.pazpar2.data
+com.indexdata.mkjsf.pazpar2.data.sp
+com.indexdata.mkjsf.pazpar2.state
+com.indexdata.mkjsf.utils

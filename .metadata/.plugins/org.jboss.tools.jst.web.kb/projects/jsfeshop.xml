@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="C:/springsource/sts-2.9.1.RELEASE/configuration/org.eclipse.osgi/bundles/1071/1/.cp/lib/javaee-5.0/mail.jar"/>
+  <path value="C:/Users/A00226316/Java/libraries/JSF 2.0 (Mojarra 2.0.3-FCS)/mojarra-2.0.3-FCS/lib/jsf-impl.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/html_basic.tld" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/jsf_core.tld" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/mojarra_ext.taglib.xml" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/mojarra_ext.tld" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/composite.taglib.xml" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/facelets_jsf_core.taglib.xml" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/html_basic.taglib.xml" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/jstl-core.taglib.xml" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/jstl-fn.taglib.xml" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/mojarra_ext.taglib.xml" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/ui.taglib.xml" project="CorrigansSupermarket02"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/A00226316/.m2/repository/org/primefaces/primefaces/4.0/primefaces-4.0.jar">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/lib-primefaces-4.0.jar/meta-inf/faces-config.xml" project="jsfeshop"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-primefaces-4.0.jar/meta-inf/primefaces-p.taglib.xml" project="jsfeshop"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/A00226316/Java/libraries/JSF 2.0 (Mojarra 2.0.3-FCS)/mojarra-2.0.3-FCS/lib/jsf-api.jar"/>
+  <path value="C:/springsource/sts-2.9.1.RELEASE/configuration/org.eclipse.osgi/bundles/1071/1/.cp/lib/javaee-5.0/jsf-api.jar"/>
+  <path value="C:/Users/A00226316/.m2/repository/javax/javaee-web-api/6.0/javaee-web-api-6.0.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javaee-web-api-6.0.jar/meta-inf/c-1_0-rt.tld" project="jsfeshop"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javaee-web-api-6.0.jar/meta-inf/c-1_0.tld" project="jsfeshop"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javaee-web-api-6.0.jar/meta-inf/c.tld" project="jsfeshop"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javaee-web-api-6.0.jar/meta-inf/fmt-1_0-rt.tld" project="jsfeshop"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javaee-web-api-6.0.jar/meta-inf/fmt-1_0.tld" project="jsfeshop"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javaee-web-api-6.0.jar/meta-inf/fmt.tld" project="jsfeshop"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javaee-web-api-6.0.jar/meta-inf/fn.tld" project="jsfeshop"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javaee-web-api-6.0.jar/meta-inf/html_basic.tld" project="jsfeshop"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javaee-web-api-6.0.jar/meta-inf/jsf_core.tld" project="jsfeshop"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javaee-web-api-6.0.jar/meta-inf/mojarra_ext.tld" project="jsfeshop"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javaee-web-api-6.0.jar/meta-inf/permittedtaglibs.tld" project="jsfeshop"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javaee-web-api-6.0.jar/meta-inf/scriptfree.tld" project="jsfeshop"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javaee-web-api-6.0.jar/meta-inf/sql-1_0-rt.tld" project="jsfeshop"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javaee-web-api-6.0.jar/meta-inf/sql-1_0.tld" project="jsfeshop"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javaee-web-api-6.0.jar/meta-inf/sql.tld" project="jsfeshop"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javaee-web-api-6.0.jar/meta-inf/x-1_0-rt.tld" project="jsfeshop"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javaee-web-api-6.0.jar/meta-inf/x-1_0.tld" project="jsfeshop"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javaee-web-api-6.0.jar/meta-inf/x.tld" project="jsfeshop"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/A00226316/.m2/repository/org/jboss/logging/jboss-logging-annotations/1.2.0.Beta1/jboss-logging-annotations-1.2.0.Beta1.jar"/>
+  <path value="C:/Users/A00226316/.m2/repository/org/hibernate/hibernate-validator/5.0.1.Final/hibernate-validator-5.0.1.Final.jar"/>
+  <path value="C:/Users/A00226316/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar"/>
+  <path value="C:/Users/A00226316/.m2/repository/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar"/>
+  <path value="C:/Users/A00226316/.m2/repository/org/primefaces/extensions/primefaces-extensions/1.2.1/primefaces-extensions-1.2.1.jar">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/lib-primefaces-extensions-1.2.1.jar/meta-inf/faces-config.xml" project="jsfeshop"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-primefaces-extensions-1.2.1.jar/meta-inf/primefaces-extensions.taglib.xml" project="jsfeshop"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/A00226316/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar"/>
+  <path value="C:/Users/A00226316/.m2/repository/org/jboss/jandex/1.1.0.Final/jandex-1.1.0.Final.jar"/>
+  <path value="C:/Users/A00226316/.m2/repository/com/fasterxml/classmate/0.8.0/classmate-0.8.0.jar"/>
+  <path value="C:/Users/A00226316/.m2/repository/junit/junit/4.11/junit-4.11.jar"/>
+  <path value="C:/Users/A00226316/.m2/repository/org/hibernate/hibernate-core/4.3.0.CR1/hibernate-core-4.3.0.CR1.jar"/>
+  <path value="C:/Users/A00226316/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar"/>
+  <path value="C:/Users/A00226316/.m2/repository/org/hibernate/common/hibernate-commons-annotations/4.0.4.Final/hibernate-commons-annotations-4.0.4.Final.jar"/>
+  <path value="C:/Users/A00226316/.m2/repository/org/hsqldb/hsqldb/2.3.1/hsqldb-2.3.1.jar"/>
+  <path value="C:/Users/A00226316/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar"/>
+  <path value="C:/Users/A00226316/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar"/>
+  <path value="C:/Users/A00226316/.m2/repository/org/jboss/logging/jboss-logging/3.1.1.GA/jboss-logging-3.1.1.GA.jar"/>
+  <path value="C:/Users/A00226316/.m2/repository/org/primefaces/extensions/resources-ckeditor/1.2.1/resources-ckeditor-1.2.1.jar"/>
+  <path value="C:/Users/A00226316/.m2/repository/org/hibernate/hibernate-entitymanager/4.3.0.CR1/hibernate-entitymanager-4.3.0.CR1.jar"/>
+  <path value="C:/Users/A00226316/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/jboss-transaction-api_1.2_spec-1.0.0.Final.jar"/>
+  <path value="C:/Users/A00226316/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
+  <path value="C:/springsource/sts-2.9.1.RELEASE/configuration/org.eclipse.osgi/bundles/1071/1/.cp/lib/javaee-5.0/jboss-javaee.jar"/>
+  <path value="C:/Users/A00226316/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"/>
+  <path value="C:/Users/A00226316/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar"/>
+ </paths>
+ <validation>
+  <core validator-id="jsf-verification"/>
+  <el>
+   <linked-el length="31" name="%0" offset="1917" path="%1"/>
+   <linked-el length="25" name="%2" offset="350" path="%1"/>
+   <linked-el length="28" name="%2" offset="2016" path="%1"/>
+   <linked-el length="34" name="%2" offset="1683" path="%1"/>
+   <linked-el length="27" name="%3" offset="861" path="%4"/>
+   <linked-el length="39" name="%3" offset="1774" path="%5"/>
+   <linked-el length="42" name="%3" offset="1415" path="%5"/>
+   <linked-el length="37" name="%3" offset="1205" path="%5"/>
+   <linked-el length="36" name="%3" offset="1951" path="%5"/>
+   <linked-el length="33" name="%3" offset="729" path="%4"/>
+   <linked-el length="28" name="%3" offset="652" path="%4"/>
+   <linked-el length="37" name="%3" offset="1596" path="%5"/>
+   <linked-el length="28" name="%6" offset="793" path="%5"/>
+   <linked-el length="43" name="%6" offset="698" path="%7"/>
+   <linked-el length="12" name="%6" offset="1029" path="%8"/>
+   <linked-el length="34" name="%6" offset="1579" path="%8"/>
+   <linked-el length="13" name="%6" offset="1168" path="%8"/>
+   <linked-el length="27" name="%6" offset="526" path="%7"/>
+   <linked-el length="27" name="%6" offset="827" path="%9"/>
+   <linked-el length="41" name="%6" offset="1712" path="%8"/>
+   <linked-el length="35" name="%6" offset="1846" path="%8"/>
+   <linked-el length="34" name="%6" offset="647" path="%7"/>
+   <linked-el length="28" name="%6" offset="1372" path="%9"/>
+   <linked-el length="34" name="%6" offset="1102" path="%9"/>
+   <linked-el length="24" name="%6" offset="593" path="%7"/>
+   <linked-el length="63" name="%6" offset="889" path="%4"/>
+   <linked-el length="14" name="%6" offset="1120" path="%8"/>
+   <linked-el length="25" name="%6" offset="328" path="%7"/>
+   <linked-el length="24" name="%6" offset="1251" path="%8"/>
+   <linked-el length="24" name="%10" offset="790" path="%1"/>
+   <linked-el length="31" name="%10" offset="1917" path="%1"/>
+   <linked-el length="26" name="%10" offset="1042" path="%1"/>
+   <linked-el length="26" name="%10" offset="1309" path="%1"/>
+   <linked-el length="25" name="%11" offset="350" path="%1"/>
+   <linked-el length="28" name="%11" offset="2016" path="%1"/>
+   <linked-el length="34" name="%11" offset="1683" path="%1"/>
+   <linked-el length="23" name="%12" offset="923" path="%8"/>
+   <linked-el length="43" name="%12" offset="698" path="%7"/>
+   <linked-el length="35" name="%12" offset="1050" path="%7"/>
+   <linked-el length="24" name="%12" offset="1601" path="%9"/>
+   <linked-el length="27" name="%12" offset="995" path="%8"/>
+   <linked-el length="12" name="%12" offset="1029" path="%8"/>
+   <linked-el length="34" name="%12" offset="1579" path="%8"/>
+   <linked-el length="13" name="%12" offset="1168" path="%8"/>
+   <linked-el length="27" name="%12" offset="526" path="%7"/>
+   <linked-el length="27" name="%12" offset="827" path="%9"/>
+   <linked-el length="34" name="%12" offset="830" path="%8"/>
+   <linked-el length="41" name="%12" offset="1712" path="%8"/>
+   <linked-el length="35" name="%12" offset="1846" path="%8"/>
+   <linked-el length="34" name="%12" offset="647" path="%7"/>
+   <linked-el length="25" name="%12" offset="362" path="%8"/>
+   <linked-el length="25" name="%12" offset="376" path="%7"/>
+   <linked-el length="28" name="%12" offset="1372" path="%9"/>
+   <linked-el length="34" name="%12" offset="1102" path="%9"/>
+   <linked-el length="24" name="%12" offset="593" path="%7"/>
+   <linked-el length="14" name="%12" offset="1120" path="%8"/>
+   <linked-el length="25" name="%12" offset="328" path="%7"/>
+   <linked-el length="26" name="%12" offset="968" path="%7"/>
+   <linked-el length="24" name="%12" offset="1251" path="%8"/>
+   <linked-el length="8" name="%13" offset="469" path="%1"/>
+   <linked-el length="32" name="%14" offset="1414" path="%1"/>
+   <linked-el length="32" name="%14" offset="1546" path="%1"/>
+   <linked-el length="32" name="%15" offset="1414" path="%1"/>
+   <linked-el length="35" name="%15" offset="1248" path="%1"/>
+   <linked-el length="32" name="%15" offset="1546" path="%1"/>
+   <linked-el length="35" name="%15" offset="981" path="%1"/>
+   <linked-el length="24" name="%16" offset="790" path="%1"/>
+   <linked-el length="28" name="%17" offset="793" path="%5"/>
+   <linked-el length="30" name="%17" offset="709" path="%5"/>
+   <linked-el length="27" name="%17" offset="870" path="%5"/>
+   <linked-el length="18" name="%17" offset="645" path="%5"/>
+   <linked-el length="11" name="%17" offset="599" path="%18"/>
+   <linked-el length="29" name="%17" offset="559" path="%5"/>
+   <linked-el length="12" name="%17" offset="746" path="%5"/>
+   <linked-el length="11" name="%17" offset="661" path="%19"/>
+   <linked-el length="27" name="%20" offset="861" path="%4"/>
+   <linked-el length="32" name="%20" offset="582" path="%4"/>
+   <linked-el length="39" name="%20" offset="1774" path="%5"/>
+   <linked-el length="42" name="%20" offset="1415" path="%5"/>
+   <linked-el length="37" name="%20" offset="1205" path="%5"/>
+   <linked-el length="63" name="%20" offset="889" path="%4"/>
+   <linked-el length="35" name="%20" offset="2095" path="%5"/>
+   <linked-el length="39" name="%20" offset="317" path="%4"/>
+   <linked-el length="36" name="%20" offset="1951" path="%5"/>
+   <linked-el length="33" name="%20" offset="729" path="%4"/>
+   <linked-el length="28" name="%20" offset="652" path="%4"/>
+   <linked-el length="37" name="%20" offset="1596" path="%5"/>
+   <linked-el length="32" name="%19" offset="582" path="%4"/>
+   <linked-el length="39" name="%19" offset="1774" path="%5"/>
+   <linked-el length="42" name="%19" offset="1415" path="%5"/>
+   <linked-el length="37" name="%19" offset="1205" path="%5"/>
+   <linked-el length="35" name="%19" offset="2095" path="%5"/>
+   <linked-el length="39" name="%19" offset="317" path="%4"/>
+   <linked-el length="36" name="%19" offset="1951" path="%5"/>
+   <linked-el length="37" name="%19" offset="1596" path="%5"/>
+   <linked-el length="30" name="%21" offset="709" path="%5"/>
+   <linked-el length="18" name="%21" offset="645" path="%5"/>
+   <linked-el length="11" name="%21" offset="599" path="%18"/>
+   <linked-el length="29" name="%21" offset="559" path="%5"/>
+   <linked-el length="11" name="%21" offset="661" path="%19"/>
+   <linked-el length="28" name="%22" offset="793" path="%5"/>
+   <linked-el length="63" name="%22" offset="889" path="%4"/>
+   <linked-el length="27" name="%22" offset="870" path="%5"/>
+   <linked-el length="12" name="%22" offset="746" path="%5"/>
+   <linked-el length="26" name="%23" offset="1042" path="%1"/>
+   <linked-el length="26" name="%24" offset="1309" path="%1"/>
+   <linked-el length="23" name="%18" offset="923" path="%8"/>
+   <linked-el length="43" name="%18" offset="698" path="%7"/>
+   <linked-el length="35" name="%18" offset="1050" path="%7"/>
+   <linked-el length="27" name="%18" offset="995" path="%8"/>
+   <linked-el length="34" name="%18" offset="1579" path="%8"/>
+   <linked-el length="24" name="%18" offset="1601" path="%9"/>
+   <linked-el length="27" name="%18" offset="526" path="%7"/>
+   <linked-el length="27" name="%18" offset="827" path="%9"/>
+   <linked-el length="34" name="%18" offset="830" path="%8"/>
+   <linked-el length="41" name="%18" offset="1712" path="%8"/>
+   <linked-el length="35" name="%18" offset="1846" path="%8"/>
+   <linked-el length="34" name="%18" offset="647" path="%7"/>
+   <linked-el length="25" name="%18" offset="362" path="%8"/>
+   <linked-el length="28" name="%18" offset="1372" path="%9"/>
+   <linked-el length="25" name="%18" offset="376" path="%7"/>
+   <linked-el length="34" name="%18" offset="1102" path="%9"/>
+   <linked-el length="24" name="%18" offset="593" path="%7"/>
+   <linked-el length="25" name="%18" offset="328" path="%7"/>
+   <linked-el length="26" name="%18" offset="968" path="%7"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="/jsfeshop/src/main/webapp/template/template.xhtml" value="%1"/>
+  <alias path="msg.selectedLanguage" value="%0"/>
+  <alias
+   path="/jsfeshop/src/main/java/cz/jiripinkas/eshop/entity/UserOrder.java" value="%3"/>
+  <alias path="localeManager" value="%11"/>
+  <alias path="title" value="%13"/>
+  <alias path="/jsfeshop/src/main/webapp/order/orders.xhtml" value="%4"/>
+  <alias path="request" value="%15"/>
+  <alias path="msg.menuHome" value="%16"/>
+  <alias path="/jsfeshop/src/main/webapp/order/basket.xhtml" value="%5"/>
+  <alias path="/jsfeshop/src/main/webapp/item/edit.xhtml" value="%9"/>
+  <alias
+   path="/jsfeshop/src/main/java/cz/jiripinkas/eshop/manager/UserOrderManager.java" value="%19"/>
+  <alias
+   path="/jsfeshop/src/main/java/cz/jiripinkas/eshop/domain/Basket.java" value="%21"/>
+  <alias path="msg.menuBasket" value="%23"/>
+  <alias
+   path="/jsfeshop/src/main/java/cz/jiripinkas/eshop/manager/ItemManager.java" value="%18"/>
+  <alias path="msg.menuSignIn" value="%24"/>
+  <alias
+   path="/jsfeshop/src/main/java/cz/jiripinkas/eshop/manager/LocaleManager.java" value="%2"/>
+  <alias path="/jsfeshop/src/main/webapp/item/list.xhtml" value="%8"/>
+  <alias
+   path="/jsfeshop/src/main/java/cz/jiripinkas/eshop/entity/Item.java" value="%6"/>
+  <alias path="msg" value="%10"/>
+  <alias path="itemManager" value="%12"/>
+  <alias path="/jsfeshop/src/main/webapp/item/detail.xhtml" value="%7"/>
+  <alias path="request.remoteUser" value="%14"/>
+  <alias path="basket" value="%17"/>
+  <alias path="userOrderManager" value="%20"/>
+  <alias
+   path="/jsfeshop/src/main/java/cz/jiripinkas/eshop/entity/OrderedItem.java" value="%22"/>
+ </aliases>
+</kb-project>

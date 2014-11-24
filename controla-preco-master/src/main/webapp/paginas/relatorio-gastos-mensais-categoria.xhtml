@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="comum/template-relatorio.xhtml">
+
+	<f:metadata>
+		<f:event
+			listener="#{controladorRelatorio.initGraficoDeBolhasGastosMensaisPorCategoria()}"
+			type="preRenderView" />
+	</f:metadata>
+
+	<ui:define name="body">
+		<h:form>
+			<p:messages id="messages" />
+
+			<p:spacer height="3px" />
+
+			<p:panelGrid columns="3" style="margin:auto;" styleClass="semBorda">
+				<p:outputLabel value="Data" />
+				<p:selectOneMenu value="#{controladorRelatorio.mesAnoReferencia}"
+					label="Mês/Ano" required="true">
+					<f:selectItems value="#{controladorRelatorio.mesesDisponiveis}" />
+					<p:ajax update="graficos, messages" event="change"
+						listener="#{controladorRelatorio.initGraficoDeBolhasGastosMensaisPorCategoria()}" />
+				</p:selectOneMenu>
+			</p:panelGrid>
+
+			<p:spacer height="3px" />
+
+			<p:chart type="bubble" style="margin:auto;width:800px;height:500px;"
+				id="graficos"
+				model="#{controladorRelatorio.graficoDeBolhasGastosMensaisPorCategoria}" />
+
+		</h:form>
+
+	</ui:define>
+
+</ui:composition>
+</html>

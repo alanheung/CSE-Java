@@ -1,0 +1,36 @@
+
+public class searchBean {
+
+	public void searchByFirstValue(String search)
+	{
+		if(search == null || search.length() == 0)
+			return;
+
+		for(Order order : orderList)
+		{
+			if(order.getFirstValue().contains(search)) //java.lang.String methods via a regular expression
+				setSelectedOrder(order);
+
+			return;
+		}
+	}
+
+	public void setSelectedOrder(Order order) {
+
+	}
+
+	boolean exist=false;
+	for(int i=0;i<this.order.size();i++){
+		if(this.order.getId() == id){
+			exist=true;
+			break;
+		}
+	}
+
+	if(exist) {
+		return order.get(id);
+	} else {
+		return order.get(id);
+	}
+}
+}

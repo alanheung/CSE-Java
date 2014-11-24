@@ -1,0 +1,232 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+<c:set var="ctx"
+	value="#{facesContext.externalContext.request.contextPath}" />
+
+<h:head>
+
+	<h:outputScript> 
+	$.jqplot.sprintf.thousandsSeparator = ".";
+	$.jqplot.sprintf.decimalMark = ",";
+
+	function fnGraficoDeBarrasVerticaisGastosPorCategoria() {
+		this.cfg.axes.xaxis.tickOptions.labelPosition = 'middle';
+	    this.cfg.axes.yaxis.tickOptions.formatString = '%\'.2f';
+		this.cfg.seriesDefaults.rendererOptions.varyBarColor = true;
+	}
+
+	function fnGraficoDeBarrasHorizontaisGastosPorCategoria() {
+		this.cfg.axes.yaxis.tickOptions.labelPosition = 'right';
+	    this.cfg.axes.xaxis.tickOptions.formatString = '%\'.2f';
+		this.cfg.seriesDefaults.rendererOptions.varyBarColor = true;
+	}
+	
+	function fnGraficoDeLinhasReceitasDespesas() {
+      	this.cfg.seriesDefaults.shadow = false;
+      	this.cfg.seriesDefaults.linePattern = 'dotted';
+      	this.cfg.title = 'Receitas X Despesas';
+      	this.cfg.legend.placement = 'outside';
+      	this.cfg.animate = true;
+      	this.cfg.highlighter.crosshairs = true;
+      	this.cfg.axes.xaxis.tickOptions.labelPosition = 'middle';
+      	this.cfg.cursor = { show: true, tooltipLocation:'ne'};
+      	//
+	    this.cfg.axes.yaxis.tickOptions.formatString = '%\'.2f';
+      	this.cfg.axes.yaxis.min = 0;
+
+        this.cfg.highlighter = {
+          show: true,
+          sizeAdjust: 5,
+          tooltipContentEditor: function(str, seriesIndex, pointIndex, plot) {
+            
+            var data = plot.data[seriesIndex][pointIndex][0];
+            var valor = plot.data[seriesIndex][pointIndex][1];
+            var valorFormatado = formatarValorMonetario(valor);
+            var saldo = plot.series[1].data[pointIndex][1] - plot.series[0].data[pointIndex][1];
+ 			var saldoFormatado = formatarValorMonetario(saldo);
+ 			
+            var html = '<div><b>Data: </b>';
+            html += data; 
+            html += '<br /> <b>Valor: </b>R$ ';
+			html += valorFormatado; 
+			html += '<br /> <b>Saldo: </b> '; 
+			if(saldo > 0) { 
+			    html += '<span style='color: blue;'>R$ ' + saldoFormatado + '</span>'; 
+		    } else { 
+			    html += '<span style='color: red;'>R$ ' + saldoFormatado + '</span>'; 
+			} 
+			html += '</div>';
+
+            return html;
+            
+          }
+        };
+ 	}
+	
+	function fnGraficoOhlcHistoricoPrecoAcoes() {
+		this.cfg.title = 'Histórico de preços das ações';
+	    this.cfg.axes.xaxis.renderer = $.jqplot.DateAxisRenderer;
+	    this.cfg.axes.xaxis.tickOptions.formatString = '%d/%m/%Y';
+	    this.cfg.axes.xaxis.tickOptions.labelPosition = 'middle';
+	    this.cfg.axes.xaxis.tickOptions.angle = -90;
+	    this.cfg.seriesDefaults.rendererOptions.candleStick = true;
+      	this.cfg.axes.yaxis.tickOptions.formatString = 'US$ %\'.2f';
+      	this.cfg.highlighter.yvalues = 4;
+        this.cfg.highlighter.formatString = '<div> \
+        	<br /><b>Data:</b> %s \
+        	<br /><b>Open:</b> %s \
+        	<br /><b>Hi:</b> %s \
+        	<br /><b>Low:</b> %s \
+        	<br /><b>Close:</b> %s \
+        	</div>';
+    }
+    
+	function fnGraficoDeBarrasReceitasDespesas() {
+      	// 1
+      	this.cfg.highlighter.showMarker = false;
+      	// 2
+      	this.cfg.stackSeries = true;
+      	
+      	this.cfg.axes.xaxis.tickOptions.labelPosition = 'middle';
+      	this.cfg.axes.yaxis.tickOptions.formatString = 'R$ %\'.2f';
+      	this.cfg.highlighter.tooltipAxes = 'y';
+ 	}
+	
+	function fnGraficoDeBarrasReceitasDespesasCombinado() {
+      	this.cfg.showMarker = false;
+      	this.cfg.axes.xaxis.tickOptions.labelPosition = 'middle';
+      	this.cfg.axes.yaxis.tickOptions.formatString = 'R$ %\'.2f';
+      	this.cfg.highlighter.tooltipAxes = 'y';
+ 	}
+	
+    function fnGraficoDeLinhasHistoricoPrecos() {  
+    	this.cfg.legend.placement = 'outsideGrid';
+    	this.cfg.axes.xaxis.tickOptions.labelPosition = 'middle';
+    }
+    
+    function fnGraficoDeLinhasGastosMensais() {  
+	    this.cfg.highlighter.tooltipAxes = 'y';
+        this.cfg.axes.yaxis.tickOptions.formatString = '%\'.2f';
+    	this.cfg.seriesDefaults.rendererOptions.smooth = true;
+    	this.cfg.axes.xaxis.tickOptions.labelPosition = 'middle';
+    } 
+
+    function fnGraficoDeBarrasGastosMensais() {  
+        // 1
+	    this.cfg.highlighter.tooltipAxes = 'y';
+        // 2	    
+	    this.cfg.axes.xaxis.tickOptions.labelPosition = 'middle';
+	    // 3
+	    this.cfg.axes.yaxis.tickOptions.formatString = '%\'.2f';
+	    // 4
+	    this.cfg.captureRightClick = true;
+		// 5
+		this.cfg.seriesDefaults.rendererOptions.varyBarColor = true;
+    } 
+    
+    function fnGraficoDeLinhasConsumoEletricidade() {
+	    this.cfg.seriesDefaults.rendererOptions.smooth = true;
+	    this.cfg.axes.xaxis.tickOptions.labelPosition = 'middle';
+	    this.cfg.axes.xaxis.tickOptions.angle = -45;
+    }
+
+
+    function fnGraficoDeBolhasGastosMensaisPorCategoria() {
+        this.cfg.axes.yaxis.tickOptions.formatString = 'R$ %\'.2f';
+        this.cfg.highlighter.tooltipAxes = 'y';
+    }
+    
+    function fnGraficoGaugeReceitasDespesas() {
+    }
+
+    function formatarValorMonetario(valor) {
+      var int = parseInt(valor.toFixed(2).toString().replace(/[^\d]+/g, ''));
+      var tmp = int + '';
+      tmp = tmp.replace(/([0-9]{2})$/g, ",$1");
+      if (tmp.length > 6)
+        tmp = tmp.replace(/([0-9]{3}),([0-9]{2}$)/g, ".$1,$2");
+     
+      return tmp;
+    }
+
+    
+</h:outputScript>
+
+	<link href="${ctx}/paginas/comum/estilo/geral.css" type="text/css"
+		rel="stylesheet" />
+	<title>Controla Preço</title>
+
+</h:head>
+
+<h:body style="margin:0px;">
+	<f:view>
+
+		<div id="header">
+			<ul class="menu">
+				<li><a class="link" href="compras.faces">Compra</a></li>
+				<li><a class="link" href="estabelecimentos.faces">Estabelecimento</a></li>
+				<li><a class="link" href="produtos.faces">Produto</a></li>
+				<li><a class="link" href="categorias.faces">Categoria</a></li>
+				<li><a class="link" href="usuarios.faces">Usuário</a></li>
+				<li><a class="link" href="relatorios.faces">Relatório</a></li>
+			</ul>
+		</div>
+
+		<div id="content" class="content">
+
+			<div id="painelEsquerdo">
+				<ul class="menu-vertical">
+					<li style="font-weight: bold;">Tipos de gráficos</li>
+					<li><a class="linkEsquerdo"
+						href="relatorio-gastos-mensais.faces">Gastos mensais</a></li>
+					<li><a class="linkEsquerdo"
+						href="relatorio-gastos-mensais-categoria.faces">Gastos mensais
+							por categoria</a></li>
+					<li><a class="linkEsquerdo"
+						href="relatorio-gastos-categoria.faces">Gastos por categoria</a></li>
+					<li><a class="linkEsquerdo"
+						href="relatorio-historico-preco-produto.faces">Histórico de
+							preço</a></li>
+					<li><a class="linkEsquerdo"
+						href="relatorio-receitas-despesas.faces">Receitas X despesas</a></li>
+					<li><a class="linkEsquerdo"
+						href="relatorio-receitas-despesas-combinado.faces">Receitas X despesas (combinado)</a></li>
+					<li><a class="linkEsquerdo"
+						href="relatorio-receitas-despesas-gauge.faces">Receitas /
+							despesas</a></li>
+					<li><a class="linkEsquerdo"
+						href="relatorio-historico-preco-acoes.faces">Preço de ações</a></li>
+					<li><a class="linkEsquerdo" href="">Donut</a></li>
+					<li><a class="linkEsquerdo" href="">Master/detail</a></li>
+					<li><a class="linkEsquerdo" href="">Tempo real</a></li>
+				</ul>
+			</div>
+
+			<div id="painelCentro">
+				<ui:insert name="body">Body</ui:insert>
+			</div>
+
+		</div>
+
+		<div id="footer">
+			<ui:insert name="rodape">
+				<p:panel>
+					<p:outputLabel
+						rendered="#{not empty controladorLogin.usuario.email}"
+						value="#{controladorLogin.usuario.nome} (#{controladorLogin.usuario.email})" />
+					<p:outputLabel rendered="#{empty controladorLogin.usuario.email}"
+						value="Nenhum usuário selecionado" />
+				</p:panel>
+			</ui:insert>
+		</div>
+
+	</f:view>
+
+</h:body>
+
+</html>

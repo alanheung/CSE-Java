@@ -1,0 +1,61 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+class preOwnedCar{
+	private String make, model, regNo;
+
+	public preOwnedCar(String make, String model, String regNo) {
+		super();
+		this.make = make;
+		this.model = model;
+		this.regNo = regNo;
+	}
+
+	public String getMake() {
+		return make;
+	}
+
+	public void setMake(String make) {
+		this.make = make;
+	}
+
+	public String getModel() {
+		return model;
+	}
+
+	public void setModel(String model) {
+		this.model = model;
+	}
+
+	public String getRegNo() {
+		return regNo;
+	}
+
+	public void setRegNo(String regNo) {
+		this.regNo = regNo;
+	}
+
+	@Override
+	public String toString() {
+		return "preOwnedCar [make=" + make + ", model=" + model + ", regNo="
+				+ regNo + "]";
+	}	
+}
+public class CarApplication2 {
+	private static Scanner sc = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+	final int ADD=1,
+			UPDATE=2,
+			DELETE=3,
+			DELETE_ALL=4,
+			FIND_CAR_REG_NO=5,
+			FIN_CAR_INDEX=6,
+			DISPLAY=7,
+			EXIT=8;
+	String userContinue="y";
+	ArrayList<PreOwnedCar> preOwnedCars = new ArrayList<>();
+			
+	}
+
+}

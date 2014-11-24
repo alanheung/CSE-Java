@@ -7,47 +7,47 @@
    <libraries>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-jsf-impl.jar/meta-inf/html_basic.tld" project="TablePractice"/>
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/html_basic.tld" project="CorrigansSupermarket02"/>
     </library>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-jsf-impl.jar/meta-inf/jsf_core.tld" project="TablePractice"/>
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/jsf_core.tld" project="CorrigansSupermarket02"/>
     </library>
     <library class="facelet">
      <id class="model-object"
-      path="FileSystems/lib-jsf-impl.jar/meta-inf/mojarra_ext.taglib.xml" project="TablePractice"/>
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/mojarra_ext.taglib.xml" project="CorrigansSupermarket02"/>
     </library>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-jsf-impl.jar/meta-inf/mojarra_ext.tld" project="TablePractice"/>
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/mojarra_ext.tld" project="CorrigansSupermarket02"/>
     </library>
     <library class="facelet">
      <id class="model-object"
-      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/composite.taglib.xml" project="TablePractice"/>
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/composite.taglib.xml" project="CorrigansSupermarket02"/>
     </library>
     <library class="facelet">
      <id class="model-object"
-      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/facelets_jsf_core.taglib.xml" project="TablePractice"/>
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/facelets_jsf_core.taglib.xml" project="CorrigansSupermarket02"/>
     </library>
     <library class="facelet">
      <id class="model-object"
-      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/html_basic.taglib.xml" project="TablePractice"/>
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/html_basic.taglib.xml" project="CorrigansSupermarket02"/>
     </library>
     <library class="facelet">
      <id class="model-object"
-      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/jstl-core.taglib.xml" project="TablePractice"/>
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/jstl-core.taglib.xml" project="CorrigansSupermarket02"/>
     </library>
     <library class="facelet">
      <id class="model-object"
-      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/jstl-fn.taglib.xml" project="TablePractice"/>
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/jstl-fn.taglib.xml" project="CorrigansSupermarket02"/>
     </library>
     <library class="facelet">
      <id class="model-object"
-      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/mojarra_ext.taglib.xml" project="TablePractice"/>
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/mojarra_ext.taglib.xml" project="CorrigansSupermarket02"/>
     </library>
     <library class="facelet">
      <id class="model-object"
-      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/ui.taglib.xml" project="TablePractice"/>
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/ui.taglib.xml" project="CorrigansSupermarket02"/>
     </library>
    </libraries>
   </path>
@@ -76,8 +76,8 @@
   <path value="C:/xampp/tomcat/lib/annotations-api.jar"/>
   <path value="C:/xampp/tomcat/lib/tomcat-dbcp.jar"/>
   <path value="C:/xampp/tomcat/lib/jsp-api.jar"/>
-  <path value="C:/xampp/tomcat/lib/ecj-3.6.jar"/>
   <path value="C:/xampp/tomcat/lib/servlet-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/ecj-3.6.jar"/>
   <path value="C:/xampp/tomcat/lib/el-api.jar"/>
   <path value="C:/xampp/tomcat/lib/ecj-3.6.2.jar"/>
   <path value="C:/xampp/tomcat/lib/jasper-el.jar"/>

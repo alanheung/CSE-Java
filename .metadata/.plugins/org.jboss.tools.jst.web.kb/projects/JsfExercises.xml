@@ -7,47 +7,47 @@
    <libraries>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-jsf-impl.jar/meta-inf/html_basic.tld" project="TablePractice"/>
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/html_basic.tld" project="CorrigansSupermarket02"/>
     </library>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-jsf-impl.jar/meta-inf/jsf_core.tld" project="TablePractice"/>
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/jsf_core.tld" project="CorrigansSupermarket02"/>
     </library>
     <library class="facelet">
      <id class="model-object"
-      path="FileSystems/lib-jsf-impl.jar/meta-inf/mojarra_ext.taglib.xml" project="TablePractice"/>
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/mojarra_ext.taglib.xml" project="CorrigansSupermarket02"/>
     </library>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-jsf-impl.jar/meta-inf/mojarra_ext.tld" project="TablePractice"/>
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/mojarra_ext.tld" project="CorrigansSupermarket02"/>
     </library>
     <library class="facelet">
      <id class="model-object"
-      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/composite.taglib.xml" project="TablePractice"/>
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/composite.taglib.xml" project="CorrigansSupermarket02"/>
     </library>
     <library class="facelet">
      <id class="model-object"
-      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/facelets_jsf_core.taglib.xml" project="TablePractice"/>
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/facelets_jsf_core.taglib.xml" project="CorrigansSupermarket02"/>
     </library>
     <library class="facelet">
      <id class="model-object"
-      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/html_basic.taglib.xml" project="TablePractice"/>
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/html_basic.taglib.xml" project="CorrigansSupermarket02"/>
     </library>
     <library class="facelet">
      <id class="model-object"
-      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/jstl-core.taglib.xml" project="TablePractice"/>
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/jstl-core.taglib.xml" project="CorrigansSupermarket02"/>
     </library>
     <library class="facelet">
      <id class="model-object"
-      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/jstl-fn.taglib.xml" project="TablePractice"/>
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/jstl-fn.taglib.xml" project="CorrigansSupermarket02"/>
     </library>
     <library class="facelet">
      <id class="model-object"
-      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/mojarra_ext.taglib.xml" project="TablePractice"/>
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/mojarra_ext.taglib.xml" project="CorrigansSupermarket02"/>
     </library>
     <library class="facelet">
      <id class="model-object"
-      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/ui.taglib.xml" project="TablePractice"/>
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/ui.taglib.xml" project="CorrigansSupermarket02"/>
     </library>
    </libraries>
   </path>
@@ -76,65 +76,44 @@
   <path value="C:/xampp/tomcat/lib/annotations-api.jar"/>
   <path value="C:/xampp/tomcat/lib/tomcat-dbcp.jar"/>
   <path value="C:/xampp/tomcat/lib/jsp-api.jar"/>
-  <path value="C:/xampp/tomcat/lib/ecj-3.6.jar"/>
   <path value="C:/xampp/tomcat/lib/servlet-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/ecj-3.6.jar"/>
   <path value="C:/xampp/tomcat/lib/el-api.jar"/>
   <path value="C:/xampp/tomcat/lib/ecj-3.6.2.jar"/>
   <path value="C:/xampp/tomcat/lib/jasper-el.jar"/>
  </paths>
  <validation>
   <el>
-   <linked-el length="19" name="%0" offset="856" path="%1"/>
-   <linked-el length="20" name="%2" offset="868" path="%3"/>
-   <linked-el length="58" name="%4" offset="656" path="%5"/>
-   <linked-el length="52" name="%6" offset="520" path="%5"/>
-   <linked-el length="66" name="%7" offset="581" path="%5"/>
-   <linked-el length="35" name="%7" offset="476" path="%5"/>
-   <linked-el length="27" name="%7" offset="521" path="%1"/>
-   <linked-el length="42" name="%7" offset="425" path="%5"/>
-   <linked-el length="52" name="%7" offset="520" path="%5"/>
-   <linked-el length="23" name="%7" offset="736" path="%1"/>
-   <linked-el length="26" name="%7" offset="631" path="%1"/>
-   <linked-el length="58" name="%7" offset="656" path="%5"/>
-   <linked-el length="44" name="%7" offset="372" path="%5"/>
-   <linked-el length="22" name="%8" offset="374" path="%3"/>
-   <linked-el length="66" name="%9" offset="581" path="%5"/>
-   <linked-el length="35" name="%9" offset="476" path="%5"/>
-   <linked-el length="27" name="%9" offset="521" path="%1"/>
-   <linked-el length="42" name="%9" offset="425" path="%5"/>
-   <linked-el length="52" name="%9" offset="520" path="%5"/>
-   <linked-el length="23" name="%9" offset="736" path="%1"/>
-   <linked-el length="26" name="%9" offset="631" path="%1"/>
-   <linked-el length="58" name="%9" offset="656" path="%5"/>
-   <linked-el length="44" name="%9" offset="372" path="%5"/>
-   <linked-el length="19" name="%10" offset="487" path="%3"/>
-   <linked-el length="22" name="%11" offset="374" path="%3"/>
-   <linked-el length="20" name="%12" offset="746" path="%3"/>
-   <linked-el length="19" name="%12" offset="487" path="%3"/>
-   <linked-el length="20" name="%12" offset="868" path="%3"/>
-   <linked-el length="19" name="%12" offset="856" path="%1"/>
-   <linked-el length="20" name="%12" offset="1231" path="%1"/>
-   <linked-el length="19" name="%12" offset="1416" path="%1"/>
-   <linked-el length="20" name="%13" offset="746" path="%3"/>
-   <linked-el length="20" name="%13" offset="1231" path="%1"/>
-   <linked-el length="19" name="%14" offset="1416" path="%1"/>
+   <linked-el length="66" name="%0" offset="581" path="%1"/>
+   <linked-el length="35" name="%0" offset="476" path="%1"/>
+   <linked-el length="27" name="%0" offset="521" path="%2"/>
+   <linked-el length="28" name="%0" offset="1239" path="%2"/>
+   <linked-el length="42" name="%0" offset="425" path="%1"/>
+   <linked-el length="52" name="%0" offset="520" path="%1"/>
+   <linked-el length="23" name="%0" offset="736" path="%2"/>
+   <linked-el length="26" name="%0" offset="631" path="%2"/>
+   <linked-el length="58" name="%0" offset="656" path="%1"/>
+   <linked-el length="27" name="%0" offset="856" path="%2"/>
+   <linked-el length="44" name="%0" offset="372" path="%1"/>
+   <linked-el length="27" name="%0" offset="1432" path="%2"/>
+   <linked-el length="66" name="%3" offset="581" path="%1"/>
+   <linked-el length="35" name="%3" offset="476" path="%1"/>
+   <linked-el length="27" name="%3" offset="521" path="%2"/>
+   <linked-el length="28" name="%3" offset="1239" path="%2"/>
+   <linked-el length="42" name="%3" offset="425" path="%1"/>
+   <linked-el length="52" name="%3" offset="520" path="%1"/>
+   <linked-el length="23" name="%3" offset="736" path="%2"/>
+   <linked-el length="26" name="%3" offset="631" path="%2"/>
+   <linked-el length="58" name="%3" offset="656" path="%1"/>
+   <linked-el length="27" name="%3" offset="856" path="%2"/>
+   <linked-el length="44" name="%3" offset="372" path="%1"/>
+   <linked-el length="27" name="%3" offset="1432" path="%2"/>
   </el>
  </validation>
  <aliases>
-  <alias path="user.hearAbout" value="%0"/>
-  <alias path="/JsfExercises/WebContent/index.xhtml" value="%3"/>
-  <alias path="customerBean.hearAbout" value="%6"/>
-  <alias path="/JsfExercises/src/ait/com/jsf/CustomerBean.java" value="%7"/>
-  <alias path="user.rememberMe" value="%13"/>
-  <alias path="user.favCoffee1" value="%2"/>
-  <alias path="customerBean.contactBy" value="%4"/>
-  <alias path="/JsfExercises/WebContent/survey.xhtml" value="%5"/>
-  <alias path="userBean" value="%8"/>
-  <alias path="customerBean" value="%9"/>
-  <alias path="user.favColor1" value="%10"/>
-  <alias path="userBean.userName" value="%11"/>
-  <alias path="/JsfExercises/WebContent/inputSurvey.xhtml" value="%1"/>
-  <alias path="user" value="%12"/>
-  <alias path="user.contactBy" value="%14"/>
+  <alias path="/JsfExercises/src/ait/com/jsf/CustomerBean.java" value="%0"/>
+  <alias path="customerBean" value="%3"/>
+  <alias path="/JsfExercises/WebContent/survey.xhtml" value="%1"/>
+  <alias path="/JsfExercises/WebContent/inputSurvey.xhtml" value="%2"/>
  </aliases>
 </kb-project>

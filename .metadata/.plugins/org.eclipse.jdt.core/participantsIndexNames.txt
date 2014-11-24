@@ -1,3 +1,9 @@
 INDEX VERSION 1.126
+C:\Users\A00226316\Java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1293437809.index
+\dvdcatalog\src
+C:\Users\A00226316\Java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2845455257.index
+\shopping-cart-web-web-dev-part5\src
+C:\Users\A00226316\Java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3137117730.index
+\jsfeshop\src\main\java
 C:\Users\A00226316\Java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\186856293.index
 \shopping-cart-web-ajax-part10\src

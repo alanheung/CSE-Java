@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<h:html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:pz2utils="http://java.sun.com/jsf/composite/pz2utils"
+      xmlns:pz2widgets="http://java.sun.com/jsf/composite/pz2widgets">
+      
+<h:head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>MySearch, displaying results</title>
+  <h:outputText value="${pzreq.sp.auth.runWith2('action=login;username=guest;password=guest',';')}" 
+                rendered="${pz2.authenticationRequired and 
+                            not pzresp.sp.auth.isAuthenticationOk()}" 
+                style="display:none;"/>            
+</h:head>
+<h:body>
+                                                          <!-- render new UI element when polling -->
+  <pz2utils:pz2watch id="pz2watch" renderWhileActiveclients="myshow" debug="true" />
+
+  <h:form id="pz2form" prependId="false">    
+    <h:inputText id="myquery" value="#{pzreq.search.query}" size="50"/>                                
+    <h:commandButton id="button" value="Execute My Search">              
+       <f:ajax execute="myquery" render="${pz2.watchActiveclients}"/>
+    </h:commandButton>
+    <br/><br/>
+    <h:panelGrid>
+      <!-- Display the results in a new section named 'myshow'
+           After each poll render this section by including it like shown above -->
+      <h:panelGroup id="myshow">
+        <ui:repeat value="#{pzresp.show.hits}" var="hit" varStatus="loop">
+           #{(pzresp.show.start)+loop.index+1}.<b>#{hit.title}</b> <i>#{hit.author}</i> #{hit.date}<br/>
+           #{'&nbsp;&nbsp;'}#{pzui.maxLengthMoreLabel(hit.description,100,'...')}<br/>
+        </ui:repeat>      
+      </h:panelGroup>
+    </h:panelGrid>        
+  </h:form>
+</h:body>
+</h:html>

@@ -1,0 +1,18 @@
+public class Order{
+
+	String thingNo;
+	String thingName;
+	String thingInfo;
+
+	public Order(String thingNo, String thingName, String thingInfo) {
+		this.thingNo = thingNo;
+		this.thingName = thingName;
+		this.thingInfo = thingInfo;
+	}
+	public String getThingNo() {return thingNo;}
+	public void setThingNo(String thingNo) {this.thingNo = thingNo;}
+	public String getThingName() {return thingName;}
+	public void setThingName(String thingName) {this.thingName = thingName;}
+	public String getThingInfo() {return thingInfo;}
+	public void setThingInfo(String thingInfo) {this.thingInfo = thingInfo;}
+}

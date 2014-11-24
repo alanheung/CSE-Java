@@ -1,0 +1,16 @@
+# Common title and other common things...
+dvdcatalog.title  = Catalogue DVDs
+dvdcatalog.logo   = images/dvdcatalog-logo.png
+
+# login.jsp and invalidlogin.jsp
+login.title       = Autorisation d'acc\uFFFDs au catalogue DVDs
+login.username    = Usager :
+login.password    = Mot de passe :
+login.button      = Autoriser
+login.succeeded   = autorisation est r\uFFFDussie
+login.failed      = autorisation a \uFFFDchou\uFFFD
+
+# validlogin.jsp and powerlogin.jsp
+validlogin.title  = Bienvenu(e) au catalogue DVDs !
+validlogin.rights = Vous \uFFFDtes autoris\uFFFD(e) \uFFFD modifier son contenu.
+validlogin.button = Inspecter le catalog

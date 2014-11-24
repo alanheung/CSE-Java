@@ -1,0 +1,268 @@
+/* the styles for the body element and page division */
+body {
+	font-family: Verdana,Arial, Helvetica, sans-serif;
+    font-size: 87.5%;
+    margin: 0;
+    background-color: #7f8c8d;
+}
+
+#page {
+    width:1000px;
+    margin: 0 auto;
+    background-color: #ecf0f1;
+    border-color: black;
+    border-style:solid;
+    box-shadow: 20px 20px 20px #000000;
+    float:center;
+    padding: 15px;
+}
+
+#header{
+    /*font-family: "Lucida Handwriting", "cursive";*/
+    font-size: 125%;
+    padding:15px;
+    padding-top:50px;
+    color: #c0392b;
+    text-align: center;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+}
+
+#header img{
+    width:90px;
+    height:90px;
+    /*float:left;*/
+}
+
+#header h1{
+    font-size: 250%;
+    text-shadow: 2px 1px 1px black;
+}
+
+#header h2{
+    text-indent: 50px;
+    font-size: 100%;
+}
+
+/* the styles for the main division */
+#main{
+    margin: 25px;
+    margin-top: 20px;
+    width: 650px;
+   	float:left;
+   	display: inline-block;
+    border-style:solid;
+    border-width:1px; 
+}
+
+#main p{
+    margin-bottom: 0.5em;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+#main h2{
+    margin-bottom:0.5em;
+    font-size:200%;
+    font-family: "cursive";
+    font-style: italic;
+    text-align: center;
+    color:#2c3e50;
+}
+
+#sidebar{
+	width:250px;
+    float:left;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px black;
+    padding-top:15px;
+    padding-bottom:15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: -moz-linear-gradient(45deg, #e74c3c,#c0392b);
+    background: linear-gradient(45deg, #e74c3c,#c0392b);
+}
+
+#sidebar img{
+	width:50px;
+	height:50px;
+	margin-left: 1px;
+}
+
+#sidebar a{
+	color:#ecf0f1;
+    text-decoration: none;
+    font-size: 115%;
+}
+
+#sidebar a:hover{
+	color:#3498db;
+}
+
+#sidebar ul{
+    list-style-type: none;
+}
+
+#loginbar{
+    float:right;
+    text-align:center;
+    height: 20px;
+    width:automatic;
+    background: -moz-linear-gradient(45deg, #e74c3c,#c0392b);
+    background: linear-gradient(45deg, #e74c3c,#c0392b);
+    border-radius: 5px;
+    border-width: 0.5px;
+    font-size: 75%;
+    padding-right: 10px;
+    padding-top: 5px;
+    color:white;
+    margin:none;
+}
+
+#loginbar ul{
+    list-style-type: none;
+    display: inline-block;
+    list-style-type: none;
+    float:center;
+}
+
+#loginbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    list-style-type: none;
+}
+
+#loginbar a{
+	text-decoration:none;
+    color:white;
+}
+
+#loginbar a:hover{
+    color:#2980b9;
+}
+
+#navbar{
+	font-style: bold;
+    margin-top: 5px;
+	background: -moz-linear-gradient(45deg, #e74c3c,#c0392b);
+    background: linear-gradient(45deg, #e74c3c,#c0392b);
+	text-align: center;
+    color:#e74c3c;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px black;
+}
+
+#navbar ul{
+	list-style-type: none;
+	display: inline-block;
+	float:none;
+}
+
+#navbar ul li{
+	font-size: 150%;
+	float:left; 
+	margin-left:5px; 
+	margin-top: 5px;
+	margin-right: 5px;
+	padding-right: 5px;
+	padding:5px; 
+	border-left: solid;
+    border-left: solid;
+	border-color: white;
+}
+
+#navbar ul li:first-child{
+    border-left:none;
+}
+
+#navbar ul li a{
+	text-decoration:none;
+	float:left; 
+	margin:1px; 
+	padding:1px;
+	color: white;
+}
+
+#navbar ul li a:hover{
+	color: #2980b9;
+}
+
+#purchase{
+	float: right;
+	padding: 100px;
+}
+/* the styles for the footer division */
+#footer {
+    padding-top: .7em;
+    opacity:0.7;
+    clear: left;
+    font-size: 90%;
+    text-align: right;
+    border-top-color: black;
+    border-top-width: 2px;
+    border-top-style:solid;
+    padding: 10px;
+}
+
+/* the styles for classes */
+.copyright {
+    font-size: 90%;
+    margin: 0;
+}
+
+/* the styles for the elements */
+h1, h2, p {
+    margin:0;
+    padding:0;
+}
+h1 { 
+    font-size: 250%;
+    margin: 0;
+}
+h2 { 
+    font-size: 150%;
+    margin-bottom: 0;
+    padding-bottom: .25em;
+}
+p {
+    margin: .75em 0;
+}
+
+ul{
+    margin-top:0;
+}
+
+li{
+    margin:0;
+    padding-bottom: 0.25em;
+}
+
+ol{
+    margin:0;
+    padding-left: 2em;
+}
+
+.nameTable{
+	border-collapse:collapse;
+	border:1px solid #000000;
+}
+
+.nameTableHeader{
+	text-align:center;
+	background:#B5B5B5;
+	border-bottom:1px solid #000000;
+	padding:2px;
+}
+
+.nameTableOddRow{
+	text-align:center;
+	background:#FFFFFF;
+}
+
+.nameTableEvenRow{
+	text-align:center;
+	background:#D3D3D3;
+}

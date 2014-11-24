@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="C:/Users/A00226316/Java/libraries/JSF 2.0 (Mojarra 2.0.3-FCS)/mojarra-2.0.3-FCS/lib/jsf-impl.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/html_basic.tld" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/jsf_core.tld" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/mojarra_ext.taglib.xml" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/mojarra_ext.tld" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/composite.taglib.xml" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/facelets_jsf_core.taglib.xml" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/html_basic.taglib.xml" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/jstl-core.taglib.xml" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/jstl-fn.taglib.xml" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/mojarra_ext.taglib.xml" project="CorrigansSupermarket02"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/com/sun/faces/metadata/taglib/ui.taglib.xml" project="CorrigansSupermarket02"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/xampp/tomcat/lib/tomcat-i18n-fr.jar"/>
+  <path value="C:/xampp/tomcat/lib/catalina.jar"/>
+  <path value="C:/Users/A00226316/Java/libraries/JSF 2.0 (Mojarra 2.0.3-FCS)/mojarra-2.0.3-FCS/lib/jsf-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/ecj-3.7.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-i18n-ja.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/catalina-ha.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-coyote.jar"/>
+  <path value="C:/xampp/tomcat/lib/jasper.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-i18n-es.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-jdbc.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-util.jar"/>
+  <path value="C:/xampp/tomcat/lib/catalina-tribes.jar"/>
+  <path value="C:/xampp/tomcat/lib/catalina-ant.jar"/>
+  <path value="C:/xampp/tomcat/lib/annotations-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-dbcp.jar"/>
+  <path value="C:/xampp/tomcat/lib/jsp-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/servlet-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/ecj-3.6.jar"/>
+  <path value="/JSFSearchV2/WebContent/WEB-INF/faces-config.xml">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/faces-config.xml" project="JSFSearchV2"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/xampp/tomcat/lib/el-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/ecj-3.6.2.jar"/>
+  <path value="C:/xampp/tomcat/lib/jasper-el.jar"/>
+ </paths>
+ <validation>
+  <el>
+   <linked-el length="24" name="%0" offset="1672" path="%1"/>
+   <linked-el length="84" name="%0" offset="398" path="%1"/>
+   <linked-el length="20" name="%0" offset="1436" path="%1"/>
+   <linked-el length="118" name="%0" offset="779" path="%1"/>
+   <linked-el length="28" name="%0" offset="545" path="%1"/>
+   <linked-el length="20" name="%0" offset="1573" path="%1"/>
+   <linked-el length="28" name="%0" offset="676" path="%1"/>
+   <linked-el length="119" name="%0" offset="1099" path="%1"/>
+   <linked-el length="19" name="%2" offset="891" path="%3"/>
+   <linked-el length="19" name="%4" offset="891" path="%3"/>
+   <linked-el length="43" name="%4" offset="964" path="%3"/>
+   <linked-el length="19" name="%4" offset="717" path="%3"/>
+   <linked-el length="15" name="%4" offset="478" path="%3"/>
+   <linked-el length="47" name="%4" offset="1391" path="%3"/>
+   <linked-el length="55" name="%4" offset="1093" path="%3"/>
+   <linked-el length="26" name="%5" offset="417" path="%3"/>
+   <linked-el length="17" name="%5" offset="363" path="%3"/>
+   <linked-el length="23" name="%6" offset="426" path="%7"/>
+   <linked-el length="43" name="%8" offset="964" path="%3"/>
+   <linked-el length="23" name="%9" offset="426" path="%7"/>
+   <linked-el length="47" name="%10" offset="1391" path="%3"/>
+   <linked-el length="55" name="%11" offset="1093" path="%3"/>
+   <linked-el length="26" name="%12" offset="417" path="%3"/>
+   <linked-el length="17" name="%12" offset="363" path="%3"/>
+   <linked-el length="26" name="%13" offset="417" path="%3"/>
+   <linked-el length="17" name="%13" offset="363" path="%3"/>
+   <linked-el length="24" name="%14" offset="1672" path="%1"/>
+   <linked-el length="84" name="%14" offset="398" path="%1"/>
+   <linked-el length="20" name="%14" offset="1436" path="%1"/>
+   <linked-el length="118" name="%14" offset="779" path="%1"/>
+   <linked-el length="28" name="%14" offset="545" path="%1"/>
+   <linked-el length="20" name="%14" offset="1573" path="%1"/>
+   <linked-el length="28" name="%14" offset="676" path="%1"/>
+   <linked-el length="119" name="%14" offset="1099" path="%1"/>
+   <linked-el length="19" name="%15" offset="717" path="%3"/>
+   <linked-el length="15" name="%16" offset="478" path="%3"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="/JSFSearchV2/WebContent/displaySearchResults.xhtml" value="%3"/>
+  <alias path="/JSFSearchV2/src/LoginBean.java" value="%0"/>
+  <alias path="test.description" value="%2"/>
+  <alias path="test" value="%4"/>
+  <alias path="search.test" value="%5"/>
+  <alias path="searchBean.search" value="%6"/>
+  <alias path="/JSFSearchV2/WebContent/login.xhtml" value="%1"/>
+  <alias path="test.year" value="%8"/>
+  <alias path="searchBean" value="%9"/>
+  <alias path="test.subject" value="%10"/>
+  <alias path="/JSFSearchV2/WebContent/search.xhtml" value="%7"/>
+  <alias path="test.dateuploaded" value="%11"/>
+  <alias path="search" value="%12"/>
+  <alias path="/JSFSearchV2/src/searchBean.java" value="%13"/>
+  <alias path="test.testname" value="%15"/>
+  <alias path="login" value="%14"/>
+  <alias path="test.link" value="%16"/>
+ </aliases>
+</kb-project>

@@ -1,0 +1,471 @@
+<!DOCTYPE faces-config PUBLIC "-//Sun Microsystems, Inc.//DTD JavaServer Faces Config 1.0//EN" "http://java.sun.com/dtd/web-facesconfig_1_0.dtd">
+<!--
+   JavaServer Faces in Action example code, Copyright (C) 2004 Kito D. Mann.
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<faces-config>
+
+  <application>
+    <message-bundle>CustomMessages</message-bundle>
+    <locale-config>
+      <default-locale>en</default-locale>
+      <supported-locale>en</supported-locale>
+      <supported-locale>en-US</supported-locale>
+      <supported-locale>es</supported-locale>
+    </locale-config>
+  </application>
+
+  <managed-bean>
+    <managed-bean-name>user</managed-bean-name>
+    <managed-bean-class>org.jia.examples.UserBean</managed-bean-class>
+    <managed-bean-scope>session</managed-bean-scope>
+    <managed-property>
+    	<property-name>firstName</property-name>
+      <value>Devora</value>
+    </managed-property>
+    <managed-property>
+    	<property-name>lastName</property-name>
+      <value>Shapiro</value>
+    </managed-property>
+    <managed-property>
+    	<property-name>balance</property-name>
+      <value>4029.3456</value>
+    </managed-property>
+  </managed-bean>
+
+  <managed-bean>
+    <managed-bean-name>user2</managed-bean-name>
+    <managed-bean-class>org.jia.examples.UserBean</managed-bean-class>
+    <managed-bean-scope>session</managed-bean-scope>
+    <managed-property>
+    	<property-name>firstName</property-name>
+      <value>Devora</value>
+    </managed-property>
+    <managed-property>
+    	<property-name>lastName</property-name>
+      <value>Shapiro</value>
+    </managed-property>
+    <managed-property>
+    	<property-name>balance</property-name>
+      <value>32495</value>
+    </managed-property>
+  </managed-bean>
+
+<managed-bean>
+  <managed-bean-name>brokeUser</managed-bean-name>
+  <managed-bean-class>org.jia.examples.UserBean</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+  <managed-property>
+    <property-name>firstName</property-name>
+    <value>Joe</value>
+  </managed-property>
+  <managed-property>
+    <property-name>lastName</property-name>
+    <value>Broke</value>
+  </managed-property>
+  <managed-property>
+    <property-name>balance</property-name>
+    <value>0</value>
+  </managed-property>
+  <managed-property>
+    <property-name>favoriteAnimal</property-name>
+    <null-value />
+  </managed-property>
+</managed-bean>
+
+<managed-bean>
+  <managed-bean-name>defaults</managed-bean-name>
+  <managed-bean-class>java.util.HashMap</managed-bean-class>
+  <managed-bean-scope>application</managed-bean-scope>
+  <map-entries>
+    <value-class>java.lang.Integer</value-class>
+    <map-entry>
+			<key>defaultBalance</key>
+ 			<value>5000</value>
+    </map-entry>
+	</map-entries>
+</managed-bean>
+
+<managed-bean>
+  <managed-bean-name>richUser</managed-bean-name>
+  <managed-bean-class>org.jia.examples.UserBean</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+  <managed-property>
+    	<property-name>firstName</property-name>
+      <value>MW</value>
+    </managed-property>
+  <managed-property>
+    	<property-name>lastName</property-name>
+      <value>Mann</value>
+    </managed-property>
+  <managed-property>
+    <property-name>balance</property-name>
+    <value>#{defaults['defaultBalance'] + 50}</value>
+  </managed-property>
+  <managed-property>
+    <property-name>favoriteAnimal</property-name>
+    <value>donkey</value>
+  </managed-property>
+  <managed-property>
+    <property-name>favoriteSites</property-name>
+    <list-entries>
+      <value>http://www.jsfcentral.com</value>
+      <value>http://www.theserverside.com</value>
+      <value>http://www.ibm.com/developerworks/</value>
+      <value>http://otn.oracle.com</value>
+      <value>http://www.java.net</value>
+      <value>http://www.manning.com</value>
+    </list-entries>
+  </managed-property>
+  <managed-property>
+    <property-name>favoriteSites2</property-name>
+    <list-entries>
+      <value>http://www.jsfcentral.com</value>
+      <value>http://www.theserverside.com</value>
+      <value>http://www.ibm.com/developerworks/</value>
+      <value>http://otn.oracle.com</value>
+      <value>http://www.java.net</value>
+      <value>http://www.manning.com</value>
+    </list-entries>
+  </managed-property>
+  <managed-property>
+    <property-name>favoriteNumbers</property-name>
+    <property-class>java.util.Vector</property-class>
+    <list-entries>
+      <value-class>java.lang.Integer</value-class>
+      <value>31415</value>
+      <value>278</value>
+      <value>304</value>
+      <value>18</value>
+      <value>811</value>
+      <value>914</value>
+    </list-entries>
+  </managed-property>
+  <managed-property>
+    <property-name>favoriteNumbersMap</property-name>
+    <map-entries>
+      <key-class>java.lang.Integer</key-class>
+      <map-entry>
+        <key>31415</key>
+	      <value>A pi-like ineger.</value>
+      </map-entry>
+      <map-entry>
+        <key>278</key>
+	      <value>An e-like integer.</value>
+      </map-entry>
+      <map-entry>
+        <key>304</key>
+	      <value>Tracey's birthday.</value>
+      </map-entry>
+      <map-entry>
+        <key>18</key>
+	      <null-value />
+      </map-entry>
+      <map-entry>
+        <key>811</key>
+	      <null-value />
+      </map-entry>
+      <map-entry>
+        <key>914</key>
+	      <value>Mom's birthday.</value>
+      </map-entry>
+    </map-entries>
+  </managed-property>
+  <managed-property>
+    <property-name>favoriteSitesMap</property-name>
+    <map-entries>
+      <map-entry>
+        <key>JSF Central</key>
+	      <value>http://www.jsfcentral.com</value>
+      </map-entry>
+      <map-entry>
+        <key>TheServerSide.com</key>
+	      <value>http://www.theserverside.com</value>
+      </map-entry>
+      <map-entry>
+        <key>IBM DeveloperWorks</key>
+	      <value>http://www.ibm.com/developerworks/</value>
+      </map-entry>
+      <map-entry>
+        <key>Oracle Technology Network</key>
+	      <value>http://otn.oracle.com</value>
+      </map-entry>
+      <map-entry>
+        <key>java.net</key>
+	      <value>http://www.java.net</value>
+      </map-entry>
+      <map-entry>
+        <key>java.net</key>
+	      <value>http://fuck.com</value>
+      </map-entry>
+      <map-entry>
+        <key>Manning Publications</key>
+	      <value>http://www.manning.com</value>
+      </map-entry>
+    </map-entries>
+	</managed-property>
+</managed-bean>
+
+<managed-bean>
+  <description>List of favorite sites, keyed by name.</description>
+ 	<managed-bean-name>favoriteSitesMap</managed-bean-name>
+  <managed-bean-class>java.util.HashMap</managed-bean-class>
+  <managed-bean-scope>application</managed-bean-scope>
+  <map-entries>
+    <map-entry>
+      <key>JSF Central</key>
+      <value>http://www.jsfcentral.com</value>
+    </map-entry>
+    <map-entry>
+      <key>TheServerSide.com</key>
+      <value>http://www.theserverside.com</value>
+    </map-entry>
+    <map-entry>
+      <key>IBM DeveloperWorks</key>
+      <value>http://www.ibm.com/developerworks/</value>
+    </map-entry>
+    <map-entry>
+      <key>Oracle Technology Network</key>
+      <value>http://otn.oracle.com</value>
+    </map-entry>
+    <map-entry>
+      <key>java.net</key>
+      <value>http://www.java.net</value>
+    </map-entry>
+    <map-entry>
+      <key>Manning Publications</key>
+      <value>http://www.manning.com</value>
+    </map-entry>
+  </map-entries>
+</managed-bean>
+
+<managed-bean>
+  <description>List of favorite sites.</description>
+  <managed-bean-name>favoriteSites</managed-bean-name>
+	<managed-bean-class>java.util.ArrayList</managed-bean-class>
+  <managed-bean-scope>application</managed-bean-scope>
+  <list-entries>
+    <value>http://www.jsfcentral.com</value>
+    <value>http://www.theserverside.com</value>
+    <value>http://www.ibm.com/developerworks/</value>
+    <value>http://otn.oracle.com</value>
+    <value>http://www.java.net</value>
+    <value>http://www.manning.com</value>
+  </list-entries>
+</managed-bean>
+
+<managed-bean>
+  <managed-bean-name>defaultFavoriteSites</managed-bean-name>
+	<managed-bean-class>java.util.ArrayList</managed-bean-class>
+  <managed-bean-scope>none</managed-bean-scope>
+  <list-entries>
+    <value>http://www.jsfcentral.com</value>
+    <value>http://www.theserverside.com</value>
+    <value>http://www.ibm.com/developerworks/</value>
+    <value>http://otn.oracle.com</value>
+    <value>http://www.java.net</value>
+    <value>http://www.manning.com</value>
+  </list-entries>
+</managed-bean>
+
+<managed-bean>
+  <description>Default user object.</description>
+  <managed-bean-name>newUser</managed-bean-name>
+  <managed-bean-class>org.jia.examples.UserBean</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+  <managed-property>
+    <property-name>firstName</property-name>
+    <value>John</value>
+  </managed-property>
+  <managed-property>
+    <property-name>lastName</property-name>
+    <value>Mann</value>
+  </managed-property>
+  <managed-property>
+    <property-name>favoriteSites</property-name>
+    <value>#{defaultFavoriteSites}</value>
+  </managed-property>
+  <managed-property>
+    <property-name>favoriteAnimal</property-name>
+    <value>donkey</value>
+  </managed-property>
+  <managed-property>
+    <property-name>balance</property-name>
+    <value>1200</value>
+  </managed-property>
+</managed-bean>
+
+<managed-bean>
+  <managed-bean-name>userList</managed-bean-name>
+  <managed-bean-class>java.util.ArrayList</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+  <list-entries>
+    <value>#{user2}</value>
+    <value>#{newUser}</value>
+    <value>#{brokeUser}</value>
+    <value>#{richUser}</value>
+  </list-entries>
+</managed-bean>
+
+<managed-bean>
+  <managed-bean-name>exampleForm</managed-bean-name>
+  <managed-bean-class>org.jia.examples.TestForm</managed-bean-class>
+  <managed-bean-scope>request</managed-bean-scope>
+  <managed-property>
+    <property-name>user</property-name>
+    <value>#{newUser}</value>
+  </managed-property>
+</managed-bean>
+
+<managed-bean>
+  <managed-bean-name>mailManager</managed-bean-name>
+  <managed-bean-class>org.jia.examples.TestForm</managed-bean-class>
+  <managed-bean-scope>request</managed-bean-scope>
+</managed-bean>
+
+<managed-bean>
+  <managed-bean-name>testForm</managed-bean-name>
+  <managed-bean-class>org.jia.examples.TestForm</managed-bean-class>
+  <managed-bean-scope>request</managed-bean-scope>
+  <managed-property>
+    <property-name>user</property-name>
+    <value>#{richUser}</value>
+  </managed-property>
+</managed-bean>
+
+<navigation-rule>
+  <from-view-id>*</from-view-id>
+  <navigation-case>
+   <from-outcome>next</from-outcome>
+   <to-view-id>/anotherpage.jsp</to-view-id>
+  </navigation-case>
+</navigation-rule>
+
+<navigation-rule>
+  <description>Global navigation rule. </description>
+  <display-name>Global</display-name>
+  <icon>
+    <small-icon>/images/global_rule.gif</small-icon>
+    <large-icon>/images/global_rule_large.gif</large-icon>
+  </icon>
+  <from-view-id>*</from-view-id>
+  <navigation-case>
+	  <description>If the outcome is "login", jump to login.jsp.</description>
+  	<display-name>Login</display-name>
+	  <from-outcome>login</from-outcome>
+	  <to-view-id>/login.jsp</to-view-id>
+  </navigation-case>
+  <navigation-case>
+  	<description>If the outcome is "logout", jump to logout.jsp.</description>
+	  <display-name>Logout</display-name>
+  	<from-outcome>logout</from-outcome>
+	  <to-view-id>/logout.jsp</to-view-id>
+  </navigation-case>
+</navigation-rule>
+
+<navigation-rule>
+  <from-view-id>/CommandFamily.jsp</from-view-id>
+  <navigation-case>
+    <from-outcome>inbox</from-outcome>
+    <to-view-id>/anotherpage.jsp</to-view-id>
+  </navigation-case>
+</navigation-rule>
+
+<navigation-rule>
+  <from-view-id>/Navigation.jsp</from-view-id>
+  <navigation-case>
+   <from-action>#{testForm.incrementCounter}</from-action>
+   <from-outcome>success</from-outcome>
+   <to-view-id>/Navigation_success.jsp</to-view-id>
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>retry</from-outcome>
+   <to-view-id>/Navigation_retry.jsp</to-view-id>
+  </navigation-case>
+</navigation-rule>
+
+<navigation-rule>
+  <from-view-id>/Navigation_success.jsp</from-view-id>
+  <navigation-case>
+    <from-outcome>blah</from-outcome>
+    <to-view-id>/anotherpage.jsp</to-view-id>
+    <redirect />
+  </navigation-case>
+  <navigation-case>
+    <from-outcome>foo</from-outcome>
+    <to-view-id>/Navigation_foo.jsp</to-view-id>
+    <redirect />
+  </navigation-case>
+</navigation-rule>
+
+<navigation-rule>
+  <from-view-id>/corporate/*</from-view-id>
+  <navigation-case>
+   	<from-outcome>about</from-outcome>
+  	<to-view-id>/corporate/about.html</to-view-id>
+  </navigation-case>
+  <navigation-case>
+   	<from-outcome>contact info</from-outcome>
+   	<to-view-id>/corporate/contact.html</to-view-id>
+  </navigation-case>
+</navigation-rule>
+
+<navigation-rule>
+  <from-view-id>/OrderError.jsp</from-view-id>
+  <navigation-case>
+     <from-outcome>retry</from-outcome>
+     <to-view-id>/PlaceOrder.jsp</to-view-id>
+  </navigation-case>
+</navigation-rule>
+<navigation-rule>
+  <from-view-id>/PlaceOrder.jsp</from-view-id>
+  <navigation-case>
+     <from-outcome>success</from-outcome>
+     <to-view-id>/ConfirmOrder.jsp</to-view-id>
+  </navigation-case>
+  <navigation-case>
+     <from-outcome>failure</from-outcome>
+     <to-view-id>/OrderError.jsp</to-view-id>
+  </navigation-case>
+</navigation-rule>
+
+<navigation-rule>
+  <from-view-id>/scratch.jsp</from-view-id>
+  <navigation-case>
+     <to-view-id>/Navigation.jsp</to-view-id>
+  </navigation-case>
+</navigation-rule>
+
+<managed-bean>
+  <managed-bean-name>project</managed-bean-name>
+  <managed-bean-class>org.jia.ptrack.domain.Project</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+  <managed-property>
+    <property-name>name</property-name>
+    <value>DeathMarch 1.0</value>
+  </managed-property>
+  <managed-property>
+    <property-name>description</property-name>
+    <value>Keeps track of the number of defects, the amount of feature creep, and the rate of progress for a given project.</value>
+  </managed-property>
+</managed-bean>
+
+<managed-bean>
+  <managed-bean-name>animalForm</managed-bean-name>
+  <managed-bean-class>org.jia.examples.AnimalForm</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+</managed-bean>
+
+</faces-config>

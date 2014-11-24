@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>mkjsf-tutorial</display-name>
+  <servlet>
+    <servlet-name>Faces Servlet</servlet-name>
+    <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Faces Servlet</servlet-name>
+    <url-pattern>*.xhtml</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>mysearch-01.xhtml</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+    <description>The URL of the search service. Used if TYPE is SP (see TYPE parameter below)</description>  
+    <param-name>SERVICE_PROXY_URL</param-name>
+    <param-value>http://mkc.indexdata.com:9009/service-proxy/</param-value>
+  </context-param>     
+  <context-param>
+    <description>The URL of the search service. Used if TYPE is PZ2 (see TYPE parameter below)</description>
+    <param-name>PAZPAR2_URL</param-name>
+    <param-value>http://localhost:8004/</param-value>  
+  </context-param>
+  <context-param>
+    <description>Service type. Possible values are
+                 SP    :  Service Proxy
+                 PZ2   :  Pazpar2 
+                 TBD   :  To be decided run-time (default)</description>
+    <param-name>TYPE</param-name>
+    <param-value>SP</param-value>  
+  </context-param>
+  
+  <context-param>
+    <param-name>MASTERKEY_ROOT_CONFIG_DIR</param-name>
+    <param-value>war://testconfig</param-value>
+  </context-param>
+  <context-param>
+    <description>
+      The sub directory to hold config file(s) for this Masterkey component.
+    </description>
+    <param-name>MASTERKEY_COMPONENT_CONFIG_DIR</param-name>
+    <param-value>/tutorial</param-value>
+  </context-param>
+  <context-param>
+    <param-name>MASTERKEY_CONFIG_FILE_NAME</param-name>
+    <param-value>tutorial.properties</param-value>
+  </context-param>
+  <context-param>
+    <description>
+      Defines the lifespan of configuration parameters as retrieved
+      from the file pointed to by MASTERKEY_CONFIG_FILE_NAME.
+      Can be SERVLET (cached) or REQUEST (read for every request).
+      Will default to SERVLET.
+    </description>
+    <param-name>MASTERKEY_CONFIG_LIFE_TIME</param-name>
+    <param-value>REQUEST</param-value>
+  </context-param>
+</web-app>

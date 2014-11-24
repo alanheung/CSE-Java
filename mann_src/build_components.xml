@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project basedir="." default="rebuild" name="JSF in Action Custom Components">
+  <property name="jdk.home" value="C:/Programs/JBuilderX/jdk1.4"/>
+  <property name="dest" value="classes.ant"/>
+  <property name="Generated.Source" value="${dest}/Temporary_Files"/>
+  <property name="JUnit.(JIA).home" value="lib/junit"/>
+  <property name="Informa.(JIA).home" value="lib/informa-0.4.5"/>
+  <property name="JSF.(JIA).home" value="lib/jsf-1.101"/>
+  <property name="Servlet.(JIA).home" value="lib/servlet"/>
+  <property name="JSP.(JIA).home" value="lib/jsp"/>
+  <property name="components.META-INF" value="custom-components/META-INF"/>
+  <property name="src" value="src"/>
+  <property name="src2" value="test"/>
+  <path id="project.class.path">
+    <pathelement location="${dest}"/>
+    <pathelement location="${JUnit.(JIA).home}/junit.jar"/>
+    <pathelement location="${Informa.(JIA).home}/castor-doclet.jar"/>
+    <pathelement location="${Informa.(JIA).home}/castor.jar"/>
+    <pathelement location="${Informa.(JIA).home}/cglib-asm.jar"/>
+    <pathelement location="${Informa.(JIA).home}/commons-beanutils.jar"/>
+    <pathelement location="${Informa.(JIA).home}/commons-collections.jar"/>
+    <pathelement location="${Informa.(JIA).home}/commons-lang.jar"/>
+    <pathelement location="${Informa.(JIA).home}/commons-logging.jar"/>
+    <pathelement location="${Informa.(JIA).home}/dom4j.jar"/>
+    <pathelement location="${Informa.(JIA).home}/hibernate2.jar"/>
+    <pathelement location="${Informa.(JIA).home}/hsqldb.jar"/>
+    <pathelement location="${Informa.(JIA).home}/informa.jar"/>
+    <pathelement location="${Informa.(JIA).home}/jdom.jar"/>
+    <pathelement location="${Informa.(JIA).home}/jta.jar"/>
+    <pathelement location="${Informa.(JIA).home}/junit.jar"/>
+    <pathelement location="${Informa.(JIA).home}/log4j.jar"/>
+    <pathelement location="${Informa.(JIA).home}/lucene.jar"/>
+    <pathelement location="${Informa.(JIA).home}/odmg.jar"/>
+    <pathelement location="${Informa.(JIA).home}/xdoclet-hibernate-module.jar"/>
+    <pathelement location="${Informa.(JIA).home}/xdoclet-xdoclet-module.jar"/>
+    <pathelement location="${Informa.(JIA).home}/xdoclet.jar"/>
+    <pathelement location="${Informa.(JIA).home}/xjavadoc.jar"/>
+    <pathelement location="${JSF.(JIA).home}/commons-beanutils.jar"/>
+    <pathelement location="${JSF.(JIA).home}/commons-collections.jar"/>
+    <pathelement location="${JSF.(JIA).home}/commons-digester.jar"/>
+    <pathelement location="${JSF.(JIA).home}/commons-logging.jar"/>
+    <pathelement location="${JSF.(JIA).home}/jsf-api.jar"/>
+    <pathelement location="${JSF.(JIA).home}/jsf-impl.jar"/>
+    <pathelement location="${Servlet.(JIA).home}/servlet-api.jar"/>
+    <pathelement location="${JSP.(JIA).home}/jsp-api.jar"/>
+    <pathelement location="${jdk.home}/demo/jfc/Java2D/Java2Demo.jar"/>
+    <pathelement location="${jdk.home}/demo/plugin/jfc/Java2D/Java2Demo.jar"/>
+    <pathelement location="${jdk.home}/jre/javaws/javaws.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/charsets.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/ext/dnsns.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/ext/ldapsec.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/ext/localedata.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/ext/sunjce_provider.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/im/indicim.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/im/thaiim.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/jce.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/jsse.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/plugin.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/rt.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/sunrsasign.jar"/>
+    <pathelement location="${jdk.home}/lib/dt.jar"/>
+    <pathelement location="${jdk.home}/lib/htmlconverter.jar"/>
+    <pathelement location="${jdk.home}/lib/tools.jar"/>
+  </path>
+  <!--Patternset to exclude files from the output directory:-->
+  <patternset id="dest.exclude">
+    <exclude name="Temporary_Files/"/>
+    <exclude name="Generated Source/"/>
+    <exclude name="package cache/"/>
+    <exclude name="dependency cache/"/>
+    <exclude name="jsp cache/"/>
+  </patternset>
+  <patternset id="dest.excluded.classes">
+    <exclude name="org\jia\examples\**"/>
+    <exclude name="org\jia\internal\**"/>
+    <exclude name="org\jia\ptrack\web\**"/>
+    <exclude name="org\jia\smile\**"/>
+    <exclude name="org\jia\hello\**"/>
+    <exclude name="old\**"/>
+    <exclude name="ptrackResources*"/>
+    <exclude name="StandardComponentsResources*"/>
+    <exclude name="LocalizationResources*"/>
+    <exclude name="CustomMessages*"/>
+  </patternset>
+  <target depends="init" name="javacompile">
+    <javac bootclasspathref="project.class.path" debug="true" deprecation="true" destdir="${dest}" nowarn="false">
+      <patternset refid="dest.excluded.classes"/>
+      <src path="${src}"/>
+      <src path="${src2}"/>
+      <src path="${Generated.Source}"/>
+    </javac>
+  </target>
+  <target depends="resource" name="archive">
+    <jar compress="false" destfile="lib\jia-custom-components.jar">
+      <fileset dir="${dest}">
+        <patternset refid="dest.exclude"/>
+        <patternset refid="dest.excluded.classes"/>
+        <include name="**/*.*"/>
+      </fileset>
+    </jar>
+  </target>
+  <target name="cleanup">
+    <delete file="lib\jia-custom-components.jar"/>
+    <delete failonerror="false" includeemptydirs="true">
+      <fileset dir="${dest}">
+        <patternset refid="dest.excluded.classes"/>
+      </fileset>
+    </delete>
+  </target>
+  <target name="resource">
+    <copy todir="${dest}/META-INF">
+      <fileset dir="${components.META-INF}">
+        <include name="**/*.tld"/>
+        <include name="**/*.au"/>
+        <include name="**/*.midi"/>
+        <include name="**/*.gif"/>
+        <include name="**/*.xml"/>
+        <include name="**/*.properties"/>
+        <include name="**/*.aiff"/>
+        <include name="**/*.jpe"/>
+        <include name="**/*.jpeg"/>
+        <include name="**/*.rmf"/>
+        <include name="**/*.wav"/>
+        <include name="**/*.mid"/>
+        <include name="**/*.png"/>
+        <include name="**/*.jpg"/>
+      </fileset>
+    </copy>
+    <copy todir="${dest}">
+      <fileset dir="${src}">
+        <include name="**/*.tld"/>
+        <include name="**/*.au"/>
+        <include name="**/*.midi"/>
+        <include name="**/*.gif"/>
+        <include name="**/*.xml"/>
+        <include name="**/*.properties"/>
+        <include name="**/*.aiff"/>
+        <include name="**/*.jpe"/>
+        <include name="**/*.jpeg"/>
+        <include name="**/*.rmf"/>
+        <include name="**/*.wav"/>
+        <include name="**/*.mid"/>
+        <include name="**/*.png"/>
+        <include name="**/*.jpg"/>
+      </fileset>
+      <fileset dir="${src2}">
+        <include name="**/*.tld"/>
+        <include name="**/*.au"/>
+        <include name="**/*.midi"/>
+        <include name="**/*.gif"/>
+        <include name="**/*.xml"/>
+        <include name="**/*.properties"/>
+        <include name="**/*.aiff"/>
+        <include name="**/*.jpe"/>
+        <include name="**/*.jpeg"/>
+        <include name="**/*.rmf"/>
+        <include name="**/*.wav"/>
+        <include name="**/*.mid"/>
+        <include name="**/*.png"/>
+        <include name="**/*.jpg"/>
+      </fileset>
+    </copy>
+  </target>
+  <target name="javadoc"/>
+  <target depends="cleanup" name="clean"/>
+  <target name="precompile"/>
+  <target depends="javacompile" name="compile"/>
+  <target name="postcompile"/>
+  <target depends="archive,javadoc,resource" name="package"/>
+  <target name="deploy"/>
+  <target depends="precompile,compile,postcompile,package,deploy" name="make"/>
+  <target depends="clean,make" name="rebuild"/>
+  <target name="init">
+    <mkdir dir="${dest}"/>
+    <mkdir dir="${Generated.Source}"/>
+  </target>
+</project>

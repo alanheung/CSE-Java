@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<h:html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:pz2utils="http://java.sun.com/jsf/composite/pz2utils"
+      xmlns:pz2widgets="http://java.sun.com/jsf/composite/pz2widgets">
+
+<h:head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>MySearch, rudimentary navigation</title>
+  <h:outputText value="${pzreq.sp.auth.runWith2('action=login;username=guest;password=guest',';')}" 
+                rendered="${pz2.authenticationRequired and 
+                            not pzresp.sp.auth.isAuthenticationOk()}" 
+                style="display:none;"/>          
+</h:head>
+<h:body>
+  <pz2utils:pz2watch id="pz2watch" renderWhileActiveclients="myshow" debug="true" />
+
+  <h:form id="pz2form" prependId="false">    
+    <h:inputText id="myquery" value="#{pzreq.search.query}" size="50"/>                                
+    <h:commandButton id="button" value="Execute My Search">              
+       <f:ajax execute="myquery" render="start ${pz2.watchActiveclients}"/>
+    </h:commandButton>
+    <br/><br/>
+    <!-- Add rough navigation/paging in results -->
+    <!-- 'start' specifies the first record to show -->
+    <!-- 'pageSize' how many records to show -->       
+    Start <h:inputText id="start" value="#{pzreq.show.start}">
+            <!-- When the 'start' parameter changes, be sure to render our results in 'myshow' -->
+            <f:ajax render="myshow"/>
+            <!-- There's no need to start polling though, because pazpar2 doesn't need to 
+                 re-search for this - thus, no {pz2watch.activeclients} here. -->            
+          </h:inputText>
+    Pagesize <h:inputText id="pagesize" value="#{pzreq.show.pageSize}">
+                <!-- When pageSize changes, render 'myshow' too. 
+                     Also, the backend will reset 'start' to 0 when pagesize changes
+                     so the 'start' field should be rendered to reflect the resetting -->
+                <f:ajax render="myshow start"/>
+             </h:inputText>
+    <h:panelGrid>
+      <h:panelGroup id="myshow">
+        <ui:repeat value="#{pzresp.show.hits}" var="hit" varStatus="loop">
+           #{(pzresp.show.start)+loop.index+1}.<b>#{hit.title}</b> <i>#{hit.author}</i> #{hit.date}<br/>
+           #{'&nbsp;&nbsp;'}#{pzui.maxLengthMoreLabel(hit.description,100,'...')}<br/>
+        </ui:repeat>      
+      </h:panelGroup>
+    </h:panelGrid>        
+  </h:form>
+</h:body>
+</h:html>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="PCIDB603" name="com.mydomain.shoppingcart.service.test.ShoppingServiceTest" tests="4" time="0.172" timestamp="2009-05-23T00:07:49">
+  <properties>
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="lib.dir" value="../../LIBS" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="eclipse.pdebuild.templates" value="/C:/eclipse/plugins/org.eclipse.pde.build_3.4.1.R34x_v20081217/templates/" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="ant.file.shopping-cart-core" value="C:\projects\java\eclipse\shoppingcart\shopping-cart-core-web-dev-part5\build\build.xml" />
+    <property name="os.name" value="Windows XP" />
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jre1.6.0_07\lib\resources.jar;C:\Program Files\Java\jre1.6.0_07\lib\rt.jar;C:\Program Files\Java\jre1.6.0_07\lib\sunrsasign.jar;C:\Program Files\Java\jre1.6.0_07\lib\jsse.jar;C:\Program Files\Java\jre1.6.0_07\lib\jce.jar;C:\Program Files\Java\jre1.6.0_07\lib\charsets.jar;C:\Program Files\Java\jre1.6.0_07\classes" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="ant.home" value="C:\eclipse\plugins\org.apache.ant_1.7.0.v200803061910" />
+    <property name="java.runtime.version" value="1.6.0_07-b06" />
+    <property name="user.name" value="mahonyr" />
+    <property name="user.language" value="en" />
+    <property name="web.project.title" value="shopping-cart-web" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.6.0_07\bin" />
+    <property name="reports.dir" value="reports" />
+    <property name="ant.project.name" value="shopping-cart-core" />
+    <property name="java.version" value="1.6.0_07" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="32" />
+    <property name="test.src.dir" value="../test" />
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre1.6.0_07\lib\endorsed" />
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="\" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="classes.dir" value="classes" />
+    <property name="java.class.version" value="50.0" />
+    <property name="shopping-cart-core.dir" value="../../shopping-cart-core-web-dev-part5" />
+    <property name="user.country" value="GB" />
+    <property name="java.home" value="C:\Program Files\Java\jre1.6.0_07" />
+    <property name="dist.dir" value="dist" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="ant.file" value="C:\projects\java\eclipse\shoppingcart\shopping-cart-core-web-dev-part5\build\build.xml" />
+    <property name="os.version" value="5.1" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.version" value="10.0-b23" />
+    <property name="user.variant" value="" />
+    <property name="ant.library.dir" value="C:\eclipse\plugins\org.apache.ant_1.7.0.v200803061910\lib" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="eclipse.pdebuild.scripts" value="/C:/eclipse/plugins/org.eclipse.pde.build_3.4.1.R34x_v20081217/scripts/" />
+    <property name="user.home" value="C:\Documents and Settings\mahonyr" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="java.library.path" value="C:\Program Files\Java\jre1.6.0_07\bin;.;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre6/bin/client;C:/Program Files/Java/jre6/bin;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\liftweb-0.11\bin;C:\PROGRA~1\Serena\vm\win32\bin;C:\PROGRA~1\Serena\vm\common\bin\win32;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Intel\WiFi\bin\;c:\Program Files\Common Files\Lenovo;C:\Program Files\Common Files\Roxio Shared\10.0\DLLShared\;C:\Program Files\Common Files\Roxio Shared\DLLShared\;C:\Program Files\Common Files\Roxio Shared\DLLShared\;C:\Program Files\Common Files\Roxio Shared\10.0\DLLShared\;C:\apache\ant-1.7.1\bin;C:\glassfish\bin;C:\apache\maven-2.0.10\bin;C:\Program Files\MySQL\MySQL Server 5.0\bin;C:\Graphviz2.22\bin;C:\scala-2.7.4.final\bin;C:\Program Files\Git\cmd;C:\downloads\Canoo-WebTest\build\bin" />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="java.class.path" value="C:\projects\java\eclipse\shoppingcart\LIBS\.project;C:\projects\java\eclipse\shoppingcart\LIBS\activation.jar;C:\projects\java\eclipse\shoppingcart\LIBS\antlr-2.7.6.jar;C:\projects\java\eclipse\shoppingcart\LIBS\antlr-3.0.1.jar;C:\projects\java\eclipse\shoppingcart\LIBS\aopalliance.jar;C:\projects\java\eclipse\shoppingcart\LIBS\aspectjweaver.jar;C:\projects\java\eclipse\shoppingcart\LIBS\commons-beanutils.jar;C:\projects\java\eclipse\shoppingcart\LIBS\commons-codec-1.3.jar;C:\projects\java\eclipse\shoppingcart\LIBS\commons-collections-3.2.jar;C:\projects\java\eclipse\shoppingcart\LIBS\commons-collections-testframework-3.2.jar;C:\projects\java\eclipse\shoppingcart\LIBS\commons-dbcp-1.2.2.jar;C:\projects\java\eclipse\shoppingcart\LIBS\commons-digester-1.8.jar;C:\projects\java\eclipse\shoppingcart\LIBS\commons-email-1.1.jar;C:\projects\java\eclipse\shoppingcart\LIBS\commons-lang-2.4.jar;C:\projects\java\eclipse\shoppingcart\LIBS\commons-logging-1.1.1.jar;C:\projects\java\eclipse\shoppingcart\LIBS\commons-pool-1.4.jar;C:\projects\java\eclipse\shoppingcart\LIBS\dbunit-2.4.4.jar;C:\projects\java\eclipse\shoppingcart\LIBS\dom4j.jar;C:\projects\java\eclipse\shoppingcart\LIBS\easymock.jar;C:\projects\java\eclipse\shoppingcart\LIBS\ejb3-persistence.jar;C:\projects\java\eclipse\shoppingcart\LIBS\el-api-1.0.jar;C:\projects\java\eclipse\shoppingcart\LIBS\el-impl-1.0.jar;C:\projects\java\eclipse\shoppingcart\LIBS\hibernate-annotations.jar;C:\projects\java\eclipse\shoppingcart\LIBS\hibernate-commons-annotations.jar;C:\projects\java\eclipse\shoppingcart\LIBS\hibernate-core.jar;C:\projects\java\eclipse\shoppingcart\LIBS\hibernate-validator.jar;C:\projects\java\eclipse\shoppingcart\LIBS\hibernate3.jar;C:\projects\java\eclipse\shoppingcart\LIBS\hsqldb.jar;C:\projects\java\eclipse\shoppingcart\LIBS\ical4j-1.0-beta5.jar;C:\projects\java\eclipse\shoppingcart\LIBS\javassist.jar;C:\projects\java\eclipse\shoppingcart\LIBS\jsf-api.jar;C:\projects\java\eclipse\shoppingcart\LIBS\jsf-facelets.jar;C:\projects\java\eclipse\shoppingcart\LIBS\jsf-impl.jar;C:\projects\java\eclipse\shoppingcart\LIBS\jstl.jar;C:\projects\java\eclipse\shoppingcart\LIBS\jta.jar;C:\projects\java\eclipse\shoppingcart\LIBS\junit-4.5.jar;C:\projects\java\eclipse\shoppingcart\LIBS\log4j-1.2.14.jar;C:\projects\java\eclipse\shoppingcart\LIBS\mail.jar;C:\projects\java\eclipse\shoppingcart\LIBS\mysql-connector-java-5.0.8-bin.jar;C:\projects\java\eclipse\shoppingcart\LIBS\org.springframework.aop-3.0.0.M1.jar;C:\projects\java\eclipse\shoppingcart\LIBS\org.springframework.beans-3.0.0.M1.jar;C:\projects\java\eclipse\shoppingcart\LIBS\org.springframework.context-3.0.0.M1.jar;C:\projects\java\eclipse\shoppingcart\LIBS\org.springframework.core-3.0.0.M1.jar;C:\projects\java\eclipse\shoppingcart\LIBS\org.springframework.expression-3.0.0.M1.jar;C:\projects\java\eclipse\shoppingcart\LIBS\org.springframework.jdbc-3.0.0.M1.jar;C:\projects\java\eclipse\shoppingcart\LIBS\org.springframework.orm-3.0.0.M1.jar;C:\projects\java\eclipse\shoppingcart\LIBS\org.springframework.test-3.0.0.M1.jar;C:\projects\java\eclipse\shoppingcart\LIBS\org.springframework.transaction-3.0.0.M1.jar;C:\projects\java\eclipse\shoppingcart\LIBS\org.springframework.web-3.0.0.M1.jar;C:\projects\java\eclipse\shoppingcart\LIBS\richfaces-api-3.3.0.GA.jar;C:\projects\java\eclipse\shoppingcart\LIBS\richfaces-impl-3.3.0.GA.jar;C:\projects\java\eclipse\shoppingcart\LIBS\richfaces-ui-3.3.0.GA.jar;C:\projects\java\eclipse\shoppingcart\LIBS\slf4j-api.jar;C:\projects\java\eclipse\shoppingcart\LIBS\slf4j-log4j12.jar;C:\projects\java\eclipse\shoppingcart\shopping-cart-core-web-dev-part5\build\classes;C:\eclipse\plugins\org.apache.ant_1.7.0.v200803061910\lib\ant-launcher.jar;C:\eclipse\plugins\org.apache.ant_1.7.0.v200803061910\lib\ant.jar;C:\eclipse\plugins\org.apache.ant_1.7.0.v200803061910\lib\ant-junit.jar" />
+    <property name="ant.version" value="Apache Ant version 1.7.0 compiled on December 13 2006" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="ant.file.shopping-cart-web" value="C:\projects\java\eclipse\shoppingcart\shopping-cart-web-web-dev-part5\build\build.xml" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="Service Pack 2" />
+    <property name="java.awt.headless" value="true" />
+    <property name="eclipse.pdebuild.home" value="/C:/eclipse/plugins/org.eclipse.pde.build_3.4.1.R34x_v20081217/./" />
+    <property name="java.io.tmpdir" value="C:\DOCUME~1\mahonyr\LOCALS~1\Temp\" />
+    <property name="project.title" value="shopping-cart-core" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="os.arch" value="x86" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jre1.6.0_07\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
+    <property name="user.dir" value="C:\projects\java\eclipse\shoppingcart\shopping-cart-web-web-dev-part5\build" />
+    <property name="line.separator" value="
+" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="tomcat.home" value="C:/apache/tomcat-6.0.18" />
+    <property name="basedir" value="C:\projects\java\eclipse\shoppingcart\shopping-cart-core-web-dev-part5\build" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="ant.core.lib" value="C:\eclipse\plugins\org.apache.ant_1.7.0.v200803061910\lib\ant.jar" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="src.dir" value="../src" />
+  </properties>
+  <testcase classname="com.mydomain.shoppingcart.service.test.ShoppingServiceTest" name="findItems" time="0.015" />
+  <testcase classname="com.mydomain.shoppingcart.service.test.ShoppingServiceTest" name="empty" time="0.0" />
+  <testcase classname="com.mydomain.shoppingcart.service.test.ShoppingServiceTest" name="addItem" time="0.0" />
+  <testcase classname="com.mydomain.shoppingcart.service.test.ShoppingServiceTest" name="removeItem" time="0.0" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

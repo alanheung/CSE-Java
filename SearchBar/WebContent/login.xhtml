@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<head>
+<title>JSF search Application</title>
+</head>
+<body>
+	<h:form>	
+		<h:commandButton action="#{searchBean.search}" value="Search" />
+	
+		<h:panelGroup
+			rendered="#{search.validationComplete and (!search.isUsernameValid or !search.isPasswordValid)}">
+			<h:outputText value="Username is a Required Field"
+				rendered="#{!search.isUsernameValid}" style="color:red"></h:outputText>
+			<br />
+			<h:outputText value="Password is a Required Field"
+				rendered="#{!search.isPasswordValid}" style="color:red"></h:outputText>
+		</h:panelGroup>
+		<h:panelGroup
+			rendered="#{search.validationComplete and (search.isUsernameValid and search.isPasswordValid and search.isNameAndPasswordCorrect)}">
+			<h:outputText value="Username and Password are valid"
+				style="color:green"></h:outputText>
+			<h:commandButton value="Show Employee Data" action="index" />
+		</h:panelGroup>
+		<h:panelGroup
+			rendered="#{search.validationComplete and (search.isUsernameValid and search.isPasswordValid and !search.isNameAndPasswordCorrect)}">
+			<h:outputText value="Username and Password do not match"
+				style="color:red"></h:outputText>
+		</h:panelGroup>
+		<table>
+			<tr>
+				<td><h:outputText value="Enter Username: " /></td>
+				<td><h:inputText id="username" value="#{search.username}" /></td>
+			</tr>
+			<tr>
+				<td><h:outputText value="Enter Password: " /></td>
+				<td><h:inputSecret id="password" value="#{search.password}" />
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><h:commandButton value="Enter"
+						action="#{search.checkValidity}" /></td>
+			</tr>
+		</table>
+	</h:form>
+</body>
+</html>
+
+

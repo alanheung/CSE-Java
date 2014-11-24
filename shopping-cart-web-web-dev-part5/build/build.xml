@@ -1,0 +1,79 @@
+<project name="shopping-cart-web" default="build">
+
+	<property name="web.project.title" value="shopping-cart-web" />
+	<property name="lib.dir" value="../../LIBS" />
+	<property name="classes.dir" value="classes" />
+	<property name="dist.dir" value="dist" />
+	<property name="src.dir" value="../src" />
+	<property name="shopping-cart-core.dir" value="../../shopping-cart-core-web-dev-part5" />
+	<property name="tomcat.home" value="C:/apache/tomcat-6.0.18" />
+
+	<path id="build.class.path">
+		<fileset dir="${lib.dir}/">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${shopping-cart-core.dir}/build/dist">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+	<target name="clean">
+		<echo message="Cleaning ${web.project.title}" level="info" />
+		<delete dir="${classes.dir}" />
+		<delete failonerror="false">
+			<fileset dir="${dist.dir}" />
+		</delete>
+	</target>
+
+	<target name="compile" depends="clean">
+		<echo message="Compiling ${web.project.title}" level="info" />
+		<mkdir dir="${classes.dir}" />
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" deprecation="on" debug="on" source="1.6" target="1.6">
+			<classpath refid="build.class.path" />
+		</javac>
+		<copy todir="${classes.dir}" preservelastmodified="true">
+			<fileset dir="${src.dir}">
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="package" description="Create binary distribution" depends="compile">
+		<echo message="Packaging ${web.project.title}" level="info" />
+		<mkdir dir="${dist.dir}" />
+		<war destfile="${dist.dir}/${web.project.title}.war" webxml="../WebContent/WEB-INF/web.xml">
+			<fileset dir="../WebContent" />
+			<lib dir="${lib.dir}">
+				<exclude name=".project" />
+				<exclude name="el-api-1.0.jar" />
+				<exclude name="el-impl-1.0.jar" />
+			</lib>
+			<lib dir="${shopping-cart-core.dir}/build/dist" />
+			<classes dir="${classes.dir}" />
+		</war>
+	</target>
+
+	<target name="clean-deploy">
+		<echo message="Cleaning deploy directory" level="info" />
+		<delete dir="${tomcat.home}/webapps/${web.project.title}" />
+	</target>
+
+	<!--taskdef name="deploy" classname="org.apache.catalina.ant.DeployTask">
+		<classpath>
+			<pathelement path="${tomcat.home}/server/lib/catalina-ant.jar" />
+		</classpath>
+	</taskdef>
+	<deploy url="${manager.url}" username="${manager.username}" password="${manager.password}" path="/${name}" war="file:/${dist.dir}/${web.project.title}.war" /-->
+
+	<target name="deploy" depends="clean-deploy" description="unwar into the servlet container's deployment directory">
+		<unwar src="${dist.dir}/${web.project.title}.war" dest="${tomcat.home}/webapps/${web.project.title}" />
+	</target>
+
+	<target name="build-core">
+		<ant dir="${shopping-cart-core.dir}/build" />
+	</target>
+
+	<target name="build" depends="build-core,compile,package,deploy">
+		<echo message="Built ${web.project.title}" level="info" />
+	</target>
+</project>

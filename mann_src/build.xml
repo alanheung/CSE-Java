@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Master build script for JSF in Action. You must specify the jdk.home property. -->
+
+<project basedir="." default="rebuild" name="JSF in Action - all subprojects">
+  <property name="jdk.home" value="C:/Programs/JBuilderX/jdk1.4"/>
+  <property name="dest" value="classes.ant"/>
+  <property name="src" value="src"/>
+  <property name="src2" value="test"/>
+
+  <target name="subprojects.make">
+    <ant antfile="build_ptrack.xml" target="make"/>
+    <ant antfile="build_ptrack_ui.xml"  target="make"/>
+    <ant antfile="build_examples.xml" target="make"/>
+    <ant antfile="build_hello.xml" target="make"/>
+    <ant antfile="build_component_examples.xml" target="make"/>
+  </target>
+
+  <target name="subprojects.rebuild">
+    <ant antfile="build_ptrack.xml" target="rebuild"/>
+    <ant antfile="build_ptrack_ui.xml"  target="rebuild"/>
+    <ant antfile="build_examples.xml" target="rebuild"/>
+    <ant antfile="build_hello.xml" target="rebuild"/>
+    <ant antfile="build_component_examples.xml" target="rebuild"/>
+  </target>
+
+  <!-- Delegate all tasks to subprojects -->
+  <target depends="subprojects.make" name="make"/>
+  <target depends="subprojects.rebuild" name="rebuild"/>
+
+  <target name="init">
+    <mkdir dir="${dest}"/>
+    <mkdir dir="${Generated.Source}"/>
+  </target>
+</project>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project basedir="." default="rebuild" name="JSF in Action Examples">
+  <property name="jdk.home" value="C:/Programs/JBuilderX/jdk1.4"/>
+  <property name="dest" value="classes.ant"/>
+  <property name="Generated.Source" value="${dest}/Temporary_Files"/>
+  <property name="Custom.Components.(JIA).home" value="lib"/>
+  <property name="JSTL.(JIA).home" value="lib/jstl"/>
+  <property name="JSF.(JIA).home" value="lib/jsf-1.101"/>
+  <property name="JSP.(JIA).home" value="lib/jsp"/>
+  <property name="JUnit.(JIA).home" value="lib/junit"/>
+  <property name="src" value="src"/>
+  <property name="src2" value="test"/>
+  <property name="compiled.jsp" value="${Generated.Source}/.jsp"/>
+  <property name="jsp.cache" value="${Generated.Source}/jsp cache"/>
+  <path id="project.class.path">
+    <pathelement location="${dest}"/>
+    <pathelement location="${JSTL.(JIA).home}/jstl.jar"/>
+    <pathelement location="${JSTL.(JIA).home}/standard.jar"/>
+    <pathelement location="${JSF.(JIA).home}/commons-beanutils.jar"/>
+    <pathelement location="${JSF.(JIA).home}/commons-collections.jar"/>
+    <pathelement location="${JSF.(JIA).home}/commons-digester.jar"/>
+    <pathelement location="${JSF.(JIA).home}/commons-logging.jar"/>
+    <pathelement location="${JSF.(JIA).home}/jsf-api.jar"/>
+    <pathelement location="${JSF.(JIA).home}/jsf-impl.jar"/>
+    <pathelement location="${JSP.(JIA).home}/jsp-api.jar"/>
+    <pathelement location="${JUnit.(JIA).home}/junit.jar"/>
+    <pathelement location="${jdk.home}/demo/jfc/Java2D/Java2Demo.jar"/>
+    <pathelement location="${jdk.home}/demo/plugin/jfc/Java2D/Java2Demo.jar"/>
+    <pathelement location="${jdk.home}/jre/javaws/javaws.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/charsets.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/ext/dnsns.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/ext/ldapsec.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/ext/localedata.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/ext/sunjce_provider.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/im/indicim.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/im/thaiim.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/jce.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/jsse.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/plugin.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/rt.jar"/>
+    <pathelement location="${jdk.home}/jre/lib/sunrsasign.jar"/>
+    <pathelement location="${jdk.home}/lib/dt.jar"/>
+    <pathelement location="${jdk.home}/lib/htmlconverter.jar"/>
+    <pathelement location="${jdk.home}/lib/tools.jar"/>
+  </path>
+  <!--Patternset to exclude files from the output directory:-->
+  <patternset id="dest.exclude">
+    <exclude name="Temporary_Files/"/>
+    <exclude name="Generated Source/"/>
+    <exclude name="package cache/"/>
+    <exclude name="dependency cache/"/>
+    <exclude name="jsp cache/"/>
+  </patternset>
+  <patternset id="dest.excluded.classes">
+      <exclude name="org\jia\validators\**"/>
+      <exclude name="org\jia\converters\**"/>
+      <exclude name="org\jia\components\**"/>
+      <exclude name="org\jia\internal\**"/>
+      <exclude name="org\jia\ptrack\web\**"/>
+      <exclude name="org\jia\smile\**"/>
+      <exclude name="org\jia\hello\**"/>
+      <exclude name="org\jia\util\**"/>
+      <exclude name="org\jia\test\**"/>
+      <exclude name="old\**"/>
+      <exclude name="ptrackResources*"/>
+      <exclude name="CustomComponentResources*"/>
+      <exclude name="META-INF\**"/>
+  </patternset>
+  <target depends="init" name="javacompile">
+    <javac bootclasspathref="project.class.path" debug="true" deprecation="true" destdir="${dest}" nowarn="false">
+      <patternset refid="dest.excluded.classes"/>
+      <src path="${src}"/>
+      <src path="${src2}"/>
+      <src path="${Generated.Source}"/>
+    </javac>
+  </target>
+  <target depends="resource" name="WebModuleNode">
+    <war compress="false" destfile="webapps/jia-examples.war" webxml="webapps/examples/WEB-INF/web.xml">
+      <webinf dir="webapps/examples/WEB-INF">
+        <include name="demo.tld"/>
+        <include name="faces-config.xml"/>
+      </webinf>
+      <fileset dir="webapps/examples">
+        <include name="images/button_form_clear.png"/>
+        <include name="images/button_form_clear_over.png"/>
+        <include name="images/button_form_post.png"/>
+        <include name="images/button_form_post_over.png"/>
+        <include name="images/clear.gif"/>
+        <include name="images/clear.png"/>
+        <include name="images/clear_over.gif"/>
+        <include name="images/create.gif"/>
+        <include name="images/hello.gif"/>
+        <include name="images/hola.gif"/>
+        <include name="images/inbox.gif"/>
+        <include name="images/logo.gif"/>
+        <include name="images/logout.gif"/>
+        <include name="images/scratch.jsp"/>
+        <include name="images/show_all.gif"/>
+        <include name="images/submit.gif"/>
+        <include name="images/submit.png"/>
+        <include name="images/submit_over.gif"/>
+        <include name="BasicConverters.jsp"/>
+        <include name="CommandFamily.jsp"/>
+        <include name="DateTimeConverter.jsp"/>
+        <include name="ExampleIndex.jsp"/>
+        <include name="HtmlDataTable.jsp"/>
+        <include name="HtmlGraphicImage.jsp"/>
+        <include name="HtmlMessage.jsp"/>
+        <include name="HtmlMessages.jsp"/>
+        <include name="HtmlSelectBooleanCheckbox.jsp"/>
+        <include name="InputFamily.jsp"/>
+        <include name="JSTL_1.jsp"/>
+        <include name="JSTL_2.jsp"/>
+        <include name="Localization.jsp"/>
+        <include name="Navigation.jsp"/>
+        <include name="Navigation_foo.jsp"/>
+        <include name="Navigation_retry.jsp"/>
+        <include name="Navigation_success.jsp"/>
+        <include name="NumberConverter.jsp"/>
+        <include name="OutputFamily.jsp"/>
+        <include name="PanelFamily.jsp"/>
+        <include name="SelectManyFamily.jsp"/>
+        <include name="SelectOneFamily.jsp"/>
+        <include name="ShowSource.jsp"/>
+        <include name="UIViewRoot.jsp"/>
+        <include name="Validators.jsp"/>
+        <include name="anotherpage.jsp"/>
+        <include name="index.jsp"/>
+        <include name="stylesheet.css"/>
+      </fileset>
+      <classes dir="${dest}">
+        <patternset refid="dest.exclude"/>
+        <patternset refid="dest.excluded.classes"/>
+        <include name="**/*.*"/>
+      </classes>
+      <lib dir="${JSTL.(JIA).home}">
+        <include name="jstl.jar"/>
+        <include name="standard.jar"/>
+      </lib>
+      <lib dir="${JSF.(JIA).home}">
+        <include name="commons-beanutils.jar"/>
+        <include name="commons-collections.jar"/>
+        <include name="commons-digester.jar"/>
+        <include name="commons-logging.jar"/>
+        <include name="jsf-api.jar"/>
+        <include name="jsf-impl.jar"/>
+      </lib>
+<!--      <lib dir="${JSP.(JIA).home}">
+        <include name="jsp-api.jar"/>
+      </lib>  -->
+      <lib dir="${JUnit.(JIA).home}">
+        <include name="junit.jar"/>
+      </lib>
+      <lib dir="${Custom.Components.(JIA).home}">
+        <include name="jia-custom-components.jar"/>
+      </lib>
+    </war>
+  </target>
+  <target name="cleanup">
+    <delete file="webapps/jia-examples.war"/>
+    <delete failonerror="false" includeemptydirs="true">
+      <fileset dir="${dest}">
+        <patternset refid="dest.excluded.classes"/>
+      </fileset>
+    </delete>
+  </target>
+  <target name="resource">
+    <copy todir="${dest}">
+      <fileset dir="${src}">
+        <include name="**/*.jpe"/>
+        <include name="**/*.jpeg"/>
+        <include name="**/*.rmf"/>
+        <include name="**/*.wav"/>
+        <include name="**/*.mid"/>
+        <include name="**/*.midi"/>
+        <include name="**/*.au"/>
+        <include name="**/*.gif"/>
+        <include name="**/*.png"/>
+        <include name="**/*.jpg"/>
+        <include name="**/*.aiff"/>
+        <include name="**/*.properties"/>
+      </fileset>
+      <fileset dir="${src2}">
+        <include name="**/*.jpe"/>
+        <include name="**/*.jpeg"/>
+        <include name="**/*.rmf"/>
+        <include name="**/*.wav"/>
+        <include name="**/*.mid"/>
+        <include name="**/*.midi"/>
+        <include name="**/*.au"/>
+        <include name="**/*.gif"/>
+        <include name="**/*.png"/>
+        <include name="**/*.jpg"/>
+        <include name="**/*.aiff"/>
+        <include name="**/*.properties"/>
+      </fileset>
+    </copy>
+  </target>
+  <target name="custom-components">
+    <ant antfile="build_components.xml" target="make"/>
+  </target>
+  <target name="javadoc"/>
+  <target depends="cleanup" name="clean"/>
+  <target name="precompile"/>
+  <target depends="custom-components,javacompile" name="compile"/>
+  <target name="postcompile"/>
+  <target depends="WebModuleNode,javadoc,resource" name="package"/>
+  <target name="deploy"/>
+  <target depends="precompile,compile,postcompile,package,deploy" name="make"/>
+  <target depends="clean,make" name="rebuild"/>
+  <target name="init">
+    <mkdir dir="${dest}"/>
+    <mkdir dir="${Generated.Source}"/>
+  </target>
+</project>

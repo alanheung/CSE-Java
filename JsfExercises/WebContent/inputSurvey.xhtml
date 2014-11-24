@@ -24,7 +24,7 @@
 		<br></br>
 
 		<h3>How did you hear about us?</h3>
-		<h:selectOneRadio value="#{user.hearAbout}">
+		<h:selectOneRadio value="#{customerBean.hearAbout}">
 			<f:selectItem itemValue="Search Engine" itemLabel="Search Engine" />
 			<f:selectItem itemValue="Friend" itemLabel="Friend" />
 			<f:selectItem itemValue="Other" itemLabel="Other" />
@@ -32,11 +32,11 @@
 
 		<h3>Would you like to receive announcements about new products and special offers?</h3>
 		<br></br>		
-		<h:selectBooleanCheckBox value="#{user.rememberMe}"/> Yes I would like to receive information about new products and special offers.
+		<h:selectBooleanCheckBox value="#{customerBean.rememberMe}"/> Yes I would like to receive information about new products and special offers.
 		
 		<br></br>
 		<label>Please contact me by </label>
-		<h:selectOneMenu value="#{user.contactBy}">
+		<h:selectOneMenu value="#{customerBean.contactBy}">
 			<f:selectItem itemValue="email" itemLabel="email" />
 			<f:selectItem itemValue="post" itemLabel="post" />
 			<f:selectItem itemValue="both" itemLabel="both" />

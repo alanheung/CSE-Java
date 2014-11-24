@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<h:html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:pz2utils="http://java.sun.com/jsf/composite/pz2utils"
+      xmlns:pz2widgets="http://java.sun.com/jsf/composite/pz2widgets">
+      
+<h:head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>MySearch, adding search form</title>
+  <h:outputText value="${pzreq.sp.auth.runWith2('action=login;username=guest;password=guest',';')}" 
+                rendered="${pz2.authenticationRequired and 
+                            not pzresp.sp.auth.isAuthenticationOk()}" 
+                style="display:none;"/>      
+      
+</h:head>
+<h:body>
+  <pz2utils:pz2watch id="pz2watch" renderWhileActiveclients="" debug="true" />
+
+  <h:form id="pz2form" prependId="false"> 
+  
+    <!-- Adding a field for the query, bind it to the bean property 'query' -->   
+    <h:inputText id="myquery" value="#{pzreq.search.query}" size="50"/>
+    
+    <!-- Adding a search button -->                                
+    <h:commandButton id="button" value="Execute My Search">    
+       <!-- Upon search, start continuous polling for results by having the
+            special purpose field {pz2watch.activeclients} rendered. 
+            This will trigger the component included above, which in turn
+            will perform a search using the the value of pzreq.search.query
+            and then continue polling until activeclients is zero -->              
+       <f:ajax execute="myquery" render="${pz2.watchActiveclients}"/>
+       
+    </h:commandButton>        
+  </h:form>
+</h:body>
+</h:html>
