@@ -1,0 +1,188 @@
+package corrigan;
+import java.io.Serializable;
+import java.util.List;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+
+
+@ManagedBean(name="registration")
+@SessionScoped
+public class Registration implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+	private String fullName;
+	private String email;
+	private String password;
+	private String verifyPassword;
+	private boolean fullNameEmpty;
+	private boolean emailEmpty;
+	private boolean passwordEmpty;
+	private boolean verifyPasswordEmpty;
+	private boolean emailValid;
+	private boolean passwordValid;
+	private boolean verifyPasswordValid;
+	private boolean step1Valid;
+	private boolean step2Valid;
+	private boolean allDetailsValid;
+	private static List<User> customers = CustomerData.getAllCustomers();
+//	private static List<User> employees = EmployeeData.getAllEmployees();
+
+	public Registration(){
+		
+	}
+	
+	public Registration(String fullName,String emailAddress,String password){
+		this.fullName=fullName;
+		this.email=emailAddress;
+		this.password=password;
+	}
+
+	public boolean getFullNameEmpty(){
+		return fullNameEmpty;
+	}
+	
+	public boolean getEmailEmpty(){
+		return emailEmpty;
+	}
+	
+	public boolean getPasswordEmpty(){
+		return passwordEmpty;
+	}
+	
+	public boolean getVerifyPasswordEmpty(){
+		return verifyPasswordEmpty;
+	}
+	
+	public boolean getStep1Valid(){
+		return step1Valid;
+	}
+	
+	public boolean getStep2Valid(){
+		return step2Valid;
+	}
+	
+	public boolean getAllDetailsValid(){
+		return allDetailsValid;
+	}
+	
+	public String getFullName() {
+		return this.fullName;
+	}
+
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
+	}
+
+	public String getEmailAddress() {
+		return email;
+	}
+
+	public void setEmailAddress(String emailAddress) {
+		this.email = emailAddress;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	
+	public String getVerifyPassword() {
+		return verifyPassword;
+	}
+
+	public void setVerifyPassword(String verifyPassword) {
+		this.verifyPassword = verifyPassword;
+	}
+
+	public String isFullNameEmpty() {
+		fullNameEmpty=(fullName==null || fullName.equals(""));
+		return null;
+	}
+	
+	public String isEmailEmpty() {
+		emailEmpty=(email==null || email.equals(""));
+		return null;
+	}
+
+	public String isPasswordEmpty() {
+		passwordEmpty=(password==null || password.equals(""));
+		return null;
+
+	}
+
+	public String isVerifyPasswordEmpty() {
+		verifyPasswordEmpty=(verifyPassword==null || verifyPassword.equals(""));
+		return null;
+	}
+	
+	public String isEmailValid(){
+		emailValid=(email.contains("@") && email.contains("."));
+		return null;
+	}
+	
+	public boolean getEmailValid(){
+		return emailValid;
+	}
+	public String isPasswordValid(){
+		passwordValid=(!(password.equals(password.toLowerCase())) && !(password.equals(password.toUpperCase())));
+		return null;
+	}
+	
+	public boolean getPasswordValid(){
+		return passwordValid;
+	}
+	
+	public String isVerifyPasswordValid(){
+		verifyPasswordValid=verifyPassword.equals(password);
+		return null;
+	}
+	
+	public boolean getVerifyPasswordValid(){
+		return verifyPasswordValid;
+	}
+	
+	public String validPersonalDetails(){
+		isFullNameEmpty();
+		isEmailEmpty();
+		step1Valid=(!fullNameEmpty&&!emailEmpty);
+		return null;
+	}
+	
+	public String validPasswordDetails(){
+		isPasswordEmpty();
+		isPasswordValid();
+		isVerifyPasswordEmpty();
+		isVerifyPasswordValid();
+		step2Valid=(!passwordEmpty&&!verifyPasswordEmpty);
+		return null;
+	}
+	
+	public String validationComplete(){
+		validPersonalDetails();
+		validPasswordDetails();
+		allDetailsValid=(step1Valid&&step2Valid);
+		return null;
+	}
+	
+	public String addRegisteredCustomer(){
+		User newUser = new User(this.fullName,this.email,this.password);
+		customers.add(newUser);
+		fullName="";
+		email="";
+		password="";
+		verifyPassword="";
+		fullNameEmpty=false;
+		emailEmpty=false;
+		passwordEmpty=false;
+		verifyPasswordEmpty=false;
+		step1Valid=false;
+		step2Valid=false;
+		allDetailsValid=false;
+		return "registration_success?faces-redirect=true";
+	}
+
+}

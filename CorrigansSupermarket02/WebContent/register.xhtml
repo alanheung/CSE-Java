@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+   	<h:head>
+        <title>Corrigans</title>
+        <link rel="shortcut icon" href="images/shop.ico" />
+		<h:outputStylesheet library="css" name="styles.css" />
+    </h:head>
+
+    <body>
+    <h:form>
+		<div id="page">
+			<div id="loginbar">
+					<ul>
+						<li><h:link value="Login" outcome="login"  rendered="#{!login.userLoggedIn}"/></li>
+						<li><h:link value="Register" outcome="register" rendered="#{!login.userLoggedIn}"/></li>
+						<li>#{login.currentUser.fullName}</li>
+						<li><h:commandLink value="Logout" action="#{login.logout()}" outcome="index" rendered="#{login.userLoggedIn}"/></li>
+					</ul>
+			</div>
+			<div id="header">
+				<h1><h:graphicImage name="images/HelmLeft.png" />Corrigans Supermarket</h1>
+			</div>
+			<div id="navbar">
+                <ul>
+	                <li><h:link value="Home" outcome="index" /></li>
+	                <li><h:link value="Special Offers" outcome="specialoffers" /></li>
+	                <li><h:link value="Products" outcome="products" /></li>
+                </ul>
+            </div>
+            <div id="sidebar">
+            	<ul>
+	            	<li><h:link value="My Basket" outcome="basket" ><h:graphicImage name="images/Cart.png"/></h:link></li>
+	                <li><h:link value="Settings" outcome="settings" ><h:graphicImage name="images/Settings.png" outcome="basket"/></h:link></li>
+	                <li><h:link value="About Us" outcome="aboutUs" ><h:graphicImage name="images/aboutUs.png" outcome="aboutUs"/></h:link></li>            	
+            	</ul>
+            </div>
+			<div id="main">
+                <h2>Registration Details</h2>
+				<h:form>
+					<p>Please fill in your details below to register for online shopping with Corrigans</p>
+					<p>Full Name: <h:inputText value="#{registration.fullName}" />
+					<h:outputText value="*" rendered="#{registration.fullNameEmpty}" style="color:red" /></p>
+					<p>Email Address: <h:inputText value="#{registration.emailAddress}" />
+					<h:outputText value="*" rendered="#{registration.emailEmpty}" style="color:red" /></p>
+					<h:outputText value="Email Address is invalid" rendered="#{registration.emailValid}" style="color:red" />
+					<h:outputText value="Registration Details are Valid" rendered="#{registration.step1Valid}" style="color:green" />
+					<br /><br />
+					<p>**Password must contain at least 6 characters and no more than 10 characters.</p>
+					<p>It must also contain at least one upper case letter and one lower case letter.**</p>
+					<p>Password: <h:inputSecret value="#{registration.password}" redisplay="true" />
+					<h:outputText value="*" rendered="#{registration.passwordEmpty}" style="color:red" /></p>
+					<h:outputText value="Password is not Valid" rendered="#{!registration.passwordValid}" style="color:red" />
+					<p>Verify Password: <h:inputSecret value="#{registration.verifyPassword}" redisplay="true" />
+					<h:outputText value="*" rendered="#{registration.verifyPasswordEmpty}" style="color:red" /></p>
+					<h:outputText value="VerifyPassword is not Valid" rendered="#{!registration.verifyPasswordValid}" style="color:red" />
+					<h:panelGroup rendered="#{registration.step2Valid}">
+						<h:outputText value="Password is Valid" rendered="#{registration.verifyPasswordValid}" style="color:green" />
+					</h:panelGroup>
+					<br /><br />
+					<h:commandButton value="Check Details" action="#{registration.validationComplete()}" style=" width : 100px;" />
+					<br /><br />
+					<h:panelGroup rendered="#{registration.allDetailsValid}">
+						<h:commandButton value="Submit Details" action="#{registration.addRegisteredCustomer()}" style=" width : 100px;" />
+					</h:panelGroup>
+				</h:form>
+			</div>
+
+			<div id="footer">
+            <p> Terms &amp; Conditions &nbsp;&nbsp;&nbsp; Privacy Policy &nbsp;&nbsp;&nbsp; &copy;<b>CSE 2014</b></p>
+			</div>
+
+		</div>
+		</h:form>
+    </body>
+    
+    </html>
