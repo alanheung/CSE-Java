@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+   	<h:head>
+        <title>Corrigans</title>
+        <link rel="shortcut icon" href="images/shop.ico" />
+		<h:outputStylesheet library="css" name="styles.css" />
+    </h:head>
+
+    <body>
+    <h:form>
+		<div id="page">
+			<div id="loginbar">
+					<ul>
+						<li><h:link value="Login" outcome="login"  rendered="#{!login.userLoggedIn}"/></li>
+						<li><h:link value="Register" outcome="register" rendered="#{!login.userLoggedIn}"/></li>
+						<li>#{login.currentUser.fullName}</li>
+						<li><h:commandLink value="Logout" action="#{login.logout()}" outcome="index" rendered="#{login.userLoggedIn}"/></li>
+					</ul>
+			</div>
+			<div id="header">
+				<h1><h:graphicImage name="images/HelmLeft.png" />Corrigans Supermarket</h1>
+			</div>
+			<div id="navbar">
+                <ul>
+	                <li><h:link value="Home" outcome="index" /></li>
+	                <li><h:link value="Special Offers" outcome="specialoffers" /></li>
+	                <li><h:link value="Products" outcome="products" /></li>
+                </ul>
+            </div>
+            <div id="sidebar">
+            	<ul>
+	            	<li><h:link value="My Basket" outcome="basket" ><h:graphicImage name="images/Cart.png"/></h:link></li>
+	                <li><h:link value="Settings" outcome="settings" ><h:graphicImage name="images/Settings.png" outcome="basket"/></h:link></li>
+	                <li><h:link value="About Us" outcome="aboutUs" ><h:graphicImage name="images/aboutUs.png" outcome="aboutUs"/></h:link></li>
+
+            	</ul>
+            </div>
+			<div id="main">
+            	<h2>Opening Hours</h2>
+               	<ul>
+                  	<li>Weekdays :: 8am - 9pm.</li>
+                  	<li>Weekends :: 9am - 6pm.</li>
+                  	<li>Holidays :: 8am - 4pm.</li>
+                </ul>
+                <h2>FAQ</h2>
+                <p>1. How do I select items to purchase?
+
+As you browse through the JeppDirect Online Store, click on the "add to shopping cart" button beneath the items that you wish to purchase.
+back to top
+2. How do I know what is in my shopping cart?
+
+When browsing through JeppDirect, simply look to the right-side of the screen to see which items you have in your shopping cart.  Use the arrows to move between items in your cart.
+back to top
+3. How do I remove an item from my shopping cart?
+
+Click the "remove" check box and click "modify cart" to remove that item from your cart. You may also change the quantity of items to "0" (zero) to remove the item from your shopping cart.
+back to top
+4. How do I modify the quantity of a product in my shopping cart?
+
+Click on "view shopping cart" to see an itemized list of the products in your shopping cart. Change the quantity of the item and click "modify cart" to update the contents of your shopping cart.
+back to top
+5. How do I empty out my shopping cart?
+
+To remove items from your shopping cart click on "view cart", check the "remove" box for each item that you would like to remove from your shopping cart and then click on "update total".
+back to top
+6. How do I pay for my merchandise?
+
+We accept Visa, Mastercard, American Express, and Discover for online orders, subject to proper authorization. In some cases, we can bill your Airway Manual Customer Account if you have one (subject to approval). If you wish to pay by another method, simply submit your request via email without any payment information to: product_orders@Corrigans Supermarket.com, and we will contact you to make arrangements for payment.
+back to top
+7. Is it safe to give you my credit card number over the Internet?
+
+Yes, read about Corrigans Supermarket web site security here. However, if you are still uncomfortable providing your credit card information over the Internet -- no problem. Simply submit your request via email without any payment information to: product_orders@Corrigans Supermarket.com, and we will contact you to make arrangements for payment.
+back to top
+8. How do I know that Corrigans Supermarket has received my order?
+
+Our ordering system will automatically send you an email confirming that your order was successfully submitted. Please make certain that the email address you provide is correct. Upon processing, we will send you an additional email message confirming your order with applicable taxes and shipping charges calculated, and a shipping order number for your records.
+back to top
+9. What is Corrigans Supermarket’s return policy and who do I contact regarding returns?
+
+If for some reason you need to return an item to Corrigans Supermarket please email the details of your particular situation to: returns@Corrigans Supermarket.com.  
+
+For our complete Returns and Cancellations Policy, click here.
+
+For our withdrawal policy for consumers within the European Union, click here.
+back to top
+10. How safe is my information and credit card number?
+
+Your information is very safe at Corrigans Supermarket.com and we take site and data security as a serious issue. The Corrigans Supermarket.com website uses 128-bit encryption to ensure that your data is secure.
+
+With regards to the safety and privacy of your credit card, we've implemented a state-of-the-art e-commerce solution for the new Corrigans Supermarket.com. The new site offers improved security over our previous site and many other existing websites by encrypting your credit card information in such a way that it is not accessible by employees within Corrigans Supermarket, or by anyone who would try to compromise the security of Corrigans Supermarket.com. As a result, our site meets the rigorous security standards set by many privacy watchdog groups and standards set by the Internet community in general.
+
+When you entered your credit card in our store, only the last four digits of your card are visible on the site. Even you (or anyone who logs in as you) cannot access the details of your credit card from our store.
+back to top
+11. Can I pay off my delinquent account online?
+
+Unfortunately, Corrigans Supermarket is not offering this option at the present time online, but we hope to be able to offer it in the future.
+                </p>
+                 <h:graphicImage library="images" name="faq.jpg" width="700" height="350" />                 
+                 
+			</div>
+
+			<div id="footer">
+            <p> Terms &amp; Conditions &nbsp;&nbsp;&nbsp; Privacy Policy &nbsp;&nbsp;&nbsp; &copy;<b>CSE 2014</b></p>
+			</div>
+
+		</div>
+		</h:form>
+    </body>
+    
+    </html>

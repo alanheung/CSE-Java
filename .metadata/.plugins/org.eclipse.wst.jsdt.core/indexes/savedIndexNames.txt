@@ -1,19 +1,16 @@
 INDEX VERSION 1.122+C:\Users\A00226316\Java\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
 2523924672.index
 3098697225.index
-2368246443.index
 1385702210.index
 1644415037.index
 443943594.index
 3335590992.index
 1228873354.index
-3026684038.index
-1777020846.index
 1261500937.index
+559670790.index
 2388002115.index
 2663034926.index
 4144779903.index
-3672109971.index
 2350336719.index
 1905971043.index
 847392232.index
@@ -22,7 +19,6 @@ INDEX VERSION 1.122+C:\Users\A00226316\Java\.metadata\.plugins\org.eclipse.wst.j
 2489269435.index
 1456022787.index
 1565560683.index
-3639801140.index
 3667451634.index
 1530642885.index
 2427377770.index
@@ -35,7 +31,6 @@ INDEX VERSION 1.122+C:\Users\A00226316\Java\.metadata\.plugins\org.eclipse.wst.j
 3969210317.index
 2485491053.index
 310424517.index
-1777020846.index
 3640983004.index
 4126297213.index
 1773074286.index

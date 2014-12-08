@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="DeliveryBeanTest" project="TestProject" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="DeliveryBeanTest" time="0.0">
+    <testcase name="testCanEdit" classname="DeliveryBeanTest" time="0.0"/>
+    <testcase name="testSettingDeliveryTime" classname="DeliveryBeanTest" time="0.0"/>
+    <testcase name="testConstructor" classname="DeliveryBeanTest" time="0.0"/>
+  </testsuite>
+</testrun>

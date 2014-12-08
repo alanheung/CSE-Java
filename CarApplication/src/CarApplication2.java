@@ -101,8 +101,8 @@ public class CarApplication2{
 			exitForLoop:
 				for(int i=1; i<=MAX_FEATURES; i++){
 					System.out.print("Enter feature you wish to update: (M)ake M(o)del (R)eg  Any other char to exit... ");
-					String feature = sc.next().toUpperCase();
-					switch(feature){
+					String input = sc.next().toUpperCase();
+					switch(input){
 					case "M":
 						System.out.print("Enter the new make: ");
 						car.setMake(sc.next());

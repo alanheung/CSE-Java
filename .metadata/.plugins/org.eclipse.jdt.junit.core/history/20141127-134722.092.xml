@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RegistrationTest" project="TestProject" tests="25" started="25" failures="0" errors="0" ignored="0">
+  <testsuite name="RegistrationTest" time="0.0">
+    <testcase name="testSetters" classname="RegistrationTest" time="0.0"/>
+    <testcase name="testCheckingIfMangerIsLoggedIn" classname="RegistrationTest" time="0.0"/>
+    <testcase name="testCheckingIfManagerNotLoggedIn" classname="RegistrationTest" time="0.0"/>
+    <testcase name="testConstructorANDGetters" classname="RegistrationTest" time="0.0"/>
+    <testcase name="testDefaultConstructor" classname="RegistrationTest" time="0.0"/>
+    <testcase name="testValidPersonalDetaials" classname="RegistrationTest" time="0.0"/>
+    <testcase name="testInvalidPersonalDetails" classname="RegistrationTest" time="0.0"/>
+    <testcase name="testValidVerifyPassword" classname="RegistrationTest" time="0.0"/>
+    <testcase name="testInvalidVerifyPassword" classname="RegistrationTest" time="0.0"/>
+    <testcase name="testValidPasswordDetails" classname="RegistrationTest" time="0.0"/>
+    <testcase name="testInvalidPasswordDetails" classname="RegistrationTest" time="0.0"/>
+    <testcase name="testValidationComplete" classname="RegistrationTest" time="0.0"/>
+    <testcase name="testValidationNotComplete" classname="RegistrationTest" time="0.0"/>
+    <testcase name="testFourUsersAleadyListed" classname="RegistrationTest" time="0.0"/>
+    <testcase name="testUserAlreadyRegistered" classname="RegistrationTest" time="0.0"/>
+    <testcase name="testToRedirectToManagerHome" classname="RegistrationTest" time="0.0"/>
+    <testcase name="testFieldsAreEmpty" classname="RegistrationTest" time="0.0"/>
+    <testcase name="testFieldsNotEmpty" classname="RegistrationTest" time="0.0"/>
+    <testcase name="testEmailIsValid" classname="RegistrationTest" time="0.0"/>
+    <testcase name="testPasswordInvalid" classname="RegistrationTest" time="0.0"/>
+    <testcase name="testPasswordValid" classname="RegistrationTest" time="0.0"/>
+    <testcase name="testEmailInvalid" classname="RegistrationTest" time="0.0"/>
+    <testcase name="testToRedirectToIndex" classname="RegistrationTest" time="0.0"/>
+    <testcase name="testAddingOneUser" classname="RegistrationTest" time="0.0"/>
+    <testcase name="testAddingAnEmployee" classname="RegistrationTest" time="0.0"/>
+  </testsuite>
+</testrun>

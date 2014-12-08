@@ -14,6 +14,7 @@ public class Registration implements Serializable{
 	private String email;
 	private String password;
 	private String verifyPassword;
+	private String userType="Customer";
 	private boolean fullNameEmpty;
 	private boolean emailEmpty;
 	private boolean passwordEmpty;
@@ -21,20 +22,31 @@ public class Registration implements Serializable{
 	private boolean emailValid;
 	private boolean passwordValid;
 	private boolean verifyPasswordValid;
+	private boolean userAlreadyRegistered;
 	private boolean step1Valid;
 	private boolean step2Valid;
 	private boolean allDetailsValid;
-	private static List<User> customers = CustomerData.getAllCustomers();
-//	private static List<User> employees = EmployeeData.getAllEmployees();
+	private boolean managerLoggedIn;
+	private static List<User> allUsers = UserData.getAllUsers();
+
 
 	public Registration(){
-		
+		fullName="";
+		email="";
+		password="";
+		verifyPassword="";
+		userType="Customer";
 	}
 	
-	public Registration(String fullName,String emailAddress,String password){
+	public List<User> getAllUsers(){
+		return allUsers;
+	}
+	
+	public Registration(String fullName,String emailAddress,String password,String userType){
 		this.fullName=fullName;
 		this.email=emailAddress;
 		this.password=password;
+		this.userType=userType;
 	}
 
 	public boolean getFullNameEmpty(){
@@ -96,6 +108,14 @@ public class Registration implements Serializable{
 	public void setVerifyPassword(String verifyPassword) {
 		this.verifyPassword = verifyPassword;
 	}
+	
+	public String getUserType() {
+		return userType;
+	}
+
+	public void setUserType(String userType) {
+		this.userType = userType;
+	}
 
 	public String isFullNameEmpty() {
 		fullNameEmpty=(fullName==null || fullName.equals(""));
@@ -123,6 +143,26 @@ public class Registration implements Serializable{
 		return null;
 	}
 	
+	public boolean isUserAlreadyRegistered() {
+		return userAlreadyRegistered;
+	}
+
+	public void setUserAlreadyRegistered(boolean userAlreadyRegistered) {
+		this.userAlreadyRegistered = userAlreadyRegistered;
+	}
+	
+	public String checkIfUserAlreadyRegistered(){
+		for(User current:allUsers){
+			if(current.getEmailAddress().equals(this.email)){
+				userAlreadyRegistered=true;
+			}
+			else{
+				userAlreadyRegistered=false;
+			}
+		}
+		return null;
+	}
+	
 	public boolean getEmailValid(){
 		return emailValid;
 	}
@@ -144,6 +184,14 @@ public class Registration implements Serializable{
 		return verifyPasswordValid;
 	}
 	
+	public boolean isManagerLoggedIn() {
+		return managerLoggedIn;
+	}
+
+	public void setManagerLoggedIn(boolean managerLoggedIn) {
+		this.managerLoggedIn = managerLoggedIn;
+	}
+	
 	public String validPersonalDetails(){
 		isFullNameEmpty();
 		isEmailEmpty();
@@ -163,15 +211,29 @@ public class Registration implements Serializable{
 	public String validationComplete(){
 		validPersonalDetails();
 		validPasswordDetails();
-		allDetailsValid=(step1Valid&&step2Valid);
+		isEmailValid();
+		checkIfUserAlreadyRegistered();
+		allDetailsValid=(step1Valid&&step2Valid&&emailValid&&passwordValid&&verifyPasswordValid&&userAlreadyRegistered==false);
 		return null;
 	}
 	
-	public String addRegisteredCustomer(){
-		User newUser = new User(this.fullName,this.email,this.password);
-		customers.add(newUser);
-		fullName="";
+	public String checkCurrentUser(){
+		LoginBean currentuser = new LoginBean();
+		if(currentuser.getCurrentUser().getUserType().equals("Manager")){
+			managerLoggedIn=true;
+			return "register?faces-redirect=true";
+		}
+		else{
+			managerLoggedIn=false;
+		}
+		return null;
+	}
+	
+	public String addRegisteredCustomerOrEmployee(){
+		User newUser = new User(this.fullName,this.email,this.password,this.userType);
+		allUsers.add(newUser);
 		email="";
+		fullName="";
 		password="";
 		verifyPassword="";
 		fullNameEmpty=false;
@@ -181,7 +243,22 @@ public class Registration implements Serializable{
 		step1Valid=false;
 		step2Valid=false;
 		allDetailsValid=false;
-		return "registration_success?faces-redirect=true";
+		managerLoggedIn=false;
+		if(this.userType.equals("Customer")){
+			return "registration_success?faces-redirect=true";
+		}
+		else{
+			userType="Customer";
+			return "employee_reg_success?faces-redirect=true";
+		}
+	}
+	
+	public int getNumberOfUsers(){
+		return allUsers.size();
+	}
+	
+	public void removeUser(){
+		allUsers.remove(0);
 	}
 
 }

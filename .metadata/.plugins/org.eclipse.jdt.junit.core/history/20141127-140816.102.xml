@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="UserTest" project="TestProject" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="UserTest" time="0.0">
+    <testcase name="testDefaultConstructor" classname="UserTest" time="0.0"/>
+    <testcase name="testGetters" classname="UserTest" time="0.0"/>
+    <testcase name="testSetters" classname="UserTest" time="0.0"/>
+  </testsuite>
+</testrun>

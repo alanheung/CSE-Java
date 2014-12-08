@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="UserDataTest" project="TestProject" tests="8" started="8" failures="0" errors="0" ignored="0">
+  <testsuite name="UserDataTest" time="0.0">
+    <testcase name="testOneEmployeeInArray" classname="UserDataTest" time="0.0"/>
+    <testcase name="testAddNewEmployee" classname="UserDataTest" time="0.0"/>
+    <testcase name="testRemoveEmployees" classname="UserDataTest" time="0.0"/>
+    <testcase name="testGetAllCustomers" classname="UserDataTest" time="0.0"/>
+    <testcase name="testSetUserInfo" classname="UserDataTest" time="0.0"/>
+    <testcase name="testDeleteUser" classname="UserDataTest" time="0.0"/>
+    <testcase name="testAddUserEmpty" classname="UserDataTest" time="0.0"/>
+    <testcase name="testEditUser" classname="UserDataTest" time="0.0"/>
+  </testsuite>
+</testrun>

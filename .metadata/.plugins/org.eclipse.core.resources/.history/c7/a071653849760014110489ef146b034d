@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+   	<h:head>
+        <title>Corrigans</title>
+        <link rel="shortcut icon" href="images/shop.ico" />
+		<h:outputStylesheet library="css" name="styles.css" />
+    </h:head>
+
+    <body>
+    <h:form>
+		<div id="page">
+			<div id="loginbar">
+					<ul>
+						<li><h:link value="Login" outcome="login"  rendered="#{!login.userLoggedIn}"/></li>
+						<li><h:link value="Register" outcome="register" rendered="#{!login.userLoggedIn}"/></li>
+						<li>#{login.currentUser.fullName}</li>
+						<li><h:commandLink value="Logout" action="#{login.logout()}" outcome="index" rendered="#{login.userLoggedIn}"/></li>
+					</ul>
+			</div>
+			<div id="header">
+				<h1><h:graphicImage name="images/HelmLeft.png" />Corrigans Supermarket</h1>
+			</div>
+			<div id="navbar">
+                <ul>
+	                <li><h:link value="Home" outcome="index" /></li>
+	                <li><h:link value="Special Offers" outcome="specialoffers" /></li>
+	                <li><h:link value="Products" outcome="products" /></li>
+                </ul>
+            </div>
+            <div id="sidebar">
+            	<ul>
+	            	<li><h:link value="My Basket" outcome="basket" ><h:graphicImage name="images/Cart.png"/></h:link></li>
+	                <li><h:link value="Settings" outcome="settings" ><h:graphicImage name="images/Settings.png" outcome="basket"/></h:link></li>
+            		<li><h:link value="About Us" outcome="aboutUs" ><h:graphicImage name="images/aboutUs.png" outcome="aboutUs"/></h:link></li>
+            	</ul>
+            </div>
+			<div id="main">
+                                <h2>Order Successful</h2>
+                <p>Your order has been processed and will be delivered to you in the next working day. Thank you for your custom.<br /><br />
+                Your total bill is: €
+<h:outputText value="#{tableData.total}">
+	<f:convertNumber pattern="#0.00" />
+</h:outputText>
+ and will be delivered during <h:outputText value="#{deliveryBean.deliveryTime}"> </h:outputText> in the next working day.
+                </p>
+            
+            <br /><br />Complete Invoice:<br /><br /> 
+            <h:dataTable value="#{productData.basket}" var="name" 
+               			styleClass="nameTable"
+               			headerClass="nameTableHeader" 
+               			rowClasses="nameTableOddRow,nameTableEvenRow">
+               			<h:column>
+                			<f:facet name="header">Name</f:facet>
+                			#{name.name}
+               			</h:column>
+               			<h:column>
+                			<f:facet name="header">Price</f:facet>
+                			€#{name.price}
+               			</h:column>
+               			<h:column>
+                			<f:facet name="header">Category</f:facet>
+                			#{name.category}
+               			</h:column>
+               			<h:column>
+                			<f:facet name="header">Amount</f:facet>
+                			<h:outputText value="#{name.inBasket}"  rendered="#{not name.canEdit}"/>
+               			</h:column>
+               </h:dataTable><br />
+            Your subtotal is: € 
+            <h:outputText value="#{productData.subTotal}">
+				<f:convertNumber pattern="#0.00" />
+			</h:outputText>
+			<br /><br />
+			Your total including delivery charge is: €
+			<h:outputText value="#{productData.total}">
+				<f:convertNumber pattern="#0.00" />
+			</h:outputText> 
+                 
+			</div>
+
+			<div id="footer">
+            	<p><h:link value=" Terms and Conditions" outcome="terms.xhtml" ></h:link>
+            	&nbsp;&nbsp;&nbsp; <h:link value="Privacy Policy" outcome="privacy.xhtml" ></h:link> 
+            	&nbsp;&nbsp;&nbsp; &copy;<b>CSE 2014</b></p>
+			</div>
+
+		</div>
+		</h:form>
+    </body>
+    
+    </html>

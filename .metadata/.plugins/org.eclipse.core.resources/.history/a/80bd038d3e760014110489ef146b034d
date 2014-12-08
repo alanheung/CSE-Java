@@ -1,0 +1,58 @@
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+
+public class UserDetailsTest {
+
+	private UserDetails userDetails;
+	
+	@Before
+	public void setUp(){
+		userDetails = new UserDetails("Alan","123","Anything","Athlone","3pm","0861289365");
+	}
+	
+	@Test
+	public void testToString(){
+		userDetails.setName("Colm");
+		userDetails.setOrder("124");
+		userDetails.setNote("Something");
+		userDetails.setAddress("Tuam");
+		userDetails.setTime("4pm");
+		userDetails.setMobileNo("0861236987");
+		userDetails.toString();
+		assertEquals("Name : " + userDetails.getName() + "\tAddress : " + userDetails.getAddress() + "\tTime : " + userDetails.getTime() + "\nOrder : " + order + "\nNote : " + note)
+	}
+	
+	@Test
+	public void testDefaultConstructor(){
+		UserDetails user = new UserDetails();
+	}
+
+	@Test
+	public void testConstructorANDGetters(){
+		assertEquals("Alan",userDetails.getName());
+		assertEquals("123",userDetails.getOrder());
+		assertEquals("Anything",userDetails.getNote());
+		assertEquals("Athlone",userDetails.getAddress());
+		assertEquals("3pm",userDetails.getTime());
+		assertEquals("0861289365",userDetails.getMobileNo());
+	}
+	
+	@Test
+	public void testSetters(){
+		userDetails.setName("Colm");
+		userDetails.setOrder("124");
+		userDetails.setNote("Something");
+		userDetails.setAddress("Tuam");
+		userDetails.setTime("4pm");
+		userDetails.setMobileNo("0861236987");
+		assertEquals("Colm",userDetails.getName());
+		assertEquals("124",userDetails.getOrder());
+		assertEquals("Something",userDetails.getNote());
+		assertEquals("Tuam",userDetails.getAddress());
+		assertEquals("4pm",userDetails.getTime());
+		assertEquals("0861236987",userDetails.getMobileNo());
+	}
+}

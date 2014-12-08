@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+   	<h:head>
+        <title>Corrigans</title>
+        <link rel="shortcut icon" href="images/shop.ico" />
+		<h:outputStylesheet library="css" name="styles.css" />
+    </h:head>
+
+    <body>
+    <h:form>
+		<div id="page">
+			<div id="loginbar">
+					<ul>
+						<li><h:link value="Login" outcome="login"  rendered="#{!login.userLoggedIn}"/></li>
+						<li><h:link value="Register" outcome="register" rendered="#{!login.userLoggedIn}"/></li>
+						<li>#{login.currentUser.fullName}</li>
+						<li><h:commandLink value="Logout" action="#{login.logout()}" outcome="index" rendered="#{login.userLoggedIn}"/></li>
+					</ul>
+			</div>
+			<div id="header">
+				<h1><h:graphicImage name="images/HelmLeft.png" />Corrigans Supermarket</h1>
+			</div>
+			<div id="navbar">
+                <ul>
+	                <li><h:link value="Home" outcome="index" /></li>
+	                <li><h:link value="Special Offers" outcome="specialoffers" /></li>
+	                <li><h:link value="Products" outcome="products" /></li>
+                </ul>
+            </div>
+            <div id="sidebar">
+            	<ul>
+	           	  	<li><h:link value="My Basket" outcome="basket" ><h:graphicImage name="images/Cart.png"/></h:link></li>
+	                <li><h:link value="FAQ" outcome="faq" ><h:graphicImage name="images/faq.png" outcome="faq"/></h:link></li>
+            		<li><h:link value="About Us" outcome="aboutUs" ><h:graphicImage name="images/aboutUs.png" outcome="aboutUs"/></h:link></li>
+            		<li><h:link value="Contact" outcome="contact" ><h:graphicImage name="images/contact-icon.png" outcome="faq"/></h:link></li>
+            	</ul>
+            </div>
+			<div id="main">
+                <h2>SPECIAL OFFERS</h2>
+                
+                
+                <h:dataTable value="#{productData.products}" var="name" 
+                			styleClass="nameTable"
+                			headerClass="nameTableHeader" 
+                			rowClasses="nameTableOddRow,nameTableEvenRow">
+                			<h:column>
+	                			<f:facet name="header">Name</f:facet>
+	                			<h:outputText value="#{name.name}" rendered="#{name.onSpecialOffer}"/>
+                			</h:column>
+                			<h:column>
+	                			<f:facet name="header">Price</f:facet>
+	                			<h:outputText value="#{name.price}" rendered="#{name.onSpecialOffer}"/>
+	                			
+                			</h:column>
+                			<h:column>
+	                			<f:facet name="header">Category</f:facet>
+	                			<h:outputText value="#{name.category}" rendered="#{name.onSpecialOffer}"/>
+	                			
+                			</h:column>
+                			<h:column>
+                				<f:facet name="header">In Stock</f:facet>
+                				
+                				<h:outputText value="#{name.totalLeft}" rendered="#{name.onSpecialOffer}"/>
+                				
+               				</h:column>
+                			<h:column>
+	                			<f:facet name="header">Quantity</f:facet>
+	                			<h:inputText value="#{name.count}"  rendered="#{name.canEdit}"/>
+	                			<h:outputText value="#{name.count}"  rendered="#{not name.canEdit   and name.onSpecialOffer}"/>
+                			</h:column>
+	                			<h:column>
+	                			<f:facet name="header">Increase</f:facet>
+	                			<h:commandLink value="+" action="#{name.setCount(name.getCount()+1)}" rendered="#{login.userLoggedIn and name.onSpecialOffer}"/>
+                			</h:column>
+	                		<h:column>
+	                			<f:facet name="header">Decrease</f:facet>
+	                			<h:commandLink value="-" action="#{name.setCount(name.getCount()-1)}" rendered="#{login.userLoggedIn and name.onSpecialOffer}"/>
+                			</h:column>
+                			<h:column rendered="#{login.userLoggedIn}">
+	                			<f:facet name="header">Add to Basket</f:facet>
+	                			<h:commandLink value="add" action="#{productData.addToBasket(name,name.count)}"  rendered="#{name.onSpecialOffer}"/>
+                			</h:column>
+                </h:dataTable>
+                
+                
+			</div>
+
+			<div id="footer">
+            	<p><h:link value=" Terms and Conditions" outcome="terms.xhtml" ></h:link>
+            	&nbsp;&nbsp;&nbsp; <h:link value="Privacy Policy" outcome="privacy.xhtml" ></h:link> 
+            	&nbsp;&nbsp;&nbsp; &copy;<b>CSE 2014</b></p>
+			</div>
+
+		</div>
+		</h:form>
+    </body>
+    
+    </html>
+    
+   

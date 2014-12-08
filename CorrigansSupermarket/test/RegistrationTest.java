@@ -9,7 +9,17 @@ public class RegistrationTest {
 
 	@Before
 	public void setUp(){
-		register = new Registration("Colm Fitzgerald","colm@gmail.com","Corrigans");
+		register = new Registration("Colm Fitzgerald","colm@gmail.com","Corrigans","Customer");
+	}
+	
+	@Test
+	public void testDefaultConstructor(){
+		register = new Registration();
+		assertEquals("",register.getFullName());
+		assertEquals("",register.getEmailAddress());
+		assertEquals("",register.getPassword());
+		assertEquals("",register.getVerifyPassword());
+		assertEquals("Customer",register.getUserType());
 	}
 
 	@Test
@@ -28,6 +38,9 @@ public class RegistrationTest {
 		assertEquals(false,register.getVerifyPasswordValid());
 		assertEquals(false,register.getPasswordValid());
 		assertEquals(false,register.getEmailValid());
+		assertEquals(false,register.isManagerLoggedIn());
+		assertEquals("Customer",register.getUserType());
+		assertEquals(false,register.isUserAlreadyRegistered());
 	}
 
 	@Test
@@ -40,6 +53,12 @@ public class RegistrationTest {
 		assertEquals("root2",register.getPassword());
 		register.setVerifyPassword("root2");
 		assertEquals("root2",register.getVerifyPassword());
+		register.setManagerLoggedIn(true);
+		assertEquals(true,register.isManagerLoggedIn());
+		register.setUserType("Manager");
+		assertEquals("Manager",register.getUserType());
+		register.setUserAlreadyRegistered(true);
+		assertEquals(true,register.isUserAlreadyRegistered());
 	}
 
 	@Test
@@ -170,4 +189,49 @@ public class RegistrationTest {
 		register.validationComplete();
 		assertEquals(false,register.getAllDetailsValid());
 	}
+	
+	@Test
+	public void testFourUsersAleadyListed(){
+		assertEquals(4,register.getNumberOfUsers());
+	}
+	
+	@Test
+	public void testAddingOneUser(){
+		register.addRegisteredCustomerOrEmployee();
+		assertEquals(5,register.getNumberOfUsers());
+		register.removeUser();
+	}
+	
+	@Test
+	public void testCheckingIfMangerIsLoggedIn(){
+		User currentUser = new User("Colm","colm.fitz@gmail.com","Password","Manager");
+		LoginBean current = new LoginBean();
+		current.setCurrentUser(currentUser);
+		register.checkCurrentUser();
+		assertEquals(true,register.isManagerLoggedIn());
+	}
+	
+	@Test
+	public void testCheckingIfManagerNotLoggedIn(){
+		User currentUser = new User("Colm","colm.fitz@gmail.com","Password","Stock");
+		LoginBean current = new LoginBean();
+		current.setCurrentUser(currentUser);
+		register.checkCurrentUser();
+		assertEquals(false,register.isManagerLoggedIn());
+	}
+	
+	@Test
+	public void testAddingAnEmployee(){
+		register.setUserType("Manager");
+		register.addRegisteredCustomerOrEmployee();
+		assertEquals("Customer",register.getUserType());
+	}
+	
+	@Test
+	public void testUserAlreadyRegistered(){
+		register.setEmailAddress("colm.fitzgerald10@gmail.com");
+		register.checkIfUserAlreadyRegistered();
+		assertEquals(true,register.isUserAlreadyRegistered());
+	}
+	
 }

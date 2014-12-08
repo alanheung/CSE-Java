@@ -1,32 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="146" version="2.0">
+<workbench progressCount="130" version="2.0">
 <workbenchAdvisor/>
-<window height="860" width="800" x="800" y="0">
+<window height="860" maximized="true" width="800" x="0" y="0">
 <fastViewData fastViewLocation="1024">
 <orientation position="512" view="org.eclipse.jdt.junit.ResultView"/>
 <orientation position="512" view="org.springframework.ide.eclipse.aop.ui.navigator.aopReferenceModelNavigator"/>
 <orientation position="512" view="org.eclipse.contribution.xref.ui.views.XReferenceView"/>
+<orientation position="512" view="org.eclipse.ui.console.ConsoleView"/>
 </fastViewData>
 <perspectiveBar>
 <itemSize x="160"/>
 </perspectiveBar>
 <coolbarLayout>
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="164" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="178" y="22"/>
 <coolItem id="com.google.gdt.eclipse.suite.GDTPulldownToolbar" itemType="typeToolBarContribution" x="53" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="com.springsource.sts.ide.ui.actionSet.workbench" itemType="typeToolBarContribution" x="38" y="22"/>
-<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
-<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="213" y="22"/>
+<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="122" y="22"/>
 <coolItem id="org.eclipse.jst.j2ee.J2eeMainActionSet" itemType="typeToolBarContribution" x="91" y="22"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="170" y="22"/>
+<coolItem id="org.eclipse.team.ui.actionSet" itemType="typeToolBarContribution" x="53" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="130" y="22"/>
 <coolItem id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.wst.web.ui.wizardsActionSet" itemType="typeToolBarContribution" x="84" y="22"/>
 <coolItem id="org.eclipse.wst.ws.explorer.explorer" itemType="typeToolBarContribution" x="38" y="22"/>
-<coolItem id="org.jboss.tools.jst.web.ui.server.actionSet" itemType="typeToolBarContribution" x="177" y="22"/>
+<coolItem id="org.jboss.tools.jst.web.ui.server.actionSet" itemType="typeToolBarContribution" x="153" y="22"/>
 <coolItem id="org.jboss.tools.maven.ui.toolbars.selectMavenProfilesToolbar" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.jboss.tools.jst.jsp.toolbars.sampleToolbar" itemType="typeToolBarContribution" x="268" y="22"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="99" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="145" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.jboss.tools.vpe.browsersim.eclipse.actionSet" itemType="typeToolBarContribution" x="38" y="22"/>
@@ -35,21 +37,21 @@
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.jboss.tools.jst.jsp.jspeditor.JSPTextEditor" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.jboss.tools.common.propertieseditor.PropertiesCompoundEditor" itemType="typeToolBarContribution" x="38" y="22"/>
-<coolItem id="org.eclipse.wst.css.core.csssource.source" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="org.eclipse.wst.css.core.csssource.source" itemType="typePlaceholder" x="38" y="22"/>
 <coolItem id="org.eclipse.jst.jsf.facesconfig.ui.FacesConfigEditor" itemType="typePlaceholder" x="289" y="22"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.jboss.tools.common.model.ui.editor.EditorPartWrapper" itemType="typePlaceholder" x="38" y="22"/>
-<coolItem id="org.eclipse.ui.browser.editor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.jboss.tools.central.editors.JBossCentralEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="38" y="22"/>
 </coolbarLayout>
-<page aggregateWorkingSetId="Aggregate for window 1412172557145" focus="true" label="Workspace - Web">
+<page aggregateWorkingSetId="Aggregate for window 1412172557145" focus="true" label="Workspace - Java">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
@@ -68,54 +70,135 @@
 <part id="10"/>
 <part id="11"/>
 <part id="12"/>
+<part id="13"/>
+<part id="14"/>
+<part id="15"/>
+<part id="16"/>
+<part id="17"/>
+<part id="18"/>
+<part id="19"/>
+<part id="20"/>
+<part id="21"/>
+<part id="22"/>
+<part id="23"/>
+<part id="24"/>
+<part id="25"/>
+<part id="26"/>
+<part id="27"/>
+<part id="28"/>
+<part id="29"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="login.xhtml" partName="login.xhtml" path="C:/Users/A00226316/git/corriganssupermarket/CorrigansSupermarket02/WebContent/login.xhtml" title="login.xhtml" tooltip="C:/Users/A00226316/Java/CorrigansSupermarket02/WebContent/login.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/CorrigansSupermarket02/WebContent/login.xhtml"/>
+<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="aboutUs.xhtml" partName="aboutUs.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/aboutUs.xhtml" title="aboutUs.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/aboutUs.xhtml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/aboutUs.xhtml"/>
 </editor>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="products.xhtml" partName="products.xhtml" path="C:/Users/A00226316/git/corriganssupermarket/CorrigansSupermarket02/WebContent/products.xhtml" title="products.xhtml" tooltip="C:/Users/A00226316/Java/CorrigansSupermarket02/WebContent/products.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/CorrigansSupermarket02/WebContent/products.xhtml"/>
+<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="basket.xhtml" partName="basket.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/basket.xhtml" title="basket.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/basket.xhtml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/basket.xhtml"/>
 </editor>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="register.xhtml" partName="register.xhtml" path="C:/Users/A00226316/git/corriganssupermarket/CorrigansSupermarket02/WebContent/register.xhtml" title="register.xhtml" tooltip="C:/Users/A00226316/Java/CorrigansSupermarket02/WebContent/register.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/CorrigansSupermarket02/WebContent/register.xhtml"/>
+<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="contact.xhtml" partName="contact.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/contact.xhtml" title="contact.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/contact.xhtml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/contact.xhtml"/>
 </editor>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="registration_success.xhtml" partName="registration_success.xhtml" path="C:/Users/A00226316/git/corriganssupermarket/CorrigansSupermarket02/WebContent/registration_success.xhtml" title="registration_success.xhtml" tooltip="C:/Users/A00226316/Java/CorrigansSupermarket02/WebContent/registration_success.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/CorrigansSupermarket02/WebContent/registration_success.xhtml"/>
+<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="delivery.xhtml" partName="delivery.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/delivery.xhtml" title="delivery.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/delivery.xhtml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/delivery.xhtml"/>
 </editor>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="settings.xhtml" partName="settings.xhtml" path="C:/Users/A00226316/git/corriganssupermarket/CorrigansSupermarket02/WebContent/settings.xhtml" title="settings.xhtml" tooltip="C:/Users/A00226316/Java/CorrigansSupermarket02/WebContent/settings.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/CorrigansSupermarket02/WebContent/settings.xhtml"/>
+<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="deliverypage.xhtml" partName="deliverypage.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/deliverypage.xhtml" title="deliverypage.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/deliverypage.xhtml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/deliverypage.xhtml"/>
 </editor>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="specialoffers.xhtml" partName="specialoffers.xhtml" path="C:/Users/A00226316/git/corriganssupermarket/CorrigansSupermarket02/WebContent/specialoffers.xhtml" title="specialoffers.xhtml" tooltip="C:/Users/A00226316/Java/CorrigansSupermarket02/WebContent/specialoffers.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/CorrigansSupermarket02/WebContent/specialoffers.xhtml"/>
+<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="deliverysuccess.xhtml" partName="deliverysuccess.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/deliverysuccess.xhtml" title="deliverysuccess.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/deliverysuccess.xhtml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/deliverysuccess.xhtml"/>
 </editor>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="stock.xhtml" partName="stock.xhtml" path="C:/Users/A00226316/git/corriganssupermarket/CorrigansSupermarket02/WebContent/stock.xhtml" title="stock.xhtml" tooltip="C:/Users/A00226316/Java/CorrigansSupermarket02/WebContent/stock.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/CorrigansSupermarket02/WebContent/stock.xhtml"/>
+<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="employee_reg_success.xhtml" partName="employee_reg_success.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/employee_reg_success.xhtml" title="employee_reg_success.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/employee_reg_success.xhtml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/employee_reg_success.xhtml"/>
 </editor>
-<editor activePart="true" focus="true" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="index.xhtml" partName="index.xhtml" path="C:/Users/A00226316/git/corriganssupermarket/CorrigansSupermarket02/WebContent/index.xhtml" title="index.xhtml" tooltip="C:/Users/A00226316/Java/CorrigansSupermarket02/WebContent/index.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/CorrigansSupermarket02/WebContent/index.xhtml"/>
+<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="faq.xhtml" partName="faq.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/faq.xhtml" title="faq.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/faq.xhtml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/faq.xhtml"/>
 </editor>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="deliverysuccess.xhtml" partName="deliverysuccess.xhtml" path="C:/Users/A00226316/git/corriganssupermarket/CorrigansSupermarket02/WebContent/deliverysuccess.xhtml" title="deliverysuccess.xhtml" tooltip="C:/Users/A00226316/Java/CorrigansSupermarket02/WebContent/deliverysuccess.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/CorrigansSupermarket02/WebContent/deliverysuccess.xhtml"/>
+<editor activePart="true" focus="true" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="index.xhtml" partName="index.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/index.xhtml" title="index.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/index.xhtml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/index.xhtml"/>
 </editor>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="delivery.xhtml" partName="delivery.xhtml" path="C:/Users/A00226316/git/corriganssupermarket/CorrigansSupermarket02/WebContent/delivery.xhtml" title="delivery.xhtml" tooltip="C:/Users/A00226316/Java/CorrigansSupermarket02/WebContent/delivery.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/CorrigansSupermarket02/WebContent/delivery.xhtml"/>
+<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="login.xhtml" partName="login.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/login.xhtml" title="login.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/login.xhtml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/login.xhtml"/>
 </editor>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="basket.xhtml" partName="basket.xhtml" path="C:/Users/A00226316/git/corriganssupermarket/CorrigansSupermarket02/WebContent/basket.xhtml" title="basket.xhtml" tooltip="C:/Users/A00226316/Java/CorrigansSupermarket02/WebContent/basket.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/CorrigansSupermarket02/WebContent/basket.xhtml"/>
+<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="managerpage.xhtml" partName="managerpage.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/managerpage.xhtml" title="managerpage.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/managerpage.xhtml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/managerpage.xhtml"/>
 </editor>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="aboutUs.xhtml" partName="aboutUs.xhtml" path="C:/Users/A00226316/git/corriganssupermarket/CorrigansSupermarket02/WebContent/aboutUs.xhtml" title="aboutUs.xhtml" tooltip="C:/Users/A00226316/Java/CorrigansSupermarket02/WebContent/aboutUs.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/CorrigansSupermarket02/WebContent/aboutUs.xhtml"/>
+<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="privacy.xhtml" partName="privacy.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/privacy.xhtml" title="privacy.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/privacy.xhtml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/privacy.xhtml"/>
+</editor>
+<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="products.xhtml" partName="products.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/products.xhtml" title="products.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/products.xhtml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/products.xhtml"/>
+</editor>
+<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="register.xhtml" partName="register.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/register.xhtml" title="register.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/register.xhtml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/register.xhtml"/>
+</editor>
+<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="registration_success.xhtml" partName="registration_success.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/registration_success.xhtml" title="registration_success.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/registration_success.xhtml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/registration_success.xhtml"/>
+</editor>
+<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="specialoffers.xhtml" partName="specialoffers.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/specialoffers.xhtml" title="specialoffers.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/specialoffers.xhtml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/specialoffers.xhtml"/>
+</editor>
+<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="stockpage.xhtml" partName="stockpage.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/stockpage.xhtml" title="stockpage.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/stockpage.xhtml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/stockpage.xhtml"/>
+</editor>
+<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="terms.xhtml" partName="terms.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/terms.xhtml" title="terms.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/terms.xhtml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/terms.xhtml"/>
+</editor>
+<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="viewCustomer.xhtml" partName="viewCustomer.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/viewCustomer.xhtml" title="viewCustomer.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/viewCustomer.xhtml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/viewCustomer.xhtml"/>
+</editor>
+<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="ViewStaff.xhtml" partName="ViewStaff.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/ViewStaff.xhtml" title="ViewStaff.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/ViewStaff.xhtml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/ViewStaff.xhtml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Product.java" partName="Product.java" path="C:/Users/A00226316/Java/TestProject/src/Product.java" title="Product.java" tooltip="TestProject/src/Product.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TestProject/src/Product.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="968" selectionTopPixel="180"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ProductData.java" partName="ProductData.java" path="C:/Users/A00226316/Java/TestProject/src/ProductData.java" title="ProductData.java" tooltip="TestProject/src/ProductData.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TestProject/src/ProductData.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="626" selectionTopPixel="45"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="User.java" partName="User.java" path="C:/Users/A00226316/Java/TestProject/src/User.java" title="User.java" tooltip="TestProject/src/User.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TestProject/src/User.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UserData.java" partName="UserData.java" path="C:/Users/A00226316/Java/TestProject/src/UserData.java" title="UserData.java" tooltip="TestProject/src/UserData.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TestProject/src/UserData.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1022" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StockControl.java" partName="StockControl.java" path="C:/Users/A00226316/Java/TestProject/src/StockControl.java" title="StockControl.java" tooltip="TestProject/src/StockControl.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TestProject/src/StockControl.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="718" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AllTests.java" partName="AllTests.java" path="C:/Users/A00226316/Java/TestProject/test/AllTests.java" title="AllTests.java" tooltip="TestProject/test/AllTests.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TestProject/test/AllTests.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="392" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StockControlTest.java" partName="StockControlTest.java" path="C:/Users/A00226316/Java/TestProject/test/StockControlTest.java" title="StockControlTest.java" tooltip="TestProject/test/StockControlTest.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TestProject/test/StockControlTest.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1359" selectionTopPixel="675"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UserDataTest.java" partName="UserDataTest.java" path="C:/Users/A00226316/Java/TestProject/test/UserDataTest.java" title="UserDataTest.java" tooltip="TestProject/test/UserDataTest.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TestProject/test/UserDataTest.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3236" selectionTopPixel="998"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RegistrationTest.java" partName="RegistrationTest.java" path="C:/Users/A00226316/Java/TestProject/test/RegistrationTest.java" title="RegistrationTest.java" tooltip="TestProject/test/RegistrationTest.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TestProject/test/RegistrationTest.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7685" selectionTopPixel="3176"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UserDetails.java" partName="UserDetails.java" path="C:/Users/A00226316/Java/TestProject/src/UserDetails.java" title="UserDetails.java" tooltip="TestProject/src/UserDetails.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TestProject/src/UserDetails.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
 <view id="org.eclipse.egit.ui.StagingView" partName="Git Staging"/>
-<view id="org.eclipse.egit.ui.RepositoriesView" partName="Git Repositories">
-<viewState CommonNavigator.LINKING_ENABLED="0"/>
-</view>
 <view id="org.eclipse.gef.ui.palette_view" partName="Palette">
 <viewState/>
+</view>
+<view id="org.eclipse.egit.ui.RepositoriesView" partName="Git Repositories">
+<viewState CommonNavigator.LINKING_ENABLED="0"/>
 </view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
@@ -140,9 +223,6 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
-</view>
-<view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" partName="Data Source Explorer">
-<viewState CommonNavigator.LINKING_ENABLED="0" showCategories="true"/>
 </view>
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
@@ -213,11 +293,15 @@
 <view id="com.mountainminds.eclemma.ui.CoverageView" partName="Coverage">
 <viewState column0="300" column1="80" column2="120" column3="120" column4="120" counters="INSTRUCTION" hideunusedelements="false" linked="false" reversesort="true" roottype="GROUP" sortcolumn="3"/>
 </view>
-<view id="org.eclipse.team.ui.GenericHistoryView" partName="History"/>
+<view id="org.eclipse.team.ui.GenericHistoryView" partName="History">
+<viewState/>
+</view>
 <view id="org.eclipse.jdt.junit.ResultView" partName="JUnit">
 <viewState failuresOnly="false" layout="1" orientation="2" ratio="500" scroll="false" time="true"/>
 </view>
-<view id="org.eclipse.team.sync.views.SynchronizeView" partName="Synchronize"/>
+<view id="org.eclipse.team.sync.views.SynchronizeView" partName="Synchronize">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.views.ProgressView" partName="Progress"/>
 <view id="com.zink.fly.buzz.views.FlyBuzzView" partName="Fly Buzz Statistics">
 <viewState/>
@@ -226,6 +310,9 @@
 <view id="org.eclipse.egit.ui.ReflogView" partName="Git Reflog"/>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="org.eclipse.mylyn.tasks.ui.views.repositories" partName="Task Repositories">
+<viewState/>
 </view>
 <view id="org.eclipse.ui.views.AllMarkersView" partName="Markers">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.allSeverityField" categoryGroup="org.eclipse.ui.ide.type" markerContentGenerator="org.eclipse.ui.ide.allMarkersGenerator" partName="Markers">
@@ -245,7 +332,7 @@
 <viewState CommonNavigator.LINKING_ENABLED="0"/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="org.eclipse.wst.web.ui.webDevPerspective">
+<perspectives activePart="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.springsource.sts.internal.ide.ui.perspective.StsPerspective" id="com.springsource.sts.ide.perspective" label="Spring"/>
 <alwaysOnActionSet id="com.springsource.sts.ide.help.actionSet"/>
@@ -516,29 +603,23 @@
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
-<view id="com.zink.fly.buzz.views.FlyBuzzView"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.jdt.ui.JavadocView"/>
+<view id="org.eclipse.jdt.ui.SourceView"/>
+<view id="diagramTable"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.jdt.junit.ResultView"/>
 <view id="com.mountainminds.eclemma.ui.CoverageView"/>
-<view id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
+<view id="com.zink.fly.buzz.views.FlyBuzzView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.springframework.ide.eclipse.ui.navigator.springExplorer"/>
 <view id="org.eclipse.egit.ui.RepositoriesView"/>
-<fastViewBars>
-<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
-<fastViews>
-<view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
-<view id="org.eclipse.jdt.ui.JavadocView" ratio="0.3"/>
-<view id="org.eclipse.jdt.ui.SourceView" ratio="0.3"/>
-<view id="diagramTable" ratio="0.3"/>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.2701228"/>
-</fastViews>
-</fastViewBar>
-</fastViewBars>
+<fastViewBars/>
 <layout>
 <mainWindow>
 <info folder="true" part="left">
 <folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
-<page content="org.eclipse.jdt.junit.ResultView" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
@@ -558,36 +639,42 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.17117684" ratioLeft="272" ratioRight="1317" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.7496689" ratioLeft="566" ratioRight="189" relationship="4" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
-<page content="org.eclipse.jdt.ui.JavadocView" label="LabelNotFound"/>
-<page content="org.eclipse.jdt.ui.SourceView" label="LabelNotFound"/>
-<page content="diagramTable" label="LabelNotFound"/>
-<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
+<page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
+<page content="diagramTable" label="Diagrams"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.jdt.junit.ResultView" label="JUnit"/>
+<page content="com.mountainminds.eclemma.ui.CoverageView" label="Coverage"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
 <page content="com.google.gwt.eclipse.DevModeView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
-</folder>
-</info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1583983" ratio="0.5314534" ratioLeft="735" ratioRight="648" relationship="2" relative="bottom">
-<folder activePageID="com.mountainminds.eclemma.ui.CoverageView" appearance="2" expanded="2">
-<page content="com.zink.fly.buzz.views.FlyBuzzView" label="Fly Buzz Statistics"/>
-<page content="com.mountainminds.eclemma.ui.CoverageView" label="Coverage"/>
-<page content="org.eclipse.pde.runtime.LogView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1583983" ratio="0.5314534" ratioLeft="735" ratioRight="648" relationship="2" relative="bottom">
+<folder activePageID="com.zink.fly.buzz.views.FlyBuzzView" appearance="2" expanded="2">
+<page content="com.zink.fly.buzz.views.FlyBuzzView" label="Fly Buzz Statistics"/>
+<page content="org.eclipse.pde.runtime.LogView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@204316" ratio="0.5767196" ratioLeft="327" ratioRight="240" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.mylyn.tasks.ui.views.tasks" appearance="2" expanded="2">
-<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="Task List"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info part="org.eclipse.contribution.xref.ui.views.XReferenceView" ratio="0.59893996" ratioLeft="339" ratioRight="227" relationship="4" relative="org.eclipse.ui.internal.ViewStack@204316"/>
@@ -732,71 +819,52 @@
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <view id="org.eclipse.ui.navigator.ProjectExplorer"/>
-<view id="org.eclipse.ui.views.AllMarkersView"/>
-<view id="org.eclipse.ui.views.PropertySheet"/>
-<view id="org.eclipse.wst.server.ui.ServersView"/>
-<view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator"/>
-<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView"/>
-<view id="org.eclipse.jdt.junit.ResultView"/>
-<view id="com.mountainminds.eclemma.ui.CoverageView"/>
-<view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
-<fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="topLeft">
-<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
-<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<fastViewBars>&#x0A;<fastViewBar fastViewLocation="1024" id="bottomRight" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">&#x0A;<fastViews>&#x0A;<view id="org.eclipse.ui.views.AllMarkersView" ratio="0.3"/>
+<view id="org.eclipse.ui.views.PropertySheet" ratio="0.3"/>
+<view id="org.eclipse.wst.server.ui.ServersView" ratio="0.29740793"/>
+<view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" ratio="0.3"/>
+<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" ratio="0.3"/>
+<view id="org.eclipse.jdt.junit.ResultView" ratio="0.28741723"/>
+<view id="com.mountainminds.eclemma.ui.CoverageView" ratio="0.25695366"/>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.48741722"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="topLeft">&#x0A;<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackagesView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1194" ratioRight="398" relationship="2" relative="topLeft">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1194" ratioRight="398" relationship="2" relative="topLeft">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.3557568" ratioLeft="275" ratioRight="498" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottomRight" ratio="0.6534247" ratioLeft="477" ratioRight="253" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.wst.server.ui.ServersView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.AllMarkersView" label="Markers"/>
-<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
-<page content="org.eclipse.wst.server.ui.ServersView" label="Servers"/>
-<page content="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" label="Data Source Explorer"/>
-<page content="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" label="Snippets"/>
-<page content="org.eclipse.jdt.junit.ResultView" label="JUnit"/>
-<page content="com.mountainminds.eclemma.ui.CoverageView" label="Coverage"/>
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="bottomRight" ratio="0.6534247" ratioLeft="477" ratioRight="253" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder appearance="2" expanded="0">&#x0A;<page content="org.eclipse.ui.views.AllMarkersView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<page content="org.eclipse.wst.server.ui.ServersView" label="LabelNotFound"/>
+<page content="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.junit.ResultView" label="LabelNotFound"/>
+<page content="com.mountainminds.eclemma.ui.CoverageView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
-<part id="7"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="topRight" ratio="0.7858586" ratioLeft="389" ratioRight="106" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="topRight" ratio="0.7858586" ratioLeft="389" ratioRight="106" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="Task List"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
@@ -991,47 +1059,37 @@
 <perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.wst.server.ui.ServersView"/>
 <view id="org.eclipse.ui.views.PropertySheet"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
-<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
-<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView"/>
-<view id="org.eclipse.egit.ui.RepositoriesView"/>
-<fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="topLeft">
-<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
-<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<fastViewBars>&#x0A;<fastViewBar fastViewLocation="16384" id="org.eclipse.ui.internal.ViewStack@1fdd94" orientation="512" selectedTabId="org.eclipse.egit.ui.RepositoriesView" style="0">&#x0A;<fastViews>&#x0A;<view id="org.eclipse.egit.ui.RepositoriesView" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="topLeft">&#x0A;<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1194" ratioRight="398" relationship="2" relative="topLeft">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1194" ratioRight="398" relationship="2" relative="topLeft">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.17306483" ratioLeft="275" ratioRight="1314" relationship="2" relative="topLeft"/>
-<info folder="true" part="topRight" ratio="0.7998325" ratioLeft="955" ratioRight="239" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="topRight" ratio="0.7998325" ratioLeft="955" ratioRight="239" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" label="Snippets"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="bottom" ratio="0.7606383" ratioLeft="572" ratioRight="180" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<info folder="true" part="bottom" ratio="0.7912234" ratioLeft="595" ratioRight="157" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.wst.server.ui.ServersView" label="Servers"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
@@ -1039,20 +1097,15 @@
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1fdd94" ratio="0.49931788" ratioLeft="366" ratioRight="367" relationship="4" relative="topLeft">
-<folder activePageID="org.eclipse.egit.ui.RepositoriesView" appearance="2" expanded="2">
-<page content="org.eclipse.egit.ui.RepositoriesView" label="Git Repositories"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1fdd94" ratio="0.49931788" ratioLeft="366" ratioRight="367" relationship="4" relative="topLeft">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.egit.ui.RepositoriesView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </mainWindow>
@@ -1104,38 +1157,31 @@
 <view id="org.eclipse.team.sync.views.SynchronizeView"/>
 <view id="org.eclipse.egit.ui.StagingView"/>
 <view id="org.eclipse.egit.ui.ReflogView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@193ad52">
-<folder activePageID="org.eclipse.egit.ui.RepositoriesView" appearance="2" expanded="2">
-<page content="org.eclipse.egit.ui.RepositoriesView" label="Git Repositories"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.ui.internal.ViewStack@193ad52">&#x0A;<folder activePageID="org.eclipse.egit.ui.RepositoriesView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.egit.ui.RepositoriesView" label="Git Repositories"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="582" ratioRight="194" relationship="2" relative="org.eclipse.ui.internal.ViewStack@193ad52">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="582" ratioRight="194" relationship="2" relative="org.eclipse.ui.internal.ViewStack@193ad52">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.5" ratioLeft="388" ratioRight="388" relationship="2" relative="org.eclipse.ui.internal.ViewStack@193ad52"/>
-<info folder="true" part="bottom" ratio="0.49928057" ratioLeft="347" ratioRight="348" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.PropertySheet" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<info folder="true" part="bottom" ratio="0.49928057" ratioLeft="347" ratioRight="348" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
 <page content="org.eclipse.team.ui.GenericHistoryView" label="History"/>
 <page content="org.eclipse.team.sync.views.SynchronizeView" label="Synchronize"/>
 <page content="org.eclipse.egit.ui.StagingView" label="Git Staging"/>
 <page content="org.eclipse.egit.ui.ReflogView" label="Git Reflog"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
+<part id="5"/>
 </presentation>
 </folder>
 </info>
@@ -1143,181 +1189,259 @@
 </mainWindow>
 </layout>
 </perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.team.internal.ui.synchronize.TeamSynchronizingPerspective" id="org.eclipse.team.ui.TeamSynchronizingPerspective" label="Team Synchronizing"/>
+<alwaysOnActionSet id="com.springsource.sts.ide.help.actionSet"/>
+<alwaysOnActionSet id="com.springsource.sts.ide.ui.actionSet.workbench"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.springframework.ide.eclipse.aop.ui.ActionSet"/>
+<alwaysOnActionSet id="org.springframework.ide.eclipse.aop.ui.matcher.actionSet"/>
+<alwaysOnActionSet id="org.springframework.ide.eclipse.beans.ui.actionSet"/>
+<alwaysOnActionSet id="org.springframework.ide.eclipse.beans.search.actionSet"/>
+<alwaysOnActionSet id="com.springsource.sts.grails.ui.actionSetGlobal"/>
+<alwaysOnActionSet id="ajrefactoring"/>
+<alwaysOnActionSet id="org.eclipse.contribution.xref.ui.XRefActionSet"/>
+<alwaysOnActionSet id="com.teaminabox.eclipse.sortit.actionSet"/>
+<alwaysOnActionSet id="org.jboss.ide.eclipse.archives.ui.actions.Archives"/>
+<alwaysOnActionSet id="org.jboss.tools.jst.web.ui.server.actionSet"/>
+<alwaysOnActionSet id="org.jboss.tools.central"/>
+<alwaysOnActionSet id="org.jboss.tools.common.model.ui.actionSet"/>
+<alwaysOnActionSet id="org.codehaus.groovy.eclipse.quickfix.actionSet"/>
+<alwaysOnActionSet id="org.codehaus.groovy.eclipse.ui.groovyElementCreation"/>
+<alwaysOnActionSet id="org.eclipse.wb.core.ui.actionset"/>
+<alwaysOnActionSet id="com.google.gdt.eclipse.core.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.team.ui.actionSet"/>
+<show_view_action id="org.eclipse.team.sync.views.SynchronizeView"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.mylyn.tasks.ui.views.repositories"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.project"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<perspective_action id="org.eclipse.ui.resourcePerspective"/>
+<perspective_action id="org.eclipse.team.cvs.ui.cvsPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.team.sync.views.SynchronizeView"/>
+<view id="org.eclipse.team.ui.GenericHistoryView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.mylyn.tasks.ui.views.repositories"/>
+<fastViewBars/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="top">&#x0A;<folder activePageID="org.eclipse.team.sync.views.SynchronizeView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.team.sync.views.SynchronizeView" label="Synchronize"/>
+<page content="org.eclipse.team.ccvs.ui.RepositoriesView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="582" ratioRight="194" relationship="2" relative="top">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.44974226" ratioLeft="349" ratioRight="427" relationship="2" relative="top"/>
+<info folder="true" part="top2" ratio="0.79916316" ratioLeft="573" ratioRight="144" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.team.ui.GenericHistoryView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.team.ui.GenericHistoryView" label="History"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@36e34e" ratio="0.6987448" ratioLeft="501" ratioRight="216" relationship="4" relative="top">&#x0A;<folder activePageID="org.eclipse.mylyn.tasks.ui.views.repositories" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.mylyn.tasks.ui.views.repositories" label="Task Repositories"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
 </perspectives>
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/corriganssupermarket02/WebContent/index.xhtml"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/corriganssupermarket02/WebContent/aboutUs.xhtml"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/corriganssupermarket02/WebContent/basket.xhtml"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/corriganssupermarket02/WebContent/delivery.xhtml"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/corriganssupermarket02/WebContent/deliverysuccess.xhtml"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/corriganssupermarket02/WebContent/login.xhtml"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/corriganssupermarket02/WebContent/products.xhtml"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/corriganssupermarket02/WebContent/register.xhtml"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/corriganssupermarket02/WebContent/registration_success.xhtml"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/corriganssupermarket02/WebContent/settings.xhtml"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/corriganssupermarket02/WebContent/specialoffers.xhtml"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/corriganssupermarket02/WebContent/stock.xhtml"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/CorrigansSupermarket02/WebContent/login.xhtml"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/CorrigansSupermarket02/WebContent/products.xhtml"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/CorrigansSupermarket02/WebContent/register.xhtml"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/CorrigansSupermarket02/WebContent/registration_success.xhtml"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/CorrigansSupermarket02/WebContent/settings.xhtml"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/CorrigansSupermarket02/WebContent/specialoffers.xhtml"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/CorrigansSupermarket02/WebContent/stock.xhtml"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/CorrigansSupermarket02/WebContent/index.xhtml"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/CorrigansSupermarket02/WebContent/deliverysuccess.xhtml"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/CorrigansSupermarket02/WebContent/delivery.xhtml"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/CorrigansSupermarket02/WebContent/basket.xhtml"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/CorrigansSupermarket02/WebContent/aboutUs.xhtml"/>
+<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/TestProject/WebContent/deliverypage.xhtml"/>
+<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/TestProject/WebContent/index.xhtml"/>
+<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/TestProject/WebContent/products.xhtml"/>
+<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/TestProject/WebContent/ViewStaff.xhtml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestProject/test/AllTests.java"/>
+<editor factoryID="com.springsource.sts.ide.ui.dashboard.elementFactory" id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" openDashboard="true"/>
+<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/TestProject/WebContent/viewCustomer.xhtml"/>
+<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/TestProject/WebContent/specialoffers.xhtml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestProject/src/Product.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestProject/src/ProductData.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestProject/src/User.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestProject/src/UserData.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestProject/src/StockControl.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestProject/test/AllTests.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestProject/test/LoginBeanTest.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestProject/test/StockControlTest.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestProject/src/LoginBean.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestProject/test/UserDataTest.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestProject/test/RegistrationTest.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestProject/src/UserDetails.java"/>
 </editors>
-<item historyLabel="basket.xhtml" index="2">
-<position info="not_deleted" x="1029" y="0"/>
+<item historyLabel="AllTests.java" index="4">
+<position info="not_deleted" x="392" y="0"/>
 </item>
-<item historyLabel="login.xhtml" index="5">
+<item historyLabel="ViewStaff.xhtml" index="3">
+<position info="not_deleted" x="4090" y="13"/>
+</item>
+<item historyLabel="deliverypage.xhtml" index="0">
+<position info="not_deleted" x="1553" y="13"/>
+</item>
+<item historyLabel="products.xhtml" index="2">
+<position info="not_deleted" x="2328" y="13"/>
+</item>
+<item historyLabel="products.xhtml" index="2">
+<position info="not_deleted" x="2833" y="0"/>
+</item>
+<item historyLabel="ViewStaff.xhtml" index="3">
+<position info="not_deleted" x="4090" y="13"/>
+</item>
+<item historyLabel="index.xhtml" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="login.xhtml" index="5">
-<position info="not_deleted" x="550" y="0"/>
-</item>
-<item historyLabel="login.xhtml" index="5">
-<position info="not_deleted" x="1036" y="0"/>
-</item>
-<item historyLabel="products.xhtml" index="6">
+<item historyLabel="Dashboard" index="5"/>
+<item historyLabel="index.xhtml" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="products.xhtml" index="6">
-<position info="not_deleted" x="1038" y="0"/>
-</item>
-<item historyLabel="register.xhtml" index="7">
-<position info="not_deleted" x="1036" y="0"/>
-</item>
-<item historyLabel="registration_success.xhtml" index="8">
-<position info="not_deleted" x="1036" y="0"/>
-</item>
-<item historyLabel="settings.xhtml" index="9">
+<item historyLabel="viewCustomer.xhtml" index="6">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="settings.xhtml" index="9">
-<position info="not_deleted" x="1036" y="0"/>
-</item>
-<item historyLabel="specialoffers.xhtml" index="10">
+<item historyLabel="specialoffers.xhtml" index="7">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="specialoffers.xhtml" index="10">
-<position info="not_deleted" x="1036" y="0"/>
+<item historyLabel="Product.java" index="8">
+<position info="not_deleted" x="533" y="0"/>
 </item>
-<item historyLabel="stock.xhtml" index="11">
+<item historyLabel="ProductData.java" index="9">
+<position info="not_deleted" x="626" y="0"/>
+</item>
+<item historyLabel="Product.java" index="8">
+<position info="not_deleted" x="533" y="0"/>
+</item>
+<item historyLabel="User.java" index="10">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="stock.xhtml" index="11">
-<position info="not_deleted" x="910" y="0"/>
+<item historyLabel="UserData.java" index="11">
+<position info="not_deleted" x="1022" y="0"/>
 </item>
-<item historyLabel="settings.xhtml" index="9">
-<position info="not_deleted" x="1036" y="0"/>
+<item historyLabel="Product.java" index="8">
+<position info="not_deleted" x="968" y="0"/>
 </item>
-<item historyLabel="settings.xhtml" index="9">
-<position info="not_deleted" x="413" y="0"/>
+<item historyLabel="StockControl.java" index="12">
+<position info="not_deleted" x="718" y="0"/>
 </item>
-<item historyLabel="settings.xhtml" index="9">
-<position info="not_deleted" x="509" y="0"/>
-</item>
-<item historyLabel="index.xhtml" index="0">
-<position/>
-</item>
-<item historyLabel="login.xhtml" index="5">
-<position info="not_deleted" x="1036" y="0"/>
-</item>
-<item historyLabel="index.xhtml" index="0">
-<position/>
-</item>
-<item historyLabel="stock.xhtml" index="11">
-<position info="not_deleted" x="2703" y="0"/>
-</item>
-<item historyLabel="specialoffers.xhtml" index="10">
-<position info="not_deleted" x="2121" y="0"/>
-</item>
-<item historyLabel="settings.xhtml" index="9">
-<position info="not_deleted" x="2115" y="0"/>
-</item>
-<item historyLabel="registration_success.xhtml" index="8">
-<position info="not_deleted" x="2351" y="0"/>
-</item>
-<item historyLabel="register.xhtml" index="7">
-<position info="not_deleted" x="4129" y="0"/>
-</item>
-<item historyLabel="products.xhtml" index="6">
-<position info="not_deleted" x="4094" y="0"/>
-</item>
-<item historyLabel="login.xhtml" index="5">
-<position info="not_deleted" x="2642" y="0"/>
-</item>
-<item historyLabel="index.xhtml" index="0">
-<position/>
-</item>
-<item historyLabel="deliverysuccess.xhtml" index="4">
-<position info="not_deleted" x="3820" y="0"/>
-</item>
-<item historyLabel="delivery.xhtml" index="3">
-<position info="not_deleted" x="3131" y="0"/>
-</item>
-<item historyLabel="basket.xhtml" index="2">
-<position info="not_deleted" x="3847" y="0"/>
-</item>
-<item historyLabel="aboutUs.xhtml" index="1">
-<position info="not_deleted" x="2916" y="0"/>
-</item>
-<item historyLabel="products.xhtml" index="6">
-<position info="not_deleted" x="4094" y="0"/>
-</item>
-<item historyLabel="index.xhtml" index="0">
-<position/>
-</item>
-<item historyLabel="login.xhtml" index="1">
-<position info="not_deleted" x="2916" y="0"/>
-</item>
-<item historyLabel="login.xhtml" index="12">
-<position/>
-</item>
-<item historyLabel="products.xhtml" index="13">
-<position/>
-</item>
-<item historyLabel="register.xhtml" index="14">
-<position/>
-</item>
-<item historyLabel="registration_success.xhtml" index="15">
-<position/>
-</item>
-<item historyLabel="settings.xhtml" index="16">
-<position/>
-</item>
-<item historyLabel="specialoffers.xhtml" index="17">
-<position/>
-</item>
-<item historyLabel="stock.xhtml" index="18">
-<position/>
-</item>
-<item historyLabel="index.xhtml" index="19">
-<position/>
-</item>
-<item historyLabel="deliverysuccess.xhtml" index="20">
-<position/>
-</item>
-<item historyLabel="delivery.xhtml" index="21">
-<position/>
-</item>
-<item historyLabel="basket.xhtml" index="22">
-<position/>
-</item>
-<item historyLabel="aboutUs.xhtml" index="23">
-<position/>
-</item>
-<item historyLabel="index.xhtml" index="19">
+<item historyLabel="AllTests.java" index="13">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item active="true" historyLabel="index.xhtml" index="19">
-<position info="not_deleted" x="509" y="0"/>
+<item historyLabel="LoginBeanTest.java" index="14">
+<position info="not_deleted" x="2027" y="0"/>
+</item>
+<item historyLabel="AllTests.java" index="13">
+<position info="not_deleted" x="392" y="0"/>
+</item>
+<item historyLabel="StockControlTest.java" index="15">
+<position info="not_deleted" x="1784" y="0"/>
+</item>
+<item historyLabel="LoginBeanTest.java" index="14">
+<position info="not_deleted" x="1962" y="0"/>
+</item>
+<item historyLabel="LoginBean.java" index="16">
+<position info="not_deleted" x="437" y="0"/>
+</item>
+<item historyLabel="LoginBeanTest.java" index="14">
+<position info="not_deleted" x="1962" y="0"/>
+</item>
+<item historyLabel="LoginBean.java" index="16">
+<position info="not_deleted" x="437" y="0"/>
+</item>
+<item historyLabel="LoginBeanTest.java" index="14">
+<position info="not_deleted" x="2029" y="0"/>
+</item>
+<item historyLabel="LoginBean.java" index="16">
+<position info="not_deleted" x="437" y="0"/>
+</item>
+<item historyLabel="LoginBeanTest.java" index="14">
+<position info="not_deleted" x="1747" y="0"/>
+</item>
+<item historyLabel="LoginBean.java" index="16">
+<position info="not_deleted" x="3047" y="0"/>
+</item>
+<item historyLabel="LoginBeanTest.java" index="14">
+<position info="not_deleted" x="1747" y="0"/>
+</item>
+<item historyLabel="StockControlTest.java" index="15">
+<position info="not_deleted" x="1359" y="0"/>
+</item>
+<item historyLabel="AllTests.java" index="13">
+<position info="not_deleted" x="392" y="0"/>
+</item>
+<item historyLabel="StockControl.java" index="12">
+<position info="not_deleted" x="718" y="0"/>
+</item>
+<item historyLabel="UserData.java" index="11">
+<position info="not_deleted" x="1022" y="0"/>
+</item>
+<item historyLabel="index.xhtml" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="index.xhtml" index="1">
+<position info="not_deleted" x="526" y="0"/>
+</item>
+<item historyLabel="index.xhtml" index="1">
+<position info="not_deleted" x="923" y="0"/>
+</item>
+<item historyLabel="AllTests.java" index="13">
+<position info="not_deleted" x="392" y="0"/>
+</item>
+<item historyLabel="UserDataTest.java" index="17">
+<position info="not_deleted" x="3206" y="0"/>
+</item>
+<item historyLabel="AllTests.java" index="13">
+<position info="not_deleted" x="392" y="0"/>
+</item>
+<item historyLabel="UserDataTest.java" index="17">
+<position info="not_deleted" x="3236" y="0"/>
+</item>
+<item historyLabel="RegistrationTest.java" index="18">
+<position info="not_deleted" x="7685" y="0"/>
+</item>
+<item historyLabel="UserDetails.java" index="19">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="UserData.java" index="11">
+<position info="not_deleted" x="1022" y="0"/>
+</item>
+<item historyLabel="StockControl.java" index="12">
+<position info="not_deleted" x="718" y="0"/>
+</item>
+<item historyLabel="RegistrationTest.java" index="18">
+<position info="not_deleted" x="7685" y="0"/>
+</item>
+<item historyLabel="UserDetails.java" index="19">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="RegistrationTest.java" index="18">
+<position info="not_deleted" x="7685" y="0"/>
+</item>
+<item active="true" historyLabel="index.xhtml" index="1">
+<position info="not_deleted" x="923" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -1326,12 +1450,10 @@
 <actionBarAdvisor/>
 <trimLayout>
 <trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="topLeft"/>
 <trimItem IMemento.internal.id="left"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1efae2f"/>
 </trimArea>
 <trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="topRight"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@204316"/>
 <trimItem IMemento.internal.id="right"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1468cd"/>
@@ -1345,11 +1467,47 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="bottomRight"/>
 <trimItem IMemento.internal.id="bottom"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1583983"/>
 </trimArea>
 </trimLayout>
 </window>
-<mruList/>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UserDetails.java" tooltip="TestProject/src/UserDetails.java">
+<persistable path="/TestProject/src/UserDetails.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RegistrationTest.java" tooltip="TestProject/test/RegistrationTest.java">
+<persistable path="/TestProject/test/RegistrationTest.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UserDataTest.java" tooltip="TestProject/test/UserDataTest.java">
+<persistable path="/TestProject/test/UserDataTest.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LoginBean.java" tooltip="TestProject/src/LoginBean.java">
+<persistable path="/TestProject/src/LoginBean.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StockControlTest.java" tooltip="TestProject/test/StockControlTest.java">
+<persistable path="/TestProject/test/StockControlTest.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LoginBeanTest.java" tooltip="TestProject/test/LoginBeanTest.java">
+<persistable path="/TestProject/test/LoginBeanTest.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AllTests.java" tooltip="TestProject/test/AllTests.java">
+<persistable path="/TestProject/test/AllTests.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StockControl.java" tooltip="TestProject/src/StockControl.java">
+<persistable path="/TestProject/src/StockControl.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UserData.java" tooltip="TestProject/src/UserData.java">
+<persistable path="/TestProject/src/UserData.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="User.java" tooltip="TestProject/src/User.java">
+<persistable path="/TestProject/src/User.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ProductData.java" tooltip="TestProject/src/ProductData.java">
+<persistable path="/TestProject/src/ProductData.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Product.java" tooltip="TestProject/src/Product.java">
+<persistable path="/TestProject/src/Product.java"/>
+</file>
+</mruList>
 </workbench>

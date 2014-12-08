@@ -1,0 +1,20 @@
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+
+public class UserDetailsTest {
+
+	private UserDetails userDetails;
+	
+	@Before
+	public void setUp(){
+		userDetails = new UserDetails("Alan","123","Anything","Athlone","3pm","0861289365");
+	}
+
+	@Test
+	public void testConstructorANDGetters(){
+		
+	}
+}

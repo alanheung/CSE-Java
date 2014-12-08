@@ -14,6 +14,11 @@ public class DeliveryBeanTest {
 	}
 
 	@Test
+	public void testDefaultConstructor(){
+		myDeliveryBean = new DeliveryBean();
+		assertEquals("",myDeliveryBean.getDeliveryTime());
+	}
+	@Test
 	public void testSettingDeliveryTime() {
 		assertEquals("2pm", myDeliveryBean.getDeliveryTime());
 		myDeliveryBean.setDeliveryTime("3pm");

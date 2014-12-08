@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+   	<h:head>
+        <title>Corrigans</title>
+        <link rel="shortcut icon" href="images/shop.ico" />
+		<h:outputStylesheet library="css" name="styles.css" />
+    </h:head>
+
+    <body>
+    <h:form>
+		<div id="page">
+			<div id="loginbar">
+					<ul>
+						<li><h:link value="Login" outcome="login"  rendered="#{!login.userLoggedIn}"/></li>
+						<li><h:link value="Register" outcome="register" rendered="#{!login.userLoggedIn}"/></li>
+						<li>#{login.currentUser.fullName}</li>
+						<li><h:commandLink value="Logout" action="#{login.logout()}" outcome="index" rendered="#{login.userLoggedIn}"/></li>
+					</ul>
+			</div>
+			<div id="header">
+				<h1><h:graphicImage name="images/HelmLeft.png" />Corrigans Supermarket</h1>
+			</div>
+			<div id="navbar">
+                <ul>
+	                <li><h:link value="Home" outcome="index" /></li>
+	                <li><h:link value="Special Offers" outcome="specialoffers" /></li>
+	                <li><h:link value="Products" outcome="products" /></li>
+                </ul>
+            </div>
+            <div id="sidebar">
+            	<ul>
+	            	<li><h:link value="My Basket" outcome="basket" ><h:graphicImage name="images/Cart.png"/></h:link></li>
+	                <li><h:link value="FAQ" outcome="faq" ><h:graphicImage name="images/faq.png" outcome="faq"/></h:link></li>
+            		<li><h:link value="About Us" outcome="aboutUs" ><h:graphicImage name="images/aboutUs.png" outcome="aboutUs"/></h:link></li>
+            		<li><h:link value="Contact" outcome="contact" ><h:graphicImage name="images/contact-icon.png" outcome="faq"/></h:link></li>
+
+            	</ul>
+            </div>
+			<div id="main">
+                <h2>FAQ</h2>
+                <p>1. How do I select items to purchase?<br></br> As you
+						browse through the Corrigans Supermarket Online Store, click on
+						the "add button" button beside the items that you wish
+						to purchase. </p>
+						
+						<p>2. How do I know what is in my shopping cart?<br></br>
+							When browsing through Corrigans Supermarket, simply look to the
+							left-side of the screen and click on "my basket" to see which items you have in your
+							shopping cart.</p>
+							
+							<p>3. How do I remove an item from my shopping cart?<br></br> Click
+								the "decrease" check box and click "modify cart" to remove that
+								item from your cart. You may also change the quantity of items
+								to "0" (zero) to remove the item from your shopping cart. </p>
+								
+								<p>4. How do I modify the quantity of a product in my shopping cart?<br></br>
+									Click on "my basket" to see an itemized list of the
+									products in your shopping cart. Change the quantity of the item
+									and click "increase" or "decrease" to update the contents of your shopping
+									cart. </p>
+									
+									<p>5. How do I empty out my shopping cart?<br></br> To
+										remove items from your shopping cart click on "my basket",
+										check the "remove" box for each item that you would like to
+										remove from your shopping cart.</p>
+										
+										<p>6. How do I pay for my merchandise?<br></br>
+												Unfortunately, Corrigans Supermarket is not offering this option at the
+															present time online, but we hope to be able to offer it
+															in the future.</p>
+													
+													<p>8. What is Corrigans Supermarket’s return policy and who do I contact
+													regarding returns?<br></br> If for some reason you need to
+														return an item to Corrigans Supermarket please email the
+														details of your particular situation to:
+														returns@corriganssupermarket.com. </p>
+														
+														<p>9. Can I pay off account online?<br></br> Unfortunately,
+															Corrigans Supermarket is not offering this option at the
+															present time online, but we hope to be able to offer it
+															in the future.</p>
+                 <h:graphicImage library="images" name="faq.jpg" width="700" height="350" />                 
+                 
+			</div>
+
+				<div id="footer">
+            <p> Terms &amp; Conditions &nbsp;&nbsp;&nbsp; Privacy Policy &nbsp;&nbsp;&nbsp; &copy;<b>CSE 2014</b></p>
+			</div>
+
+		</div>
+		</h:form>
+    </body>
+    
+    </html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:mj="http://mojarra.dev.java.net/mojarra_ext"> 
+
+<h:head>
+<title>Corrigans | Deliveries</title>
+        <link rel="shortcut icon" href="resources/images/shop.ico" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="resources/css/styles.css" />
+</h:head> 
+<h:body>
+		<div id="page">
+			<div id="loginbar">
+				<ul>
+					<li><a href="">Login |</a></li>
+					<li><a href=""> Register</a></li>
+				</ul>
+			</div>
+			<div id="header">
+				<h1><img src="resources/images/HelmLeft.png" alt="Company logo" />Corrigans Supermarket<img src="resources/images/HelmRight.png" alt="Company logo" /></h1>
+                <h2>All you need, straight to your door.</h2>
+			</div>
+			<div id="navbar">
+                <ul>
+	                <li><a href="index.xhtml">Home</a></li>
+	                <li><a href="">Special Offers</a></li>
+	                <li><a href="">Products</a></li>
+                </ul>
+            </div>
+            <div id="sidebar">
+            	<ul>
+	            	<li><a href=""><img src="resources/images/Cart.png" alt="cart.png"/>My Basket</a></li>
+	                <li><a href=""><img src="resources/images/Settings.png" alt="settings.png"/>My Account</a></li>
+            	</ul>
+            </div>
+			<div id="main">
+			<h:form>
+                <h2>Delivery Charge</h2>
+                Your delivery bill is charged at 10% of your order: €
+                <h:outputText value="#{tableData.subTotal}" >
+                	<f:convertNumber pattern="#0.00" />
+                </h:outputText>
+<br /><br />
+Your total bill including delivery will be: €
+<h:outputText value="#{tableData.total}">
+	<f:convertNumber pattern="#0.00" />
+</h:outputText>
+<br /><br />
+Please select a suitable delivery time from the dropdown menu. Your order will be delivered in the next working day. The driver will bring a complete receipt along with the order.
+<br />
+<h:selectOneMenu value="#{deliveryBean.deliveryTime}">
+	<f:selectItem itemValue="9-12am" itemLabel="9-12am" />
+	<f:selectItem itemValue="12-3pm" itemLabel="12-3pm" />
+	<f:selectItem itemValue="3-6pm" itemLabel="3-6pm" />
+</h:selectOneMenu>
+<h:commandButton value="Submit" action="deliverysuccess" />
+</h:form>
+			</div>
+
+			<div id="footer">
+                <p>&copy;<b>CSE 2014</b></p>
+			</div>
+		</div>
+    </h:body> 
+</html>

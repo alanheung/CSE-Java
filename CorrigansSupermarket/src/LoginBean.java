@@ -4,7 +4,7 @@ import java.util.List;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped; 
 
-@ManagedBean(name="login")
+@ManagedBean (name="login")
 @SessionScoped
 public class LoginBean implements Serializable{
 	private static final long serialVersionUID = 1L;
@@ -13,16 +13,16 @@ public class LoginBean implements Serializable{
 	private boolean emailFieldEmpty;
 	private boolean passwordFieldEmpty;
 	private boolean emailAndPasswordCorrect=true;
-	private boolean validationComplete;
+	private boolean emailValid=true;
 	private static boolean userLoggedIn;
 	private static User currentUser;
-	private static List<User> customers = CustomerData.getAllCustomers();
-//	private static List<User> employees = EmployeeData.getAllEmployees();
-	
+	private static List<User> allUsers = UserData.getAllUsers();
+
 	public LoginBean(){
 		email="";
 		password="";
 	}
+	
 	
 	public LoginBean(String email,String password){
 		this.email=email;
@@ -42,10 +42,6 @@ public class LoginBean implements Serializable{
 		this.email = email;
 	}
 
-	public boolean getEmailValid() {
-		return (email.contains("@") && email.contains("."));
-	}
-	
 	public boolean getEmailFieldEmpty() {
 		return emailFieldEmpty;
 	}
@@ -70,43 +66,68 @@ public class LoginBean implements Serializable{
 		this.emailAndPasswordCorrect = emailAndPasswordCorrect;
 	}
 
-	public boolean getValidationComplete() {
-		return validationComplete;
-	}
-
-	public void setValidationComplete(boolean validationComplete) {
-		this.validationComplete = validationComplete;
-	}
-
 	public boolean getUserLoggedIn(){
 		return userLoggedIn;
 	}
-	
+
 	public void setUserLoggedIn(boolean b) {
 		LoginBean.userLoggedIn=b;
 	}
+
+	public String isEmailEmpty() {
+		emailFieldEmpty=(email==null || email.equals(""));
+		return null;
+	}
+
+	public String isPasswordEmpty() {
+		passwordFieldEmpty=(password==null || password.equals(""));
+		return null;
+	}
 	
+	public boolean isEmailValid() {
+		return emailValid;
+	}
+
+	public void setEmailValid(boolean emailValid) {
+		this.emailValid = emailValid;
+	}
 	
 	public String checkLogin(){
-		for(User current:customers){
-			if(current.getEmailAddress().equals(this.email)){
-				if(current.getPassword().equals(this.password)){
-					emailAndPasswordCorrect=true;
-					LoginBean.userLoggedIn=true;
-					currentUser=current;
-					return "index?faces-redirect=true";
+		isEmailEmpty();
+		isPasswordEmpty();
+		if(!emailFieldEmpty&&!passwordFieldEmpty){
+			for(User current:allUsers){
+				if(current.getEmailAddress().equals(this.email)){
+					emailValid=true;
+					if(current.getPassword().equals(this.password)){
+						emailAndPasswordCorrect=true;
+						LoginBean.userLoggedIn=true;
+						currentUser=current;
+						if(current.getUserType().equals("Manager")){
+							return "managerpage?faces-redirect=true";
+						}
+						else if(current.getUserType().equals("Stock")){
+							return "stockpage?faces-redirect=true";
+						}
+						else if(current.getUserType().equals("Delivery Driver")){
+							return "deliverypage?faces-redirect=true";
+						}
+						else{
+							return "index?faces-redirect=true";
+						}
+					}
+					else{
+						emailAndPasswordCorrect=false;
+					}
 				}
 				else{
-					emailAndPasswordCorrect=false;
+					emailValid=false;
 				}
-			}
-			else{
-				emailAndPasswordCorrect=false;
 			}
 		}
 		return null;
 	}
-	
+
 	public User getCurrentUser() {
 		return currentUser;
 	}
@@ -114,14 +135,12 @@ public class LoginBean implements Serializable{
 	public void setCurrentUser(User currentUser) {
 		LoginBean.currentUser = currentUser;
 	} 
-	
+
 	public String logout(){
 		setUserLoggedIn(false);
 		User temp = new User();
 		setCurrentUser(temp);
 		return null;
 	}
-
-
 
 }

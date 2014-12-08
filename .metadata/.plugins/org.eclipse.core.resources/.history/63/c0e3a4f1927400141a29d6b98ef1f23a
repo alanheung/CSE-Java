@@ -1,0 +1,239 @@
+//Alan Heung A00226316
+import java.util.ArrayList;
+import java.util.Scanner;
+
+class PreOwnedCar{
+	private String make, model, regNo;
+
+	public PreOwnedCar() {
+		super();
+	}
+
+	public PreOwnedCar(String make, String model, String regNo) {
+		super();
+		this.make = make;
+		this.model = model;
+		this.regNo = regNo;
+	}
+
+	public String getMake() {
+		return make;
+	}
+
+	public void setMake(String make) {
+		this.make = make;
+	}
+
+	public String getModel() {
+		return model;
+	}
+
+	public void setModel(String model) {
+		this.model = model;
+	}
+
+	public String getRegNo() {
+		return regNo;
+	}
+
+	public void setRegNo(String regNo) {
+		this.regNo = regNo;
+	}
+
+	@Override
+	public String toString() {
+		return "PreOwnedCar [make=" + make + ", model=" + model + ", regNo="
+				+ regNo + "]";
+	}	
+}
+
+public class Assessment3 {
+	static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[]args){
+		System.out.println("Second hand car program");
+		final int ADD=1, UPDATE=2, DELETE_ONE_CAR=3, DELETE_ALL_CARS=4, FIND_CAR_BY_INDEX=5, DISPLAY=6, EXIT=7;
+		String userContinue="y";
+		ArrayList<PreOwnedCar> preOwnedCars = new ArrayList<>();
+		while(userContinue.equalsIgnoreCase("y")){
+			switch(userChoice()){
+			case ADD: 
+				add(preOwnedCars);
+				break;
+			case UPDATE: 
+				update(preOwnedCars);
+				break;
+			case DELETE_ONE_CAR: 
+				deleteOneCar(preOwnedCars);
+				break;
+			case DELETE_ALL_CARS: 
+				deleteAllCars(preOwnedCars);
+				break;
+			case FIND_CAR_BY_INDEX: 
+				findCarByIndex(preOwnedCars);
+				break;
+			case DISPLAY: 
+				display(preOwnedCars);
+				break;
+			case EXIT:
+				userContinue="n";
+				break;
+			default:
+				System.out.println("Option does not exist, try again ");
+			}
+		}
+	}
+
+	public static int userChoice(){
+		System.out.print("\nWhat do you want to do?");
+		System.out.print("\n1.add \n2.update \n3.delete a car \n4.delete all \n5.find car by index \n6.display \n7.exit ");
+		return sc.nextInt();	
+	}
+
+	public static void add(ArrayList<PreOwnedCar> carList){//(String input, ArrayList<PreOwnedCar> carList){//add
+		carAlreadyThere(carList);
+	}
+	
+//	public static void add(ArrayList<PreOwnedCar> carList){//add
+	//	System.out.print("Enter the registration number ");
+	//	String carRegNo = sc.next();
+	//	boolean exists=false;
+	//	for(PreOwnedCar car:carList){
+	//		if(car.getRegNo().equalsIgnoreCase(carRegNo)){
+	//			System.out.println("Car exists in the car list ");
+	//			exists = true;
+	//			break;
+	//		}
+	//	}
+	//	if(exists==false){
+	//		System.out.print("Enter make ");
+	//		String make = sc.next();
+	//		System.out.print("Enter model ");
+	//		String model = sc.next();
+	//		PreOwnedCar car = new PreOwnedCar(make, model, carRegNo);
+	//		carList.add(car);
+	//	}
+//	}
+//
+//	public static boolean carAlreadyThere(String carRegNo){//check if car is already there
+//		ArrayList<PreOwnedCar> carList = new ArrayList<>();
+//		PreOwnedCar car = new PreOwnedCar();
+//		System.out.print("Enter the registration number ");
+//		carRegNo = sc.next();
+//		boolean exists=false;
+//		for(PreOwnedCar car1:carList){
+//			if(car1.getRegNo().equalsIgnoreCase(carRegNo)){
+//				System.out.println("Car exists in the car list ");
+//				exists = true;
+//				break;
+//			}
+//		}
+//		return exists;
+//	}
+	
+	public static void carAlreadyThere(ArrayList<PreOwnedCar> carList){//check if car is already there
+		System.out.print("Enter the registration number ");
+		String carRegNo = sc.next();
+		boolean exists=false;
+		for(PreOwnedCar car:carList){
+			if(car.getRegNo().equalsIgnoreCase(carRegNo)){
+				System.out.println("Car exists in the car list ");
+				exists = true;
+				break;
+			}
+		}
+		if(exists==false){
+			System.out.print("Enter make ");
+			String make = sc.next();
+			System.out.print("Enter model ");
+			String model = sc.next();
+			PreOwnedCar car = new PreOwnedCar(make, model, carRegNo);
+			carList.add(car);
+		}
+	}
+	
+	public static void update(ArrayList<PreOwnedCar> carList){//update make model reg
+		final int MAX_FEATURES=3;
+		System.out.println("Cars before: "+carList);
+		System.out.print("Enter the index: ");
+		int index = sc.nextInt();
+
+		try{
+			PreOwnedCar car = carList.get(index);
+			exitForLoop:
+				for(int i=1; i<=MAX_FEATURES; i++){				
+					System.out.println("Enter the feature you wish to update (M)ake, M(O)del, (R)eg. Any other char to exit...");
+					String feature = sc.next().toUpperCase();
+					switch(feature){
+					case "M": 
+						System.out.print("Enter the make: "); 
+						car.setMake(sc.next());
+						break;
+					case "O": 
+						System.out.print("Enter the model: "); 
+						car.setModel(sc.next());
+						break;
+					case "R": 
+						System.out.print("Enter the registration: "); 
+						car.setRegNo(sc.next());
+						break;
+					default:
+						break exitForLoop;
+					}
+				}
+			carList.set(index, car);
+			System.out.println("The update list"+carList);
+		}catch(IndexOutOfBoundsException e){
+			System.out.print(e);
+		}
+	}
+	
+	public static void deleteOneCar(ArrayList<PreOwnedCar> carList){//delete one car
+		System.out.println("Cars before:"+carList);
+		System.out.print("Enter reg no: ");
+		String carRegNo = sc.next();
+		boolean carDeleted = false;
+		for(int i=0; i<carList.size(); i++){
+			PreOwnedCar car = carList.get(i);
+			if(car.getRegNo().equalsIgnoreCase(carRegNo)){
+				carList.remove(car);
+				carDeleted=true;
+			}
+		}
+		if(carDeleted){
+			System.out.println("Deleted car: ");
+		}else{
+			System.out.println("Could not find registration no. ");
+		}
+		System.out.println("Cars after:"+carList);
+	}
+	
+	public static void deleteAllCars(ArrayList<PreOwnedCar> carList){// delete all cars
+		carList.clear();
+		if(carList.isEmpty()){
+			System.out.println("The car list is empty ");
+		}
+	}
+	
+	public static void findCarByIndex(ArrayList<PreOwnedCar> carList){//find car by index
+		System.out.println(carList);
+		System.out.println("Please enter index: ");
+		int index = sc.nextInt();
+		if(index < 0 || index >= carList.size()){
+			System.out.println("The index is out of bounds ");
+		}else{
+			PreOwnedCar car = carList.get(index);
+			System.out.print(car);
+		}
+	}
+	
+	public static void display(ArrayList<PreOwnedCar> carList){//display
+		for(PreOwnedCar car:carList){
+			System.out.println(car);
+		}
+		if(carList.isEmpty()){
+			System.out.println("The car list is empty ");
+		}
+	}
+
+}//end

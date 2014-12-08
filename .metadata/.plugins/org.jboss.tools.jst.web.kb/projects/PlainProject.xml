@@ -24438,8 +24438,8 @@
   <path value="C:/xampp/tomcat/lib/tomcat-util.jar"/>
   <path value="C:/xampp/tomcat/lib/jsp-api.jar"/>
   <path value="C:/xampp/tomcat/lib/ecj-3.6.jar"/>
-  <path value="C:/xampp/tomcat/lib/ecj-3.6.2.jar"/>
   <path value="C:/Users/A00226316/.m2/repository/ch/qos/logback/logback-core/1.0.9/logback-core-1.0.9.jar"/>
+  <path value="C:/xampp/tomcat/lib/ecj-3.6.2.jar"/>
   <path value="C:/xampp/tomcat/lib/tomcat-i18n-fr.jar"/>
   <path value="C:/Users/A00226316/.m2/repository/javax/servlet/jstl/1.2/jstl-1.2.jar">
    <libraries>
@@ -24506,9 +24506,9 @@
    </libraries>
   </path>
   <path value="C:/xampp/tomcat/lib/tomcat-i18n-ja.jar"/>
-  <path value="C:/xampp/tomcat/lib/tomcat-api.jar"/>
-  <path value="C:/xampp/tomcat/lib/catalina-ha.jar"/>
   <path value="C:/Users/A00226316/.m2/repository/commons-collections/commons-collections/3.2/commons-collections-3.2.jar"/>
+  <path value="C:/xampp/tomcat/lib/catalina-ha.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-api.jar"/>
   <path value="C:/xampp/tomcat/lib/jasper.jar"/>
   <path value="C:/xampp/tomcat/lib/catalina-tribes.jar"/>
   <path value="C:/Users/A00226316/.m2/repository/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar"/>

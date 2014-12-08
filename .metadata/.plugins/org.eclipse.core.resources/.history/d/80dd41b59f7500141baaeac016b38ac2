@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<title>Corrigans</title>
+	<link rel="shortcut icon" href="images/shop.ico" />
+	<h:outputStylesheet library="css" name="styles.css" />
+</h:head>
+
+<body>
+	<h:form>
+		<div id="page">
+			<div id="loginbar">
+				<ul>
+					<li><h:link value="Login" outcome="login"
+							rendered="#{!login.userLoggedIn}" /></li>
+					<li><h:link value="Register" outcome="register"
+							rendered="#{!login.userLoggedIn}" /></li>
+					<li>#{login.currentUser.fullName}</li>
+					<li><h:commandLink value="Logout" action="#{login.logout()}"
+							outcome="index" rendered="#{login.userLoggedIn}" /></li>
+				</ul>
+			</div>
+			<div id="header">
+				<h1>
+					<h:graphicImage name="images/HelmLeft.png" />
+					Corrigans Supermarket
+				</h1>
+			</div>
+
+
+			<div id="main">
+				<h2>Customers</h2>
+				<h:dataTable value="#{registration.getAllUsers()}" var="name"
+					styleClass="nameTable" headerClass="nameTableHeader"
+					rowClasses="nameTableOddRow,nameTableEvenRow">
+					<h:column>
+						<f:facet name="header">Name</f:facet>
+						<h:inputText value="#{name.fullName}" rendered="#{name.canEditUser}"/>
+						<h:outputText value="#{name.fullName}"
+							 rendered="#{name.userType.equals('Customer') and not name.canEditUser}"/>
+					</h:column>
+					<h:column>
+						<f:facet name="header">Address</f:facet>
+						<h:inputText value="#{name.address}" rendered="#{name.canEditUser}"/>
+						<h:outputText value="#{name.address}"
+							 rendered="#{name.userType.equals('Customer') and not name.canEditUser}"/>
+					</h:column>
+					<h:column>
+						<f:facet name="header">Mobile Number</f:facet>
+						<h:inputText value="#{name.mobileNumber}" rendered="#{name.canEditUser}"/>
+						<h:outputText value="#{name.mobileNumber}"
+							 rendered="#{name.userType.equals('Customer') and not name.canEditUser}"/>
+					</h:column>
+					<h:column>
+						<f:facet name="header">Email</f:facet>
+						<h:inputText value="#{name.emailAddress}" rendered="#{name.canEditUser}"/>
+						<h:outputText value="#{name.emailAddress}"
+							rendered="#{name.userType.equals('Customer') and not name.canEditUser}"/>
+					</h:column>
+					<h:column>
+						<f:facet name="header">Password</f:facet>
+						<h:inputText value="#{name.password}" rendered="#{name.canEditUser}"/>
+						<h:outputText value="#{name.password}"
+							rendered="#{name.userType.equals('Customer') and not name.canEditUser}"/>
+					</h:column>
+					<h:column>
+						<f:facet name="header">Edit</f:facet>
+						<h:commandLink value="Edit" action="#{customer.editUser(name)}"
+							rendered="#{name.userType.equals('Customer') and not name.canEditUser}" />
+					</h:column>
+					<h:column>
+						<f:facet name="header">Delete</f:facet>
+						<h:commandLink value="Delete" action="#{customer.deleteUser(name)}"
+							rendered="#{name.userType.equals('Customer') and not name.canEditUser}" />
+					</h:column>	
+				</h:dataTable>
+				<div id="savechanges" align="center"><h:commandButton action="#{customer.saveAction()}" value="Save changes" /></div>
+				<h:commandButton styleClass="mybutton" value="Add Customer" action="register" />
+				<div id="search" align="center"><h:commandLink value="Home" action="managerpage" /></div>
+			</div>
+			<div id="footer">
+            	<p><h:link value=" Terms and Conditions" outcome="terms.xhtml" ></h:link>
+            	&nbsp;&nbsp;&nbsp; <h:link value="Privacy Policy" outcome="privacy.xhtml" ></h:link> 
+            	&nbsp;&nbsp;&nbsp; &copy;<b>CSE 2014</b></p>
+			</div>
+
+		</div>
+	</h:form>
+</body>
+
+</html>
+

@@ -79,10 +79,10 @@ public class CarApplication {
 	}//end main
 	
 	public static int userChoice(){
-		System.out.println("Select an option: ");
-		System.out.print("\n1. Add \n2. Update \n3. Delete car \n4. Delete all cars " +
+		System.out.print("1. Add \n2. Update \n3. Delete car \n4. Delete all cars " +
 				"\n5. Find car with registration no. \n6. Find car with index " +
 				"\n7. Display \n8. Exit ");
+		System.out.print("Select an option: ");
 		return sc.nextInt();
 	}
 	
@@ -109,8 +109,6 @@ public class CarApplication {
 	}
 	
 	public static void update(ArrayList<PreOwnedCar> carList){//2
-//		final int MAX_FEATURES=3;
-
 		System.out.println("Cars before: "+carList);
 		System.out.print("Enter the index: ");
 		int index = sc.nextInt();
@@ -118,11 +116,11 @@ public class CarApplication {
 		//retrieve cars from the array list
 		try{
 			PreOwnedCar car = carList.get(index);
-			boolean done = false;
-			while(!done){
-				System.out.println("Enter option you want to update:(Make(M), Model(O), Registration No.(R), Exit(Any key) ");
-				String feature = sc.next().toUpperCase();
-				switch(feature){
+			boolean askAgain=true;
+			while(askAgain){
+				System.out.print("Enter option you want to update:(Make(M), Model(O), Registration No.(R), Exit(Any key) ");
+				String input = sc.next().toUpperCase();
+				switch(input){
 				case "M": 	System.out.print("Enter make: "); car.setMake(sc.next());
 					break;
 				case "O": 	System.out.print("Enter model: "); car.setModel(sc.next());
@@ -130,7 +128,7 @@ public class CarApplication {
 				case "R": 	System.out.print("Enter registration no.: "); car.setRegNo(sc.next());
 					break;
 				default:
-					break;
+					askAgain=false;
 				}
 			}
 			carList.set(index,car);
@@ -165,7 +163,7 @@ public class CarApplication {
 	public static void deleteAllCar(ArrayList<PreOwnedCar> carList){//4
 		carList.clear();
 		if(carList.isEmpty()){
-			System.out.print("The car list is empty ");
+			System.out.println("The car list is empty ");
 		}
 	}
 

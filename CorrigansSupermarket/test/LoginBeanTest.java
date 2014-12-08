@@ -7,96 +7,87 @@ import org.junit.Test;
 public class LoginBeanTest {
 
 	private LoginBean myLogin;
-	
+
 	@Before
 	public void setUp(){
 		myLogin = new LoginBean("shazkeane335@msn.com", "Dromoher");
-		
+
 	}
 
 	@Test
-	public void testLoginBean() {
+	public void testDefaultConstructor(){
+		myLogin = new LoginBean();
+		assertEquals("", myLogin.getEmail());
+		assertEquals("", myLogin.getPassword());
+	}
+
+	@Test
+	public void testGettersANDSetters() {
 		assertEquals("shazkeane335@msn.com", myLogin.getEmail());
 		assertEquals("Dromoher", myLogin.getPassword());
 		myLogin.setEmail("A00226318@student.ait.ie");
 		myLogin.setPassword("Password");
 		assertEquals("A00226318@student.ait.ie", myLogin.getEmail());
 		assertEquals("Password", myLogin.getPassword());
-		}
-	
-	
-	@Test
-	public void testEmail(){
-		myLogin.setEmailFieldEmpty(true);
-		assertTrue(myLogin.getEmailFieldEmpty());
 		myLogin.setEmailFieldEmpty(false);
-		assertFalse(myLogin.getEmailFieldEmpty());
-		myLogin.setEmail("shazkeane335@msn.com");
-		assertTrue(myLogin.getEmailValid());
-		
-		
-	}
-	
-	@Test
-	public void testPassword(){
-		myLogin.setPasswordFieldEmpty(true);
-		assertTrue(myLogin.getPasswordFieldEmpty());
 		myLogin.setPasswordFieldEmpty(false);
-		assertFalse(myLogin.getPasswordFieldEmpty());
-	}
-	
-	@Test
-	public void testEmailAndPassword(){
 		myLogin.setEmailAndPasswordCorrect(true);
-		assertTrue(myLogin.getEmailAndPasswordCorrect());
-		myLogin.setEmailAndPasswordCorrect(false);
-		assertFalse(myLogin.getEmailAndPasswordCorrect());
-		
-	}
-	
-	@Test
-	public void testValidation(){
-		myLogin.setValidationComplete(true);
-		assertTrue(myLogin.getValidationComplete());
-		myLogin.setValidationComplete(false);
-		assertFalse(myLogin.getValidationComplete());
-		
-		
-	}
-	
-	@Test
-	public void testConstructor(){
-		LoginBean constructorLogin = new LoginBean();
-	}
-	
-	@Test
-	public void testGetSetUserLoggedIn(){
 		myLogin.setUserLoggedIn(false);
-		assertFalse(myLogin.getUserLoggedIn());
-		myLogin.setUserLoggedIn(true);
-		assertTrue(myLogin.getUserLoggedIn());
-		myLogin.setUserLoggedIn(false);
-	}
-	
-	@Test
-	public void testGetSetCurrentUser(){
-		User user = new User();
+		myLogin.setEmailValid(false);
+		myLogin.setCurrentUser(null);
+		assertEquals(false,myLogin.getEmailFieldEmpty());
+		assertEquals(false,myLogin.getPasswordFieldEmpty());
+		assertEquals(true,myLogin.getEmailAndPasswordCorrect());
+		assertEquals(false,myLogin.getUserLoggedIn());
+		assertEquals(false,myLogin.isEmailValid());
 		assertEquals(null,myLogin.getCurrentUser());
-		myLogin.setCurrentUser(user);
-		assertEquals(user,myLogin.getCurrentUser());
 	}
-	
+
+
+	@Test
+	public void testEmptyFields(){
+		myLogin.setEmail("");
+		myLogin.setPassword("");
+		myLogin.isEmailEmpty();
+		myLogin.isPasswordEmpty();
+		assertEquals(true,myLogin.getEmailFieldEmpty());
+		assertEquals(true,myLogin.getPasswordFieldEmpty());
+	}
+
+	@Test
+	public void testSuccessfulLogin(){
+		myLogin.setEmail("skyboypower@gmail.com");
+		myLogin.setPassword("password");
+		myLogin.checkLogin();
+		assertEquals(true,myLogin.getEmailAndPasswordCorrect());
+	}
+
+	@Test
+	public void testInvalidPasswordLogin(){
+		myLogin.setEmail("skyboypower@gmail.com");
+		myLogin.setPassword("pasrd");
+		myLogin.checkLogin();
+		assertEquals(false,myLogin.getEmailAndPasswordCorrect());
+	}
+
+	@Test
+	public void testInvalidEmailLogin(){
+		myLogin.setEmail("skybower@gmail.com");
+		myLogin.setPassword("password");
+		myLogin.checkLogin();
+		assertEquals(false,myLogin.isEmailValid());
+	}
+
 	@Test
 	public void testLogout(){
 		myLogin.setUserLoggedIn(false);
-		User temp = new User();
 		User user = new User();
 		myLogin.setCurrentUser(user);
 		myLogin.setUserLoggedIn(true);
 		myLogin.logout();
 		assertFalse(myLogin.getUserLoggedIn());
 	}
-	
-	
+
+
 
 }

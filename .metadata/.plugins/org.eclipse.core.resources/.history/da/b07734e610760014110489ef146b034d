@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+   	<h:head>
+        <title>Corrigans</title>
+        <link rel="shortcut icon" href="images/shop.ico" />
+		<h:outputStylesheet library="css" name="styles.css" />
+    </h:head>
+
+    <body>
+    <h:form>
+		<div id="page">
+			<div id="loginbar">
+					<ul>
+						<li><h:link value="Login" outcome="login"  rendered="#{!login.userLoggedIn}"/></li>
+						<li><h:link value="Register" outcome="register" rendered="#{!login.userLoggedIn}"/></li>
+						<li>#{login.currentUser.fullName}</li>
+						<li><h:commandLink value="Logout" action="#{login.logout()}" outcome="index" rendered="#{login.userLoggedIn}"/></li>
+					</ul>
+			</div>
+			<div id="header">
+				<h1><h:graphicImage name="images/HelmLeft.png" />Corrigans Supermarket</h1>
+			</div>
+			<div id="navbar">
+                <ul>
+	                <li><h:link value="Home" outcome="index" /></li>
+	                <li><h:link value="Special Offers" outcome="specialoffers" /></li>
+	                <li><h:link value="Products" outcome="products" /></li>
+                </ul>
+            </div>
+            <div id="sidebar">
+            	<ul>
+	           	  	<li><h:link value="My Basket" outcome="basket" ><h:graphicImage name="images/Cart.png"/></h:link></li>
+	                <li><h:link value="FAQ" outcome="faq" ><h:graphicImage name="images/faq.png" outcome="faq"/></h:link></li>
+            		<li><h:link value="About Us" outcome="aboutUs" ><h:graphicImage name="images/aboutUs.png" outcome="aboutUs"/></h:link></li>
+            		<li><h:link value="Contact" outcome="contact" ><h:graphicImage name="images/contact-icon.png" outcome="faq"/></h:link></li>
+            	</ul>
+            </div>
+	<div id="main">
+               <h2>Delivery Charge</h2>
+                Your delivery bill is charged at 10% of your order: €
+                <h:outputText value="#{productData.subTotal}" >
+                	<f:convertNumber pattern="#0.00" />
+                </h:outputText><br /><br />
+                Your total bill including delivery will be: €
+                <h:outputText value="#{productData.total}">
+                	<f:convertNumber pattern="#0.00" />
+                </h:outputText>
+                <br /><br />
+                Please select a suitable delivery time from the dropdown menu.
+                Your order will be delivered in the next working day. 
+                The driver will bring a complete receipt along with the order.
+                <br />
+                <div id="" align="center"><h:selectOneMenu value="#{deliveryBean.deliveryTime}">
+	                <f:selectItem itemValue="9-12am" itemLabel="9-12am" />
+					<f:selectItem itemValue="12-3pm" itemLabel="12-3pm" />
+					<f:selectItem itemValue="3-6pm" itemLabel="3-6pm" />
+				</h:selectOneMenu>
+				</div>
+				<div id="" align="center"><h:commandButton styleClass="mybutton" value="Submit" action="#{productData.saveUserDetails(deliveryBean.deliveryTime, login.currentUser.fullName, deliveryBean.notes)}" />    
+				</div>      
+			</div>
+
+			<div id="footer">
+            <p> Terms &amp; Conditions &nbsp;&nbsp;&nbsp; Privacy Policy &nbsp;&nbsp;&nbsp; &copy;<b>CSE 2014</b></p>
+			</div>
+
+		</div>
+		</h:form>
+    </body>
+    
+    </html>

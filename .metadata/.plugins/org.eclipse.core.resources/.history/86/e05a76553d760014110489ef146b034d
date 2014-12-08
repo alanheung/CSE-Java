@@ -1,0 +1,19 @@
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+
+public class UserDetailsTest {
+
+	private UserDetails userdetails;
+	@Before
+	public void setUp() throws{
+		
+	}
+
+	@Test
+	public void testConstructorANDGetters(){
+		
+	}
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LoginBeanTest" project="TestProject" tests="7" started="7" failures="0" errors="0" ignored="0">
+  <testsuite name="LoginBeanTest" time="0.0">
+    <testcase name="testLogout" classname="LoginBeanTest" time="0.0"/>
+    <testcase name="testGettersANDSetters" classname="LoginBeanTest" time="0.0"/>
+    <testcase name="testDefaultConstructor" classname="LoginBeanTest" time="0.0"/>
+    <testcase name="testInvalidPasswordLogin" classname="LoginBeanTest" time="0.0"/>
+    <testcase name="testInvalidEmailLogin" classname="LoginBeanTest" time="0.0"/>
+    <testcase name="testEmptyFields" classname="LoginBeanTest" time="0.0"/>
+    <testcase name="testSuccessfulLogin" classname="LoginBeanTest" time="0.0"/>
+  </testsuite>
+</testrun>

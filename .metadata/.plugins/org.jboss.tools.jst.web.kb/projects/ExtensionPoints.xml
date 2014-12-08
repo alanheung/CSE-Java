@@ -142,9 +142,9 @@
    </libraries>
   </path>
   <path value="C:/Users/A00226316/.m2/repository/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar"/>
-  <path value="C:/xampp/tomcat/lib/tomcat-i18n-ja.jar"/>
-  <path value="C:/xampp/tomcat/lib/tomcat-api.jar"/>
   <path value="C:/xampp/tomcat/lib/catalina-ha.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-i18n-ja.jar"/>
   <path value="C:/xampp/tomcat/lib/jasper.jar"/>
   <path value="C:/xampp/tomcat/lib/catalina-tribes.jar"/>
   <path value="/ExtensionPoints/WebContent/WEB-INF/faces-config.xml">
@@ -158,8 +158,8 @@
   <path value="C:/xampp/tomcat/lib/catalina-ant.jar"/>
   <path value="C:/xampp/tomcat/lib/annotations-api.jar"/>
   <path value="C:/Users/A00226316/.m2/repository/org/atmosphere/atmosphere-runtime/1.0.0.RC1/atmosphere-runtime-1.0.0.RC1.jar"/>
-  <path value="C:/Users/A00226316/.m2/repository/org/primefaces/themes/cupertino/1.0.8/cupertino-1.0.8.jar"/>
   <path value="C:/xampp/tomcat/lib/tomcat-dbcp.jar"/>
+  <path value="C:/Users/A00226316/.m2/repository/org/primefaces/themes/cupertino/1.0.8/cupertino-1.0.8.jar"/>
   <path value="C:/xampp/tomcat/lib/servlet-api.jar"/>
   <path value="C:/xampp/tomcat/lib/el-api.jar"/>
   <path value="C:/xampp/tomcat/lib/jasper-el.jar"/>

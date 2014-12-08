@@ -3,7 +3,7 @@ import java.io.Serializable;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 
-@ManagedBean(name="deliveryBean")
+@ManagedBean (name="deliveryBean")
 @SessionScoped
 public class DeliveryBean implements Serializable{
 	private static final long serialVersionUID = 1l;
