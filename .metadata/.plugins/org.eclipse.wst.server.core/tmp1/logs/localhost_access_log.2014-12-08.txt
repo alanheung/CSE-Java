@@ -1,0 +1,5 @@
+127.0.0.1 - - [08/Dec/2014:19:46:14 +0000] "GET / HTTP/1.1" 404 955
+0:0:0:0:0:0:0:1 - - [08/Dec/2014:19:46:23 +0000] "GET /ComponentCounter/index.jsf HTTP/1.1" 200 2216
+0:0:0:0:0:0:0:1 - - [08/Dec/2014:19:46:24 +0000] "GET /ComponentCounter/javax.faces.resource/jsf.js.jsf;jsessionid=734A2E7FDF70417CF499A47B965169D6?ln=javax.faces&stage=Development HTTP/1.1" 200 352446
+0:0:0:0:0:0:0:1 - - [08/Dec/2014:19:46:58 +0000] "POST /ComponentCounter/index.jsf;jsessionid=734A2E7FDF70417CF499A47B965169D6 HTTP/1.1" 200 286
+0:0:0:0:0:0:0:1 - - [08/Dec/2014:19:51:40 +0000] "POST /ComponentCounter/index.jsf;jsessionid=734A2E7FDF70417CF499A47B965169D6 HTTP/1.1" 200 286

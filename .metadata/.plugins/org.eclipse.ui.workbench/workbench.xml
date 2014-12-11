@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="130" version="2.0">
+<workbench progressCount="46" version="2.0">
 <workbenchAdvisor/>
-<window height="860" maximized="true" width="800" x="0" y="0">
+<window height="860" width="800" x="0" y="0">
 <fastViewData fastViewLocation="1024">
 <orientation position="512" view="org.eclipse.jdt.junit.ResultView"/>
 <orientation position="512" view="org.springframework.ide.eclipse.aop.ui.navigator.aopReferenceModelNavigator"/>
@@ -13,12 +13,12 @@
 </perspectiveBar>
 <coolbarLayout>
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="178" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="278" y="22"/>
 <coolItem id="com.google.gdt.eclipse.suite.GDTPulldownToolbar" itemType="typeToolBarContribution" x="53" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="com.springsource.sts.ide.ui.actionSet.workbench" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="213" y="22"/>
-<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="122" y="22"/>
+<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="261" y="22"/>
 <coolItem id="org.eclipse.jst.j2ee.J2eeMainActionSet" itemType="typeToolBarContribution" x="91" y="22"/>
 <coolItem id="org.eclipse.team.ui.actionSet" itemType="typeToolBarContribution" x="53" y="22"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="130" y="22"/>
@@ -27,7 +27,7 @@
 <coolItem id="org.eclipse.wst.ws.explorer.explorer" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.jboss.tools.jst.web.ui.server.actionSet" itemType="typeToolBarContribution" x="153" y="22"/>
 <coolItem id="org.jboss.tools.maven.ui.toolbars.selectMavenProfilesToolbar" itemType="typeToolBarContribution" x="38" y="22"/>
-<coolItem id="org.jboss.tools.jst.jsp.toolbars.sampleToolbar" itemType="typeToolBarContribution" x="268" y="22"/>
+<coolItem id="org.jboss.tools.jst.jsp.toolbars.sampleToolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="145" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -43,7 +43,7 @@
 <coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.jboss.tools.common.model.ui.editor.EditorPartWrapper" itemType="typePlaceholder" x="38" y="22"/>
 <coolItem id="org.eclipse.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" itemType="typePlaceholder" x="38" y="22"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -59,137 +59,17 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
-<part id="7"/>
-<part id="8"/>
-<part id="9"/>
-<part id="10"/>
-<part id="11"/>
-<part id="12"/>
-<part id="13"/>
-<part id="14"/>
-<part id="15"/>
-<part id="16"/>
-<part id="17"/>
-<part id="18"/>
-<part id="19"/>
-<part id="20"/>
-<part id="21"/>
-<part id="22"/>
-<part id="23"/>
-<part id="24"/>
-<part id="25"/>
-<part id="26"/>
-<part id="27"/>
-<part id="28"/>
-<part id="29"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="aboutUs.xhtml" partName="aboutUs.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/aboutUs.xhtml" title="aboutUs.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/aboutUs.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/aboutUs.xhtml"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="InputOutput.java" partName="InputOutput.java" path="C:/Users/A00226316/Java/MasterProject/src/InputOutput.java" title="InputOutput.java" tooltip="MasterProject/src/InputOutput.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MasterProject/src/InputOutput.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1351" selectionTopPixel="315"/>
 </editor>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="basket.xhtml" partName="basket.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/basket.xhtml" title="basket.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/basket.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/basket.xhtml"/>
-</editor>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="contact.xhtml" partName="contact.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/contact.xhtml" title="contact.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/contact.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/contact.xhtml"/>
-</editor>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="delivery.xhtml" partName="delivery.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/delivery.xhtml" title="delivery.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/delivery.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/delivery.xhtml"/>
-</editor>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="deliverypage.xhtml" partName="deliverypage.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/deliverypage.xhtml" title="deliverypage.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/deliverypage.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/deliverypage.xhtml"/>
-</editor>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="deliverysuccess.xhtml" partName="deliverysuccess.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/deliverysuccess.xhtml" title="deliverysuccess.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/deliverysuccess.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/deliverysuccess.xhtml"/>
-</editor>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="employee_reg_success.xhtml" partName="employee_reg_success.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/employee_reg_success.xhtml" title="employee_reg_success.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/employee_reg_success.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/employee_reg_success.xhtml"/>
-</editor>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="faq.xhtml" partName="faq.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/faq.xhtml" title="faq.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/faq.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/faq.xhtml"/>
-</editor>
-<editor activePart="true" focus="true" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="index.xhtml" partName="index.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/index.xhtml" title="index.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/index.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/index.xhtml"/>
-</editor>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="login.xhtml" partName="login.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/login.xhtml" title="login.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/login.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/login.xhtml"/>
-</editor>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="managerpage.xhtml" partName="managerpage.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/managerpage.xhtml" title="managerpage.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/managerpage.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/managerpage.xhtml"/>
-</editor>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="privacy.xhtml" partName="privacy.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/privacy.xhtml" title="privacy.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/privacy.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/privacy.xhtml"/>
-</editor>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="products.xhtml" partName="products.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/products.xhtml" title="products.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/products.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/products.xhtml"/>
-</editor>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="register.xhtml" partName="register.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/register.xhtml" title="register.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/register.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/register.xhtml"/>
-</editor>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="registration_success.xhtml" partName="registration_success.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/registration_success.xhtml" title="registration_success.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/registration_success.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/registration_success.xhtml"/>
-</editor>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="specialoffers.xhtml" partName="specialoffers.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/specialoffers.xhtml" title="specialoffers.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/specialoffers.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/specialoffers.xhtml"/>
-</editor>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="stockpage.xhtml" partName="stockpage.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/stockpage.xhtml" title="stockpage.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/stockpage.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/stockpage.xhtml"/>
-</editor>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="terms.xhtml" partName="terms.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/terms.xhtml" title="terms.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/terms.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/terms.xhtml"/>
-</editor>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="viewCustomer.xhtml" partName="viewCustomer.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/viewCustomer.xhtml" title="viewCustomer.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/viewCustomer.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/viewCustomer.xhtml"/>
-</editor>
-<editor id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="ViewStaff.xhtml" partName="ViewStaff.xhtml" path="C:/Users/A00226316/Java/TestProject/WebContent/ViewStaff.xhtml" title="ViewStaff.xhtml" tooltip="C:/Users/A00226316/Java/TestProject/WebContent/ViewStaff.xhtml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/TestProject/WebContent/ViewStaff.xhtml"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Product.java" partName="Product.java" path="C:/Users/A00226316/Java/TestProject/src/Product.java" title="Product.java" tooltip="TestProject/src/Product.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TestProject/src/Product.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="968" selectionTopPixel="180"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ProductData.java" partName="ProductData.java" path="C:/Users/A00226316/Java/TestProject/src/ProductData.java" title="ProductData.java" tooltip="TestProject/src/ProductData.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TestProject/src/ProductData.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="626" selectionTopPixel="45"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="User.java" partName="User.java" path="C:/Users/A00226316/Java/TestProject/src/User.java" title="User.java" tooltip="TestProject/src/User.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TestProject/src/User.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UserData.java" partName="UserData.java" path="C:/Users/A00226316/Java/TestProject/src/UserData.java" title="UserData.java" tooltip="TestProject/src/UserData.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TestProject/src/UserData.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1022" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StockControl.java" partName="StockControl.java" path="C:/Users/A00226316/Java/TestProject/src/StockControl.java" title="StockControl.java" tooltip="TestProject/src/StockControl.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TestProject/src/StockControl.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="718" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AllTests.java" partName="AllTests.java" path="C:/Users/A00226316/Java/TestProject/test/AllTests.java" title="AllTests.java" tooltip="TestProject/test/AllTests.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TestProject/test/AllTests.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="392" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StockControlTest.java" partName="StockControlTest.java" path="C:/Users/A00226316/Java/TestProject/test/StockControlTest.java" title="StockControlTest.java" tooltip="TestProject/test/StockControlTest.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TestProject/test/StockControlTest.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1359" selectionTopPixel="675"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UserDataTest.java" partName="UserDataTest.java" path="C:/Users/A00226316/Java/TestProject/test/UserDataTest.java" title="UserDataTest.java" tooltip="TestProject/test/UserDataTest.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TestProject/test/UserDataTest.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3236" selectionTopPixel="998"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RegistrationTest.java" partName="RegistrationTest.java" path="C:/Users/A00226316/Java/TestProject/test/RegistrationTest.java" title="RegistrationTest.java" tooltip="TestProject/test/RegistrationTest.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TestProject/test/RegistrationTest.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7685" selectionTopPixel="3176"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UserDetails.java" partName="UserDetails.java" path="C:/Users/A00226316/Java/TestProject/src/UserDetails.java" title="UserDetails.java" tooltip="TestProject/src/UserDetails.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TestProject/src/UserDetails.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Assessment3Solution.java" partName="Assessment3Solution.java" path="C:/Users/A00226316/Java/Assessment3/src/Assessment3Solution.java" title="Assessment3Solution.java" tooltip="Assessment3/src/Assessment3Solution.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assessment3/src/Assessment3Solution.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4562" selectionTopPixel="2250"/>
 </editor>
 </editors>
 <views>
@@ -274,9 +154,7 @@
 </view>
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks" partName="Task List">
 <viewState linkWithEditor="true" presentation="org.eclipse.mylyn.tasks.ui.categorized">
-<sorter groupBy="CATEGORY_QUERY">
-<sorter>
-<sort0 sortDirection="1" sortKey="PRIORITY"/>
+<sorter groupBy="CATEGORY_QUERY">&#x0A;<sorter>&#x0A;<sort0 sortDirection="1" sortKey="PRIORITY"/>
 <sort1 sortDirection="1" sortKey="RANK"/>
 <sort2 sortDirection="1" sortKey="DATE_CREATED"/>
 <sort3 sortDirection="1" sortKey="NONE"/>
@@ -289,10 +167,10 @@
 <filteredTreeFindHistory/>
 </viewState>
 </view>
-<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 <view id="com.mountainminds.eclemma.ui.CoverageView" partName="Coverage">
 <viewState column0="300" column1="80" column2="120" column3="120" column4="120" counters="INSTRUCTION" hideunusedelements="false" linked="false" reversesort="true" roottype="GROUP" sortcolumn="3"/>
 </view>
+<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 <view id="org.eclipse.team.ui.GenericHistoryView" partName="History">
 <viewState/>
 </view>
@@ -332,7 +210,7 @@
 <viewState CommonNavigator.LINKING_ENABLED="0"/>
 </view>
 </views>
-<perspectives activePart="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.springsource.sts.internal.ide.ui.perspective.StsPerspective" id="com.springsource.sts.ide.perspective" label="Spring"/>
 <alwaysOnActionSet id="com.springsource.sts.ide.help.actionSet"/>
@@ -1274,174 +1152,159 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/TestProject/WebContent/deliverypage.xhtml"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/TestProject/WebContent/index.xhtml"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/TestProject/WebContent/products.xhtml"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/TestProject/WebContent/ViewStaff.xhtml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestProject/test/AllTests.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AgileDesignTesting/src/Discount.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AgileDesignTesting/src/tests/DiscountTest.java"/>
 <editor factoryID="com.springsource.sts.ide.ui.dashboard.elementFactory" id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" openDashboard="true"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/TestProject/WebContent/viewCustomer.xhtml"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/TestProject/WebContent/specialoffers.xhtml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestProject/src/Product.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestProject/src/ProductData.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestProject/src/User.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestProject/src/UserData.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestProject/src/StockControl.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestProject/test/AllTests.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestProject/test/LoginBeanTest.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestProject/test/StockControlTest.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestProject/src/LoginBean.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestProject/test/UserDataTest.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestProject/test/RegistrationTest.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TestProject/src/UserDetails.java"/>
+<editor factoryID="com.springsource.sts.ide.ui.dashboard.elementFactory" id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" openDashboard="true"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Practice/src/Test.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MasterProject/src/InputOutput.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assessment3/src/Assessment3Solution.java"/>
 </editors>
-<item historyLabel="AllTests.java" index="4">
-<position info="not_deleted" x="392" y="0"/>
+<item historyLabel="DiscountTest.java" index="1">
+<position info="not_deleted" x="247" y="0"/>
 </item>
-<item historyLabel="ViewStaff.xhtml" index="3">
-<position info="not_deleted" x="4090" y="13"/>
+<item historyLabel="Discount.java" index="0">
+<position info="not_deleted" x="21" y="0"/>
 </item>
-<item historyLabel="deliverypage.xhtml" index="0">
-<position info="not_deleted" x="1553" y="13"/>
+<item historyLabel="Dashboard" index="2"/>
+<item historyLabel="Discount.java" index="0">
+<position info="not_deleted" x="597" y="0"/>
 </item>
-<item historyLabel="products.xhtml" index="2">
-<position info="not_deleted" x="2328" y="13"/>
+<item historyLabel="Dashboard" index="3"/>
+<item historyLabel="Discount.java" index="0">
+<position info="not_deleted" x="597" y="0"/>
 </item>
-<item historyLabel="products.xhtml" index="2">
-<position info="not_deleted" x="2833" y="0"/>
-</item>
-<item historyLabel="ViewStaff.xhtml" index="3">
-<position info="not_deleted" x="4090" y="13"/>
-</item>
-<item historyLabel="index.xhtml" index="1">
+<item historyLabel="Test.java" index="4">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Dashboard" index="5"/>
-<item historyLabel="index.xhtml" index="1">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="Test.java" index="4">
+<position info="not_deleted" x="55" y="0"/>
 </item>
-<item historyLabel="viewCustomer.xhtml" index="6">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="Test.java" index="4">
+<position info="not_deleted" x="68" y="0"/>
 </item>
-<item historyLabel="specialoffers.xhtml" index="7">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="Test.java" index="4">
+<position info="not_deleted" x="247" y="0"/>
 </item>
-<item historyLabel="Product.java" index="8">
-<position info="not_deleted" x="533" y="0"/>
+<item historyLabel="Test.java" index="4">
+<position info="not_deleted" x="260" y="0"/>
 </item>
-<item historyLabel="ProductData.java" index="9">
-<position info="not_deleted" x="626" y="0"/>
+<item historyLabel="InputOutput.java" index="5">
+<position info="not_deleted" x="69" y="0"/>
 </item>
-<item historyLabel="Product.java" index="8">
-<position info="not_deleted" x="533" y="0"/>
+<item historyLabel="InputOutput.java" index="5">
+<position info="not_deleted" x="2502" y="0"/>
 </item>
-<item historyLabel="User.java" index="10">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="InputOutput.java" index="5">
+<position/>
 </item>
-<item historyLabel="UserData.java" index="11">
-<position info="not_deleted" x="1022" y="0"/>
+<item historyLabel="Assessment3Solution.java" index="6">
+<position info="not_deleted" x="866" y="46"/>
 </item>
-<item historyLabel="Product.java" index="8">
-<position info="not_deleted" x="968" y="0"/>
+<item historyLabel="InputOutput.java" index="5">
+<position info="not_deleted" x="2479" y="14"/>
 </item>
-<item historyLabel="StockControl.java" index="12">
-<position info="not_deleted" x="718" y="0"/>
+<item historyLabel="Assessment3Solution.java" index="6">
+<position info="not_deleted" x="866" y="46"/>
 </item>
-<item historyLabel="AllTests.java" index="13">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="InputOutput.java" index="5">
+<position/>
 </item>
-<item historyLabel="LoginBeanTest.java" index="14">
-<position info="not_deleted" x="2027" y="0"/>
+<item historyLabel="Assessment3Solution.java" index="6">
+<position info="not_deleted" x="914" y="41"/>
 </item>
-<item historyLabel="AllTests.java" index="13">
-<position info="not_deleted" x="392" y="0"/>
+<item historyLabel="InputOutput.java" index="5">
+<position info="not_deleted" x="352" y="0"/>
 </item>
-<item historyLabel="StockControlTest.java" index="15">
-<position info="not_deleted" x="1784" y="0"/>
+<item historyLabel="Assessment3Solution.java" index="6">
+<position info="not_deleted" x="1140" y="60"/>
 </item>
-<item historyLabel="LoginBeanTest.java" index="14">
-<position info="not_deleted" x="1962" y="0"/>
+<item historyLabel="InputOutput.java" index="5">
+<position/>
 </item>
-<item historyLabel="LoginBean.java" index="16">
-<position info="not_deleted" x="437" y="0"/>
+<item historyLabel="Assessment3Solution.java" index="6">
+<position info="not_deleted" x="1140" y="60"/>
 </item>
-<item historyLabel="LoginBeanTest.java" index="14">
-<position info="not_deleted" x="1962" y="0"/>
+<item historyLabel="InputOutput.java" index="5">
+<position/>
 </item>
-<item historyLabel="LoginBean.java" index="16">
-<position info="not_deleted" x="437" y="0"/>
+<item historyLabel="InputOutput.java" index="5">
+<position/>
 </item>
-<item historyLabel="LoginBeanTest.java" index="14">
-<position info="not_deleted" x="2029" y="0"/>
+<item historyLabel="InputOutput.java" index="5">
+<position/>
 </item>
-<item historyLabel="LoginBean.java" index="16">
-<position info="not_deleted" x="437" y="0"/>
+<item historyLabel="InputOutput.java" index="5">
+<position/>
 </item>
-<item historyLabel="LoginBeanTest.java" index="14">
-<position info="not_deleted" x="1747" y="0"/>
+<item historyLabel="InputOutput.java" index="5">
+<position/>
 </item>
-<item historyLabel="LoginBean.java" index="16">
-<position info="not_deleted" x="3047" y="0"/>
+<item historyLabel="InputOutput.java" index="5">
+<position/>
 </item>
-<item historyLabel="LoginBeanTest.java" index="14">
-<position info="not_deleted" x="1747" y="0"/>
+<item historyLabel="InputOutput.java" index="5">
+<position info="not_deleted" x="474" y="0"/>
 </item>
-<item historyLabel="StockControlTest.java" index="15">
-<position info="not_deleted" x="1359" y="0"/>
+<item historyLabel="InputOutput.java" index="5">
+<position info="not_deleted" x="433" y="0"/>
 </item>
-<item historyLabel="AllTests.java" index="13">
-<position info="not_deleted" x="392" y="0"/>
+<item historyLabel="InputOutput.java" index="5">
+<position/>
 </item>
-<item historyLabel="StockControl.java" index="12">
-<position info="not_deleted" x="718" y="0"/>
+<item historyLabel="Assessment3Solution.java" index="6">
+<position info="not_deleted" x="4954" y="68"/>
 </item>
-<item historyLabel="UserData.java" index="11">
-<position info="not_deleted" x="1022" y="0"/>
+<item historyLabel="InputOutput.java" index="5">
+<position info="not_deleted" x="452" y="0"/>
 </item>
-<item historyLabel="index.xhtml" index="1">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="Assessment3Solution.java" index="6">
+<position info="not_deleted" x="4562" y="0"/>
 </item>
-<item historyLabel="index.xhtml" index="1">
-<position info="not_deleted" x="526" y="0"/>
+<item historyLabel="InputOutput.java" index="5">
+<position/>
 </item>
-<item historyLabel="index.xhtml" index="1">
-<position info="not_deleted" x="923" y="0"/>
+<item historyLabel="Assessment3Solution.java" index="6">
+<position info="not_deleted" x="4562" y="0"/>
 </item>
-<item historyLabel="AllTests.java" index="13">
-<position info="not_deleted" x="392" y="0"/>
+<item historyLabel="InputOutput.java" index="5">
+<position info="not_deleted" x="560" y="0"/>
 </item>
-<item historyLabel="UserDataTest.java" index="17">
-<position info="not_deleted" x="3206" y="0"/>
+<item historyLabel="Assessment3Solution.java" index="6">
+<position info="not_deleted" x="4562" y="0"/>
 </item>
-<item historyLabel="AllTests.java" index="13">
-<position info="not_deleted" x="392" y="0"/>
+<item historyLabel="InputOutput.java" index="5">
+<position info="not_deleted" x="1960" y="0"/>
 </item>
-<item historyLabel="UserDataTest.java" index="17">
-<position info="not_deleted" x="3236" y="0"/>
+<item historyLabel="InputOutput.java" index="5">
+<position info="not_deleted" x="1742" y="0"/>
 </item>
-<item historyLabel="RegistrationTest.java" index="18">
-<position info="not_deleted" x="7685" y="0"/>
+<item historyLabel="InputOutput.java" index="5">
+<position/>
 </item>
-<item historyLabel="UserDetails.java" index="19">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="InputOutput.java" index="5">
+<position info="not_deleted" x="503" y="0"/>
 </item>
-<item historyLabel="UserData.java" index="11">
-<position info="not_deleted" x="1022" y="0"/>
+<item historyLabel="InputOutput.java" index="5">
+<position info="not_deleted" x="1553" y="0"/>
 </item>
-<item historyLabel="StockControl.java" index="12">
-<position info="not_deleted" x="718" y="0"/>
+<item historyLabel="InputOutput.java" index="5">
+<position info="not_deleted" x="611" y="0"/>
 </item>
-<item historyLabel="RegistrationTest.java" index="18">
-<position info="not_deleted" x="7685" y="0"/>
+<item historyLabel="InputOutput.java" index="5">
+<position info="not_deleted" x="1476" y="0"/>
 </item>
-<item historyLabel="UserDetails.java" index="19">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="InputOutput.java" index="5">
+<position info="not_deleted" x="866" y="0"/>
 </item>
-<item historyLabel="RegistrationTest.java" index="18">
-<position info="not_deleted" x="7685" y="0"/>
+<item historyLabel="InputOutput.java" index="5">
+<position info="not_deleted" x="1200" y="0"/>
 </item>
-<item active="true" historyLabel="index.xhtml" index="1">
-<position info="not_deleted" x="923" y="0"/>
+<item historyLabel="InputOutput.java" index="5">
+<position info="not_deleted" x="1122" y="0"/>
+</item>
+<item active="true" historyLabel="InputOutput.java" index="5">
+<position info="not_deleted" x="1381" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -1454,7 +1317,7 @@
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1efae2f"/>
 </trimArea>
 <trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@204316"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1583983"/>
 <trimItem IMemento.internal.id="right"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1468cd"/>
 </trimArea>
@@ -1468,11 +1331,37 @@
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
 <trimItem IMemento.internal.id="bottom"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1583983"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Assessment3Solution.java" tooltip="Assessment3/src/Assessment3Solution.java">
+<persistable path="/Assessment3/src/Assessment3Solution.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="InputOutput.java" tooltip="MasterProject/src/InputOutput.java">
+<persistable path="/MasterProject/src/InputOutput.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="Practice/src/Test.java">
+<persistable path="/Practice/src/Test.java"/>
+</file>
+<file factoryID="com.springsource.sts.ide.ui.dashboard.elementFactory" id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" name="Dashboard" tooltip="Dashboard">
+<persistable openDashboard="true"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UserTest.java" tooltip="TestProject/test/UserTest.java">
+<persistable path="/TestProject/test/UserTest.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DiscountTest.java" tooltip="AgileDesignTesting/src/tests/DiscountTest.java">
+<persistable path="/AgileDesignTesting/src/tests/DiscountTest.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Discount.java" tooltip="AgileDesignTesting/src/Discount.java">
+<persistable path="/AgileDesignTesting/src/Discount.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="index.xhtml" tooltip="ComponentCounter/WebContent/index.xhtml">
+<persistable path="/ComponentCounter/WebContent/index.xhtml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AddressBean.java" tooltip="ComponentCounter/src/de/oio/jsf/beans/AddressBean.java">
+<persistable path="/ComponentCounter/src/de/oio/jsf/beans/AddressBean.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UserDetails.java" tooltip="TestProject/src/UserDetails.java">
 <persistable path="/TestProject/src/UserDetails.java"/>
 </file>
@@ -1487,27 +1376,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StockControlTest.java" tooltip="TestProject/test/StockControlTest.java">
 <persistable path="/TestProject/test/StockControlTest.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LoginBeanTest.java" tooltip="TestProject/test/LoginBeanTest.java">
-<persistable path="/TestProject/test/LoginBeanTest.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AllTests.java" tooltip="TestProject/test/AllTests.java">
-<persistable path="/TestProject/test/AllTests.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StockControl.java" tooltip="TestProject/src/StockControl.java">
-<persistable path="/TestProject/src/StockControl.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UserData.java" tooltip="TestProject/src/UserData.java">
-<persistable path="/TestProject/src/UserData.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="User.java" tooltip="TestProject/src/User.java">
-<persistable path="/TestProject/src/User.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ProductData.java" tooltip="TestProject/src/ProductData.java">
-<persistable path="/TestProject/src/ProductData.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Product.java" tooltip="TestProject/src/Product.java">
-<persistable path="/TestProject/src/Product.java"/>
 </file>
 </mruList>
 </workbench>

@@ -1,0 +1,15 @@
+package tests;
+
+import static org.junit.Assert.assertEquals;
+import org.junit.Before;
+import org.junit.Test;
+
+public class DiscountTest {
+
+	@Test
+	public void testCase1(){
+		assertEquals(20,discountPrice);
+	}
+	
+//	Expected result :  Discount Rate :0.0, Discounted Price: 20.0
+}

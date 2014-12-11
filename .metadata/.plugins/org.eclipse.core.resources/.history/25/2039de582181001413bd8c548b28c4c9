@@ -1,0 +1,78 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class InputOutput {
+	static Scanner sc = new Scanner(System.in);
+	
+	public static void main(String[]args){
+//		System.out.println("Your full name is "+getName());
+		
+//		String[] name = new String[2];
+//		getName(name);
+//		for(String nameElement:name){
+//			System.out.print(nameElement+" ");
+//		}
+//		int age = getAge("Please enter your age ");
+//		System.out.println("Your age is "+ age);
+		
+//		int age = getAge("Please enter your age: ","Jack");
+//		System.out.println("Your age is "+ age);
+		getPension(55);
+	}//
+	
+	public static boolean getPension(int age){
+		if(age>=65){
+			return true;
+		}else{
+			return false;
+		}
+	}
+	
+	public static int getAge(String prompt, String name){
+		int age = 0;
+		System.out.print("Hi there "+name + " " +prompt);
+		if(sc.hasNextInt()){
+			age=sc.nextInt();
+		}else{
+			System.out.println("Error in the input");
+			age=-1;
+		}
+		return age;
+	}
+	
+	public static int getAge(String prompt){
+		int age = 0;
+		try{
+			System.out.print(prompt);	
+			age = sc.nextInt();
+		}catch(InputMismatchException ime){
+			ime.printStackTrace();
+		}
+		
+		System.out.println(" here...");
+		
+		return age;
+	}
+	
+	public static int getAge(){
+		System.out.print("Please enter your age ");
+		return sc.nextInt();
+	}
+	
+	public static void getName(String[] nameArray){
+		System.out.print("Please enter your first name ");
+		nameArray[0]=sc.next();
+		System.out.print("Please enter your last name ");
+		nameArray[1]=sc.next();
+	}
+	
+	public static String getName(){
+		System.out.print("Please enter your full name ");
+		String fullName = sc.nextLine();
+		return fullName;
+	}
+
+
+	
+
+}//

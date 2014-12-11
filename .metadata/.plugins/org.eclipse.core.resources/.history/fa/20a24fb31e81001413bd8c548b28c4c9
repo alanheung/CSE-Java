@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class InputOutput {
+	static Scanner sc = new Scanner(System.in);
+	
+	public static void main(String[]args){
+		//System.out.println("Your full name is "+getName());
+		
+//		String[] name = new String[2];
+//		getName(name);
+//		for(String nameElement:name){
+//			System.out.print(nameElement+" ");
+//		}
+		
+		System.out.println("Your age is "+getAge());
+
+		
+	}//
+	
+	public static int getAge(){
+		System.out.print("Please enter your age ");
+		return sc.nextInt();
+	}
+	
+	public static void getName(String[] nameArray){
+		System.out.print("Please enter your first name ");
+		nameArray[0]=sc.next();
+		System.out.print("Please enter your last name ");
+		nameArray[1]=sc.next();
+	}
+	
+	public static String getName(){
+		System.out.print("Please enter your full name ");
+		String fullName = sc.nextLine();
+		return fullName;
+	}
+
+
+	
+
+}//

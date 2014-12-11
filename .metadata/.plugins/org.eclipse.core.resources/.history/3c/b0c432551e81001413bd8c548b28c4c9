@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class InputOutput {
+	static Scanner sc = new Scanner(System.in);
+	
+	public static void main(String[]args){
+		//System.out.println("Your full name is "+getName());
+		
+		String[] name = new String[2];
+		getName(name);
+		for(String nameElement:name){
+			System.out.print(nameElement+" ");
+		}
+	}
+	
+	public static String getName(){
+		System.out.print("Please enter your full name ");
+		String fullName = sc.nextLine();
+		return fullName;
+	}
+
+	public static void getName(String[] name){
+		System.out.print("Please enter your first name ");
+		name[0]=sc.next();
+		System.out.print("Please enter your last name ");
+
+		name[1]=sc.next();
+	}
+	
+
+}//
