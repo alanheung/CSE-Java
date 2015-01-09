@@ -1,0 +1,42 @@
+import java.util.Scanner;
+enum Direction{
+	NORTH, SOUTH, EAST,WEST;
+}
+public class MASE_Week2 {
+	static Scanner sc = new Scanner(System.in);
+
+	public static void switchEnumType(){
+		Direction theWay=null;
+		System.out.println("Enter the direction (n|s|e|w):");
+		String nsew = sc.next().toUpperCase();
+		boolean ok = true;
+		
+		switch(nsew){
+		case"N":
+			theWay=Direction.North;
+			break;
+		case"S":
+			theWay=Direction.South;
+			break;
+		case"E":
+			theWay=Direction.East;
+			break;
+		case"W":
+			theWay=Direction.West;
+			break;
+		default:
+			System.out.println(nsew+"is not valid");
+			ok=false;
+			break;
+		}
+		if(ok){
+			switch(theWay){
+			case NORTH:
+				
+			}
+		}
+	}
+	public static void doubleNumbersRepresentations(){
+		
+	}
+}

@@ -1,0 +1,9 @@
+package ait.ie.maths;
+
+public class Trig {
+
+	public static void main(String[] args) {
+
+	}
+
+}

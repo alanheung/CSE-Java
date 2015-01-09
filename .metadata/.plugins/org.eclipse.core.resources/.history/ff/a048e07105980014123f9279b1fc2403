@@ -1,0 +1,73 @@
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.util.Scanner;
+enum Direction{
+	NORTH, SOUTH, EAST,WEST;
+}
+public class MASE_Week2 {
+	static Scanner sc = new Scanner(System.in);
+
+	public static void switchEnumType(){
+		Direction theWay=null;
+		System.out.println("Enter the direction (n|s|e|w):");
+		String nsew = sc.next().toUpperCase();
+		boolean ok = true;
+		
+		switch(nsew){
+		case"N":
+			theWay=Direction.North;
+			break;
+		case"S":
+			theWay=Direction.South;
+			break;
+		case"E":
+			theWay=Direction.East;
+			break;
+		case"W":
+			theWay=Direction.West;
+			break;
+		default:
+			System.out.println(nsew+"is not valid");
+			ok=false;
+			break;
+		}
+		if(ok){
+			switch(theWay){
+			case NORTH:
+				
+			}
+		}
+	}
+	public static void doubleNumbersRepresentations(){
+		double x = 5.6, y = 5.8, total=0.0;
+		total = x+y;
+		System.out.println("The total is "+total);//11.39999999999999999999999999999
+		
+		BigDecimal bdx = new BigDecimal(x);
+		BigDecimal bdy= new BigDecimal(y);
+		BigDecimal bdtotal = bdx.add(bdy);
+		System.out.println("BigDecimal total is "+bdtotal);//11.39999999999999999999999999999
+		
+		//hardcoded string - worked
+		BigDecimal bdx2 = new BigDecimal("5.6");
+		BigDecimal bdy2= new BigDecimal("5.8");
+		BigDecimal bdtotal2 = bdx2.add(bdy2);
+		System.out.println("BigDecimal total is "+bdtotal2);//11.4
+		
+		//converting from primitive double to Double wrapper
+		//class so that we can convert to string
+		BigDecimal bdx3 = new BigDecimal(new Double(x).toString() );
+		BigDecimal bdy3 = new BigDecimal(Double.toString(y) );
+		BigDecimal bdTotal3 = bdx3.add(bdy3);
+		System.out.println("BigDEcimal total3 is"+bdTotal3);
+		
+	}
+	
+	public static void halfEvenTests(){
+		double d = 102.125;
+		BigDecimal amount = new BigDecimal(Double.toString(d));
+		
+		amount = amount.setScale(2, RoundingMode.HALF_EVEN);
+		System.out.println("amount is "+amount);//102.12
+	}
+}

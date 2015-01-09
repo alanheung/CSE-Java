@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class MASE_Week2 {
+	static Scanner sc = new Scanner(System.in);
+
+	public static void switchEnumType(){
+		Direction theWay=null;
+		System.out.println("Enter the direction (n|s|e|w):");
+		String nsew = sc.next().toUpperCase();
+		boolean ok = true;
+		
+		switch(nsew){
+		case"N":
+			theWay=Direction.North;
+			break;
+		case"S":
+			theWay=Direction.South;
+			break;
+		case"E":
+			theWay=Direction.East;
+			break;
+		case"W":
+			theWay=Direction.West;
+			break;
+		}
+	}
+
+}

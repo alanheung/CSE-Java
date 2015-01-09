@@ -106,8 +106,4 @@ public class InputOutput {
 		String fullName = sc.nextLine();
 		return fullName;
 	}
-
-
-
-
 }//
