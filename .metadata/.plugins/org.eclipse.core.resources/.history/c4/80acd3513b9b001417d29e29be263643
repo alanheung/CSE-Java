@@ -1,0 +1,106 @@
+package ait.ie.maths;
+
+import java.util.Scanner;
+import java.util.Random;
+public class Driver
+{
+	static int[][] matrixA;
+	static int[][] matrixB;
+	static int N;
+	static void Popilate()
+	{
+		Random randomGenerator = new Random();
+		for(int r=0; r<matrixA.length; r++)
+        {
+           for(int c=0; c<matrixA[0].length; c++)
+           {
+               matrixA[r][c] = randomGenerator.nextInt(100);
+               matrixB[r][c] = randomGenerator.nextInt(100);
+           }
+        }
+	}
+	
+	static void Print()
+	{	
+		System.out.println("Matrix A = ");
+		for(int r=0; r<matrixA.length; r++)
+        {
+           for(int c=0; c<matrixA[0].length; c++)
+           {
+               System.out.print(matrixA[r][c]+" ");
+           }
+           System.out.println(" ");
+        }
+		System.out.println("\n\nMatrix B = ");
+		for(int r=0; r<matrixB.length; r++)
+        {
+           for(int c=0; c<matrixB[0].length; c++)
+           {
+               System.out.print(matrixB[r][c]+" ");
+           }
+           System.out.println(" ");
+        }
+	}
+
+	static void CalculateValues()
+	{
+		int minA=101, maxA=-1, minB=101, maxB=-1, sumA=0, sumB=0;
+		double avgA = 0, avgB=0;
+		
+		for(int r=0; r<matrixA.length; r++)
+        {
+           for(int c=0; c<matrixA[0].length; c++)
+           {
+        	   if(matrixA[r][c]<minA)
+        		   minA = matrixA[r][c];
+        	   if(matrixA[r][c]>maxA)
+        		   maxA = matrixA[r][c];
+        	   if(matrixB[r][c]<minB)
+        		   minB = matrixB[r][c];
+        	   if(matrixB[r][c]>maxB)
+        		   maxB = matrixB[r][c];
+        	   
+        	   sumA+=matrixA[r][c]; sumB+=matrixB[r][c];
+           }
+        }
+		System.out.println("\n\nResults for Matrix A:\nSum: "+sumA+"\nMin Value: "+minA+"\nMax value; "+maxA+"\nAverage:"+(sumA/(N*N)));
+		System.out.println("\n\nResults for Matrix B:\nSum: "+sumB+"\nMin Value: "+minB+"\nMax value; "+maxB+"\nAverage:"+(sumB/(N*N)));
+	}
+	static void AddSubMatrices(int opt)
+	{
+		
+		int[][] result = new int[N][N];
+		if(opt==1)
+			System.out.println("\n\nAdding Matrices - ");
+		else
+			System.out.println("\n\nSubtracting Matrices - ");
+		for(int r=0; r<matrixA.length; r++)
+        {
+           for(int c=0; c<matrixA[0].length; c++)
+           {
+        	   if(opt==1)
+        		   result[r][c] = matrixA[r][c]+matrixB[r][c];
+        	   else
+        		   result[r][c] = matrixA[r][c]-matrixB[r][c];
+        	   System.out.print(result[r][c]+" ");
+           }
+           System.out.println(" ");
+        }
+		
+	}
+    public static void main(String[]args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter the size of N");
+        N = in.nextInt();
+        matrixA = new int[N][N];
+        matrixB = new int[N][N];
+        Popilate();
+        Print();
+        CalculateValues();
+        AddSubMatrices(1);
+        System.out.println("\n\n ");
+        AddSubMatrices(0);
+
+    }
+}

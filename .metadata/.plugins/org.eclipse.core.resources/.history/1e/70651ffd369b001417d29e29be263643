@@ -1,0 +1,58 @@
+package ait.ie.maths;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class MatrixExercise {
+    static Scanner in = new Scanner(System.in);
+
+    public static void main(String[]args)
+    {
+        
+    	double average=0;
+        Random randomGenerator = new Random();
+        int[][] matrix = new int[userRow()][userCol()];
+         for(int r=0; r<matrix.length; r++)
+         {
+            for(int c=0; c<matrix[0].length; c++)
+            {
+                matrix[r][c] = randomGenerator.nextInt(100);
+                average+=matrix[r][c];
+                System.out.print(matrix[r][c]+"   ");
+            }
+            System.out.print("\n");
+         }
+        //System.out.println("The average value of the array is "+average/(row*col));
+        
+         int[][] matrix2 = new int[userRow()][userCol()];
+         for(int r=0; r<matrix2.length; r++)
+         {
+            for(int c=0; c<matrix2[0].length; c++)
+            {
+                matrix2[r][c] = randomGenerator.nextInt(100);
+                average+=matrix2[r][c];
+                System.out.print(matrix2[r][c]+"   ");
+            }
+            System.out.print("\n");
+         }
+    }
+    //user input
+    public static int userRow(){
+    	System.out.print("Enter number of rows for the Matrix: ");
+    	int row = in.nextInt();
+    	return row;
+    }
+    public static int userCol(){
+    	System.out.print("Enter number of columns for the Matrix: ");
+    	int col = in.nextInt();
+    	return col;
+    }
+    //min max average
+    
+    // sum difference
+    
+    //product of the two matrices
+    public static void product(){
+    	
+    }
+}

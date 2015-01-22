@@ -62,14 +62,14 @@
   <path value="C:/xampp/tomcat/lib/jasper.jar"/>
   <path value="C:/xampp/tomcat/lib/tomcat-i18n-es.jar"/>
   <path value="C:/xampp/tomcat/lib/tomcat-jdbc.jar"/>
-  <path value="C:/xampp/tomcat/lib/tomcat-util.jar"/>
   <path value="C:/xampp/tomcat/lib/catalina-tribes.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-util.jar"/>
   <path value="C:/xampp/tomcat/lib/catalina-ant.jar"/>
   <path value="C:/xampp/tomcat/lib/annotations-api.jar"/>
-  <path value="C:/xampp/tomcat/lib/tomcat-dbcp.jar"/>
   <path value="C:/xampp/tomcat/lib/jsp-api.jar"/>
-  <path value="C:/xampp/tomcat/lib/ecj-3.6.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-dbcp.jar"/>
   <path value="C:/xampp/tomcat/lib/servlet-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/ecj-3.6.jar"/>
   <path value="/JSFSearchV2/WebContent/WEB-INF/faces-config.xml">
    <libraries>
     <library class="faces-config">
@@ -86,9 +86,9 @@
   <el>
    <linked-el length="24" name="%0" offset="1672" path="%1"/>
    <linked-el length="84" name="%0" offset="398" path="%1"/>
-   <linked-el length="20" name="%0" offset="1436" path="%1"/>
-   <linked-el length="118" name="%0" offset="779" path="%1"/>
    <linked-el length="28" name="%0" offset="545" path="%1"/>
+   <linked-el length="118" name="%0" offset="779" path="%1"/>
+   <linked-el length="20" name="%0" offset="1436" path="%1"/>
    <linked-el length="20" name="%0" offset="1573" path="%1"/>
    <linked-el length="28" name="%0" offset="676" path="%1"/>
    <linked-el length="119" name="%0" offset="1099" path="%1"/>
@@ -112,9 +112,9 @@
    <linked-el length="17" name="%13" offset="363" path="%3"/>
    <linked-el length="24" name="%14" offset="1672" path="%1"/>
    <linked-el length="84" name="%14" offset="398" path="%1"/>
-   <linked-el length="20" name="%14" offset="1436" path="%1"/>
-   <linked-el length="118" name="%14" offset="779" path="%1"/>
    <linked-el length="28" name="%14" offset="545" path="%1"/>
+   <linked-el length="118" name="%14" offset="779" path="%1"/>
+   <linked-el length="20" name="%14" offset="1436" path="%1"/>
    <linked-el length="20" name="%14" offset="1573" path="%1"/>
    <linked-el length="28" name="%14" offset="676" path="%1"/>
    <linked-el length="119" name="%14" offset="1099" path="%1"/>

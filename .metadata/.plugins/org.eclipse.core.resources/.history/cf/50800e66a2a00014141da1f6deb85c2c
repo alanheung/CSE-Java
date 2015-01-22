@@ -1,0 +1,29 @@
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+public class email {
+	private WebDriver driver;
+	@Before
+	public void setUP(){
+		driver = new FirefoxDriver();
+		driver.get("file:///C:/Users/A00226316/Java/emailList/WebContent/index.html");
+	}
+	@Test
+	public void testTitle(){
+		assertEquals("Join Email List", driver.getTitle());
+	}
+	@Test
+	public void testCalculateBMI(){
+		//Get the height element and set the value
+		WebElement height = driver.findElement(By.id("heightCMS"));
+		height.clear();
+		height.sendKeys("160");
+	}
+}

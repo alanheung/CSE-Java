@@ -1,0 +1,14 @@
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class SalesTax {
+	private WebDriver driver;
+	@Before
+	public void setUP(){
+		driver = new FirefoxDriver();
+		driver.get("file:///C:/Users/A00226316/Java/Sales_Tax/WebContent/sales_tax.html");
+	}
+}

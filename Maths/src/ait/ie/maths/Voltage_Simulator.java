@@ -1,81 +1,158 @@
 package ait.ie.maths;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Voltage_Simulator {
 	static Scanner sc = new Scanner(System.in);
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
-		final int Voltage=1, AppliedVoltage=2, Resistance=3, Capacitance=4, Time=5, SIMULATOR=6, EXIT=0;
-		String userContinue="y";
-		while(userContinue.equalsIgnoreCase("y")){
-			switch(userChoice()){
-			case Voltage: 
+		final int Voltage=1, AppliedVoltage=2, Resistance=3, Capacitance=4, Time=5, Simulator=6, EXIT=0;
+		double V=0.00103, Vi=9, R=50000, C=0.00000175, t=0.00001;
+		int option = 0;
+		userChoice();
+		option = sc.nextInt();
+		while(option!=0){
+			switch(option){
+			case Voltage:{
+				System.out.println("Enter the following Values");
+				System.out.print("Applied Voltage: ");
+				Vi = sc.nextDouble();
+				System.out.print("Resistance: ");
+				R = sc.nextDouble();
+				System.out.print("Capacitance: ");
+				C = sc.nextDouble();
+				System.out.print("Time: ");
+				t = sc.nextDouble();
+				Voltage(Vi, R, t, C);
 				break;
-			case AppliedVoltage: 
+			}
+			case AppliedVoltage:{
+				System.out.println("Enter the following Values");
+				System.out.print("Voltage: ");
+				V = sc.nextDouble();
+				System.out.print("Resistance: ");
+				R = sc.nextDouble();
+				System.out.print("Capacitance: ");
+				C = sc.nextDouble();
+				System.out.print("Time: ");
+				t = sc.nextDouble();
+				AppliedVoltage(V, R, t, C);
 				break;
-			case Resistance: 
+			}
+			case Resistance:{
+				System.out.println("Enter the following Values");
+				System.out.print("Voltage: ");
+				V = sc.nextDouble();
+				System.out.print("Applied Voltage: ");
+				Vi = sc.nextDouble();
+				System.out.print("Capacitance: ");
+				C = sc.nextDouble();
+				System.out.print("Time: ");
+				t = sc.nextDouble();
+				Resistance(V, Vi, t, C);
 				break;
-			case Capacitance: 
+			}
+			case Capacitance:{
+				System.out.println("Enter the following Values");
+				System.out.print("Voltage: ");
+				V = sc.nextDouble();
+				System.out.print("Applied Voltage: ");
+				Vi = sc.nextDouble();
+				System.out.print("Resistance: ");
+				R = sc.nextDouble();
+				System.out.print("Time: ");
+				t = sc.nextDouble();
+				Capacitance(V, Vi, t, R);
 				break;
-			case Time: 
+			}
+			case Time:{
+				System.out.println("Enter the following Values");
+				System.out.print("Voltage: ");
+				V = sc.nextDouble();
+				System.out.print("Applied Voltage: ");
+				Vi = sc.nextDouble();
+				System.out.print("Resistance: ");
+				R = sc.nextDouble();
+				System.out.print("Capacitance: ");
+				C = sc.nextDouble();
+				Time(V, Vi, C, R);
 				break;
-			case Simulator: 
+			}
+			case Simulator:{
+				System.out.println("To run the sumulator please enter the following: ");
+				System.out.print("Applied Voltage: ");
+				Vi = sc.nextDouble();
+				System.out.print("Resistance: ");
+				R = sc.nextDouble();
+				System.out.print("Capacitance: ");
+				C = sc.nextDouble();
+				Simulator(Vi,R,C);
 				break;
+			}			
 			case EXIT:
-				userContinue="n";
 				break;
 			default:
 				System.out.println("Option does not exist, try again ");
+				break;
 			}
+			userChoice();
+			option = sc.nextInt();
 		}
-	}
-	public static int userChoice(){
+	}//
+
+	public static void userChoice(){
 		System.out.print("\nWhat do you want to do?");
-		System.out.print("\n1.Calculate Voltage \n2.Calculate Applied Voltage \n3.Calculate Resistance \n4.Calculate Capacitance \n5.Calculate time to reach a set voltage \n6.Simulator \n7.Exit ");
-		return sc.nextInt();	
+		System.out.print("\n1.Calculate Voltage \n2.Calculate Applied Voltage \n3.Calculate Resistance \n4.Calculate Capacitance \n5.Calculate time to reach a set voltage \n6.Simulator \n0.Exit ");
 	}
+
 	static DecimalFormat formatter = new DecimalFormat("00.##E0");
-	
-	static void AppliedVoltage(double V, double R, double t, double C)
-	{
-		double Vi = Enter formula here
-				FormatOutput("The applied voltage is ", Vi, "Volts");
-	}
+
 	static void Voltage(double Vi, double R, double t, double C)
 	{
-		double V = Enter formula here
-				FormatOutput("The outputted voltage is ", V, "Volts");
+		double V = Vi*(1-Math.exp((-t)/(R*C)));
+		//System.out.println("The outputted voltage is "+V+ " Volts");
+		FormatOutput("The outputted voltage is ", V, "Volts");
+	}
+	static void AppliedVoltage(double V, double R, double t, double C)
+	{
+		double Vi = V/(1-Math.exp((-t)/(R*C)));
+		System.out.println("The applied voltage is "+Vi+" Volts");
+		FormatOutput("The applied voltage is ", Vi, "Volts");
 	}
 	static void Resistance(double V, double Vi, double t, double C)
 	{
-		double R = Enter formula here
-				FormatOutput("The Resistance is ",R, " ohms");
+		double R = -t/(C*Math.log(1-V/Vi));
+		FormatOutput("The Resistance is ",R, " ohms");
 	}
 	static void Capacitance(double V, double Vi, double t, double R)
 	{
-		double C = Enter formula here
-				FormatOutput("The Capacitance is ",C, " F");
+		double C = -t/(R*Math.log(1-V/Vi));
+		FormatOutput("The Capacitance is ",C, " F");
 	}
 	static void Time(double V, double Vi, double C, double R)
 	{
-		double t = Enter formula here
-				FormatOutput("The time taken to reach this voltage is ",t, " sec");
-	}
-	static void Simulator(double Vi, double R, double C)
-	{
-		…….
+		double t = -R*C*Math.log(1-V/Vi);
+		FormatOutput("The time taken to reach this voltage is ",t, " sec");
 	}
 	static void FormatOutput(String s1, double d, String s2)
 	{
 		System.out.println(s1+ " "+d+" or "+formatter.format(d)+ " "+s2);
 	}
-	static void printMenu()
+	static void Simulator(double Vi, double R,  double C)
 	{
-		Refer to point 3
+		double t=1;
+		double V=0;
+		int step=6;
+		int stepT = 1;
+		System.out.println("t(usec)\t\tVoltage (V)");
+		System.out.println("----------------------------------------");
+		for(int i=0; i<7; i++)
+		{
+			V = Vi*(1-Math.exp((-t*Math.pow(10d, -step))/(R*C)));
+			System.out.println((stepT)+"\t\t"+V);
+			stepT*=10;
+			step--;
+		}
 	}
-
 }

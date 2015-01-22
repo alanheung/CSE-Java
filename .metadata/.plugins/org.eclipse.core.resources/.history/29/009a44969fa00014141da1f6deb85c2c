@@ -1,0 +1,46 @@
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+public class BMI {
+	private WebDriver driver;
+	@Before
+	public void setUP(){
+		driver = new FirefoxDriver();
+		driver.get("file:///C:/Users/A00226316/Java/BMI/WebContent/bmicalculator.html");
+	}
+
+	@Test
+	public void testTitle(){
+		assertEquals("BMI Calculator", driver.getTitle());
+	}
+
+	@Test
+	public void testCalculateTotal(){
+		//Get the subtotal element and set the value
+		WebElement height = driver.findElement(By.id("heightCMS"));
+		height.clear();
+		height.sendKeys("160");
+
+		//Get the TaxRate element and set the value
+		WebElement weight = driver.findElement(By.id("weightKg");
+		weight.clear();
+		weight.sendKeys("45");
+	}
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

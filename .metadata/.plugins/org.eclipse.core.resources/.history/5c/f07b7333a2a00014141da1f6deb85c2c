@@ -1,0 +1,21 @@
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+public class email {
+	private WebDriver driver;
+	@Before
+	public void setUP(){
+		driver = new FirefoxDriver();
+		driver.get("file:///C:/Users/A00226316/Java/emailList/WebContent/index.html");
+	}
+
+	@Test
+	public void testTitle(){
+		assertEquals("Join Email List", driver.getTitle());
+	}
+}

@@ -1,0 +1,38 @@
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+public class email {
+	private WebDriver driver;
+	@Before
+	public void setUP(){
+		driver = new FirefoxDriver();
+		driver.get("file:///C:/Users/A00226316/Java/emailList/WebContent/index.html");
+	}
+	@Test
+	public void testTitle(){
+		assertEquals("Join Email List", driver.getTitle());
+	}
+	@Test
+	public void testCalculateEmail(){
+		//Get the email1 element and set the value
+		WebElement email1 = driver.findElement(By.id("email_address1"));
+		email1.clear();
+		email1.sendKeys("alan@gmail.com");
+		//Get the email2 element and set the value
+		WebElement email2 = driver.findElement(By.id("email_address2"));
+		email2.clear();
+		email2.sendKeys("alan@gmail.com");
+		//Get the first name element and set the value
+		WebElement firstName = driver.findElement(By.id("first_name"));
+		firstName.clear();
+		firstName.sendKeys("alan");
+		
+	}
+}

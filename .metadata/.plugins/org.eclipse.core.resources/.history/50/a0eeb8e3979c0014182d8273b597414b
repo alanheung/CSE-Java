@@ -1,0 +1,142 @@
+import java.util.Scanner;
+
+public class Week03 {
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
+//		System.out.print("Please enter x: ");
+//		int x = sc.nextInt();
+//		System.out.print("Please enter y: ");
+//		int y = sc.nextInt();
+//		
+//		Week03 week3= new Week03();
+//		//by removing static you have to create an object reference to the class
+//		
+//		System.out.println("The sum: "+ week3.calculateSum(x,y));
+//		System.out.println("The product: "+ week3.calculateProduct(x,y));
+//		System.out.println("The difference: "+ week3.calculateDifference(x,y));
+//		System.out.println("The quotient: "+ week3.calculateQuotient(x,y));
+		
+//		System.out.print("Please enter the length: ");
+//		int length = sc.nextInt();
+//		System.out.print("Please enter the width: ");
+//		int width = sc.nextInt();
+//		System.out.print("Please enter the height: ");
+//		int height = sc.nextInt();
+//		System.out.println("The volume is "+ calcVolume(length,width,height));
+//		carPark();
+//		coordGeometry();
+//		System.out.print("Please enter opposite side: ");
+//		int opp = sc.nextInt();
+//		System.out.print("Please enter adjacent side: ");
+//		int adj = sc.nextInt();
+//		calcHypotenuse(opp, adj);
+		intPower();
+	}
+	
+	public static void intPower(){
+		System.out.print("Please enter the base: ");
+		int base = sc.nextInt();
+		System.out.print("Please enter the exponent: ");
+		int exponent = sc.nextInt();
+	    int result = 1;
+	    while (exponent > 0) {
+	        result = result * base;
+	        exponent--;
+	    }
+	}
+	
+	public static void calcHypotenuse(int opp, int adj){
+        double hypotenuse = Math.sqrt(Math.pow(opp, 2) + Math.pow(adj, 2));
+        System.out.println("The length of the hypotenuse is: " + hypotenuse);
+	}
+	
+	public static void coordGeometry(){
+		System.out.print("Please enter x1: ");
+		int x1 = sc.nextInt();
+		System.out.print("Please enter y1: ");
+		int y1 = sc.nextInt();
+		System.out.print("Please enter x2: ");
+		int x2 = sc.nextInt();
+		System.out.print("Please enter y2: ");
+		int y2 = sc.nextInt();
+		
+		//distance
+		double distance = Math.sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1));
+		double distance2 = Math.sqrt(Math.pow((x2-x1),2) +Math.pow((y2-y1),2));
+		System.out.println("The distance between the two points: " + distance);
+		distance(x1, x2, y1, y2);
+		
+		//midpoint
+		double mp1 = Math.ceil(x1+x2)/2; 		
+		double mp2 = Math.ceil(y1+y2)/2;
+		System.out.println("The midpoint: ("+ mp1 +", " + mp2 +")");
+		
+		//slope
+		double slope = (y2-y1)/(x2-x1);
+		System.out.println("The slope of a line: " + slope);
+	}
+	
+	public static void distance(int x1, int x2, int y1, int y2){
+		double ans = Math.sqrt(Math.pow((x2-x1),2) +Math.pow((y2-y1),2));
+		System.out.println("The distance between the two points: " + ans);
+	}
+	
+	public static int midpoint(int a, int b){
+		return (a+b)/2;
+	}
+	
+	public static double slope(int x1, int x2, int y1, int y2){
+		return (y2-y1)/(x2-x1);
+	}
+	
+	
+	public static void carPark(){
+		System.out.print("How many cars are involved: ");
+		double numberCars = sc.nextDouble();
+		double time = 0.0;
+		for(int i=0; i < numberCars; i++){
+			System.out.print("Please enter the time(in hours) the car was parked for: ");
+			time = sc.nextDouble();
+			System.out.println("The cars: "+ numberCars);
+			System.out.println("The time: "+ time);
+			System.out.println("The total charge: "+ calculateCharges(time));
+		}
+	}
+	
+	public static double calculateCharges(double time){
+		final int MAX_CHARGE=16, MIN_CHARGE=0;
+		final int MAX_TIME=8, MIN_TIME=1, HOURLY_FEE=3;
+		double extraCharge = 0, extraTime =0, totalCharge=0;
+		if(time < 1.0){
+			totalCharge = MIN_CHARGE;
+		}else if(time >= 8.0){
+			totalCharge = MAX_CHARGE;
+		}else{
+			extraTime = Math.ceil(time - 1);
+			extraCharge = extraTime* 3;
+			totalCharge = MIN_CHARGE + extraCharge;
+		}
+		return totalCharge;
+	}
+	
+	public static int calcVolume(int a, int b, int c){
+		return a*b*c;
+	}
+	
+	public  int calculateSum(int a, int b){
+		return a+b;
+	}
+	
+	public  int calculateProduct(int a, int b){
+		return a*b;
+	}
+	
+	public  int calculateDifference(int a, int b){
+		return a-b;
+	}
+	
+	public  int calculateQuotient(int a, int b){
+		return a%b;
+	}
+
+}

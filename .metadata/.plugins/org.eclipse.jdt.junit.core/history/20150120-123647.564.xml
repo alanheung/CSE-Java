@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BMI" project="BMI" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="BMI" time="21.298">
+    <testcase name="testTitle" classname="BMI" time="11.265"/>
+    <testcase name="testCalculateBMI" classname="BMI" time="10.033"/>
+  </testsuite>
+</testrun>

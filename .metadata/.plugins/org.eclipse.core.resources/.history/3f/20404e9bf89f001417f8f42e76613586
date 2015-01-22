@@ -1,0 +1,25 @@
+class Tag{
+	Tag(int marker){
+		System.out.println("Tag( "+ marker +" )");
+	}
+}
+
+class Card{
+	Tag t1= new Tag(1);
+	Card(){
+		System.out.println("Card()");
+		t3 = new Tag(33);
+	}
+	Tag t2 = new Tag(2);
+	void F(){
+		System.out.println("f()");
+	}
+}
+public class OrderOfInitialisation {
+
+	public static void main(String[] args) {
+		Card c = new Card();
+		c.f();
+	}
+
+}//

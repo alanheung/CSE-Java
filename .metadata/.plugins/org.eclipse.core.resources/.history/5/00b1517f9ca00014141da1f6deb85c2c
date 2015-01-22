@@ -1,0 +1,10 @@
+import static org.junit.Assert.*;
+
+public class SalesTax {
+	private WebDriver driver;
+	@Before
+	public void setUP(){
+		driver = new FirefoxDriver;
+		driver.get("file:///C:/Users/A00226316/Java/Sales_Tax/WebContent/sales_tax.html")
+	}
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BMI" project="BMI" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="BMI" time="21.22">
+    <testcase name="testTitle" classname="BMI" time="11.234"/>
+    <testcase name="testCalculateBMI" classname="BMI" time="9.986">
+      <error>org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"calculate"}
+Command duration or timeout: 31 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
+System info: host: 'W301-A41', ip: '192.168.223.91', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_04'
+Session ID: f8585fcc-8f59-4362-9672-044921464923
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=4.0.1, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)&#13;
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)&#13;
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)&#13;
+	at org.openqa.selenium.By$ById.findElement(By.java:214)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)&#13;
+	at BMI.testCalculateBMI(BMI.java:38)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:601)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)&#13;
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"calculate"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
+System info: host: 'W301-A41', ip: '192.168.223.91', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_04'
+Driver info: driver.version: unknown&#13;
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/A00226~1/AppData/Local/Temp/anonymous4795664368976364937webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641)&#13;
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/A00226~1/AppData/Local/Temp/anonymous4795664368976364937webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650)&#13;
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/A00226~1/AppData/Local/Temp/anonymous4795664368976364937webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635)&#13;
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/A00226~1/AppData/Local/Temp/anonymous4795664368976364937webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640)&#13;
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/Users/A00226~1/AppData/Local/Temp/anonymous4795664368976364937webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

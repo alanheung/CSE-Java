@@ -1,0 +1,23 @@
+import org.openqa.selenium.WebDriver;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class NavigateToUrlTest {
+	private WebDriver driver;
+	
+	@Before
+	public void setUp(){
+		driver = new FirefoxDriver();
+	}
+	
+	@Test
+	public void testTitle(){
+		driver.get("http://www.google.com");
+		assertEquals("Google", driver.getTitle());
+	}
+}

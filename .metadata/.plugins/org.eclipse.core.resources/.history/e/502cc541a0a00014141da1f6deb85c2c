@@ -1,0 +1,55 @@
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+public class BMI {
+	private WebDriver driver;
+	@Before
+	public void setUP(){
+		driver = new FirefoxDriver();
+		driver.get("file:///C:/Users/A00226316/Java/BMI/WebContent/bmicalculator.html");
+	}
+
+	@Test
+	public void testTitle(){
+		assertEquals("BMI Calculator", driver.getTitle());
+	}
+
+	@Test
+	public void testCalculateBMI(){
+		//Get the height element and set the value
+		WebElement height = driver.findElement(By.id("heightCMS"));
+		height.clear();
+		height.sendKeys("160");
+
+		//Get the weight element and set the value
+		WebElement weight = driver.findElement(By.id("weightKg"));
+		weight.clear();
+		weight.sendKeys("45");
+		
+		//Click on the Calculate Button
+		WebElement calculateButton = driver.findElement(By.id("calculate"));
+		calculateButton.click();
+		
+		//Get the BMI element and verify its value
+		WebElement BMIField = driver.findElement(By.id("total"));
+		assertEquals("17.6", BMIField.getAttribute("bmi"));
+		
+		//Get the BMI element and verify its value
+		WebElement BMICategoryField = driver.findElement(By.id("total"));
+		assertEquals("17.6", BMICategoryField.getAttribute("bmi_category"));
+	}
+	@After
+	public void tearDown() throws Exception{
+		//Close the browser
+		driver.quit();
+	}
+
+}
