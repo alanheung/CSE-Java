@@ -1,0 +1,35 @@
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class MoneyTest {
+
+	@Before
+	public void setUp() throws Exception {
+	}
+
+	@Test
+	public void constructorShouldSetAmountAndCurrency(){
+		Money m = new Money(10,"USD");
+		assertEquals(10, m.getAmount());
+		assertEquals("USD", m.getCurrency());
+
+		m = new Money(20,"EUR");
+		assertEquals(20, m.getAmount());
+		assertEquals("EUR", m.getCurrency());
+
+		m = new Money(15,"GBP");
+		assertEquals(15, m.getAmount());
+		assertEquals("GBP", m.getCurrency());
+	}
+	
+	@Test
+	public void amountAndCurrencyEqual(){
+		Money m = new Money(10,"USD");
+		assertEquals(10, m.getAmount());
+		assertEquals("USD", m.getCurrency());
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package com.mase.inheritance;
+
+public class Art{
+	Art(){System.out.println("Art constructor");}
+	public void methodX(){System.out.println("Art::methodX");}
+	@Override
+	public String toString(){return "Art::toString";}
+	}
+
+	public class Drawing extends Art{
+		Drawing(){System.out.println("Drawing constructor");}
+		@Override
+		public void methodX(){System.out.println("Drawing::methodX");}
+		@Override
+		public String toString(){return "Drawing::toString";}
+	}
+
+	public class Cartoon extends Drawing extends Art{
+
+	}
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,34 @@
+
+public class ImmutableExamples {
+	public static void main(String[] args){
+		immutable();
+	}
+	
+	public static void immutable(){
+		integerExample();
+	}
+	
+	public static void integerExample(){
+		//integer is immutable
+		Integer dataWrapper = new Integer(5);
+		System.out.println("dataWrapper ref (before)== "+
+				Integer.toHexString(System.identityHashCode(dataWrapper)));
+		Integer value = methodInteger(dataWrapper);
+		System.out.println("dataWrapper ref (after)== "+
+				Integer.toHexString(System.identityHashCode(dataWrapper)));
+		System.out.println(value + dataWrapper);
+	}
+	
+	public static Integer methodInteger(Integer x){
+		// public static Integer methodInteger(final Integer x){ //x++; has an error as it is immutable
+		System.out.println("x ref (before x++)== "+
+				Integer.toHexString(System.identityHashCode(x)));
+
+		Integer y = x+10;
+		x++;
+		System.out.println("x ref (after x++)=="+ 
+				Integer.toHexString(System.identityHashCode(x)));
+
+		return y;
+	}
+}

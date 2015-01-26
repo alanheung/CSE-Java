@@ -1,0 +1,9 @@
+
+public class ImmutableExamples {
+	public static void main(String[] args){
+		immutable();
+	}
+	public static void immutable(){
+		
+	}
+}

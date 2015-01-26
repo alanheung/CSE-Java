@@ -1,0 +1,9 @@
+package com.mase.inheritance;
+
+public class Cartoon extends Drawing{
+
+	public static void main(String[] args) {
+
+	}
+
+}

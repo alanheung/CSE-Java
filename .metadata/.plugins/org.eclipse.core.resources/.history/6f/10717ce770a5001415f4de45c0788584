@@ -1,0 +1,16 @@
+package com.oop1.inheritance;
+
+class ClassA{
+	@Override
+	public String toString(){
+		return "Class A";
+	}
+}
+
+public class ClassB extends ClassA{
+@Override
+	public static void main(String[] args) {
+
+	}
+
+}

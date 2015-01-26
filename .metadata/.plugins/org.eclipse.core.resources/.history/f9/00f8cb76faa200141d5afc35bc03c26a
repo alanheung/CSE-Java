@@ -1,0 +1,18 @@
+
+public class ImmutableExamples {
+	public static void main(String[] args){
+		immutable();
+	}
+	public static void immutable(){
+		integerExample();
+	}
+	public static void integerExample(){
+		//integer is immutable
+		Integer dataWrapper = new Integer(5);
+		System.out.println("dataWrapper ref (before)== ");
+		Integer.toHexString(System.identityHashCode(dataWrapper));
+		Integer value = methodInteger(dataWrapper);
+		System.out.println("dataWrapper ref (before)== ");
+		Integer.toHexString(System.identityHashCode(dataWrapper));
+	}
+}

@@ -1,0 +1,191 @@
+import static org.junit.Assert.assertEquals;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class email {
+	private WebDriver driver;
+	@Before
+	public void setUP(){
+		driver = new FirefoxDriver();
+		driver.get("file:///C:/Users/A00226316/Java/emailList/WebContent/index.html");
+	}
+	@Test
+	public void testTitle(){
+		assertEquals("Join Email List", driver.getTitle());
+	}
+//	@Test
+//	public void testCalculateEmail(){
+//		//Get the email1 element and set the value
+//		WebElement email1 = driver.findElement(By.id("email_address1"));
+//		email1.clear();
+//		email1.sendKeys("alan@gmail.com");
+//		
+//		//Get the email2 element and set the value
+//		WebElement email2 = driver.findElement(By.id("email_address2"));
+//		email2.clear();
+//		email2.sendKeys("alan@gmail.com");
+//		
+//		//Get the first name element and set the value
+//		WebElement firstName = driver.findElement(By.id("first_name"));
+//		firstName.clear();
+//		firstName.sendKeys("alan");
+//		
+//		//Click on the Join Our List Button
+//		WebElement joinButton = driver.findElement(By.id("button"));
+//		joinButton.click();
+//		
+//		//Check that emails match
+//		WebElement emailCheck = driver.findElement(By.id("email_address1"));
+//		String emailText = emailCheck.getText(); 
+//		assertEquals("alan@gmail.com", emailText);
+//		
+//		WebElement emailCheck2 = driver.findElement(By.id("email_address2"));
+//		String emailText2 = emailCheck2.getText(); 
+//		assertEquals("alan@gmail.com", emailText2);
+//		
+//		//check both are equal
+//		assertEquals(emailText, emailText2);
+//		
+//		//Check if fields are empty and if so error message, email_address1_error, email_address2_error, first_name_error
+//
+//		//check that title of new page is Join Email List
+//		assertEquals("Join Email List", driver.getTitle());
+//	}
+	
+	@Test
+	public void testJoinListSuccess(){
+		//Get the first email address element and set the value
+		WebElement emailAddress1Field = driver.findElement(By.id("email_address1"));
+		emailAddress1Field.clear();
+		emailAddress1Field.sendKeys("alan@alan.com");
+		//Get the second email address element and set the value
+		WebElement emailAddress2Field = driver.findElement(By.id("email_address2"));
+		emailAddress2Field.clear();
+		emailAddress2Field.sendKeys("alan@alan.com");
+		//Get the second email address element and set the value
+		WebElement nameField = driver.findElement(By.id("first_name"));
+		nameField.clear();
+		nameField.sendKeys("Alan");
+		//Click on the Join Our List Button
+		WebElement joinButton = driver.findElement(By.id("join_list"));
+		joinButton.click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		assertEquals("Thanks for joining", driver.getTitle());
+		WebElement heading=driver.findElement(By.id("h1"));
+		assertEquals("Thanks for joining our email list!", heading.getText());
+		assertEquals("hello", "hello");
+	}
+	
+	@Test
+	public void testAllFieldsEmpty(){
+		//Get the first email address element and set the value
+		WebElement emailAddress1Field = driver.findElement(By.id("email_address1"));
+		emailAddress1Field.clear();
+
+		//Get the second email address element and set the value
+		WebElement emailAddress2Field = driver.findElement(By.id("email_address2"));
+		emailAddress2Field.clear();
+
+		//Get the second email address element and set the value
+		WebElement nameField = driver.findElement(By.id("first_name"));
+		nameField.clear();
+
+		//Click on the Join Our List Button
+		WebElement joinButton = driver.findElement(By.id("join_list"));
+		joinButton.click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		assertEquals("Join Email List", driver.getTitle());
+		WebElement errorMsgEmail=driver.findElement(By.id("email_address1_error"));
+		assertEquals("This field is required.", errorMsgEmail.getText());
+		WebElement errorMsgName=driver.findElement(By.id("first_name_error"));
+		assertEquals("This field is required.", errorMsgName.getText());
+	}
+	
+	@Test
+	public void testEmailFieldsEmpty(){
+		//Get the first email address element and set the value
+		WebElement emailAddress1Field = driver.findElement(By.id("email_address1"));
+		emailAddress1Field.clear();
+
+		//Get the second email address element and set the value
+		WebElement emailAddress2Field = driver.findElement(By.id("email_address2"));
+		emailAddress2Field.clear();
+
+		//Get the second email address element and set the value
+		WebElement nameField = driver.findElement(By.id("first_name"));
+		nameField.clear();
+		nameField.sendKeys("alan");
+		//Click on the Join Our List Button
+		WebElement joinButton = driver.findElement(By.id("join_list"));
+		joinButton.click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		assertEquals("Join Email List", driver.getTitle());
+		WebElement errorMsgEmail=driver.findElement(By.id("email_address1_error"));
+		assertEquals("This field is required.", errorMsgEmail.getText());
+		WebElement errorMsgName=driver.findElement(By.id("first_name_error"));
+		assertEquals("", errorMsgName.getText());
+	}
+	
+	@Test
+	public void testNameFieldsEmpty(){
+		//Get the first email address element and set the value
+		WebElement emailAddress1Field = driver.findElement(By.id("email_address1"));
+		emailAddress1Field.clear();
+		emailAddress1Field.sendKeys("alan@alan.com");
+		//Get the second email address element and set the value
+		WebElement emailAddress2Field = driver.findElement(By.id("email_address2"));
+		emailAddress2Field.clear();
+		emailAddress2Field.sendKeys("allen@allen.com");
+		//Get the second email address element and set the value
+		WebElement nameField = driver.findElement(By.id("first_name"));
+		nameField.clear();
+		//Click on the Join Our List Button
+		WebElement joinButton = driver.findElement(By.id("join_list"));
+		joinButton.click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		assertEquals("Join Email List", driver.getTitle());
+		WebElement errorMsgEmail=driver.findElement(By.id("email_address1_error"));
+		assertEquals("", errorMsgEmail.getText());
+		WebElement errorMsgName=driver.findElement(By.id("first_name_error"));
+		assertEquals("This field is required", errorMsgName.getText());
+	}
+	
+	@Test
+	public void testEmailFieldsNotMatching(){
+		//Get the first email address element and set the value
+		WebElement emailAddress1Field = driver.findElement(By.id("email_address1"));
+		emailAddress1Field.clear();
+		emailAddress1Field.sendKeys("alan@alan.com");
+		//Get the second email address element and set the value
+		WebElement emailAddress2Field = driver.findElement(By.id("email_address2"));
+		emailAddress2Field.clear();
+		emailAddress2Field.sendKeys("allen@allen.com");
+		//Get the second email address element and set the value
+		WebElement nameField = driver.findElement(By.id("first_name"));
+		nameField.clear();
+		nameField.sendKeys("alan");
+		//Click on the Join Our List Button
+		WebElement joinButton = driver.findElement(By.id("join_list"));
+		joinButton.click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		assertEquals("Join Email List", driver.getTitle());
+		WebElement errorMsgEmail=driver.findElement(By.id("email_address2_error"));
+		assertEquals("This entry must equal first entry.", errorMsgEmail.getText());
+		WebElement errorMsgName=driver.findElement(By.id("first_name_error"));
+		assertEquals("", errorMsgName.getText());
+	}
+	
+	@After
+	public void tearDown() throws Exception{
+		//Close the browser
+		driver.quit();
+	}
+}

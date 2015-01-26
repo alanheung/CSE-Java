@@ -1,0 +1,21 @@
+package com.oop1.inheritance;
+
+class ClassA{
+	@Override
+	public String toString(){
+		return "Class A";
+	}
+}
+
+public class ClassB extends ClassA{
+	@Override
+	public String toString() {
+		return "Class B";
+	}
+
+	public static void main (String[]args){
+		ClassA a1 = new ClassA();
+		ClassA a2 = new ClassB();
+		a1 = a2;
+	}
+}
