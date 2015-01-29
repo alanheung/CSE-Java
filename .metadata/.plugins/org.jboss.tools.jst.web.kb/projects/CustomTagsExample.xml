@@ -5,7 +5,6 @@
  <paths>
   <path value="C:/xampp/tomcat/lib/catalina.jar"/>
   <path value="C:/Users/A00226316/.m2/repository/com/sun/faces/jsf-api/2.1.6/jsf-api-2.1.6.jar"/>
-  <path value="C:/xampp/tomcat/lib/ecj-3.7.jar"/>
   <path value="/CustomTagsExample/WebContent/WEB-INF/faces-config.xml">
    <libraries>
     <library class="faces-config">
@@ -14,6 +13,7 @@
     </library>
    </libraries>
   </path>
+  <path value="C:/xampp/tomcat/lib/ecj-3.7.jar"/>
   <path value="C:/xampp/tomcat/lib/tomcat-coyote.jar"/>
   <path value="C:/xampp/tomcat/lib/tomcat-i18n-es.jar"/>
   <path value="C:/xampp/tomcat/lib/tomcat-jdbc.jar"/>
@@ -155,6 +155,7 @@
   <path value="C:/xampp/tomcat/lib/jasper-el.jar"/>
  </paths>
  <validation>
+  <core validator-id="jsf-verification"/>
   <el>
    <linked-el length="20" name="%0" offset="466" path="%1"/>
    <linked-el length="20" name="%0" offset="719" path="%2"/>

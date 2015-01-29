@@ -1,0 +1,43 @@
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+
+public class InvestmentValueTest {
+
+	@Before
+	public void setUp() throws Exception {
+		InvestmentValue inv1 = new InvestmentValue(0,0);
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	public void testGettersAndSetters() {
+		InvestmentValue inv1 = new InvestmentValue(0,0);
+		inv1.setYear(3);
+		assertEquals(3,inv1.getYear());
+		inv1.setAmount(1000);
+		assertEquals(1000,inv1.getAmount());
+		
+	}
+	
+	@Test
+	public void testGetRate(){
+		InvestmentValue inv1 = new InvestmentValue(0,0);
+		assertEquals("0.02",inv1.getRate(2999));
+		assertEquals("0.05",inv1.getRate(3999));
+		assertEquals("0.07",inv1.getRate(6999));
+	}
+	
+	@Test
+	public void testCalculateInvestment() {
+		assertEquals("1061", InvestmentValue.calculateInvestment(3, 1000));
+		assertEquals("2122", InvestmentValue.calculateInvestment(3, 2000));
+	}
+
+}

@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+
+public class InvestmentValue {
+		private final static double RATE1=0.02;
+		private final static double RATE2=0.05;
+		private final static double RATE3=0.07;
+
+		
+		public static double calculateInvestment(int year, int amount){
+			double total=0;
+			if(amount >= 1000 && amount < 3000){
+				//rate is 2%
+				for(int i=0; i<year; i++){
+					total=amount*(1+RATE1);
+				}
+			}else if(amount > 3000 && amount < 5000){
+				//rate is 5%
+			}else if(amount > 5000 && amount <= 10000){
+				// rate is 7%
+			}
+			return total;
+		}
+		
+	
+
+}

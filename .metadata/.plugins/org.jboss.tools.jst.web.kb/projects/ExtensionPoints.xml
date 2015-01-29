@@ -3,7 +3,6 @@
  <depends-on-projects/>
  <used-by-projects/>
  <paths>
-  <path value="C:/Users/A00226316/.m2/repository/org/atmosphere/atmosphere-compat-jbossweb/1.0.0.RC1/atmosphere-compat-jbossweb-1.0.0.RC1.jar"/>
   <path value="C:/Users/A00226316/.m2/repository/org/primefaces/primefaces/3.5/primefaces-3.5.jar">
    <libraries>
     <library class="faces-config">
@@ -16,6 +15,7 @@
     </library>
    </libraries>
   </path>
+  <path value="C:/Users/A00226316/.m2/repository/org/atmosphere/atmosphere-compat-jbossweb/1.0.0.RC1/atmosphere-compat-jbossweb-1.0.0.RC1.jar"/>
   <path value="C:/Users/A00226316/.m2/repository/org/atmosphere/atmosphere-compat-tomcat7/1.0.0.RC1/atmosphere-compat-tomcat7-1.0.0.RC1.jar"/>
   <path value="C:/xampp/tomcat/lib/catalina.jar"/>
   <path value="C:/Users/A00226316/.m2/repository/com/sun/faces/jsf-api/2.1.6/jsf-api-2.1.6.jar"/>
@@ -157,9 +157,9 @@
   </path>
   <path value="C:/xampp/tomcat/lib/catalina-ant.jar"/>
   <path value="C:/xampp/tomcat/lib/annotations-api.jar"/>
-  <path value="C:/Users/A00226316/.m2/repository/org/atmosphere/atmosphere-runtime/1.0.0.RC1/atmosphere-runtime-1.0.0.RC1.jar"/>
-  <path value="C:/xampp/tomcat/lib/tomcat-dbcp.jar"/>
   <path value="C:/Users/A00226316/.m2/repository/org/primefaces/themes/cupertino/1.0.8/cupertino-1.0.8.jar"/>
+  <path value="C:/xampp/tomcat/lib/tomcat-dbcp.jar"/>
+  <path value="C:/Users/A00226316/.m2/repository/org/atmosphere/atmosphere-runtime/1.0.0.RC1/atmosphere-runtime-1.0.0.RC1.jar"/>
   <path value="C:/xampp/tomcat/lib/servlet-api.jar"/>
   <path value="C:/xampp/tomcat/lib/el-api.jar"/>
   <path value="C:/xampp/tomcat/lib/jasper-el.jar"/>
@@ -174,9 +174,9 @@
    <linked-el length="25" name="%5" offset="1412" path="%4"/>
    <linked-el length="27" name="%6" offset="1193" path="%4"/>
    <linked-el length="26" name="%6" offset="1295" path="%4"/>
-   <linked-el length="9" name="%7" offset="1505" path="%4"/>
+   <linked-el length="27" name="%7" offset="1193" path="%4"/>
    <linked-el length="26" name="%8" offset="1295" path="%4"/>
-   <linked-el length="27" name="%9" offset="1193" path="%4"/>
+   <linked-el length="9" name="%9" offset="1505" path="%4"/>
   </el>
  </validation>
  <aliases>
@@ -187,9 +187,9 @@
   <alias
    path="\ExtensionPoints\src\main\java\de\thomasasel\jsf\CustomStateManager.java" value="%0"/>
   <alias path="de.thomasasel.jsf.CustomStateManager" value="%2"/>
-  <alias path="postBean.inputMessage" value="%9"/>
+  <alias path="msg" value="%9"/>
   <alias path="postBean.postMessage" value="%8"/>
-  <alias path="msg" value="%7"/>
+  <alias path="postBean.inputMessage" value="%7"/>
   <alias path="/ExtensionPoints/WebContent/WEB-INF/faces-config.xml" value="%1"/>
  </aliases>
 </kb-project>

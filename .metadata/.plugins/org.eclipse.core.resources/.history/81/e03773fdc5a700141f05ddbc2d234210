@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+
+public class InvestmentValue {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Please enter investment amount ");
+		int investment = sc.nextInt();
+	}
+
+}

@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+
+public class InvestmentValue {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Please enter investment amount ");
+		int investment = sc.nextInt();
+		System.out.print("Please enter duration in years ");
+		int years = sc.nextInt();
+		
+		if(investment >= 1000 && investment < 3000){
+			//rate is 2%
+		}else if(investment > 3000 && investment < 5000){
+			//rate is 5%
+		}else if(investment > 5000 && investment <= 10000){
+			// rate is 7%
+		}
+		
+	}
+
+}
