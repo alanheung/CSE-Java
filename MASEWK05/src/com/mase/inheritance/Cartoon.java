@@ -1,13 +1,13 @@
 package com.mase.inheritance;
 
-class Art{
+class Art {
 	Art(){System.out.println("Art constructor");}
 	public void methodX(){System.out.println("Art::methodX");}
 	@Override
 	public String toString(){return "Art::toString";}
 }
 
-class Drawing extends Art{
+class Drawing extends Art {
 	Drawing(){System.out.println("Drawing constructor");}
 	@Override
 	public void methodX(){System.out.println("Drawing::methodX");}
@@ -15,7 +15,7 @@ class Drawing extends Art{
 	public String toString(){return "Drawing::toString";}
 }
 
-public class Cartoon extends Drawing{
+public class Cartoon extends Drawing {
 	Cartoon(){System.out.println("Cartoon constructor");}
 	@Override
 	public void methodX(){System.out.println("Cartoon::methodX");}
@@ -31,12 +31,14 @@ public class Cartoon extends Drawing{
 
 	public static void methodY(Art a){
 		a.methodX();// methodX from Cartoon
-		//		a.y();//error - art has no methodY()
+		//		a.y();//error - art has no method "Y()"
+		((Cartoon)a).y(); //you can down cast the method y to cartoon so art can inherit the "y()"
+		// analogy every male is human, but not every human is male
 	}
 
 	public static void upcasting(){
 		// upcasting (implicity done)
-		// a reference of type X can refer to an object of type X or any aubtype of X
+		// a reference of type X can refer to an object of type X or any subtype of X
 
 		Art a1 = new Art(); // Art constructor
 		System.out.println(a1); // Art::toString()
@@ -51,10 +53,10 @@ public class Cartoon extends Drawing{
 		System.out.println(d1); // Drawing::toString(), object is drawing, to string exists
 
 		Drawing d2 = new Cartoon();// Art constructor, Drawing constructor, Cartoon constructor
-		System.out.println(d2); // Drawing::toString()
+		System.out.println(d2); // Drawing::toString() there is no to string in cartoon so it gets it from drawing
 
 		Cartoon c1 = new Cartoon(); // Art constructor, Drawing constructor, Cartoon constructor
-		System.out.println(c1); // Drawing::toString()
+		System.out.println(c1); // Drawing::toString() there is no to string in cartoon so it gets it from drawing
 	}
 	public static void downcasting(){
 		// downcasting (explicitly done)
@@ -83,14 +85,14 @@ public class Cartoon extends Drawing{
 		// ClassCastExceptions==================================================================
 		// A ref of type X *cannot* refer to an object of a superclass (i.e. up the hierarchy)
 		
-		// A Drawing reference cannot refer to an Art object
-		Drawing d4 = (Drawing)new Art(); // ClassCastException, basically downcasting Art to Drawing
-		
-		// A Cartoon reference cannot refer to an Art object
-		Cartoon c3 = (Cartoon)new Art(); // ClassCastException
-		
-		// A Drawing reference cannot refer to an Art object
-		Cartoon c4 = (Cartoon)new Drawing(); // ClassCastException
+//		// A Drawing reference cannot refer to an Art object
+//		Drawing d4 = (Drawing)new Art(); // ClassCastException, basically downcasting Art to Drawing
+//		
+//		// A Cartoon reference cannot refer to an Art object
+//		Cartoon c3 = (Cartoon)new Art(); // ClassCastException
+//		
+//		// A Drawing reference cannot refer to an Art object
+//		Cartoon c4 = (Cartoon)new Drawing(); // ClassCastException
 		// ClassCastExceptions==================================================================
 	}
 }//end

@@ -1,0 +1,20 @@
+package com.ait;
+
+import java.util.Scanner;
+
+public class ProductApp {
+
+	public static void main(String[] args) {
+		//Display a welcome message
+		System.out.println("Welcome to the Product Selector");
+		System.out.println();
+	}
+	
+	//Perform 1 or more selections
+	Scanner sc = new Scanner(System.in);
+	String choice = "y";
+	while (choice.IgnoresCase("y")){
+		System.out.println("Please enter product code");
+	}
+
+}//

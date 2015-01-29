@@ -1,0 +1,81 @@
+package com.mase.shadowing;
+
+class A{
+	public int i=10;
+	private int j=20;
+	int m=1;
+
+	public void x(){
+		System.out.println("A::x()");
+	}
+	// static methods never overridden( they are hiding and will compile)
+	// http://coderanch.com/how-to/java/OverridingVsHiding
+	public static void sm(){
+		System.out.println("A::sm()");
+	}
+}
+
+class B extends A{
+	private int i=30;
+	public int k=40;
+	int m=2;
+
+	@Override
+	public void x(){
+		System.out.println("B::x()");
+	}		//Override not available in Eclipse
+	public static void sm(){
+		System.out.println("B::sm()");
+	}
+}
+
+class C extends B{
+	int m=3;
+
+	@Override
+	public void x(){
+		System.out.println("C::x()");
+	}	
+	public static void sm(){
+		System.out.println("C::sm()");
+	}
+}
+
+
+public class TestClass {
+
+	public static void main(String[] args) {
+		C c = new C();
+		//		System.out.println(c.j);//error - j has private access in B
+		//		System.out.println(c.j);//error - j has private access in A
+		System.out.println(c.k);//40
+
+		//shadowing, talking to reference NOT object
+		System.out.println(((A)c).i);//10
+		System.out.println(c.m);//3
+		System.out.println(((B)c).m);//2
+		System.out.println(((A)c).m);//1
+		//		
+		//overriding, this is polymorphism
+		A a = new C();
+		a.x();//C::x()
+
+		a=new B();
+		a.x();//B::x()
+
+		a=new A();
+		a.x();//A::x()
+
+		// cant access the A version with a C object; it is overriden
+		//even though I cast the ref - the re determines the INTERFACE
+		//i.e. the methods you can access
+
+		a=new C();
+		((A)a).x();//C::x()
+
+		A aref = new C();
+		System.out.println(aref.m);//1
+		aref.x();//C::x()
+		aref.sm(); // A::sm
+	}
+}//

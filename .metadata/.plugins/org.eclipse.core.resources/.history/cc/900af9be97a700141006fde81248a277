@@ -1,0 +1,7 @@
+package com.ait;
+
+public class ProductDB{
+	public static ProductDB getProduct(String productCode){
+
+	}
+}

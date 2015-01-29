@@ -178,7 +178,6 @@
   <path value="C:/Users/A00226316/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar"/>
  </paths>
  <validation>
-  <core validator-id="jsf-verification"/>
   <el>
    <linked-el length="31" name="%0" offset="1917" path="%1"/>
    <linked-el length="25" name="%2" offset="350" path="%1"/>

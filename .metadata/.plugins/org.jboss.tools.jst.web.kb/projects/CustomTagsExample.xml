@@ -155,7 +155,6 @@
   <path value="C:/xampp/tomcat/lib/jasper-el.jar"/>
  </paths>
  <validation>
-  <core validator-id="jsf-verification"/>
   <el>
    <linked-el length="20" name="%0" offset="466" path="%1"/>
    <linked-el length="20" name="%0" offset="719" path="%2"/>
