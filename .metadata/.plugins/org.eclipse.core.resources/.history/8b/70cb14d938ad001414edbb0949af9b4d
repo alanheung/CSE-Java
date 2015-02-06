@@ -1,0 +1,22 @@
+import static org.junit.Assert.*;
+import junitparams.JUnitParamsRunner;
+import junitparams.Parameters;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+@RunWith(JUnitParamsRunner.class)
+
+public class CalculateFareTest {
+
+	@Parameters
+	private static final Object[] getFares(){
+		return new Object[]{
+				new Object[]{3,2000,2122.42},
+				new Object[]{3,4000,4630.50},
+				new Object[]{3,7000,8575.30}
+		};
+	}
+
+
+}

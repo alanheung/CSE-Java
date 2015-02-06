@@ -2,43 +2,68 @@
 public class ImmutableExamples {
 	public static void main(String[] args){
 //		immutable();
-		StringExample();
+//		mutable();
+//		StringExample();
+		stringBufferExample();
+
 	}
-	
+
 	public static void immutable(){
+//		StringExample():
 		integerExample();
 	}
-	
-	public static void StringExample(){
-//		String name ="Alan";
-//		String name2 ="Alan";// interned
-//		System.out.println("name ref (before)== "+
-//				Integer.toHexString(System.identityHashCode(name)));
-//		System.out.println("name ref (before)== "+
-//				Integer.toHexString(System.identityHashCode(name2)));
-//		
-//		name+=" Heung";
-//		System.out.println("name ref (after)== "+
-//				Integer.toHexString(System.identityHashCode(name)));
-//		System.out.println("name == "+ name);
-//		System.out.println("name2 ref (after)== "+
-//				Integer.toHexString(System.identityHashCode(name2)));
-//		System.out.println("name == "+ name2);
 
-		String pet = "dog";
-		System.out.println("pet ref (BEFORE)== "+
-				Integer.toHexString(System.identityHashCode(pet)));
-		System.out.println("pet before == "+ pet);
-		
-		pet = immutableString(pet);//pass in reference to method
-//		immutableString(pet);
-		
-		System.out.println("pet ref (AFTER)== "+
-				Integer.toHexString(System.identityHashCode(pet)));
-		System.out.println("pet after == "+ pet);
+	public static void mutable(){
+		stringBufferExample();
 	}
-	
-//	public static void immutableString(String petType){
+
+	public static void stringBufferExample(){
+		//mutable class
+		StringBuffer sb = new StringBuffer("Jack");
+		System.out.println("sb ref before \t\t"+ Integer.toHexString(System.identityHashCode(sb)));
+		System.out.println("sb before \t\t"+sb);
+		methodX(sb);
+		System.out.println("sb ref after \t\t"+ Integer.toHexString(System.identityHashCode(sb)));
+		System.out.println("sb after \t\t"+sb);
+	}
+
+	public static void methodX(StringBuffer sbParameter){
+		System.out.println("sbParameter ref \t\t"+Integer.toHexString(System.identityHashCode(sbParameter)));
+		sbParameter.append(" Johnson");
+		System.out.println("sbParameter ref \t\t"+sbParameter);
+		System.out.println("sbParameter ref \t\t"+Integer.toHexString(System.identityHashCode(sbParameter)));
+	}
+
+	public static void StringExample(){
+		String name ="Alan";
+		String name2 ="Alan";// interned
+		System.out.println("name ref (before)== "+
+				Integer.toHexString(System.identityHashCode(name)));
+		System.out.println("name ref (before)== "+
+				Integer.toHexString(System.identityHashCode(name2)));
+
+		name+=" Heung";
+		System.out.println("name ref (after)== "+
+				Integer.toHexString(System.identityHashCode(name)));
+		System.out.println("name == "+ name);
+		System.out.println("name2 ref (after)== "+
+				Integer.toHexString(System.identityHashCode(name2)));
+		System.out.println("name == "+ name2);
+
+		//		String pet = "dog";
+		//		System.out.println("pet ref (BEFORE)== "+
+		//				Integer.toHexString(System.identityHashCode(pet)));
+		//		System.out.println("pet before == "+ pet);
+		//		
+		//		pet = immutableString(pet);//pass in reference to method
+		////		immutableString(pet);
+		//		
+		//		System.out.println("pet ref (AFTER)== "+
+		//				Integer.toHexString(System.identityHashCode(pet)));
+		//		System.out.println("pet after == "+ pet);
+	}
+
+	//	public static void immutableString(String petType){
 	public static String immutableString(String petType){
 		System.out.println("\tpetType ref (BEFORE)== "+
 				Integer.toHexString(System.identityHashCode(petType)));
@@ -48,7 +73,7 @@ public class ImmutableExamples {
 		System.out.println("\tPet type after "+petType);
 		return petType;//return petType
 	}
-	
+
 	public static void integerExample(){
 		//integer is immutable
 		Integer dataWrapper = new Integer(5);
@@ -59,7 +84,7 @@ public class ImmutableExamples {
 				Integer.toHexString(System.identityHashCode(dataWrapper)));
 		System.out.println(value + dataWrapper);
 	}
-	
+
 	public static Integer methodInteger(Integer x){
 		// public static Integer methodInteger(final Integer x){ 
 		//x++; has an error as it is immutable
@@ -73,6 +98,5 @@ public class ImmutableExamples {
 
 		return y;
 	}
-	
 
-}
+}//end

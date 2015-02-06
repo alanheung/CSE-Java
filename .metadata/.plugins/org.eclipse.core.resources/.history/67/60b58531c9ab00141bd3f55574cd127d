@@ -1,0 +1,17 @@
+package com.mase.week06;
+
+class Base{
+	void f(){
+		System.out.println("Base::f() ");
+	}
+	void h(){
+		System.out.println("Base::h() ");
+	}
+}
+public class TestInheritance {
+
+	public static void main(String[] args) {
+
+	}
+
+}//

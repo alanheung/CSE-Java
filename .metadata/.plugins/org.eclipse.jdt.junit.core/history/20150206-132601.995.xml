@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CalculateFareTest" project="AgileWK05" tests="32" started="32" failures="2" errors="0" ignored="0">
+  <testsuite name="CalculateFareTest" time="0.148">
+    <testsuite name="calculateFareOffPeakHours" time="0.148">
+      <testcase name="[0] 0, 1.0, 0.0 " classname="calculateFareOffPeakHours" time="0.045"/>
+      <testcase name="[1] 1, 10.0, 0.0 " classname="calculateFareOffPeakHours" time="0.0"/>
+      <testcase name="[2] 4, 20.0, 0.0 " classname="calculateFareOffPeakHours" time="0.0"/>
+      <testcase name="[3] 5, 20.0, 0.0 " classname="calculateFareOffPeakHours" time="0.0"/>
+      <testcase name="[4] 6, 20.0, 10.0 " classname="calculateFareOffPeakHours" time="0.0"/>
+      <testcase name="[5] 7, 10.0, 5.0 " classname="calculateFareOffPeakHours" time="0.0"/>
+      <testcase name="[6] 16, 15.0, 7.5 " classname="calculateFareOffPeakHours" time="0.0"/>
+      <testcase name="[7] 17, 15.0, 7.5 " classname="calculateFareOffPeakHours" time="0.0"/>
+      <testcase name="[8] 18, 12.0, 12.0 " classname="calculateFareOffPeakHours" time="0.0"/>
+      <testcase name="[9] 19, 44.0, 44.0 " classname="calculateFareOffPeakHours" time="0.0"/>
+      <testcase name="[10] 63, 37.0, 37.0 " classname="calculateFareOffPeakHours" time="0.001"/>
+      <testcase name="[11] 64, 37.0, 37.0 " classname="calculateFareOffPeakHours" time="0.0"/>
+      <testcase name="[12] 65, 20.0, 16.0 " classname="calculateFareOffPeakHours" time="0.102">
+        <failure>java.lang.AssertionError: expected:&lt;16.0&gt; but was:&lt;18.0&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:91)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:645)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:441)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:510)&#13;
+	at CalculateFareTest.calculateFareOffPeakHours(CalculateFareTest.java:91)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:601)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)&#13;
+	at junitparams.internal.InvokeParameterisedMethod.evaluate(InvokeParameterisedMethod.java:170)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)&#13;
+	at junitparams.internal.ParameterisedTestMethodRunner.runMethodInvoker(ParameterisedTestMethodRunner.java:48)&#13;
+	at junitparams.internal.ParameterisedTestMethodRunner.runTestMethod(ParameterisedTestMethodRunner.java:42)&#13;
+	at junitparams.internal.ParameterisedTestClassRunner.runParameterisedTest(ParameterisedTestClassRunner.java:143)&#13;
+	at junitparams.JUnitParamsRunner.runChild(JUnitParamsRunner.java:405)&#13;
+	at junitparams.JUnitParamsRunner.runChild(JUnitParamsRunner.java:383)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)&#13;
+&#13;
+</failure>
+      </testcase>
+      <testcase name="[13] 66, 40.0, 32.0 " classname="calculateFareOffPeakHours" time="0.0">
+        <failure>java.lang.AssertionError: expected:&lt;32.0&gt; but was:&lt;36.0&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:91)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:645)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:441)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:510)&#13;
+	at CalculateFareTest.calculateFareOffPeakHours(CalculateFareTest.java:91)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:601)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)&#13;
+	at junitparams.internal.InvokeParameterisedMethod.evaluate(InvokeParameterisedMethod.java:170)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)&#13;
+	at junitparams.internal.ParameterisedTestMethodRunner.runMethodInvoker(ParameterisedTestMethodRunner.java:48)&#13;
+	at junitparams.internal.ParameterisedTestMethodRunner.runTestMethod(ParameterisedTestMethodRunner.java:42)&#13;
+	at junitparams.internal.ParameterisedTestClassRunner.runParameterisedTest(ParameterisedTestClassRunner.java:143)&#13;
+	at junitparams.JUnitParamsRunner.runChild(JUnitParamsRunner.java:405)&#13;
+	at junitparams.JUnitParamsRunner.runChild(JUnitParamsRunner.java:383)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)&#13;
+&#13;
+</failure>
+      </testcase>
+    </testsuite>
+    <testsuite name="calculateFarePeakHours" time="0.0">
+      <testcase name="[0] 0, 1.0, 0.0 " classname="calculateFarePeakHours" time="0.0"/>
+      <testcase name="[1] 1, 10.0, 0.0 " classname="calculateFarePeakHours" time="0.0"/>
+      <testcase name="[2] 4, 20.0, 0.0 " classname="calculateFarePeakHours" time="0.0"/>
+      <testcase name="[3] 5, 20.0, 0.0 " classname="calculateFarePeakHours" time="0.0"/>
+      <testcase name="[4] 6, 20.0, 10.0 " classname="calculateFarePeakHours" time="0.0"/>
+      <testcase name="[5] 7, 10.0, 5.0 " classname="calculateFarePeakHours" time="0.0"/>
+      <testcase name="[6] 16, 15.0, 7.5 " classname="calculateFarePeakHours" time="0.0"/>
+      <testcase name="[7] 17, 15.0, 7.5 " classname="calculateFarePeakHours" time="0.0"/>
+      <testcase name="[8] 18, 12.0, 12.0 " classname="calculateFarePeakHours" time="0.0"/>
+      <testcase name="[9] 19, 44.0, 44.0 " classname="calculateFarePeakHours" time="0.0"/>
+      <testcase name="[10] 63, 37.0, 37.0 " classname="calculateFarePeakHours" time="0.0"/>
+      <testcase name="[11] 64, 37.0, 37.0 " classname="calculateFarePeakHours" time="0.0"/>
+      <testcase name="[12] 65, 20.0, 18.0 " classname="calculateFarePeakHours" time="0.0"/>
+      <testcase name="[13] 66, 20.0, 18.0 " classname="calculateFarePeakHours" time="0.0"/>
+    </testsuite>
+    <testsuite name="constructorShouldThrowIAEForInvalidAge" time="0.0">
+      <testcase name="[0] -1 " classname="constructorShouldThrowIAEForInvalidAge" time="0.0"/>
+      <testcase name="[1] -5 " classname="constructorShouldThrowIAEForInvalidAge" time="0.0"/>
+      <testcase name="[2] -40 " classname="constructorShouldThrowIAEForInvalidAge" time="0.0"/>
+    </testsuite>
+    <testcase name="constructorShouldThrowIAEForInvalidFare" classname="CalculateFareTest" time="0.0"/>
+  </testsuite>
+</testrun>

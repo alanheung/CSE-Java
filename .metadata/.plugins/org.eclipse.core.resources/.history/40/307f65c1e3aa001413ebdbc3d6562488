@@ -1,0 +1,20 @@
+import java.util.Linkedlist;
+
+public class OrderQueue {
+	private LinkedList<Order> orderQueue = newLinkedList<>();
+	
+	public synchronized void pushOrder(Order order){
+		orderQueue.addLast(order);
+		notifyAll(); //notifies waiting threads
+	}
+	
+	public synchronized Order pullOrder(){
+		while(OrderQueue.size()==0){
+			try{
+				
+			}catch(InterruptedException e){
+				//ignore interuptions
+			}
+		}
+	}
+}

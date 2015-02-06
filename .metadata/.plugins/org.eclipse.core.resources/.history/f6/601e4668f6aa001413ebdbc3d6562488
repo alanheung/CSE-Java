@@ -1,0 +1,10 @@
+import java.util.Date;
+
+public class ImmutableClass {
+	private final Integer i;//immutable
+	private final String s;//immutable
+	private final Date d;//mutable
+	public static void main(String [] args){
+		
+	}
+}

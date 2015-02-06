@@ -73,33 +73,41 @@
 
 
 public class InvestmentValue {
+	final static double rate1=1.02;
+	final static double rate2=1.05;
+	final static double rate3=1.07;
+	static double rate=0;
 
-    final static double rate1=1.02;
-    final static double rate2=1.05;
-    final static double rate3=1.07;
-    static double rate=0;
-    
-    public double calculateInvestmentValue(int term, int startAmount){
-        getRate(startAmount);
-        double finalAmount=startAmount;
-        for(int i=term;i>0;i--){
-            finalAmount=finalAmount*(rate);
-        }
-        return finalAmount;
-    }
-    
-    private static double getRate(double startAmount){
-        if(startAmount<3000){
-            rate = rate1;
-        }
-        else if(startAmount<5000){
-            rate = rate2;
-        }
-        else{
-            rate = rate3;
-        }
-        return rate;
-    }
+	public InvestmentValue(){
+		
+	}
+
+	public double calculateInvestmentValue(int term, int startAmount)throws IllegalArgumentException{
+		if(term<1)throw new IllegalArgumentException("Term too low");
+		else if(term>10)throw new IllegalArgumentException("Term too high");
+		else if(startAmount<1000)throw new IllegalArgumentException("Start amount too low");
+		else if(startAmount>10000)throw new IllegalArgumentException("Start amount too high");
+		
+		getRate(startAmount);
+		double finalAmount=startAmount;
+		for(int i=term;i>0;i--){
+			finalAmount=finalAmount*(rate);
+		}
+		return finalAmount;
+	}
+
+	private static double getRate(double startAmount){
+		if(startAmount<3000){
+			rate = rate1;
+		}
+		else if(startAmount<5000){
+			rate = rate2;
+		}
+		else{
+			rate = rate3;
+		}
+		return rate;
+	}
 }
 
 

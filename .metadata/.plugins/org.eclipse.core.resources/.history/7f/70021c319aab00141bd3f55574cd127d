@@ -1,0 +1,12 @@
+
+public class CalculateFare {
+
+	public static void calculateDiscountedFare(){
+		
+	}
+	
+	public static void setPeakHours(){
+		
+	}
+
+}

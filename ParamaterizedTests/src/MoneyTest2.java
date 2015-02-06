@@ -34,7 +34,7 @@ public class MoneyTest2 {
 	
 	@Test
 	@Parameters(method="getMoney")
-	public void constrconstructorShouldSetAmountAndCurrency(int amount, String currency){
+	public void constructorShouldSetAmountAndCurrency(int amount, String currency){
 		Money money = new Money(amount, currency);
 		assertEquals(amount, money.getAmount());
 		assertEquals(currency, money.getCurrency());
@@ -42,7 +42,7 @@ public class MoneyTest2 {
 	
 	@Test
 	@Parameters(method="getMoney2")
-	public void constrconstructorShouldSetAmountAndCurrency2(int amount, String currency){
+	public void constructorShouldSetAmountAndCurrency2(int amount, String currency){
 		Money money = new Money(amount, currency);
 		assertEquals(amount, money.getAmount());
 		assertEquals(currency, money.getCurrency());

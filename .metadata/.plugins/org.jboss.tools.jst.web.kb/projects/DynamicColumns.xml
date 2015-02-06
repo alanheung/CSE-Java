@@ -8389,6 +8389,18 @@
        </attributes>
       </attribute>
       <attribute class="myfaces">
+       <id class="string" value="onkeydown"/>
+       <attributes>
+        <entry name="description">
+         <value-info value="HTML: Script to be invoked when a key is pressed down over this element"/>
+        </entry>
+        <entry name="name">
+         <value-info value="onkeydown"/>
+        </entry>
+        <entry name="required"/>
+       </attributes>
+      </attribute>
+      <attribute class="myfaces">
        <id class="string" value="onkeypress"/>
        <attributes>
         <entry name="description">
@@ -8408,18 +8420,6 @@
         </entry>
         <entry name="name">
          <value-info value="captionClass"/>
-        </entry>
-        <entry name="required"/>
-       </attributes>
-      </attribute>
-      <attribute class="myfaces">
-       <id class="string" value="onkeydown"/>
-       <attributes>
-        <entry name="description">
-         <value-info value="HTML: Script to be invoked when a key is pressed down over this element"/>
-        </entry>
-        <entry name="name">
-         <value-info value="onkeydown"/>
         </entry>
         <entry name="required"/>
        </attributes>
@@ -22273,6 +22273,18 @@
        </attributes>
       </attribute>
       <attribute class="myfaces">
+       <id class="string" value="onkeydown"/>
+       <attributes>
+        <entry name="description">
+         <value-info value="HTML: Script to be invoked when a key is pressed down over this element"/>
+        </entry>
+        <entry name="name">
+         <value-info value="onkeydown"/>
+        </entry>
+        <entry name="required"/>
+       </attributes>
+      </attribute>
+      <attribute class="myfaces">
        <id class="string" value="onkeypress"/>
        <attributes>
         <entry name="description">
@@ -22292,18 +22304,6 @@
         </entry>
         <entry name="name">
          <value-info value="captionClass"/>
-        </entry>
-        <entry name="required"/>
-       </attributes>
-      </attribute>
-      <attribute class="myfaces">
-       <id class="string" value="onkeydown"/>
-       <attributes>
-        <entry name="description">
-         <value-info value="HTML: Script to be invoked when a key is pressed down over this element"/>
-        </entry>
-        <entry name="name">
-         <value-info value="onkeydown"/>
         </entry>
         <entry name="required"/>
        </attributes>

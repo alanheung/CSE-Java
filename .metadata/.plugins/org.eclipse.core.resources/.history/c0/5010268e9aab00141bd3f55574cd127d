@@ -1,0 +1,17 @@
+
+public class CalculateFare {
+
+	public static void calculateDiscountedFare(){
+		
+	}
+	
+	public static void setPeakHours(){
+		
+	}
+
+}
+
+//boundary values 0>=5 free
+//6>=15 0.5 discount
+//18>=64 full fare
+//>65 0.1 discount peak, 0.2 discount non-peak

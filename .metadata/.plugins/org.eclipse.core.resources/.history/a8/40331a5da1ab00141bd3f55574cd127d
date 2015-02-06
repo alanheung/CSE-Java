@@ -1,0 +1,122 @@
+//import java.util.Scanner;
+//
+//public class InvestmentValue {
+//		private int year;
+//		private int amount;
+//		private final static double RATE1=0.02;
+//		private final static double RATE2=0.05;
+//		private final static double RATE3=0.07;
+//
+//		// boundaries 1000 - 2999
+//		// 3000 - 4999
+//		// 5000 - 10000
+//
+//		public InvestmentValue(int year, int amount) {
+//			super();
+//			this.year = year;
+//			this.amount = amount;
+//		}
+//		
+//		public int getYear() {
+//			return year;
+//		}
+//
+//		public void setYear(int year) {
+//			this.year = year;
+//		}
+//
+//		public int getAmount() {
+//			return amount;
+//		}
+//
+//		public void setAmount(int amount) {
+//			this.amount = amount;
+//		}
+//
+//		public static double getRate1() {
+//			return RATE1;
+//		}
+//
+//		public static double getRate2() {
+//			return RATE2;
+//		}
+//
+//		public static double getRate3() {
+//			return RATE3;
+//		}
+//		
+//		public static double calculateInvestment(int year, int amount){
+//			double total=0;
+//				for(int i=0; i<=year; i++){
+//					total=amount*(1+RATE1);
+//				}
+//			return total;
+//		}
+//		
+//		static double getRate(double startAmount){
+//			double rate=0.0;
+//			if(startAmount < 3000){
+//				rate=RATE1;
+//			}else if(startAmount < 5000){
+//				rate=RATE2;
+//			}else if(startAmount < 10000){
+//				rate=RATE3;
+//			}
+//			return rate;
+//		}
+//		
+//}
+
+
+
+
+
+
+public class InvestmentValue {
+
+	final static double rate1=1.02;
+	final static double rate2=1.05;
+	final static double rate3=1.07;
+	static double rate=0;
+
+
+
+	public InvestmentValue(int term, int startAmount) throws IllegalArgumentException{
+		if(startAmount<1000)throws new IllegalArgumentException();
+		else if(startAmount<1000)throws new IllegalArgumentException();
+		else if(startAmount<1000)throws new IllegalArgumentException();
+		else if(startAmount<1000)throws new IllegalArgumentException();
+
+
+	}
+
+	public double calculateInvestmentValue(int term, int startAmount){
+		getRate(startAmount);
+		double finalAmount=startAmount;
+		for(int i=term;i>0;i--){
+			finalAmount=finalAmount*(rate);
+		}
+		return finalAmount;
+	}
+
+	private static double getRate(double startAmount){
+		if(startAmount<3000){
+			rate = rate1;
+		}
+		else if(startAmount<5000){
+			rate = rate2;
+		}
+		else{
+			rate = rate3;
+		}
+		return rate;
+	}
+}
+
+
+
+
+
+
+
+

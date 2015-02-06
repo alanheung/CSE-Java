@@ -1,0 +1,31 @@
+import static org.junit.Assert.*;
+import junitparams.JUnitParamsRunner;
+import junitparams.Parameters;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+@RunWith(JUnitParamsRunner.class)
+
+public class CalculateFareTest {
+
+	@Parameters
+	private static final Object[] getFares(){
+		return new Object[]{
+				new Object[]{5,10,0, false},
+				new Object[]{16,10,5, false},
+				new Object[]{35,10,10, false},
+		};
+	}
+	
+	private static final double DELTA = 1e-2;//rounds off the decimals
+
+	@Test
+	@Parameters(method="getFares")
+	public void test(int age, double fullFare, double result, boolean time){//passes the three values
+		CalculateFare cf1 = new CalculateFare();//create the object
+		assertEquals(result,cf1.calculateDiscountedFare(age, fullFare),DELTA);
+	}
+
+
+}

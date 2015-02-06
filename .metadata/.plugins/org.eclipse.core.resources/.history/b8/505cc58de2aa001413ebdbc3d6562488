@@ -1,0 +1,8 @@
+
+public class OrderTaker extends Thread{
+
+	public static void main(String[] args) {
+		private int count = 0;
+	}
+
+}

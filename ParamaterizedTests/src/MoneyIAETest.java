@@ -14,10 +14,22 @@ public class MoneyIAETest {
 	private static final Object[] getInvalidAmount(){
 		return new Integer[][]{{-12387},{-5},{-1}};
 	}
+	
 	@Test(expected = IllegalArgumentException.class)
-	@Parameters(method = "getINvalidAmount")
+	@Parameters(method = "getInvalidAmount")
 	public void constructorShouldThrowIAEForInvalidAmount(int invalidAmount) {
 		new Money(invalidAmount, VALID_CURRENCY);
+	}
+	
+	@Parameters
+	private static final Object[] getInvalidCurrency(){
+		return new String[][] {{null},{""}};
+	}
+	
+	@Test (expected = IllegalArgumentException.class)
+	@Parameters (method ="getInvalidCurrency")
+	public void constructorShouldThrowIAEForCurrency(String invalidCurrency){
+		new Money(VALID_AMOUNT, invalidCurrency);
 	}
 
 }

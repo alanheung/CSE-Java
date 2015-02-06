@@ -1,0 +1,33 @@
+import java.util.Date;
+
+public class ImmutableClass {
+	private final Integer i;//immutable
+	private final String s;//immutable
+	private final Date d;//mutable
+
+	private ImmutableClass(Integer i, String s, Date d){
+		this.i=i;
+		this.s=s;
+		this.d=d;
+	}
+	
+	//factory method
+	public static ImmutableClass createNewInstance(Integer i, String s, Date d){
+		return new ImmutableClass(i,s,d);
+	}
+	
+	//get methods
+	public Integer getInteger(){
+		return i;//immutable so thats ok
+	}
+	public String getString(){
+		return s;//immutable so thats ok
+	}
+	public Date getDate(){
+		return new Date(d.getTime());//mutable
+	}
+	
+	public static void main(String [] args){
+
+	}
+}

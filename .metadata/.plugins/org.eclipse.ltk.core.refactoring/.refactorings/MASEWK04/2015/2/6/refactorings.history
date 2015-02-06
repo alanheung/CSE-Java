@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ImmutableClass.java&apos; to &apos;MASEWK06/src/com.mase.week06&apos;&#x0D;&#x0A;- Original project: &apos;MASEWK04&apos;&#x0D;&#x0A;- Destination element: &apos;MASEWK06/src/com.mase.week06&apos;&#x0D;&#x0A;- Original element: &apos;ImmutableClass.java&apos;" description="Copy compilation unit" destination="=MASEWK06/src&lt;com.mase.week06" element1="/src&lt;{ImmutableClass.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1422895202092" units="1" version="1.0"/>
+</session>

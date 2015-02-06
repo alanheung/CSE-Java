@@ -1,0 +1,24 @@
+package com.mase.week06;
+
+class Base{
+	void f(){
+		System.out.println("Base::f() ");
+	}
+	void h(){
+		System.out.println("Base::h() ");
+	}
+}
+class SubClass extends Base{
+	@Override
+	void f(){
+		System.out.println("SubClass::f() ");
+	}
+//	void h(){
+//		System.out.println("SubClass::h() ");
+//	}
+}
+public class TestInheritance {
+	public static void main(String[] args) {
+		SubClass s = new SubClass();
+	}
+}//

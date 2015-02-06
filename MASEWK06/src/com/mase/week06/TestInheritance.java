@@ -1,0 +1,46 @@
+package com.mase.week06;
+
+class Base{
+	void f(){
+		System.out.println("Base::f() ");
+	}
+	void h(){
+		System.out.println("Base::h() ");
+	}
+	Object g(){
+		System.out.println("Base::g()");
+		return new Object();
+	}
+}
+class SubClass extends Base{
+	@Override
+	void f(){
+		System.out.println("SubClass::f() ");
+	}
+	@Override
+	Object g(){
+		System.out.println("SubClass::g()");
+		return "hello";
+	}
+	//co variant return types means if return type of g, can be the subclass of the one to override
+	//the issue with the next one is that the parent return type is
+	//void and the subclass return type is int
+//	int f(){//co variant return types
+//		System.out.println("SubClass::f() with int return type");
+//	}
+	//Overloaded
+	void f(int i){
+		System.out.println("SubClass::f(int) "+i);
+	}
+//	void h(){
+//		System.out.println("SubClass::h() ");
+//	}
+}
+public class TestInheritance {
+	public static void main(String[] args) {
+		SubClass s = new SubClass();//Base s = new SubClass();//polymorphism
+		s.f();
+		s.f(1);//is there an f method in Base that takes in an int - NO, solution change Base to Subclass
+		System.out.println(s.g());//calls the toString of the object
+	}
+}//

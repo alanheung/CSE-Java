@@ -1,0 +1,19 @@
+import java.util.Date;
+
+public class ImmutableClass {
+	private final Integer i;//immutable
+	private final String s;//immutable
+	private final Date d;//mutable
+	
+	private ImmutableClass(Integer i, String s, Date d){
+		this.i=i;
+		this.s=s;
+		this.d=d;
+	}
+	public static ImmutableClass createNewInstance(Integer i, String s, Date d){
+		
+	}
+	public static void main(String [] args){
+		
+	}
+}

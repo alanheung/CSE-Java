@@ -2,7 +2,10 @@ public class Money{
 	private final int amount;
 	private final String currency;
 
-	public Money(int amount, String currency){
+	public Money(int amount, String currency) throws IllegalArgumentException{
+		if(amount<1000 && amount>10000 ){ 
+			throw new IllegalArgumentException();
+		}
 		this.amount=amount;
 		this.currency=currency;
 	}
