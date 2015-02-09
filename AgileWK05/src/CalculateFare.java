@@ -28,8 +28,6 @@ public class CalculateFare {
 //		}
 //		return fare;
 
-
-		
 		if(age<0){
 			throw new IllegalArgumentException("illegal age: [ "+age+" ]");
 		}

@@ -13,7 +13,7 @@ public class CalculateFareTest {
 	private final static double VALID_FULL_FARE = 20.0;
 	private final static double INVALID_FARE = -1.1;
 	private final static int VALID_AGE = 20;
-	private CalculateFare calcFare;
+	static CalculateFare calcFare = new CalculateFare();
 //	@Parameters
 //	private static final Object[] getFares(){
 //		return new Object[]{
@@ -67,10 +67,13 @@ public class CalculateFareTest {
 				);
 	}
 	
-	@Before
-	public void setUp(){
-		calcFare = new CalculateFare();
-	}
+//	@Before
+//	public void setUp(){
+//		calcFare = new CalculateFare();
+//	}
+//	1. If you have used a static method in the CalculateFare class, you will not need 
+//  the setup() method.
+	
 //	@Test
 //	@Parameters(method="getFares")
 //	public void test(int age, double fullFare, double result, boolean time){//passes the three values

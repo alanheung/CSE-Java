@@ -1,0 +1,29 @@
+// boundaries 65 weekdays/80 weekends
+//el paso resident pays 45 weekdays/60 weekends
+//senior over 60(including) <90 40 weekdays/50 weekends
+//junior over <10 17(including) 20 weekdays/30 weekends
+
+public class CalculateGolfFee {
+	private static final double STANDARD_DAY_FEE=65;
+	private static final double STANDARD_END_FEE=80;
+	private double fee;
+	private boolean resident;
+
+
+	public double calculateGreenFees(int age, boolean elPasoRes, int dayOfWeek){
+		if(age<0){
+			throw new IllegalArgumentException("illegal age: [ "+age+" ]");
+		}
+		if(dayOfWeek<0){
+			throw new IllegalArgumentException("illegal fare: [ "+dayOfWeek+" ]");
+		}
+		if(dayOfWeek>0 && dayOfWeek<6){
+			fee=STANDARD_DAY_FEE;
+		}else if(dayOfWeek>0 && dayOfWeek<6){
+			fee=STANDARD_END_FEE;
+		}
+		return fee;
+		
+	}
+
+}//end
