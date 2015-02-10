@@ -1,0 +1,13 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class BiggestBazarRetailTest {
+
+	@Test
+	public void testGetItemsExpireInAMonth() {
+		fail("Not yet implemented");
+	}
+
+}

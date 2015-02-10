@@ -62,15 +62,14 @@
   <path value="C:/xampp/tomcat/lib/jasper.jar"/>
   <path value="C:/xampp/tomcat/lib/tomcat-i18n-es.jar"/>
   <path value="C:/xampp/tomcat/lib/tomcat-jdbc.jar"/>
-  <path value="C:/xampp/tomcat/lib/catalina-tribes.jar"/>
   <path value="C:/xampp/tomcat/lib/tomcat-util.jar"/>
+  <path value="C:/xampp/tomcat/lib/catalina-tribes.jar"/>
   <path value="C:/xampp/tomcat/lib/catalina-ant.jar"/>
   <path value="C:/xampp/tomcat/lib/annotations-api.jar"/>
-  <path value="C:/xampp/tomcat/lib/jsp-api.jar"/>
   <path value="C:/xampp/tomcat/lib/tomcat-dbcp.jar"/>
-  <path value="C:/xampp/tomcat/lib/servlet-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/jsp-api.jar"/>
   <path value="C:/xampp/tomcat/lib/ecj-3.6.jar"/>
-  <path value="C:/xampp/tomcat/lib/el-api.jar"/>
+  <path value="C:/xampp/tomcat/lib/servlet-api.jar"/>
   <path value="/JSFSearch/WebContent/WEB-INF/faces-config.xml">
    <libraries>
     <library class="faces-config">
@@ -79,32 +78,33 @@
     </library>
    </libraries>
   </path>
+  <path value="C:/xampp/tomcat/lib/el-api.jar"/>
   <path value="C:/xampp/tomcat/lib/ecj-3.6.2.jar"/>
   <path value="C:/xampp/tomcat/lib/jasper-el.jar"/>
  </paths>
  <validation>
   <el>
-   <linked-el length="28" name="%0" offset="545" path="%1"/>
    <linked-el length="20" name="%0" offset="1436" path="%1"/>
+   <linked-el length="28" name="%0" offset="545" path="%1"/>
    <linked-el length="28" name="%0" offset="676" path="%1"/>
    <linked-el length="118" name="%0" offset="779" path="%1"/>
    <linked-el length="20" name="%0" offset="1573" path="%1"/>
    <linked-el length="119" name="%0" offset="1099" path="%1"/>
-   <linked-el length="84" name="%0" offset="398" path="%1"/>
    <linked-el length="24" name="%0" offset="1672" path="%1"/>
-   <linked-el length="28" name="%2" offset="545" path="%1"/>
+   <linked-el length="84" name="%0" offset="398" path="%1"/>
    <linked-el length="20" name="%2" offset="1436" path="%1"/>
+   <linked-el length="28" name="%2" offset="545" path="%1"/>
    <linked-el length="28" name="%2" offset="676" path="%1"/>
    <linked-el length="118" name="%2" offset="779" path="%1"/>
    <linked-el length="20" name="%2" offset="1573" path="%1"/>
    <linked-el length="119" name="%2" offset="1099" path="%1"/>
-   <linked-el length="84" name="%2" offset="398" path="%1"/>
    <linked-el length="24" name="%2" offset="1672" path="%1"/>
+   <linked-el length="84" name="%2" offset="398" path="%1"/>
   </el>
  </validation>
  <aliases>
   <alias path="/JSFSearch/WebContent/login.xhtml" value="%1"/>
-  <alias path="login" value="%2"/>
-  <alias path="/JSFSearch/src/LoginBean.java" value="%0"/>
+  <alias path="/JSFSearch/src/LoginBean.java" value="%2"/>
+  <alias path="login" value="%0"/>
  </aliases>
 </kb-project>

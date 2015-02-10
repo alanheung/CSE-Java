@@ -15,7 +15,7 @@ public class CalculateGolfFee {
 
 	private double fee;
 	
-	public double calculateGreenFees(int age, boolean elPasoResident, int dayOfWeek){
+	public double calculateGolfFee(int age, boolean elPasoResident, int dayOfWeek){
 		if(age<0){
 			throw new IllegalArgumentException("illegal age: [ "+age+" ]");
 		}

@@ -1,0 +1,21 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class BiggestBazarRetailTest {
+
+	@Test
+	public void issueDiscountOnOneItemTest() {
+//create item list
+	
+//stub database call
+		
+//stub update count
+		
+//call issueDiscountForItemsToExpirein30days
+		
+//verify that the methods are called in inventory and pas
+
+	}
+
+}

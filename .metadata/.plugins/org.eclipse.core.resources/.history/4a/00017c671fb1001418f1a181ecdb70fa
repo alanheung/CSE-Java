@@ -1,0 +1,5 @@
+package com.ait.moviestore;
+
+public interface MovieStore {
+
+}
