@@ -1,0 +1,7 @@
+package com.mase.casting;
+
+public interface Shape {
+
+	void draw();
+
+}

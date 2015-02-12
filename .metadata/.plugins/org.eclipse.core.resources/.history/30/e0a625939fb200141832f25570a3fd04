@@ -1,0 +1,54 @@
+package com.mase.casting;
+
+public class CastingPgm {
+	
+	public static void main(String[] args) {
+//		upcasting();
+		downcasting();
+	}
+	public static void upcasting(){
+		Triangle t = new RightAngledTriangle();
+		t.draw();//polymorphism
+		
+		Triangle t1 = new Triangle();
+		RightAngledTriangle r1 = new RightAngledTriangle();
+		t1.draw();
+		r1.draw();
+		t1=r1;
+		
+		t1.draw();
+		//t1.area();//compiler error cannot find symbol
+		
+		//upcasting to the interface
+		Shape s = new Triangle();
+		s.draw();
+		s=r1;
+		s.draw();
+		progToTheInterface(new Triangle());
+		progToTheInterface(new RightAngledTriangle());
+		
+	}
+	public static void downcasting(){
+		Triangle t = new Triangle();
+		RightAngledTriangle r = new RightAngledTriangle();
+		
+		t=r;
+		t.draw();
+//		t.area();//The method area() is undefined for the type Triangle
+		r.draw();
+		
+		Triangle t1 = new Triangle();
+		RightAngledTriangle r1 = new RightAngledTriangle();
+		
+		r1=(RightAngledTriangle)t1;
+		
+	}
+	public static void progToTheInterface(Shape s){
+		s.draw();
+		//because shape has no area(), make it an instanceof RAT
+		if(s instanceof RightAngledTriangle);
+		RightAngledTriangle r = (RightAngledTriangle)s;//downcasting s to RAT
+		r.area();
+	}
+
+}

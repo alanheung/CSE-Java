@@ -23,31 +23,32 @@ public class CalculateGolfFeeTest {
 	private final static int VALID_DOW = 5;
 	private final static int INVALID_AGE = -1;
 	private final static int INVALID_DOW = -7;
-	private CalculateGolfFee golfFee = new CalculateGolfFee();
+//	private CalculateGolfFee golfFee;
 	
-//	static CalculateGolfFee golfFee = new CalculateGolfFee();
-	@Before
-	public void setUp(){
-		golfFee = new CalculateGolfFee();
-	}
+	static CalculateGolfFee golfFee = new CalculateGolfFee();
+//	@Before
+//	public void setUp(){
+//		golfFee = new CalculateGolfFee(); 
+//	}
 	
 	@Parameters
 	private static final Object[] getWeekdayFees(){//age, elpaso, day, answer
-		return $(
-				$(9,false,1,65), $(10,false,2,20),$(11,false,3,20),
-				$(16,false,4,20), $(17,false,5,20),$(18,false,1,65),
-				$(59,false,2,45), $(60,false,3,40),$(61,false,4,40),
-				$(89,false,5,40), $(90,false,1,40),$(91,false,2,0)
+		return $( 
+				//$(9,false,2,),
+						//$(10,false,3,20),$(11,false,4,20),  
+				$(16,false,4,20), $(17,false,5,20),$(18,false,1,65)
+//				$(59,false,2,65), $(60,false,3,40),$(61,false,4,40),
+//				$(89,false,5,40), $(90,false,1,40),$(91,false,2,65)
 				);
 	}
-	private static final Object[] getWeekendFees(){
-		return $(
-				$(9,false,6,65), $(10,false,7,20),$(11,false,6,20),
-				$(16,false,7,20), $(17,false,6,20),$(18,false,7,65),
-				$(59,false,6,45), $(60,false,7,40),$(61,false,6,40),
-				$(89,false,7,40), $(90,false,6,40),$(91,false,7,0)
-				);
-	}
+//	private static final Object[] getWeekendFees(){
+//		return $(
+//				$(9,false,6,0), $(10,false,7,30),$(11,false,6,30),
+//				$(16,false,7,30), $(17,false,6,30),$(18,false,7,80),
+//				$(59,false,6,50), $(60,false,7,50),$(61,false,6,50),
+//				$(89,false,7,50), $(90,false,6,50),$(91,false,7,0)
+//				);
+//	}
 //	private static final Object[] getElPasoFees(){
 //		return $(
 //				$(9,true,1,80), $(10,true,2,30),$(11,true,3,30),

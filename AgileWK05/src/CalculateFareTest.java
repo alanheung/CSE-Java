@@ -13,7 +13,9 @@ public class CalculateFareTest {
 	private final static double VALID_FULL_FARE = 20.0;
 	private final static double INVALID_FARE = -1.1;
 	private final static int VALID_AGE = 20;
-	static CalculateFare calcFare = new CalculateFare();
+//	static CalculateFare calcFare = new CalculateFare();
+	private CalculateFare calcFare;
+	
 //	@Parameters
 //	private static final Object[] getFares(){
 //		return new Object[]{
@@ -38,7 +40,10 @@ public class CalculateFareTest {
 	//6>=17 0.5 discount 5,6,7 16,17,18
 	//18>=64 full fare 17,18,19 63,64,65
 	//>65 0.1 discount peak, 0.2 discount non-peak 66,
-	
+	@Before
+	public void setUp(){
+		calcFare = new CalculateFare();
+	}
 	@Parameters
 	private static final Object[] getPeakHourValues(){
 		return $(

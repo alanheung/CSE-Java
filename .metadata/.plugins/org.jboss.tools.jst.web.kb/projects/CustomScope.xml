@@ -5097,18 +5097,6 @@
        </attributes>
       </attribute>
       <attribute class="myfaces">
-       <id class="string" value="onkeydown"/>
-       <attributes>
-        <entry name="description">
-         <value-info value="HTML: Script to be invoked when a key is pressed down over this element"/>
-        </entry>
-        <entry name="name">
-         <value-info value="onkeydown"/>
-        </entry>
-        <entry name="required"/>
-       </attributes>
-      </attribute>
-      <attribute class="myfaces">
        <id class="string" value="onkeypress"/>
        <attributes>
         <entry name="description">
@@ -5121,13 +5109,13 @@
        </attributes>
       </attribute>
       <attribute class="myfaces">
-       <id class="string" value="label"/>
+       <id class="string" value="onkeydown"/>
        <attributes>
         <entry name="description">
-         <value-info value="A display name for this component"/>
+         <value-info value="HTML: Script to be invoked when a key is pressed down over this element"/>
         </entry>
         <entry name="name">
-         <value-info value="label"/>
+         <value-info value="onkeydown"/>
         </entry>
         <entry name="required"/>
        </attributes>
@@ -5140,6 +5128,18 @@
         </entry>
         <entry name="name">
          <value-info value="onfocus"/>
+        </entry>
+        <entry name="required"/>
+       </attributes>
+      </attribute>
+      <attribute class="myfaces">
+       <id class="string" value="label"/>
+       <attributes>
+        <entry name="description">
+         <value-info value="A display name for this component"/>
+        </entry>
+        <entry name="name">
+         <value-info value="label"/>
         </entry>
         <entry name="required"/>
        </attributes>
@@ -8381,18 +8381,6 @@
        </attributes>
       </attribute>
       <attribute class="myfaces">
-       <id class="string" value="captionClass"/>
-       <attributes>
-        <entry name="description">
-         <value-info value="A comma separated list of CSS class names to apply to all captions"/>
-        </entry>
-        <entry name="name">
-         <value-info value="captionClass"/>
-        </entry>
-        <entry name="required"/>
-       </attributes>
-      </attribute>
-      <attribute class="myfaces">
        <id class="string" value="onkeydown"/>
        <attributes>
         <entry name="description">
@@ -8412,6 +8400,18 @@
         </entry>
         <entry name="name">
          <value-info value="onkeypress"/>
+        </entry>
+        <entry name="required"/>
+       </attributes>
+      </attribute>
+      <attribute class="myfaces">
+       <id class="string" value="captionClass"/>
+       <attributes>
+        <entry name="description">
+         <value-info value="A comma separated list of CSS class names to apply to all captions"/>
+        </entry>
+        <entry name="name">
+         <value-info value="captionClass"/>
         </entry>
         <entry name="required"/>
        </attributes>
@@ -18963,18 +18963,6 @@
        </attributes>
       </attribute>
       <attribute class="myfaces">
-       <id class="string" value="onkeydown"/>
-       <attributes>
-        <entry name="description">
-         <value-info value="HTML: Script to be invoked when a key is pressed down over this element"/>
-        </entry>
-        <entry name="name">
-         <value-info value="onkeydown"/>
-        </entry>
-        <entry name="required"/>
-       </attributes>
-      </attribute>
-      <attribute class="myfaces">
        <id class="string" value="onkeypress"/>
        <attributes>
         <entry name="description">
@@ -18987,13 +18975,13 @@
        </attributes>
       </attribute>
       <attribute class="myfaces">
-       <id class="string" value="label"/>
+       <id class="string" value="onkeydown"/>
        <attributes>
         <entry name="description">
-         <value-info value="A display name for this component"/>
+         <value-info value="HTML: Script to be invoked when a key is pressed down over this element"/>
         </entry>
         <entry name="name">
-         <value-info value="label"/>
+         <value-info value="onkeydown"/>
         </entry>
         <entry name="required"/>
        </attributes>
@@ -19006,6 +18994,18 @@
         </entry>
         <entry name="name">
          <value-info value="onfocus"/>
+        </entry>
+        <entry name="required"/>
+       </attributes>
+      </attribute>
+      <attribute class="myfaces">
+       <id class="string" value="label"/>
+       <attributes>
+        <entry name="description">
+         <value-info value="A display name for this component"/>
+        </entry>
+        <entry name="name">
+         <value-info value="label"/>
         </entry>
         <entry name="required"/>
        </attributes>
@@ -22264,18 +22264,6 @@
        </attributes>
       </attribute>
       <attribute class="myfaces">
-       <id class="string" value="captionClass"/>
-       <attributes>
-        <entry name="description">
-         <value-info value="A comma separated list of CSS class names to apply to all captions"/>
-        </entry>
-        <entry name="name">
-         <value-info value="captionClass"/>
-        </entry>
-        <entry name="required"/>
-       </attributes>
-      </attribute>
-      <attribute class="myfaces">
        <id class="string" value="onkeydown"/>
        <attributes>
         <entry name="description">
@@ -22295,6 +22283,18 @@
         </entry>
         <entry name="name">
          <value-info value="onkeypress"/>
+        </entry>
+        <entry name="required"/>
+       </attributes>
+      </attribute>
+      <attribute class="myfaces">
+       <id class="string" value="captionClass"/>
+       <attributes>
+        <entry name="description">
+         <value-info value="A comma separated list of CSS class names to apply to all captions"/>
+        </entry>
+        <entry name="name">
+         <value-info value="captionClass"/>
         </entry>
         <entry name="required"/>
        </attributes>

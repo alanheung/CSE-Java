@@ -1,0 +1,30 @@
+package com.Mockito;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
+
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.test.AndroidTestCase;
+
+import com.vogella.android.mockito.intent.MainActivity;
+
+public class MainActivtityTest extends AndroidTestCase {
+  @Mock
+  Context context;
+
+  @Override
+  protected void setUp() throws Exception {
+    MockitoAnnotations.initMocks(this);
+  }
+
+  public void testQuery() throws Exception {
+    Intent intent = MainActivity.createQuery(context, "query", "value");
+    assertNotNull(intent);
+    Bundle extras = intent.getExtras();
+    assertNotNull(extras);
+    assertEquals("query", extras.getString("QUERY"));
+    assertEquals("value", extras.getString("VALUE"));
+  }
+} 

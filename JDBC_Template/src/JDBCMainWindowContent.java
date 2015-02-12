@@ -7,8 +7,8 @@ import java.sql.*;
 
 
 @SuppressWarnings("serial")
-public class JDBCMainWindowContent extends JInternalFrame implements ActionListener
-{
+public class JDBCMainWindowContent extends JInternalFrame implements ActionListener{
+	
 	// DB Connectivity Attributes
 	private Connection con = null;
 	private Statement stmt = null;
@@ -70,8 +70,8 @@ public class JDBCMainWindowContent extends JInternalFrame implements ActionListe
 	
 
 
-	public JDBCMainWindowContent( String aTitle)
-	{	
+	public JDBCMainWindowContent( String aTitle){
+		
 		//setting up the GUI
 		super(aTitle, false,false,false,false);
 		setEnabled(true);
@@ -127,8 +127,6 @@ public class JDBCMainWindowContent extends JInternalFrame implements ActionListe
 		exportButtonPanel.setLocation(3, 300);
 		content.add(exportButtonPanel);
 		
-		
-	
 		insertButton.setSize(100, 30);
 		updateButton.setSize(100, 30);
 		exportButton.setSize (100, 30);
@@ -147,13 +145,11 @@ public class JDBCMainWindowContent extends JInternalFrame implements ActionListe
 		deleteButton.addActionListener(this);
 		clearButton.addActionListener(this);
 
-		
 		content.add(insertButton);
 		content.add(updateButton);
 		content.add(exportButton);
 		content.add(deleteButton);
 		content.add(clearButton);
-
 				
 		TableofDBContents.setPreferredScrollableViewportSize(new Dimension(900, 300));
 	
@@ -175,10 +171,8 @@ public class JDBCMainWindowContent extends JInternalFrame implements ActionListe
 		TableModel.refreshFromDB(stmt);
 	}
 	
-	public void initiate_db_conn()
-	{
-		try
-		{
+	public void initiate_db_conn(){
+		try{
 			// Load the JConnector Driver
 			Class.forName("com.mysql.jdbc.Driver");
 			// Specify the DB Name
@@ -187,19 +181,15 @@ public class JDBCMainWindowContent extends JInternalFrame implements ActionListe
 			con = DriverManager.getConnection(url, "root", "admin");
 			//Create a generic statement which is passed to the TestInternalFrame1
 			stmt = con.createStatement();
-		}
-		catch(Exception e)
-		{
+		}catch(Exception e){
 			System.out.println("Error: Failed to connect to database\n"+e.getMessage());
 		}
 	}
 	
 	//event handling for members desktop
-	public void actionPerformed(ActionEvent e)
-	{
+	public void actionPerformed(ActionEvent e){
 		 Object target=e.getSource();
-		 if (target == clearButton)
-		 {
+		 if (target == clearButton){
 			 RecordIDTF.setText("");
 			 SSIDTF.setText("");
 			 dateTF.setText("");
@@ -211,52 +201,34 @@ public class JDBCMainWindowContent extends JInternalFrame implements ActionListe
 			 swTF.setText("");
 			 gpsLongTF.setText("");
 			 gpsLatTF.setText("");
-			 	 
 		 }
 		
-		 if (target == insertButton)
-		 {		 
-	 		try
-	 		{
+		 if (target == insertButton){		 
+	 		try{
  				String updateTemp ="INSERT INTO APPERFDATA VALUES ('"+
  		 				  RecordIDTF.getText()+"','"+SSIDTF.getText()+"','"+dateTF.getText()+"','"+RSSTF.getText()+"','"+macLossTF.getText()+"','"
  		 				 +delayTF.getText()+"','"+channelTF.getText()+"','"+secTF.getText()+"','"+swTF.getText()+"','"+gpsLongTF.getText()+"','"+gpsLatTF.getText()+"');";
- 				
  						
  				stmt.executeUpdate(updateTemp);
- 			
-	 		}
-	 		catch (SQLException sqle)
-	 		{
+	 		
+	 		}catch (SQLException sqle){
 	 			System.err.println("Error with members insert:\n"+sqle.toString());
-	 		}
-	 		finally
-	 		{
+	 		}finally{
 	 			TableModel.refreshFromDB(stmt);
 			}
 		 }
-		 if (target == deleteButton)
-		 {
-		 	
-	 		try
-	 		{
+		 if (target == deleteButton){
+	 		try{
  				String updateTemp ="DELETE FROM APPERFDATA WHERE Rec_id = "+RecordIDTF.getText()+";"; 
  				stmt.executeUpdate(updateTemp);
- 			
-	 		}
-	 		catch (SQLException sqle)
-	 		{
+	 		}catch (SQLException sqle){
 	 			System.err.println("Error with delete:\n"+sqle.toString());
-	 		}
-	 		finally
-	 		{
+	 		}finally{
 	 			TableModel.refreshFromDB(stmt);
 			}
 		 }
-		 if (target == updateButton)
-		 {	 	
-	 		try
-	 		{ 			
+		 if (target == updateButton){	 	
+	 		try{ 			
  				String updateTemp ="UPDATE APPERFDATA SET SSID = '"+SSIDTF.getText()+
  									
  									"', Date = "+
@@ -271,24 +243,17 @@ public class JDBCMainWindowContent extends JInternalFrame implements ActionListe
  									", GPS_Lat = "+gpsLatTF.getText()+
  									" where Rec_id = "+RecordIDTF.getText();
  				
- 	
- 				
- 				
  				System.out.println(updateTemp);
  				stmt.executeUpdate(updateTemp);
  				//these lines do nothing but the table updates when we access the db.
  				rs = stmt.executeQuery("SELECT * from APPERFDATA ");
  				rs.next();
  				rs.close();	
- 			}
-	 		catch (SQLException sqle){
+ 			}catch (SQLException sqle){
 	 			System.err.println("Error with members insert:\n"+sqle.toString());
-	 		}
-	 		finally{
+	 		}finally{
 	 			TableModel.refreshFromDB(stmt);
 			}
 		 }		 	
 	}
-	
-
-}
+}//

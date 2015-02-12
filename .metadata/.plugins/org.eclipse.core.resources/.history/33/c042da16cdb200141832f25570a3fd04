@@ -1,0 +1,55 @@
+import static org.junit.Assert.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
+import java.util.ArrayList;
+
+import main.java.com.messaging.Client;
+import main.java.com.messaging.MailServer;
+import main.java.com.messaging.Messanger;
+import main.java.com.messaging.Template;
+import main.java.com.messaging.TemplateEngine;
+
+import org.junit.Test;
+
+public class BiggestBazarRetailTest {
+	private BiggestBazarRetail BiggestBazarRetail;
+	private ArrayList<Item> expiredList = new ArrayList<Item>();
+	@Test
+	public void issueDiscountOnOneItemTest() {
+//create item list
+	ArrayList<Item> headingExpiryItems = new ArrayList<Item>();
+//stub database call
+//		inventory = mock(inventory.class);
+//stub update count
+		
+//call issueDiscountForItemsToExpirein30days
+		
+//verify that the methods are called in inventory and pas
+
+	}
+
+}
+
+//public class MessangerTest {
+//	private static final String CLIENT_EMAIL = "some@email.com";
+//	private static final String MSG_CONTENT = "Meeting time changed to 11am";
+//	
+//	@Test
+//	public void shouldSendEmail(){
+//		Template template = mock(Template.class);
+//		Client client = mock(Client.class);
+//		MailServer mailServer = mock(MailServer.class);
+//		TemplateEngine templateEngine = mock(TemplateEngine.class);
+//		
+//		Messanger sut = new Messanger(mailServer, templateEngine);
+//		
+//		when(client.getEmail()).thenReturn(CLIENT_EMAIL);
+//		when(templateEngine.prepareMessage(template, client)).thenReturn(MSG_CONTENT);
+//		sut.sendMessage(client, template);
+//		
+//		verify(mailServer).send(CLIENT_EMAIL,MSG_CONTENT);
+//	}
+//	
+//}

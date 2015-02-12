@@ -1,0 +1,37 @@
+import static org.junit.Assert.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+import java.util.ArrayList;
+import org.junit.Test;
+import static org.mockito.Mockito.*;
+
+public class BiggestBazarRetailTest {
+	private BiggestBazarRetail BiggestBazarRetail;
+	private ArrayList<Item> expiredList = new ArrayList<Item>();
+	private Inventory inventory;
+	private PublicAddressSystem pas
+	
+	@Test
+	public void issueDiscountOnOneItemTest() {
+//create item list
+	Item bread = new Item("123","Bread", 20.00, 3.00);
+	expiredList.add(bread);
+//stub call on inventory for getItemExpireInAMonth
+	inventory = mock(Inventory.class);
+//specify the behaviour of the mock object
+	when(inventory.getItemsExpireInAMonth()).thenReturn(expiredList);
+	when(inventory.itemsUpdated()).thenReturn(1);
+//mock object for PublicAddressSystem(pas)
+	pas=mock(PublicAddressSystem.class);
+//call issueDiscountForItemsToExpirein30days
+		
+//verify that the methods are called in inventory and pas
+	verify(inventory).update(bread,3.20);
+	verify(pas).announce(isA(offer.class);
+	verify(pas,new Times(2)).announce(bread,3.20);
+
+	}
+
+}
+

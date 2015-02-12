@@ -1,0 +1,12 @@
+package com.mase.casting;
+ 
+public class Triangle implements Shape{
+
+	public void draw(){
+		
+	}
+//	public static void main(String[] args) {
+//
+//	}
+
+}

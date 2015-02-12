@@ -1,0 +1,12 @@
+package com.mase.taginterface;
+
+class CattleTag implements Tag{
+	
+}
+public class Test {
+
+	public static void main(String[] args) {
+		Tag t = new CattleTag();
+	}
+
+}//

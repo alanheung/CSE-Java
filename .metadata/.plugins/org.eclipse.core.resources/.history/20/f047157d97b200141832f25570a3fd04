@@ -1,0 +1,19 @@
+package com.mase.taginterface;
+// http://www.javapractices.com/topic/TopicAction.do?Id=240
+class CattleTag implements Tag{
+	
+}
+public class Test {
+
+	public static void main(String[] args) {
+		Tag t = new CattleTag();
+		//		Tag t2 = new Tag();//error cannot instantiate an interface, however you can reference
+		if(t instanceof CattleTag){
+			System.out.println("t is an instance of CattleTag");
+		}
+		if(t instanceof Tag){
+			System.out.println("t implements Tag");
+		}
+	}
+
+}//
