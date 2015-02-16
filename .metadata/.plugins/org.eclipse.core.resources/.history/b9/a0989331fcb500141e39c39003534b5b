@@ -1,0 +1,32 @@
+package com.mase.adventure;
+
+public class Adventure {
+
+	public static void main(String[] args) {
+		Hero guy = new Hero();
+		someFight(guy);//ActionCharacter::fight()
+		someSwim(guy);//Hero::swim()
+		someFly(guy);//Hero::fly()
+		someAction(guy);//ActionCharacter::fight()
+
+//		ActionCharacter bill = new ActionCharacter();
+//		bill.fight();//ActionCharacter::fight()
+
+	}
+	
+	
+	public static void someFight(CanFight cf){
+		cf.fight();//polymorphic call
+	}
+	public static void someSwim(CanSwim sw){
+		sw.swim();//polymorphic call
+	}
+	public static void someFly(CanFly fl){
+		fl.fly();//polymorphic call
+	}
+	public static void someAction(ActionCharacter ac){
+		ac.fight();//polymorphic call
+	}
+	
+
+}

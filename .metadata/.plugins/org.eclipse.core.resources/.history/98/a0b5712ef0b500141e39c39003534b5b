@@ -1,0 +1,13 @@
+package com.mase.polymorphism;
+
+public class Instrument {
+	public void play(){
+		System.out.println("play");;
+	}
+	public String what(){
+		return "what";
+	}
+	public void adjust(){
+		System.out.println("adjust");;
+	}
+}

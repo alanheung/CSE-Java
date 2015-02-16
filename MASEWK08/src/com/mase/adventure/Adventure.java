@@ -1,0 +1,33 @@
+package com.mase.adventure;
+
+public class Adventure {
+
+	public static void main(String[] args) {
+		Hero guy = new Hero();
+		
+		someFight(guy);//treat it as CantFight ActionCharacter::fight()
+		someSwim(guy);//treat it as CanSwim Hero::swim()
+		someFly(guy);//treat it as CanFly Hero::fly()
+		someAction(guy);//treat it as an ActionCharacter ActionCharacter::fight()
+		someOtherAction(guy);// Hero::swim()
+		
+//		ActionCharacter bill = new ActionCharacter();
+//		bill.fight();//ActionCharacter::fight()
+	}
+	
+	public static void someFight(CanFight cf){
+		cf.fight();//polymorphic call
+	}
+	public static void someSwim(CanSwim sw){
+		sw.swim();//polymorphic call
+	}
+	public static void someFly(CanFly fl){
+		fl.fly();//polymorphic call
+	}
+	public static void someAction(ActionCharacter ac){
+		ac.fight();//polymorphic call
+	}
+	public static void someOtherAction(Hero guy){
+		guy.swim();
+	}
+}

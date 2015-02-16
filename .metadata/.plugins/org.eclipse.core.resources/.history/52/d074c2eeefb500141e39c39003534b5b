@@ -1,0 +1,28 @@
+package com.mase.polymorphism;
+
+public class MusicExample {
+
+	public static void main(String[] args) {
+
+	
+	}
+	
+	public void tune(Instrument i){
+		
+	}
+
+	public void tuneAll(Instrument i){
+		
+	}
+	
+
+	
+
+	
+
+	
+
+	
+
+
+}//end

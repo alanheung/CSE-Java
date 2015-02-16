@@ -1,0 +1,25 @@
+package com.mase.adventure;
+
+public class Adventure {
+
+	public static void main(String[] args) {
+		Hero[] guy = new Hero[5];
+
+	}
+	
+	
+	public static void someFight(CanFight fight){
+		fight.fight();
+	}
+	public static void someSwim(CanSwim swim){
+		swim.swim();
+	}
+	public static void someFly(CanFly fly){
+		fly.fly();
+	}
+	public static void someAction(ActionCharacter ac){
+		ac.fight();
+	}
+	
+
+}

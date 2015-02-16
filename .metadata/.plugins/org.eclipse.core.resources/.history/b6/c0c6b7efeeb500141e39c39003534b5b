@@ -1,0 +1,84 @@
+package com.mase.polymorphism;
+
+public class MusicExample {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public class Instrument {
+		public void play(){
+			System.out.println("play");;
+		}
+		public void what(){
+			System.out.println("what");;
+		}
+		public void adjust(){
+			System.out.println("adjust");;
+		}
+	}
+	
+	public class Stringed extends Instrument {
+		@Override
+		public void play(){
+			System.out.println("play");;
+		}
+		public void what(){
+			System.out.println("what");;
+		}
+		public void adjust(){
+			System.out.println("adjust");;
+		}
+	}
+	
+	public class Wind extends Instrument {
+		@Override
+		public void play(){
+			System.out.println("play");;
+		}
+		public void what(){
+			System.out.println("what");;
+		}
+		public void adjust(){
+			System.out.println("adjust");;
+		}
+	}
+	
+	public class Percussion extends Instrument {
+		@Override
+		public void play(){
+			System.out.println("play");;
+		}
+		public void what(){
+			System.out.println("what");;
+		}
+		public void adjust(){
+			System.out.println("adjust");;
+		}
+	}
+	
+	public class Woodwind extends Wind {
+		@Override
+		public void play(){
+			System.out.println("play");;
+		}
+		public void what(){
+			System.out.println("what");;
+		}
+	}
+	
+	public class Brass extends Wind {
+		@Override
+		public void play(){
+			System.out.println("play");;
+		}
+		public void what(){
+			System.out.println("what");;
+		}
+	}
+
+}

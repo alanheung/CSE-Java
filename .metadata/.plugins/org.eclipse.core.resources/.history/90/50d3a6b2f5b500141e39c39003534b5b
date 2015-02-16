@@ -1,0 +1,12 @@
+package com.mase.polymorphism3;
+
+public class Brass implements Wind {
+	@Override
+	public void play(){
+		System.out.println("Brass::play");;
+	}
+	@Override
+	public void adjust(){
+		System.out.println("Brass::what");;
+	}
+}

@@ -1,0 +1,42 @@
+package com.mase.polymorphism;
+
+public class MusicExample {
+
+	public static void main(String[] args) {
+		//tune(new Guitar());
+		//tune(new Wind());
+		//tuneAnother(new Wind());
+		Instrument[] orchestra = new Instrument[5];
+		int i=0;
+		orchestra[i++] = new Instrument();
+		orchestra[i++] = new Instrument();
+		orchestra[i++] = new Instrument();
+		orchestra[i++] = new Instrument();
+		orchestra[i++] = new Instrument();
+				orchestra[i++] = new Wind();
+		tuneAll(orchestra);
+	}
+
+	public static void tune(Instrument i){
+		i.play();
+	}
+
+	public static void tuneAll(Instrument[] e){
+//		for(int i=0; e<orchestra.length.i++){
+		for(Instrument current :e){
+				tune(current);
+			}
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+}//end

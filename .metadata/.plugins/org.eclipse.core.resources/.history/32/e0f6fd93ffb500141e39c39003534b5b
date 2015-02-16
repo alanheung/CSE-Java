@@ -1,0 +1,13 @@
+package com.commision;
+
+public class GunCommission {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

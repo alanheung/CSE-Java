@@ -1,0 +1,23 @@
+package com.mase.adventure;
+
+public class Adventure {
+
+	public static void main(String[] args) {
+
+	}
+	
+	public static void someFight(CanFight fight){
+		
+	}
+	public static void someSwim(CanSwim swim){
+		
+	}
+	public static void someFly(CanFly fly){
+		
+	}
+	public static void someAction(CanFight cf){
+		
+	}
+	
+
+}

@@ -1,0 +1,9 @@
+package com.commision;
+
+public class GunCommission {
+static int commission  = 0;
+	public int calculateCommission(int locks, int stocks, int barrels, int roundsOfAmmo){
+		return commission;
+	}
+
+}

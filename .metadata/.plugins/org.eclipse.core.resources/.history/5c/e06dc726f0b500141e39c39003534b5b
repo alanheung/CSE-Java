@@ -1,0 +1,11 @@
+package com.mase.polymorphism;
+
+public class Brass extends Wind {
+	@Override
+	public void play(){
+		System.out.println("play");;
+	}
+	public void adjust(){
+		System.out.println("what");;
+	}
+}
