@@ -1,0 +1,34 @@
+package com.mase.horrorshow;
+
+public class HorrorShow {
+
+	public static void main(String[] args) {
+		
+		DragonZilla dz = new DragonZilla();
+		dz.destroy();//DragonZilla::destroy
+		dz.menace();//DragonZilla::menace
+		isDangerousMonster(dz);//DragonZilla::destroy
+		isMonster(dz);//DragonZilla::menace
+		
+		Dracula count = new Dracula();
+		count.drinkBlood();//Dracula::drinkBlood
+		count.kill();//Dracula::kill
+		count.destroy();//Dracula::destroy
+		count.menace();//Dracula::menace
+		isVampire(count);//Dracula::drinkBlood
+		isLethal(count);//Dracula::kill
+
+	}
+	public static void isDangerousMonster(DangerousMonster dm){
+		dm.destroy();
+	}
+	public static void isMonster(Monster m){
+		m.menace();
+	}
+	public static void isVampire(Vampire v){
+		v.drinkBlood();
+	}
+	public static void isLethal(Lethal l){
+		l.kill();
+	}
+}

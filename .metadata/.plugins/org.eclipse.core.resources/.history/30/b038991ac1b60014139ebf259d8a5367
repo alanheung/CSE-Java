@@ -1,0 +1,11 @@
+package com.mase.horrorshow;
+
+public class Dracula implements Vampire{
+
+	@Override
+	public void drinkBlood() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

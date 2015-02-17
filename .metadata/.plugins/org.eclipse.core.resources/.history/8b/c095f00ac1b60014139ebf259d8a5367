@@ -1,0 +1,5 @@
+package com.mase.horrorshow;
+
+public interface Vampire {
+	void drinkBlood();
+}

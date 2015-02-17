@@ -1,0 +1,15 @@
+package com.mase.animals;
+
+public class Owner {
+	private String name;
+	
+	public String Owner(){
+	 return "Owner";
+	}
+	public String getName(){
+		return this.getName();
+	}
+	public void setName(String setName){
+		this.setName = setName;
+	}
+}

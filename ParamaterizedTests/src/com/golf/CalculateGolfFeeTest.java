@@ -21,72 +21,91 @@ import static junitparams.JUnitParamsRunner.$;
 public class CalculateGolfFeeTest {
 
 	private final static int VALID_AGE = 65;	
-	private final static int VALID_DOW = 5;
+	private final static int VALID_DAY = 5;
 	private final static int INVALID_AGE = -1;
-	private final static int INVALID_DOW = -7;
-//	private CalculateGolfFee golfFee;
-	
+	private final static int INVALID_DAY = -7;
+	private final static boolean ELPASO_RESIDENT=true;
+	private final static boolean NON_ELPASO_RESIDENT=false;
+
+	//	private CalculateGolfFee golfFee;
+
 	static CalculateGolfFee golfFee = new CalculateGolfFee();
-//	@Before
-//	public void setUp(){
-//		golfFee = new CalculateGolfFee(); 
-//	}
-	
+	//	@Before
+	//	public void setUp(){
+	//		golfFee = new CalculateGolfFee(); 
+	//	}
+
 	@Parameters
-	private static final Object[] getWeekdayFees(){//age, elpaso, day, answer
+	private static final Object[] getNonHotelResidentValues(){//age, elpaso, day, answer
 		return $( 
-				//$(9,false,2,),
-						//$(10,false,3,20),$(11,false,4,20),  
-				$(16,false,4,20), $(17,false,5,20),$(18,false,1,65)
-//				$(59,false,2,65), $(60,false,3,40),$(61,false,4,40),
-//				$(89,false,5,40), $(90,false,1,40),$(91,false,2,65)
+				$(10,1,30.0),$(11,2,20.0),$(16,6,20.0),
+				$(17,7,30.0),$(60,1,50.0),$(61,2,40.0),
+				$(88,5,40.0),$(89,7,50.0),$(18,1,80.0),
+				$(79,2,60.0),$(58,5,60.0),$(59,7,80.0)
 				);
 	}
-//	private static final Object[] getWeekendFees(){
-//		return $(
-//				$(9,false,6,0), $(10,false,7,30),$(11,false,6,30),
-//				$(16,false,7,30), $(17,false,6,30),$(18,false,7,80),
-//				$(59,false,6,50), $(60,false,7,50),$(61,false,6,50),
-//				$(89,false,7,50), $(90,false,6,50),$(91,false,7,0)
-//				);
-//	}
-//	private static final Object[] getElPasoFees(){
-//		return $(
-//				$(9,true,1,80), $(10,true,2,30),$(11,true,3,30),
-//				$(16,true,4,30), $(17,true,5,30),$(18,true,1,80),
-//				$(59,true,2,60), $(60,true,3,50),$(61,true,4,50),
-//				$(89,true,5,50), $(90,true,1,50),$(91,true,2,0)
-//				);
-//	}
-	
+
+	//	@Parameters
+	//	private static final Object[] getWeekdayFees(){//age, elpaso, day, answer
+	//		return $( 
+	//$(9,false,2,),
+	//$(10,false,3,20),$(11,false,4,20),  
+	//$(16,false,4,20), $(17,false,5,20),$(18,false,1,65)
+	//				$(59,false,2,65), $(60,false,3,40),$(61,false,4,40),
+	//				$(89,false,5,40), $(90,false,1,40),$(91,false,2,65)
+	//				);
+	//	}
+	//	private static final Object[] getWeekendFees(){
+	//		return $(
+	//				$(9,false,6,0), $(10,false,7,30),$(11,false,6,30),
+	//				$(16,false,7,30), $(17,false,6,30),$(18,false,7,80),
+	//				$(59,false,6,50), $(60,false,7,50),$(61,false,6,50),
+	//				$(89,false,7,50), $(90,false,6,50),$(91,false,7,0)
+	//				);
+	//	}
+	//	private static final Object[] getElPasoFees(){
+	//		return $(
+	//				$(9,true,1,80), $(10,true,2,30),$(11,true,3,30),
+	//				$(16,true,4,30), $(17,true,5,30),$(18,true,1,80),
+	//				$(59,true,2,60), $(60,true,3,50),$(61,true,4,50),
+	//				$(89,true,5,50), $(90,true,1,50),$(91,true,2,0)
+	//				);
+	//	}
+
 	@Parameters
 	private static final Object[] getInvalidAge(){
 		return $(
-				$(-9),$(-4),$(-60)
+				$(9),$(90)
 				);
 	}
-	
+	@Parameters
+	private static final Object[] getInvalidDay(){
+		return $(
+				$(0),$(8)
+				);
+	}
+
 	@Test
 	@Parameters(method="getWeekdayFees")
-	public void calculateFeeWeekdayValues(int age, boolean elPasoResident, int dayOfTheWeek, double fee){//passes the three values
-		assertEquals(fee,golfFee.calculateGolfFee(age, elPasoResident, dayOfTheWeek),0.0001);
+	public void calculateFeeWeekdayValues(int age, int dayOfTheWeek, double fee){//passes the three values
+		assertEquals(fee,golfFee.calculateGolfFee(age, NON_ELPASO_RESIDENT,dayOfTheWeek),0.0001);
 	}
-	
+
 	@Test
 	@Parameters(method="getWeekendFees")
-	public void calculateFeeWeekendValues(int age, boolean elPasoResident, int dayOfTheWeek, double fee){//passes the three values
-		assertEquals(fee,golfFee.calculateGolfFee(age, elPasoResident, dayOfTheWeek),0.0001);
+	public void calculateFeeWeekendValues(int age, int dayOfTheWeek, double fee){//passes the three values
+		assertEquals(fee,golfFee.calculateGolfFee(age, ELPASO_RESIDENT, dayOfTheWeek),0.0001);
 	}
-	
+
 	@Test(expected = IllegalArgumentException.class)
 	@Parameters(method = "getInvalidAge")
 	public void constructorShouldThrowIAEForInvalidAge(int invalidAge, boolean elPasoResident, int dayOfTheWeek) {
-		golfFee.calculateGolfFee(invalidAge,true,VALID_DOW);
+		golfFee.calculateGolfFee(invalidAge,true,VALID_DAY);
 	}
-	
+
 	@Test(expected = IllegalArgumentException.class)
 	@Parameters(method = "getInvalidDayOfWeek")
 	public void constructorShouldThrowIAEForInvalidDayOfWeek() {
-		golfFee.calculateGolfFee(VALID_AGE,true,INVALID_DOW);
+		golfFee.calculateGolfFee(VALID_AGE,true,INVALID_DAY);
 	}
 }

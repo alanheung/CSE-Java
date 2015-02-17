@@ -1,0 +1,4 @@
+package com.mase.horrorshow;
+
+public class Dracula implements Vampire{
+}

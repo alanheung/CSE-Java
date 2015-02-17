@@ -1,0 +1,9 @@
+package com.mase.horrorshow;
+
+public class HorrorShow {
+
+	public static void main(String[] args) {
+
+	}
+
+}

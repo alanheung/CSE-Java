@@ -1,0 +1,5 @@
+package com.mase.animals;
+
+public interface Pet {
+
+}

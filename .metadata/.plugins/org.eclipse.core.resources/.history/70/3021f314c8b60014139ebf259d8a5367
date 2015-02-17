@@ -1,0 +1,14 @@
+package com.mase.animals;
+
+public class Goldfish {
+
+	private String name;
+	private Owner owner;
+	
+	public Goldfish(){
+		
+	}
+	public void walk(){
+		System.out.println("Goldfish::walk");
+	}
+}

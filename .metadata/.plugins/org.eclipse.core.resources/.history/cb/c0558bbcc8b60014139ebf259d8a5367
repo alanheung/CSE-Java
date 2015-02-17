@@ -1,0 +1,15 @@
+package com.mase.animals;
+
+public class Goldfish extends Animal{
+
+	private String name;
+	private Owner owner;
+	
+	public Goldfish(){
+		System.out.println("Goldfish::goldfish");
+
+	}
+	public void walk(){
+		System.out.println("Goldfish::walk");
+	}
+}

@@ -1,0 +1,16 @@
+package com.mase.animals;
+
+public class PetStore {
+	public static void main(String[]args){
+		
+	}
+	public void playWithGoldfish(Goldfish splash){
+	
+	}
+	public void playWithDogs(Dog bobby){
+	
+	}
+	public void playWithPets(Pet todd){
+	
+	}
+}

@@ -1,0 +1,7 @@
+package com.mase.animals;
+
+public class Lizard extends Animal{
+	Lizard(){
+
+	}
+}

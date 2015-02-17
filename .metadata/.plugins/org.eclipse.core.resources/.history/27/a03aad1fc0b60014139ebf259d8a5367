@@ -1,0 +1,11 @@
+package com.mase.horrorshow;
+
+public class DragonZilla {
+	public void menace(){
+		System.out.println("DragonZilla::menace");
+	}
+public void destroy(){
+	System.out.println("DragonZilla::destroy");
+
+	}
+}

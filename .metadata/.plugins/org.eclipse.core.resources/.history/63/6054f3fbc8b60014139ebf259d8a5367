@@ -1,0 +1,13 @@
+package com.mase.animals;
+
+public class Dog extends Animal,Owner implements Pet {
+	
+	private Owner owner;
+	
+	public void Dog(){
+		
+	}
+	public void Dog(String s){
+		
+	}
+}

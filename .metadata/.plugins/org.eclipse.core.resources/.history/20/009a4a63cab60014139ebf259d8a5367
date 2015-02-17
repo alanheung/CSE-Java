@@ -1,0 +1,33 @@
+package com.mase.animals;
+
+public class Dog extends Animal implements Pet {
+	
+	private static Owner owner;
+	private static String name;
+
+	public Dog(int i) {
+		super(i);
+	}
+
+	public void Dog(){
+		
+	}
+	public void Dog(String s){
+		
+	}
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public String setName(String s) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public void play() {
+		// TODO Auto-generated method stub
+		
+	}
+}

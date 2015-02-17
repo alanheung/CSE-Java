@@ -1,0 +1,7 @@
+package com.mase.animals;
+
+public class Dog {
+	
+	void Dog();
+	void Dog(String s);
+}
