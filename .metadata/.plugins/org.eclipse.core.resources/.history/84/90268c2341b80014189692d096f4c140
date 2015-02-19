@@ -1,0 +1,97 @@
+package com.gun;
+
+import static org.junit.Assert.*;
+import junitparams.JUnitParamsRunner;
+import junitparams.Parameters;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
+import com.golfSolution.CalculateGolfFee;
+
+import static junitparams.JUnitParamsRunner.$;
+
+@RunWith(JUnitParamsRunner.class)
+public class GunCommisionTest {
+	private CalculateGolfFee calcGolfFee;
+	private final static int VALID_NUM_LOCKS = 3;
+	private final static int VALID_NUM_STOCKS = 3;
+	private final static int VALID_NUM_BARRELS = 3;
+	private final static int VALID_NUM_ROUNDS = 3;
+
+	private GunCommission gunCommission;
+	
+	@Parameters
+	private static final Object[] getInvalidNumLocks(){
+		return $($(0),$(71)
+				);
+	}
+	@Parameters
+	private static final Object[] getInvalidNumStocks(){
+		return $($(0),$(81)
+				);
+	}
+	@Parameters
+	private static final Object[] getInvalidNumBarrels(){
+		return $($(0),$(91)
+				);
+	}
+	@Parameters
+	private static final Object[] getInvalidNumRounds(){
+		return $($(-1),$(1001)
+				);
+	}
+	@Parameters
+	private static final Object[] getValidValues(){
+//numLocks, numStocks, numBarrels, numRounds
+//LOCK_PRICE=45 STOCK_PRICE=30 BARREL_PRICE=25 ROUND_PRICE=1;
+		return $($(1,1,1,0,10),
+				$(1,1,1,0,10.10),
+				$(9,9,12,23,99.80),//405 270 300 23 =998
+				$(9,9,12,24,99.90),
+				$(10,10,10,0,150),
+				$(10,10,10,1,150.15),
+				$(17,17,17,98,269.70),
+				$(17,17,17,99,269.85),
+				$(18,18,18,1,360),
+				$(18,18,18,1,360.20),
+				$(70,80,90,999,1759.80),
+				$(70,80,90,1000,1760)
+				);
+	}
+
+	@Before
+	public void setUp(){
+		gunCommission = new GunCommission();
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	@Parameters(method = "getInvalidNumLocks")
+	public void calcGolfFeeShouldThrowIAEForInvalidNumLocks(int invalidNumLocks) {
+		gunCommission.calculateCommission(invalidNumLocks,VALID_NUM_STOCKS,VALID_NUM_BARRELS,VALID_NUM_ROUNDS);
+	}
+	@Test(expected = IllegalArgumentException.class)
+	@Parameters(method = "getInvalidNumStocks")
+	public void calcGolfFeeShouldThrowIAEForInvalidNumStocks(int invalidNumStocks) {
+		gunCommission.calculateCommission(VALID_NUM_LOCKS,invalidNumStocks,VALID_NUM_BARRELS,VALID_NUM_ROUNDS);
+	}
+	@Test(expected = IllegalArgumentException.class)
+	@Parameters(method = "getInvalidNumBarrels")
+	public void calcGolfFeeShouldThrowIAEForInvalidNumBarrels(int invalidNumBarrels) {
+		gunCommission.calculateCommission(VALID_NUM_LOCKS,VALID_NUM_STOCKS,invalidNumBarrels,VALID_NUM_ROUNDS);
+	}
+	@Test(expected = IllegalArgumentException.class)
+	@Parameters(method = "getInvalidNumRounds")
+	public void calcGolfFeeShouldThrowIAEForInvalidNumRounds(int invalidNumRounds) {
+		gunCommission.calculateCommission(VALID_NUM_LOCKS,VALID_NUM_STOCKS,VALID_NUM_BARRELS,invalidNumRounds);
+	}
+	
+	@Test
+	@Parameters(method = "getValidValues")
+	public void calculateCommission(int numLocks, int numStocks, int numBarrels, int numRounds, double expectedCommission){
+		assertEquals(expectedCommission,gunCommission.calculateCommission(numLocks,numStocks,numBarrels,numRounds),0.01);
+	}
+	
+	
+}

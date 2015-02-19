@@ -1,0 +1,54 @@
+package com.gun;
+/**
+o	Lock = $45.00, 
+o	Stock =$30.00, 
+o	Barrel = $25.0, 
+o	Round of ammunition = $1
+ */
+
+public class GunCommission {
+
+	private static final double LOCK_PRICE=45;
+	private static final double STOCK_PRICE=30;
+	private static final double BARREL_PRICE=25;
+	private static final double ROUND_PRICE=1;
+	private static final double RATE_1=0.1;
+	private static final double RATE_2=0.15;
+	private static final double RATE_3=0.2;
+
+
+	public double calculateCommission(int numLocks, int numStocks, int numBarrels, int numRounds){
+		//Each salesperson has to sell at least one complete rifle (lock, stock, barrel) per month
+		//The most one salesperson can sell in a month is 70 locks, 80 stocks, 90 barrels and 1000 rounds of ammunition.
+		if((numLocks<1)||(numLocks>70)){
+			throw new IllegalArgumentException("Illegal no of locks "+numLocks);
+		}
+		if((numStocks<1)||(numStocks>80)){
+			throw new IllegalArgumentException("Illegal no of Stocks "+numStocks);
+		}
+		if((numBarrels<1)||(numBarrels>90)){
+			throw new IllegalArgumentException("Illegal no of Barrels "+numBarrels);
+		}
+		if((numRounds<0)||(numRounds>1000)){
+			throw new IllegalArgumentException("Illegal no of Rounds "+numRounds);
+		}
+
+		double totalSales=(numLocks*LOCK_PRICE)+(numStocks*STOCK_PRICE)
+				+(numBarrels*BARREL_PRICE)+(numRounds*ROUND_PRICE);
+
+		//Commission on sales is calculated as follows:
+		//o	10% on sales up to (not including) $1000
+		//o	15% on the next $800
+		//o	20% on any sales of $1800 or more
+
+		double commission;
+		if(totalSales<1000){
+			commission=totalSales*RATE_1;
+		}else if(totalSales<1800){
+			commission=totalSales*RATE_2;
+		}else{
+			commission=totalSales*RATE_3;
+		}
+		return commission;
+	}
+}
