@@ -1,0 +1,41 @@
+package com.mase.petstore;
+
+public class PetMain {
+
+	public static void main(String[] args) {
+		Spider spidy = new Spider();
+		spidy.eat();
+
+		Cat kitty = new Cat();
+		kitty.setName("Mr.Whiskers ");
+		kitty.play();
+
+		Fish splash = new Fish();
+		splash.setName("Guppy ");
+		splash.play();
+		
+		examine(spidy);
+		examine(kitty);
+		examine(splash);
+		
+		examine(new Spider());
+		examine(new Cat());
+		examine(new Fish());
+	}
+
+	public static void examine(Object animal){ 
+		if(animal instanceof CanWalk){ 
+			System.out.println("This is a walking animal. " 
+					+ "The animal type is "+animal.getClass().getSimpleName()); 
+			
+			((CanWalk) animal).walk(); 
+		} else{ 
+			System.out.println("The animal that cannot walk must be a fish..."); 
+			if(animal instanceof Fish){ System.out.println("Yes, its a fish. " 
+			+"The animal type is "+animal.getClass().getSimpleName()); 
+			} 
+		} 
+	}
+
+
+}

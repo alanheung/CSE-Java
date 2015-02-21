@@ -1,0 +1,18 @@
+package com.mase.petstore;
+
+public class Spider extends Animal implements CanWalk{
+	
+	public Spider(){
+		
+	}
+	
+	public void eat(){
+		System.out.println("Spider::eat");
+	}
+
+	@Override
+	public void walk() {
+		System.out.println("Spider::walk");
+		
+	}
+}

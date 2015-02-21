@@ -1,0 +1,15 @@
+package com.exam;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class CarParkFeeTest {
+	private CarParkFee cpFee;
+	@Before
+	public void setUp() throws Exception {
+		cpFee = new CarParkFee();
+	}
+
+}

@@ -13,17 +13,16 @@ public class Goldfish extends Animal implements Pet{
 	}
 	@Override
 	public String getName() {
-		// TODO Auto-generated method stub
+		System.out.println("Goldfish::getName");
 		return null;
 	}
 	@Override
 	public String setName(String s) {
-		// TODO Auto-generated method stub
+		System.out.println("Goldfish::setName");
 		return null;
 	}
 	@Override
 	public void play() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Goldfish::play");
 	}
 }

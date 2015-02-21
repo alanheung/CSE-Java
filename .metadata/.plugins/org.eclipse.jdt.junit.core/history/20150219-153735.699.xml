@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="GunCommisionTest (1)" project="ParamExam" tests="20" started="20" failures="2" errors="0" ignored="0">
+  <testsuite name="com.gun.GunCommisionTest" time="0.001">
+    <testsuite name="calcGolfFeeShouldThrowIAEForInvalidNumLocks" time="0.0">
+      <testcase name="[0] 0 " classname="calcGolfFeeShouldThrowIAEForInvalidNumLocks" time="0.0"/>
+      <testcase name="[1] 71 " classname="calcGolfFeeShouldThrowIAEForInvalidNumLocks" time="0.0"/>
+    </testsuite>
+    <testsuite name="calcGolfFeeShouldThrowIAEForInvalidNumStocks" time="0.0">
+      <testcase name="[0] 0 " classname="calcGolfFeeShouldThrowIAEForInvalidNumStocks" time="0.0"/>
+      <testcase name="[1] 81 " classname="calcGolfFeeShouldThrowIAEForInvalidNumStocks" time="0.0"/>
+    </testsuite>
+    <testsuite name="calcGolfFeeShouldThrowIAEForInvalidNumRounds" time="0.0">
+      <testcase name="[0] -1 " classname="calcGolfFeeShouldThrowIAEForInvalidNumRounds" time="0.0"/>
+      <testcase name="[1] 1001 " classname="calcGolfFeeShouldThrowIAEForInvalidNumRounds" time="0.0"/>
+    </testsuite>
+    <testsuite name="calcGolfFeeShouldThrowIAEForInvalidNumBarrels" time="0.0">
+      <testcase name="[0] 0 " classname="calcGolfFeeShouldThrowIAEForInvalidNumBarrels" time="0.0"/>
+      <testcase name="[1] 91 " classname="calcGolfFeeShouldThrowIAEForInvalidNumBarrels" time="0.0"/>
+    </testsuite>
+    <testsuite name="calculateCommission" time="0.001">
+      <testcase name="[0] 1, 1, 1, 0, 10 " classname="calculateCommission" time="0.0"/>
+      <testcase name="[1] 1, 1, 1, 0, 10.1 " classname="calculateCommission" time="0.0">
+        <failure>java.lang.AssertionError: expected:&lt;10.1&gt; but was:&lt;10.0&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:91)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:645)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:441)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:510)&#13;
+	at com.gun.GunCommisionTest.calculateCommission(GunCommisionTest.java:91)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:601)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)&#13;
+	at junitparams.internal.InvokeParameterisedMethod.evaluate(InvokeParameterisedMethod.java:170)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)&#13;
+	at junitparams.internal.ParameterisedTestMethodRunner.runMethodInvoker(ParameterisedTestMethodRunner.java:48)&#13;
+	at junitparams.internal.ParameterisedTestMethodRunner.runTestMethod(ParameterisedTestMethodRunner.java:42)&#13;
+	at junitparams.internal.ParameterisedTestClassRunner.runParameterisedTest(ParameterisedTestClassRunner.java:143)&#13;
+	at junitparams.JUnitParamsRunner.runChild(JUnitParamsRunner.java:405)&#13;
+	at junitparams.JUnitParamsRunner.runChild(JUnitParamsRunner.java:383)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)&#13;
+&#13;
+</failure>
+      </testcase>
+      <testcase name="[2] 9, 9, 12, 23, 99.8 " classname="calculateCommission" time="0.0"/>
+      <testcase name="[3] 9, 9, 12, 24, 99.9 " classname="calculateCommission" time="0.0"/>
+      <testcase name="[4] 10, 10, 10, 0, 150 " classname="calculateCommission" time="0.0"/>
+      <testcase name="[5] 10, 10, 10, 1, 150.15 " classname="calculateCommission" time="0.0"/>
+      <testcase name="[6] 17, 17, 17, 98, 269.7 " classname="calculateCommission" time="0.0"/>
+      <testcase name="[7] 17, 17, 17, 99, 269.85 " classname="calculateCommission" time="0.0"/>
+      <testcase name="[8] 18, 18, 18, 1, 360 " classname="calculateCommission" time="0.0">
+        <failure>java.lang.AssertionError: expected:&lt;360.0&gt; but was:&lt;360.20000000000005&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:91)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:645)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:441)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:510)&#13;
+	at com.gun.GunCommisionTest.calculateCommission(GunCommisionTest.java:91)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:601)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)&#13;
+	at junitparams.internal.InvokeParameterisedMethod.evaluate(InvokeParameterisedMethod.java:170)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)&#13;
+	at junitparams.internal.ParameterisedTestMethodRunner.runMethodInvoker(ParameterisedTestMethodRunner.java:48)&#13;
+	at junitparams.internal.ParameterisedTestMethodRunner.runTestMethod(ParameterisedTestMethodRunner.java:42)&#13;
+	at junitparams.internal.ParameterisedTestClassRunner.runParameterisedTest(ParameterisedTestClassRunner.java:143)&#13;
+	at junitparams.JUnitParamsRunner.runChild(JUnitParamsRunner.java:405)&#13;
+	at junitparams.JUnitParamsRunner.runChild(JUnitParamsRunner.java:383)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)&#13;
+&#13;
+</failure>
+      </testcase>
+      <testcase name="[9] 18, 18, 18, 1, 360.2 " classname="calculateCommission" time="0.0"/>
+      <testcase name="[10] 70, 80, 90, 999, 1759.8 " classname="calculateCommission" time="0.0"/>
+      <testcase name="[11] 70, 80, 90, 1000, 1760 " classname="calculateCommission" time="0.0"/>
+    </testsuite>
+  </testsuite>
+</testrun>

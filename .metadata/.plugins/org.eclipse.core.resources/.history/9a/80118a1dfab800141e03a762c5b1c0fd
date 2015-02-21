@@ -1,0 +1,12 @@
+package com.mase.petstore;
+
+public class Cat {
+
+	private
+	
+	Spider()
+	public void eat(){
+		System.out.println("Cat::eat");
+	}
+	
+}

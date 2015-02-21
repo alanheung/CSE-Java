@@ -1,0 +1,16 @@
+package com.mase.petstore;
+
+public class Fish extends Animal implements Pet{
+	
+	private Nameable nameable;
+
+	public void eat(){
+		System.out.println("Fish eat plankton"); 
+	}
+
+	@Override
+	public void play() {
+		// TODO Auto-generated method stub
+		
+	}
+}

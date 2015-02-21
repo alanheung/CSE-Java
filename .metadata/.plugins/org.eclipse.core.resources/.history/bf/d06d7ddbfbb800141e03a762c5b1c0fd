@@ -1,0 +1,5 @@
+package com.mase.petstore;
+
+public class NameableImpl implements NameableImpl{
+	private String name;
+}

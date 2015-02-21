@@ -1,0 +1,30 @@
+package com.exam;
+
+public class CarParkFee {
+	private static final double HOUR=2.00;
+	private static final double DAILY_MAX=10.00;
+	private static final double WEEKLY_MAX=50.00;
+	private static final double DIS_PERMIT=0.20;
+
+	/**
+	 * 
+	 * @param hours
+	 * @param days
+	 * @param weeks
+	 * @param permit
+	 * @return
+	 */
+	public double calculateFee(int hours, int days, int weeks, boolean permit){
+		//invalid
+		//minimum of hour
+		//max is week
+		
+		//•	Drivers with a disability permit receive a 20% discount
+		//•	The maximum amount payable per week is €50.
+		
+		double fee = 0;
+		
+		return fee;
+	}
+
+}

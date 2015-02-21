@@ -1,0 +1,9 @@
+package com.mase.petstore;
+
+public class PetMain {
+
+	public static void main(String[] args) {
+
+	}
+
+}

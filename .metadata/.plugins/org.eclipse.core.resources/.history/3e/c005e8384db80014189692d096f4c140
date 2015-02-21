@@ -1,0 +1,36 @@
+package com.exam;
+
+import static junitparams.JUnitParamsRunner.$;
+import static org.junit.Assert.*;
+import junitparams.Parameters;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class CarParkFeeTest {
+	private CarParkFee cpFee;
+	private final static int VALID_HOUR = 3;
+	private final static int VALID_DAY = 3;
+	private final static int VALID_WEEK = 3;
+	@Before
+	public void setUp() throws Exception {
+		cpFee = new CarParkFee();
+	}
+	
+	@Parameters
+	private static final Object[] getInvalidNumLocks(){
+		return $($(0),$(71)
+				);
+	}
+	@Parameters
+	private static final Object[] getInvalidNumStocks(){
+		return $($(0),$(81)
+				);
+	}
+	@Parameters
+	private static final Object[] getInvalidNumBarrels(){
+		return $($(0),$(91)
+				);
+	}
+
+}

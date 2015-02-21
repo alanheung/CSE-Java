@@ -1,0 +1,9 @@
+package com.mase.petstore;
+
+public class Fish {
+	private Nameable nameable;
+
+	void eat(){
+		System.out.println("Fish::eat"); 
+	}
+}

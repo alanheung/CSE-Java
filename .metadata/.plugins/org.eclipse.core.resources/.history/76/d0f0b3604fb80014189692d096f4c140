@@ -1,0 +1,60 @@
+package com.exam;
+// boundaries hours 0 1 2 - 23 24 25
+//days 0 1 2 - 6 7 8
+//weeks 0 1
+import static junitparams.JUnitParamsRunner.$;
+import static org.junit.Assert.*;
+import junitparams.Parameters;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class CarParkFeeTest {
+	private CarParkFee cpFee;
+	private final static int VALID_HOUR = 3;
+	private final static int VALID_DAY = 3;
+	private final static int VALID_WEEK = 3;
+	@Before
+	public void setUp() throws Exception {
+		cpFee = new CarParkFee();
+	}
+	
+	@Parameters
+	private static final Object[] getInvalidHour(){
+		return $($(-1),$(35)
+				);
+	}
+	@Parameters
+	private static final Object[] getInvalidDay(){
+		return $($(-1),$(9)
+				);
+	}
+	@Parameters
+	private static final Object[] getInvalidWeek(){
+		return $($(-1),$(2)
+				);
+	}
+	//int hour, int day, int week, boolean permit
+	@Parameters
+	private static final Object[] getValidValues(){
+		return $($(1,0,0,2.00) 
+				);
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	@Parameters(method = "getInvalidHour")
+	public void calcFeeShouldThrowIAEForInvalidHour(int invalidHour) {
+		cpFee.calculateFee(invalidHour, VALID_DAY, VALID_WEEK, false);
+	}
+	@Test(expected = IllegalArgumentException.class)
+	@Parameters(method = "getInvalidDay")
+	public void calcFeeShouldThrowIAEForInvalidDay(int invalidDay) {
+		cpFee.calculateFee(VALID_HOUR, invalidDay, VALID_WEEK, false);
+	}
+	@Test(expected = IllegalArgumentException.class)
+	@Parameters(method = "getInvalidWeek")
+	public void calcFeeShouldThrowIAEForInvalidWeek(int invalidWeek) {
+		cpFee.calculateFee(VALID_HOUR, VALID_DAY, invalidWeek, false);
+	}
+
+}

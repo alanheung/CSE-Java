@@ -1,0 +1,16 @@
+package com.mase.petstore;
+
+public class CanWalkImpl implements CanWalk{
+	protected static int legs;
+	
+	public CanWalkImpl(int legs){
+		super();
+		System.out.println("This animal walks on legs"+legs);
+	}
+
+	@Override
+	public void walk() {
+System.out.println("Canwalkimpl::walk");		
+	}
+
+}

@@ -1,0 +1,24 @@
+package com.mase.petstore;
+
+public class Cat extends Animal,NameableImpl,CanWalkImpl implements Pet,CanWalkImpl{
+
+	private Nameable nameable;
+	private CanWalk itWalks;
+	
+	public Cat(){
+		
+	}
+	public Cat(String s){
+		
+	}
+	@Override
+	public void eat(){
+		System.out.println("Cat::eat");
+	}
+	@Override
+	public void play() {
+		System.out.println("Cat::play");
+
+	}
+	
+}

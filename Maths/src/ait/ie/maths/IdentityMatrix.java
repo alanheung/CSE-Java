@@ -1,12 +1,10 @@
+package ait.ie.maths;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
 
-/**
- *
- * @author kfitzgerald
- */
 import java.util.Scanner;
 public class IdentityMatrix
 {

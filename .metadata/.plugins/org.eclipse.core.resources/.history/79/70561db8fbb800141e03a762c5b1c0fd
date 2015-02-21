@@ -1,0 +1,23 @@
+package com.mase.petstore;
+
+public class Cat extends Animal implements Pet{
+
+	private Nameable nameable;
+	private CanWalk itWalks;
+	
+	public Cat(){
+		
+	}
+	public Cat(String s){
+		
+	}
+	public void eat(){
+		System.out.println("Cat::eat");
+	}
+	@Override
+	public void play() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

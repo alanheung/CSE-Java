@@ -1,0 +1,10 @@
+package com.mase.petstore;
+
+public class CanWalkImpl {
+	protected static int legs;
+	
+	public CanWalkImpl(int i){
+		super();
+		System.out.println("CanWalkImpl::CanWalkImpl"+i);
+	}
+}

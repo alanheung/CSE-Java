@@ -1,0 +1,84 @@
+package com.exam;
+// boundaries hours 0 1 2 - 23 24 25
+//days 0 1 2 - 6 7 8
+//weeks 0 1
+import static junitparams.JUnitParamsRunner.$;
+import static org.junit.Assert.*;
+import junitparams.JUnitParamsRunner;
+import junitparams.Parameters;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+@RunWith(JUnitParamsRunner.class)
+
+public class CarParkFeeTest {
+	private CarParkFee cpFee;
+	private final static int VALID_HOUR = 3;
+	private final static int VALID_DAY = 3;
+	private final static int VALID_WEEK = 3;
+	private final static boolean DISABLED = true;
+	private final static boolean NOT_DISABLED = false;
+
+	@Before
+	public void setUp() throws Exception {
+		cpFee = new CarParkFee();
+	}//not sure why this is not passing?
+
+	@Parameters
+	private static final Object[] getInvalidHour(){
+		return $($(-1),$(25)
+				);
+	}
+	@Parameters
+	private static final Object[] getInvalidDay(){
+		return $($(-1),$(8)
+				);
+	}
+	@Parameters
+	private static final Object[] getInvalidWeek(){ 
+		return $($(-1),$(2)
+				);
+	}
+
+	@Parameters
+	private static final Object[] getDisabledValues(){
+		return $($(0,0,0,0),$(1,0,0,2.00),$(2,0,0,4.00) //int hour, int day, int week, boolean permit 
+				);
+	}
+	
+	@Parameters
+	private static final Object[] getNotDisabledValues(){
+		return $($(1,0,0,2.00) //int hour, int day, int week, boolean permit 
+				);
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	@Parameters(method = "getInvalidHour")
+	public void calcFeeShouldThrowIAEForInvalidHour(int invalidHour) {
+		cpFee.calculateFee(invalidHour, VALID_DAY, VALID_WEEK, DISABLED);
+	}//invalid should be red
+	@Test(expected = IllegalArgumentException.class)
+	@Parameters(method = "getInvalidDay")
+	public void calcFeeShouldThrowIAEForInvalidDay(int invalidDay) { 
+		cpFee.calculateFee(VALID_HOUR, invalidDay, VALID_WEEK, DISABLED); 
+	}//invalid should be red
+	@Test(expected = IllegalArgumentException.class)
+	@Parameters(method = "getInvalidWeek")
+	public void calcFeeShouldThrowIAEForInvalidWeek(int invalidWeek) { 
+		cpFee.calculateFee(VALID_HOUR, VALID_DAY, invalidWeek, DISABLED);
+	}//invalid should be red
+
+	@Test
+	@Parameters(method="getNotDisabledValues")
+	public void calculateFeeNotDisabled(int hour, int day, int week, double fee){
+		assertEquals(fee,cpFee.calculateFee(hour, day, week, NOT_DISABLED),0.0001);
+	}
+	@Test
+	@Parameters(method="getDisabledValues")
+	public void calculateFeeDisabled(int hour, int day, int week, double fee){
+		assertEquals(fee,cpFee.calculateFee(hour, day, week, DISABLED ),0.0001);
+	}
+
+
+}

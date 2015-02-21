@@ -1,0 +1,12 @@
+package com.mase.petstore;
+
+public class Spider {
+	
+	public Spider(){
+		
+	}
+	
+	void eat(){
+		System.out.println("Spider::eat");
+	}
+}

@@ -1,0 +1,6 @@
+package com.mase.petstore;
+
+public interface Nameable {
+	void setName(String s);
+	
+}

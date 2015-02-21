@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="79" version="2.0">
+<workbench progressCount="46" version="2.0">
 <workbenchAdvisor/>
-<window height="860" maximized="true" width="800" x="800" y="0">
+<window height="860" width="800" x="800" y="0">
 <fastViewData fastViewLocation="1024">
 <orientation position="512" view="org.eclipse.jdt.junit.ResultView"/>
 <orientation position="512" view="org.springframework.ide.eclipse.aop.ui.navigator.aopReferenceModelNavigator"/>
@@ -13,12 +13,12 @@
 </perspectiveBar>
 <coolbarLayout>
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="160" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="278" y="22"/>
 <coolItem id="com.google.gdt.eclipse.suite.GDTPulldownToolbar" itemType="typeToolBarContribution" x="53" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="com.springsource.sts.ide.ui.actionSet.workbench" itemType="typeToolBarContribution" x="38" y="22"/>
-<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
-<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="99" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="213" y="22"/>
+<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="261" y="22"/>
 <coolItem id="org.eclipse.jpt.jpa.ui.JptCreationActionSet" itemType="typeToolBarContribution" x="53" y="22"/>
 <coolItem id="org.eclipse.jst.j2ee.J2eeMainActionSet" itemType="typeToolBarContribution" x="91" y="22"/>
 <coolItem id="org.eclipse.team.ui.actionSet" itemType="typeToolBarContribution" x="53" y="22"/>
@@ -29,9 +29,9 @@
 <coolItem id="org.jboss.tools.jst.web.ui.server.actionSet" itemType="typeToolBarContribution" x="153" y="22"/>
 <coolItem id="org.jboss.tools.maven.ui.toolbars.selectMavenProfilesToolbar" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.jboss.tools.jst.jsp.toolbars.sampleToolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="122" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="145" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="61" y="22"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.jboss.tools.vpe.browsersim.eclipse.actionSet" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
@@ -53,46 +53,68 @@
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="38" y="22"/>
 </coolbarLayout>
-<page aggregateWorkingSetId="Aggregate for window 1412172557145" focus="true" label="Workspace - JPA">
+<page aggregateWorkingSetId="Aggregate for window 1412172557145" focus="true" label="Workspace - Java">
 <editors>
-<editorArea activeWorkbook="org.eclipse.ui.internal.EditorStack@13aec3e">
+<editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
-</presentation>
-</folder>
-</info>
-<info part="org.eclipse.ui.internal.EditorStack@13aec3e" ratio="0.5" ratioLeft="664" ratioRight="664" relationship="2" relative="DefaultEditorWorkbook">
-<folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Employee.java" partName="Employee.java" path="C:/Users/A00226316/Java/JPA_Lab2/src/Employee.java" title="Employee.java" tooltip="JPA_Lab2/src/Employee.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JPA_Lab2/src/Employee.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="52" selectionOffset="271" selectionTopPixel="143"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PetMain.java" partName="PetMain.java" path="C:/Users/A00226316/Java/MASEWK08/src/com/mase/petstore/PetMain.java" title="PetMain.java" tooltip="MASEWK08/src/com/mase/petstore/PetMain.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MASEWK08/src/com/mase/petstore/PetMain.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="447" selectionTopPixel="114"/>
 </editor>
-<editor focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EmployeeFactory.java" partName="EmployeeFactory.java" path="C:/Users/A00226316/Java/JPA_Lab2/src/EmployeeFactory.java" title="EmployeeFactory.java" tooltip="JPA_Lab2/src/EmployeeFactory.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JPA_Lab2/src/EmployeeFactory.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1354" selectionTopPixel="43"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Fish.java" partName="Fish.java" path="C:/Users/A00226316/Java/MASEWK08/src/com/mase/petstore/Fish.java" title="Fish.java" tooltip="MASEWK08/src/com/mase/petstore/Fish.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MASEWK08/src/com/mase/petstore/Fish.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="448" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jpt.jpa.ui.internal.editors.PersistenceEditor" name="persistence.xml" partName="persistence.xml" path="C:/Users/A00226316/Java/JPA_Lab2/src/META-INF/persistence.xml" title="persistence.xml" tooltip="JPA_Lab2/src/META-INF/persistence.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JPA_Lab2/src/META-INF/persistence.xml"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Cat.java" partName="Cat.java" path="C:/Users/A00226316/Java/MASEWK08/src/com/mase/petstore/Cat.java" title="Cat.java" tooltip="MASEWK08/src/com/mase/petstore/Cat.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MASEWK08/src/com/mase/petstore/Cat.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="369" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" partName="Test.java" path="C:/Users/A00226316/Java/JPA_Lab2/src/Test.java" title="Test.java" tooltip="JPA_Lab2/src/Test.java" workbook="org.eclipse.ui.internal.EditorStack@13aec3e">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JPA_Lab2/src/Test.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2976" selectionTopPixel="418"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Animal.java" partName="Animal.java" path="C:/Users/A00226316/Java/MASEWK08/src/com/mase/petstore/Animal.java" title="Animal.java" tooltip="MASEWK08/src/com/mase/petstore/Animal.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MASEWK08/src/com/mase/petstore/Animal.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="188" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CanWalk.java" partName="CanWalk.java" path="C:/Users/A00226316/Java/MASEWK08/src/com/mase/petstore/CanWalk.java" title="CanWalk.java" tooltip="MASEWK08/src/com/mase/petstore/CanWalk.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MASEWK08/src/com/mase/petstore/CanWalk.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="54" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Nameable.java" partName="Nameable.java" path="C:/Users/A00226316/Java/MASEWK08/src/com/mase/petstore/Nameable.java" title="Nameable.java" tooltip="MASEWK08/src/com/mase/petstore/Nameable.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MASEWK08/src/com/mase/petstore/Nameable.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="103" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NameableImpl.java" partName="NameableImpl.java" path="C:/Users/A00226316/Java/MASEWK08/src/com/mase/petstore/NameableImpl.java" title="NameableImpl.java" tooltip="MASEWK08/src/com/mase/petstore/NameableImpl.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MASEWK08/src/com/mase/petstore/NameableImpl.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="311" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CanWalkImpl.java" partName="CanWalkImpl.java" path="C:/Users/A00226316/Java/MASEWK08/src/com/mase/petstore/CanWalkImpl.java" title="CanWalkImpl.java" tooltip="MASEWK08/src/com/mase/petstore/CanWalkImpl.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MASEWK08/src/com/mase/petstore/CanWalkImpl.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="271" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Pet.java" partName="Pet.java" path="C:/Users/A00226316/Java/MASEWK08/src/com/mase/petstore/Pet.java" title="Pet.java" tooltip="MASEWK08/src/com/mase/petstore/Pet.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MASEWK08/src/com/mase/petstore/Pet.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="58" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Spider.java" partName="Spider.java" path="C:/Users/A00226316/Java/MASEWK08/src/com/mase/petstore/Spider.java" title="Spider.java" tooltip="MASEWK08/src/com/mase/petstore/Spider.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MASEWK08/src/com/mase/petstore/Spider.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="308" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
-<view id="org.eclipse.jpt.ui.jpaStructureView" partName="JPA Structure">
-<viewState/>
-</view>
 <view id="org.eclipse.egit.ui.StagingView" partName="Git Staging"/>
 <view id="org.eclipse.gef.ui.palette_view" partName="Palette">
 <viewState/>
@@ -120,15 +142,10 @@
 <view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
 <viewState/>
 </view>
-<view id="org.eclipse.jpt.ui.jpaDetailsView" partName="JPA Details">
-<viewState/>
-</view>
-<view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" partName="Data Source Explorer">
-<viewState CommonNavigator.LINKING_ENABLED="0" showCategories="true"/>
-</view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
+<category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
@@ -202,10 +219,10 @@
 <filteredTreeFindHistory/>
 </viewState>
 </view>
+<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 <view id="com.mountainminds.eclemma.ui.CoverageView" partName="Coverage">
 <viewState column0="300" column1="80" column2="120" column3="120" column4="120" counters="INSTRUCTION" hideunusedelements="false" linked="false" reversesort="true" roottype="GROUP" sortcolumn="3"/>
 </view>
-<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 <view id="org.eclipse.team.ui.GenericHistoryView" partName="History">
 <viewState/>
 </view>
@@ -222,22 +239,22 @@
 <view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
 </viewState>
 </view>
-<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
-<viewState/>
-</view>
 <view id="org.eclipse.jdt.callhierarchy.view" partName="Call Hierarchy">
 <viewState search_scope_type="1"/>
+</view>
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
+<viewState/>
 </view>
 <view id="com.zink.fly.buzz.views.FlyBuzzView" partName="Fly Buzz Statistics">
 <viewState/>
 </view>
 <view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
 <view id="org.eclipse.egit.ui.ReflogView" partName="Git Reflog"/>
-<view id="org.eclipse.mylyn.tasks.ui.views.repositories" partName="Task Repositories">
-<viewState/>
-</view>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="org.eclipse.mylyn.tasks.ui.views.repositories" partName="Task Repositories">
+<viewState/>
 </view>
 <view id="org.eclipse.ui.views.AllMarkersView" partName="Markers">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.allSeverityField" categoryGroup="org.eclipse.ui.ide.type" markerContentGenerator="org.eclipse.ui.ide.allMarkersGenerator" partName="Markers">
@@ -258,7 +275,7 @@
 <viewState CommonNavigator.LINKING_ENABLED="0"/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jpt.ui.jpaPerspective">
+<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.springsource.sts.internal.ide.ui.perspective.StsPerspective" id="com.springsource.sts.ide.perspective" label="Spring"/>
 <alwaysOnActionSet id="com.springsource.sts.ide.help.actionSet"/>
@@ -417,7 +434,7 @@
 </mainWindow>
 </layout>
 </perspective>
-<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<perspective editorAreaTrimState="1" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="com.springsource.sts.ide.help.actionSet"/>
 <alwaysOnActionSet id="com.springsource.sts.ide.ui.actionSet.workbench"/>
@@ -530,22 +547,31 @@
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
-<view id="org.eclipse.jdt.callhierarchy.view"/>
-<view id="org.eclipse.jdt.ui.PackageExplorer"/>
-<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
-<view id="org.springframework.ide.eclipse.ui.navigator.springExplorer"/>
 <fastViewBars>
-<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.views.ProblemView" style="0">
+<fastViewBar fastViewLocation="1024" id="org.eclipse.ui.internal.ViewStack@1e39a08" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="1">
+<fastViews>
+<view id="org.eclipse.jdt.callhierarchy.view" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@1468cd" orientation="512" selectedTabId="org.springframework.ide.eclipse.ui.navigator.springExplorer" style="1">
+<fastViews>
+<view id="org.springframework.ide.eclipse.ui.navigator.springExplorer" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="1024" id="org.eclipse.ui.internal.ViewStack@19e5cb4" orientation="256" selectedTabId="com.mountainminds.eclemma.ui.CoverageView" style="1">
+<fastViews>
+<view id="org.eclipse.jdt.junit.ResultView" ratio="0.3642384"/>
+<view id="com.mountainminds.eclemma.ui.CoverageView" ratio="0.31784108"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="com.mountainminds.eclemma.ui.CoverageView" style="0">
 <fastViews>
 <view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
 <view id="org.eclipse.jdt.ui.JavadocView" ratio="0.3"/>
 <view id="org.eclipse.jdt.ui.SourceView" ratio="0.3"/>
 <view id="diagramTable" ratio="0.3"/>
-<view id="org.eclipse.jdt.junit.ResultView" ratio="0.3448276"/>
 <view id="com.zink.fly.buzz.views.FlyBuzzView" ratio="0.3"/>
 <view id="org.eclipse.search.ui.views.SearchView" ratio="0.29933774"/>
-<view id="com.mountainminds.eclemma.ui.CoverageView" ratio="0.28185907"/>
 </fastViews>
 </fastViewBar>
 <fastViewBar fastViewLocation="16384" id="org.eclipse.ui.internal.ViewStack@1efae2f" orientation="512" selectedTabId="org.eclipse.egit.ui.RepositoriesView" style="0">
@@ -553,21 +579,29 @@
 <view id="org.eclipse.egit.ui.RepositoriesView" ratio="0.3"/>
 </fastViews>
 </fastViewBar>
+<fastViewBar fastViewLocation="16384" id="left" orientation="512" selectedTabId="org.eclipse.jdt.ui.PackageExplorer" style="1">
+<fastViews>
+<view id="org.eclipse.jdt.ui.PackageExplorer" ratio="0.3"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="131072" id="right" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="1">
+<fastViews>
+<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
 </fastViewBars>
 <layout>
 <mainWindow>
 <info folder="true" part="left">
-<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
-<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
-<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.wb.core.StructureView" label="LabelNotFound"/>
 <page content="org.eclipse.wb.core.PaletteView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1194" ratioRight="398" relationship="2" relative="left">
@@ -584,8 +618,6 @@
 <page content="org.eclipse.jdt.ui.JavadocView" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="LabelNotFound"/>
 <page content="diagramTable" label="LabelNotFound"/>
-<page content="org.eclipse.jdt.junit.ResultView" label="LabelNotFound"/>
-<page content="com.mountainminds.eclemma.ui.CoverageView" label="LabelNotFound"/>
 <page content="com.zink.fly.buzz.views.FlyBuzzView" label="LabelNotFound"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
@@ -608,13 +640,11 @@
 </info>
 <info part="org.eclipse.contribution.xref.ui.views.XReferenceView" ratio="0.59893996" ratioLeft="339" ratioRight="227" relationship="4" relative="org.eclipse.ui.internal.ViewStack@204316"/>
 <info folder="true" part="right" ratio="0.5" ratioLeft="283" ratioRight="283" relationship="4" relative="org.eclipse.ui.internal.ViewStack@204316">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@a6b1eb" ratio="0.49823323" ratioLeft="141" ratioRight="142" relationship="4" relative="right">
@@ -624,11 +654,9 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@1468cd" ratio="0.49823323" ratioLeft="141" ratioRight="142" relationship="4" relative="right">
-<folder activePageID="org.springframework.ide.eclipse.ui.navigator.springExplorer" appearance="2" expanded="2">
-<page content="org.springframework.ide.eclipse.ui.navigator.springExplorer" label="Spring Explorer"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<folder appearance="2" expanded="0">
+<page content="org.springframework.ide.eclipse.ui.navigator.springExplorer" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@f5c5f1" ratio="0.7496689" ratioLeft="566" ratioRight="189" relationship="4" relative="org.eclipse.ui.editorss">
@@ -641,13 +669,29 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1e39a08" ratio="0.73138297" ratioLeft="550" ratioRight="202" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1e39a08" ratio="0.9375" ratioLeft="705" ratioRight="47" relationship="4" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.jdt.callhierarchy.view" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@9ffb26" ratio="0.96143615" ratioLeft="723" ratioRight="29" relationship="4" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@19e5cb4" ratio="0.7496689" ratioLeft="566" ratioRight="189" relationship="4" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.jdt.junit.ResultView" label="LabelNotFound"/>
+<page content="com.mountainminds.eclemma.ui.CoverageView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@558b5b" ratio="0.7496252" ratioLeft="500" ratioRight="167" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<page content="org.eclipse.jdt.callhierarchy.view" label="Call Hierarchy"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
 </presentation>
 </folder>
 </info>
@@ -769,13 +813,13 @@
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
 <view id="org.eclipse.ui.navigator.ProjectExplorer"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
-<fastViewBars>&#x0A;<fastViewBar fastViewLocation="1024" id="bottomRight" orientation="256" selectedTabId="com.mountainminds.eclemma.ui.CoverageView" style="0">&#x0A;<fastViews>&#x0A;<view id="org.eclipse.ui.views.AllMarkersView" ratio="0.3"/>
+<fastViewBars>&#x0A;<fastViewBar fastViewLocation="1024" id="bottomRight" orientation="256" selectedTabId="org.eclipse.jdt.junit.ResultView" style="0">&#x0A;<fastViews>&#x0A;<view id="org.eclipse.ui.views.AllMarkersView" ratio="0.3"/>
 <view id="org.eclipse.ui.views.PropertySheet" ratio="0.3"/>
 <view id="org.eclipse.wst.server.ui.ServersView" ratio="0.29740793"/>
 <view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" ratio="0.3"/>
 <view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" ratio="0.3"/>
-<view id="org.eclipse.jdt.junit.ResultView" ratio="0.28476822"/>
-<view id="com.mountainminds.eclemma.ui.CoverageView" ratio="0.25562915"/>
+<view id="org.eclipse.jdt.junit.ResultView" ratio="0.28335834"/>
+<view id="com.mountainminds.eclemma.ui.CoverageView" ratio="0.25487256"/>
 </fastViews>
 </fastViewBar>
 </fastViewBars>
@@ -1359,7 +1403,7 @@
 </mainWindow>
 </layout>
 </perspective>
-<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<perspective editorAreaTrimState="1" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jpt.jpa.ui.internal.perspective.JpaPerspectiveFactory" id="org.eclipse.jpt.ui.jpaPerspective" label="JPA"/>
 <alwaysOnActionSet id="com.springsource.sts.ide.help.actionSet"/>
 <alwaysOnActionSet id="com.springsource.sts.ide.ui.actionSet.workbench"/>
@@ -1427,58 +1471,44 @@
 <perspective_action id="org.eclipse.jdt.ui.JavaBrowsingPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
-<view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator"/>
-<view id="org.eclipse.ui.views.ProblemView"/>
-<view id="org.eclipse.ui.console.ConsoleView"/>
-<view id="org.eclipse.jpt.ui.jpaDetailsView"/>
-<view id="org.eclipse.jpt.ui.jpaStructureView"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
-<fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="left">
-<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
-<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<fastViewBars>&#x0A;<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="com.mountainminds.eclemma.ui.CoverageView" style="0">&#x0A;<fastViews>&#x0A;<view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.3"/>
+<view id="org.eclipse.jpt.ui.jpaDetailsView" ratio="0.3"/>
+<view id="org.eclipse.jpt.ui.jpaStructureView" ratio="0.3"/>
+<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="16384" id="left" orientation="512" selectedTabId="org.eclipse.jdt.ui.PackageExplorer" style="1">&#x0A;<fastViews>&#x0A;<view id="org.eclipse.ui.navigator.ProjectExplorer" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="1024" id="org.eclipse.ui.internal.ViewStack@e537aa" orientation="512" selectedTabId="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" style="1">&#x0A;<fastViews>&#x0A;<view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="left">&#x0A;<folder appearance="2" expanded="0">&#x0A;<page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.7495208" ratioLeft="1173" ratioRight="392" relationship="2" relative="left">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.7495208" ratioLeft="1173" ratioRight="392" relationship="2" relative="left">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.33764553" ratioLeft="261" ratioRight="512" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.56914896" ratioLeft="428" ratioRight="324" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<page content="org.eclipse.jpt.ui.jpaDetailsView" label="JPA Details"/>
-<page content="org.eclipse.jpt.ui.jpaStructureView" label="JPA Structure"/>
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="bottom" ratio="0.82978725" ratioLeft="624" ratioRight="128" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder appearance="2" expanded="0">&#x0A;<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<page content="org.eclipse.jpt.ui.jpaDetailsView" label="LabelNotFound"/>
+<page content="org.eclipse.jpt.ui.jpaStructureView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@e537aa" ratio="0.6" ratioLeft="453" ratioRight="302" relationship="4" relative="left">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" label="Data Source Explorer"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@e537aa" ratio="0.6" ratioLeft="453" ratioRight="302" relationship="4" relative="left">&#x0A;<folder appearance="2" expanded="0">&#x0A;<page content="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </mainWindow>
@@ -1488,145 +1518,167 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JPA_Lab2/src/Employee.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JPA_Lab2/src/EmployeeFactory.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JPA_Lab2/src/Test.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jpt.jpa.ui.internal.editors.PersistenceEditor" path="/JPA_Lab2/src/META-INF/persistence.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JDBC_Template/src/MainClass.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MASEWK08/src/com/mase/petstore/Fish.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MASEWK08/src/com/mase/petstore/Cat.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MASEWK08/src/com/mase/petstore/NameableImpl.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MASEWK08/src/com/mase/petstore/CanWalkImpl.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MASEWK08/src/com/mase/petstore/Spider.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MASEWK08/src/com/mase/petstore/Pet.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MASEWK08/src/com/mase/petstore/Nameable.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MASEWK08/src/com/mase/petstore/PetMain.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MASEWK08/src/com/mase/petstore/CanWalk.java"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=MASEWK08/C:\/Program Files\/Java\/jdk1.7.0_04\/jre\/lib\/rt.jar&lt;java.lang(Class.class"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=MASEWK08/C:\/Program Files\/Java\/jdk1.7.0_04\/jre\/lib\/rt.jar&lt;java.lang(Object.class"/>
 </editors>
-<item historyLabel="Employee.java" index="0">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="Spider.java" index="4">
+<position info="not_deleted" x="291" y="1"/>
 </item>
-<item historyLabel="EmployeeFactory.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="CanWalkImpl.java" index="3">
+<position info="not_deleted" x="156" y="0"/>
 </item>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="Spider.java" index="4">
+<position info="not_deleted" x="291" y="1"/>
 </item>
-<item historyLabel="persistence.xml" index="3"/>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="CanWalkImpl.java" index="3">
+<position info="not_deleted" x="256" y="0"/>
 </item>
-<item historyLabel="EmployeeFactory.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="Spider.java" index="4">
+<position info="not_deleted" x="308" y="0"/>
 </item>
-<item historyLabel="Employee.java" index="0">
-<position info="not_deleted" x="428" y="0"/>
+<item historyLabel="Cat.java" index="1">
+<position info="not_deleted" x="308" y="0"/>
 </item>
-<item historyLabel="persistence.xml" index="3"/>
-<item historyLabel="Employee.java" index="0">
-<position info="not_deleted" x="428" y="0"/>
+<item historyLabel="Spider.java" index="4">
+<position info="not_deleted" x="308" y="0"/>
 </item>
-<item historyLabel="EmployeeFactory.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="Cat.java" index="1">
+<position info="not_deleted" x="308" y="0"/>
 </item>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="Cat.java" index="1">
+<position info="not_deleted" x="141" y="0"/>
 </item>
-<item historyLabel="EmployeeFactory.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="Cat.java" index="1">
+<position info="not_deleted" x="306" y="0"/>
 </item>
-<item historyLabel="Employee.java" index="0">
-<position info="not_deleted" x="428" y="0"/>
+<item historyLabel="Cat.java" index="1">
+<position info="not_deleted" x="503" y="0"/>
 </item>
-<item historyLabel="EmployeeFactory.java" index="1">
-<position info="not_deleted" x="744" y="0"/>
+<item historyLabel="Fish.java" index="0">
+<position info="not_deleted" x="448" y="0"/>
 </item>
-<item historyLabel="persistence.xml" index="3"/>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="517" y="0"/>
+<item historyLabel="Fish.java" index="0">
+<position info="not_deleted" x="204" y="0"/>
 </item>
-<item historyLabel="persistence.xml" index="3"/>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="517" y="0"/>
+<item historyLabel="Pet.java" index="5">
+<position info="not_deleted" x="58" y="0"/>
 </item>
-<item historyLabel="persistence.xml" index="3"/>
-<item historyLabel="Employee.java" index="0">
-<position info="not_deleted" x="428" y="0"/>
+<item historyLabel="Fish.java" index="0">
+<position info="not_deleted" x="153" y="0"/>
 </item>
-<item historyLabel="persistence.xml" index="3"/>
-<item historyLabel="Employee.java" index="0">
-<position info="not_deleted" x="428" y="0"/>
+<item historyLabel="Pet.java" index="5">
+<position info="not_deleted" x="58" y="0"/>
 </item>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="3119" y="0"/>
+<item historyLabel="Nameable.java" index="6">
+<position info="not_deleted" x="103" y="0"/>
 </item>
-<item historyLabel="Employee.java" index="0">
-<position info="not_deleted" x="271" y="52"/>
+<item historyLabel="Fish.java" index="0">
+<position info="not_deleted" x="153" y="0"/>
 </item>
-<item historyLabel="EmployeeFactory.java" index="1">
-<position info="not_deleted" x="686" y="0"/>
+<item historyLabel="Cat.java" index="1">
+<position info="not_deleted" x="408" y="0"/>
 </item>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="3119" y="0"/>
+<item historyLabel="Fish.java" index="0">
+<position info="not_deleted" x="329" y="0"/>
 </item>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="3003" y="0"/>
+<item historyLabel="Cat.java" index="1">
+<position info="not_deleted" x="408" y="0"/>
 </item>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="3020" y="0"/>
+<item historyLabel="Fish.java" index="0">
+<position info="not_deleted" x="329" y="0"/>
 </item>
-<item historyLabel="EmployeeFactory.java" index="1">
-<position info="not_deleted" x="439" y="14"/>
+<item historyLabel="Fish.java" index="0">
+<position info="not_deleted" x="448" y="0"/>
 </item>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="3555" y="0"/>
+<item historyLabel="NameableImpl.java" index="2">
+<position info="not_deleted" x="311" y="0"/>
 </item>
-<item historyLabel="Employee.java" index="0">
-<position info="not_deleted" x="271" y="52"/>
+<item historyLabel="PetMain.java" index="7">
+<position info="not_deleted" x="939" y="0"/>
 </item>
-<item historyLabel="EmployeeFactory.java" index="1">
-<position info="not_deleted" x="439" y="14"/>
+<item historyLabel="PetMain.java" index="7">
+<position info="not_deleted" x="127" y="0"/>
 </item>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="3555" y="0"/>
+<item historyLabel="PetMain.java" index="7">
+<position info="not_deleted" x="143" y="0"/>
 </item>
-<item historyLabel="EmployeeFactory.java" index="1">
-<position info="not_deleted" x="439" y="14"/>
+<item historyLabel="PetMain.java" index="7">
+<position info="not_deleted" x="447" y="0"/>
 </item>
-<item historyLabel="Employee.java" index="0">
-<position info="not_deleted" x="271" y="52"/>
+<item historyLabel="Cat.java" index="1">
+<position info="not_deleted" x="410" y="0"/>
 </item>
-<item historyLabel="EmployeeFactory.java" index="1">
-<position info="not_deleted" x="439" y="14"/>
+<item historyLabel="PetMain.java" index="7">
+<position info="not_deleted" x="447" y="0"/>
 </item>
-<item historyLabel="persistence.xml" index="3"/>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="611" y="0"/>
+<item historyLabel="Cat.java" index="1">
+<position info="not_deleted" x="458" y="0"/>
 </item>
-<item historyLabel="Employee.java" index="0">
-<position info="not_deleted" x="271" y="52"/>
+<item historyLabel="PetMain.java" index="7">
+<position info="not_deleted" x="944" y="0"/>
 </item>
-<item historyLabel="EmployeeFactory.java" index="1">
-<position info="not_deleted" x="294" y="0"/>
+<item historyLabel="Cat.java" index="1">
+<position info="not_deleted" x="369" y="0"/>
 </item>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="611" y="0"/>
+<item historyLabel="PetMain.java" index="7">
+<position info="not_deleted" x="944" y="0"/>
 </item>
-<item historyLabel="persistence.xml" index="3"/>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="3010" y="0"/>
+<item historyLabel="PetMain.java" index="7">
+<position info="not_deleted" x="253" y="0"/>
 </item>
-<item historyLabel="Employee.java" index="0">
-<position info="not_deleted" x="271" y="52"/>
+<item historyLabel="PetMain.java" index="7">
+<position info="not_deleted" x="562" y="0"/>
 </item>
-<item historyLabel="EmployeeFactory.java" index="1">
-<position info="not_deleted" x="669" y="19"/>
+<item historyLabel="CanWalkImpl.java" index="3">
+<position info="not_deleted" x="256" y="0"/>
 </item>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="3259" y="0"/>
+<item historyLabel="CanWalkImpl.java" index="3">
+<position info="not_deleted" x="271" y="0"/>
 </item>
-<item historyLabel="EmployeeFactory.java" index="1">
-<position info="not_deleted" x="1354" y="0"/>
+<item historyLabel="NameableImpl.java" index="2">
+<position info="not_deleted" x="311" y="0"/>
 </item>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="2976" y="0"/>
+<item historyLabel="PetMain.java" index="7">
+<position info="not_deleted" x="562" y="0"/>
 </item>
-<item historyLabel="MainClass.java" index="4">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="PetMain.java" index="7">
+<position info="not_deleted" x="398" y="0"/>
 </item>
-<item active="true" historyLabel="Test.java" index="2">
-<position info="not_deleted" x="2976" y="0"/>
+<item historyLabel="PetMain.java" index="7">
+<position info="not_deleted" x="551" y="0"/>
+</item>
+<item historyLabel="CanWalk.java" index="8">
+<position info="not_deleted" x="54" y="0"/>
+</item>
+<item historyLabel="PetMain.java" index="7">
+<position info="not_deleted" x="640" y="0"/>
+</item>
+<item historyLabel="Class.class" index="9">
+<position info="not_deleted" x="46371" y="13"/>
+</item>
+<item historyLabel="PetMain.java" index="7">
+<position info="not_deleted" x="627" y="0"/>
+</item>
+<item historyLabel="Object.class" index="10">
+<position info="not_deleted" x="1514" y="8"/>
+</item>
+<item historyLabel="PetMain.java" index="7">
+<position info="not_deleted" x="627" y="0"/>
+</item>
+<item historyLabel="PetMain.java" index="7">
+<position info="not_deleted" x="620" y="0"/>
+</item>
+<item active="true" historyLabel="PetMain.java" index="7">
+<position info="not_deleted" x="490" y="6"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -1639,8 +1691,9 @@
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1efae2f"/>
 </trimArea>
 <trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@16a528e"/>
 <trimItem IMemento.internal.id="right"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1468cd"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
@@ -1652,53 +1705,56 @@
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
 <trimItem IMemento.internal.id="bottom"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@e537aa"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@498c30"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1e39a08"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@19e5cb4"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainClass.java" tooltip="JDBC_Template/src/MainClass.java">
-<persistable path="/JDBC_Template/src/MainClass.java"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Object.class" tooltip="java.lang.Object">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=MASEWK08/C:\/Program Files\/Java\/jdk1.7.0_04\/jre\/lib\/rt.jar&lt;java.lang(Object.class"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jpt.jpa.ui.internal.editors.PersistenceEditor" name="persistence.xml" tooltip="JPA_Lab2/src/META-INF/persistence.xml">
-<persistable path="/JPA_Lab2/src/META-INF/persistence.xml"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Class.class" tooltip="java.lang.Class">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=MASEWK08/C:\/Program Files\/Java\/jdk1.7.0_04\/jre\/lib\/rt.jar&lt;java.lang(Class.class"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="JPA_Lab2/src/Test.java">
-<persistable path="/JPA_Lab2/src/Test.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EmployeeFactory.java" tooltip="JPA_Lab2/src/EmployeeFactory.java">
-<persistable path="/JPA_Lab2/src/EmployeeFactory.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Employee.java" tooltip="JPA_Lab2/src/Employee.java">
-<persistable path="/JPA_Lab2/src/Employee.java"/>
-</file>
-<file factoryID="com.springsource.sts.ide.ui.dashboard.elementFactory" id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" name="Dashboard" tooltip="Dashboard">
-<persistable openDashboard="true"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Animal.java" tooltip="MASEWK08/src/com/mase/animals/Animal.java">
-<persistable path="/MASEWK08/src/com/mase/animals/Animal.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Spider.java" tooltip="MASEWK08/src/com/mase/petstore/Spider.java">
+<persistable path="/MASEWK08/src/com/mase/petstore/Spider.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Goldfish.java" tooltip="MASEWK08/src/com/mase/animals/Goldfish.java">
 <persistable path="/MASEWK08/src/com/mase/animals/Goldfish.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Owner.java" tooltip="MASEWK08/src/com/mase/animals/Owner.java">
-<persistable path="/MASEWK08/src/com/mase/animals/Owner.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Pet.java" tooltip="MASEWK08/src/com/mase/petstore/Pet.java">
+<persistable path="/MASEWK08/src/com/mase/petstore/Pet.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Lizard.java" tooltip="MASEWK08/src/com/mase/animals/Lizard.java">
-<persistable path="/MASEWK08/src/com/mase/animals/Lizard.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CanWalkImpl.java" tooltip="MASEWK08/src/com/mase/petstore/CanWalkImpl.java">
+<persistable path="/MASEWK08/src/com/mase/petstore/CanWalkImpl.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Dog.java" tooltip="MASEWK08/src/com/mase/animals/Dog.java">
-<persistable path="/MASEWK08/src/com/mase/animals/Dog.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NameableImpl.java" tooltip="MASEWK08/src/com/mase/petstore/NameableImpl.java">
+<persistable path="/MASEWK08/src/com/mase/petstore/NameableImpl.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Pet.java" tooltip="MASEWK08/src/com/mase/animals/Pet.java">
-<persistable path="/MASEWK08/src/com/mase/animals/Pet.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Nameable.java" tooltip="MASEWK08/src/com/mase/petstore/Nameable.java">
+<persistable path="/MASEWK08/src/com/mase/petstore/Nameable.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CanWalk.java" tooltip="MASEWK08/src/com/mase/petstore/CanWalk.java">
+<persistable path="/MASEWK08/src/com/mase/petstore/CanWalk.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Animal.java" tooltip="MASEWK08/src/com/mase/petstore/Animal.java">
+<persistable path="/MASEWK08/src/com/mase/petstore/Animal.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Cat.java" tooltip="MASEWK08/src/com/mase/petstore/Cat.java">
+<persistable path="/MASEWK08/src/com/mase/petstore/Cat.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Fish.java" tooltip="MASEWK08/src/com/mase/petstore/Fish.java">
+<persistable path="/MASEWK08/src/com/mase/petstore/Fish.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PetMain.java" tooltip="MASEWK08/src/com/mase/petstore/PetMain.java">
+<persistable path="/MASEWK08/src/com/mase/petstore/PetMain.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PetStore.java" tooltip="MASEWK08/src/com/mase/animals/PetStore.java">
 <persistable path="/MASEWK08/src/com/mase/animals/PetStore.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MusicExample.java" tooltip="MASEWK08/src/com/mase/polymorphism3/MusicExample.java">
-<persistable path="/MASEWK08/src/com/mase/polymorphism3/MusicExample.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Pet.java" tooltip="MASEWK08/src/com/mase/animals/Pet.java">
+<persistable path="/MASEWK08/src/com/mase/animals/Pet.java"/>
 </file>
 </mruList>
 </workbench>

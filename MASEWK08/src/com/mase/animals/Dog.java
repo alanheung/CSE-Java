@@ -18,13 +18,12 @@ public class Dog extends Animal implements Pet {
 
 	@Override
 	public String getName() {
-		System.out.println("Dog::getName");
-		return null;
+		return "Dog::getName";
 	}
 	@Override
 	public String setName(String s) {
-		System.out.println("Dog::"+s);
-		return null;
+		return "Dog::"+s;
+		
 	}
 	@Override
 	public void play() {
