@@ -1,0 +1,33 @@
+package com.example.enums.simple;
+
+
+public class EnumTest {
+	
+	public enum Day{
+		SUNDAY,
+		MONDAY,
+		TUESDAY,
+		WEDNESDAY,
+		THURSDAY,
+		FRIDAY,
+		SATURDAY;
+	}
+	
+	Day monday = Day.MONDAY;
+	
+	public EnumTest(){
+		
+	}
+	
+	void tellItLikeItIs(){
+		switch()
+			:System.out.println("Mondays are bad");
+				break;
+				System.out.println("Fridays are better");
+				System.out.println("Weekends are best");
+				System.out.println("Midweek days are OK");
+				
+	}
+	
+
+}

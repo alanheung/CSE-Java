@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 elements to &apos;JDBC_Project/src&apos;&#x0D;&#x0A;- Original project: &apos;JDBC_Template&apos;&#x0D;&#x0A;- Destination element: &apos;JDBC_Project/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     JDBCMainWindowContent.java&#x0D;&#x0A;     JDBCMainWindow.java&#x0D;&#x0A;     QueryTableModel.java&#x0D;&#x0A;     MainClass.java" description="Copy compilation units" destination="=JDBC_Project/src" element1="/src&lt;{JDBCMainWindowContent.java" element2="/src&lt;{JDBCMainWindow.java" element3="/src&lt;{QueryTableModel.java" element4="/src&lt;{MainClass.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1424855227534" units="4" version="1.0"/>
+</session>

@@ -1,0 +1,20 @@
+package com.example.enums.complex;
+
+public enum Direction {
+	NORTH("in a northerly direction"),
+	SOUTH("in a southerly direction"),
+	EAST("in a easterly direction"),
+	WEST("in a westerly direction");
+	
+	String direction;
+	Direction(String direction){
+		this.direction=direction;
+	}
+	
+	@Override
+	public String toString(){
+		String s = "";
+		return "We are travelling "+s;
+	}
+	
+}

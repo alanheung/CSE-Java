@@ -1,0 +1,41 @@
+package com.example.localbirds;
+
+import com.example.hunters.Eagle;
+
+public class Crow {
+
+	private String name;
+
+	public Crow(){
+		name="Crow";
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	@Override
+	public String toString() {
+		return "Crow [name=" + name + "]";
+	}
+	
+	public static void main(String[] args) {
+		Eagle eag = new Eagle();
+		System.out.println(eag);
+		
+		Robin rob = new Robin();
+		Robin robby = new Robin();
+		
+		System.out.println(rob);
+		System.out.println(robby);
+		System.out.println(rob.equals(robby));//false
+		
+		if(rob.getName().equals(robby.getName())){
+			System.out.println("True");
+		}else{
+			System.out.println("False");
+		}
+	}
+
+}

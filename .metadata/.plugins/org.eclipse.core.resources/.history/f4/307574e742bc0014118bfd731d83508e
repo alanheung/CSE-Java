@@ -1,0 +1,29 @@
+package com.immutable;
+
+import java.util.Date;
+//class SubContract extends Contract{
+//	
+//}
+
+class Contract{
+	private final String name;
+	private final Integer age;
+	private final Date dateSigned;
+	
+	private Contract(String name, Integer age, Date dateSigned){
+		this.name=name;
+		this.age=age;
+		this.dateSigned= new Date(dateSigned.getTime());
+		
+	}
+	public static Contract createNewInstance(String name, Integer age, Date dateSigned){
+		return new Contract(name, age, dateSigned);
+	}
+	
+}
+public class TestImmutable {
+
+	public static void main(String[] args) {
+	}
+
+}

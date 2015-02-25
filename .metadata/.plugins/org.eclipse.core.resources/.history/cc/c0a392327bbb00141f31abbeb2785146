@@ -1,0 +1,21 @@
+package com.example.localbirds;
+
+public class Robin {
+
+	private String name;
+	private int age;
+
+	package Robin(){
+
+	}
+	public String getName(){
+		this.name="Robin";
+	}
+	public int getAge(){
+
+	}
+	public static void main(String[] args) {
+		Eagle eag = new Eagle();
+	}
+
+}

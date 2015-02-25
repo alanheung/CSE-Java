@@ -1,0 +1,34 @@
+package ait.ie.maths;
+
+public class Recursion {
+
+	public static void main(String[] args) {
+		int [] array = {1,2,3};
+		System.out.println(addArray(array,0,0));
+
+		myMethod(12);
+	}
+
+	public static void printArray(int array[], int pos, int total){
+
+		if(pos == array.length-1){
+			System.out.println(","+array[pos]);
+		}else{
+			total+=addArray(array, pos+1, total);
+		}
+		return total;
+	}
+
+	public static void myMethod( int counter){
+		
+		if(counter == 0){
+			return;
+		}else{
+			System.out.println("hello" + counter);
+			myMethod(--counter);
+			System.out.print(" "+counter);
+			return;
+		}
+	} 
+
+}

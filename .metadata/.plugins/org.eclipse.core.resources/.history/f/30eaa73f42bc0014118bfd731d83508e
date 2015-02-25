@@ -1,0 +1,23 @@
+package com.immutable;
+
+import java.util.Date;
+
+class Contract{
+	private final String name;
+	private final Integer age;
+	private final Date dateSigned;
+	
+	public Contract(String name, Integer age, Date dateSigned){
+		this.name=name;
+		this.age=age;
+		this.dateSigned= new Date(dateSigned.getTime());
+		
+	}
+}
+public class TestImmutable {
+
+	public static void main(String[] args) {
+
+	}
+
+}

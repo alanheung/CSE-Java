@@ -1,0 +1,8 @@
+package com.example.enums.complex;
+
+public enum Direction {
+	NORTH,
+	SOUTH,
+	EAST,
+	WEST;
+}

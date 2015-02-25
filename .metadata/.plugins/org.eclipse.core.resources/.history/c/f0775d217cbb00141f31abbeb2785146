@@ -1,0 +1,28 @@
+package com.example.hunters;
+
+public class Falcon {
+
+	private String name;
+
+	public Falcon(){
+		name="Falcon";
+	}
+	
+	public String getName(){
+		return name;
+	}
+	
+	public getClass(){
+
+	}
+	
+	public void testEagleAccess(){
+		Eagle eag = new Eagle();
+		
+
+	}
+	public static void main(String[] args) {
+
+	}
+
+}

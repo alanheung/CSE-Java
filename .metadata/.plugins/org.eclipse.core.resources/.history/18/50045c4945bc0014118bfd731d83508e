@@ -1,0 +1,63 @@
+package com.immutable;
+
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+//class SubContract extends Contract{
+//	private SubContract(String name, Integer age, Date dateSigned){
+//		super(name, age, dateSigned);
+//	}
+//}
+
+class Contract{
+	private final String name;
+	private final Integer age;
+	private final Date dateSigned;
+	
+	private Contract(String name, Integer age, Date dateSigned){
+		this.name=name;
+		this.age=age;
+		this.dateSigned= new Date(dateSigned.getTime());
+		System.out.println("this.name ref\t\t =="+Integer.toHexString(System.identityHashCode(this.name)));
+		System.out.println("this.age ref\t\t =="+Integer.toHexString(System.identityHashCode(this.age)));
+		System.out.println("this.dateSigned ref\t =="+Integer.toHexString(System.identityHashCode(this.dateSigned)));
+
+	}
+	public static Contract createNewInstance(String name, Integer age, Date dateSigned){
+		return new Contract(name, age, dateSigned);
+	}
+	public String getName() {
+		return name;//Immutable by default => ok
+	}
+	public Integer getAge() {
+		return age;//Immutable by default => ok
+	}
+	public Date getDateSigned() {
+		return new Date(dateSigned.getTime());
+	}
+	@Override
+	public String toString() {
+		return "Contract [name=" + name + ", age=" + age + ", dateSigned="
+				+ dateSigned + "]";
+	}
+	
+}
+public class TestImmutable {
+	public static void main(String[] args) throws ParseException{
+		DateFormat formatter = new SimpleDateFormat("dd/MM/yy");
+		Date dateSigned = formatter.parse("16/02/15");
+		Contract contract = Contract.createNewInstance("Michael", 21, dateSigned);
+		System.out.println("\nBefore change :"+contract);
+		
+		//get the data
+		String name = contract.getName();
+		Integer age = contract.getAge();
+		Date dateOfSigning = contract.getDateSigned();
+		
+		System.out.println("\n1.name ref\t\t =="+Integer.toHexString(System.identityHashCode(name)));
+		System.out.println("2.age ref\t\t =="+Integer.toHexString(System.identityHashCode(age)));
+		System.out.println("3.date ref\t\t =="+Integer.toHexString(System.identityHashCode(dateSigned)));
+	}
+}

@@ -1,0 +1,34 @@
+package com.example.localbirds;
+
+import com.example.hunters.Eagle;
+
+public class Robin {
+
+	private String name;
+	private int age;
+
+	public Robin(){
+		name="Robin";
+		age=2;
+	}
+	
+	public String getName() {
+		return name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public static void main(String[] args) {
+		Eagle eag = new Eagle();
+		Robin rob = new Robin();
+		Robin robby = new Robin();
+		if(rob.getName().equals(robby.getName())){
+			System.out.println("True");
+		}else{
+			System.out.println("False");
+		}
+	}
+
+}

@@ -1,0 +1,34 @@
+package com.example.enums.simple;
+
+
+public class EnumTest {
+
+	Day day;
+
+	Day monday = Day.MONDAY;
+
+	public EnumTest(Day day){
+		this.day=day;
+	}
+
+	public void tellItLikeItIs(){
+		switch(day){
+		case MONDAY:
+			System.out.println("Mondays are bad");
+			break;
+		case FRIDAY:
+			System.out.println("Fridays are better");
+			break;
+		case SATURDAY:
+		case SUNDAY:
+			System.out.println("Weekends are best");
+			break;
+		case TUESDAY:
+			System.out.println("Midweek days are OK");
+			break;
+		}
+
+	}
+
+
+}

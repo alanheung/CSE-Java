@@ -1,0 +1,27 @@
+package com.example.hunters;
+
+public class Falcon {
+
+	private String name;
+
+	public Falcon(){
+		
+	}
+	
+	public String getName(){
+
+	}
+	
+	public getClass(){
+
+	}
+	
+	public testEagleAccess(){
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

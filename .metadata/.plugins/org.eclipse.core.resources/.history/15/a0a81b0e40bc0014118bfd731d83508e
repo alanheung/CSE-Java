@@ -1,0 +1,16 @@
+package com.immutable;
+
+import java.util.Date;
+
+class Contract{
+	private final String name;
+	private final Integer age;
+	private final Date dateSigned;
+}
+public class TestImmutable {
+
+	public static void main(String[] args) {
+
+	}
+
+}

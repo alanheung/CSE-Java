@@ -1,0 +1,25 @@
+package com.example.hunters;
+
+import com.example.localbirds.Crow;
+
+public class Eagle {
+	private String name;
+
+	public Eagle(){
+		name = "Eagle";
+	}
+
+	public String getName(){
+		return name;
+	}
+	
+	@Override
+	public String toString() {
+		return "Eagle [name=" + name + "]";
+	}
+
+	public static void main(String[]args){
+		Crow cr = new Crow();
+		cr.getName();
+	}
+}

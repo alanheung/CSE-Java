@@ -1,0 +1,15 @@
+package com.example.hunters;
+
+public class Eagle {
+	public static void main(String[]args){
+		private String name;
+
+		public Eagle(){
+
+		}
+
+		protected String getName(){
+
+		}
+	}
+}

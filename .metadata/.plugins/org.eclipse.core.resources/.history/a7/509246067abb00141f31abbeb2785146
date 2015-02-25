@@ -1,0 +1,16 @@
+package com.example.hunters;
+
+public class Eagle {
+	private String name;
+
+	public Eagle(){
+		name.getName = "Falcon";
+	}
+
+	protected String getName(){
+		return name;
+	}
+	public static void main(String[]args){
+
+	}
+}

@@ -1,0 +1,15 @@
+package com.example.localbirds;
+
+public class Crow {
+
+	private String name;
+
+	public Crow(){
+
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

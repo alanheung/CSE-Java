@@ -1,0 +1,31 @@
+package com.example.enums.complex;
+
+public class Holiday {
+
+	public static void main(String[] args) {
+		Holiday obj1 = new Holiday(Direction.EAST);
+        obj1.getMyDirection();
+        Holiday obj2 = new Holiday(Direction.SOUTH);
+        obj2.getMyDirection();	
+    }
+	
+	public void goSomewhere(Direction d){
+	     switch (d) {
+	       case EAST:
+	          System.out.println("In East Direction");
+	          break;
+	                    
+	       case WEST:
+	          System.out.println("In West Direction");
+	          break;
+	                         
+	       case NORTH: 
+	          System.out.println("In North Direction");
+	          break;
+	                        
+	       default:
+	          System.out.println("In South Direction");
+	          break;
+	     }
+	}
+}

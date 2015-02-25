@@ -1,0 +1,13 @@
+package com.example.enums.simple;
+
+public class EnumTest {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

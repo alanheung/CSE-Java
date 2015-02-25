@@ -1,0 +1,24 @@
+package com.example.localbirds;
+
+public class Crow {
+
+	private String name;
+
+	
+	public Crow(){
+		name="Crow";
+	}
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public static void main(String[] args) {
+		Eagle eag = new Eagle();
+		eag.getName();
+	}
+
+}

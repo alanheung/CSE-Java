@@ -1,0 +1,22 @@
+package com.example.localbirds;
+
+public class Robin {
+
+	private String name;
+	private int age;
+
+	package Robin(){
+
+	}
+	public String getName(){
+
+	}
+	public int getAge(){
+
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

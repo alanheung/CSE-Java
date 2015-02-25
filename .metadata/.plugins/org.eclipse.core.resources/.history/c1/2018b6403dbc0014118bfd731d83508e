@@ -1,0 +1,48 @@
+package ait.ie.maths;
+
+public class Recursion {
+
+	public static void main(String[] args) {
+		//		int [] array = {1,2,3};
+		//		System.out.println(addArray(array,0,0));
+
+		myMethod(12);
+	}
+
+	public static int addArray(int array[], int pos, int total  ){
+		if(pos >= array.length){
+			return total;
+		}else{
+			total+=array[pos];
+			addArray(array, pos++, total);
+		}
+		return total;
+
+	}
+
+	public void myMethod( int counter)
+	{
+		if(counter == 0)
+			return;
+		else
+		{
+			System.out.println(""+counter);
+			myMethod(--counter);
+			return;
+		}
+	}
+	public int factorial(int number) {
+		if(number == 0) {
+			return 1;
+		}
+		return factorial_i(number, 1);
+	}
+
+	public int factorial_i(int currentNumber, int sum) {
+		if(currentNumber == 1) {
+			return sum;
+		} else {
+			return factorial_i(currentNumber - 1, sum*currentNumber);
+		}
+	}
+}

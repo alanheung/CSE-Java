@@ -1,0 +1,15 @@
+package com.example.enums.complex;
+
+public enum Direction {
+	NORTH,
+	SOUTH,
+	EAST,
+	WEST;
+	
+	@Override
+	public String toString(){
+		String s = "";
+		System.out.println("We are travelling "+s);
+	}
+	
+}

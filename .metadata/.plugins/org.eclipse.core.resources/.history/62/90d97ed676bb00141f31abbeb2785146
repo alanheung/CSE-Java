@@ -1,0 +1,16 @@
+package com.example.enums.complex;
+
+public class Holiday {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public void goSomewhere(Direction d){
+		
+	}
+
+}

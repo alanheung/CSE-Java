@@ -55,7 +55,8 @@ class JDBCCellExample extends JFrame implements ActionListener {
 			con = DriverManager.getConnection(url, "root", "admin");
 			stmt = con.createStatement();
 			ps = con.prepareStatement("select count(*) from nw_stats.perf where Cell_ID =  ?");
-		}catch(Exception e){System.out.print("Failed to initialise DB Connection");
+		}catch(Exception e){
+			System.out.print("Failed to initialise DB Connection");
 		}	
 	}
 
