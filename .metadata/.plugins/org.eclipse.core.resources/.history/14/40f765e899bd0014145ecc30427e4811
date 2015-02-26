@@ -1,0 +1,28 @@
+package com.mase.oop1;
+
+public class Computer {
+	private String theMake;
+	private String theModel;
+	
+	public String getTheMake() {
+		return theMake;
+	}
+	public String getTheModel() {
+		return theModel;
+	}
+	@Override
+	public String toString() {
+		return "Computer [theMake=" + theMake + ", theModel=" + theModel + "]";
+	}
+	
+	public boolean login(String user, String pass){
+		System.out.println("Computer user::"+user);
+		System.out.println("Computer pass::"+pass);
+		return true;
+
+	}
+	
+	public boolean logout(){
+		
+	}	
+}

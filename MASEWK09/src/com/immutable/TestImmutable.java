@@ -23,7 +23,6 @@ class Contract{
 		System.out.println("this.name ref\t\t =="+Integer.toHexString(System.identityHashCode(this.name)));
 		System.out.println("this.age ref\t\t =="+Integer.toHexString(System.identityHashCode(this.age)));
 		System.out.println("this.dateSigned ref\t =="+Integer.toHexString(System.identityHashCode(this.dateSigned)));
-
 	}
 	public static Contract createNewInstance(String name, Integer age, Date dateSigned){
 		return new Contract(name, age, dateSigned);
@@ -72,7 +71,6 @@ public class TestImmutable {
 		
 		//Was the original data modified? it stays the same unchanged
 		System.out.println("\nAfter change :"+contract);
-
 	}
 }
 //

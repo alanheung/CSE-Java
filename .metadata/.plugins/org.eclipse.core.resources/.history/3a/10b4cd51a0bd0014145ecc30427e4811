@@ -1,0 +1,21 @@
+package com.mase.oop1;
+
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+
+public class Shop {
+
+	public static void main(String[] args) throws ParseException {
+		ArrayList<Person> people = new ArrayList<>();
+		
+		DateFormat formatter = new SimpleDateFormat("dd/MM/yy");
+		Date dateSigned = formatter.parse("26/02/15");
+	}
+	public void processPeople(ArrayList Person){
+		
+	}
+
+}

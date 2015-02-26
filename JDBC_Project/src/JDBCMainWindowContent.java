@@ -65,7 +65,6 @@ public class JDBCMainWindowContent extends JInternalFrame implements ActionListe
 	private JButton exportButton  = new JButton("Export");
 	private JButton deleteButton  = new JButton("Delete");
 	private JButton clearButton  = new JButton("Clear");
-	private JButton chartButton = new JButton("Chart Network Statistics");
 
 	
 	private JButton last3LossRates  = new JButton("3 Previous Loss Rates per AP");
@@ -74,7 +73,8 @@ public class JDBCMainWindowContent extends JInternalFrame implements ActionListe
 	private JTextField avgofRSSTF  = new JTextField(12);
 	private JButton overLappingAP  = new JButton("AP Location");
 	private JButton overLappingChannels  = new JButton("AP Channel");
-	
+	private JButton chartButton = new JButton("Chart Network Statistics");
+
 
 
 	public JDBCMainWindowContent( String aTitle){
@@ -126,6 +126,7 @@ public class JDBCMainWindowContent extends JInternalFrame implements ActionListe
 		exportButtonPanel.add(avgofRSSTF);
 		exportButtonPanel.add(overLappingAP);
 		exportButtonPanel.add(overLappingChannels);
+		exportButtonPanel.add(chartButton);
 		exportButtonPanel.setSize(500, 200);
 		exportButtonPanel.setLocation(3, 300);
 		content.add(exportButtonPanel);
@@ -147,6 +148,8 @@ public class JDBCMainWindowContent extends JInternalFrame implements ActionListe
 		exportButton.addActionListener(this);
 		deleteButton.addActionListener(this);
 		clearButton.addActionListener(this);
+		chartButton.addActionListener(this);//
+
 
 		content.add(insertButton);
 		content.add(updateButton);
@@ -184,6 +187,7 @@ public class JDBCMainWindowContent extends JInternalFrame implements ActionListe
 			con = DriverManager.getConnection(url, "root", "admin");
 			//Create a generic statement which is passed to the TestInternalFrame1
 			stmt = con.createStatement();
+			ps = con.prepareStatement("select count(*) from mobiletechnology.technologies where Cell_ID =  ?");
 		}catch(Exception e){
 			System.out.println("Error: Failed to connect to database\n"+e.getMessage());
 		}
@@ -218,7 +222,7 @@ public class JDBCMainWindowContent extends JInternalFrame implements ActionListe
 
 			while (rs.next()) {
 				String category = rs.getString(1);
-				String value = rs.getString(2);
+				String value = rs.getString(1);
 				dataset.setValue(category+ " "+value, new Double(value));
 			}
 			JFreeChart chart = ChartFactory.createPieChart(
@@ -321,7 +325,7 @@ public class JDBCMainWindowContent extends JInternalFrame implements ActionListe
 		 }
 		 //chart
 		 if (target.equals(chartButton)){  		
-			 cmd = "select Bandwidth, sum(value)from nw_stats.perf group by Record_Description;";
+			 cmd = "select Property_ID from mobiletechnology.technologies group by Property_ID;";
 			 System.out.println(cmd);
 			 try {
 				 rs= stmt.executeQuery(cmd);
@@ -329,7 +333,7 @@ public class JDBCMainWindowContent extends JInternalFrame implements ActionListe
 				 // TODO Auto-generated catch block
 				 e1.printStackTrace();
 			 } 
-			 pieGraph(rs, "Network Statistics");	
+			 pieGraph(rs, "Tech Statistics");	
 		 }
 	}
 }//

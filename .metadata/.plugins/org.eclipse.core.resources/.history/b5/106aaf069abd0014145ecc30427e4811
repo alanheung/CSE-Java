@@ -1,0 +1,38 @@
+package com.mase.oop1;
+
+public class Computer implements ElectronicDevice{
+	private String theMake;
+	private String theModel;
+	
+	public String getTheMake() {
+		return theMake;
+	}
+	public String getTheModel() {
+		return theModel;
+	}
+	@Override
+	public String toString() {
+		return "Computer [theMake=" + theMake + ", theModel=" + theModel + "]";
+	}
+	
+	public boolean login(String user, String pass){
+		System.out.println("Computer user::"+user);
+		System.out.println("Computer pass::"+pass);
+		return true;
+	}
+	
+	public boolean logout(){
+		System.out.println("Computer logout");
+		return true;
+	}
+	@Override
+	public void turnOn() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void turnOff() {
+		// TODO Auto-generated method stub
+		
+	}	
+}

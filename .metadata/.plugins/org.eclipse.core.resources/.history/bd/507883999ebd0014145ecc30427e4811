@@ -1,0 +1,22 @@
+package com.mase.oop1;
+
+public class Person {
+	protected String name;
+	protected Purchase purchase;
+	
+	public Person(String n, Purchase p){
+		this.name=n;
+		this.purchase=p;
+	}
+
+	public Purchase getPurchase() {
+		return purchase;
+	}
+
+	@Override
+	public String toString() {
+		return "Person [name=" + name + ", purchase=" + purchase + "]";
+	}
+	
+
+}

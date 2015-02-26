@@ -1,0 +1,13 @@
+package com.mase.oop1;
+
+public class Shop {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

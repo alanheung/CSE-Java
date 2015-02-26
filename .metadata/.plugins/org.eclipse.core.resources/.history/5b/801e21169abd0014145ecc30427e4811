@@ -1,0 +1,26 @@
+package com.mase.oop1;
+
+public class Desktop extends Computer {
+
+	public Desktop(String s1, String s2){
+
+	}
+
+	public static void turnOn(){
+		System.out.println("Desktop::TurnOn()");
+	}
+	public static void turnOff(){
+		System.out.println("Desktop::TurnOff()");
+	}
+	
+	public boolean login(String user, String pass){
+		System.out.println("Desktop user::"+user);
+		System.out.println("Desktop pass::"+pass);
+		return true;
+	}
+
+	public boolean logout(){
+		System.out.println("Desktop logout");
+		return true;
+	}
+}

@@ -1,0 +1,23 @@
+package com.mase.oop1;
+
+public class Television {
+	private String theMake;
+	private String theModel;
+		
+	public Television(String s1, String s2) {
+
+	}
+
+	public String getTheMake() {
+		return theMake;
+	}
+	public String getTheModel() {
+		return theModel;
+	}
+
+	@Override
+	public String toString() {
+		return "Television [theMake=" + theMake + ", theModel=" + theModel
+				+ "]";
+	}
+}

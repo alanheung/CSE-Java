@@ -1,0 +1,14 @@
+package com.mase.oop1;
+
+import java.util.ArrayList;
+
+public class Shop {
+
+	public static void main(String[] args) {
+		ArrayList<Person> people = new ArrayList<>();
+	}
+	public void processPeople(ArrayList Person){
+		
+	}
+
+}

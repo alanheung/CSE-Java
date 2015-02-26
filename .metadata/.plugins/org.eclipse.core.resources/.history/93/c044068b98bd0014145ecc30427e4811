@@ -1,0 +1,13 @@
+package com.mase.oop1;
+
+public class LCD {
+	public LCD(String s1, String s2){
+		
+	}
+	public static void turnOn(){
+		System.out.println("LCD::TurnOn()");
+	}
+	public static void turnOff(){
+		System.out.println("LCD::TurnOff()");
+	}
+}

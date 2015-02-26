@@ -1,0 +1,30 @@
+package com.mase.oop1;
+
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+
+public class Shop {
+
+	public static void main(String[] args) throws ParseException {
+		ArrayList<Person> people = new ArrayList<>();
+		
+		DateFormat formatter = new SimpleDateFormat("dd/MM/yy");
+		Date dateOfPurchase = formatter.parse("30/01/15");
+		
+		ElectronicDevice ed = new Television("Sony","Bravia");
+		
+		Purchase purchase = Purchase.createNewInstance("Sony Shop", 499.0, dateOfPurchase, ed);
+		System.out.println(purchase);
+		
+		Person p1 = new Person("Tom", purchase);
+		
+		System.out.println(p1);
+	}
+	public static void processPeople(ArrayList Person){
+		
+	}
+
+}

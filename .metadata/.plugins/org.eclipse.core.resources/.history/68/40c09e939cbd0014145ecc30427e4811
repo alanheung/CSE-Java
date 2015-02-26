@@ -1,0 +1,9 @@
+package com.mase.oop1;
+
+public class Purchase {
+	protected double price;
+	protected String shop;
+	protected Date dateOfPurchase;
+	protected ElectronicDevice device;
+	
+}

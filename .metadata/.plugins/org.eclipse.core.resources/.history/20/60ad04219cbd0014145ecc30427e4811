@@ -1,0 +1,14 @@
+package com.mase.oop1;
+
+public class LED extends Television{
+	
+	public LED(String s1, String s2){
+		
+	}
+	public static void turnOn(){
+		System.out.println("LED::TurnOn()");
+	}
+	public static void turnOff(){
+		System.out.println("LED::TurnOff()");
+	}
+}

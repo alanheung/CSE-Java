@@ -1,0 +1,13 @@
+package com.mase.oop1;
+
+public class Plasma extends Television implements HighlyDesirable{
+	public Plasma(String s1, String s2){
+		
+	}
+	public static void turnOn(){
+		System.out.println("Plasma::TurnOn()");
+	}
+	public static void turnOff(){
+		System.out.println("Plasma::TurnOff()");
+	}
+}

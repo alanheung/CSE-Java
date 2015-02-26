@@ -1,0 +1,34 @@
+package com.mase.oop1;
+
+import java.util.Date;
+
+class Purchase {
+	protected double price;
+	protected String shop;
+	protected Date dateOfPurchase;
+	protected ElectronicDevice device;
+	
+	public static Purchase createNewInstance(Double price, String shop, Date dateOfPurchase, ElectronicDevice device){
+		return new Purchase(price, shop, dateOfPurchase, device);
+	}
+	
+	public double getPrice() {
+		return price;
+	}
+	public String getShop() {
+		return shop;
+	}
+	public Date getDateOfPurchase() {
+		return dateOfPurchase;
+	}
+	public ElectronicDevice getDevice() {
+		return device;
+	}
+	@Override
+	public String toString() {
+		return "Purchase [price=" + price + ", shop=" + shop
+				+ ", dateOfPurchase=" + dateOfPurchase + ", device=" + device
+				+ "]";
+	}
+	
+}

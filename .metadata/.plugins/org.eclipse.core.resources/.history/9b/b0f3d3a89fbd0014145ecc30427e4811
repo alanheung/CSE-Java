@@ -1,0 +1,9 @@
+package com.mase.oop1;
+
+public class Shop {
+
+	public static void main(String[] args) {
+
+	}
+
+}
