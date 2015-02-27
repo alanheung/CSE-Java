@@ -1,0 +1,23 @@
+package com.mase.innerclasses;
+class C{
+	
+}
+abstract class D{
+	abstract void d1();
+}
+
+class Z extends C{
+	public D makeD(){
+		return new D(){
+			//anonymous inner class
+		};
+	}
+}
+
+public class MultipleImplementations {
+
+	public static void main(String[] args) {
+
+	}
+
+}//

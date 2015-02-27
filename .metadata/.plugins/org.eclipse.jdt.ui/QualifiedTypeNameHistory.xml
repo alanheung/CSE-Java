@@ -25,13 +25,13 @@
 <fullyQualifiedTypeName name="com.mase.week06.WithFinals.OverridingPrivate"/>
 <fullyQualifiedTypeName name="main.java.com.messaging.Client"/>
 <fullyQualifiedTypeName name="org.mockito.Mockito"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="org.mockito.internal.verification.Times"/>
 <fullyQualifiedTypeName name="com.example.localbirds.Crow"/>
 <fullyQualifiedTypeName name="com.example.hunters.Eagle"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
 <fullyQualifiedTypeName name="javax.swing.text.DateFormatter"/>
 <fullyQualifiedTypeName name="java.text.DateFormat"/>
 <fullyQualifiedTypeName name="java.text.ParseException"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

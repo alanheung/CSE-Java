@@ -1,0 +1,25 @@
+package com.mase.innerclasses;
+
+interface A{}
+interface B{
+	void b1();//by default public
+}
+
+class X implements A,B{}
+
+class Y implements A{
+	B makeB(){
+		return new B(){
+			@Override
+			public void b1(){}// package
+		};//anonymous inner class that implements B
+	}
+}
+
+public class MultipleInterfaces {
+
+	public static void main(String[] args) {
+
+	}
+
+}

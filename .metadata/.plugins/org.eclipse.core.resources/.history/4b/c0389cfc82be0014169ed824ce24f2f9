@@ -1,0 +1,21 @@
+package com.mase.innerclasses;
+class C{
+	
+}
+abstract class D{}
+
+class Z extends C{
+	public D makeD(){
+		return new D(){
+			
+		};
+	}
+}
+
+public class MultipleImplementations {
+
+	public static void main(String[] args) {
+
+	}
+
+}//

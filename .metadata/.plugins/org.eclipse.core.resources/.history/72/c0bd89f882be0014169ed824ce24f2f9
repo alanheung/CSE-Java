@@ -1,0 +1,13 @@
+package com.mase.innerclasses;
+class C{
+	
+}
+abstract class D{}
+
+public class MultipleImplementations {
+
+	public static void main(String[] args) {
+
+	}
+
+}//

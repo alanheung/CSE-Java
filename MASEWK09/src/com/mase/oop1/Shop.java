@@ -21,7 +21,7 @@ public class Shop {
 		System.out.println("\n"+purchase);
 
 		Person p1 = new Person("Tom", purchase);
-
+		
 		System.out.println("\n"+p1);processPeople(people);//method call
 		System.out.println();
 

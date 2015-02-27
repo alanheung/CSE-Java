@@ -1,0 +1,20 @@
+package com.mase.innerclasses;
+
+interface A{
+	
+}
+
+interface B{
+	
+}
+
+class X implements A,B{
+	
+}
+public class MultipleInterfaces {
+
+	public static void main(String[] args) {
+
+	}
+
+}

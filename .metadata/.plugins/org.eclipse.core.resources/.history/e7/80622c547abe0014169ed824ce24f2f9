@@ -1,0 +1,14 @@
+package com.mase.innerclasses;
+
+public class Outer {
+	private int privateOuterDate = 20;
+	
+	class Inner{
+		
+	}
+	
+	public static void main(String[] args) {
+
+	}
+
+}

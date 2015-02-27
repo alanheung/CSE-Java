@@ -1,0 +1,19 @@
+package com.mase.innerclasses;
+
+public class Outer {
+	private int privateOuterData = 20;
+	
+	class Inner{
+		private int privateInnerData = 10;
+
+		public void display(){
+			System.out.println("Inner accessing inner private data "+privateInnerData);
+			System.out.println("Inner accessing outer private data "+privateOuterData);
+		}
+	}
+	
+	public static void main(String[] args) {
+		Outer outerRef = new Outer();
+	}
+
+}//

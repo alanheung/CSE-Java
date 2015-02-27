@@ -1,0 +1,9 @@
+package com.mase.innerclasses;
+
+public class MultipleImplementations {
+
+	public static void main(String[] args) {
+
+	}
+
+}//

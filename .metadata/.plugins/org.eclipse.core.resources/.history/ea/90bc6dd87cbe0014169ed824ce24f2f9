@@ -1,0 +1,29 @@
+package com.mase.innerclasses;
+
+public class Outer {
+	private int privateOuterData = 20;
+	
+	class Inner{
+		private int privateInnerData = 10;
+
+		public void display(){
+			System.out.println("Inner accessing Inner private data: "+privateInnerData);
+			System.out.println("Inner accessing Outer private data: "+privateOuterData);
+		}
+	}
+	
+	public static void main(String[] args) {
+		Outer outerRef = new Outer();
+		Outer.Inner innerRef = new Outer().new Inner();
+		
+		//Outer class has access to private Outer data(obviously)
+		System.out.println("Outer accessing Outer private data: "+outerRef.privateOuterData);//20
+
+		//Outer class has access to private Inner data
+		//by using the Inner class reference
+		System.out.println("Outer accessing Inner private data: "+innerRef.privateInnerData);//10
+
+		innerRef.display();//10, 20
+	}
+
+}//

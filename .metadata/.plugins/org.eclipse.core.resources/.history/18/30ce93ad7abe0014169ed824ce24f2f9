@@ -1,0 +1,15 @@
+package com.mase.innerclasses;
+
+public class Outer {
+	private int privateOuterData = 20;
+	
+	class Inner{
+		private int privateInnerData = 10;
+		
+	}
+	
+	public static void main(String[] args) {
+
+	}
+
+}
