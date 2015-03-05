@@ -1,0 +1,53 @@
+package com.exceptions;
+
+public class exceptionExample {
+
+
+	public static void main(String[] args) {
+		//		testMethodA("hello");
+		testMethodB();
+//		testMethodC();
+
+	}
+
+	public static String testMethodA(String s){
+
+		try{
+			int x =9;
+		}catch(Exception e){
+			System.out.println("file not found");
+			return "exception";
+		}finally{
+			System.out.println("finally section");
+			//return from finally block
+			//if i comment out line below I get a missing return statement
+			return "ok from finally";
+		}
+	}
+	public static String testMethodB(){
+		try{
+			//return from try block
+			return "ok";// finally section is printed
+		}catch(Exception e){
+			System.out.println("file not found");
+			return "exception";
+		}finally{
+			System.out.println("finally section");
+		}
+	}
+
+	public static String testMethodC(){
+		try{
+
+			return "ok";
+		}catch(Exception e){
+			System.out.println("file not found");
+			return "exception";
+		}finally{
+			System.out.println("finally section");
+		}
+	}
+}
+
+
+

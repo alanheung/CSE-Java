@@ -1,0 +1,23 @@
+package com.exceptions;
+
+public class exceptionExample {
+
+
+	public static void main(String[] args) {
+		testMethodA("hello");
+	}
+	
+	public static String testMethodA(String s){
+		
+		try{
+			int x =9;
+		}catch(Exception e){
+			System.out.println("file not found");
+			return Exception;
+		}finally{
+			return "ok from finally";
+		}
+		
+	}
+
+}

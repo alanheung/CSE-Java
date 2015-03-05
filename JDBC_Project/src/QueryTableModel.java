@@ -34,7 +34,7 @@ class QueryTableModel extends AbstractTableModel{
 		return ((String[])modelData.elementAt(row))[col];
 	}
 
-	public void refreshFromDB( Statement stmt1){
+	public void refreshFromDB( Statement stmt1,String currentTable){
 		//modelData is the data stored by the table
 		//when set query is called the data from the 
 		//DB is queried using “SELECT * FROM myInfo” 
@@ -47,7 +47,7 @@ class QueryTableModel extends AbstractTableModel{
 		stmt = stmt1;
 		try{
 			//Execute the query and store the result set and its metadata
-			rs = stmt.executeQuery("SELECT * FROM TECHNOLOGIES");
+			rs = stmt.executeQuery("SELECT * FROM "+currentTable);
 			ResultSetMetaData meta = rs.getMetaData();
 		
 			//to get the number of columns

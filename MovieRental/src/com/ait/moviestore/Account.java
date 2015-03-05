@@ -13,7 +13,7 @@ public class Account {
 	private int balanceOwedInCents;
 
 	private int allowedCreditInCents = 200;
-
+	
 	/**
 	 * Create a new Rental Account.
 	 * @param name the name of the account holder.

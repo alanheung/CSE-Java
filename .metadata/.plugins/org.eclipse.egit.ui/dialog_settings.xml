@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="2" key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel"/>
+	<item value="0" key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel"/>
 	<item value="true" key="CommitDialog.showUntracked"/>
 	<list key="CommitDialog.authorValues">
 		<item value="A00226316 &lt;A00226316@W301-A41.studentnet.ait.ie&gt;"/>

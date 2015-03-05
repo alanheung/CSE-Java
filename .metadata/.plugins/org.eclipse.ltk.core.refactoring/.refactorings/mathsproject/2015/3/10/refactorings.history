@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 elements to &apos;MathsProject1234/src&apos;&#x0D;&#x0A;- Original project: &apos;mathsproject&apos;&#x0D;&#x0A;- Destination element: &apos;MathsProject1234/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     GUICalcLayout.java&#x0D;&#x0A;     CalcGUI.java&#x0D;&#x0A;     Evaluator.java&#x0D;&#x0A;     MathematicalOperations.java" description="Copy files" destination="=MathsProject1234/src" element1="src/GUICalcLayout.java" element2="src/CalcGUI.java" element3="src/Evaluator.java" element4="src/MathematicalOperations.java" files="4" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1425472658323" units="0" version="1.0"/>
+</session>

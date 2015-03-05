@@ -29,7 +29,7 @@ public class JDBCMainWindow extends JFrame implements ActionListener{
 			// Add the instance to the main section of the window
 			getContentPane().add( aWindowContent );
 			
-			setSize( 1500, 700 );
+			setSize( 1500, 1000 );
 			setVisible( true );
 		}
 		
