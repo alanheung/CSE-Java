@@ -47,7 +47,11 @@ class QueryTableModel2 extends AbstractTableModel{
 		stmt = stmt1;
 		try{
 			//Execute the query and store the result set and its metadata
-			rs = stmt.executeQuery("SELECT * FROM SUBSCRIBERS");
+			rs = stmt.executeQuery(
+					"select technologies.Property_ID, technologies.Property, technologies.Technology, subscribers.Subscriber_ID, subscribers.Global, subscribers.USA, subscribers.UK, subscribers.Germany, subscribers.Japan, subscribers.Russia " +
+					"from technologies Right join subscribers on technologies.Property_ID = subscribers.Property_ID order by technologies.Property_ID;"
+					);
+			System.out.println(rs);
 			ResultSetMetaData meta = rs.getMetaData();
 		
 			//to get the number of columns

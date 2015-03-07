@@ -1,0 +1,23 @@
+
+public class StringProcessing {
+
+	public static void main(String[] args) {
+		compareStrings();
+		firstExampleUsingStrings();
+	}
+	
+	public static void compareStrings(){
+		String name = "alan";
+		System.out.println(name.compareTo("sean"));
+		String name2 = "jack";
+		System.out.println(name.compareTo("paul"));
+		String name3 = "tom";
+		System.out.println(name.compareTo("tim"));
+	}
+	
+	public static void firstExampleUsingStrings(){
+	
+	}
+
+
+}

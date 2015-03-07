@@ -1,0 +1,5 @@
+package com.factoryDesign;
+
+public class AnimalFactory {
+
+}

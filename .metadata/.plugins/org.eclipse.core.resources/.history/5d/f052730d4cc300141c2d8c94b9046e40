@@ -1,0 +1,9 @@
+package com.factoryDesign;
+
+public class AnimalFactory {
+	public Animal getAnimalObject(Animal animal){
+		if(animal instanceof Animal){
+			System.out.println("This is an animal");
+		}
+}
+}

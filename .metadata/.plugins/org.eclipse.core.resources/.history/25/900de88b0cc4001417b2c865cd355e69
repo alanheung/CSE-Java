@@ -1,0 +1,19 @@
+Property_ID,Property,Started,Technology,Standard,BandWidth,Address_Technique,Core_Network_Switching,Server_Type,Subscriber_ID,Property_ID,Property,Global,USA,Japan,South_Korea,Austrailia,Canada,Singapore,Sweden,Russia,Germany,UK,
+5,1G,1970-1985,Analog Signalling,AMPS,TACS,NMT,14.4kbps,FDMA,PSTN Circuit,Voice Memo P2P,5,5,45g,1.00000,1.00000,1.00000,1.00000,1.00000,1.00000,1.00000,1.00000,1.00000,1.00000,1.00000,
+3,2.5G,1985-1999,Digital Signalling,GPRS MODE 
+
+HSCSD EDGE,1.9kbps,TDMA CDMA,PSTN Packet Network Circuit Packet,Higher Capacity 
+
+Packet Data,3,3,2G,3.50000,0.90000,0.70000,0.00900,0.00860,0.00720,0.00680,0.00550,0.00650,0.00670,0.00640,
+6,345g,2015,rgb,rgb,rgb,rgb,rgb,rgb,6,6,7g,9.00000,9.00000,9.00000,9.00000,9.00000,9.00000,9.00000,9.00000,9.00000,9.00000,9.00000,
+7,345g,2015,rgb,rgb,rgb,rgb,rgb,rgb,7,7,7g,7.00000,7.00000,7.00000,7.00000,7.00000,7.00000,7.00000,7.00000,7.00000,7.00000,7.00000,
+2,3G,1990-2002,Broadband Width,WCDMA CDMA 2000,2mbps,CDMA,Packet Network,High Quality Audio Video Data,2,2,3G,1750.30000,325.50000,225.00000,111.50000,88.50000,77.20000,55.10000,46.10000,45.80000,45.70000,45.10000,
+1,4G,2000-2006,Unified IP Broadband,Single 
+
+Unified Standard,200mbps,CDMA,Internet All Packet,Dynamic Information Access 
+
+Wearable Devices,1,1,4G,126.00000,62.50000,26.10000,23.00000,3.90000,2.30000,1.20000,1.10000,0.90000,0.90000,0.70000,
+8,8g,asd,asd,asd,asd,asd,ads,asd,8,8,8g,8.00000,8.00000,8.00000,8.00000,8.00000,8.00000,8.00000,8.00000,8.00000,8.00000,8.00000,
+9,asdf,asdf,asdf,asdf,asdf,asdf,asdf,asdf,10,9,8g,8.00000,8.00000,8.00000,8.00000,8.00000,8.00000,8.00000,8.00000,8.00000,8.00000,8.00000,
+9,asdf,asdf,asdf,asdf,asdf,asdf,asdf,asdf,9,9,9g,9.00000,9.00000,9.00000,9.00000,9.00000,9.00000,9.00000,9.00000,9.00000,9.00000,9.00000,
+9,asdf,asdf,asdf,asdf,asdf,asdf,asdf,asdf,11,9,8g,8.00000,8.00000,8.00000,8.00000,8.00000,8.00000,8.00000,8.00000,8.00000,8.00000,8.00000,

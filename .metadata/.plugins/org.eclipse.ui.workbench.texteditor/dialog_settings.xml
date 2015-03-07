@@ -13,16 +13,16 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="Get" key="selection"/>
+		<item value="PieChart" key="selection"/>
 		<list key="findhistory">
+			<item value="piechart"/>
+			<item value="export"/>
+			<item value="details"/>
+			<item value="refresh"/>
 			<item value="get"/>
 			<item value="trig"/>
 			<item value="result"/>
 			<item value="main"/>
-			<item value="content"/>
-			<item value="apDetails"/>
-			<item value="apdetails"/>
-			<item value="export"/>
 		</list>
 		<list key="replacehistory">
 			<item value="sc"/>

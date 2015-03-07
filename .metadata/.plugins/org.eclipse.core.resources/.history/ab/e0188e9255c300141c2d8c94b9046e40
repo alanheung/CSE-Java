@@ -1,0 +1,16 @@
+package DAO;
+
+public class PersonDB {
+	private Map<Integer, Person> persons =new HashMap<Integer, person>();
+	
+	@Override
+	public Person getPerson(int personId){
+		return persons.get(personId);
+	}
+	
+	@Override
+	public boolean addPerson(int personId, Person person){
+		persons.put(personId, person);
+		return true;
+	}
+}

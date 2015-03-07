@@ -1,0 +1,5 @@
+Property_ID,Property_ID,Property,Technology,Subscriber_ID,Global,USA,UK,Germany,Japan,Russia,
+3,3,2.5G,Digital Signalling,3,3.50000,0.90000,0.00640,0.00670,0.70000,0.00650,
+4,4,2G,Digital Signalling,4,0.00100,0.00200,0.01100,0.01000,0.00300,0.00900,
+2,2,3G,Broadband Width,2,1750.30000,325.50000,45.10000,45.70000,225.00000,45.80000,
+1,1,4G,Unified IP Broadband,1,126.00000,62.50000,0.70000,0.90000,26.10000,0.90000,

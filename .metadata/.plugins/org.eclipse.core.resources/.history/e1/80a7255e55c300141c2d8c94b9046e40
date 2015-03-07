@@ -1,0 +1,5 @@
+package DAO;
+
+public class PersonDB {
+	private Map<Integer, Person> persons =new HashMap<Integer, person>();
+}

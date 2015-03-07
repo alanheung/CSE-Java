@@ -1,5 +1,8 @@
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.Stack;
@@ -12,6 +15,10 @@ public class Evaluator  {
      */
     private static final int LEFT_ASSOC  = 0;  
     private static final int RIGHT_ASSOC = 1;
+    
+    private static final double PI = 3.141592654;
+	private static final double EULER = 2.718281828;
+    
     Scanner sc = new Scanner(System.in);
    
     // Operators  
@@ -31,7 +38,7 @@ public class Evaluator  {
          */
     }  
    
-    // Check if token is an operator  listed in the Map called OPEARTORS
+    // Check if token is an operator  listed in the Map called OPERATORS
     private static boolean isOperator(String token){  
         return OPERATORS.containsKey(token);  
     }  
@@ -58,7 +65,7 @@ public class Evaluator  {
     }  
    
     // Convert infix expression format into reverse Polish notation  
-    public static String[] infixToRPN(String[] inputTokens){  
+    public static String[] infixToRPN(Collection<String> inputTokens){  
         /* 
          * Stack is a java object which implements a LIFO stack .
          * We are (being original!!) calling our Stack, stack . . .
@@ -67,7 +74,8 @@ public class Evaluator  {
          * .pop  --> take the top element off the list
          * .peak --> LOOKS AT but does not remove the top element
          */
-    	ArrayList<String> postFix = new ArrayList<String>();  
+    	ArrayList<String> postFix = new ArrayList<String>();
+    	
         Stack<String> stack = new Stack<String>();  
           
         // For each token  
@@ -119,7 +127,6 @@ public class Evaluator  {
       
     public static double postfixToSolution(String[] tokens){          
         Stack<String> stack = new Stack<String>();  
-          
         // For each token   
         for (String token : tokens){  
             // If the token is a value push it onto the stack  
@@ -135,12 +142,16 @@ public class Evaluator  {
                 				token.compareTo("-") == 0 ? d1 - d2 :  
                                 token.compareTo("*") == 0 ? d1 * d2 :  
                                 token.compareTo("/") == 0 ? d1 / d2 :
+                                token.compareTo("^") == 0 ? Math.pow(d1, d2)	:
+                                token.compareTo("sin") == 0 ? Math.sin(d1) * d2		:
                                 	Math.pow(d1, d2) ;               
-                                  
+                                
                 // Push result onto stack  
-                stack.push( String.valueOf( result ));  
+                stack.push( String.valueOf( result ));						//ND
+                 
             }                          
-        }          
+        }       
+        //System.out.println("result is " + Double.valueOf(stack.pop())); 
         return Double.valueOf(stack.pop());  
     }
     
@@ -152,25 +163,215 @@ public class Evaluator  {
     	if (matcher.matches()){
     	//then there is a Sin value so we take the number to the right of it and find the 
     		//Sin of that
-    		
     	}
     	return stringWithTrigValsCalculated;
      }
-   
-    public static void main(String[] args) {  
-    	System.out.println("Enter String");
-        Scanner temp = new Scanner(System.in);
-    	String[] input = (temp.nextLine()).split(" ");
+    
+    public static double shunting(double result, String userInput){				//ND
+    	String[] input = (userInput.split(" "));								//ND
      	//String[] input = "( 1 + -2 ) * ( 3 / 4 ) - ( 5 + 6 )".split(" ");         
-    	String[] output = infixToRPN(input);  
-          
+    	List list = Arrays.asList(input);
+    	String[] output = infixToRPN(list);  
+    	System.out.println("hi");												//ND
         // Build output RPN string minus the commas  
          for (String token : output) {  
             System.out.print(token + " ");  
         }  
-          
         // Feed the RPN string to postfixToSolution to give result  
-        Double result = postfixToSolution( output );
-        System.out.println("\n result== " + result);
-    }  
+        result = postfixToSolution( output );									//ND
+        System.out.println("result 2 is " + result);							//ND
+        return result;															//ND
+    }
+    
+    public static StringBuilder matrixMult(String matrix1, String matrix2) {
+    	List<String> list1 = Arrays.asList(matrix1.split("\n"));
+    	List<String> list2 = Arrays.asList(matrix2.split("\n"));
+    	String[] mat1Size = list1.get(0).split(" ");
+    	String[] mat2Size = list2.get(0).split(" ");
+	    int mat1cols = mat1Size.length;
+	    int mat2cols = mat2Size.length;
+	    int mat1rows = list1.size();
+	    int mat2rows = list2.size();
+	    
+	    int mat1 [][] = new int[mat1rows][mat1cols];
+	    int mat2 [][] = new int[mat2rows][mat2cols];
+	    
+	    String[] array11 = matrix1.split("\n");
+	    for (int a = 0 ; a < mat1rows; a++) {
+	    	String[] array12 = array11[a].split(" ");
+		    for (int b = 0 ; b < mat1cols; b++) {
+		    	mat1[a][b] = Integer.parseInt(array12[b]);
+		    }
+	    }
+	    
+	    String[] array21 = matrix2.split("\n");
+	    for (int a = 0 ; a < mat2rows; a++) {
+	    	String[] array22 = array21[a].split(" ");
+		    for (int b = 0 ; b < mat2cols; b++) {
+		    	mat2[a][b] = Integer.parseInt(array22[b]);
+		    }
+	    }
+	    
+	    int[][] mat3 = new int[mat1rows][mat2cols];	//
+	    for (int i = 0 ; i < mat1rows ; i++) {
+	        for (int j = 0 ; j < mat2cols ; j++) {	//
+	            for (int k = 0 ; k < mat1cols ; k++) {
+	                mat3[i][j] = mat3[i][j] + mat1[i][k] * mat2[k][j];
+	            }
+	        }
+	    }
+	    	    
+	    StringBuilder output = new StringBuilder();
+	    for (int i = 0 ; i < mat3.length ; i++) {
+	        for (int j = 0 ; j < mat3[0].length ; j++) {
+	            output.append(("[" + mat3[i][j] + "] "));
+	        }
+	        output.append("\n");
+	    }
+	    return output;
+	}
+    
+    public static StringBuilder matrixAdd(String matrix1, String matrix2) {
+    	List<String> list1 = Arrays.asList(matrix1.split("\n"));
+    	List<String> list2 = Arrays.asList(matrix2.split("\n"));
+    	String[] mat1Size = list1.get(0).split(" ");
+    	String[] mat2Size = list2.get(0).split(" ");
+	    int mat1cols = mat1Size.length;
+	    int mat2cols = mat2Size.length;
+	    int mat1rows = list1.size();
+	    int mat2rows = list2.size();
+	    
+	    int mat1 [][] = new int[mat1rows][mat1cols];
+	    int mat2 [][] = new int[mat2rows][mat2cols];
+	    
+	    String[] array11 = matrix1.split("\n");
+	    for (int a = 0 ; a < mat1rows; a++) {
+	    	String[] array12 = array11[a].split(" ");
+		    for (int b = 0 ; b < mat1cols; b++) {
+		    	mat1[a][b] = Integer.parseInt(array12[b]);
+		    }
+	    }
+	    
+	    String[] array21 = matrix2.split("\n");
+	    for (int a = 0 ; a < mat2rows; a++) {
+	    	String[] array22 = array21[a].split(" ");
+		    for (int b = 0 ; b < mat2cols; b++) {
+		    	mat2[a][b] = Integer.parseInt(array22[b]);
+		    }
+	    }
+	    
+	    int[][] mat3 = new int[mat1rows][mat2cols];	//
+	    for ( int i = 0 ; i < mat1rows ; i ++ ) {
+	    	for ( int j = 0 ; j < mat1cols ; j++ ) {
+	        	mat3[i][j] = mat1[i][j] + mat2[i][j];
+	    	}
+	    }
+	 
+	    StringBuilder output = new StringBuilder();
+	    for (int i = 0 ; i < mat3.length ; i++) {
+	        for (int j = 0 ; j < mat3[0].length ; j++) {
+	            output.append(("[" + mat3[i][j] + "] "));
+	        }
+	        output.append("\n");
+	    }
+	    return output;
+    }
+    
+    public static StringBuilder matrixSubtract(String matrix1, String matrix2) {
+    	List<String> list1 = Arrays.asList(matrix1.split("\n"));
+    	List<String> list2 = Arrays.asList(matrix2.split("\n"));
+    	String[] mat1Size = list1.get(0).split(" ");
+    	String[] mat2Size = list2.get(0).split(" ");
+	    int mat1cols = mat1Size.length;
+	    int mat2cols = mat2Size.length;
+	    int mat1rows = list1.size();
+	    int mat2rows = list2.size();
+	    
+	    int mat1 [][] = new int[mat1rows][mat1cols];
+	    int mat2 [][] = new int[mat2rows][mat2cols];
+	    
+	    String[] array11 = matrix1.split("\n");
+	    for (int a = 0 ; a < mat1rows; a++) {
+	    	String[] array12 = array11[a].split(" ");
+		    for (int b = 0 ; b < mat1cols; b++) {
+		    	mat1[a][b] = Integer.parseInt(array12[b]);
+		    }
+	    }
+	    
+	    String[] array21 = matrix2.split("\n");
+	    for (int a = 0 ; a < mat2rows; a++) {
+	    	String[] array22 = array21[a].split(" ");
+		    for (int b = 0 ; b < mat2cols; b++) {
+		    	mat2[a][b] = Integer.parseInt(array22[b]);
+		    }
+	    }
+	    
+	    int[][] mat3 = new int[mat1rows][mat2cols];	//
+	    for ( int i = 0 ; i < mat1rows ; i ++ ) {
+	    	for ( int j = 0 ; j < mat1cols ; j++ ) {
+	        	mat3[i][j] = mat1[i][j] - mat2[i][j];
+	    	}
+	    }
+	 
+	    StringBuilder output = new StringBuilder();
+	    for (int i = 0 ; i < mat3.length ; i++) {
+	        for (int j = 0 ; j < mat3[0].length ; j++) {
+	            output.append(("[" + mat3[i][j] + "] "));
+	        }
+	        output.append("\n");
+	    }
+	    return output;
+    }
+    
+    public static StringBuilder matrixTransposition(String matrix1) {
+    	List<String> list1 = Arrays.asList(matrix1.split("\n"));
+    	String[] mat1Size = list1.get(0).split(" ");
+	    int mat1cols = mat1Size.length;
+	    int mat1rows = list1.size();
+	    
+	    int mat1 [][] = new int[mat1rows][mat1cols];
+	    
+	    String[] array11 = matrix1.split("\n");
+	    for (int a = 0 ; a < mat1rows; a++) {
+	    	String[] array12 = array11[a].split(" ");
+		    for (int b = 0 ; b < mat1cols; b++) {
+		    	mat1[a][b] = Integer.parseInt(array12[b]);
+		    }
+	    }
+	    
+	    int[][] mat3 = new int[mat1rows][mat1cols];	//
+	    
+	    for ( int i = 0 ; i < mat1rows ; i ++ ) {
+	    	for ( int j = 0 ; j < mat1cols ; j ++ ) {
+	        	mat3[j][i] = mat1[i][j];
+	    	}
+	    }
+	    
+	    StringBuilder output = new StringBuilder();
+	    for (int i = 0 ; i < mat3.length ; i++) {
+	        for (int j = 0 ; j < mat3[0].length ; j++) {
+	            output.append(("[" + mat3[i][j] + "] "));
+	        }
+	        output.append("\n");
+	    }
+	    return output;
+    }
+   
+//    public static void main(String[] args) {  
+//    	System.out.println("Enter String");
+//        Scanner temp = new Scanner(System.in);
+//    	String[] input = (temp.nextLine()).split(" ");
+//     	//String[] input = "( 1 + -2 ) * ( 3 / 4 ) - ( 5 + 6 )".split(" ");         
+//    	String[] output = infixToRPN(input);  
+//          
+//        // Build output RPN string minus the commas  
+//         for (String token : output) {  
+//            System.out.print(token + " ");  
+//        }  
+//          
+//        // Feed the RPN string to postfixToSolution to give result  
+//        Double result = postfixToSolution( output );
+//        System.out.println("\n result== " + result);
+    	
+//    }  
 }  

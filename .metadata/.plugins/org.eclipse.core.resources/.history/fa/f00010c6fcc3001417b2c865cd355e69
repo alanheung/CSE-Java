@@ -1,0 +1,14 @@
+
+public class StringProcessing {
+
+	public static void main(String[] args) {
+
+	}
+	
+	public static void compareStrings(){
+		String name = "alan";
+		name.compareTo("sean");
+		System.out.println(name);
+	}
+
+}

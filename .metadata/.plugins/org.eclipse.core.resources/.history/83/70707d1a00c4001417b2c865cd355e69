@@ -1,0 +1,44 @@
+
+public class StringProcessing {
+
+	public static void main(String[] args) {
+//		compareStrings();
+//		firstExampleUsingStrings();
+		firstExampleUsingSB
+	}
+	
+	public static void compareStrings(){
+		String name = "alan";
+		System.out.println(name.compareTo("sean"));//-18 ascii
+		String name2 = "jack";//106-112
+		System.out.println(name.compareTo("paul"));//-6
+		String name3 = "tom";
+		System.out.println(name.compareTo("tim"));//6
+	}
+	
+	public static void firstExampleUsingStrings(){
+		String s = new String("The numbers are: ");
+		
+		for(int i=0; i<=5;i++){
+			Integer.toString(i);
+			System.out.println(s+(i));
+		}
+	}
+
+	public static void firstExampleUsingSB(){
+		StringBuffer s = new StringBuffer("The numbers are: ");
+		
+		for(int i=0; i<=5;i++){
+			Integer.toString(i);
+			System.out.println(s.append(i));
+		}
+	}
+	
+	public static void interning(){
+		
+	}
+
+	
+	
+
+}

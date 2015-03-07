@@ -6,7 +6,7 @@ import java.io.IOException;
 public class exceptionExample {
 
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ClassNotFoundException {
 //				testMethodA("hello");
 //		testMethodB();
 //		testMethodC();
@@ -25,6 +25,9 @@ public class exceptionExample {
 		}catch(IOException ex){
 			ex.printStackTrace();
 		}
+		
+//		X1();
+		Y1();
 	}
 
 	public static String testMethodA(String s){
@@ -123,6 +126,32 @@ public class exceptionExample {
 		public void process() throws IOException, FileNotFoundException, ArithmeticException{// is an IOException??
 			System.out.println("B");
 		}
+	}
+	
+	public static void X1()throws ClassNotFoundException{
+		X2();
+	}
+	public static void X2()throws ClassNotFoundException{
+		X3();
+	}
+	public static void X3()throws ClassNotFoundException{
+		X4();
+	}
+	public static void X4() throws ClassNotFoundException{
+		throw new ClassNotFoundException();
+	}
+	
+	public static void Y1(){
+		Y2();
+	}
+	public static void Y2(){
+		Y3();
+	}
+	public static void Y3(){
+		Y4();
+	}
+	public static void Y4(){
+		throw new RuntimeException();
 	}
 
 }//

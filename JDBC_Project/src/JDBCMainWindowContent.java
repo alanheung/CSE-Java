@@ -9,14 +9,10 @@ import org.jfree.chart.ChartFrame;
 import org.jfree.chart.JFreeChart;
 import org.jfree.data.general.DefaultPieDataset;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.sql.*;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.Statement;
 
 @SuppressWarnings("serial")
 public class JDBCMainWindowContent extends JInternalFrame implements ActionListener{
@@ -115,13 +111,21 @@ public class JDBCMainWindowContent extends JInternalFrame implements ActionListe
 	private JButton deleteButton2  = new JButton("Delete");
 	private JButton clearButton2  = new JButton("Clear");
 
+	//buttons for the export panel
+	private JButton query  = new JButton("Query InnerJoin");
+	private JButton queryRecords  = new JButton("Query Records Property_ID");
+	private JTextField queryRecordsTF  = new JTextField(12);
+	private JButton query2  = new JButton("Query2 Address Desc");
+	private JButton query3  = new JButton("Query3 Count Technologies");
+	private final JButton query4 = new JButton("Query4 Distinct Technologies");
+	private final JButton query5 = new JButton("Query5 Count Property_ID");
+	private final JButton query6 = new JButton("Query6 LIKE");
+	private final JButton query7 = new JButton("Query7 Max SK");
+	private final JButton query8 = new JButton("Query8 Min SK");
+	private final JButton query9 = new JButton("Query9 AVG Global Subscribers");
+	private final JButton query10 = new JButton("Query10 Right Join");
 
-	private JButton query  = new JButton("Query");
-	private JTextField queryTF  = new JTextField(500);
-	private JButton avgofRSS  = new JButton("Avg Loss for last 3 Rec per AP");
-	private JTextField avgofRSSTF  = new JTextField(12);
-	private JButton overLappingAP  = new JButton("AP Location");
-	private JButton overLappingChannels  = new JButton("AP Channel");
+	//chart button
 	private JButton chartButton = new JButton("Chart Country Statistics");
 	//switch button
 	private JButton switchButton = new JButton("Switch");
@@ -201,19 +205,25 @@ public class JDBCMainWindowContent extends JInternalFrame implements ActionListe
 		detailsPanel2.add(UKLabel);
 		detailsPanel2.add(UKTF);
 
-		//setup details panel and add the components to it
+		//setup export query details panel and add the components to it
 		exportButtonPanel=new JPanel();
 		exportButtonPanel.setLayout(new GridLayout(3,2));
 		exportButtonPanel.setBackground(Color.lightGray);
 		exportButtonPanel.setBorder(BorderFactory.createTitledBorder(lineBorder, "Export Data"));
 		exportButtonPanel.add(query);
-		exportButtonPanel.add(queryTF);
-		exportButtonPanel.add(avgofRSS);
-		exportButtonPanel.add(avgofRSSTF);
-		exportButtonPanel.add(overLappingAP);
-		exportButtonPanel.add(overLappingChannels);
+		exportButtonPanel.add(queryRecords);
+		exportButtonPanel.add(queryRecordsTF);
+		exportButtonPanel.add(query2);
+		exportButtonPanel.add(query3);
+		exportButtonPanel.add(query4);
+		exportButtonPanel.add(query5);
+		exportButtonPanel.add(query6);
+		exportButtonPanel.add(query7);
+		exportButtonPanel.add(query8);
+		exportButtonPanel.add(query9);
+		exportButtonPanel.add(query10);
 		exportButtonPanel.add(chartButton);
-		exportButtonPanel.setSize(500, 120);
+		exportButtonPanel.setSize(900, 145);
 		exportButtonPanel.setLocation(3, 600);
 		content.add(exportButtonPanel);
 
@@ -240,6 +250,17 @@ public class JDBCMainWindowContent extends JInternalFrame implements ActionListe
 		switchButton.addActionListener(this);//
 		chartButton.addActionListener(this);//
 		query.addActionListener(this);//
+		queryRecords.addActionListener(this);
+		queryRecordsTF.addActionListener(this);
+		query2.addActionListener(this);
+		query3.addActionListener(this);
+		query4.addActionListener(this);
+		query5.addActionListener(this);
+		query6.addActionListener(this);
+		query7.addActionListener(this);
+		query8.addActionListener(this);
+		query9.addActionListener(this);
+		query10.addActionListener(this);
 
 		content.add(insertButton);
 		content.add(updateButton);
@@ -301,7 +322,7 @@ public class JDBCMainWindowContent extends JInternalFrame implements ActionListe
 		content.add(dbContentsPanel);
 		content.add(dbContentsPanel2);
 
-		setSize(982,645);
+		setSize(1491,785);
 		setVisible(true);
 
 		TableModel.refreshFromDB(stmt,currentTable);
@@ -357,7 +378,8 @@ public class JDBCMainWindowContent extends JInternalFrame implements ActionListe
 				String value = rs.getString(1);
 				dataset.setValue(category+ " "+value, new Double(value));
 			}
-			JFreeChart chart = ChartFactory.createPieChart(
+			
+			JFreeChart chart = ChartFactory.createPieChart3D(
 					title,  
 					dataset,             
 					false,              
@@ -369,6 +391,7 @@ public class JDBCMainWindowContent extends JInternalFrame implements ActionListe
 			chart.setBackgroundPaint(Color.WHITE);
 			frame.pack();
 			frame.setVisible(true);
+		    final File file1 = new File("Chart.png");
 		} 
 		catch (Exception e) {
 			e.printStackTrace();
@@ -537,18 +560,17 @@ public class JDBCMainWindowContent extends JInternalFrame implements ActionListe
 		if (target.equals(chartButton)){  		
 			//			 cmd = "select Property_ID from mobiletechnology.technologies group by Property_ID;";
 			//			cmd = "select Record_Description, sum(value)from nw_stats.perf group by Record_Description;";
-
-			cmd = "select Global, sum(Global) from mobiletechnology.subscribers group by Global;";
+			cmd = "select round(subscribers.Global,0) from mobiletechnology.subscribers;";
 			System.out.println(cmd);
 			try {
 				rs= stmt.executeQuery(cmd);
 			} catch (SQLException e1) {
-				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			} 
-			pieGraph(rs, "Technology Statistics");	
+			pieGraph(rs, "Global subsribers that 2G, 2.5G, 3G, 4G Statistics (Millions)");	
+			writeToFile(rs);
 		}
-
+		//switches between the technologies and subscribers tables
 		if (target==switchButton){ 
 			try{ 
 				if(currentTable.equals("Technologies")){ 
@@ -574,40 +596,77 @@ public class JDBCMainWindowContent extends JInternalFrame implements ActionListe
 				//				cmd = "select Property, Technology, Global, " +
 				//						"USA, Japan from Technologies Inner Join Subscribers" +
 				//						"on Technologies.Property_ID = Subscribers.Property_ID order by Technologies.Property;";
-				cmd ="select * from technologies Right join subscribers on technologies.Property_ID = subscribers.Property_ID order by technologies.Property;";
+				cmd ="select Technologies.Property_ID, technologies.Property_ID, technologies.Property, technologies.Technology, subscribers.Subscriber_ID, subscribers.Global, subscribers.USA, subscribers.UK, subscribers.Germany, subscribers.Japan, subscribers.Russia from technologies Right join subscribers on technologies.Property_ID = subscribers.Property_ID order by technologies.Property;";
 				System.out.println(cmd);
 				rs = ps.executeQuery(cmd);
 				writeToFile(rs);
 			}
-//				else if (target.equals(chartButton)){  		
-//				cmd = "select Record_Description, sum(value)from nw_stats.perf group by Record_Description;";
-//				System.out.println(cmd);
-//				rs= stmt.executeQuery(cmd); 
-//				pieGraph(rs, "Network Statistics");				
-//			}
-//			else if (target.equals(numRecForCellButton)){ 
-//				String idOfCell = cellIDTF.getText();
-//				System.out.println(idOfCell);
-//				//Using the Prepared statement 			
+			else if (target.equals(queryRecords)){ 
+				String idOfCell = queryRecordsTF.getText();
+				System.out.println(idOfCell);
+				//Using the Prepared statement 			
 //				ps.setString(1, idOfCell);
 //				rs= ps.executeQuery();
-//				//Without a Prepared Statement we could have used the following two lines of code
-//				/*cmd="select count(*) from nw_stats.perf where Cell_ID = "+idOfCell+";";	
-//				rs= stmt.executeQuery(cmd);*/ 	
-//				writeToFile(rs);
-//			}
-//				else if (target.equals(recordsAfterButton)){  
-//				// set cmd here 
-//				//Reading in the user text from the textField
-//				String idOfCell = timeTF.getText();
-//				System.out.println(idOfCell);
-//				//Using the Prepared statement 
-//				//				ps.setString(1, idOfCell);
-//				//				rs= ps.executeQuery();
-//				cmd="select * from nw_stats.perf where Date > "+idOfCell+";";	
-//				rs= stmt.executeQuery(cmd);
-//				writeToFile(rs);
-//			} 
+				//Without a Prepared Statement we could have used the following two lines of code
+				cmd="select count(*) from Technologies where Property_ID = "+idOfCell+";";	
+				rs= stmt.executeQuery(cmd); 	
+				writeToFile(rs);
+			}
+			else if (target.equals(query2)){  
+				cmd ="select distinct Address_Technique from technologies order by Property_ID DESC;";
+				System.out.println(cmd);
+				rs = ps.executeQuery(cmd);
+				writeToFile(rs);
+			}
+			else if (target.equals(query3)){  
+				cmd="SELECT COUNT(*) FROM technologies";
+				System.out.println(cmd);
+				rs = ps.executeQuery(cmd);
+				writeToFile(rs);
+			}
+			else if (target.equals(query4)){  
+				cmd ="SELECT COUNT(DISTINCT Technology) FROM technologies;";
+				System.out.println(cmd);
+				rs = ps.executeQuery(cmd);
+				writeToFile(rs);
+			}
+			else if (target.equals(query5)){  
+				cmd ="SELECT COUNT(Property_ID) AS Property_ID FROM technologies WHERE Property_ID=1;";
+				System.out.println(cmd);
+				rs = ps.executeQuery(cmd);
+				writeToFile(rs);
+			}
+			else if (target.equals(query6)){  
+				cmd ="SELECT * FROM Technologies WHERE Technology LIKE '%signalling%'; ";
+				System.out.println(cmd);
+				rs = ps.executeQuery(cmd);
+				writeToFile(rs);
+			}
+			else if (target.equals(query7)){  
+				cmd ="SELECT MAX(South_Korea) AS 'South Korea(Max Sub in Millions)' FROM subscribers;  ";
+				System.out.println(cmd);
+				rs = ps.executeQuery(cmd);
+				writeToFile(rs);
+			}
+			else if (target.equals(query8)){  
+				cmd ="SELECT MIN(South_Korea) AS 'South Korea(Min Sub in Millions)' FROM subscribers;  ";
+				System.out.println(cmd);
+				rs = ps.executeQuery(cmd);
+				writeToFile(rs);
+			}
+			else if (target.equals(query9)){  
+				cmd =" SELECT round(AVG(Global),0) AS 'Average Global Subsribers(in Millions)' FROM subscribers;   ";
+				System.out.println(cmd);
+				rs = ps.executeQuery(cmd);
+				writeToFile(rs);
+			}
+			else if (target.equals(query10)){  
+				cmd =" select * from technologies Right join subscribers on technologies.Property_ID = subscribers.Property_ID order by technologies.Property;   ";
+				System.out.println(cmd);
+				rs = ps.executeQuery(cmd);
+				writeToFile(rs);
+			}
+			
 		}catch(Exception e1){e1.printStackTrace();}
 
 	}

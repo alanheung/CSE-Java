@@ -1,0 +1,8 @@
+package com.factoryDesign;
+
+abstract class Animal {
+	public String walk(){
+		return "Animal walks";
+		
+	}
+}
