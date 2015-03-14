@@ -1,0 +1,86 @@
+
+public class StringProcessing {
+
+	public static void main(String[] args) {
+//		compareStrings();
+//		firstExampleUsingStrings();
+//		firstExampleUsingSB();
+//		interning();
+		stringBuffers();
+	}
+	
+	public static void compareStrings(){
+		String name = "alan";
+		System.out.println(name.compareTo("sean"));//-18 ascii
+		System.out.println("jack".compareTo("paul"));//-6 	106-112
+		System.out.println("tom".compareTo("tim"));//6
+	}
+	
+	public static void firstExampleUsingStrings(){
+		String s = new String("The numbers are: ");
+		
+		for(int i=0; i<=5;i++){
+			Integer.toString(i);
+			System.out.println(s+(i));
+		}
+	}
+
+	public static void firstExampleUsingSB(){
+		StringBuffer s = new StringBuffer("The numbers are: ");
+		
+		for(int i=0; i<=5;i++){
+			Integer.toString(i);
+			System.out.println(s.append(i));
+		}
+	}
+	
+	public static void interning(){
+		String a="abc", b="abc";
+		if(a==b){
+			System.out.println("a == b true");
+		}else{
+			System.out.println("false");
+		}
+		
+		String c= new String("abc");
+		String d=new String("abc");
+		if(c==d){
+			System.out.println("c == d true");
+		}else{
+			System.out.println("c == d false");
+		}
+		
+		String e= new String("abc");
+		String f =new String("abc");		
+		if(e.equals(f)){
+			System.out.println("e equals f true");
+		}else{
+			System.out.println("e equals f false");
+		}
+	}
+	
+	public static void stringBuffers(){
+		StringBuffer sb = new StringBuffer();
+		sb.append(" If you can keep your head when all about you   \n");
+		sb.append(" Are losing theirs and blaming it on you,   \n");
+		sb.append(" If you can trust yourself when all men doubt you, \n");
+		sb.append(" But make allowance for their doubting too;   \n");
+		sb.append(" If you can wait and not be tired by waiting, \n");
+		sb.append(" Or being lied about, don’t deal in lies, \n");
+		sb.append(" Or being hated, don’t give way to hating, \n");
+		sb.append(" And yet don’t look too good, nor talk too wise: \n");
+		//addin numbers to the start of each sentence
+		sb.insert(0, "1.");
+		sb.insert(sb.indexOf(" Are losing theirs") , "2.");
+		sb.insert(sb.indexOf(" If you can trust") , "3.");
+		sb.insert(sb.indexOf(" But make allowance") , "4.");
+		sb.insert(sb.indexOf(" 5. ") , 4);
+		System.out.println(sb);
+	}
+
+}
+
+	
+	
+
+

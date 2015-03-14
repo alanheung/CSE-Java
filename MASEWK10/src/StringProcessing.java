@@ -5,7 +5,8 @@ public class StringProcessing {
 //		compareStrings();
 //		firstExampleUsingStrings();
 //		firstExampleUsingSB();
-		interning();
+//		interning();
+		stringBuffers();
 	}
 	
 	public static void compareStrings(){
@@ -58,16 +59,49 @@ public class StringProcessing {
 		}
 	}
 	
-	public static void stringBuffers(){
+	public static void stringBuffers(){//rudyard kipling If
 		StringBuffer sb = new StringBuffer();
-		sb.append("If you can keep your head when all about you   ");
-		sb.append("    Are losing theirs and blaming it on you,   ");
-		sb.append("If you can trust yourself when all men doubt you, ");
-		sb.append("    But make allowance for their doubting too;   ");
-		sb.append("If you can wait and not be tired by waiting, ");
-		sb.append("    Or being lied about, don’t deal in lies, ");
-		sb.append("Or being hated, don’t give way to hating, ");
-		sb.append("    And yet don’t look too good, nor talk too wise: ");
+		sb.append(" If you can keep your head when all about you   \n");
+		sb.append(" Are losing theirs and blaming it on you,   \n");
+		sb.append(" If you can trust yourself when all men doubt you, \n");
+		sb.append(" But make allowance for their doubting too;   \n");
+		sb.append(" If you can wait and not be tired by waiting, \n");
+		sb.append(" Or being lied about, don't deal in lies, \n");
+		sb.append(" Or being hated, don't give way to hating, \n");
+		sb.append(" And yet don't look too good, nor talk too wise: \n");
+		//adding numbers to the start of each sentence
+		sb.insert(0, "1.");
+		sb.insert(sb.indexOf(" Are losing theirs") , "2.");
+		sb.insert(sb.indexOf(" If you can trust") , "3.");
+		sb.insert(sb.indexOf(" But make allowance") , "4.");
+		//look for string and start search from index number, insert line number
+		sb.insert(sb.indexOf(" If you can wait", 4), "5.");
+		sb.insert(sb.indexOf(" Or being lied about,", 5), "6.");
+		sb.insert(sb.indexOf(" Or being hated,", 6), "7.");
+		sb.insert(sb.indexOf(" And yet don't look too good,", 7), "8.");
+		
+//		sb.setCharAt(sb.indexOf(";", sb.indexOf("8.")),'.');
+		
+		int indexOfHated = sb.indexOf("hated");
+		sb.delete(indexOfHated, indexOfHated+"hated".length());
+		sb.insert(indexOfHated, "disliked");
+		
+		int indexOfHating = sb.indexOf("hating");
+		sb.delete(indexOfHated, indexOfHated+"hating".length());
+		sb.insert(indexOfHated, "disliking");
+		
+		int indexOfTrust = sb.indexOf("trust");
+		sb.replace(indexOfTrust, indexOfTrust+"trust".length(),"TRUST");
+		
+		while(sb.indexOf("don't") != -1){
+			sb.replace(sb.indexOf("don't"), sb.indexOf("don't")+"don't".length(),"do not");
+		}
+
+//print out the lines of the poem
+		System.out.println(sb);
+//		System.out.println(sb.substring(10));
+//		System.out.println(sb.substring(sb.indexOf("6.")));
+
 	}
 
 }

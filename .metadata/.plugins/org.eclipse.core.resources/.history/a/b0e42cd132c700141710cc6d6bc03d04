@@ -1,0 +1,13 @@
+package ait.ie.maths;
+
+public class Probability {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,37 @@
+package com.mase.innerclasses;
+
+import com.mase.innerclasses.Parcel2.Contents;
+
+public class Parcel6{
+
+	public Contents getContents(){
+
+//	class Parcel6$1 implements Contents{
+//		private int i 
+//	
+//	}
+//		return new Parcel6$1();
+	
+	
+	return new Contents(){
+			private int i;
+			
+			@Override
+			public int value(){
+			return i;
+			}
+		};
+	}
+		
+//	public Contents getContents(){
+//		return new Contents();
+//	}
+	
+	public static void main(String[] args) {
+		Parcel6 p = new Parcel6();
+		Contents c = p.getContents();
+		System.out.println(c.value());
+		
+	}
+
+}

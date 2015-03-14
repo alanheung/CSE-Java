@@ -1,0 +1,6 @@
+package com.mase.innerclasses3;
+
+public class Parcel3 {
+	private int i;
+
+}

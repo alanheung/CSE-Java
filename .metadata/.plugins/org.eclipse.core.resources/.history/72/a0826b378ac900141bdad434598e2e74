@@ -1,0 +1,10 @@
+package com.mase.innerclasses3;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Parcel3 p3 = new Parcel3();
+		p3.getPrivateDataFromOuterClass();
+	}
+
+}

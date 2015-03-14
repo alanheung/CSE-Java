@@ -1,0 +1,21 @@
+package com.cyclo;
+
+public class cyclo {
+
+	public static void main(String[] args) {
+
+	}
+	public static void simpleIf(int inputValue){
+		if(inputValue <=0){
+			System.out.println("Error");
+		}
+	}
+	public static void simpleIfElse(int inputValue){
+		if(inputValue <=0){
+			System.out.println("Error");
+		}else{
+			System.out.println("Valid Value");
+		}
+	}
+
+}

@@ -1,0 +1,25 @@
+package com.mase.innerclasses;
+
+import com.mase.innerclasses.Parcel2.Contents;
+
+public class Parcel6 {
+
+	class Contents{
+		
+		private int i=11;
+
+		public int value() {
+			return i;
+		}
+	}
+	
+	
+	public static Contents getContents(){
+		return new Contents();
+	}
+	
+	public static void main(String[] args) {
+
+	}
+
+}

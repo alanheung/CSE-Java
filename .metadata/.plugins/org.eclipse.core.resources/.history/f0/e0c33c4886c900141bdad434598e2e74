@@ -1,0 +1,57 @@
+package com.mase.innerclasses3;
+
+public class Parcel3 {
+	
+	//cont
+	class Contents {
+		
+		private int i=11;
+
+		public int value() {
+			return i;
+		}
+	}
+	
+	private int i;
+	
+	public Destination to(String s){
+		return new Destination(s);
+	}
+	public Contents cont(){
+		return new Contents();
+	}
+}
+
+class PContents implements Contents{
+
+	@Override
+	public int value() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}
+
+class PDestination implements Destination{
+
+	private String label;
+	
+	PDestination(String whereTo){
+		label=whereTo;
+	}
+	@Override
+	public String readLabel() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}
+
+class Inner{
+	private int getPrivateDataFromOuterClass(){
+		return 0;
+	}
+	public void testInheritedMethods(){
+		
+	}
+}

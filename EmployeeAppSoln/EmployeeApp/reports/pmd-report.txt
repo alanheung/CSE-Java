@@ -1,0 +1,118 @@
+src/com/ait/boundaries/EmployeeDAO.java:10:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/com/ait/boundaries/EmployeeDB.java:10:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/ait/boundaries/EmployeeDB.java:10:	Private field 'employees' could be made final; it is only initialized in the declaration or constructor.
+src/com/ait/boundaries/EmployeeDB.java:11:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/com/ait/boundaries/EmployeeDB.java:11:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/ait/boundaries/EmployeeDB.java:11:	Private field 'employeeList' could be made final; it is only initialized in the declaration or constructor.
+src/com/ait/boundaries/EmployeeDB.java:19:	Parameter 'employee' is not assigned and could be declared final
+src/com/ait/boundaries/EmployeeDB.java:19:	Parameter 'employeeId' is not assigned and could be declared final
+src/com/ait/boundaries/EmployeeDB.java:25:	Parameter 'employeeId' is not assigned and could be declared final
+src/com/ait/boundaries/EmployeeDB.java:30:	Found 'UR'-anomaly for variable 'employee' (lines '30'-'33').
+src/com/ait/boundaries/EmployeeDB.java:32:	Local variable 'employee' could be declared final
+src/com/ait/boundaries/FactoryDAO.java:3:	All methods are static.  Consider using Singleton instead.  Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/com/ait/entities/Employee.java:5:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/ait/entities/Employee.java:5:	Private field 'employeeId' could be made final; it is only initialized in the declaration or constructor.
+src/com/ait/entities/Employee.java:6:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/ait/entities/Employee.java:6:	Private field 'name' could be made final; it is only initialized in the declaration or constructor.
+src/com/ait/entities/Employee.java:7:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/ait/entities/Employee.java:7:	Private field 'address' could be made final; it is only initialized in the declaration or constructor.
+src/com/ait/entities/Employee.java:9:	Parameter 'address' is not assigned and could be declared final
+src/com/ait/entities/Employee.java:9:	Parameter 'employeeId' is not assigned and could be declared final
+src/com/ait/entities/Employee.java:9:	Parameter 'name' is not assigned and could be declared final
+src/com/ait/entities/EmployeeManager.java:9:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/ait/entities/EmployeeManager.java:9:	Use explicit scoping instead of the default package private level
+src/com/ait/entities/EmployeeManager.java:10:	Parameter 'employeeAddress' is not assigned and could be declared final
+src/com/ait/entities/EmployeeManager.java:10:	Parameter 'employeeId' is not assigned and could be declared final
+src/com/ait/entities/EmployeeManager.java:10:	Parameter 'employeeName' is not assigned and could be declared final
+src/com/ait/entities/EmployeeManager.java:11:	Local variable 'employee' could be declared final
+src/com/ait/entities/EmployeeManager.java:15:	Parameter 'employeeId' is not assigned and could be declared final
+src/com/ait/entities/EmployeeManager.java:19:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/com/ait/ui/EmployeeUI.java:7:	All methods are static.  Consider using Singleton instead.  Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/com/ait/ui/EmployeeUI.java:9:	Avoid using redundant field initializer for 'sc'
+src/com/ait/ui/EmployeeUI.java:9:	Avoid variables with short names like sc
+src/com/ait/ui/EmployeeUI.java:12:	Parameter 'args' is not assigned and could be declared final
+src/com/ait/ui/EmployeeUI.java:14:	System.out.print is used
+src/com/ait/ui/EmployeeUI.java:24:	Potential violation of Law of Demeter (object not created locally)
+src/com/ait/ui/EmployeeUI.java:29:	System.out.print is used
+src/com/ait/ui/EmployeeUI.java:31:	Potential violation of Law of Demeter (object not created locally)
+src/com/ait/ui/EmployeeUI.java:32:	Avoid using if...else statements without curly braces
+src/com/ait/ui/EmployeeUI.java:33:	Potential violation of Law of Demeter (object not created locally)
+src/com/ait/ui/EmployeeUI.java:34:	Avoid using if...else statements without curly braces
+src/com/ait/ui/EmployeeUI.java:35:	Potential violation of Law of Demeter (object not created locally)
+src/com/ait/ui/EmployeeUI.java:36:	Avoid using if...else statements without curly braces
+src/com/ait/ui/EmployeeUI.java:36:	System.out.print is used
+src/com/ait/ui/EmployeeUI.java:38:	Avoid using if...else statements without curly braces
+src/com/ait/ui/EmployeeUI.java:38:	System.out.print is used
+src/com/ait/ui/EmployeeUI.java:45:	System.out.print is used
+src/com/ait/ui/EmployeeUI.java:46:	System.out.print is used
+src/com/ait/ui/EmployeeUI.java:47:	System.out.print is used
+src/com/ait/ui/EmployeeUI.java:48:	System.out.print is used
+src/com/ait/ui/EmployeeUI.java:49:	System.out.print is used
+src/com/ait/ui/EmployeeUI.java:52:	Found 'UR'-anomaly for variable 'employee' (lines '52'-'58').
+src/com/ait/ui/EmployeeUI.java:54:	System.out.print is used
+src/com/ait/ui/EmployeeUI.java:55:	Local variable 'employeeManager' could be declared final
+src/com/ait/ui/EmployeeUI.java:56:	Local variable 'employees' could be declared final
+src/com/ait/ui/EmployeeUI.java:57:	Local variable 'employee' could be declared final
+src/com/ait/ui/EmployeeUI.java:58:	System.out.print is used
+src/com/ait/ui/EmployeeUI.java:64:	Local variable 'employeeId' could be declared final
+src/com/ait/ui/EmployeeUI.java:66:	Local variable 'employeeName' could be declared final
+src/com/ait/ui/EmployeeUI.java:68:	Local variable 'employeeAddress' could be declared final
+src/com/ait/ui/EmployeeUI.java:71:	Local variable 'employeeManager' could be declared final
+src/com/ait/ui/EmployeeUI.java:75:	System.out.print is used
+src/com/ait/ui/EmployeeUI.java:76:	System.out.print is used
+src/com/ait/ui/Validator.java:6:	All methods are static.  Consider using Singleton instead.  Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/com/ait/ui/Validator.java:7:	Avoid variables with short names like sc
+src/com/ait/ui/Validator.java:7:	Parameter 'prompt' is not assigned and could be declared final
+src/com/ait/ui/Validator.java:7:	Parameter 'sc' is not assigned and could be declared final
+src/com/ait/ui/Validator.java:9:	System.out.print is used
+src/com/ait/ui/Validator.java:10:	Avoid variables with short names like s
+src/com/ait/ui/Validator.java:10:	Local variable 's' could be declared final
+src/com/ait/ui/Validator.java:15:	Avoid variables with short names like sc
+src/com/ait/ui/Validator.java:15:	Parameter 'prompt' is not assigned and could be declared final
+src/com/ait/ui/Validator.java:15:	Parameter 'sc' is not assigned and could be declared final
+src/com/ait/ui/Validator.java:17:	System.out.print is used
+src/com/ait/ui/Validator.java:18:	Avoid variables with short names like s
+src/com/ait/ui/Validator.java:18:	Local variable 's' could be declared final
+src/com/ait/ui/Validator.java:19:	Consider simply returning the value vs storing it in local variable 's'
+src/com/ait/ui/Validator.java:22:	Avoid variables with short names like sc
+src/com/ait/ui/Validator.java:22:	Parameter 'prompt' is not assigned and could be declared final
+src/com/ait/ui/Validator.java:22:	Parameter 'sc' is not assigned and could be declared final
+src/com/ait/ui/Validator.java:25:	Avoid variables with short names like i
+src/com/ait/ui/Validator.java:25:	Found 'DD'-anomaly for variable 'i' (lines '25'-'31').
+src/com/ait/ui/Validator.java:26:	Avoid unnecessary comparisons in boolean expressions
+src/com/ait/ui/Validator.java:28:	System.out.print is used
+src/com/ait/ui/Validator.java:31:	Found 'DD'-anomaly for variable 'i' (lines '31'-'31').
+src/com/ait/ui/Validator.java:36:	System.out.print is used
+tests/com/ait/addEmployees/AddEmployeesTest.java:1:	Package name contains upper case characters
+tests/com/ait/addEmployees/AddEmployeesTest.java:5:	Avoid unused imports such as 'java.io.ByteArrayOutputStream'
+tests/com/ait/addEmployees/AddEmployeesTest.java:6:	Avoid unused imports such as 'java.io.OutputStream'
+tests/com/ait/addEmployees/AddEmployeesTest.java:7:	Avoid unused imports such as 'java.io.PrintStream'
+tests/com/ait/addEmployees/AddEmployeesTest.java:10:	Avoid unused imports such as 'com.ait.ui.EmployeeUI'
+tests/com/ait/addEmployees/AddEmployeesTest.java:15:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+tests/com/ait/addEmployees/AddEmployeesTest.java:15:	This final field could be made static
+tests/com/ait/addEmployees/AddEmployeesTest.java:16:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+tests/com/ait/addEmployees/AddEmployeesTest.java:16:	This final field could be made static
+tests/com/ait/addEmployees/AddEmployeesTest.java:17:	Avoid excessively long variable names like firstEmployeeAddress
+tests/com/ait/addEmployees/AddEmployeesTest.java:17:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+tests/com/ait/addEmployees/AddEmployeesTest.java:17:	This final field could be made static
+tests/com/ait/addEmployees/AddEmployeesTest.java:18:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+tests/com/ait/addEmployees/AddEmployeesTest.java:18:	This final field could be made static
+tests/com/ait/addEmployees/AddEmployeesTest.java:19:	Avoid excessively long variable names like secondEmployeeName
+tests/com/ait/addEmployees/AddEmployeesTest.java:19:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+tests/com/ait/addEmployees/AddEmployeesTest.java:19:	This final field could be made static
+tests/com/ait/addEmployees/AddEmployeesTest.java:20:	Avoid excessively long variable names like secondEmployeeAddress
+tests/com/ait/addEmployees/AddEmployeesTest.java:20:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+tests/com/ait/addEmployees/AddEmployeesTest.java:20:	This final field could be made static
+tests/com/ait/addEmployees/AddEmployeesTest.java:23:	JUnit tests should not contain more than 1 assert(s).
+tests/com/ait/addEmployees/AddEmployeesTest.java:24:	Local variable 'employeeManager' could be declared final
+tests/com/ait/addEmployees/AddEmployeesTest.java:27:	Local variable 'employee' could be declared final
+tests/com/ait/addEmployees/AddEmployeesTest.java:28:	JUnit assertions should include a message
+tests/com/ait/addEmployees/AddEmployeesTest.java:28:	Potential violation of Law of Demeter (object not created locally)
+tests/com/ait/addEmployees/AddEmployeesTest.java:29:	JUnit assertions should include a message
+tests/com/ait/addEmployees/AddEmployeesTest.java:29:	Potential violation of Law of Demeter (object not created locally)
+tests/com/ait/addEmployees/AddEmployeesTest.java:30:	JUnit assertions should include a message
+tests/com/ait/addEmployees/AddEmployeesTest.java:30:	Potential violation of Law of Demeter (object not created locally)
+tests/com/ait/addEmployees/AddEmployeesTest.java:35:	Local variable 'employeeManager' could be declared final
+tests/com/ait/addEmployees/AddEmployeesTest.java:40:	Local variable 'employees' could be declared final
+tests/com/ait/addEmployees/AddEmployeesTest.java:41:	JUnit assertions should include a message
+tests/com/ait/addEmployees/AddEmployeesTest.java:41:	Potential violation of Law of Demeter (object not created locally)

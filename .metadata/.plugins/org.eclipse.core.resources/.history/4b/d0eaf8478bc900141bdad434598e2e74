@@ -1,0 +1,7 @@
+package com.mase.innerclasses3;
+
+public class B {
+	public void methodFromClassB(){
+		
+	}
+}

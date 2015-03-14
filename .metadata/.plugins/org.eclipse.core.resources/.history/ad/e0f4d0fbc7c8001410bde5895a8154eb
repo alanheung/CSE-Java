@@ -1,0 +1,11 @@
+package com.ait.boundaries;
+
+import java.util.ArrayList;
+
+import com.ait.entities.*;
+
+public interface EmployeeDAO {
+	Employee addEmployee(int employeeId, Employee employee);
+	Employee getEmployee(int employeeId);
+	ArrayList<Employee> getEmployees();
+}

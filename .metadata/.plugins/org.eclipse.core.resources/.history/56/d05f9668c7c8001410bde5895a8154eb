@@ -1,0 +1,24 @@
+package com.ait.entities;
+
+import java.util.ArrayList;
+
+import com.ait.boundaries.EmployeeDAO;
+import com.ait.boundaries.FactoryDAO;
+
+public class EmployeeManager {
+	EmployeeDAO database = FactoryDAO.getEmployeeDAO();
+	public void addEmployee(int employeeId, String employeeName, String employeeAddress){
+		Employee employee=new Employee(employeeId, employeeName, employeeAddress);
+		database.addEmployee(employeeId, employee);	
+	}
+	
+	public Employee getEmployee(int employeeId){
+		return database.getEmployee(employeeId);
+	}
+	
+	public ArrayList<Employee> getEmployees(){
+		return database.getEmployees();
+			
+	}
+
+}

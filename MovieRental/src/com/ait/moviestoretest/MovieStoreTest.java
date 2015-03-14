@@ -18,7 +18,7 @@ public class MovieStoreTest {
 
 	private MovieStoreDAO movieStoreDAO=mock(MovieStoreDAO.class);
 	private MovieStoreImpl movieStoreImpl;
-	private Dvd dvd; 
+	private Dvd dvd;
 	private Account account;
 	@Before
 	public void setUp(){

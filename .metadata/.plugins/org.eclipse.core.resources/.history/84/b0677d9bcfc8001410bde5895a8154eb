@@ -1,0 +1,23 @@
+package com.movies;
+
+public class Movie {
+//	private String name;
+//
+//	public Movie(String name) {
+//		this.name = name;
+//	}
+//
+//	public String getName() {
+//		return name;
+//	}
+	
+	public Movie(String name) {
+
+	}
+
+	public String getName() {
+		return "Finding Nemo";
+	}
+	
+	
+}

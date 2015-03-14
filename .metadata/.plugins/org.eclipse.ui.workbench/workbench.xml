@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="90" version="2.0">
+<workbench progressCount="46" version="2.0">
 <workbenchAdvisor/>
-<window height="860" maximized="true" width="800" x="800" y="0">
+<window height="860" width="800" x="0" y="0">
 <fastViewData fastViewLocation="1024">
 <orientation position="512" view="org.eclipse.jdt.junit.ResultView"/>
 <orientation position="512" view="org.springframework.ide.eclipse.aop.ui.navigator.aopReferenceModelNavigator"/>
@@ -13,12 +13,12 @@
 </perspectiveBar>
 <coolbarLayout>
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="160" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="278" y="22"/>
 <coolItem id="com.google.gdt.eclipse.suite.GDTPulldownToolbar" itemType="typeToolBarContribution" x="53" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="com.springsource.sts.ide.ui.actionSet.workbench" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="213" y="22"/>
-<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="122" y="22"/>
+<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="261" y="22"/>
 <coolItem id="org.eclipse.jpt.jpa.ui.JptCreationActionSet" itemType="typeToolBarContribution" x="53" y="22"/>
 <coolItem id="org.eclipse.jst.j2ee.J2eeMainActionSet" itemType="typeToolBarContribution" x="91" y="22"/>
 <coolItem id="org.eclipse.team.ui.actionSet" itemType="typeToolBarContribution" x="53" y="22"/>
@@ -36,7 +36,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.wb.core.guiEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wb.core.guiEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jpt.jpa.ui.internal.editors.PersistenceEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.jboss.tools.jst.jsp.jspeditor.JSPTextEditor" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.jboss.tools.common.propertieseditor.PropertiesCompoundEditor" itemType="typeToolBarContribution" x="38" y="22"/>
@@ -61,8 +61,8 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
 <part id="2"/>
+<part id="1"/>
 <part id="3"/>
 <part id="4"/>
 <part id="5"/>
@@ -71,33 +71,33 @@
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="JDBCMainWindow.java" partName="JDBCMainWindow.java" path="C:/Users/A00226316/Java/JDBC_Project/src/JDBCMainWindow.java" title="JDBCMainWindow.java" tooltip="JDBC_Project/src/JDBCMainWindow.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JDBC_Project/src/JDBCMainWindow.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="386" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AnonymousExample.java" partName="AnonymousExample.java" path="C:/Users/A00226316/Java/MASEWK11/src/com/mase/innerclasses2/AnonymousExample.java" title="AnonymousExample.java" tooltip="MASEWK11/src/com/mase/innerclasses2/AnonymousExample.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MASEWK11/src/com/mase/innerclasses2/AnonymousExample.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="853" selectionTopPixel="463"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="JDBCMainWindowContent.java" partName="JDBCMainWindowContent.java" path="C:/Users/A00226316/Java/JDBC_Project/src/JDBCMainWindowContent.java" title="JDBCMainWindowContent.java" tooltip="JDBC_Project/src/JDBCMainWindowContent.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JDBC_Project/src/JDBCMainWindowContent.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4844" selectionTopPixel="5629"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Parcel3.java" partName="Parcel3.java" path="C:/Users/A00226316/Java/MASEWK11/src/com/mase/innerclasses3/Parcel3.java" title="Parcel3.java" tooltip="MASEWK11/src/com/mase/innerclasses3/Parcel3.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MASEWK11/src/com/mase/innerclasses3/Parcel3.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="926" selectionTopPixel="454"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainClass.java" partName="MainClass.java" path="C:/Users/A00226316/Java/JDBC_Project/src/MainClass.java" title="MainClass.java" tooltip="JDBC_Project/src/MainClass.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JDBC_Project/src/MainClass.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="105" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Parcel2.java" partName="Parcel2.java" path="C:/Users/A00226316/Java/MASEWK11/src/com/mase/innerclasses/Parcel2.java" title="Parcel2.java" tooltip="MASEWK11/src/com/mase/innerclasses/Parcel2.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MASEWK11/src/com/mase/innerclasses/Parcel2.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="511" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="QueryTableModel.java" partName="QueryTableModel.java" path="C:/Users/A00226316/Java/JDBC_Project/src/QueryTableModel.java" title="QueryTableModel.java" tooltip="JDBC_Project/src/QueryTableModel.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JDBC_Project/src/QueryTableModel.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="469"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Contents.java" partName="Contents.java" path="C:/Users/A00226316/Java/MASEWK11/src/com/mase/innerclasses3/Contents.java" title="Contents.java" tooltip="MASEWK11/src/com/mase/innerclasses3/Contents.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MASEWK11/src/com/mase/innerclasses3/Contents.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="65" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="QueryTableModel2.java" partName="QueryTableModel2.java" path="C:/Users/A00226316/Java/JDBC_Project/src/QueryTableModel2.java" title="QueryTableModel2.java" tooltip="JDBC_Project/src/QueryTableModel2.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JDBC_Project/src/QueryTableModel2.java"/>
-<editorState selectionHorizontalPixel="246" selectionLength="212" selectionOffset="1339" selectionTopPixel="439"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Destination.java" partName="Destination.java" path="C:/Users/A00226316/Java/MASEWK11/src/com/mase/innerclasses3/Destination.java" title="Destination.java" tooltip="MASEWK11/src/com/mase/innerclasses3/Destination.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MASEWK11/src/com/mase/innerclasses3/Destination.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="11" selectionOffset="52" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.wb.core.guiEditor" name="JDBCMainWindowContent.java" partName="JDBCMainWindowContent.java" path="C:/Users/A00226316/Java/JDBC_Project/src/JDBCMainWindowContent.java" title="JDBCMainWindowContent.java" tooltip="JDBC_Project/src/JDBCMainWindowContent.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JDBC_Project/src/JDBCMainWindowContent.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5711" selectionTopPixel="1530"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="B.java" partName="B.java" path="C:/Users/A00226316/Java/MASEWK11/src/com/mase/innerclasses3/B.java" title="B.java" tooltip="MASEWK11/src/com/mase/innerclasses3/B.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MASEWK11/src/com/mase/innerclasses3/B.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="137" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="JDBCCellExample.java" partName="JDBCCellExample.java" path="C:/Users/A00226316/Java/JDBC/src/JDBCCellExample.java" title="JDBCCellExample.java" tooltip="JDBC/src/JDBCCellExample.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JDBC/src/JDBCCellExample.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="2" selectionOffset="1042" selectionTopPixel="1444"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="A.java" partName="A.java" path="C:/Users/A00226316/Java/MASEWK11/src/com/mase/innerclasses3/A.java" title="A.java" tooltip="MASEWK11/src/com/mase/innerclasses3/A.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MASEWK11/src/com/mase/innerclasses3/A.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="125" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -130,8 +130,8 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors"/>
 <category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -253,7 +253,7 @@
 </view>
 <view id="com.google.gwt.eclipse.DevModeView" partName="Development Mode"/>
 </views>
-<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.springsource.sts.internal.ide.ui.perspective.StsPerspective" id="com.springsource.sts.ide.perspective" label="Spring"/>
 <alwaysOnActionSet id="com.springsource.sts.ide.help.actionSet"/>
@@ -534,8 +534,8 @@
 </fastViewBar>
 <fastViewBar fastViewLocation="1024" id="org.eclipse.ui.internal.ViewStack@19e5cb4" orientation="256" selectedTabId="com.mountainminds.eclemma.ui.CoverageView" style="0">
 <fastViews>
-<view id="org.eclipse.jdt.junit.ResultView" ratio="0.4"/>
-<view id="com.mountainminds.eclemma.ui.CoverageView" ratio="0.29933774"/>
+<view id="org.eclipse.jdt.junit.ResultView" ratio="0.3988006"/>
+<view id="com.mountainminds.eclemma.ui.CoverageView" ratio="0.29685158"/>
 <view id="org.eclipse.jdt.callhierarchy.view" ratio="0.3"/>
 </fastViews>
 </fastViewBar>
@@ -582,7 +582,7 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.16221498" ratioLeft="249" ratioRight="1286" relationship="2" relative="left"/>
+<info part="org.eclipse.ui.editorss" ratio="0.29207233" ratioLeft="210" ratioRight="509" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.67287236" ratioLeft="506" ratioRight="246" relationship="4" relative="org.eclipse.ui.editorss">
 <folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
@@ -659,11 +659,11 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@32b886" ratio="0.79920214" ratioLeft="601" ratioRight="151" relationship="4" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1fe6fa4" ratio="0.7496689" ratioLeft="566" ratioRight="189" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1fe6fa4" ratio="0.79518074" ratioLeft="528" ratioRight="136" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -1527,8 +1527,9 @@
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
-<view id="net.sourceforge.pmd.eclipse.ui.views.violationOutline"/>
 <view id="net.sourceforge.pmd.eclipse.ui.views.violationOverview"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="net.sourceforge.pmd.eclipse.ui.views.violationOutline"/>
 <fastViewBars/>
 <layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.ui.internal.ViewStack@1988670">&#x0A;<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
@@ -1541,13 +1542,12 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.20390183" ratioLeft="324" ratioRight="1265" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1988670"/>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@75c181" ratio="0.6490066" ratioLeft="490" ratioRight="265" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="net.sourceforge.pmd.eclipse.ui.views.violationOverview" appearance="2" expanded="2">&#x0A;<page content="net.sourceforge.pmd.eclipse.ui.views.violationOverview" label="Violations Overview"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@111a59d" ratio="0.69414896" ratioLeft="522" ratioRight="230" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="net.sourceforge.pmd.eclipse.ui.views.violationOutline" appearance="2" expanded="2">&#x0A;<page content="net.sourceforge.pmd.eclipse.ui.views.violationOverview" label="Violations Overview"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="net.sourceforge.pmd.eclipse.ui.views.violationOutline" label="Violations Outline"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
-</presentation>
-</folder>
-</info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@a22a09" ratio="0.6" ratioLeft="453" ratioRight="302" relationship="4" relative="org.eclipse.ui.internal.ViewStack@1988670">&#x0A;<folder activePageID="net.sourceforge.pmd.eclipse.ui.views.violationOutline" appearance="2" expanded="2">&#x0A;<page content="net.sourceforge.pmd.eclipse.ui.views.violationOutline" label="Violations Outline"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+<part id="2"/>
 </presentation>
 </folder>
 </info>
@@ -1558,160 +1558,162 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JDBC_Project/src/MainClass.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JDBC_Project/src/JDBCMainWindowContent.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wb.core.guiEditor" path="/JDBC_Project/src/JDBCMainWindowContent.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JDBC/src/JDBCCellExample.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MASEWK11/src/com/mase/innerclasses3/Parcel3.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MASEWK11/src/com/mase/innerclasses3/Test.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MASEWK11/src/com/mase/innerclasses3/Contents.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MASEWK11/src/com/mase/innerclasses3/Destination.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MASEWK11/src/com/mase/innerclasses3/B.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MASEWK11/src/com/mase/innerclasses3/A.java"/>
 </editors>
-<item historyLabel="JDBCMainWindowContent.java" index="2">
-<position/>
+<item historyLabel="Contents.java" index="2">
+<position info="not_deleted" x="65" y="0"/>
 </item>
-<item historyLabel="JDBCMainWindowContent.java" index="2">
-<position/>
+<item historyLabel="Destination.java" index="3">
+<position info="not_deleted" x="52" y="11"/>
 </item>
-<item historyLabel="JDBCMainWindowContent.java" index="2">
-<position info="not_deleted" x="22143" y="0"/>
+<item historyLabel="Contents.java" index="2">
+<position info="not_deleted" x="65" y="0"/>
 </item>
-<item historyLabel="MainClass.java" index="0">
-<position info="not_deleted" x="105" y="0"/>
+<item historyLabel="Test.java" index="1">
+<position info="not_deleted" x="168" y="0"/>
 </item>
-<item historyLabel="JDBCMainWindowContent.java" index="2">
-<position info="not_deleted" x="23095" y="0"/>
+<item historyLabel="Parcel3.java" index="0">
+<position info="not_deleted" x="125" y="0"/>
 </item>
-<item historyLabel="MainClass.java" index="0">
-<position info="not_deleted" x="105" y="0"/>
+<item historyLabel="Test.java" index="1">
+<position info="not_deleted" x="168" y="0"/>
 </item>
-<item historyLabel="JDBCMainWindowContent.java" index="1">
-<position info="not_deleted" x="23095" y="0"/>
+<item historyLabel="Parcel3.java" index="0">
+<position info="not_deleted" x="717" y="0"/>
 </item>
-<item historyLabel="MainClass.java" index="0">
-<position info="not_deleted" x="105" y="0"/>
-</item>
-<item historyLabel="JDBCMainWindowContent.java" index="1">
-<position info="not_deleted" x="23095" y="0"/>
-</item>
-<item historyLabel="JDBCCellExample.java" index="3">
+<item historyLabel="B.java" index="4">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="JDBCCellExample.java" index="3">
-<position info="not_deleted" x="4084" y="0"/>
+<item historyLabel="B.java" index="4">
+<position info="not_deleted" x="53" y="79"/>
 </item>
-<item historyLabel="JDBCCellExample.java" index="3">
-<position info="not_deleted" x="4094" y="0"/>
+<item historyLabel="A.java" index="5">
+<position info="not_deleted" x="137" y="0"/>
 </item>
-<item historyLabel="JDBCCellExample.java" index="3">
-<position info="not_deleted" x="871" y="8"/>
+<item historyLabel="Parcel3.java" index="0">
+<position info="not_deleted" x="604" y="0"/>
 </item>
-<item historyLabel="JDBCCellExample.java" index="3">
-<position info="not_deleted" x="4191" y="0"/>
+<item historyLabel="Test.java" index="1">
+<position info="not_deleted" x="168" y="0"/>
 </item>
-<item historyLabel="JDBCCellExample.java" index="3">
-<position info="not_deleted" x="1042" y="2"/>
-</item>
-<item historyLabel="JDBCMainWindowContent.java" index="1">
-<position info="not_deleted" x="22962" y="0"/>
-</item>
-<item historyLabel="MainClass.java" index="0">
-<position info="not_deleted" x="105" y="0"/>
-</item>
-<item historyLabel="JDBCMainWindowContent.java" index="1">
-<position info="not_deleted" x="22962" y="0"/>
-</item>
-<item historyLabel="JDBCCellExample.java" index="3">
-<position info="not_deleted" x="1042" y="2"/>
-</item>
-<item historyLabel="JDBCMainWindowContent.java" index="1">
-<position info="not_deleted" x="22928" y="0"/>
-</item>
-<item historyLabel="MainClass.java" index="0">
-<position info="not_deleted" x="105" y="0"/>
-</item>
-<item historyLabel="JDBCMainWindowContent.java" index="1">
-<position info="not_deleted" x="23336" y="0"/>
-</item>
-<item historyLabel="MainClass.java" index="0">
-<position info="not_deleted" x="105" y="0"/>
-</item>
-<item historyLabel="JDBCMainWindowContent.java" index="1">
-<position info="not_deleted" x="10367" y="0"/>
-</item>
-<item historyLabel="MainClass.java" index="0">
-<position info="not_deleted" x="105" y="0"/>
-</item>
-<item historyLabel="JDBCMainWindowContent.java" index="1">
+<item historyLabel="Parcel3.java" index="0">
 <position/>
 </item>
-<item historyLabel="JDBCMainWindowContent.java" index="2">
-<position info="not_deleted" x="5545" y="0"/>
+<item historyLabel="Test.java" index="1">
+<position info="not_deleted" x="168" y="0"/>
 </item>
-<item historyLabel="JDBCMainWindowContent.java" index="2">
-<position info="not_deleted" x="4844" y="0"/>
+<item historyLabel="Contents.java" index="2">
+<position info="not_deleted" x="65" y="0"/>
 </item>
-<item historyLabel="MainClass.java" index="0">
-<position info="not_deleted" x="105" y="0"/>
+<item historyLabel="Destination.java" index="3">
+<position info="not_deleted" x="52" y="11"/>
 </item>
-<item historyLabel="JDBCMainWindowContent.java" index="1">
-<position info="not_deleted" x="4844" y="0"/>
+<item historyLabel="B.java" index="4">
+<position info="not_deleted" x="53" y="79"/>
 </item>
-<item historyLabel="JDBCCellExample.java" index="3">
-<position info="not_deleted" x="1042" y="2"/>
+<item historyLabel="Destination.java" index="3">
+<position info="not_deleted" x="52" y="11"/>
 </item>
-<item historyLabel="JDBCMainWindowContent.java" index="2">
-<position info="not_deleted" x="9237" y="0"/>
+<item historyLabel="Contents.java" index="2">
+<position info="not_deleted" x="65" y="0"/>
 </item>
-<item historyLabel="JDBCMainWindowContent.java" index="2">
-<position info="not_deleted" x="4844" y="0"/>
+<item historyLabel="Test.java" index="1">
+<position info="not_deleted" x="168" y="0"/>
 </item>
-<item historyLabel="MainClass.java" index="0">
-<position info="not_deleted" x="105" y="0"/>
+<item historyLabel="Parcel3.java" index="0">
+<position/>
 </item>
-<item historyLabel="JDBCMainWindowContent.java" index="2">
-<position info="not_deleted" x="5625" y="0"/>
+<item historyLabel="Test.java" index="1">
+<position info="not_deleted" x="179" y="0"/>
 </item>
-<item historyLabel="JDBCMainWindowContent.java" index="2">
-<position info="not_deleted" x="4872" y="0"/>
+<item historyLabel="Parcel3.java" index="0">
+<position info="not_deleted" x="220" y="0"/>
 </item>
-<item historyLabel="JDBCMainWindowContent.java" index="2">
-<position info="not_deleted" x="4938" y="0"/>
+<item historyLabel="A.java" index="5">
+<position info="not_deleted" x="128" y="0"/>
 </item>
-<item historyLabel="JDBCMainWindowContent.java" index="2">
-<position info="not_deleted" x="5067" y="0"/>
+<item historyLabel="Parcel3.java" index="0">
+<position info="not_deleted" x="604" y="0"/>
 </item>
-<item historyLabel="JDBCMainWindowContent.java" index="2">
-<position info="not_deleted" x="5131" y="0"/>
+<item historyLabel="Test.java" index="1">
+<position info="not_deleted" x="179" y="0"/>
 </item>
-<item historyLabel="JDBCMainWindowContent.java" index="2">
-<position info="not_deleted" x="5206" y="0"/>
+<item historyLabel="Test.java" index="1">
+<position info="not_deleted" x="128" y="0"/>
 </item>
-<item historyLabel="JDBCMainWindowContent.java" index="2">
-<position info="not_deleted" x="5284" y="0"/>
+<item historyLabel="Test.java" index="1">
+<position info="not_deleted" x="155" y="0"/>
 </item>
-<item historyLabel="JDBCMainWindowContent.java" index="2">
-<position info="not_deleted" x="5358" y="0"/>
+<item historyLabel="Parcel3.java" index="0">
+<position info="not_deleted" x="770" y="0"/>
 </item>
-<item historyLabel="JDBCMainWindowContent.java" index="2">
-<position info="not_deleted" x="5419" y="0"/>
+<item historyLabel="B.java" index="4">
+<position info="not_deleted" x="66" y="16"/>
 </item>
-<item historyLabel="JDBCMainWindowContent.java" index="2">
-<position info="not_deleted" x="5482" y="0"/>
+<item historyLabel="Parcel3.java" index="0">
+<position info="not_deleted" x="770" y="0"/>
 </item>
-<item historyLabel="JDBCMainWindowContent.java" index="2">
-<position info="not_deleted" x="5545" y="0"/>
+<item historyLabel="Parcel3.java" index="0">
+<position info="not_deleted" x="896" y="0"/>
 </item>
-<item historyLabel="JDBCMainWindowContent.java" index="2">
-<position info="not_deleted" x="5625" y="0"/>
+<item historyLabel="Parcel3.java" index="0">
+<position info="not_deleted" x="696" y="0"/>
 </item>
-<item historyLabel="JDBCMainWindowContent.java" index="2">
-<position info="not_deleted" x="8605" y="0"/>
+<item historyLabel="A.java" index="5">
+<position info="not_deleted" x="128" y="0"/>
 </item>
-<item historyLabel="JDBCMainWindowContent.java" index="2">
-<position info="not_deleted" x="5625" y="0"/>
+<item historyLabel="B.java" index="4">
+<position info="not_deleted" x="66" y="16"/>
 </item>
-<item historyLabel="JDBCMainWindowContent.java" index="2">
-<position info="not_deleted" x="4844" y="0"/>
+<item historyLabel="Destination.java" index="3">
+<position info="not_deleted" x="52" y="11"/>
 </item>
-<item active="true" historyLabel="MainClass.java" index="0">
-<position info="not_deleted" x="105" y="0"/>
+<item historyLabel="Contents.java" index="2">
+<position info="not_deleted" x="65" y="0"/>
+</item>
+<item historyLabel="Parcel3.java" index="0">
+<position info="not_deleted" x="696" y="0"/>
+</item>
+<item historyLabel="Test.java" index="1">
+<position info="not_deleted" x="42" y="135"/>
+</item>
+<item historyLabel="Parcel3.java" index="0">
+<position info="not_deleted" x="696" y="0"/>
+</item>
+<item historyLabel="Parcel3.java" index="0">
+<position info="not_deleted" x="1049" y="0"/>
+</item>
+<item historyLabel="Parcel3.java" index="0">
+<position/>
+</item>
+<item historyLabel="A.java" index="5">
+<position info="not_deleted" x="35" y="100"/>
+</item>
+<item historyLabel="Parcel3.java" index="0">
+<position/>
+</item>
+<item historyLabel="Parcel3.java" index="0">
+<position info="not_deleted" x="1172" y="0"/>
+</item>
+<item historyLabel="Parcel3.java" index="0">
+<position info="not_deleted" x="1226" y="0"/>
+</item>
+<item historyLabel="Parcel3.java" index="0">
+<position info="not_deleted" x="1329" y="0"/>
+</item>
+<item historyLabel="A.java" index="5">
+<position info="not_deleted" x="125" y="0"/>
+</item>
+<item historyLabel="B.java" index="4">
+<position info="not_deleted" x="137" y="0"/>
+</item>
+<item active="true" historyLabel="Parcel3.java" index="0">
+<position info="not_deleted" x="1329" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -1738,52 +1740,52 @@
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
 <trimItem IMemento.internal.id="bottom"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@19e5cb4"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@32b886"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1fe6fa4"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="Output.csv" tooltip="JDBC_Project/Output.csv">
-<persistable path="/JDBC_Project/Output.csv"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="A.java" tooltip="MASEWK11/src/com/mase/innerclasses3/A.java">
+<persistable path="/MASEWK11/src/com/mase/innerclasses3/A.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="CellOutput.csv" tooltip="JDBC_Project/CellOutput.csv">
-<persistable path="/JDBC_Project/CellOutput.csv"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="B.java" tooltip="MASEWK11/src/com/mase/innerclasses3/B.java">
+<persistable path="/MASEWK11/src/com/mase/innerclasses3/B.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="JDBCCellExample.java" tooltip="JDBC/src/JDBCCellExample.java">
-<persistable path="/JDBC/src/JDBCCellExample.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Destination.java" tooltip="MASEWK11/src/com/mase/innerclasses3/Destination.java">
+<persistable path="/MASEWK11/src/com/mase/innerclasses3/Destination.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DemoResources_de.java" tooltip="JfreeChart/src/org/jfree/chart/demo/resources/DemoResources_de.java">
-<persistable path="/JfreeChart/src/org/jfree/chart/demo/resources/DemoResources_de.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Contents.java" tooltip="MASEWK11/src/com/mase/innerclasses3/Contents.java">
+<persistable path="/MASEWK11/src/com/mase/innerclasses3/Contents.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Contents.java" tooltip="MASEWK11/src/com/mase/innerclasses2/Contents.java">
+<persistable path="/MASEWK11/src/com/mase/innerclasses2/Contents.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="MASEWK11/src/com/mase/innerclasses3/Test.java">
+<persistable path="/MASEWK11/src/com/mase/innerclasses3/Test.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Parcel2.java" tooltip="MASEWK11/src/com/mase/innerclasses/Parcel2.java">
+<persistable path="/MASEWK11/src/com/mase/innerclasses/Parcel2.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Parcel3.java" tooltip="MASEWK11/src/com/mase/innerclasses3/Parcel3.java">
+<persistable path="/MASEWK11/src/com/mase/innerclasses3/Parcel3.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SomeClass.java" tooltip="MASEWK11/src/com/mase/innerclasses2/SomeClass.java">
+<persistable path="/MASEWK11/src/com/mase/innerclasses2/SomeClass.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AnonymousExample.java" tooltip="MASEWK11/src/com/mase/innerclasses2/AnonymousExample.java">
+<persistable path="/MASEWK11/src/com/mase/innerclasses2/AnonymousExample.java"/>
 </file>
 <file factoryID="com.springsource.sts.ide.ui.dashboard.elementFactory" id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" name="Dashboard" tooltip="Dashboard">
 <persistable openDashboard="true"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="ChartFactory.class" tooltip="org.jfree.chart.ChartFactory">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=JDBC_Project/C:\/Users\/A00226316\/Java\/libraries\/JDBC\/jfreechart-1.0.14.jar&lt;org.jfree.chart(ChartFactory.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="cyclo.java" tooltip="CyclomaticNumbers/src/com/cyclo/cyclo.java">
+<persistable path="/CyclomaticNumbers/src/com/cyclo/cyclo.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StringProcessing.java" tooltip="MASEWK10/src/StringProcessing.java">
-<persistable path="/MASEWK10/src/StringProcessing.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EmployeeDB.java" tooltip="EmployeeAppSoln/EmployeeApp/src/com/ait/boundaries/EmployeeDB.java">
+<persistable path="/EmployeeAppSoln/EmployeeApp/src/com/ait/boundaries/EmployeeDB.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="exceptionExample.java" tooltip="MASEWK10/src/com/exceptions/exceptionExample.java">
-<persistable path="/MASEWK10/src/com/exceptions/exceptionExample.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wb.core.guiEditor" name="JDBCMainWindowContent.java" tooltip="JDBC_Project/src/JDBCMainWindowContent.java">
-<persistable path="/JDBC_Project/src/JDBCMainWindowContent.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wb.core.guiEditor" name="CalcPanels.java" tooltip="MathsProj/src/CalcPanels.java">
-<persistable path="/MathsProj/src/CalcPanels.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Evaluator.java" tooltip="MathsProj/src/Evaluator.java">
-<persistable path="/MathsProj/src/Evaluator.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Evaluator.java" tooltip="MathsProject1234/src/Evaluator.java">
-<persistable path="/MathsProject1234/src/Evaluator.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CalcPanels.java" tooltip="MathsProject1234/src/CalcPanels.java">
-<persistable path="/MathsProject1234/src/CalcPanels.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="QueryTableModel2.java" tooltip="JDBC_Project/src/QueryTableModel2.java">
-<persistable path="/JDBC_Project/src/QueryTableModel2.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EmployeeDAO.java" tooltip="EmployeeAppSoln/EmployeeApp/src/com/ait/boundaries/EmployeeDAO.java">
+<persistable path="/EmployeeAppSoln/EmployeeApp/src/com/ait/boundaries/EmployeeDAO.java"/>
 </file>
 </mruList>
 </workbench>

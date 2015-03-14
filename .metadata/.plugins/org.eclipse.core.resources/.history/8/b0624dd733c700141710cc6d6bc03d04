@@ -1,0 +1,26 @@
+package ait.ie.maths;
+import java.util.Scanner;
+
+public class Probability {
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
+		System.out.print("Please enter n value");
+		int n = sc.nextInt();
+		System.out.print("Please enter r value");
+		int r = sc.nextInt();
+		perm(n,r);
+	}
+	public static void perm(int n, int r){
+		double ans = (factorial(n)/factorial(n-r)); 
+	}
+	public static void comb(int n, int r){
+		
+	}
+	public static int factorial(int x){
+		if(x<=1){
+			return 1;
+		}else{
+			return x*factorial(x-1);
+		}
+	}
+}

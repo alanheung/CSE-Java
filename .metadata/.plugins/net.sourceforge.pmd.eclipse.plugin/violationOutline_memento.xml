@@ -1,4 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<memento>
-<attribute name="priorityFilterList" value="1:2:3:4:5"/>
-</memento>
+<memento>&#x0A;<attribute name="priorityFilterList" value="1:2:3:4:5"/>&#x0A;</memento>

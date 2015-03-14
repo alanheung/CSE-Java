@@ -1,0 +1,11 @@
+package com.mase.innerclasses2;
+
+public class SomeClass {
+
+	public static void a(){
+		
+	}
+	public static void b(){
+		
+	}
+}

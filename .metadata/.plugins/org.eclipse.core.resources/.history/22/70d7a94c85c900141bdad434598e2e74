@@ -1,0 +1,24 @@
+package com.mase.innerclasses3;
+
+public class Parcel3 {
+	private int i;
+	
+	public Destination to(String s){
+		return new Destination(s);
+	}
+	public Contents cont(){
+		return new Contents();
+	}
+}
+
+class PContents{
+	
+}
+
+class PDestination{
+	
+}
+
+class Inner{
+	
+}

@@ -1,0 +1,25 @@
+package com.cyclo;
+
+public class cyclo {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public static void simpleIf(int inputValue){
+		if(inputValue <=0){
+			System.out.println("Error");
+		}
+	}
+	public static void simpleIfElse(int inputValue){
+		if(inputValue <=0){
+			System.out.println("Error");
+		}else{
+			System.out.println("Valid Value");
+		}
+	}
+
+}

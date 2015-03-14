@@ -1,0 +1,25 @@
+package com.mase.innerclasses;
+
+public class Parcel2 {
+
+	
+	@Override
+	public String toString() {
+		return "Parcel2 [getClass()=" + getClass() + ", hashCode()="
+				+ hashCode() + ", toString()=" + super.toString() + "]";
+	}
+	
+	public static Contents cont(){
+		return Contents;
+	}
+	public static void ship(String s){
+		
+	}
+	public static void main(String[] args) {
+		Parcel2 p = new Parcel2();
+		p = new Destination("Tanzania");
+		System.out.println(p.readLabel());
+	}
+
+
+}

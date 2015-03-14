@@ -1,0 +1,19 @@
+package com.mase.innerclasses;
+
+public class Parcel2 {
+	
+	public static Contents cont(){
+		return ;
+	}
+	
+	public static void ship(String s){
+		s="tanzania";
+	}
+	
+	public static void main(String[] args) {
+		Parcel2 p = new Parcel2();
+		System.out.println(p);
+	}
+
+
+}

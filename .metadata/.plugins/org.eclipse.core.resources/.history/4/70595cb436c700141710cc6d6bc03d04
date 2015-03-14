@@ -1,0 +1,52 @@
+
+/**
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+import java.util.Scanner;
+import java.math.BigInteger;
+public class BigIntDemo
+{
+    public static BigInteger BIGfactorial(int n)
+	{
+		BigInteger total= BigInteger.ONE;
+        for(int i=1; i<=n; i++)
+		{
+			total = total.multiply(BigInteger.valueOf(i));
+		}
+		return total;
+	}
+    public static long LONGfactorial(long n)
+	{
+		if(n<=1)
+            return 1;
+
+        return n*LONGfactorial(n-1);
+	}
+    public static int INTfactorial(int n)
+	{
+		if(n<=1)
+            return 1;
+
+        return n*INTfactorial(n-1);
+	}
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter Max factorial number: ");
+        int max =in.nextInt();
+        in.nextLine();
+        System.out.println(max+"! = "+INTfactorial(max)+" INT");
+        System.out.println(max+"! = "+LONGfactorial((long)(max))+" lONG");
+        System.out.println(max+"! = "+BIGfactorial(max)+" BIGINTEGER\nRUN LOOP (Y|N)");
+        String o = in.nextLine();
+        char c = o.charAt(0);
+        if(c=='Y'||c=='y')
+        {
+            for(int i=0; i<=max; i++)
+            {
+                System.out.println(i+"!\t"+INTfactorial(i)+"\t\t"+LONGfactorial((long)(i))+"\t\t"+BIGfactorial(i));
+            }
+        }
+    }
+}

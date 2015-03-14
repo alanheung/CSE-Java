@@ -1,0 +1,44 @@
+package com.mase.innerclasses3;
+
+public class Parcel3 extends A{
+	private int x=44;
+
+	//cont
+	private class PContents implements Contents{
+		private int i;
+		@Override
+		public int value() {
+			return i;
+		}
+	}
+	
+	protected class PDestination implements Destination{
+
+		private String label;
+		
+		private PDestination(String whereTo){// note private constructor
+			label=whereTo;
+		}
+		@Override
+		public String readLabel() {
+			return null;
+		}	
+	}
+	
+	public Destination dest(String s){
+		return new PDestination(s);
+	}
+	public Contents cont(){
+		return new PContents();
+	}
+}
+
+// inner demos that inner classes enable multiple
+class Inner extends B{
+	private int getPrivateDataFromOuterClass(){
+		return 0;
+	}
+	public void testInheritedMethods(){
+		
+	}
+}

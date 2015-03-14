@@ -1,0 +1,14 @@
+package com.mase.innerclasses2;
+
+public class SomeClass {
+
+	public static void a(){
+		System.out.println("SomeClass::a");
+
+	}
+	@Override
+	public static void b(){
+		System.out.println("SomeClass::b");
+
+	}
+}

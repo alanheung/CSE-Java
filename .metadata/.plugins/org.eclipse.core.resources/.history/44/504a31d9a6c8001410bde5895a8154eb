@@ -1,0 +1,56 @@
+package com.mase.innerclasses2;
+
+import com.mase.innerclasses.Contents;
+
+public class AnonymousExample {
+
+	public Contents Contents(){
+		return new Contents(){
+			private int i;
+
+			@Override
+			public int value(){
+				return i;
+			}
+		};
+	}
+
+	
+	public SomeClass someClass(){
+		return new SomeClass(){			
+			@Override
+			public void b(){
+				
+			}
+			public void c(){
+				
+			}
+		};
+	}
+
+	public static void main(String[] args) {
+		Contents contents = new Contents(){
+			@Override
+			public int value(){
+				return 80;
+			}
+		};
+		System.out.println(contents.value());
+		
+		SomeClass sc = new SomeClass(){
+			@Override
+			public void b(){
+				System.out.println("AnonymousExample::b");
+			}
+			public void c(){
+				System.out.println("AnonymousExample::c");
+			}
+		};
+		sc.a();
+		sc.b();
+		sc.c();
+	}
+	
+	
+
+}

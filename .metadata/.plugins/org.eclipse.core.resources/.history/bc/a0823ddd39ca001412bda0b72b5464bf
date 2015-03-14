@@ -1,0 +1,7 @@
+// Sean Kennedy
+package com.mase.oop1.code2;
+
+public interface Book {    
+    boolean isBestSeller();
+    int howManyLanguages();
+}

@@ -1,0 +1,27 @@
+package com.mase.innerclasses2;
+
+import com.mase.innerclasses.Contents;
+
+public class AnonymousExample {
+
+	public Contents Contents(){
+	return new Contents(){
+			private int i;
+			
+			@Override
+			public int value(){
+			return i;
+			}
+		};
+	}
+
+	public static void main(String[] args) {
+		Contents contents = new Contents(){
+			@Override
+			public int value(){
+			return i;
+			}
+		}
+	}
+
+}

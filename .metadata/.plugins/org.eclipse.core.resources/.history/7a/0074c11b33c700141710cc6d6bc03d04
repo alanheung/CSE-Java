@@ -1,0 +1,15 @@
+package ait.ie.maths;
+
+public class Probability {
+
+	public static void main(String[] args) {
+
+	}
+	public static int factorial(int x){
+		if(x<=1){
+			return 1;
+		}else{
+			return x*factorial(x-1);
+		}
+	}
+}

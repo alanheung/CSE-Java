@@ -128,7 +128,7 @@ public class JDBCMainWindowContent extends JInternalFrame implements ActionListe
 	//chart button
 	private JButton chartButton = new JButton("Chart Country Statistics");
 	//switch button
-	private JButton switchButton = new JButton("Switch");
+	private JButton switchButton = new JButton("Change");
 	private String currentTable = "Technologies";
 
 	public JDBCMainWindowContent( String aTitle){
@@ -375,7 +375,7 @@ public class JDBCMainWindowContent extends JInternalFrame implements ActionListe
 
 			while (rs.next()) {
 				String category = rs.getString(1);
-				String value = rs.getString(1);
+				String value = rs.getString(2);
 				dataset.setValue(category+ " "+value, new Double(value));
 			}
 			
@@ -560,7 +560,7 @@ public class JDBCMainWindowContent extends JInternalFrame implements ActionListe
 		if (target.equals(chartButton)){  		
 			//			 cmd = "select Property_ID from mobiletechnology.technologies group by Property_ID;";
 			//			cmd = "select Record_Description, sum(value)from nw_stats.perf group by Record_Description;";
-			cmd = "select round(subscribers.Global,0) from mobiletechnology.subscribers;";
+			cmd = "select Property, round(subscribers.Global,0) from mobiletechnology.subscribers;";
 			System.out.println(cmd);
 			try {
 				rs= stmt.executeQuery(cmd);
@@ -643,13 +643,13 @@ public class JDBCMainWindowContent extends JInternalFrame implements ActionListe
 				writeToFile(rs);
 			}
 			else if (target.equals(query7)){  
-				cmd ="SELECT MAX(South_Korea) AS 'Global(Max Sub in Millions)' FROM subscribers;  ";
+				cmd ="SELECT MAX(Global) AS 'Global(Max Sub in Millions)' FROM subscribers;  ";
 				System.out.println(cmd);
 				rs = ps.executeQuery(cmd);
 				writeToFile(rs);
 			}
 			else if (target.equals(query8)){  
-				cmd ="SELECT MIN(South_Korea) AS 'USA(Min Sub in Millions)' FROM subscribers;  ";
+				cmd ="SELECT MAX(USA) AS 'USA(Max Sub in Millions)' FROM subscribers;  ";
 				System.out.println(cmd);
 				rs = ps.executeQuery(cmd);
 				writeToFile(rs);

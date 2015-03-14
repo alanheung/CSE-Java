@@ -1,0 +1,15 @@
+package com.mase.innerclasses;
+
+public class Destination {
+	private String label;
+	
+	public void Destination(String s){
+		s="";
+	}
+
+	public String readLabel() {
+		return label;
+	}
+	
+
+}

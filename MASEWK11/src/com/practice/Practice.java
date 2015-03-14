@@ -1,0 +1,220 @@
+package com.practice;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Practice {
+	static Scanner sc = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        final int   STRINGS = 1, EXCEPTIONS = 2, INNER_CLASSES = 3, FILE_IO = 4, ENUMS=5, EXIT = 99;
+        String userContinue = "y";
+
+        System.out.println("Java features demo");
+        while (userContinue.equalsIgnoreCase("y")) {
+            switch (userChoice()) {
+                case STRINGS:
+                    stringBuilder();
+                    break;
+                case EXCEPTIONS:
+                    method1();
+                    break;
+                case INNER_CLASSES:
+                    innerClasses();
+                    break;
+                case FILE_IO:
+                    fileIO();
+                    break;
+                case ENUMS:
+                    enums();
+                    break;
+                case EXIT:
+                    System.out.println("Exiting...");
+                    userContinue = "n";
+                    break;
+                default:
+                    System.out.println("Unknown entry : ");
+                    break;
+            }
+        }
+    }
+
+    public static int userChoice() {
+        System.out.println("What do you want to do ?");
+        System.out.println("1. String Builder");
+        System.out.println("2. Exceptions");
+        System.out.println("3. Inner Classes");
+        System.out.println("4. File I/O");
+        System.out.println("5. Enumerations");
+        System.out.println("99. Exit");
+        System.out.print("Enter choice --> ");
+        return sc.nextInt();
+    }
+    
+    public static void enums() {
+        // get and display the discount percent for a customer type
+        CustomerType trade = CustomerType.TRADE;
+        double discountPercent = getDiscountPercent(trade);
+        System.out.println("discountPercent: " + discountPercent);
+
+        // display the value of the toString method of a customer type
+        System.out.println("toString: " + trade.toString() + "\n");
+        
+    }
+    // a method that accepts a CustomerType enumeration
+    public static double getDiscountPercent(CustomerType ct)
+    {
+        double discountPercent = 0;
+        if (ct == CustomerType.RETAIL)
+            discountPercent = 0.10;
+        else if (ct == CustomerType.TRADE)
+            discountPercent = 0.30;
+        else if (ct == CustomerType.COLLEGE)
+            discountPercent = 0.20;
+        return discountPercent;
+    }
+
+    public static void fileIO() {
+        ArrayList<Student> students = new ArrayList<>();
+        try {
+            BufferedReader in = new BufferedReader(new FileReader("grades.txt"));
+            String line = in.readLine();
+            while(line != null){
+                //System.out.println(line);
+                
+                // create a Student
+                String []columns = line.split("\t");
+                String id        = columns[0];
+                String name      = columns[1];
+                String grade     = columns[2];
+                
+                students.add(new Student(id, name, Integer.parseInt(grade)));
+                
+                line = in.readLine();
+            }
+            in.close();
+            
+            // output the array list
+            for(Student s:students){
+                System.out.println(s);                
+            }
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+
+    }
+    // **********************************************************************************************
+    // **********************************************************************************************
+    // Inner Classes
+    // **********************************************************************************************
+    // **********************************************************************************************
+
+    public static void innerClasses() {
+        System.out.println("Creating the BookStore class...");
+        BookStore bookStore = new BookStore();
+
+        // Method2 - using a public method that returns the interface reference that the (private) inner class implements
+        // This way the inner class is completely invisible to the outside world...
+        System.out.println("Creating the private inner class object accessible via an interface reference...");
+        Book book = bookStore.getABook( "Java Programming", 
+                                        "Joel Murach", 
+                                        true, 
+                                        5);
+        System.out.println("Number of languages is : "+book.howManyLanguages());
+        System.out.println("Is it a best seller ? : "+book.isBestSeller());
+
+    }
+
+    // **********************************************************************************************
+    // **********************************************************************************************
+    // Exceptions (exercise 14-3; soln p450-451)
+    // **********************************************************************************************
+    // **********************************************************************************************
+    public static void method1(){
+        method2();
+    }
+
+    public static void method2(){
+        try{
+            method3();
+        }
+        catch (TestException e){
+            System.out.println("A test exception occurred.");
+            System.out.println("Cause: " + e.getCause().toString());
+        }
+    }
+
+    public static void method3() throws TestException{
+        try{
+            throw new IOException("An I/O exception occurred.");
+        }
+        catch (IOException e){
+            throw new TestException(e);
+        }
+    }
+    
+    public static void stringBuilder() {
+        StringBuilder sb = new StringBuilder();
+        // the poem will be given to them...
+        sb.append("If you can keep your head when all about you \n");
+        sb.append("Are losing theirs and blaming it on you;\n");
+        sb.append("If you can trust yourself when all men doubt you,\n");
+        sb.append("But make allowance for their doubting too;\n");
+        sb.append("If you can wait and not be tired by waiting,\n");
+        sb.append("Or, being lied about, don't deal in lies,\n");
+        sb.append("Or, being hated, don't give way to hating,\n");
+        sb.append("And yet don't look too good, nor talk too wise;\n");
+
+        // insert line numbers
+        sb.insert(0, "1.");
+        sb.insert(sb.indexOf("Are losing theirs and blaming it on you"), 
+                   "2.");
+        //sb.insert(25,"2.");
+        sb.insert(sb.indexOf("If you can trust yourself when all men doubt you"), "3.");
+        sb.insert(sb.indexOf("But make allowance for their doubting too;"), "4.");
+        sb.insert(sb.indexOf("If you can wait and not be tired by waiting,", 
+                             sb.indexOf("4.")),// where to start search
+                  "5.");
+        sb.insert(sb.indexOf("Or, being lied about, don't deal in lies,", sb.indexOf("5.")), "6.");
+        sb.insert(sb.indexOf("Or, being hated, don't give way to hating,", sb.indexOf("6.")), "7.");
+        sb.insert(sb.indexOf("And yet don't look too good, nor talk too wise;", sb.indexOf("7.")), "8.");
+
+        // Replacing the ";" at the **end** with a ".". Note that there are two ";"
+        // so I don't want to get the first one...
+        sb.setCharAt(sb.indexOf(";", sb.indexOf("8.")), '.');
+
+        // replace hated with disliked
+        int indexOfHated = sb.indexOf("hated");
+        // API - delete(start, end); 
+        sb.delete(indexOfHated, indexOfHated + "hated".length());
+        sb.insert(indexOfHated, "disliked");
+
+        // replace hating with disliking
+        int indexOfHating = sb.indexOf("hating");
+        // delete(startIndex, endIndex)
+        sb.delete(indexOfHating, indexOfHating + "hating".length());
+        sb.insert(indexOfHating, "disliking");
+
+        // extract the last 3 lines
+        //      	System.out.println("Last three lines == \n"+sb.substring(sb.indexOf("6.")));
+
+        // API- replace(start, end, str);
+        // API - First the characters in the substring are removed and then the 
+        // specified String is inserted at 'start'. (This sequence will be lengthened 
+        // to accommodate the specified String if necessary.)
+        sb.replace(sb.indexOf("trust"),
+                   sb.indexOf("trust") + "trust".length(),
+                   "TRUST");
+
+        while (sb.indexOf("don't") != -1) {
+            sb.replace(sb.indexOf("don't"),
+                    sb.indexOf("don't") + "don't".length(),
+                    "do not");
+        }
+        System.out.println(sb);
+    }
+
+}

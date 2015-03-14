@@ -1,0 +1,24 @@
+package com.mase.innerclasses;
+
+public class Parcel2 {
+
+	@Override
+	public String toString() {
+		return "Parcel2 [cont()=" + cont() + ", getClass()=" + getClass()
+				+ ", hashCode()=" + hashCode() + ", toString()="
+				+ super.toString() + "]";
+	}
+	
+	public Contents cont(){
+		return null;
+		
+	}
+	public static void ship(String s){
+		
+	}
+	public static void main(String[] args) {
+	
+	}
+
+
+}
