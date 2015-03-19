@@ -5,7 +5,7 @@ public class PaymentAdviceDto {
 	private final String targetPayPalId;
 	private final String desc;
 
-	public PaymentAdviceDto(double amount, String targetPayPalId, String desc) {
+	public PaymentAdviceDto(final double amount, final String targetPayPalId, final String desc) {
 		super();
 		this.amount = amount;
 		this.targetPayPalId = targetPayPalId;

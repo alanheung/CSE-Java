@@ -1,0 +1,19 @@
+package com.ait.users;
+
+public interface User {
+	abstract String getName();
+
+	 abstract boolean isLoggedIn();
+	
+	 abstract void setLoggedIn(boolean state);
+
+	 abstract void setRevoked(boolean state);
+	
+	 abstract boolean isRevoked();
+	
+	 abstract boolean passwordMatches(String password);
+	
+	 abstract int getFailedLoginAttempts();
+	
+	 abstract void incrementFailedLoginAttempts();
+}

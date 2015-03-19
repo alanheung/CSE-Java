@@ -1,0 +1,65 @@
+import java.util.Scanner;
+
+public class Menu {
+	static Scanner sc = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+		final int ENUM=1, BASKETBALL=2, RUGBY=3, GOLF=4, TENNIS=5, FOOTBALL=6, EXIT=99;
+		String userContinue="y";
+		
+		while(userContinue.equalsIgnoreCase("y")){	
+			switch(userChoice()){
+			case ENUM: 
+				Enums();
+				break;
+			case BASKETBALL: 
+				playBasketball();
+				break;
+			case RUGBY: 
+				playRugby();
+				break;
+			case GOLF: 
+				playGolf();
+				break;
+			case TENNIS: 
+				playTennis();
+				break;
+			case FOOTBALL: 
+				playFootball();
+				break;
+			case EXIT:
+				System.out.println("Exiting program ");
+				userContinue="n";
+				break;
+			default:
+				System.out.println("Option does not exist, try again ");
+			}
+		}
+	}
+	
+	public static int userChoice(){
+		System.out.print("\nWhat do you want to do?");
+		System.out.print("\n1.enum \n2.basketball \n3.rugby \n4.golf \n5.tennis \n6.running \n99.exit ");
+		return sc.nextInt();	
+	}
+	public static void Enums(){
+		System.out.println("\nenums called");
+		CollegeType c = AIT;
+	}
+	public static void playBasketball(){
+		System.out.println("\nplayBasketball");
+	}
+	public static void playRugby(){
+		System.out.println("\nplayRugby");
+	}
+	public static void playGolf(){
+		System.out.println("\nplayGolf");
+	}
+	public static void playTennis(){
+		System.out.println("\nplayTennis");
+	}
+	public static void playFootball(){
+		System.out.println("\nplayFootball");
+	}
+
+}

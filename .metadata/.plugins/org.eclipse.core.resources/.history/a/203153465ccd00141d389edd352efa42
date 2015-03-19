@@ -1,0 +1,99 @@
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Menu {
+	static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[] args){
+		final int ENUM=1, FILE_IO=2, RUGBY=3, GOLF=4, TENNIS=5, FOOTBALL=6, EXIT=99;
+		String userContinue="y";
+
+		while(userContinue.equalsIgnoreCase("y")){	
+			switch(userChoice()){
+			case ENUM: 
+				Enums();
+				break;
+			case FILE_IO: 
+				FileIO();
+				break;
+			case RUGBY: 
+				playRugby();
+				break;
+			case GOLF: 
+				playGolf();
+				break;
+			case TENNIS: 
+				playTennis();
+				break;
+			case FOOTBALL: 
+				playFootball();
+				break;
+			case EXIT:
+				System.out.println("Exiting program ");
+				userContinue="n";
+				break;
+			default:
+				System.out.println("Option does not exist, try again ");
+			}
+		}
+	}
+
+	public static int userChoice(){
+		System.out.print("\nWhat do you want to do?");
+		System.out.print("\n1.enum \n2.file IO \n3.rugby \n4.golf \n5.tennis \n6.running \n99.exit ");
+		return sc.nextInt();	
+	}
+	public static void Enums(){
+		System.out.println("\nEnums called");
+		CollegeType c = CollegeType.AIT;
+		System.out.println(c);
+	}
+	public static void FileIO(){
+		System.out.println("\nFile IO");
+
+		//		Path studentsPath = Paths.get("students.txt");
+		//		File studentsFile = studentsPath.toFile();
+
+		ArrayList<Student> students = new ArrayList<>();
+		try(BufferedReader in = new BufferedReader (new FileReader("students.txt"))){
+			String line = in.readLine();
+			while(line !=null){
+				String[] cols = line.split(",");
+				String name = cols[0];
+				String place = cols[1];
+				String ageString = cols[2];
+				//create a student
+				Student s = new Student(name, place, ageString);
+				//add student to array list
+				students.add(s);
+				line = in.readLine();
+				System.out.println(line);
+			}
+		}
+		catch(IOException e){
+			System.out.println(e);
+		}
+
+	}
+	public static void playRugby(){
+		System.out.println("\nplayRugby");
+	}
+	public static void playGolf(){
+		System.out.println("\nplayGolf");
+	}
+	public static void playTennis(){
+		System.out.println("\nplayTennis");
+	}
+	public static void playFootball(){
+		System.out.println("\nplayFootball");
+	}
+
+}

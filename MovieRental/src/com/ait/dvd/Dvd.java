@@ -4,14 +4,14 @@ public class Dvd {
 
 	private final String title;
 	private boolean isRented = false;
-	private DvdType dvdType = DvdType.NEW_RELEASE;
-	private int chargePerDay=50;
+	private static DvdType dvdType = DvdType.NEW_RELEASE;
+	private static final int chargePerDay=50;
 
 	/**
 	 * Create a new DVD with the supplied title.
 	 * @param title the title of the DVD.
 	 */
-	public Dvd(final String title, DvdType dvdType) {
+	public Dvd(final String title, final DvdType dvdType) {
 		this.title = title;
 		this.dvdType=dvdType;
 	}

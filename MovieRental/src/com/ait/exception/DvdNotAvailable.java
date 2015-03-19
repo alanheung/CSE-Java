@@ -18,7 +18,7 @@ public class DvdNotAvailable extends DvdStoreException {
 
 	private static final long serialVersionUID = -7844164306968873458L;
 
-	public DvdNotAvailable(String message) {
+	public DvdNotAvailable(final String message) {
 		super(message);
 	}
 

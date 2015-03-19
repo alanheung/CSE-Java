@@ -9,7 +9,7 @@ public class TransactionDto {
 		return amount;
 	}
 
-	public void setAmount(double amount) {
+	public void setAmount(final double amount) {
 		this.amount = amount;
 	}
 
@@ -21,11 +21,11 @@ public class TransactionDto {
 		return targetPayPalId;
 	}
 
-	public void setTargetId(String targetId) {
+	public void setTargetId(final String targetId) {
 		this.targetId = targetId;
 	}
 
-	public void setTargetPayPalId(String targetPayPalId) {
+	public void setTargetPayPalId(final String targetPayPalId) {
 		this.targetPayPalId = targetPayPalId;
 	}
 

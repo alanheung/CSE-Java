@@ -1,0 +1,14 @@
+package com.mase.oop1.code2;
+
+public class MaseException extends Exception{
+
+	public static void method1() throws MaseException{
+		method2();
+	}
+	public static void method2() throws MaseException{
+		method3();
+	}
+	public static void method3() throws MaseException{
+		System.out.println("An I/O exception occured.");
+	}
+}

@@ -15,7 +15,7 @@ public class DvdStoreUserException extends DvdStoreException {
 
 	private static final long serialVersionUID = 334051992916748022L;
 
-	public DvdStoreUserException(String userID) {
+	public DvdStoreUserException(final String userID) {
 		super("Account not found or not allowed to rent new movie: "+ userID);
 	}
 

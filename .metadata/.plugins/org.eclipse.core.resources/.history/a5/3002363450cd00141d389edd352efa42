@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class Menu {
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
+		final int SOCCER=1, BASKETBALL=2, RUGBY=3, GOLF=4, TENNIS=5, RUNNING=6, EXIT=7;
+		String userContinue="y";
+		
+		System.out.print("\nWhat do you want to do?");
+		System.out.print("\n1.soccer \n2.basketball \n3.rugby \n4.golf \n5. \n6.running \n7.exit ");
+		int userChoice = sc.nextInt();
+		
+		while(userContinue.equalsIgnoreCase("y")){
+			switch(userChoice){
+			case SOCCER: 
+				//add();
+				break;
+			case BASKETBALL: 
+				//update();
+				break;
+			case RUGBY: 
+				//deleteOneCar();
+				break;
+			case GOLF: 
+				//deleteAllCars();
+				break;
+			case TENNIS: 
+				//findCarByIndex();
+				break;
+			case RUNNING: 
+				//display();
+				break;
+			case EXIT:
+				userContinue="n";
+				break;
+			default:
+				System.out.println("Option does not exist, try again ");
+			}
+		}
+	}
+
+}

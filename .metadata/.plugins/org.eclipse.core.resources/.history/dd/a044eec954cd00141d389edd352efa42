@@ -1,0 +1,17 @@
+
+public enum colleges {
+	AIT("athlone"),
+	DCU("dublin"),
+	NUIG("galway"),
+	WIT("waterford");
+	
+	String name;
+	colleges(String name){
+		this.name=name;
+	}
+	
+	@Override
+	public String toString(){
+		return "college is "+name;
+	}
+}

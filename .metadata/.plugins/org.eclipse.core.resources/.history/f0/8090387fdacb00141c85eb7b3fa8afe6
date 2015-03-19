@@ -1,0 +1,72 @@
+package com.ait.moviestore;
+
+
+/**
+ * Represents an account holder with the Movie Store.
+ */
+public class Account {
+
+	private String name;
+
+	private String accountId;
+
+	private int balanceOwedInCents;
+
+	private static final int allowedCreditInCents = 200;
+	
+	/**
+	 * Create a new Rental Account.
+	 * @param name the name of the account holder.
+	 * @param vipAccount indication if the account holder will have special privileges or not.
+	 */
+	public Account(final String accountId,final String name) {
+		this.name = name;
+		this.accountId = accountId;
+		this.balanceOwedInCents = 0;
+	}
+
+	
+
+	
+	/**
+	 * Get the amount owed by this account holder to the store.
+	 * @return the amount due to the store, in cents. May be zero if no
+	 * money is due.
+	 */
+	public int getBalanceOwed() {
+		return balanceOwedInCents;
+	}
+
+	/**
+	 * Get the allowed credit which this account holder has.
+	 * @return the allowed credit on this account, in cents.
+	 */
+	public int getAllowedCredit() {
+		return allowedCreditInCents;
+	}
+
+	
+
+	
+	/**
+	 * Add a charge to this user's account.
+	 * @param amountInCents the amount to be charged, in cents.
+	 */
+	public void addCharge(final int amountInCents) {
+		balanceOwedInCents += amountInCents;
+	}
+
+	
+
+	/**
+	 * Is this user allowed to rent new movies.
+	 * This method determines if the store should allow the user to
+	 * rent a new movie based on his allowed credit and the outstanding balance
+	 * in his account.
+	 * @return true is the user can rent a new movie, false otherwise.
+	 */
+	public boolean isAllowedToRentNewMovies() {
+		return getAllowedCredit() > getBalanceOwed();
+	}
+
+}

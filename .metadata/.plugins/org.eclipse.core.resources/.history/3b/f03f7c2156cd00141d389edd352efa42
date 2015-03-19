@@ -1,0 +1,22 @@
+
+public enum CollegeType {
+	AIT,//0
+	DCU,//1
+	NUIG,//2
+	WIT;//3
+	
+	@Override
+	public String toString(){
+		String s = "";
+		if(this.ordinal() ==0){
+			s = "AIT";
+		}else if(this.ordinal() ==1){
+			s = "DCU";
+		}else if(this.ordinal() ==2){
+			s = "NUIG";
+		}else{
+			s = "WIT";
+		}
+		return s;
+	}
+}

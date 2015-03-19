@@ -1,0 +1,60 @@
+package com.ait.moviestoretest;
+
+import static org.junit.Assert.*;
+import static org.mockito.Mockito.*;
+
+import org.junit.Before;
+import org.junit.Test;
+import com.ait.DAO.MovieStoreDAO;
+import com.ait.dvd.Dvd;
+import com.ait.dvd.DvdType;
+import com.ait.exception.DvdStoreException;
+import com.ait.exception.DvdStoreUserException;
+import com.ait.moviestore.Account;
+import com.ait.moviestore.DvdRental;
+import com.ait.moviestore.MovieStoreImpl;
+
+public class MovieStoreTest {
+
+	private final MovieStoreDAO movieStoreDAO=mock(MovieStoreDAO.class);
+	private MovieStoreImpl movieStoreImpl;
+	private Dvd dvd;
+	private Account account;
+	@Before
+	public void setUp(){
+		movieStoreImpl=new MovieStoreImpl(movieStoreDAO);
+		dvd=new Dvd("Toy Story 3",DvdType.KIDS);
+		account= new Account("12345", "Joe Bloggs");
+	}
+	@Test
+	public void testDvdSucessfullyRented() throws DvdStoreException {
+		//Stub the DAO calls
+		when(movieStoreDAO.findAccountForId("12345")).thenReturn(account);
+		when(movieStoreDAO.getAvailableDvdWithTitle("Toy Story 3")).thenReturn(dvd);
+		assertEquals(dvd,movieStoreImpl.rentMovie("12345", "Toy Story 3"));
+		verify(movieStoreDAO,times(1)).createNewDvdRental(isA(DvdRental.class));
+	}
+	@Test(expected=DvdStoreUserException.class)
+	public void testDvdRentalUnSucessfullyIdNotFound() throws DvdStoreException {
+		account= null;
+		//Stub the DAO calls
+		when(movieStoreDAO.findAccountForId("12345")).thenReturn(account);
+		movieStoreImpl.rentMovie("12345", "Toy Story 3");
+	}
+//	@Test(expected=DvdStoreUserException.class)
+//	public void testDvdRentalWhenTheAccountNotAllowedToRent() throws DvdStoreException {
+//		//Stub the DAO calls
+//		when(movieStoreDAO.findAccountForId("12345")).thenReturn(account);
+//		when(movieStoreDAO.getAvailableDvdWithTitle("Toy Story 3")).thenReturn(dvd);
+//		assertEquals(dvd,movieStoreImpl.rentMovie("12345", "Toy Story 3"));
+//		verify(movieStoreDAO,times(1)).createNewDvdRental(isA(DvdRental.class));
+//		movieStoreImpl.rentMovie("12345", "Toy Story 3");
+//	}
+	@Test
+	public void testDvdNotAvailable() throws DvdStoreException {
+		when(movieStoreDAO.findAccountForId("12345")).thenReturn(account);
+		dvd=null;
+		assertEquals(dvd,movieStoreImpl.rentMovie("12345", null));
+		verify(movieStoreDAO,times(0)).createNewDvdRental(isA(DvdRental.class));
+	}
+}

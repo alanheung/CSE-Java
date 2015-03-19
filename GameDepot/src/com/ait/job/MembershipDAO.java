@@ -2,6 +2,6 @@ package com.ait.job;
 
 public interface MembershipDAO {
 
-	MembershipStatusDto getStatusFor(String id);
+	MembershipStatusDto getStatusFor(String idNumber);
 
 }

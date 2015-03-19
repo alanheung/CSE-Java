@@ -1,0 +1,22 @@
+package com.mase.oop1.code2;
+
+public class Laptop {
+	
+    private class MemoryImpl implements Memoryl {
+        @SuppressWarnings("unused")
+		private String memoryCapacity;
+        private String getMemoryCapacity;
+
+		public MemoryImpl(String memoryCapacity) {
+			this.memoryCapacity = memoryCapacity;
+		}
+
+		@Override
+		public String getMemoryCapacity() {
+			return getMemoryCapacity;
+		}
+    }
+	public MemoryImpl setMemoryCapacity(String memoryCapacity){
+		return new MemoryImpl(memoryCapacity);
+	}
+}

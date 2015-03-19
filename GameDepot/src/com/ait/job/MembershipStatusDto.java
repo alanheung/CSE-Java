@@ -7,7 +7,7 @@ public class MembershipStatusDto {
 		return deductable;
 	}
 
-	public void setDeductable(double deductable) {
+	public void setDeductable(final double deductable) {
 		this.deductable = deductable;
 	}
 }

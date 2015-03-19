@@ -1,0 +1,47 @@
+package com.mase.oop1.code2;
+
+import java.util.Scanner;
+
+public class CodeAssessment2 {
+	static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		final int   STRINGS = 1, EXCEPTIONS = 2, INNER_CLASSES = 3, FILE_IO = 4, ENUMS=5, EXIT = 99;
+		String userContinue = "y";
+
+		System.out.println("Java features demo");
+		while (userContinue.equalsIgnoreCase("y")) {
+			switch (userChoice()) {
+			case STRINGS:
+				stringBuilder();
+				break;
+			case EXCEPTIONS:
+				method1();
+				break;
+			case INNER_CLASSES:
+				innerClasses();
+				break;
+			case FILE_IO:
+				fileIO();
+				break;
+			case ENUMS:
+				enums();
+				break;
+			case EXIT:
+				System.out.println("Exiting...");
+				userContinue = "n";
+				break;
+			default:
+				System.out.println("Unknown entry : ");
+				break;
+			}
+		}
+	}
+
+	public static int userChoice() {
+		System.out.println("What do you want to do ?\n1. String Builder\n2. Exceptions\n3. Inner Classes\n4. File I/O\n5. Enumerations\n99. Exit\nEnter choice: ");
+		return sc.nextInt();
+	}
+}
+
+

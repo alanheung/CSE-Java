@@ -1,0 +1,35 @@
+package com.ait.test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.mockito.Mock;
+
+import com.ait.boundaries.NotificationService;
+import com.ait.boundaries.UserDAO;
+import com.ait.login.LoginHandler;
+import com.ait.users.User;
+
+import static org.mockito.Mockito.*;
+
+public class LoginHandlerTest {
+
+	private UserDAO uDAO;
+	private NotificationService nsDAO;
+	private User user;
+	private login login;
+	private LoginHandler loginHand;
+	
+	@Before
+	public void setUP(){
+		uDAO = mock(UserDAO.class);
+		nsDAO = mock(NotificationService.class);
+		loginHand = new LoginHandler(uDAO, nsDAO);
+				
+	}
+	@Test
+	public void testLoginSuccessful() {
+	}
+
+}

@@ -1,0 +1,52 @@
+package com.ait.job;
+
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+
+public class ReconciliationJob {
+	private final FinancialTransactionDAO financialTxDAO;
+	private final MembershipDAO membershipDAO;
+	private final PayPalFacade payPalFacade;
+
+	public ReconciliationJob(final FinancialTransactionDAO financialTxDAO,
+			final MembershipDAO membershipDAO, final PayPalFacade payPalFacade) {
+		super();
+		this.financialTxDAO = financialTxDAO;
+		this.membershipDAO = membershipDAO;
+		this.payPalFacade = payPalFacade;
+	}
+
+	public int reconcile() {
+		final List<TransactionDto> unSettledTxs = financialTxDAO
+				.retrieveUnSettledTransactions();
+		final  Map<String, List<TransactionDto>> developerTxMap = new LinkedHashMap<String, List<TransactionDto>>();
+		for (final TransactionDto transactionDto : unSettledTxs) {
+			List<TransactionDto> transactions = developerTxMap
+					.get(transactionDto.getTargetId());
+			if (transactions == null) {
+				transactions = new ArrayList<TransactionDto>();
+			}
+			transactions.add(transactionDto);
+			developerTxMap.put(transactionDto.getTargetId(), transactions);
+
+		}
+		for (final String developerId : developerTxMap.keySet()) {
+			final MembershipStatusDto membership = membershipDAO
+					.getStatusFor(developerId);
+			String payPalId = null;
+			double totalTxAmount = 0.00;
+			for (final TransactionDto tx : developerTxMap.get(developerId)) {
+				totalTxAmount += tx.getAmount();
+				payPalId = tx.getTargetPayPalId();
+			}
+			final double payableAmount = totalTxAmount - totalTxAmount
+					* membership.getDeductable();
+			payPalFacade.sendAdvice(new PaymentAdviceDto(payableAmount,
+					payPalId, null));
+		}
+		return unSettledTxs.size();
+	}
+
+}

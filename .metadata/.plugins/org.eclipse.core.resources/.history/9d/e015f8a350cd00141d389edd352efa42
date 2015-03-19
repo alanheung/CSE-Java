@@ -1,0 +1,62 @@
+import java.util.Scanner;
+
+public class Menu {
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
+		final int SOCCER=1, BASKETBALL=2, RUGBY=3, GOLF=4, TENNIS=5, FOOTBALL=6, EXIT=7;
+		String userContinue="y";
+		
+		System.out.print("\nWhat do you want to do?");
+		System.out.print("\n1.soccer \n2.basketball \n3.rugby \n4.golf \n5.tennis \n6.running \n7.exit ");
+		int userChoice = sc.nextInt();
+		
+		while(userContinue.equalsIgnoreCase("y")){
+			switch(userChoice){
+			case SOCCER: 
+				playSoccer();
+				break;
+			case BASKETBALL: 
+				playBasketball();
+				break;
+			case RUGBY: 
+				playRugby();
+				break;
+			case GOLF: 
+				playGolf();
+				break;
+			case TENNIS: 
+				playTennis();
+				break;
+			case FOOTBALL: 
+				playFootball();
+				break;
+			case EXIT:
+				userContinue="n";
+				break;
+			default:
+				System.out.println("Option does not exist, try again ");
+			}
+		}
+	}
+	
+	public static void playSoccer(){
+		System.out.println("playSoccer");
+	}
+
+	public static void playBasketball(){
+		System.out.println("playBasketball");
+	}
+	public static void playRugby(){
+		System.out.println("playRugby");
+	}
+	public static void playGolf(){
+		System.out.println("playGolf");
+	}
+	public static void playTennis(){
+		System.out.println("playTennis");
+	}
+	public static void playFootball(){
+		System.out.println("playFootball");
+	}
+
+}

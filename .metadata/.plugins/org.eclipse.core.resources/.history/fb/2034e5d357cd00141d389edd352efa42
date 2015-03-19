@@ -1,0 +1,89 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Menu {
+	static Scanner sc = new Scanner(System.in);
+	
+	public static void main(String[] args) throws IOException {
+		final int ENUM=1, FILE_IO=2, RUGBY=3, GOLF=4, TENNIS=5, FOOTBALL=6, EXIT=99;
+		String userContinue="y";
+		
+		while(userContinue.equalsIgnoreCase("y")){	
+			switch(userChoice()){
+			case ENUM: 
+				Enums();
+				break;
+			case FILE_IO: 
+				FileIO();
+				break;
+			case RUGBY: 
+				playRugby();
+				break;
+			case GOLF: 
+				playGolf();
+				break;
+			case TENNIS: 
+				playTennis();
+				break;
+			case FOOTBALL: 
+				playFootball();
+				break;
+			case EXIT:
+				System.out.println("Exiting program ");
+				userContinue="n";
+				break;
+			default:
+				System.out.println("Option does not exist, try again ");
+			}
+		}
+	}
+	
+	public static int userChoice(){
+		System.out.print("\nWhat do you want to do?");
+		System.out.print("\n1.enum \n2.file IO \n3.rugby \n4.golf \n5.tennis \n6.running \n99.exit ");
+		return sc.nextInt();	
+	}
+	public static void Enums(){
+		System.out.println("\nEnums called");
+		CollegeType c = CollegeType.AIT;
+		System.out.println(c);
+	}
+	public static void FileIO() throws IOException{
+		System.out.println("\nFile IO");
+	      FileInputStream in = null;
+	      FileOutputStream out = null;
+
+	      try {
+	         in = new FileInputStream("students.txt");
+	         out = new FileOutputStream("students.txt");
+	         
+	         int c;
+	         while ((c = in.read()) != -1) {
+	            out.write(c);
+	         }
+	      }finally {
+	         if (in != null) {
+	            in.close();
+	         }
+	         if (out != null) {
+	            out.close();
+	         }
+	      }
+	}
+	public static void playRugby(){
+		System.out.println("\nplayRugby");
+	}
+	public static void playGolf(){
+		System.out.println("\nplayGolf");
+	}
+	public static void playTennis(){
+		System.out.println("\nplayTennis");
+	}
+	public static void playFootball(){
+		System.out.println("\nplayFootball");
+	}
+
+}

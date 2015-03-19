@@ -1,0 +1,17 @@
+package com.mase.oop1.code2;
+
+public class Car {
+	private String reg;
+	private String make;
+	private String model;
+	private String tag;
+	private double price;
+	
+	@Override
+	public String toString() {
+		return "Car [reg=" + reg + ", make=" + make + ", model=" + model
+				+ ", tag=" + tag + ", price=" + price + "]";
+	}
+	
+	
+}

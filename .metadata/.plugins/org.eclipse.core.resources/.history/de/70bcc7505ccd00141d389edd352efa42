@@ -1,0 +1,16 @@
+
+public class Student {
+
+    private String name, make, age;
+    
+    public Student(String name, String make, String age){
+        this.name = name;
+        this.make = make;
+        this.age = age;
+    }
+
+	@Override
+	public String toString() {
+		return name+", "+ make +", "+ age+"\n ";
+	}
+}

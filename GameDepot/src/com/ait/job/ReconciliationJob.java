@@ -10,8 +10,8 @@ public class ReconciliationJob {
 	private final MembershipDAO membershipDAO;
 	private final PayPalFacade payPalFacade;
 
-	public ReconciliationJob(FinancialTransactionDAO financialTxDAO,
-			MembershipDAO membershipDAO, PayPalFacade payPalFacade) {
+	public ReconciliationJob(final FinancialTransactionDAO financialTxDAO,
+			final MembershipDAO membershipDAO, final PayPalFacade payPalFacade) {
 		super();
 		this.financialTxDAO = financialTxDAO;
 		this.membershipDAO = membershipDAO;
@@ -19,10 +19,10 @@ public class ReconciliationJob {
 	}
 
 	public int reconcile() {
-		List<TransactionDto> unSettledTxs = financialTxDAO
+		final List<TransactionDto> unSettledTxs = financialTxDAO
 				.retrieveUnSettledTransactions();
-		Map<String, List<TransactionDto>> developerTxMap = new LinkedHashMap<String, List<TransactionDto>>();
-		for (TransactionDto transactionDto : unSettledTxs) {
+		final  Map<String, List<TransactionDto>> developerTxMap = new LinkedHashMap<String, List<TransactionDto>>();
+		for (final TransactionDto transactionDto : unSettledTxs) {
 			List<TransactionDto> transactions = developerTxMap
 					.get(transactionDto.getTargetId());
 			if (transactions == null) {
@@ -32,16 +32,16 @@ public class ReconciliationJob {
 			developerTxMap.put(transactionDto.getTargetId(), transactions);
 
 		}
-		for (String developerId : developerTxMap.keySet()) {
-			MembershipStatusDto membership = membershipDAO
+		for (final String developerId : developerTxMap.keySet()) {
+			final MembershipStatusDto membership = membershipDAO
 					.getStatusFor(developerId);
 			String payPalId = null;
 			double totalTxAmount = 0.00;
-			for (TransactionDto tx : developerTxMap.get(developerId)) {
-				totalTxAmount += tx.getAmount();
-				payPalId = tx.getTargetPayPalId();
+			for (final TransactionDto transaction : developerTxMap.get(developerId)) {
+				totalTxAmount += transaction.getAmount();
+				payPalId = transaction.getTargetPayPalId();
 			}
-			double payableAmount = totalTxAmount - totalTxAmount
+			final double payableAmount = totalTxAmount - totalTxAmount
 					* membership.getDeductable();
 			payPalFacade.sendAdvice(new PaymentAdviceDto(payableAmount,
 					payPalId, null));

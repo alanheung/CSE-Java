@@ -39,7 +39,7 @@ public class DvdRental {
 	}
 
 	private void setTimeToReturnTime(final Calendar calendar) {
-		int returnTimeInHours = SEVEN_PM;
+		final int returnTimeInHours = SEVEN_PM;
 		calendar.set(Calendar.HOUR_OF_DAY, returnTimeInHours);
 		calendar.set(Calendar.MINUTE, 0);
 		calendar.set(Calendar.SECOND, 0);

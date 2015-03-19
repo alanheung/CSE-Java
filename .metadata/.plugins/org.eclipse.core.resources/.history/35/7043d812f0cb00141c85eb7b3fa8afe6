@@ -1,0 +1,21 @@
+package com.ait.users;
+
+import java.util.Calendar;
+
+public interface User {
+	public abstract String getName();
+
+	public abstract boolean isLoggedIn();
+	
+	public abstract void setLoggedIn(boolean state);
+
+	public abstract void setRevoked(boolean state);
+	
+	public abstract boolean isRevoked();
+	
+	public abstract boolean passwordMatches(String password);
+	
+	public abstract int getFailedLoginAttempts();
+	
+	public abstract void incrementFailedLoginAttempts();
+}

@@ -9,7 +9,7 @@ public abstract class DvdStoreException extends Exception {
 	 * Create a new exception with an error message.
 	 * @param message a String explaining the error which occurred.
 	 */
-	protected DvdStoreException(String message) {
+	protected DvdStoreException(final String message) {
 		super(message);
 	}
 

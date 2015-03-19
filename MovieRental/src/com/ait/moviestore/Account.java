@@ -6,20 +6,20 @@ package com.ait.moviestore;
  */
 public class Account {
 
-	private String name;
+	private final String name;
 
-	private String accountId;
+	private final String accountId;
 
 	private int balanceOwedInCents;
 
-	private int allowedCreditInCents = 200;
+	private static final int allowedCreditInCents = 200;
 	
 	/**
 	 * Create a new Rental Account.
 	 * @param name the name of the account holder.
 	 * @param vipAccount indication if the account holder will have special privileges or not.
 	 */
-	public Account(String accountId,String name) {
+	public Account(final String accountId,final String name) {
 		this.name = name;
 		this.accountId = accountId;
 		this.balanceOwedInCents = 0;

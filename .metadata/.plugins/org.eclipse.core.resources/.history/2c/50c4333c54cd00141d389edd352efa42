@@ -1,0 +1,7 @@
+
+public enum colleges {
+	AIT,
+	DCU,
+	NUIG,
+	WIT
+}

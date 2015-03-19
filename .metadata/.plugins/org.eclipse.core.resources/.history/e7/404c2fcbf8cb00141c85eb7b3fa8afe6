@@ -1,0 +1,79 @@
+package com.ait.test;
+
+import static org.junit.Assert.*;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import com.ait.boundaries.NotificationService;
+import com.ait.boundaries.UserDAO;
+import com.ait.exception.UserLoginException;
+import com.ait.exception.UserUnknownUsernameException;
+import com.ait.job.MembershipStatusDto;
+import com.ait.job.TransactionDto;
+import com.ait.login.LoginHandler;
+import com.ait.users.User;
+
+import static org.mockito.Mockito.*;
+
+public class LoginHandlerTest {
+
+	private UserDAO userDAO;
+	private NotificationService notServDAO;
+	private User user;
+
+	private LoginHandler loginHand;
+	
+	@Before
+	public void setUP(){
+		userDAO = mock(UserDAO.class);
+		notServDAO = mock(NotificationService.class);
+		
+		loginHand = new LoginHandler(userDAO, notServDAO);		
+	}
+	
+	@Test
+	public void testLoginSuccessful() throws UserLoginException {
+//		assertEquals(1,loginHand);
+		verify(loginHand).login("admin", "password");
+	}
+	
+	@Test(expected=IOException.class)
+	public void UserNotFound()throws IOException{
+		doThrow(new IOException()).when(userDAO).findUser(null);
+	}
+	
+	@Test
+	public void testUserLoggedIn() {
+		
+	}
+	
+}
+//	@Test
+//	public void testExpectedException(){
+//		when(userDAO).UserUnknownUsernameException();
+//		
+//		then(UserUnknownUsernameException()){
+//			.isInstanceof(UserUnknownUsernameException.class)
+//			.hasMessage("Exception Message.");
+//			verify(notServDAO).notifyAdmin(userDAO,"");
+//		}
+//	}
+	
+//	@Test
+//	public void testOneTransaction() {
+//		userDAO.findUser("admin");
+//		
+//		when(user.isLoggedIn()).thenReturn(NotificationService.this);
+//		msDTO = new MembershipStatusDto();
+//		msDTO.setDeductable(0.30);
+//		
+//		when(mDAO.getStatusFor(null)).thenReturn(msDTO);
+//		assertEquals(1, reconJob.reconcile());
+//	}
+	
+
+

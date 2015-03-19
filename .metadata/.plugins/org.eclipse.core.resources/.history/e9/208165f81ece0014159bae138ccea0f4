@@ -1,0 +1,17 @@
+package com.mase.oop1.code2;
+
+public class Laptop {
+	
+    private class MemoryImpl implements Memoryl {
+        private String memoryCapacity ;
+
+		public MemoryImpl(String memoryCapacity) {
+			this.memoryCapacity = memoryCapacity;
+		}
+
+
+    }
+	public void setMemoryCapacity(String memoryCapacity){
+		return new Memoryl();
+	}
+}

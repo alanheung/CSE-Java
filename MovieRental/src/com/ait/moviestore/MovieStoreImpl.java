@@ -4,18 +4,16 @@ import com.ait.dvd.Dvd;
 import com.ait.exception.*;
 
 public class MovieStoreImpl implements MovieStore {
-
-
 	//private final String manager;
-	private MovieStoreDAO movieStoreDatabase;
+	private final MovieStoreDAO movieStoreDatabase;
 	
-	public MovieStoreImpl(MovieStoreDAO movieStoreDatabase){
+	public MovieStoreImpl(final MovieStoreDAO movieStoreDatabase){
 		this.movieStoreDatabase=movieStoreDatabase;
 	}
 
 	@Override
-	public Dvd rentMovie(String accountId, String movieTitle) throws DvdStoreException {
-		Account account = movieStoreDatabase.findAccountForId(accountId);
+	public Dvd rentMovie(final String accountId, final String movieTitle) throws DvdStoreException {
+		final Account account = movieStoreDatabase.findAccountForId(accountId);
 		if (account != null && account.isAllowedToRentNewMovies()) {
 			return rentMovieForValidAccount(movieTitle, account);
 		} else {
@@ -23,9 +21,9 @@ public class MovieStoreImpl implements MovieStore {
 		}
 	}
 
-	private Dvd rentMovieForValidAccount(String movieTitle,
+	private Dvd rentMovieForValidAccount(final String movieTitle,
 			final Account account) throws DvdStoreException {
-		Dvd availableDvd= movieStoreDatabase.getAvailableDvdWithTitle(movieTitle);
+		final Dvd availableDvd= movieStoreDatabase.getAvailableDvdWithTitle(movieTitle);
 		if (availableDvd != null) {
 			createNewDvdRental(availableDvd, account);
 			return availableDvd;
@@ -34,8 +32,8 @@ public class MovieStoreImpl implements MovieStore {
 		}
 	}
 
-	private void createNewDvdRental(Dvd dvd, Account account) {
-		DvdRental rental = new DvdRental(account, dvd);
+	private void createNewDvdRental(final Dvd dvd,final Account account) {
+		final DvdRental rental = new DvdRental(account, dvd);
 		dvd.rentToAccountHolder();
 		account.addCharge(dvd.getChargePerDay());
 		movieStoreDatabase.createNewDvdRental(rental);
